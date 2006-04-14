@@ -50,6 +50,14 @@ function conferences_get_config($engine) {
 			$ext->addInclude('from-internal-additional','ext-meetme');
 			$contextname = 'ext-meetme';
 			if(is_array($conflist = conferences_list())) {
+				
+				// Start the conference
+				$ext->add($contextname, 'STARTMEETME', '', new ext_meetme('${MEETME_ROOMNUM}','${MEETME_OPTS}','${PIN}'));
+				$ext->add($contextname, 'STARTMEETME', '', new ext_hangup(''));
+				
+				// hangup for whole context
+				$ext->add($contextname, 'h', '', new ext_hangup(''));						
+				
 				foreach($conflist as $item) {
 					$room = conferences_get(ltrim($item['0']));
 					
@@ -57,8 +65,7 @@ function conferences_get_config($engine) {
 					$roomoptions = $room['options'];
 					$roomuserpin = $room['userpin'];
 					$roomadminpin = $room['adminpin'];
-					if (function_exists('recordings_list'))
-						$roomjoinmsg = recordings_get($room['joinmsg']);
+					$roomjoinmsg = (isset($room['joinmsg'])?$room['joinmsg']:'');
 					
 					// entry point
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_ROOMNUM',$roomnum));
@@ -86,8 +93,8 @@ function conferences_get_config($engine) {
 						// admin mode -- only valid if there is an admin pin
 						if ($roomadminpin != '') {
 							$ext->add($contextname, $roomnum, 'ADMIN', new ext_setvar('MEETME_OPTS','aA'.$roomoptions));
-							if (isset($roomjoinmsg)) {  // play joining message if one defined
-								$ext->add($contextname, $roomnum, '', new ext_playback($roomjoinmsg['filename']));
+							if ($roomjoinmsg != '') {  // play joining message if one defined
+								$ext->add($contextname, $roomnum, '', new ext_playback($roomjoinmsg));
 							}
 							$ext->add($contextname, $roomnum, '', new ext_goto('STARTMEETME,1'));							
 						}
@@ -95,8 +102,8 @@ function conferences_get_config($engine) {
 					
 					// user mode
 					$ext->add($contextname, $roomnum, 'USER', new ext_setvar('MEETME_OPTS',$roomoptions));
-					if (isset($roomjoinmsg)) {  // play joining message if one defined
-						$ext->add($contextname, $roomnum, '', new ext_playback($roomjoinmsg['filename']));
+					if ($roomjoinmsg != '') {  // play joining message if one defined
+						$ext->add($contextname, $roomnum, '', new ext_playback($roomjoinmsg));
 					}
 					$ext->add($contextname, $roomnum, '', new ext_goto('STARTMEETME,1'));
 					
@@ -105,12 +112,6 @@ function conferences_get_config($engine) {
 				}
 			}
 
-			// Start the conference
-			$ext->add($contextname, 'STARTMEETME', '', new ext_meetme('${MEETME_ROOMNUM}','${MEETME_OPTS}','${PIN}'));
-			$ext->add($contextname, 'STARTMEETME', '', new ext_hangup(''));
-			
-			// hangup for whole context
-			$ext->add($contextname, 'h', '', new ext_hangup(''));			
 		break;
 	}
 }
