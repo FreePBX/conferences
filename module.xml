@@ -1,13 +1,13 @@
 <module>
 	<rawname>conferences</rawname>
 	<name>Conferences</name>
-	<version>1.0</version>
+	<version>1.0.1</version>
 	<type>setup</type>
 	<category>Module</category>
 	<menuitems>
 		<conferences>Conferences</conferences>
 	</menuitems>
-	<location>release/conferences-1.0.tgz</location>
+	<location>release/conferences-1.0.1.tgz</location>
 	<info>http://freepbx.org/wiki/Conferences</info>
-	<md5sum>7f0186f88b41c036bf3a5d15104f0c74</md5sum>
+	<md5sum>f408ba88dfd98093afbfb23c4fdbb300</md5sum>
 </module>
