@@ -7,7 +7,7 @@
 	<menuitems>
 		<conferences>Conferences</conferences>
 	</menuitems>
-	<location>release/conferences-1.0.1.tgz</location>
+	<location>release//2.2/conferences-1.0.1.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-Conf</info>
-	<md5sum>57bbadd9e02cbbcc91b16411bd42b496</md5sum>
+	<md5sum>dfc430f056c37befb20dda5023d4b5bc</md5sum>
 </module>
