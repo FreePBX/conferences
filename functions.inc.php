@@ -80,15 +80,15 @@ function conferences_get_config($engine) {
 						
 						// userpin -- must do always, otherwise if there is just an adminpin
 						// there would be no way to get to the conference !
-						$ext->add($contextname, $roomnum, '', new ext_gotoif('$[foo${PIN} = foo'.$roomuserpin.']','USER'));
+						$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x'.$roomuserpin.']','USER'));
 
 						// admin pin -- exists
 						if ($roomadminpin != '') {
-							$ext->add($contextname, $roomnum, '', new ext_gotoif('$[${PIN} = '.$roomadminpin.']','ADMIN'));
+							$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x'.$roomadminpin.']','ADMIN'));
 						}
 
 						// pin invalid
-						$ext->add($contextname, $roomnum, '', new ext_setvar('PINCOUNT','${PINCOUNT} + 1'));
+						$ext->add($contextname, $roomnum, '', new ext_setvar('PINCOUNT','$[${PINCOUNT}+1]'));
 						$ext->add($contextname, $roomnum, '', new ext_gotoif('$[${PINCOUNT}>3]', "h"));
 						$ext->add($contextname, $roomnum, '', new ext_playback('conf-invalidpin'));
 						$ext->add($contextname, $roomnum, '', new ext_goto('READPIN'));
