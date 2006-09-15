@@ -75,6 +75,7 @@ function conferences_get_config($engine) {
 					
 					// Deal with PINs -- if exist
 					if ($roomuserpin != '' || $roomadminpin != '') {
+						$ext->add($contextname, $roomnum, '', new ext_setvar('PINCOUNT','0'));
 						$ext->add($contextname, $roomnum, 'READPIN', new ext_read('PIN','enter-conf-pin-number'));
 						
 						// userpin -- must do always, otherwise if there is just an adminpin
@@ -87,6 +88,8 @@ function conferences_get_config($engine) {
 						}
 
 						// pin invalid
+						$ext->add($contextname, $roomnum, '', new ext_setvar('PINCOUNT','${PINCOUNT} + 1'));
+						$ext->add($contextname, $roomnum, '', new ext_gotoif('$[${PINCOUNT}>3]', "h"));
 						$ext->add($contextname, $roomnum, '', new ext_playback('conf-invalidpin'));
 						$ext->add($contextname, $roomnum, '', new ext_goto('READPIN'));
 						
