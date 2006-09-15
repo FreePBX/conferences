@@ -1,13 +1,13 @@
 <module>
 	<rawname>conferences</rawname>
 	<name>Conferences</name>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<type>setup</type>
 	<category>Module</category>
 	<menuitems>
 		<conferences>Conferences</conferences>
 	</menuitems>
-	<location>release//2.2/conferences-1.0.1.tgz</location>
+	<location>release/2.2/conferences-1.0.2.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-Conf</info>
-	<md5sum>dfc430f056c37befb20dda5023d4b5bc</md5sum>
+	<md5sum>58b1f7ab35daa8bd4db04f193a6fd6e0</md5sum>
 </module>
