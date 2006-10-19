@@ -3,7 +3,8 @@
 	<name>Conferences</name>
 	<version>1.0.2</version>
 	<type>setup</type>
-	<category>Module</category>
+	<category>Internal Options &amp; Configuration</category>
+	<description>Allow creation of conference rooms (meet-me) where multiple people can talk together.</description>
 	<menuitems>
 		<conferences>Conferences</conferences>
 	</menuitems>
