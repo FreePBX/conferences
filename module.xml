@@ -1,14 +1,15 @@
 <module>
 	<rawname>conferences</rawname>
 	<name>Conferences</name>
-	<version>1.0.2</version>
+	<version>1.1</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<description>Allow creation of conference rooms (meet-me) where multiple people can talk together.</description>
+	<changelog>*1.1* First release for FreePBX 2.2 - Fixed compatibility issue with new UI</changelog>
 	<menuitems>
 		<conferences>Conferences</conferences>
 	</menuitems>
-	<location>release/2.2/conferences-1.0.2.tgz</location>
+	<location>release/2.2/conferences-1.1.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-Conf</info>
-	<md5sum>58b1f7ab35daa8bd4db04f193a6fd6e0</md5sum>
+	<md5sum>9484590a019bdd75612147e171da53db</md5sum>
 </module>
