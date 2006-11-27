@@ -38,7 +38,7 @@ if (isset($account) && !checkRange($account)){
 			conferences_del($_REQUEST['account']);
 			conferences_add($_REQUEST['account'],$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg']);
 			needreload();
-			redirect_standard();
+			redirect_standard('extdisplay');
 		break;
 	}
 }
