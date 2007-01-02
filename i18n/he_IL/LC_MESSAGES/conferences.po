@@ -1,0 +1,171 @@
+# Hebrew version for Asterisk Conferences FreePBX Module.
+# Copyright (C) 2006
+# This file is distributed under the same license as the PACKAGE package.
+# Shimi <shimi@shimi.net>, 2006.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX 2.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2006-10-17 17:20+0300\n"
+"PO-Revision-Date: 2006-10-17 17:30+0300\n"
+"Last-Translator: Shimi <shimi@shimi.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: page.conferences.php:22
+msgid "Warning! Extension"
+msgstr "אזהרה! שלוחה"
+
+#: page.conferences.php:22
+msgid "is not allowed for your account."
+msgstr "אינה מורשית עבור החשבון שלך."
+
+#: page.conferences.php:53 page.conferences.php:84 page.conferences.php:91
+msgid "Add Conference"
+msgstr "הוסף ועידה"
+
+#: page.conferences.php:67
+msgid "Conference"
+msgstr "ועידה"
+
+#: page.conferences.php:67
+msgid "deleted"
+msgstr "נמחקה"
+
+#: page.conferences.php:81
+msgid "Conference:"
+msgstr "ועידה:"
+
+#: page.conferences.php:82
+msgid "Delete Conference"
+msgstr "מחק ועידה"
+
+#: page.conferences.php:91
+msgid "Edit Conference"
+msgstr "ערוך ועידה"
+
+#: page.conferences.php:96
+msgid "conference number:"
+msgstr "מספר ועידה:"
+
+#: page.conferences.php:96
+msgid "Use this number to dial into the conference."
+msgstr "השתמש במספר זה כדי לחייג לתוך הועידה"
+
+#: page.conferences.php:101
+msgid "conference name:"
+msgstr "שם הועידה:"
+
+#: page.conferences.php:101
+msgid "Give this conference a brief name to help you identify it."
+msgstr "תן לועידה זו שם קצר שיעזור לך לזהות אותה."
+
+#: page.conferences.php:105
+msgid "user PIN:"
+msgstr "סיסמת משתמש:"
+
+#: page.conferences.php:105
+msgid ""
+"You can require callers to enter a password before they can enter this "
+"conference.<br><br>This setting is optional.<br><br>If either PIN is "
+"entered, the user will be prompted to enter a PIN."
+msgstr "אתה יכול לדרוש שמתקשרים יצטרכו להכניס סיסמא לפני שהם יכולים להיכנס לועידה זו.<br /><br />הגדרה זו היא רשות.<br /><br />אם הוכנסה סיסמת משתמש כלשהיא, המשתמש יתבקש לחייגה בכניסה."
+
+#: page.conferences.php:109
+msgid "admin PIN:"
+msgstr "סיסמת מנהל:"
+
+#: page.conferences.php:109
+msgid ""
+"Enter a PIN number for the admin user.<br><br>This setting is optional "
+"unless the 'leader wait' option is in use, then this PIN will identify the "
+"leader."
+msgstr "הכנס סיסמא עבור המשתמש המנהל.<br /><br />אפשרות זו היא רשות אלא אם כן האפשרות 'המתן למנהל' מסומנת, ובמקרה זה, סיסמא זו תזהה את המנהל."
+
+#: page.conferences.php:118
+msgid "Conference Options"
+msgstr "אפשרויות ועידה"
+
+#: page.conferences.php:121 page.conferences.php:139
+msgid "join message:"
+msgstr "הודעת הצטרפות:"
+
+#: page.conferences.php:121
+msgid ""
+"Message to be played to the caller before joining the conference.<br><br>To "
+"add additional recordings please use the \"System Recordings\" MENU to the "
+"left"
+msgstr "הודעה שתושמע למתקשר לפני הכניסה לועידה.<br /><br />כדי להוסיף הודעות נוספות, אנא השתמש <em>בתפריט</em> \"הקלטות מערכת\" שבצד שמאל."
+
+#: page.conferences.php:127
+msgid "None"
+msgstr "אין"
+
+#: page.conferences.php:139
+msgid ""
+"Message to be played to the caller before joining the conference.<br><br>You "
+"must install and enable the \"Systems Recordings\" Module to edit this option"
+msgstr "הודעה שתושמע למתקשר לפני הכניסה לועידה.<br /><br />אתה חייב להתקין ולהפעיל את המודול \"הקלטות מערכת\" כדי לערוך אפשרות זאת"
+
+#: page.conferences.php:149
+msgid "leader wait:"
+msgstr "המתנה למנהל:"
+
+#: page.conferences.php:149
+msgid ""
+"wait until the conference leader (admin user) arrives before starting the "
+"conference"
+msgstr "המתן עד שמנהל הועידה (משתמש עם סיסמא מיוחדת) יגיע לפני שתחבר את כולם לועידה"
+
+#: page.conferences.php:154 page.conferences.php:166 page.conferences.php:178
+#: page.conferences.php:190 page.conferences.php:202 page.conferences.php:214
+msgid "No"
+msgstr "לא"
+
+#: page.conferences.php:155 page.conferences.php:167 page.conferences.php:179
+#: page.conferences.php:191 page.conferences.php:203 page.conferences.php:215
+msgid "Yes"
+msgstr "כן"
+
+#: page.conferences.php:161
+msgid "quiet mode:"
+msgstr "מצב שקט:"
+
+#: page.conferences.php:161
+msgid "quiet mode (do not play enter/leave sounds)"
+msgstr "מצב שקט (אל תשמיע צלילי כניסה/יציאה)"
+
+#: page.conferences.php:173
+msgid "user count:"
+msgstr "ספירת משתמשים:"
+
+#: page.conferences.php:173
+msgid "announce user(s) count on joining conference"
+msgstr "הכרז על מספר הנמצאים בועידה בזמן הכניסה לועידה"
+
+#: page.conferences.php:185
+msgid "user join/leave:"
+msgstr "כניסת/יציאת משתמש:"
+
+#: page.conferences.php:185
+msgid "announce user join/leave"
+msgstr "הכרז על כניסה/יציאה של משתמשים"
+
+#: page.conferences.php:197
+msgid "music on hold:"
+msgstr "מוסיקה בהמתנה:"
+
+#: page.conferences.php:197
+msgid "enable music on hold when the conference has a single caller"
+msgstr "הפעל מוסיקה בהמתנה כאשר בועידה יש רק מתקשר אחד"
+
+#: page.conferences.php:209
+msgid "allow menu:"
+msgstr "אפשר תפריט:"
+
+#: page.conferences.php:209
+msgid "present menu (user or admin) when '*' is received ('send' to menu)"
+msgstr "הצג תפריט (משתמש או מנהל) כאשר לוחצים על כוכבית ('שליחה' אל התפריט)"
