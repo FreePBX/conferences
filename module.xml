@@ -14,7 +14,7 @@
 	<menuitems>
 		<conferences>Conferences</conferences>
 	</menuitems>
-	<location>x</location>
+	<location>release/2.3/conferences-1.2.tgz</location>
 	<info>http://aussievoip.com.au/wiki/freePBX-Conf</info>
-	<md5sum>x</md5sum>
+	<md5sum>5a25fd346b0404fb609597222c21c0b5</md5sum>
 </module>
