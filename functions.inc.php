@@ -69,7 +69,7 @@ function conferences_get_config($engine) {
 					
 					// entry point
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_ROOMNUM',$roomnum));
-					$ext->add($contextname, $roomnum, '', new ext_gotoif('$[${DIALSTATUS} = ANSWER]',($roomuserpin == '' && $roomadminpin == '' ? 'USER' : 'READPIN')));			
+					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DIALSTATUS}" = "ANSWER"]',($roomuserpin == '' && $roomadminpin == '' ? 'USER' : 'READPIN')));			
 					$ext->add($contextname, $roomnum, '', new ext_answer(''));
 					$ext->add($contextname, $roomnum, '', new ext_wait(1));
 					
