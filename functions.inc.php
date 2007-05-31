@@ -15,7 +15,7 @@ class conferences_conf {
 		$output = "";
 		if (isset($this->_meetmes) && is_array($this->_meetmes)) {
 			foreach (array_keys($this->_meetmes) as $meetme) {
-				$output .= 'conf => '.$meetme."|".$this->_meetmes[$meetme]."\n";
+				$output .= 'conf => '.$meetme.",".$this->_meetmes[$meetme]."\n";
 			}
 		}
 		return $output;
