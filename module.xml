@@ -1,11 +1,12 @@
 <module>
 	<rawname>conferences</rawname>
 	<name>Conferences</name>
-	<version>1.2.1</version>
+	<version>1.2.1.1</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<description>Allow creation of conference rooms (meet-me) where multiple people can talk together.</description>
 	<changelog>
+		*1.2.1.1* bump for rc1
 		*1.2.1* changed syntax error in meetme_additional.conf form '|' to ',' separator
 		*1.2* Fixed raising asterisk error on empty dialstatus #1708
 		*1.1.2* Add he_IL translation
@@ -16,6 +17,5 @@
 		<conferences>Conferences</conferences>
 	</menuitems>
 	<location>release/2.3/conferences-1.2.1.tgz</location>
-	<info>http://aussievoip.com.au/wiki/freePBX-Conf</info>
 	<md5sum>7b62fe196c3714cb439b7d4ece7f04d4</md5sum>
 </module>
