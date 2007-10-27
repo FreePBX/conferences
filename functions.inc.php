@@ -52,6 +52,7 @@ function conferences_get_config($engine) {
 			if(is_array($conflist = conferences_list())) {
 				
 				// Start the conference
+				$ext->add($contextname, 'STARTMEETME', '', new ext_macro('user-callerid'));
 				$ext->add($contextname, 'STARTMEETME', '', new ext_meetme('${MEETME_ROOMNUM}','${MEETME_OPTS}','${PIN}'));
 				$ext->add($contextname, 'STARTMEETME', '', new ext_hangup(''));
 				
