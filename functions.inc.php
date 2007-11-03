@@ -52,7 +52,6 @@ function conferences_get_config($engine) {
 			if(is_array($conflist = conferences_list())) {
 				
 				// Start the conference
-				$ext->add($contextname, 'STARTMEETME', '', new ext_macro('user-callerid'));
 				$ext->add($contextname, 'STARTMEETME', '', new ext_meetme('${MEETME_ROOMNUM}','${MEETME_OPTS}','${PIN}'));
 				$ext->add($contextname, 'STARTMEETME', '', new ext_hangup(''));
 				
@@ -69,6 +68,7 @@ function conferences_get_config($engine) {
 					$roomjoinmsg = (isset($room['joinmsg'])?$room['joinmsg']:'');
 					
 					// entry point
+					$ext->add($contextname, $roomnum, '', new ext_macro('user-callerid'));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_ROOMNUM',$roomnum));
 					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DIALSTATUS}" = "ANSWER"]',($roomuserpin == '' && $roomadminpin == '' ? 'USER' : 'READPIN')));			
 					$ext->add($contextname, $roomnum, '', new ext_answer(''));

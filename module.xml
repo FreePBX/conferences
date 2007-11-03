@@ -1,11 +1,12 @@
 <module>
 	<rawname>conferences</rawname>
 	<name>Conferences</name>
-	<version>1.2.1.2</version>
+	<version>1.2.1.3</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<description>Allow creation of conference rooms (meet-me) where multiple people can talk together.</description>
 	<changelog>
+		*1.2.1.3* move Macro(user-callerid) to be called with each conf to accomodate future language settings
 		*1.2.1.2* add call to Macro(user-callerid) to get proper CID in Meetme Conference
 		*1.2.1.1* bump for rc1
 		*1.2.1* changed syntax error in meetme_additional.conf form '|' to ',' separator
