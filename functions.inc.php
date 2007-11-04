@@ -45,6 +45,7 @@ function conferences_destinations() {
 function conferences_get_config($engine) {
 	global $ext;  // is this the best way to pass this?
 	global $conferences_conf;
+	global $version;
 	switch($engine) {
 		case "asterisk":
 			$ext->addInclude('from-internal-additional','ext-meetme');
@@ -63,6 +64,9 @@ function conferences_get_config($engine) {
 					
 					$roomnum = ltrim($item['0']);
 					$roomoptions = $room['options'];
+					if (version_compare($version, "1.4",">=")) {
+						$roomoptions = str_replace('i','I',$roomoptions);
+					}
 					$roomuserpin = $room['userpin'];
 					$roomadminpin = $room['adminpin'];
 					$roomjoinmsg = (isset($room['joinmsg'])?$room['joinmsg']:'');
