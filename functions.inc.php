@@ -124,6 +124,27 @@ function conferences_get_config($engine) {
 	}
 }
 
+function conferences_check_extensions($exten=true) {
+	$extenlist = array();
+	if (is_array($exten) && empty($exten)) {
+		return $extenlist;
+	}
+	$sql = "SELECT exten, description FROM meetme ";
+	if (is_array($exten)) {
+		$sql .= "WHERE exten in ('".implode("','",$exten)."')";
+	}
+	$sql .= " ORDER BY exten";
+	$results = sql($sql,"getAll",DB_FETCHMODE_ASSOC);
+
+	foreach ($results as $result) {
+		$thisexten = $result['exten'];
+		$extenlist[$thisexten]['description'] = _("Conference: ").$result['description'];
+		$extenlist[$thisexten]['status'] = 'INUSE';
+		$extenlist[$thisexten]['edit_url'] = 'config.php?display=conferences&extdisplay='.urlencode($thisexten);
+	}
+	return $extenlist;
+}
+
 //get the existing meetme extensions
 function conferences_list() {
 	$results = sql("SELECT exten,description FROM meetme ORDER BY exten","getAll",DB_FETCHMODE_ASSOC);
@@ -152,6 +173,7 @@ function conferences_del($account){
 }
 
 function conferences_add($account,$name,$userpin,$adminpin,$options,$joinmsg=null){
+	global $active_modules;
 	$results = sql("INSERT INTO meetme (exten,description,userpin,adminpin,options,joinmsg) values (\"$account\",\"$name\",\"$userpin\",\"$adminpin\",\"$options\",\"$joinmsg\")");
 }
 ?>
