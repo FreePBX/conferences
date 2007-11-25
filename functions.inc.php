@@ -38,6 +38,29 @@ function conferences_destinations() {
 	}
 }
 
+function conferences_getdest($exten) {
+	return array('ext-meetme,'.$exten.',1');
+}
+
+function conferences_getdestinfo($dest) {
+	global $active_modules;
+
+	if (substr(trim($dest),0,11) == 'ext-meetme,') {
+		$exten = explode(',',$dest);
+		$exten = $exten[1];
+		$thisexten = conferences_get($exten);
+		if (empty($thisexten)) {
+			return array();
+		} else {
+			//$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
+			return array('description' => 'Conference Room '.$exten.': '.$thisexten['description'],
+			             'edit_url' => 'config.php?display=conferences&extdisplay='.urlencode($exten),
+								  );
+		}
+	} else {
+		return false;
+	}
+}
 
 /* 	Generates dialplan for conferences
 	We call this with retrieve_conf

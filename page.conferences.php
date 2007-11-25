@@ -86,7 +86,16 @@ if ($action == 'delete') {
 ?>
 <?php		if ($extdisplay){ ?>
 	<h2><?php echo _("Conference:")." ". $extdisplay; ?></h2>
-	<p><a href="<?php echo $delURL ?>"><?php echo _("Delete Conference")?> <?php echo $extdisplay; ?></a></p>
+	<a href="<?php echo $delURL ?>"><?php echo _("Delete Conference")?> <?php echo $extdisplay; ?></a><br />
+<?php
+					$usage_list = framework_display_destination_usage(conferences_getdest($extdisplay));
+					if (!empty($usage_list)) {
+?>
+						<a href="#" class="info"><?php echo $usage_list['text']?>:<span><?php echo $usage_list['tooltip']?></span></a>
+<?php
+					}
+?>
+
 <?php		} else { ?>
 	<h2><?php echo _("Add Conference"); ?></h2>
 <?php		}
