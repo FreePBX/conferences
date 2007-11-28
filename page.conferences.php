@@ -113,20 +113,20 @@ if ($action == 'delete') {
 <?php		if ($extdisplay){ ?>
 		<input type="hidden" name="account" value="<?php echo $extdisplay; ?>">
 <?php		} else { ?>
-		<td><a href="#" class="info"><?php echo _("conference number:")?><span><?php echo _("Use this number to dial into the conference.")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Conference Number:")?><span><?php echo _("Use this number to dial into the conference.")?></span></a></td>
 		<td><input type="text" name="account" value=""></td>
 <?php		} ?>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("conference name:")?><span><?php echo _("Give this conference a brief name to help you identify it.")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Conference Name:")?><span><?php echo _("Give this conference a brief name to help you identify it.")?></span></a></td>
 		<td><input type="text" name="name" value="<?php echo (isset($description) ? $description : ''); ?>"></td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("user PIN:")?><span><?php echo _("You can require callers to enter a password before they can enter this conference.<br><br>This setting is optional.<br><br>If either PIN is entered, the user will be prompted to enter a PIN.")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("User PIN:")?><span><?php echo _("You can require callers to enter a password before they can enter this conference.<br><br>This setting is optional.<br><br>If either PIN is entered, the user will be prompted to enter a PIN.")?></span></a></td>
 		<td><input size="8" type="text" name="userpin" value="<?php echo (isset($userpin) ? $userpin : ''); ?>"></td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("admin PIN:")?><span><?php echo _("Enter a PIN number for the admin user.<br><br>This setting is optional unless the 'leader wait' option is in use, then this PIN will identify the leader.")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Admin PIN:")?><span><?php echo _("Enter a PIN number for the admin user.<br><br>This setting is optional unless the 'leader wait' option is in use, then this PIN will identify the leader.")?></span></a></td>
 		<td><input size="8" type="text" name="adminpin" value="<?php echo (isset($adminpin) ? $adminpin : ''); ?>"></td>
 	</tr>
 
@@ -138,7 +138,7 @@ if ($action == 'delete') {
 	<tr><td colspan="2"><br><h5><?php echo _("Conference Options")?><hr></h5></td></tr>
 <?php if(function_exists('recordings_list')) { //only include if recordings is enabled?>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("join message:")?><span><?php echo _("Message to be played to the caller before joining the conference.<br><br>To add additional recordings please use the \"System Recordings\" MENU to the left")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Join Message:")?><span><?php echo _("Message to be played to the caller before joining the conference.<br><br>To add additional recordings please use the \"System Recordings\" MENU to the left")?></span></a></td>
 		<td>
 			<select name="joinmsg"/>
 			<?php
@@ -156,7 +156,7 @@ if ($action == 'delete') {
 	</tr>
 <?php }	else { ?>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("join message:")?><span><?php echo _("Message to be played to the caller before joining the conference.<br><br>You must install and enable the \"Systems Recordings\" Module to edit this option")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Join Message:")?><span><?php echo _("Message to be played to the caller before joining the conference.<br><br>You must install and enable the \"Systems Recordings\" Module to edit this option")?></span></a></td>
 		<td>
 			<?php
 				$default = (isset($joinmsg) ? $joinmsg : '');
@@ -166,7 +166,7 @@ if ($action == 'delete') {
 	</tr>
 <?php } ?>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("leader wait:")?><span><?php echo _("wait until the conference leader (admin user) arrives before starting the conference")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Leader Wait:")?><span><?php echo _("wait until the conference leader (admin user) arrives before starting the conference")?></span></a></td>
 		<td>
 			<select name="opt#w">
 			<?php
@@ -178,7 +178,7 @@ if ($action == 'delete') {
 		</td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("quiet mode:")?><span><?php echo _("quiet mode (do not play enter/leave sounds)")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Quiet Mode:")?><span><?php echo _("quiet mode (do not play enter/leave sounds)")?></span></a></td>
 		<td>
 			<select name="opt#q">
 			<?php
@@ -190,7 +190,7 @@ if ($action == 'delete') {
 		</td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("user count:")?><span><?php echo _("announce user(s) count on joining conference")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("User Count:")?><span><?php echo _("announce user(s) count on joining conference")?></span></a></td>
 		<td>
 			<select name="opt#c">
 			<?php
@@ -202,7 +202,7 @@ if ($action == 'delete') {
 		</td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("user join/leave:")?><span><?php echo _("announce user join/leave")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("User join/leave:")?><span><?php echo _("announce user join/leave")?></span></a></td>
 		<td>
 			<select name="opt#i">
 			<?php
@@ -214,7 +214,7 @@ if ($action == 'delete') {
 		</td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("music on hold:")?><span><?php echo _("enable music on hold when the conference has a single caller")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Music on Hold:")?><span><?php echo _("enable music on hold when the conference has a single caller")?></span></a></td>
 		<td>
 			<select name="opt#M">
 			<?php
@@ -226,7 +226,7 @@ if ($action == 'delete') {
 		</td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("allow menu:")?><span><?php echo _("present menu (user or admin) when '*' is received ('send' to menu)")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Allow Menu:")?><span><?php echo _("present menu (user or admin) when '*' is received ('send' to menu)")?></span></a></td>
 		<td>
 			<select name="opt#s">
 			<?php
@@ -238,7 +238,19 @@ if ($action == 'delete') {
 		</td>
 	</tr>
 
-	
+	<tr>
+		<td><a href="#" class="info"><?php echo _("Record Conference:")?><span><?php echo _("record the conference call")?></span></a></td>
+		<td>
+			<select name="opt#r">
+				<?php
+				$optselect = strpos($options, "r");
+				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
+ 				echo '<option value="r"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
+				?>
+			</select>
+		</td>
+	</tr>
+
 	<tr>
 		<td colspan="2"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>"></h6></td>		
 	</tr>
