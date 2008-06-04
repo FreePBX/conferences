@@ -140,7 +140,7 @@ if ($action == 'delete') {
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Join Message:")?><span><?php echo _("Message to be played to the caller before joining the conference.<br><br>To add additional recordings please use the \"System Recordings\" MENU to the left")?></span></a></td>
 		<td>
-			<select name="joinmsg"/>
+			<select name="joinmsg">
 			<?php
 				$tresults = recordings_list();
 				$default = (isset($joinmsg) ? $joinmsg : '');
