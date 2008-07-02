@@ -69,6 +69,7 @@ function conferences_get_config($engine) {
 	global $ext;  // is this the best way to pass this?
 	global $conferences_conf;
 	global $version;
+	global $amp_conf;
 	switch($engine) {
 		case "asterisk":
 			$ext->addInclude('from-internal-additional','ext-meetme');
@@ -94,6 +95,10 @@ function conferences_get_config($engine) {
 					$roomadminpin = $room['adminpin'];
 					$roomjoinmsg = (isset($room['joinmsg'])?$room['joinmsg']:'');
 					
+					// Add optional hint
+					if ($amp_conf['USEDEVSTATE']) {
+						$ext->addHint($contextname, $roomnum, "MeetMe:".$roomnum);
+					}
 					// entry point
 					$ext->add($contextname, $roomnum, '', new ext_macro('user-callerid'));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_ROOMNUM',$roomnum));
