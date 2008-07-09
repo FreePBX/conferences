@@ -82,11 +82,15 @@ if ($action == 'delete') {
 		extract($thisMeetme);
 	}
 
-	$delURL = $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&action=delete';
 ?>
 <?php		if ($extdisplay){ ?>
 	<h2><?php echo _("Conference:")." ". $extdisplay; ?></h2>
-	<a href="<?php echo $delURL ?>"><?php echo _("Delete Conference")?> <?php echo $extdisplay; ?></a><br />
+<?php
+					$delURL = $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&action=delete';
+					$tlabel = sprintf(_("Delete Conference %s"),$extdisplay);
+					$label = '<span><img width="16" height="16" border="0" title="'.$tlabel.'" alt="" src="images/core_delete.png"/>&nbsp;'.$tlabel.'</span>';
+?>
+					<a href="<?php echo $delURL ?>"><?php echo $label; ?></a><br />
 <?php
 					$usage_list = framework_display_destination_usage(conferences_getdest($extdisplay));
 					if (!empty($usage_list)) {
