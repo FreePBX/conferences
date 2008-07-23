@@ -30,7 +30,7 @@ if (isset($account) && !checkRange($account)){
 			$usage_arr = framework_check_extension_usage($account);
 			if (!empty($usage_arr)) {
 				$conflict_url = framework_display_extension_usage_alert($usage_arr);
-			} elseif (conferences_add($_REQUEST['account'],$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg']) !== false) {
+			} elseif (conferences_add($_REQUEST['account'],$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id']) !== false) {
 				needreload();
 				redirect_standard();
 			}
@@ -42,7 +42,7 @@ if (isset($account) && !checkRange($account)){
 		break;
 		case "edit":  //just delete and re-add
 			conferences_del($_REQUEST['account']);
-			conferences_add($_REQUEST['account'],$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg']);
+			conferences_add($_REQUEST['account'],$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id']);
 			needreload();
 			redirect_standard('extdisplay');
 		break;
@@ -144,14 +144,14 @@ if ($action == 'delete') {
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Join Message:")?><span><?php echo _("Message to be played to the caller before joining the conference.<br><br>To add additional recordings please use the \"System Recordings\" MENU to the left")?></span></a></td>
 		<td>
-			<select name="joinmsg" tabindex="<?php echo ++$tabindex;?>">
+			<select name="joinmsg_id" tabindex="<?php echo ++$tabindex;?>">
 			<?php
 				$tresults = recordings_list();
-				$default = (isset($joinmsg) ? $joinmsg : '');
-				echo '<option value="">'._("None");
+				$default = (isset($joinmsg_id) ? $joinmsg_id : '');
+				echo '<option value="">'._("None")."</option>";
 				if (isset($tresults[0])) {
 					foreach ($tresults as $tresult) {
-						echo '<option value="'.$tresult[2].'"'.($tresult[2] == $default ? ' SELECTED' : '').'>'.$tresult[1];
+						echo '<option value="'.$tresult['id'].'"'.($tresult['id'] == $default ? ' SELECTED' : '').'>'.$tresult['displayname']."</option>\n";
 					}
 				}
 			?>		
@@ -163,9 +163,9 @@ if ($action == 'delete') {
 		<td><a href="#" class="info"><?php echo _("Join Message:")?><span><?php echo _("Message to be played to the caller before joining the conference.<br><br>You must install and enable the \"Systems Recordings\" Module to edit this option")?></span></a></td>
 		<td>
 			<?php
-				$default = (isset($joinmsg) ? $joinmsg : '');
+				$default = (isset($joinmsg_id) ? $joinmsg_id : '');
 			?>
-			<input type="hidden" name="joinmsg" value="<?php echo $default; ?>"><?php echo ($default != '' ? $default : 'None'); ?>
+			<input type="hidden" name="joinmsg_id" value="<?php echo $default; ?>"><?php echo ($default != '' ? $default : 'None'); ?>
 		</td>
 	</tr>
 <?php } ?>

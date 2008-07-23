@@ -62,6 +62,23 @@ function conferences_getdestinfo($dest) {
 	}
 }
 
+function conferences_recordings_usage($recording_id) {
+	global $active_modules;
+
+	$results = sql("SELECT `exten`, `description` FROM `meetme` WHERE `joinmsg_id` = '$recording_id'","getAll",DB_FETCHMODE_ASSOC);
+	if (empty($results)) {
+		return array();
+	} else {
+		foreach ($results as $result) {
+			$usage_arr[] = array(
+				'url_query' => 'config.php?display=conferences&extdisplay='.urlencode($result['exten']),
+				'description' => "Conference: ".$result['description'],
+			);
+		}
+		return $usage_arr;
+	}
+}
+
 /* 	Generates dialplan for conferences
 	We call this with retrieve_conf
 */
@@ -93,7 +110,12 @@ function conferences_get_config($engine) {
 					}
 					$roomuserpin = $room['userpin'];
 					$roomadminpin = $room['adminpin'];
-					$roomjoinmsg = (isset($room['joinmsg'])?$room['joinmsg']:'');
+
+					if (isset($room['joinmsg_id']) && $room['joinmsg_id'] != '') {
+						$roomjoinmsg = recordings_get_file($room['joinmsg_id']);
+					} else {
+						$roomjoinmsg = '';
+					}
 					
 					// Add optional hint
 					if ($amp_conf['USEDEVSTATE']) {
@@ -192,7 +214,7 @@ function conferences_list() {
 
 function conferences_get($account){
 	//get all the variables for the meetme
-	$results = sql("SELECT exten,options,userpin,adminpin,description,joinmsg FROM meetme WHERE exten = '$account'","getRow",DB_FETCHMODE_ASSOC);
+	$results = sql("SELECT exten,options,userpin,adminpin,description,joinmsg_id FROM meetme WHERE exten = '$account'","getRow",DB_FETCHMODE_ASSOC);
 	return $results;
 }
 
@@ -200,8 +222,8 @@ function conferences_del($account){
 	$results = sql("DELETE FROM meetme WHERE exten = \"$account\"","query");
 }
 
-function conferences_add($account,$name,$userpin,$adminpin,$options,$joinmsg=null){
+function conferences_add($account,$name,$userpin,$adminpin,$options,$joinmsg_id=null){
 	global $active_modules;
-	$results = sql("INSERT INTO meetme (exten,description,userpin,adminpin,options,joinmsg) values (\"$account\",\"$name\",\"$userpin\",\"$adminpin\",\"$options\",\"$joinmsg\")");
+	$results = sql("INSERT INTO meetme (exten,description,userpin,adminpin,options,joinmsg_id) values (\"$account\",\"$name\",\"$userpin\",\"$adminpin\",\"$options\",\"$joinmsg_id\")");
 }
 ?>
