@@ -255,10 +255,13 @@ if ($action == 'delete') {
 		</td>
 	</tr>
 
-	<tr>
-		<td colspan="2"><br><h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6></td>		
-	</tr>
 	</table>
+<?php
+	// implementation of module hook
+	// object was initialized in config.php
+	echo $module_hook->hookHtml;
+?>
+	<h6><input name="Submit" type="submit" value="<?php echo _("Submit Changes")?>" tabindex="<?php echo ++$tabindex;?>"></h6>
 <script language="javascript">
 <!--
 
