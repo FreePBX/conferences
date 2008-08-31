@@ -78,8 +78,17 @@ if ($action == 'delete') {
 	if ($extdisplay){ 
 		//get details for this meetme
 		$thisMeetme = conferences_get($extdisplay);
-		//create variables
-		extract($thisMeetme);
+		$options     = $thisMeetme['options'];
+		$userpin     = $thisMeetme['userpin'];
+		$adminpin    = $thisMeetme['adminpin'];
+		$description = $thisMeetme['description'];
+		$joinmsg_id  = $thisMeetme['joinmsg_id'];
+	} else {
+		$options     = "";
+		$userpin     = "";
+		$adminpin    = "";
+		$description = "";
+		$joinmsg_id  = "";
 	}
 
 ?>
@@ -123,20 +132,17 @@ if ($action == 'delete') {
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Conference Name:")?><span><?php echo _("Give this conference a brief name to help you identify it.")?></span></a></td>
-		<td><input type="text" name="name" value="<?php echo (isset($description) ? $description : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
+		<td><input type="text" name="name" value="<?php echo $description; ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("User PIN:")?><span><?php echo _("You can require callers to enter a password before they can enter this conference.<br><br>This setting is optional.<br><br>If either PIN is entered, the user will be prompted to enter a PIN.")?></span></a></td>
-		<td><input size="8" type="text" name="userpin" value="<?php echo (isset($userpin) ? $userpin : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
+		<td><input size="8" type="text" name="userpin" value="<?php echo $userpin; ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Admin PIN:")?><span><?php echo _("Enter a PIN number for the admin user.<br><br>This setting is optional unless the 'leader wait' option is in use, then this PIN will identify the leader.")?></span></a></td>
-		<td><input size="8" type="text" name="adminpin" value="<?php echo (isset($adminpin) ? $adminpin : ''); ?>" tabindex="<?php echo ++$tabindex;?>"></td>
+		<td><input size="8" type="text" name="adminpin" value="<?php echo $adminpin; ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 
-	<?php
-	$options = (isset($options) ? $options : "");
-	?>
 	<input type="hidden" name="options" value="<?php echo $options; ?>">
 	
 	<tr><td colspan="2"><br><h5><?php echo _("Conference Options")?><hr></h5></td></tr>
@@ -147,11 +153,10 @@ if ($action == 'delete') {
 			<select name="joinmsg_id" tabindex="<?php echo ++$tabindex;?>">
 			<?php
 				$tresults = recordings_list();
-				$default = (isset($joinmsg_id) ? $joinmsg_id : '');
 				echo '<option value="">'._("None")."</option>";
 				if (isset($tresults[0])) {
 					foreach ($tresults as $tresult) {
-						echo '<option value="'.$tresult['id'].'"'.($tresult['id'] == $default ? ' SELECTED' : '').'>'.$tresult['displayname']."</option>\n";
+						echo '<option value="'.$tresult['id'].'"'.($tresult['id'] == $joinmsg_id ? ' SELECTED' : '').'>'.$tresult['displayname']."</option>\n";
 					}
 				}
 			?>		
@@ -162,10 +167,7 @@ if ($action == 'delete') {
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Join Message:")?><span><?php echo _("Message to be played to the caller before joining the conference.<br><br>You must install and enable the \"Systems Recordings\" Module to edit this option")?></span></a></td>
 		<td>
-			<?php
-				$default = (isset($joinmsg_id) ? $joinmsg_id : '');
-			?>
-			<input type="hidden" name="joinmsg_id" value="<?php echo $default; ?>"><?php echo ($default != '' ? $default : 'None'); ?>
+			<input type="hidden" name="joinmsg_id" value="<?php echo $joinmsg_id; ?>"><?php echo ($joinmsg_id != '' ? $joinmsg_id : 'None'); ?>
 		</td>
 	</tr>
 <?php } ?>
