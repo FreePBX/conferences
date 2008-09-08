@@ -172,7 +172,7 @@ if ($action == 'delete') {
 	</tr>
 <?php } ?>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("Leader Wait:")?><span><?php echo _("wait until the conference leader (admin user) arrives before starting the conference")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Leader Wait:")?><span><?php echo _("Wait until the conference leader (admin user) arrives before starting the conference")?></span></a></td>
 		<td>
 			<select name="opt#w" tabindex="<?php echo ++$tabindex;?>">
 			<?php
