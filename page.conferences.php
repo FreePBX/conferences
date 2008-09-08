@@ -184,7 +184,7 @@ if ($action == 'delete') {
 		</td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("Quiet Mode:")?><span><?php echo _("quiet mode (do not play enter/leave sounds)")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Quiet Mode:")?><span><?php echo _("Quiet mode (do not play enter/leave sounds)")?></span></a></td>
 		<td>
 			<select name="opt#q" tabindex="<?php echo ++$tabindex;?>">
 			<?php
@@ -196,7 +196,7 @@ if ($action == 'delete') {
 		</td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("User Count:")?><span><?php echo _("announce user(s) count on joining conference")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("User Count:")?><span><?php echo _("Announce user(s) count on joining conference")?></span></a></td>
 		<td>
 			<select name="opt#c" tabindex="<?php echo ++$tabindex;?>">
 			<?php
@@ -208,7 +208,7 @@ if ($action == 'delete') {
 		</td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("User join/leave:")?><span><?php echo _("announce user join/leave")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("User join/leave:")?><span><?php echo _("Announce user join/leave")?></span></a></td>
 		<td>
 			<select name="opt#i" tabindex="<?php echo ++$tabindex;?>">
 			<?php
@@ -220,7 +220,7 @@ if ($action == 'delete') {
 		</td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("Music on Hold:")?><span><?php echo _("enable music on hold when the conference has a single caller")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Music on Hold:")?><span><?php echo _("Enable Music On Hold when the conference has a single caller")?></span></a></td>
 		<td>
 			<select name="opt#M" tabindex="<?php echo ++$tabindex;?>">
 			<?php
@@ -232,7 +232,7 @@ if ($action == 'delete') {
 		</td>
 	</tr>
 	<tr>
-		<td><a href="#" class="info"><?php echo _("Allow Menu:")?><span><?php echo _("present menu (user or admin) when '*' is received ('send' to menu)")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Allow Menu:")?><span><?php echo _("Present Menu (user or admin) when '*' is received ('send' to menu)")?></span></a></td>
 		<td>
 			<select name="opt#s" tabindex="<?php echo ++$tabindex;?>">
 			<?php
@@ -245,7 +245,7 @@ if ($action == 'delete') {
 	</tr>
 
 	<tr>
-		<td><a href="#" class="info"><?php echo _("Record Conference:")?><span><?php echo _("record the conference call")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Record Conference:")?><span><?php echo _("Record the conference call")?></span></a></td>
 		<td>
 			<select name="opt#r" tabindex="<?php echo ++$tabindex;?>">
 				<?php
