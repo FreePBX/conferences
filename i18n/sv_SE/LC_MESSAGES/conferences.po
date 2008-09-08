@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: FreePBX conferences\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-08 14:52+0200\n"
-"PO-Revision-Date: 2008-09-08 16:47+0100\n"
+"PO-Revision-Date: 2008-09-08 19:43+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -90,7 +90,7 @@ msgstr "Ta bort konferens %s"
 
 #: page.conferences.php:116
 msgid "Conflicting Extensions"
-msgstr "Konfliktande anknytningar"
+msgstr "Anknytningarna är i konflikt"
 
 #: page.conferences.php:124
 msgid "Edit Conference"
