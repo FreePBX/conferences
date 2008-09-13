@@ -124,6 +124,9 @@ function conferences_get_config($engine) {
 					// entry point
 					$ext->add($contextname, $roomnum, '', new ext_macro('user-callerid'));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_ROOMNUM',$roomnum));
+					if (strstr($room['options'],'r') !== false) {
+						$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_RECORDINGFILE','${ASTSPOOLDIR}/monitor/meetme-conf-rec-${MEETME_ROOMNUM}-${UNIQUEID}'));
+					}
 					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DIALSTATUS}" = "ANSWER"]',($roomuserpin == '' && $roomadminpin == '' ? 'USER' : 'READPIN')));			
 					$ext->add($contextname, $roomnum, '', new ext_answer(''));
 					$ext->add($contextname, $roomnum, '', new ext_wait(1));
