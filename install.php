@@ -38,7 +38,7 @@ $check = $db->getRow($sql, DB_FETCHMODE_ASSOC);
 if(DB::IsError($check)) {
 	//  Add recording_id field
 	//
-	out("migrating");
+	out(_("migrating"));
 	outn(_("adding joinmsg_id field.."));
   $sql = "ALTER TABLE meetme ADD joinmsg_id INTEGER";
   $result = $db->query($sql);
@@ -89,6 +89,6 @@ if(DB::IsError($check)) {
 	}
 
 } else {
-	out("already migrated");
+	out(_("already migrated"));
 }
 ?>

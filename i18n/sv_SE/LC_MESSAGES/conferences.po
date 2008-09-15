@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX conferences\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-08 14:52+0200\n"
-"PO-Revision-Date: 2008-09-08 19:43+0100\n"
+"POT-Creation-Date: 2008-09-15 14:45+0200\n"
+"PO-Revision-Date: 2008-09-15 15:26+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,13 +17,17 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: functions.inc.php:191
+#: functions.inc.php:194
 msgid "Conference: "
 msgstr "Konferens:"
 
 #: install.php:35
 msgid "Checking if recordings need migration.."
 msgstr "Kontrollerar om inspelningar behöver migreras.."
+
+#: install.php:41
+msgid "migrating"
+msgstr "migrerar"
 
 #: install.php:42
 msgid "adding joinmsg_id field.."
@@ -56,6 +60,10 @@ msgstr "kastar fältet joinmsg.."
 #: install.php:86
 msgid "no joinmsg field???"
 msgstr "inget fält som heter joinmsg???"
+
+#: install.php:92
+msgid "already migrated"
+msgstr "redan migrerad"
 
 #: page.conferences.php:22
 msgid "Warning! Extension"
@@ -154,8 +162,8 @@ msgid "Leader Wait:"
 msgstr "Vänta på ledaren:"
 
 #: page.conferences.php:175
-msgid "wait until the conference leader (admin user) arrives before starting the conference"
-msgstr "Vänta tills ledaren (administratörsanvändaren) ansluter innan konferensen startar"
+msgid "Wait until the conference leader (admin user) arrives before starting the conference"
+msgstr "Vänta till konferensledaren (adminanvändaren) ansluter innan konferensen startas"
 
 #: page.conferences.php:180
 #: page.conferences.php:192
@@ -240,4 +248,8 @@ msgstr "Skriv in ett giltigt konferensnamn"
 #: page.conferences.php:282
 msgid "You must set an admin PIN for the Conference Leader when selecting the leader wait option"
 msgstr "Du måste sätta en administratörs-PIN för konferensledaren när du väljer Vänta på ledare"
+
+#: module.xlm
+msgid "Conferences"
+msgstr "Konferenser"
 
