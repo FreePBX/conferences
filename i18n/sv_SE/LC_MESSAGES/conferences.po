@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: FreePBX conferences\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-09-15 14:45+0200\n"
-"PO-Revision-Date: 2008-09-15 15:26+0100\n"
+"PO-Revision-Date: 2008-09-17 09:54+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -134,7 +134,7 @@ msgstr "Administratörslösenord:"
 
 #: page.conferences.php:142
 msgid "Enter a PIN number for the admin user.<br><br>This setting is optional unless the 'leader wait' option is in use, then this PIN will identify the leader."
-msgstr "Skriv in ett lösenord (endast siffror) för administratören.<br>Denna inställning är valfri om inte 'Invänta ledare' är valt, då kommer dettaa lösenord att identifiera ledaren."
+msgstr "Skriv in ett lösenord (endast siffror) för administratören.<br>Denna inställning är valfri om inte 'Invänta ledare' är valt, då kommer detta lösenord att identifiera ledaren."
 
 #: page.conferences.php:148
 msgid "Conference Options"
@@ -163,7 +163,7 @@ msgstr "Vänta på ledaren:"
 
 #: page.conferences.php:175
 msgid "Wait until the conference leader (admin user) arrives before starting the conference"
-msgstr "Vänta till konferensledaren (adminanvändaren) ansluter innan konferensen startas"
+msgstr "Vänta till konferensledaren (administratören) ansluter innan konferensen startas"
 
 #: page.conferences.php:180
 #: page.conferences.php:192
