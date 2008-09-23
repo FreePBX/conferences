@@ -1,0 +1,254 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-09-17 11:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: functions.inc.php:194
+msgid "Conference: "
+msgstr ""
+
+#: install.php:35
+msgid "Checking if recordings need migration.."
+msgstr ""
+
+#: install.php:41
+msgid "migrating"
+msgstr ""
+
+#: install.php:42
+msgid "adding joinmsg_id field.."
+msgstr ""
+
+#: install.php:46 install.php:58 install.php:74
+msgid "fatal error"
+msgstr ""
+
+#: install.php:49 install.php:88
+msgid "ok"
+msgstr ""
+
+#: install.php:54
+msgid "migrate to recording ids.."
+msgstr ""
+
+#: install.php:78
+#, php-format
+msgid "migrated %s entries"
+msgstr ""
+
+#: install.php:82
+msgid "dropping joinmsg field.."
+msgstr ""
+
+#: install.php:86
+msgid "no joinmsg field???"
+msgstr ""
+
+#: install.php:92
+msgid "already migrated"
+msgstr ""
+
+#: page.conferences.php:22
+msgid "Warning! Extension"
+msgstr ""
+
+#: page.conferences.php:22
+msgid "is not allowed for your account."
+msgstr ""
+
+#: page.conferences.php:62 page.conferences.php:113 page.conferences.php:124
+msgid "Add Conference"
+msgstr ""
+
+#: page.conferences.php:76
+msgid "Conference"
+msgstr ""
+
+#: page.conferences.php:76
+msgid "deleted"
+msgstr ""
+
+#: page.conferences.php:96
+msgid "Conference:"
+msgstr ""
+
+#: page.conferences.php:99
+#, php-format
+msgid "Delete Conference %s"
+msgstr ""
+
+#: page.conferences.php:116
+msgid "Conflicting Extensions"
+msgstr ""
+
+#: page.conferences.php:124
+msgid "Edit Conference"
+msgstr ""
+
+#: page.conferences.php:129
+msgid "Conference Number:"
+msgstr ""
+
+#: page.conferences.php:129
+msgid "Use this number to dial into the conference."
+msgstr ""
+
+#: page.conferences.php:134
+msgid "Conference Name:"
+msgstr ""
+
+#: page.conferences.php:134
+msgid "Give this conference a brief name to help you identify it."
+msgstr ""
+
+#: page.conferences.php:138
+msgid "User PIN:"
+msgstr ""
+
+#: page.conferences.php:138
+msgid ""
+"You can require callers to enter a password before they can enter this "
+"conference.<br><br>This setting is optional.<br><br>If either PIN is "
+"entered, the user will be prompted to enter a PIN."
+msgstr ""
+
+#: page.conferences.php:142
+msgid "Admin PIN:"
+msgstr ""
+
+#: page.conferences.php:142
+msgid ""
+"Enter a PIN number for the admin user.<br><br>This setting is optional "
+"unless the 'leader wait' option is in use, then this PIN will identify the "
+"leader."
+msgstr ""
+
+#: page.conferences.php:148
+msgid "Conference Options"
+msgstr ""
+
+#: page.conferences.php:151 page.conferences.php:168
+msgid "Join Message:"
+msgstr ""
+
+#: page.conferences.php:151
+msgid ""
+"Message to be played to the caller before joining the conference.<br><br>To "
+"add additional recordings please use the \"System Recordings\" MENU to the "
+"left"
+msgstr ""
+
+#: page.conferences.php:156
+msgid "None"
+msgstr ""
+
+#: page.conferences.php:168
+msgid ""
+"Message to be played to the caller before joining the conference.<br><br>You "
+"must install and enable the \"Systems Recordings\" Module to edit this option"
+msgstr ""
+
+#: page.conferences.php:175
+msgid "Leader Wait:"
+msgstr ""
+
+#: page.conferences.php:175
+msgid ""
+"Wait until the conference leader (admin user) arrives before starting the "
+"conference"
+msgstr ""
+
+#: page.conferences.php:180 page.conferences.php:192 page.conferences.php:204
+#: page.conferences.php:216 page.conferences.php:228 page.conferences.php:240
+#: page.conferences.php:253
+msgid "No"
+msgstr ""
+
+#: page.conferences.php:181 page.conferences.php:193 page.conferences.php:205
+#: page.conferences.php:217 page.conferences.php:229 page.conferences.php:241
+#: page.conferences.php:254
+msgid "Yes"
+msgstr ""
+
+#: page.conferences.php:187
+msgid "Quiet Mode:"
+msgstr ""
+
+#: page.conferences.php:187
+msgid "Quiet mode (do not play enter/leave sounds)"
+msgstr ""
+
+#: page.conferences.php:199
+msgid "User Count:"
+msgstr ""
+
+#: page.conferences.php:199
+msgid "Announce user(s) count on joining conference"
+msgstr ""
+
+#: page.conferences.php:211
+msgid "User join/leave:"
+msgstr ""
+
+#: page.conferences.php:211
+msgid "Announce user join/leave"
+msgstr ""
+
+#: page.conferences.php:223
+msgid "Music on Hold:"
+msgstr ""
+
+#: page.conferences.php:223
+msgid "Enable Music On Hold when the conference has a single caller"
+msgstr ""
+
+#: page.conferences.php:235
+msgid "Allow Menu:"
+msgstr ""
+
+#: page.conferences.php:235
+msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
+msgstr ""
+
+#: page.conferences.php:248
+msgid "Record Conference:"
+msgstr ""
+
+#: page.conferences.php:248
+msgid "Record the conference call"
+msgstr ""
+
+#: page.conferences.php:266
+msgid "Submit Changes"
+msgstr ""
+
+#: page.conferences.php:280
+msgid "Please enter a valid Conference Number"
+msgstr ""
+
+#: page.conferences.php:281
+msgid "Please enter a valid Conference Name"
+msgstr ""
+
+#: page.conferences.php:282
+msgid ""
+"You must set an admin PIN for the Conference Leader when selecting the "
+"leader wait option"
+msgstr ""
+
+#: module.xml
+msgid "Conferences"
+msgstr ""
