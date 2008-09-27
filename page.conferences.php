@@ -11,11 +11,13 @@
 //MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //GNU General Public License for more details.
 
+$dispnum = "conferences"; //used for switch on config.php
 
 isset($_REQUEST['action'])?$action = $_REQUEST['action']:$action='';
 //the extension we are currently displaying
 isset($_REQUEST['extdisplay'])?$extdisplay=$_REQUEST['extdisplay']:$extdisplay='';
-$dispnum = "conferences"; //used for switch on config.php
+
+$account = isset($_REQUEST['account']) ? $_REQUEST['account'] : '';
 
 //check if the extension is within range for this user
 if (isset($account) && !checkRange($account)){
@@ -30,7 +32,7 @@ if (isset($account) && !checkRange($account)){
 			$usage_arr = framework_check_extension_usage($account);
 			if (!empty($usage_arr)) {
 				$conflict_url = framework_display_extension_usage_alert($usage_arr);
-			} elseif (conferences_add($_REQUEST['account'],$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id']) !== false) {
+			} elseif (conferences_add($account,$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id']) !== false) {
 				needreload();
 				redirect_standard();
 			}
@@ -41,8 +43,8 @@ if (isset($account) && !checkRange($account)){
 			redirect_standard();
 		break;
 		case "edit":  //just delete and re-add
-			conferences_del($_REQUEST['account']);
-			conferences_add($_REQUEST['account'],$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id']);
+			conferences_del($account);
+			conferences_add($account,$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id']);
 			needreload();
 			redirect_standard('extdisplay');
 		break;
