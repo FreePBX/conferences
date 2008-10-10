@@ -53,7 +53,7 @@ function conferences_getdestinfo($dest) {
 			return array();
 		} else {
 			//$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
-			return array('description' => 'Conference Room '.$exten.': '.$thisexten['description'],
+			return array('description' => sprintf(_("Conference Room %s : %s"),$exten,$thisexten['description']),
 			             'edit_url' => 'config.php?display=conferences&extdisplay='.urlencode($exten),
 								  );
 		}
@@ -72,7 +72,7 @@ function conferences_recordings_usage($recording_id) {
 		foreach ($results as $result) {
 			$usage_arr[] = array(
 				'url_query' => 'config.php?display=conferences&extdisplay='.urlencode($result['exten']),
-				'description' => "Conference: ".$result['description'],
+				'description' => sprintf(_("Conference: %s"),$result['description']),
 			);
 		}
 		return $usage_arr;

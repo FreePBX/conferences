@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX conferences\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-09-15 14:45+0200\n"
-"PO-Revision-Date: 2008-09-17 09:54+0100\n"
+"POT-Creation-Date: 2008-10-05 10:59+0200\n"
+"PO-Revision-Date: 2008-10-10 20:50+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -16,6 +16,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
+
+#: functions.inc.php:56
+#, php-format
+msgid "Conference Room %s : %s"
+msgstr "Konferensrum %s : %s"
+
+#: functions.inc.php:75
+#, php-format
+msgid "Conference: %s"
+msgstr "Konferens: %s"
 
 #: functions.inc.php:194
 msgid "Conference: "
@@ -65,191 +75,191 @@ msgstr "inget fält som heter joinmsg???"
 msgid "already migrated"
 msgstr "redan migrerad"
 
-#: page.conferences.php:22
+#: page.conferences.php:24
 msgid "Warning! Extension"
 msgstr "Varning! Anknytning"
 
-#: page.conferences.php:22
+#: page.conferences.php:24
 msgid "is not allowed for your account."
 msgstr "är inte tillåtet för ditt konto."
 
-#: page.conferences.php:62
-#: page.conferences.php:113
-#: page.conferences.php:124
+#: page.conferences.php:64
+#: page.conferences.php:115
+#: page.conferences.php:126
 msgid "Add Conference"
 msgstr "Lägg till konferens"
 
-#: page.conferences.php:76
+#: page.conferences.php:78
 msgid "Conference"
 msgstr "Konferens"
 
-#: page.conferences.php:76
+#: page.conferences.php:78
 msgid "deleted"
 msgstr "borttagen"
 
-#: page.conferences.php:96
+#: page.conferences.php:98
 msgid "Conference:"
 msgstr "Konferens:"
 
-#: page.conferences.php:99
+#: page.conferences.php:101
 #, php-format
 msgid "Delete Conference %s"
 msgstr "Ta bort konferens %s"
 
-#: page.conferences.php:116
+#: page.conferences.php:118
 msgid "Conflicting Extensions"
 msgstr "Anknytningarna är i konflikt"
 
-#: page.conferences.php:124
+#: page.conferences.php:126
 msgid "Edit Conference"
 msgstr "Redigera konferens"
 
-#: page.conferences.php:129
+#: page.conferences.php:131
 msgid "Conference Number:"
 msgstr "Konferensnummer:"
 
-#: page.conferences.php:129
+#: page.conferences.php:131
 msgid "Use this number to dial into the conference."
 msgstr "Använd detta nummer för att ringa till konferensen."
 
-#: page.conferences.php:134
+#: page.conferences.php:136
 msgid "Conference Name:"
 msgstr "Konferensnamn:"
 
-#: page.conferences.php:134
+#: page.conferences.php:136
 msgid "Give this conference a brief name to help you identify it."
 msgstr "Ge konferensen ett kortfattat namn."
 
-#: page.conferences.php:138
+#: page.conferences.php:140
 msgid "User PIN:"
 msgstr "Användarlösenord:"
 
-#: page.conferences.php:138
+#: page.conferences.php:140
 msgid "You can require callers to enter a password before they can enter this conference.<br><br>This setting is optional.<br><br>If either PIN is entered, the user will be prompted to enter a PIN."
 msgstr "Du kan kräva att uppringare anger ett lösenord innan de når konferensen.<br><br>Denna inställning är valfri.<br><br>Om ett lösenord (endast siffror) skrivs in får uppringaren en fråga om att mata in ett lösenord."
 
-#: page.conferences.php:142
+#: page.conferences.php:144
 msgid "Admin PIN:"
 msgstr "Administratörslösenord:"
 
-#: page.conferences.php:142
+#: page.conferences.php:144
 msgid "Enter a PIN number for the admin user.<br><br>This setting is optional unless the 'leader wait' option is in use, then this PIN will identify the leader."
 msgstr "Skriv in ett lösenord (endast siffror) för administratören.<br>Denna inställning är valfri om inte 'Invänta ledare' är valt, då kommer detta lösenord att identifiera ledaren."
 
-#: page.conferences.php:148
+#: page.conferences.php:150
 msgid "Conference Options"
 msgstr "Konferensval"
 
-#: page.conferences.php:151
-#: page.conferences.php:168
+#: page.conferences.php:153
+#: page.conferences.php:170
 msgid "Join Message:"
 msgstr "Anslutningsmeddelande:"
 
-#: page.conferences.php:151
+#: page.conferences.php:153
 msgid "Message to be played to the caller before joining the conference.<br><br>To add additional recordings please use the \"System Recordings\" MENU to the left"
 msgstr "Meddelande som ska spelas upp för uppringaren innan anslutning sker till konferensen.<br><br>För att lägga till fler inspelningar väljer du \"Systeminspelningar\" i menyn till vänster"
 
-#: page.conferences.php:156
+#: page.conferences.php:158
 msgid "None"
 msgstr "Inget"
 
-#: page.conferences.php:168
+#: page.conferences.php:170
 msgid "Message to be played to the caller before joining the conference.<br><br>You must install and enable the \"Systems Recordings\" Module to edit this option"
 msgstr "Meddelande som ska spelas upp för uppringaren innan anslutning sker till konferensen.<br><br>Du måste installera och aktivera modulen \"Systeminspelningar\" för att kunna redigera detta val"
 
-#: page.conferences.php:175
+#: page.conferences.php:177
 msgid "Leader Wait:"
 msgstr "Vänta på ledaren:"
 
-#: page.conferences.php:175
+#: page.conferences.php:177
 msgid "Wait until the conference leader (admin user) arrives before starting the conference"
 msgstr "Vänta till konferensledaren (administratören) ansluter innan konferensen startas"
 
-#: page.conferences.php:180
-#: page.conferences.php:192
-#: page.conferences.php:204
-#: page.conferences.php:216
-#: page.conferences.php:228
-#: page.conferences.php:240
-#: page.conferences.php:253
+#: page.conferences.php:182
+#: page.conferences.php:194
+#: page.conferences.php:206
+#: page.conferences.php:218
+#: page.conferences.php:230
+#: page.conferences.php:242
+#: page.conferences.php:255
 msgid "No"
 msgstr "Nej"
 
-#: page.conferences.php:181
-#: page.conferences.php:193
-#: page.conferences.php:205
-#: page.conferences.php:217
-#: page.conferences.php:229
-#: page.conferences.php:241
-#: page.conferences.php:254
+#: page.conferences.php:183
+#: page.conferences.php:195
+#: page.conferences.php:207
+#: page.conferences.php:219
+#: page.conferences.php:231
+#: page.conferences.php:243
+#: page.conferences.php:256
 msgid "Yes"
 msgstr "Ja"
 
-#: page.conferences.php:187
+#: page.conferences.php:189
 msgid "Quiet Mode:"
 msgstr "Tyst läge:"
 
-#: page.conferences.php:187
+#: page.conferences.php:189
 msgid "Quiet mode (do not play enter/leave sounds)"
 msgstr "Tyst läge (spela inte upp ljud för anslut/lämna)"
 
-#: page.conferences.php:199
+#: page.conferences.php:201
 msgid "User Count:"
 msgstr "Räkna användare:"
 
-#: page.conferences.php:199
+#: page.conferences.php:201
 msgid "Announce user(s) count on joining conference"
 msgstr "Berätta antalet användare när anslutning till konferensen sker"
 
-#: page.conferences.php:211
+#: page.conferences.php:213
 msgid "User join/leave:"
 msgstr "Användare ansluter/lämnar:"
 
-#: page.conferences.php:211
+#: page.conferences.php:213
 msgid "Announce user join/leave"
 msgstr "Annonsera när användare ansluter/lämnar"
 
-#: page.conferences.php:223
+#: page.conferences.php:225
 msgid "Music on Hold:"
 msgstr "Pausmusik:"
 
-#: page.conferences.php:223
+#: page.conferences.php:225
 msgid "Enable Music On Hold when the conference has a single caller"
 msgstr "Aktivera pausmusik när det endast är en användare i konferensen"
 
-#: page.conferences.php:235
+#: page.conferences.php:237
 msgid "Allow Menu:"
 msgstr "Tillåt meny:"
 
-#: page.conferences.php:235
+#: page.conferences.php:237
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
 msgstr "Ge tillgång till en meny (användar eller administratörs) när '*' trycks på telefonen"
 
-#: page.conferences.php:248
+#: page.conferences.php:250
 msgid "Record Conference:"
 msgstr "Spela in konferens:"
 
-#: page.conferences.php:248
+#: page.conferences.php:250
 msgid "Record the conference call"
 msgstr "Välj om konferensen ska spelas in"
 
-#: page.conferences.php:266
+#: page.conferences.php:268
 msgid "Submit Changes"
 msgstr "Spara ändringar"
 
-#: page.conferences.php:280
+#: page.conferences.php:282
 msgid "Please enter a valid Conference Number"
 msgstr "Skriv in ett giltig konferensnummer"
 
-#: page.conferences.php:281
+#: page.conferences.php:283
 msgid "Please enter a valid Conference Name"
 msgstr "Skriv in ett giltigt konferensnamn"
 
-#: page.conferences.php:282
+#: page.conferences.php:284
 msgid "You must set an admin PIN for the Conference Leader when selecting the leader wait option"
 msgstr "Du måste sätta en administratörs-PIN för konferensledaren när du väljer Vänta på ledare"
 
-#: module.xlm
+#: module.xml
 msgid "Conferences"
 msgstr "Konferenser"
 
