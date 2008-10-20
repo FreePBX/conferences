@@ -126,9 +126,9 @@ msgstr ""
 msgid "Leader Wait:"
 msgstr "Ждать организатора?"
 
-#: page.conferences.php:152
+#: page.conferences.php:175
 msgid ""
-"wait until the conference leader (admin user) arrives before starting the "
+"Wait until the conference leader (admin user) arrives before starting the "
 "conference"
 msgstr ""
 "Ждать организатора конференции (пользователь администратор) пока он не подсоединится, чтобы "
@@ -149,7 +149,7 @@ msgid "Quiet Mode:"
 msgstr "Тихий режим?"
 
 #: page.conferences.php:164
-msgid "quiet mode (do not play enter/leave sounds)"
+msgid "Quiet mode (do not play enter/leave sounds)"
 msgstr ""
 "Тихий режим (не воспроизводятся сообщения о том кто вошёл или вышел из конференции)"
 
@@ -158,7 +158,7 @@ msgid "User Count:"
 msgstr "Количество участников?"
 
 #: page.conferences.php:176
-msgid "announce user(s) count on joining conference"
+msgid "Announce user(s) count on joining conference"
 msgstr "Анонсировать количество участников конференции при подсоединении?"
 
 #: page.conferences.php:188
@@ -166,7 +166,7 @@ msgid "User join/leave:"
 msgstr "Участник подсоединился/отключился?"
 
 #: page.conferences.php:188
-msgid "announce user join/leave"
+msgid "Announce user join/leave"
 msgstr "Анонсировать подсоединение/отключение участников?"
 
 #: page.conferences.php:200
@@ -174,23 +174,21 @@ msgid "Music on Hold:"
 msgstr "Музыка в ожидании?"
 
 #: page.conferences.php:200
-msgid "enable music on hold when the conference has a single caller"
-msgstr ""
-"Использовать музыку в ожидании, если в конференции пока один участник?"
+msgid "Enable Music On Hold when the conference has a single caller"
+msgstr "Использовать музыку в ожидании, если в конференции пока один участник?"
 
 #: page.conferences.php:212
 msgid "Allow Menu:"
 msgstr "Разрешить меню?"
 
 #: page.conferences.php:212
-msgid "present menu (user or admin) when '*' is received ('send' to menu)"
-msgstr ""
-"Предоставить доступ в меню (участнику или администратору) при нажатии '*'?" 
+msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
+msgstr "Предоставить доступ в меню (участнику или администратору) при нажатии '*'?" 
 
 msgid "Record Conference:"
 msgstr "Записывать конференцию?"
 
-msgid "record the conference call"
+msgid "Record the conference call"
 msgstr "Записывать содержание конференции?"
 
 msgid "Submit Changes"
