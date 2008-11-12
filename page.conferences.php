@@ -77,7 +77,7 @@ if (isset($meetmes)) {
 if ($action == 'delete') {
 	echo '<br><h3>'._("Conference").' '.$extdisplay.' '._("deleted").'!</h3><br><br><br><br><br><br><br><br>';
 } else {
-	if ($extdisplay){ 
+	if ($extdisplay != ""){ 
 		//get details for this meetme
 		$thisMeetme = conferences_get($extdisplay);
 		$options     = $thisMeetme['options'];
@@ -94,7 +94,7 @@ if ($action == 'delete') {
 	}
 
 ?>
-<?php		if ($extdisplay){ ?>
+<?php		if ($extdisplay != ""){ ?>
 	<h2><?php echo _("Conference:")." ". $extdisplay; ?></h2>
 <?php
 					$delURL = $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&action=delete';
@@ -123,9 +123,9 @@ if ($action == 'delete') {
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">
 	<input type="hidden" name="action" value="<?php echo ($extdisplay ? 'edit' : 'add') ?>">
 	<table>
-	<tr><td colspan="2"><h5><?php echo ($extdisplay ? _("Edit Conference") : _("Add Conference")) ?><hr></h5></td></tr>
+	<tr><td colspan="2"><h5><?php echo ($extdisplay != "" ? _("Edit Conference") : _("Add Conference")) ?><hr></h5></td></tr>
 	<tr>
-<?php		if ($extdisplay){ ?>
+<?php		if ($extdisplay != ""){ ?>
 		<input type="hidden" name="account" value="<?php echo $extdisplay; ?>">
 <?php		} else { ?>
 		<td><a href="#" class="info"><?php echo _("Conference Number:")?><span><?php echo _("Use this number to dial into the conference.")?></span></a></td>
