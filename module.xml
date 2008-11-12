@@ -34,6 +34,6 @@
 	<menuitems>
 		<conferences>Conferences</conferences>
 	</menuitems>
-	<location>release/2.5/conferences-2.5.1.6.tgz</location>
-	<md5sum>2f3fc653f48441a162c3c79220ba0daa</md5sum>
+	<location>release/2.6/conferences-2.5.1.6.tgz</location>
+	<md5sum>c38d52f68e368755593a5b4619755376</md5sum>
 </module>
