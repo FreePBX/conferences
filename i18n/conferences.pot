@@ -258,3 +258,7 @@ msgid ""
 "You must set an admin PIN for the Conference Leader when selecting the "
 "leader wait option"
 msgstr ""
+
+#: module.xml
+msgid "Conferences"
+msgstr ""
