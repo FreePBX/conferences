@@ -254,5 +254,5 @@ msgstr "Vous devez créer un code PIN organisateur quand cette option est sélec
 
 #: module.xml
 msgid "Conferences"
-msgstr ""
+msgstr "Conférences"
 
