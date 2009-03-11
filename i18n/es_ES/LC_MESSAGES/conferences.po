@@ -1,25 +1,22 @@
-# translation of conferences.po to
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: conferences\n"
+"Project-Id-Version: FreePBX - módulo conferences module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2008-10-05 10:59+0200\n"
-"PO-Revision-Date: 2008-10-30 19:20+0100\n"
-"Last-Translator: \n"
-"Language-Team:  <es@li.org>\n"
+"PO-Revision-Date: 2009-01-23 11:38+0100\n"
+"Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
+"Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
 
 #: functions.inc.php:56
 #, php-format
 msgid "Conference Room %s : %s"
-msgstr "Sala de conferencias %s : %s"
+msgstr "Sala de conferencia %s: %s"
 
 #: functions.inc.php:75
 #, php-format
@@ -28,60 +25,65 @@ msgstr "Conferencia: %s"
 
 #: functions.inc.php:194
 msgid "Conference: "
-msgstr "Conferencia: "
+msgstr "Conferencia:"
 
 #: install.php:35
 msgid "Checking if recordings need migration.."
-msgstr "Marcar si la grabaci&oacute;n necesita migraci&oacute;n.."
+msgstr "Comprobando si las grabaciones necesitan migrarse..."
 
 #: install.php:41
 msgid "migrating"
-msgstr "migrando"
+msgstr "Migrando"
 
 #: install.php:42
 msgid "adding joinmsg_id field.."
-msgstr "a&ntilde;adiendo campo joinmsg_id.."
+msgstr "Añadiendo campo joinmsgid"
 
-#: install.php:46 install.php:58 install.php:74
+#: install.php:46
+#: install.php:58
+#: install.php:74
 msgid "fatal error"
-msgstr "error fatal"
+msgstr "Error fatal"
 
-#: install.php:49 install.php:88
+#: install.php:49
+#: install.php:88
 msgid "ok"
-msgstr "ok"
+msgstr "Correcto"
 
 #: install.php:54
 msgid "migrate to recording ids.."
-msgstr "migrar a la grabaci&oacute;n ids.."
+msgstr "Migrando a identificadores de grabación..."
 
 #: install.php:78
 #, php-format
 msgid "migrated %s entries"
-msgstr "migradas %s entradas"
+msgstr "Migrados %s elementos"
 
 #: install.php:82
 msgid "dropping joinmsg field.."
-msgstr ""
+msgstr "Eliminando campo joinmsg..."
 
 #: install.php:86
 msgid "no joinmsg field???"
-msgstr "no hay campo joinmsg?"
+msgstr "No existe el campo joinmsg"
 
 #: install.php:92
 msgid "already migrated"
-msgstr "ya migrado"
+msgstr "Ya se ha migrado"
 
 #: page.conferences.php:24
 msgid "Warning! Extension"
-msgstr "Advertencia! Extensi&oacute;n"
+msgstr "¡Atención! La extensión"
 
 #: page.conferences.php:24
 msgid "is not allowed for your account."
-msgstr "no te est&aacute; permitido."
+msgstr "no está autorizada en su cuenta"
 
-#: page.conferences.php:64 page.conferences.php:115 page.conferences.php:126
+#: page.conferences.php:64
+#: page.conferences.php:115
+#: page.conferences.php:126
 msgid "Add Conference"
-msgstr "A&ntilde;adir conferencia"
+msgstr "Añadir conferencia"
 
 #: page.conferences.php:78
 msgid "Conference"
@@ -89,7 +91,7 @@ msgstr "Conferencia"
 
 #: page.conferences.php:78
 msgid "deleted"
-msgstr "borrado"
+msgstr "Eliminado"
 
 #: page.conferences.php:98
 msgid "Conference:"
@@ -98,11 +100,11 @@ msgstr "Conferencia:"
 #: page.conferences.php:101
 #, php-format
 msgid "Delete Conference %s"
-msgstr "Borrar conferencia %s"
+msgstr "Eliminar conferencia %s"
 
 #: page.conferences.php:118
 msgid "Conflicting Extensions"
-msgstr "Extensiones de conflicto"
+msgstr "Extensiones en conflicto"
 
 #: page.conferences.php:126
 msgid "Edit Conference"
@@ -110,11 +112,11 @@ msgstr "Editar conferencia"
 
 #: page.conferences.php:131
 msgid "Conference Number:"
-msgstr "N&uacute;mero de la conferencia:"
+msgstr "Número de conferencia"
 
 #: page.conferences.php:131
 msgid "Use this number to dial into the conference."
-msgstr "Utilizar este n&uacute;mero para acceder a la conferencia."
+msgstr "Use este número para llamar a la conferencia."
 
 #: page.conferences.php:136
 msgid "Conference Name:"
@@ -122,76 +124,72 @@ msgstr "Nombre de la conferencia:"
 
 #: page.conferences.php:136
 msgid "Give this conference a brief name to help you identify it."
-msgstr "De un nombre a la conferencia que te ayude a identificarla."
+msgstr "Asigne a esta conferencia un nombre descriptivo para ayudarle a identificarla."
 
 #: page.conferences.php:140
 msgid "User PIN:"
-msgstr "PIN del usuario:"
+msgstr "PIN de usuario:"
 
 #: page.conferences.php:140
-msgid ""
-"You can require callers to enter a password before they can enter this "
-"conference.<br><br>This setting is optional.<br><br>If either PIN is "
-"entered, the user will be prompted to enter a PIN."
-msgstr "Puedes solicitar a las personas que llaman que introduzcan una contrase&ntilde;a para poder acceder a la conferencia.<br><br>Este campo es opcional.<br><br>Si un PIN es puesto, al usuario se le solicitar&aacute; que introduzca un PIN."
+msgid "You can require callers to enter a password before they can enter this conference.<br><br>This setting is optional.<br><br>If either PIN is entered, the user will be prompted to enter a PIN."
+msgstr "Puede solicitar a los usuarios que introduzcan una contraseña antes de que puedan entrar a esta conferencia.<br/><br/>Este parámetro es opcional.<br>7<br/>Si se indica un valor en este campo, se le solicitará al usuario que introduzca el PIN."
 
 #: page.conferences.php:144
 msgid "Admin PIN:"
-msgstr "PIN del administrador:"
+msgstr "PIN de administración:"
 
 #: page.conferences.php:144
-msgid ""
-"Enter a PIN number for the admin user.<br><br>This setting is optional "
-"unless the 'leader wait' option is in use, then this PIN will identify the "
-"leader."
-msgstr "Establece un n&uacute;mero PIN para el administrador.<br><br>Este campo es opcional aunque si la opci&oacute;n  \"Esperar al lider\" est&aacute; activada, el uso del PIN permite identificar al lider."
+msgid "Enter a PIN number for the admin user.<br><br>This setting is optional unless the 'leader wait' option is in use, then this PIN will identify the leader."
+msgstr "Introduzca un PIN para el administrador.<br/><br/>Este parámetro es opcional a menos que se seleccione la opción 'Esperar al administrador'."
 
 #: page.conferences.php:150
 msgid "Conference Options"
-msgstr "Opciones de la conferencia"
-
-#: page.conferences.php:153 page.conferences.php:170
-msgid "Join Message:"
-msgstr "Mensaje de incorporaci&oacute;n:"
+msgstr "Opciones de conferencia"
 
 #: page.conferences.php:153
-msgid ""
-"Message to be played to the caller before joining the conference.<br><br>To "
-"add additional recordings please use the \"System Recordings\" MENU to the "
-"left"
-msgstr "Mensaje que se reproducir&aacute; antes de que la persona que llama se incorpor&eacute; a la conferencia.<br><br>Para a&ntilde;adir una grabaci&oacute;n adicional, por favor, utiliza la opci/oacute;n \"Grabaciones del sistema\" del MEN&Uacute; de la izquierda"
+#: page.conferences.php:170
+msgid "Join Message:"
+msgstr "Mensaje de bienvenida:"
+
+#: page.conferences.php:153
+msgid "Message to be played to the caller before joining the conference.<br><br>To add additional recordings please use the \"System Recordings\" MENU to the left"
+msgstr "Mensaje que se reproducirá cuando un usuario se una a la conferencia.<br/><br/>Para añadir más grabaciones, use la opción 'Grabaciones del sistema' del menú de la izquierad."
 
 #: page.conferences.php:158
 msgid "None"
-msgstr "Nada"
+msgstr "Ninguno"
 
 #: page.conferences.php:170
-msgid ""
-"Message to be played to the caller before joining the conference.<br><br>You "
-"must install and enable the \"Systems Recordings\" Module to edit this option"
-msgstr "Mensaje que se reproducir&aacute; antes de que la persona que llama se incorpor&eacute; a la conferencia.<br><br>Debes instalar y habilitar el m&oacute;dulo \"Grabaciones del sistema\" para modificar esta opci&oacute;"
+msgid "Message to be played to the caller before joining the conference.<br><br>You must install and enable the \"Systems Recordings\" Module to edit this option"
+msgstr "ensaje que se reproducirá cuando un usuario se una a la conferencia.<br/><br/>Debe tener instalado y habilitado el módulo 'Grabaciones del sistema' para editar esta opción."
 
 #: page.conferences.php:177
 msgid "Leader Wait:"
-msgstr "Esperar al lider:"
+msgstr "Esperar al administrador:"
 
 #: page.conferences.php:177
-msgid ""
-"Wait until the conference leader (admin user) arrives before starting the "
-"conference"
-msgstr "Espera hasta que el lider de la conferencia (usuario administrador) llegue antes de empezar la conferencia"
+msgid "Wait until the conference leader (admin user) arrives before starting the conference"
+msgstr "Esperar hasta que el administrador se una para iniciar la conferencia."
 
-#: page.conferences.php:182 page.conferences.php:194 page.conferences.php:206
-#: page.conferences.php:218 page.conferences.php:230 page.conferences.php:242
+#: page.conferences.php:182
+#: page.conferences.php:194
+#: page.conferences.php:206
+#: page.conferences.php:218
+#: page.conferences.php:230
+#: page.conferences.php:242
 #: page.conferences.php:255
 msgid "No"
 msgstr "No"
 
-#: page.conferences.php:183 page.conferences.php:195 page.conferences.php:207
-#: page.conferences.php:219 page.conferences.php:231 page.conferences.php:243
+#: page.conferences.php:183
+#: page.conferences.php:195
+#: page.conferences.php:207
+#: page.conferences.php:219
+#: page.conferences.php:231
+#: page.conferences.php:243
 #: page.conferences.php:256
 msgid "Yes"
-msgstr "S&iacute;"
+msgstr "Sí"
 
 #: page.conferences.php:189
 msgid "Quiet Mode:"
@@ -199,47 +197,47 @@ msgstr "Modo silencioso:"
 
 #: page.conferences.php:189
 msgid "Quiet mode (do not play enter/leave sounds)"
-msgstr "Modo silencioso (no reproduce sonidos de etrar/salir)"
+msgstr "Modo silencioso (no reproducir sonidos cuando alguien entre o salga de la conferencia)"
 
 #: page.conferences.php:201
 msgid "User Count:"
-msgstr "Contador asistentes:"
+msgstr "Contador de usuarios:"
 
 #: page.conferences.php:201
 msgid "Announce user(s) count on joining conference"
-msgstr "Anunciar aistente(s) al incorporarse a la conferencia"
+msgstr "Dice el número de usuarios de la conferencia al entrar a la misma"
 
 #: page.conferences.php:213
 msgid "User join/leave:"
-msgstr "Usuario se incorpora/deja"
+msgstr "Entrada/Salida de usuario:"
 
 #: page.conferences.php:213
 msgid "Announce user join/leave"
-msgstr "Anunciar si un usuario se incorpora/abandona"
+msgstr "Anuncia la entrada o salida de un usuario de la conferencia"
 
 #: page.conferences.php:225
 msgid "Music on Hold:"
-msgstr "M&uacute;sica en espera:"
+msgstr "Música en espera:"
 
 #: page.conferences.php:225
 msgid "Enable Music On Hold when the conference has a single caller"
-msgstr "Habilitar la m&uacute;sica en espera cuando en la conferencia haya un solo participante"
+msgstr "Habilita la música en espera mientras la conferencia sólo tiene un asistente"
 
 #: page.conferences.php:237
 msgid "Allow Menu:"
-msgstr "Permitir men&uacute;:"
+msgstr "Permitir menú:"
 
 #: page.conferences.php:237
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
-msgstr "Permitir el acceso al men&uacute; (usuario o administrador) pulsando \"*\""
+msgstr "Permitir el acceso al menú al usuario o al administrador cuando se se pulsa la tecla '*'."
 
 #: page.conferences.php:250
 msgid "Record Conference:"
-msgstr "Grabar la conferencia:"
+msgstr "Grabar conferencias:"
 
 #: page.conferences.php:250
 msgid "Record the conference call"
-msgstr "Grabar las llamadas de la conferencia"
+msgstr "Graba las llamadas de la conferencia."
 
 #: page.conferences.php:268
 msgid "Submit Changes"
@@ -247,15 +245,13 @@ msgstr "Enviar cambios"
 
 #: page.conferences.php:282
 msgid "Please enter a valid Conference Number"
-msgstr "Por favor, introduce un n&uacute;mero v&aacutelido para la conferencia"
+msgstr "Por favor, introduzca un número de conferencia válido"
 
 #: page.conferences.php:283
 msgid "Please enter a valid Conference Name"
-msgstr "Por favor, introduce un nombre v&aacute;lido para la conferencia"
+msgstr "Por favor, introduzca un nombre de conferencia válido"
 
 #: page.conferences.php:284
-msgid ""
-"You must set an admin PIN for the Conference Leader when selecting the "
-"leader wait option"
-msgstr "Debes poner un PIN para el lider de la conferencia cuando marques la opci&oacute;n esperar al lider"
+msgid "You must set an admin PIN for the Conference Leader when selecting the leader wait option"
+msgstr "Debe establecer un PIN de administración para el administrador de la conferencia cuando se seleccione la opción 'Esperar al administrador'"
 
