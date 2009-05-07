@@ -1,11 +1,12 @@
 <module>
 	<rawname>conferences</rawname>
 	<name>Conferences</name>
-	<version>2.5.1.6</version>
+	<version>2.6.0.0</version>
 	<type>setup</type>
 	<category>Internal Options &amp; Configuration</category>
 	<description>Allow creation of conference rooms (meet-me) where multiple people can talk together.</description>
 	<changelog>
+		*2.6.0.0* #3392, localizations
 		*2.5.1.6* #3392 and some localizations
 		*2.5.1.5* localization strings enclosed
 		*2.5.1.4* #3237
@@ -34,6 +35,6 @@
 	<menuitems>
 		<conferences>Conferences</conferences>
 	</menuitems>
-	<location>release/2.6/conferences-2.5.1.6.tgz</location>
-	<md5sum>c38d52f68e368755593a5b4619755376</md5sum>
+	<location>release/2.6/conferences-2.6.0.0.tgz</location>
+	<md5sum>41a47724ec8a884d5ceee6d629c55ffc</md5sum>
 </module>
