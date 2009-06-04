@@ -12,6 +12,7 @@
 //GNU General Public License for more details.
 
 $dispnum = "conferences"; //used for switch on config.php
+$tabindex = 0;
 
 isset($_REQUEST['action'])?$action = $_REQUEST['action']:$action='';
 //the extension we are currently displaying
