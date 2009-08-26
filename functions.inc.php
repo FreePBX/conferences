@@ -108,6 +108,10 @@ function conferences_get_config($engine) {
 					if (version_compare($version, "1.4",">=")) {
 						$roomoptions = str_replace('i','I',$roomoptions);
 					}
+					if (version_compare($version, "1.4","lt")) {
+						$roomoptions = str_replace('o','',$roomoptions);
+						$roomoptions = str_replace('T','',$roomoptions);
+					}
 					$roomuserpin = $room['userpin'];
 					$roomadminpin = $room['adminpin'];
 

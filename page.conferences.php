@@ -186,6 +186,46 @@ if ($action == 'delete') {
 			</select>		
 		</td>
 	</tr>
+
+<?php
+$engineinfo = engine_getinfo();
+$astver =  $engineinfo['version'];
+if (version_compare($astver, '1.4', 'ge')) {
+?>
+	<tr>
+		<td><a href="#" class="info"><?php echo _("Talker Optimization:")?><span><?php echo _("Turns on talker optimization. With talker optimization, Asterisk treats talkers who
+aren’t speaking as being muted, meaning that no encoding is done on transmission
+and that received audio that is not registered as talking is omitted, causing no
+buildup in background noise.")?></span></a></td>
+		<td>
+			<select name="opt#o">
+			<?php
+				$optselect = strpos($options, "o");
+				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
+				echo '<option value="o"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
+			?>		
+			</select>		
+		</td>
+	</tr>
+
+
+	<tr>
+		<td><a href="#" class="info"><?php echo _("Talker Detection:")?><span><?php echo _("Sets talker detection. Asterisk will sends events on the Manager Interface identifying
+the channel that is talking. The talker will also be identified on the output of
+the meetme list CLI command.")?></span></a></td>
+		<td>
+			<select name="opt#T">
+			<?php
+				$optselect = strpos($options, "T");
+				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
+				echo '<option value="T"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
+			?>		
+			</select>		
+		</td>
+	</tr>
+<?php
+}
+?>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Quiet Mode:")?><span><?php echo _("Quiet mode (do not play enter/leave sounds)")?></span></a></td>
 		<td>
