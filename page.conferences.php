@@ -194,7 +194,7 @@ if (version_compare($astver, '1.4', 'ge')) {
 ?>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Talker Optimization:")?><span><?php echo _("Turns on talker optimization. With talker optimization, Asterisk treats talkers who
-aren’t speaking as being muted, meaning that no encoding is done on transmission
+are not speaking as being muted, meaning that no encoding is done on transmission
 and that received audio that is not registered as talking is omitted, causing no
 buildup in background noise.")?></span></a></td>
 		<td>
