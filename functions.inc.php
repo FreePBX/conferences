@@ -94,6 +94,7 @@ function conferences_get_config($engine) {
 			if(is_array($conflist = conferences_list())) {
 				
 				// Start the conference
+				$ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','SetMusicOnHold','${MEETME_MUSIC}'));
 				$ext->add($contextname, 'STARTMEETME', '', new ext_meetme('${MEETME_ROOMNUM}','${MEETME_OPTS}','${PIN}'));
 				$ext->add($contextname, 'STARTMEETME', '', new ext_hangup(''));
 				
@@ -114,7 +115,11 @@ function conferences_get_config($engine) {
 					}
 					$roomuserpin = $room['userpin'];
 					$roomadminpin = $room['adminpin'];
-
+					if(isset($room['music']) && $room['music'] !='' && $room['music']!='inherit') {
+            $music = $room['music'];
+          } else {
+						$music='${MOHCLASS}'; // inherit channel moh class
+          }
 					if (isset($room['joinmsg_id']) && $room['joinmsg_id'] != '') {
 						$roomjoinmsg = recordings_get_file($room['joinmsg_id']);
 					} else {
@@ -128,6 +133,7 @@ function conferences_get_config($engine) {
 					// entry point
 					$ext->add($contextname, $roomnum, '', new ext_macro('user-callerid'));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_ROOMNUM',$roomnum));
+					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_MUSIC',$music));
 					if (strstr($room['options'],'r') !== false) {
 						$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_RECORDINGFILE','${ASTSPOOLDIR}/monitor/meetme-conf-rec-${MEETME_ROOMNUM}-${UNIQUEID}'));
 					}
@@ -220,17 +226,27 @@ function conferences_list() {
 }
 
 function conferences_get($account){
+  global $db;
 	//get all the variables for the meetme
-	$results = sql("SELECT exten,options,userpin,adminpin,description,joinmsg_id FROM meetme WHERE exten = '$account'","getRow",DB_FETCHMODE_ASSOC);
+  $results = sql("SELECT exten,options,userpin,adminpin,description,joinmsg_id,music FROM meetme WHERE exten = '".$db->escapeSimple($account)."'","getRow",DB_FETCHMODE_ASSOC);
 	return $results;
 }
 
 function conferences_del($account){
-	$results = sql("DELETE FROM meetme WHERE exten = \"$account\"","query");
+  global $db;
+  $results = sql("DELETE FROM meetme WHERE exten = '".$db->escapeSimple($account)."'","query");
 }
 
-function conferences_add($account,$name,$userpin,$adminpin,$options,$joinmsg_id=null){
+function conferences_add($account,$name,$userpin,$adminpin,$options,$joinmsg_id=null,$music=''){
 	global $active_modules;
-	$results = sql("INSERT INTO meetme (exten,description,userpin,adminpin,options,joinmsg_id) values (\"$account\",\"$name\",\"$userpin\",\"$adminpin\",\"$options\",\"$joinmsg_id\")");
+  global $db;
+  $account    = $db->escapeSimple($account);
+  $name       = $db->escapeSimple($name);
+  $userpin    = $db->escapeSimple($userpin);
+  $adminpin   = $db->escapeSimple($adminpin);
+  $options    = $db->escapeSimple($options);
+  $joinmsg_id = $db->escapeSimple($joinmsg_id);
+  $music      = $db->escapeSimple($music);
+	$results = sql("INSERT INTO meetme (exten,description,userpin,adminpin,options,joinmsg_id,music) values (\"$account\",\"$name\",\"$userpin\",\"$adminpin\",\"$options\",\"$joinmsg_id\",\"$music\")");
 }
 ?>

@@ -19,6 +19,7 @@ isset($_REQUEST['action'])?$action = $_REQUEST['action']:$action='';
 isset($_REQUEST['extdisplay'])?$extdisplay=$_REQUEST['extdisplay']:$extdisplay='';
 
 $account = isset($_REQUEST['account']) ? $_REQUEST['account'] : '';
+$music = isset($_REQUEST['music']) ? $_REQUEST['music'] : '';
 
 //check if the extension is within range for this user
 if (isset($account) && !checkRange($account)){
@@ -33,7 +34,7 @@ if (isset($account) && !checkRange($account)){
 			$usage_arr = framework_check_extension_usage($account);
 			if (!empty($usage_arr)) {
 				$conflict_url = framework_display_extension_usage_alert($usage_arr);
-			} elseif (conferences_add($account,$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id']) !== false) {
+			} elseif (conferences_add($account,$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id'],$music) !== false) {
 				needreload();
 				redirect_standard();
 			}
@@ -45,7 +46,7 @@ if (isset($account) && !checkRange($account)){
 		break;
 		case "edit":  //just delete and re-add
 			conferences_del($account);
-			conferences_add($account,$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id']);
+			conferences_add($account,$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id'],$music);
 			needreload();
 			redirect_standard('extdisplay');
 		break;
@@ -86,12 +87,14 @@ if ($action == 'delete') {
 		$adminpin    = $thisMeetme['adminpin'];
 		$description = $thisMeetme['description'];
 		$joinmsg_id  = $thisMeetme['joinmsg_id'];
+		$music       = $thisMeetme['music'];
 	} else {
 		$options     = "";
 		$userpin     = "";
 		$adminpin    = "";
 		$description = "";
 		$joinmsg_id  = "";
+		$music       = "";
 	}
 
 ?>
@@ -274,6 +277,32 @@ the meetme list CLI command.")?></span></a></td>
 			</select>		
 		</td>
 	</tr>
+
+<?php if(function_exists('music_list')) { //only include if music module is enabled?>
+        <tr>
+                <td><a href="#" class="info"><?php echo _("Music on Hold Class:")?><span><?php echo _("Music (or Commercial) played to the caller while they wait in line for confernece start. Choose \"inherit\" if you want the MoH class to be what is currently selected, such as by the inbound route.<br><br>  This music is defined in the \"Music on Hold\" to the left.")?></span></a></td>
+                <td>
+                        <select name="music" tabindex="<?php echo ++$tabindex;?>">
+                        <?php
+                                $tresults = music_list();
+                                array_unshift($tresults,'inherit');
+                                $default = (isset($music) ? $music : 'inherit');
+                                if (isset($tresults)) {
+                                        foreach ($tresults as $tresult) {
+                                                $searchvalue="$tresult";
+                                                ( $tresult == 'inherit' ? $ttext = _("inherit") : $ttext = $tresult );
+// there is a separate flag for turning off moh - just leaving this in case it should be unified to the way this is managed for queues (via "none" selection)
+//                                              ( $tresult == 'none' ? $ttext = _("none") : $ttext = $tresult );
+                                                ( $tresult == 'default' ? $ttext = _("default") : $ttext = $tresult );                                        
+                                                echo '<option value="'.$tresult.'" '.($searchvalue == $default ? 'SELECTED' : '').'>'.$ttext;
+                                        }
+                                }
+                        ?>
+                        </select>
+                </td>
+        </tr>
+<?php } ?>
+
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Allow Menu:")?><span><?php echo _("Present Menu (user or admin) when '*' is received ('send' to menu)")?></span></a></td>
 		<td>

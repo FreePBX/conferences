@@ -22,12 +22,29 @@ CREATE TABLE IF NOT EXISTS `meetme`
 	`userpin` VARCHAR( 50 ) , 
 	`adminpin` VARCHAR( 50 ) , 
 	`description` VARCHAR( 50 ) , 
-	`joinmsg_id` INTEGER 
+	`joinmsg_id` INTEGER, 
+	`music` VARCHAR(80) 
 )
 ";
 $check = $db->query($sql);
 if(DB::IsError($check)) {
 	die_freepbx("Can not create meetme table");
+}
+outn(_("Checking if music field present.."));
+$sql = "SELECT music FROM meetme";
+$check = $db->getRow($sql, DB_FETCHMODE_ASSOC);
+if(DB::IsError($check)) {
+	outn(_("adding music field.."));
+  $sql = "ALTER TABLE meetme ADD music VARCHAR(80)";
+  $result = $db->query($sql);
+  if(DB::IsError($result)) {
+		out(_("fatal error"));
+		die_freepbx($result->getDebugInfo()); 
+	} else {
+		out(_("ok"));
+	}
+} else {
+	out(_("already present"));
 }
 
 // Version 2.5 migrate to recording ids
