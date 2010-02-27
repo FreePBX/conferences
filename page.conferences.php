@@ -280,7 +280,7 @@ the meetme list CLI command.")?></span></a></td>
 
 <?php if(function_exists('music_list')) { //only include if music module is enabled?>
         <tr>
-                <td><a href="#" class="info"><?php echo _("Music on Hold Class:")?><span><?php echo _("Music (or Commercial) played to the caller while they wait in line for confernece start. Choose \"inherit\" if you want the MoH class to be what is currently selected, such as by the inbound route.<br><br>  This music is defined in the \"Music on Hold\" to the left.")?></span></a></td>
+                <td><a href="#" class="info"><?php echo _("Music on Hold Class:")?><span><?php echo _("Music (or Commercial) played to the caller while they wait in line for the conference to start. Choose \"inherit\" if you want the MoH class to be what is currently selected, such as by the inbound route.<br><br>  This music is defined in the \"Music on Hold\" to the left.")?></span></a></td>
                 <td>
                         <select name="music" tabindex="<?php echo ++$tabindex;?>">
                         <?php
