@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-23 15:10+0100\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: 2010-01-23 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -31,119 +31,114 @@ msgstr ""
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: functions.inc.php:56
+msgid "Conferences"
+msgstr ""
+
+msgid ""
+"Internal Options \n"
+"&\n"
+" Configuration"
+msgstr ""
+
+msgid ""
+"Allow creation of conference rooms (meet-me) where multiple people can talk "
+"together."
+msgstr ""
+
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "会议室 %s：%s"
 
-#: functions.inc.php:75
 #, php-format
 msgid "Conference: %s"
 msgstr "会议：%s"
 
-#: functions.inc.php:198
 msgid "Conference: "
 msgstr "会议："
 
-#: install.php:35
-msgid "Checking if recordings need migration.."
-msgstr "检查是否需要迁移录音。。"
+msgid "Checking if music field present.."
+msgstr ""
 
-#: install.php:41
-msgid "migrating"
-msgstr "正在迁移"
+msgid "adding music field.."
+msgstr ""
 
-#: install.php:42
-msgid "adding joinmsg_id field.."
-msgstr "正在添加joinmsg_id字段。。"
-
-#: install.php:46 install.php:58 install.php:74
 msgid "fatal error"
 msgstr "致命错误"
 
-#: install.php:49 install.php:88
 msgid "ok"
 msgstr "完成"
 
-#: install.php:54
+msgid "already present"
+msgstr ""
+
+msgid "Checking if recordings need migration.."
+msgstr "检查是否需要迁移录音。。"
+
+msgid "migrating"
+msgstr "正在迁移"
+
+msgid "adding joinmsg_id field.."
+msgstr "正在添加joinmsg_id字段。。"
+
 msgid "migrate to recording ids.."
 msgstr "迁移到录音ID。。"
 
-#: install.php:78
 #, php-format
 msgid "migrated %s entries"
 msgstr "迁移了 %s 个项目"
 
-#: install.php:82
 msgid "dropping joinmsg field.."
 msgstr "正在删除joinmsg字段"
 
-#: install.php:86
 msgid "no joinmsg field???"
 msgstr "joinmsg字段不存在？"
 
-#: install.php:92
 msgid "already migrated"
 msgstr "已经迁移过了"
 
-#: page.conferences.php:25
 msgid "Warning! Extension"
 msgstr "警告！在你的帐号下，无法使用分机"
 
-#: page.conferences.php:25
 msgid "is not allowed for your account."
 msgstr "。"
 
-#: page.conferences.php:65 page.conferences.php:116 page.conferences.php:127
 msgid "Add Conference"
 msgstr "添加会议"
 
-#: page.conferences.php:79
 msgid "Conference"
 msgstr "会议"
 
-#: page.conferences.php:79
 msgid "deleted"
 msgstr "已删除"
 
-#: page.conferences.php:99
 msgid "Conference:"
 msgstr "会议："
 
-#: page.conferences.php:102
 #, php-format
 msgid "Delete Conference %s"
 msgstr "删除会议 %s"
 
-#: page.conferences.php:119
 msgid "Conflicting Extensions"
 msgstr "分机号冲突"
 
-#: page.conferences.php:127
 msgid "Edit Conference"
 msgstr "编辑会议"
 
-#: page.conferences.php:132
 msgid "Conference Number:"
 msgstr "会议号码："
 
-#: page.conferences.php:132
 msgid "Use this number to dial into the conference."
 msgstr "拨打此号码以参加会议。"
 
-#: page.conferences.php:137
 msgid "Conference Name:"
 msgstr "会议名称："
 
-#: page.conferences.php:137
 msgid "Give this conference a brief name to help you identify it."
 msgstr "为此会议取一个简短的名称以帮助你标识它。"
 
-#: page.conferences.php:141
 msgid "User PIN:"
 msgstr "使用PIN码："
 
-#: page.conferences.php:141
 msgid ""
 "You can require callers to enter a password before they can enter this "
 "conference.<br><br>This setting is optional.<br><br>If either PIN is "
@@ -153,11 +148,9 @@ msgstr ""
 "管是用户PIN码还是管理员PIN码，只要其中有一栏里设置了PIN码，用户在参加会议前会"
 "被提示需要输入PIN。"
 
-#: page.conferences.php:145
 msgid "Admin PIN:"
 msgstr "管理员PIN码："
 
-#: page.conferences.php:145
 msgid ""
 "Enter a PIN number for the admin user.<br><br>This setting is optional "
 "unless the 'leader wait' option is in use, then this PIN will identify the "
@@ -166,15 +159,12 @@ msgstr ""
 "为管理员用户输入PIN码。<br /><br />除非“等待主持人到来”选项被启用，否则管理员"
 "PIN的设置是可选的。若“等待主持人到来”选项被启用，此PIN码就用于鉴别主持人。"
 
-#: page.conferences.php:151
 msgid "Conference Options"
 msgstr "会议选项"
 
-#: page.conferences.php:154 page.conferences.php:171
 msgid "Join Message:"
 msgstr "入会消息："
 
-#: page.conferences.php:154
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>To "
 "add additional recordings please use the \"System Recordings\" MENU to the "
@@ -183,11 +173,9 @@ msgstr ""
 "在主叫加入会议之前要播放的消息。<br /><br />要添加额外的消息，请使用左侧的“系"
 "统录音”菜单。"
 
-#: page.conferences.php:159
 msgid "None"
 msgstr "无"
 
-#: page.conferences.php:171
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>You "
 "must install and enable the \"Systems Recordings\" Module to edit this option"
@@ -195,33 +183,23 @@ msgstr ""
 "在主叫加入会议之前要播放的消息。<br /><br />要添加额外的消息，请使用左侧的“系"
 "统录音”菜单以编辑此选项。"
 
-#: page.conferences.php:178
 msgid "Leader Wait:"
 msgstr "等待主持人："
 
-#: page.conferences.php:178
 msgid ""
 "Wait until the conference leader (admin user) arrives before starting the "
 "conference"
 msgstr "等待主持人（管理员用户）加入后才开始会议"
 
-#: page.conferences.php:183 page.conferences.php:204 page.conferences.php:220
-#: page.conferences.php:235 page.conferences.php:247 page.conferences.php:259
-#: page.conferences.php:271 page.conferences.php:283 page.conferences.php:296
 msgid "No"
 msgstr "否"
 
-#: page.conferences.php:184 page.conferences.php:205 page.conferences.php:221
-#: page.conferences.php:236 page.conferences.php:248 page.conferences.php:260
-#: page.conferences.php:272 page.conferences.php:284 page.conferences.php:297
 msgid "Yes"
 msgstr "是"
 
-#: page.conferences.php:196
 msgid "Talker Optimization:"
 msgstr ""
 
-#: page.conferences.php:196
 msgid ""
 "Turns on talker optimization. With talker optimization, Asterisk treats "
 "talkers who\n"
@@ -232,11 +210,9 @@ msgid ""
 "buildup in background noise."
 msgstr ""
 
-#: page.conferences.php:213
 msgid "Talker Detection:"
 msgstr ""
 
-#: page.conferences.php:213
 msgid ""
 "Sets talker detection. Asterisk will sends events on the Manager Interface "
 "identifying\n"
@@ -245,72 +221,68 @@ msgid ""
 "the meetme list CLI command."
 msgstr ""
 
-#: page.conferences.php:230
 msgid "Quiet Mode:"
 msgstr "安静模式："
 
-#: page.conferences.php:230
 msgid "Quiet mode (do not play enter/leave sounds)"
 msgstr "安静模式（不播放入会/离会的提示音）"
 
-#: page.conferences.php:242
 msgid "User Count:"
 msgstr "用户数量："
 
-#: page.conferences.php:242
 msgid "Announce user(s) count on joining conference"
 msgstr "通告加入会议的用户数量"
 
-#: page.conferences.php:254
 msgid "User join/leave:"
 msgstr "用户加入/离开："
 
-#: page.conferences.php:254
 msgid "Announce user join/leave"
 msgstr "通告用户的加入/离开"
 
-#: page.conferences.php:266
 msgid "Music on Hold:"
 msgstr "等待音乐"
 
-#: page.conferences.php:266
 msgid "Enable Music On Hold when the conference has a single caller"
 msgstr "在会议只有一个用户参加时，启用等待音乐"
 
-#: page.conferences.php:278
+msgid "Music on Hold Class:"
+msgstr ""
+
+msgid ""
+"Music (or Commercial) played to the caller while they wait in line for the "
+"conference to start. Choose \"inherit\" if you want the MoH class to be what "
+"is currently selected, such as by the inbound route.<br><br>  This music is "
+"defined in the \"Music on Hold\" to the left."
+msgstr ""
+
+msgid "inherit"
+msgstr ""
+
+msgid "default"
+msgstr ""
+
 msgid "Allow Menu:"
 msgstr "启用菜单："
 
-#: page.conferences.php:278
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
 msgstr "在收到“*”（“发送”菜单）后，向用户或管理员展示菜单"
 
-#: page.conferences.php:291
 msgid "Record Conference:"
 msgstr "会议录音："
 
-#: page.conferences.php:291
 msgid "Record the conference call"
 msgstr "为会议录音"
 
-#: page.conferences.php:309
 msgid "Submit Changes"
 msgstr "提交更改"
 
-#: page.conferences.php:323
 msgid "Please enter a valid Conference Number"
 msgstr "请输入有效的会议号码"
 
-#: page.conferences.php:324
 msgid "Please enter a valid Conference Name"
 msgstr "请输入有效的会议名称"
 
-#: page.conferences.php:325
 msgid ""
 "You must set an admin PIN for the Conference Leader when selecting the "
 "leader wait option"
 msgstr "如果你启用的等待主持人的选项，就必须为会议主持人设置一个管理员PIN码"
-
-#: module.xml
-msgid "Conferences"
-msgstr ""

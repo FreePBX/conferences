@@ -22,126 +22,121 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-23 15:10+0100\n"
+"POT-Creation-Date: 2010-02-27 17:34+0100\n"
 "PO-Revision-Date: 2010-01-23 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.inc.php:56
+msgid "Conferences"
+msgstr ""
+
+msgid ""
+"Internal Options \n"
+"&\n"
+" Configuration"
+msgstr ""
+
+msgid ""
+"Allow creation of conference rooms (meet-me) where multiple people can talk "
+"together."
+msgstr ""
+
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr ""
 
-#: functions.inc.php:75
 #, php-format
 msgid "Conference: %s"
 msgstr ""
 
-#: functions.inc.php:198
 msgid "Conference: "
 msgstr ""
 
-#: install.php:35
-msgid "Checking if recordings need migration.."
+msgid "Checking if music field present.."
 msgstr ""
 
-#: install.php:41
-msgid "migrating"
+msgid "adding music field.."
 msgstr ""
 
-#: install.php:42
-msgid "adding joinmsg_id field.."
-msgstr ""
-
-#: install.php:46 install.php:58 install.php:74
 msgid "fatal error"
 msgstr ""
 
-#: install.php:49 install.php:88
 msgid "ok"
 msgstr ""
 
-#: install.php:54
+msgid "already present"
+msgstr ""
+
+msgid "Checking if recordings need migration.."
+msgstr ""
+
+msgid "migrating"
+msgstr ""
+
+msgid "adding joinmsg_id field.."
+msgstr ""
+
 msgid "migrate to recording ids.."
 msgstr ""
 
-#: install.php:78
 #, php-format
 msgid "migrated %s entries"
 msgstr ""
 
-#: install.php:82
 msgid "dropping joinmsg field.."
 msgstr ""
 
-#: install.php:86
 msgid "no joinmsg field???"
 msgstr ""
 
-#: install.php:92
 msgid "already migrated"
 msgstr ""
 
-#: page.conferences.php:25
 msgid "Warning! Extension"
 msgstr "אזהרה! שלוחה"
 
-#: page.conferences.php:25
 msgid "is not allowed for your account."
 msgstr "אינה מורשית עבור החשבון שלך."
 
-#: page.conferences.php:65 page.conferences.php:116 page.conferences.php:127
 msgid "Add Conference"
 msgstr "הוסף ועידה"
 
-#: page.conferences.php:79
 msgid "Conference"
 msgstr "ועידה"
 
-#: page.conferences.php:79
 msgid "deleted"
 msgstr "נמחקה"
 
-#: page.conferences.php:99
 msgid "Conference:"
 msgstr "ועידה:"
 
-#: page.conferences.php:102
 #, php-format
 msgid "Delete Conference %s"
 msgstr "מחק ועידה %s"
 
-#: page.conferences.php:119
 msgid "Conflicting Extensions"
 msgstr ""
 
-#: page.conferences.php:127
 msgid "Edit Conference"
 msgstr "ערוך ועידה"
 
-#: page.conferences.php:132
 msgid "Conference Number:"
 msgstr "מספר ועידה:"
 
-#: page.conferences.php:132
 msgid "Use this number to dial into the conference."
 msgstr "השתמש במספר זה כדי לחייג לתוך הועידה"
 
-#: page.conferences.php:137
 msgid "Conference Name:"
 msgstr "שם הועידה:"
 
-#: page.conferences.php:137
 msgid "Give this conference a brief name to help you identify it."
 msgstr "תן לועידה זו שם קצר שיעזור לך לזהות אותה."
 
-#: page.conferences.php:141
 msgid "User PIN:"
 msgstr "סיסמת משתמש:"
 
-#: page.conferences.php:141
 msgid ""
 "You can require callers to enter a password before they can enter this "
 "conference.<br><br>This setting is optional.<br><br>If either PIN is "
@@ -151,11 +146,9 @@ msgstr ""
 "<br /><br />הגדרה זו היא רשות.<br /><br />אם הוכנסה סיסמת משתמש כלשהיא, "
 "המשתמש יתבקש לחייגה בכניסה."
 
-#: page.conferences.php:145
 msgid "Admin PIN:"
 msgstr "סיסמת מנהל:"
 
-#: page.conferences.php:145
 msgid ""
 "Enter a PIN number for the admin user.<br><br>This setting is optional "
 "unless the 'leader wait' option is in use, then this PIN will identify the "
@@ -164,15 +157,12 @@ msgstr ""
 "הכנס סיסמא עבור המשתמש המנהל.<br /><br />אפשרות זו היא רשות אלא אם כן "
 "האפשרות 'המתן למנהל' מסומנת, ובמקרה זה, סיסמא זו תזהה את המנהל."
 
-#: page.conferences.php:151
 msgid "Conference Options"
 msgstr "אפשרויות ועידה"
 
-#: page.conferences.php:154 page.conferences.php:171
 msgid "Join Message:"
 msgstr "הודעת הצטרפות:"
 
-#: page.conferences.php:154
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>To "
 "add additional recordings please use the \"System Recordings\" MENU to the "
@@ -181,11 +171,9 @@ msgstr ""
 "הודעה שתושמע למתקשר לפני הכניסה לועידה.<br /><br />כדי להוסיף הודעות נוספות, "
 "אנא השתמש <em>בתפריט</em> \"הקלטות מערכת\" שבצד שמאל."
 
-#: page.conferences.php:159
 msgid "None"
 msgstr "אין"
 
-#: page.conferences.php:171
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>You "
 "must install and enable the \"Systems Recordings\" Module to edit this option"
@@ -193,34 +181,24 @@ msgstr ""
 "הודעה שתושמע למתקשר לפני הכניסה לועידה.<br /><br />אתה חייב להתקין ולהפעיל "
 "את המודול \"הקלטות מערכת\" כדי לערוך אפשרות זאת"
 
-#: page.conferences.php:178
 msgid "Leader Wait:"
 msgstr "המתנה למנהל:"
 
-#: page.conferences.php:178
 msgid ""
 "Wait until the conference leader (admin user) arrives before starting the "
 "conference"
 msgstr ""
 "המתן עד שמנהל הועידה (משתמש עם סיסמא מיוחדת) יגיע לפני שתחבר את כולם לועידה"
 
-#: page.conferences.php:183 page.conferences.php:204 page.conferences.php:220
-#: page.conferences.php:235 page.conferences.php:247 page.conferences.php:259
-#: page.conferences.php:271 page.conferences.php:283 page.conferences.php:296
 msgid "No"
 msgstr "לא"
 
-#: page.conferences.php:184 page.conferences.php:205 page.conferences.php:221
-#: page.conferences.php:236 page.conferences.php:248 page.conferences.php:260
-#: page.conferences.php:272 page.conferences.php:284 page.conferences.php:297
 msgid "Yes"
 msgstr "כן"
 
-#: page.conferences.php:196
 msgid "Talker Optimization:"
 msgstr ""
 
-#: page.conferences.php:196
 msgid ""
 "Turns on talker optimization. With talker optimization, Asterisk treats "
 "talkers who\n"
@@ -231,11 +209,9 @@ msgid ""
 "buildup in background noise."
 msgstr ""
 
-#: page.conferences.php:213
 msgid "Talker Detection:"
 msgstr ""
 
-#: page.conferences.php:213
 msgid ""
 "Sets talker detection. Asterisk will sends events on the Manager Interface "
 "identifying\n"
@@ -244,72 +220,68 @@ msgid ""
 "the meetme list CLI command."
 msgstr ""
 
-#: page.conferences.php:230
 msgid "Quiet Mode:"
 msgstr "מצב שקט:"
 
-#: page.conferences.php:230
 msgid "Quiet mode (do not play enter/leave sounds)"
 msgstr "מצב שקט (אל תשמיע צלילי כניסה/יציאה)"
 
-#: page.conferences.php:242
 msgid "User Count:"
 msgstr "ספירת משתמשים:"
 
-#: page.conferences.php:242
 msgid "Announce user(s) count on joining conference"
 msgstr "הכרז על מספר הנמצאים בועידה בזמן הכניסה לועידה"
 
-#: page.conferences.php:254
 msgid "User join/leave:"
 msgstr "כניסת/יציאת משתמש:"
 
-#: page.conferences.php:254
 msgid "Announce user join/leave"
 msgstr "הכרז על כניסה/יציאה של משתמשים"
 
-#: page.conferences.php:266
 msgid "Music on Hold:"
 msgstr "מוסיקה בהמתנה:"
 
-#: page.conferences.php:266
 msgid "Enable Music On Hold when the conference has a single caller"
 msgstr "הפעל מוסיקה בהמתנה כאשר בועידה יש רק מתקשר אחד"
 
-#: page.conferences.php:278
+msgid "Music on Hold Class:"
+msgstr ""
+
+msgid ""
+"Music (or Commercial) played to the caller while they wait in line for the "
+"conference to start. Choose \"inherit\" if you want the MoH class to be what "
+"is currently selected, such as by the inbound route.<br><br>  This music is "
+"defined in the \"Music on Hold\" to the left."
+msgstr ""
+
+msgid "inherit"
+msgstr ""
+
+msgid "default"
+msgstr ""
+
 msgid "Allow Menu:"
 msgstr "אפשר תפריט:"
 
-#: page.conferences.php:278
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
 msgstr "הצג תפריט (משתמש או מנהל) כאשר לוחצים על כוכבית ('שליחה' אל התפריט)"
 
-#: page.conferences.php:291
 msgid "Record Conference:"
 msgstr ""
 
-#: page.conferences.php:291
 msgid "Record the conference call"
 msgstr ""
 
-#: page.conferences.php:309
 msgid "Submit Changes"
 msgstr ""
 
-#: page.conferences.php:323
 msgid "Please enter a valid Conference Number"
 msgstr ""
 
-#: page.conferences.php:324
 msgid "Please enter a valid Conference Name"
 msgstr ""
 
-#: page.conferences.php:325
 msgid ""
 "You must set an admin PIN for the Conference Leader when selecting the "
 "leader wait option"
-msgstr ""
-
-#: module.xml
-msgid "Conferences"
 msgstr ""
