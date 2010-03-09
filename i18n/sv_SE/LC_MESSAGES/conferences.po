@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX conferences\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 17:34+0100\n"
+"POT-Creation-Date: 2010-03-09 07:11+0100\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -94,6 +94,15 @@ msgstr "inget fält som heter joinmsg???"
 
 msgid "already migrated"
 msgstr "redan migrerad"
+
+msgid "Checking for users field.."
+msgstr "Kontrollerar om fälet users finns.."
+
+msgid "adding.."
+msgstr "lägger till.."
+
+msgid "FATAL error"
+msgstr "ALLVARLIGT fel"
 
 msgid "Warning! Extension"
 msgstr "Varning! Anknytning"
@@ -264,9 +273,10 @@ msgid ""
 "is currently selected, such as by the inbound route.<br><br>  This music is "
 "defined in the \"Music on Hold\" to the left."
 msgstr ""
-"Musik (eller reklam) som spelas upp för uppringaren när dom väntar på att konferensen "
-"ska starta. Välj \"ärv\" om du vill att musikklassen ska vara samma klass som redan är "
-"definierad i inkommande väg.<br><br> Musiken definieras i \"Pausmusik\" i menyn till vänster"
+"Musik (eller reklam) som spelas upp för uppringaren när dom väntar på att "
+"konferensen ska starta. Välj \"ärv\" om du vill att musikklassen ska vara "
+"samma klass som redan är definierad i inkommande väg.<br><br> Musiken "
+"definieras i \"Pausmusik\" i menyn till vänster"
 
 msgid "inherit"
 msgstr "ärv"
@@ -287,6 +297,15 @@ msgstr "Spela in konferens:"
 
 msgid "Record the conference call"
 msgstr "Välj om konferensen ska spelas in"
+
+msgid "Maximum Participants:"
+msgstr "Max antal deltagare"
+
+msgid "Maximum Number of users allowed to join this conference."
+msgstr "Det maximala antalet deltagare som tillåts i konferensen"
+
+msgid "No Limit"
+msgstr "Ingen begränsning"
 
 msgid "Submit Changes"
 msgstr "Spara ändringar"

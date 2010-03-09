@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 17:34+0100\n"
+"POT-Creation-Date: 2010-03-09 07:11+0100\n"
 "PO-Revision-Date: 2010-01-23 00:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: Chavdar Iliev <chavdar_75@yahoo.com>\n"
@@ -94,6 +94,15 @@ msgstr "няма joinmsg поле???"
 
 msgid "already migrated"
 msgstr "вече са преместени"
+
+msgid "Checking for users field.."
+msgstr ""
+
+msgid "adding.."
+msgstr ""
+
+msgid "FATAL error"
+msgstr ""
 
 msgid "Warning! Extension"
 msgstr "Внимание! Вътрешна Линия"
@@ -280,6 +289,15 @@ msgstr "Записвай Конференция:"
 
 msgid "Record the conference call"
 msgstr "Записва конференцията."
+
+msgid "Maximum Participants:"
+msgstr ""
+
+msgid "Maximum Number of users allowed to join this conference."
+msgstr ""
+
+msgid "No Limit"
+msgstr ""
 
 msgid "Submit Changes"
 msgstr "Приеми Промените"

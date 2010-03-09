@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 17:34+0100\n"
+"POT-Creation-Date: 2010-03-09 07:11+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Jouniaux <c.jouniaux@techtelecom.fr>\n"
 "Language-Team: \n"
@@ -91,6 +91,15 @@ msgstr "Pas de champ joinmsg???"
 
 msgid "already migrated"
 msgstr "déjà migré"
+
+msgid "Checking for users field.."
+msgstr ""
+
+msgid "adding.."
+msgstr ""
+
+msgid "FATAL error"
+msgstr ""
 
 msgid "Warning! Extension"
 msgstr "Attention! Extension"
@@ -275,6 +284,15 @@ msgstr "Enregistrement conférence:"
 
 msgid "Record the conference call"
 msgstr "Enregistrement de la conférence"
+
+msgid "Maximum Participants:"
+msgstr ""
+
+msgid "Maximum Number of users allowed to join this conference."
+msgstr ""
+
+msgid "No Limit"
+msgstr ""
 
 msgid "Submit Changes"
 msgstr "Soumettre changements"

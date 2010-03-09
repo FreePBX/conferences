@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 17:34+0100\n"
+"POT-Creation-Date: 2010-03-09 07:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,6 +91,15 @@ msgid "no joinmsg field???"
 msgstr ""
 
 msgid "already migrated"
+msgstr ""
+
+msgid "Checking for users field.."
+msgstr ""
+
+msgid "adding.."
+msgstr ""
+
+msgid "FATAL error"
 msgstr ""
 
 msgid "Warning! Extension"
@@ -259,6 +268,15 @@ msgid "Record Conference:"
 msgstr ""
 
 msgid "Record the conference call"
+msgstr ""
+
+msgid "Maximum Participants:"
+msgstr ""
+
+msgid "Maximum Number of users allowed to join this conference."
+msgstr ""
+
+msgid "No Limit"
 msgstr ""
 
 msgid "Submit Changes"

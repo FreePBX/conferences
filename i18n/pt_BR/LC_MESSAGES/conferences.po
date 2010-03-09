@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX Conference Module\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 17:34+0100\n"
+"POT-Creation-Date: 2010-03-09 07:11+0100\n"
 "PO-Revision-Date: 2010-01-23 00:00-0300\n"
 "Last-Translator: Marcelo Araujo <marcelo.araujo@voffice.com.br>\n"
 "Language-Team: MidiVTS team <info@midivts.org.br>\n"
@@ -95,6 +95,15 @@ msgstr "nenhum campo joinmsg???"
 
 msgid "already migrated"
 msgstr "já migrado"
+
+msgid "Checking for users field.."
+msgstr ""
+
+msgid "adding.."
+msgstr ""
+
+msgid "FATAL error"
+msgstr ""
 
 msgid "Warning! Extension"
 msgstr "Cuidado! Extensão"
@@ -278,6 +287,15 @@ msgstr "Gravar conferência"
 
 msgid "Record the conference call"
 msgstr "Gravar a chamada em conferência"
+
+msgid "Maximum Participants:"
+msgstr ""
+
+msgid "Maximum Number of users allowed to join this conference."
+msgstr ""
+
+msgid "No Limit"
+msgstr ""
 
 msgid "Submit Changes"
 msgstr "Submeter mudanças"

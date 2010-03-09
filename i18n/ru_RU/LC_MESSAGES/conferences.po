@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 17:34+0100\n"
+"POT-Creation-Date: 2010-03-09 07:11+0100\n"
 "PO-Revision-Date: 2008-01-16 16:38+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
@@ -94,6 +94,15 @@ msgid "no joinmsg field???"
 msgstr ""
 
 msgid "already migrated"
+msgstr ""
+
+msgid "Checking for users field.."
+msgstr ""
+
+msgid "adding.."
+msgstr ""
+
+msgid "FATAL error"
 msgstr ""
 
 msgid "Warning! Extension"
@@ -279,6 +288,15 @@ msgstr "Записывать конференцию?"
 
 msgid "Record the conference call"
 msgstr "Записывать содержание конференции?"
+
+msgid "Maximum Participants:"
+msgstr ""
+
+msgid "Maximum Number of users allowed to join this conference."
+msgstr ""
+
+msgid "No Limit"
+msgstr ""
 
 msgid "Submit Changes"
 msgstr "Применить изменения"

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo conferences module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-27 17:34+0100\n"
+"POT-Creation-Date: 2010-03-09 07:11+0100\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Juan Asensio Sánchez <okelet@gmail.com>\n"
 "Language-Team: Juan Asensio Sánchez <okelet@gmail.com>\n"
@@ -94,6 +94,15 @@ msgstr "No existe el campo joinmsg"
 
 msgid "already migrated"
 msgstr "Ya se ha migrado"
+
+msgid "Checking for users field.."
+msgstr ""
+
+msgid "adding.."
+msgstr ""
+
+msgid "FATAL error"
+msgstr ""
 
 msgid "Warning! Extension"
 msgstr "¡Atención! La extensión"
@@ -281,6 +290,15 @@ msgstr "Grabar conferencias:"
 
 msgid "Record the conference call"
 msgstr "Graba las llamadas de la conferencia."
+
+msgid "Maximum Participants:"
+msgstr ""
+
+msgid "Maximum Number of users allowed to join this conference."
+msgstr ""
+
+msgid "No Limit"
+msgstr ""
 
 msgid "Submit Changes"
 msgstr "Enviar cambios"
