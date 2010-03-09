@@ -23,7 +23,8 @@ CREATE TABLE IF NOT EXISTS `meetme`
 	`adminpin` VARCHAR( 50 ) , 
 	`description` VARCHAR( 50 ) , 
 	`joinmsg_id` INTEGER, 
-	`music` VARCHAR(80) 
+	`music` VARCHAR(80), 
+	`users` TINYINT DEFAULT 0
 )
 ";
 $check = $db->query($sql);
@@ -107,5 +108,22 @@ if(DB::IsError($check)) {
 
 } else {
 	out(_("already migrated"));
+}
+// Migration for Maximum Participant Count
+outn(_("Checking for users field.."));
+$sql = "SELECT users FROM meetme";
+$check = $db->getRow($sql, DB_FETCHMODE_ASSOC);
+if(DB::IsError($check)) {
+	outn(_("adding.."));
+  $sql = "ALTER TABLE meetme ADD users TINYINT DEFAULT 0";
+  $result = $db->query($sql);
+  if(DB::IsError($result)) {
+		out(_("FATAL error"));
+		out($result->getDebugInfo()); 
+	} else {
+		out(_("ok"));
+	}
+} else {
+	out(_("already present"));
 }
 ?>

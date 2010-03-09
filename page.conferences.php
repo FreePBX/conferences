@@ -20,6 +20,7 @@ isset($_REQUEST['extdisplay'])?$extdisplay=$_REQUEST['extdisplay']:$extdisplay='
 
 $account = isset($_REQUEST['account']) ? $_REQUEST['account'] : '';
 $music = isset($_REQUEST['music']) ? $_REQUEST['music'] : '';
+$users = isset($_REQUEST['users']) ? $_REQUEST['users'] : '0';
 
 //check if the extension is within range for this user
 if (isset($account) && !checkRange($account)){
@@ -34,7 +35,7 @@ if (isset($account) && !checkRange($account)){
 			$usage_arr = framework_check_extension_usage($account);
 			if (!empty($usage_arr)) {
 				$conflict_url = framework_display_extension_usage_alert($usage_arr);
-			} elseif (conferences_add($account,$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id'],$music) !== false) {
+			} elseif (conferences_add($account,$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id'],$music,$users) !== false) {
 				needreload();
 				redirect_standard();
 			}
@@ -46,7 +47,7 @@ if (isset($account) && !checkRange($account)){
 		break;
 		case "edit":  //just delete and re-add
 			conferences_del($account);
-			conferences_add($account,$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id'],$music);
+			conferences_add($account,$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id'],$music,$users);
 			needreload();
 			redirect_standard('extdisplay');
 		break;
@@ -88,6 +89,7 @@ if ($action == 'delete') {
 		$description = $thisMeetme['description'];
 		$joinmsg_id  = $thisMeetme['joinmsg_id'];
 		$music       = $thisMeetme['music'];
+		$users       = $thisMeetme['users'];
 	} else {
 		$options     = "";
 		$userpin     = "";
@@ -95,6 +97,7 @@ if ($action == 'delete') {
 		$description = "";
 		$joinmsg_id  = "";
 		$music       = "";
+		$users	      = "0";
 	}
 
 ?>
@@ -328,6 +331,22 @@ the meetme list CLI command.")?></span></a></td>
 			</select>
 		</td>
 	</tr>
+
+	<?php //Begin Maximum Participants Code ?>
+	<tr>
+    <td><a href="#" class="info"><?php echo _("Maximum Participants:")?><span><?php echo _("Maximum Number of users allowed to join this conference.")?></span></a></td>
+    <td>
+      <select name="users" tabindex="<?php echo ++$tabindex;?>">
+        <?php
+        $default = (($users) ? $users : 0);
+        echo '<option value="'.$i.'" '.($i == $default ? 'SELECTED' : '').'>'._("No Limit").'</option>';
+        for ($i=2; $i <= 20; $i++) {
+          echo '<option value="'.$i.'" '.($i == $default ? 'SELECTED' : '').'>'.$i.'</option>';
+        }
+        ?>
+      </select>
+    </td>
+  </tr>
 
 	</table>
 <?php
