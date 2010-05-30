@@ -129,12 +129,14 @@ if ($action == 'delete') {
 	<form autocomplete="off" name="editMM" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkConf();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">
 	<input type="hidden" name="action" value="<?php echo ($extdisplay ? 'edit' : 'add') ?>">
+	<input type="hidden" name="options" value="<?php echo $options; ?>">
+<?php		if ($extdisplay != ""){ ?>
+		<input type="hidden" name="account" value="<?php echo $extdisplay; ?>">
+<?php		}?>
 	<table>
 	<tr><td colspan="2"><h5><?php echo ($extdisplay != "" ? _("Edit Conference") : _("Add Conference")) ?><hr></h5></td></tr>
 	<tr>
-<?php		if ($extdisplay != ""){ ?>
-		<input type="hidden" name="account" value="<?php echo $extdisplay; ?>">
-<?php		} else { ?>
+<?php		if ($extdisplay == ""){ ?>
 		<td><a href="#" class="info"><?php echo _("Conference Number:")?><span><?php echo _("Use this number to dial into the conference.")?></span></a></td>
 		<td><input type="text" name="account" value="" tabindex="<?php echo ++$tabindex;?>"></td>
 <?php		} ?>
@@ -151,8 +153,6 @@ if ($action == 'delete') {
 		<td><a href="#" class="info"><?php echo _("Admin PIN:")?><span><?php echo _("Enter a PIN number for the admin user.<br><br>This setting is optional unless the 'leader wait' option is in use, then this PIN will identify the leader.")?></span></a></td>
 		<td><input size="8" type="text" name="adminpin" value="<?php echo $adminpin; ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
-
-	<input type="hidden" name="options" value="<?php echo $options; ?>">
 	
 	<tr><td colspan="2"><br><h5><?php echo _("Conference Options")?><hr></h5></td></tr>
 <?php if(function_exists('recordings_list')) { //only include if recordings is enabled?>
