@@ -335,19 +335,30 @@ the meetme list CLI command.")?></span></a></td>
 	<?php //Begin Maximum Participants Code ?>
 	<tr>
     <td><a href="#" class="info"><?php echo _("Maximum Participants:")?><span><?php echo _("Maximum Number of users allowed to join this conference.")?></span></a></td>
-    <td>
-      <select name="users" tabindex="<?php echo ++$tabindex;?>">
-        <?php
-        $default = (($users) ? $users : 0);
-        echo '<option value="'.$i.'" '.($i == $default ? 'SELECTED' : '').'>'._("No Limit").'</option>';
-        for ($i=2; $i <= 20; $i++) {
-          echo '<option value="'.$i.'" '.($i == $default ? 'SELECTED' : '').'>'.$i.'</option>';
-        }
-        ?>
-      </select>
-    </td>
-  </tr>
-
+		<td>
+		  <select name="users" tabindex="<?php echo ++$tabindex;?>">
+			<?php
+			$default = (($users) ? $users : 0);
+			echo '<option value="'.$i.'" '.($i == $default ? 'SELECTED' : '').'>'._("No Limit").'</option>';
+			for ($i=2; $i <= 20; $i++) {
+			  echo '<option value="'.$i.'" '.($i == $default ? 'SELECTED' : '').'>'.$i.'</option>';
+			}
+			?>
+		  </select>
+		</td>
+	</tr>
+	<tr>
+		<td><a href="#" class="info"><?php echo _("Mute on Join:")?><span><?php echo _("Mute everyone when they initially join the conference. Please note that if you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to Yes to unmute yourself")?></span></a></td>
+		<td>
+				<select name="opt#m" tabindex="<?php echo ++$tabindex;?>">
+				<?php
+						$optselect = strpos($options, "m");
+						echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
+						echo '<option value="m"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
+				?>
+				</select>
+		</td>
+    </tr>
 	</table>
 <?php
 	// implementation of module hook
@@ -371,6 +382,7 @@ function checkConf()
 	var msgInvalidConfNumb = "<?php echo _('Please enter a valid Conference Number'); ?>";
 	var msgInvalidConfName = "<?php echo _('Please enter a valid Conference Name'); ?>";
 	var msgNeedAdminPIN = "<?php echo _('You must set an admin PIN for the Conference Leader when selecting the leader wait option'); ?>";
+	var msgInvalidMuteOnJoin = "<?php echo _('You must set Allow Menu to Yes when not using a Leader or Admin in your conference, otherwise you will be unable to unmute yourself'); ?>";
 	
 	defaultEmptyOK = false;
 	if (!isInteger(theForm.account.value))
@@ -397,7 +409,11 @@ function checkConf()
 	// not possible to have a 'leader' conference with no adminpin
 	if (theForm.options.value.indexOf("w") > -1 && theForm.adminpin.value == "")
 		return warnInvalid(theForm.adminpin, msgNeedAdminPIN);
-		
+	
+	// should not have a conference with no 'leader', mute on join, and no allow menu, so let's complain
+	if ($('[name=opt#m]').val() != '' && !$('[name=opt#w]').val() && !$('[name=opt#s]').val())
+		return warnInvalid(theForm.options, msgInvalidMuteOnJoin);	
+
 	return true;
 }
 
