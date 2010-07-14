@@ -411,7 +411,7 @@ function checkConf()
 		return warnInvalid(theForm.adminpin, msgNeedAdminPIN);
 	
 	// should not have a conference with no 'leader', mute on join, and no allow menu, so let's complain
-	if ($('[name=opt#m]').val() != '' && !$('[name=opt#w]').val() && !$('[name=opt#s]').val())
+	if ($('[name=opt#m]').val() != '' && $('[name=adminpin]').val() == '' && !$('[name=opt#s]').val())
 		return warnInvalid(theForm.options, msgInvalidMuteOnJoin);	
 
 	return true;

@@ -171,7 +171,7 @@ function conferences_get_config($engine) {
 						
 						// admin mode -- only valid if there is an admin pin
 						if ($roomadminpin != '') {
-							$ext->add($contextname, $roomnum, 'ADMIN', new ext_setvar('MEETME_OPTS','aA'.trim($roomoptions,'m'));
+							$ext->add($contextname, $roomnum, 'ADMIN', new ext_setvar('MEETME_OPTS','aA'.str_replace('m','',$roomoptions)));
 							if ($roomjoinmsg != '') {  // play joining message if one defined
 								$ext->add($contextname, $roomnum, '', new ext_playback($roomjoinmsg));
 							}
