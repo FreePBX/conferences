@@ -54,6 +54,28 @@ if (isset($account) && !checkRange($account)){
 	}
 }
 
+//Check to see if conference application is only confbridge
+global $amp_conf;
+global $astman;
+if ($astver === null) {
+	$engineinfo = engine_getinfo();
+	$astver =  $engineinfo['version'];
+}
+$ast_ge_162 = version_compare($astver, '1.6.2', 'ge');
+// Default to conference meetme
+$confapp = 'ext_meetme';
+if ($ast_ge_162 && $amp_conf['AMPENGINE'] == 'asterisk' && isset($astman) && $astman->connected()) {
+			//check for meetme application and fallback to confbridge if possible
+	$app = $astman->send_request('Command', array('Command' => 'module show like meetme'));
+			if (preg_match('/[1-9] modules loaded/', $app['data'])){
+		$confapp='ext_meetme';
+	} else {
+		$app = $astman->send_request('Command', array('Command' => 'module show like confbridge'));
+		if (preg_match('/[1-9] modules loaded/', $app['data'])){				$confapp='ext_confbridge';
+		}
+	}
+}
+
 //get meetme rooms
 //this function needs to be available to other modules (those that use goto destinations)
 //therefore we put it in globalfunctions.php
@@ -196,7 +218,14 @@ if ($action == 'delete') {
 <?php
 $engineinfo = engine_getinfo();
 $astver =  $engineinfo['version'];
-if (version_compare($astver, '1.4', 'ge')) {
+
+//If the application is confbridge remove options that aren't supported
+if ($confapp=='ext_confbridge') {
+	str_replace("o","",$options);
+	str_replace("T","",$options);
+}
+
+if (version_compare($astver, '1.4', 'ge') && $confapp=='ext_meetme') {
 ?>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Talker Optimization:")?><span><?php echo _("Turns on talker optimization. With talker optimization, Asterisk treats talkers who
@@ -256,6 +285,13 @@ the meetme list CLI command.")?></span></a></td>
 			</select>		
 		</td>
 	</tr>
+	<?php
+		//If the application is confbridge remove options that aren't supported
+		if ($confapp=='ext_confbridge') {
+			str_replace("i","",$options);
+		}
+		if ($confapp=='ext_meetme') {
+	?>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("User join/leave:")?><span><?php echo _("Announce user join/leave")?></span></a></td>
 		<td>
@@ -268,6 +304,7 @@ the meetme list CLI command.")?></span></a></td>
 			</select>		
 		</td>
 	</tr>
+	<?php } ?>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Music on Hold:")?><span><?php echo _("Enable Music On Hold when the conference has a single caller")?></span></a></td>
 		<td>
@@ -318,7 +355,13 @@ the meetme list CLI command.")?></span></a></td>
 			</select>		
 		</td>
 	</tr>
-
+	<?php
+		//If the application is confbridge remove options that aren't supported
+		if ($confapp=='ext_confbridge') {
+			str_replace("r","",$options);
+		}
+		if ($confapp=='ext_meetme') {
+	?>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Record Conference:")?><span><?php echo _("Record the conference call")?></span></a></td>
 		<td>
@@ -331,7 +374,7 @@ the meetme list CLI command.")?></span></a></td>
 			</select>
 		</td>
 	</tr>
-
+	<?php } ?>
 	<?php //Begin Maximum Participants Code ?>
 	<tr>
     <td><a href="#" class="info"><?php echo _("Maximum Participants:")?><span><?php echo _("Maximum Number of users allowed to join this conference.")?></span></a></td>

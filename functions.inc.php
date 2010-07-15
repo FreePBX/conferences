@@ -87,6 +87,28 @@ function conferences_get_config($engine) {
 	global $conferences_conf;
 	global $version;
 	global $amp_conf;
+	global $astman;
+	
+	if ($astver === null) {
+		$engineinfo = engine_getinfo();
+		$astver =  $engineinfo['version'];
+	}
+	$ast_ge_162 = version_compare($astver, '1.6.2', 'ge');
+	// Default to conference meetme
+	$confapp = 'ext_meetme';
+	if ($ast_ge_162 && $amp_conf['AMPENGINE'] == 'asterisk' && isset($astman) && $astman->connected()) {
+        //check for meetme application and fallback to confbridge if possible
+		$app = $astman->send_request('Command', array('Command' => 'module show like meetme'));
+        if (preg_match('/[1-9] modules loaded/', $app['data'])){
+			$confapp='ext_meetme';
+		} else {
+			$app = $astman->send_request('Command', array('Command' => 'module show like confbridge'));
+			if (preg_match('/[1-9] modules loaded/', $app['data'])){				
+				$confapp='ext_confbridge';
+			}
+		}
+	}
+	
 	switch($engine) {
 		case "asterisk":
 			$ext->addInclude('from-internal-additional','ext-meetme');
@@ -97,7 +119,11 @@ function conferences_get_config($engine) {
 				$ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','SetMusicOnHold','${MEETME_MUSIC}'));
 				$ext->add($contextname, 'STARTMEETME', '', new ext_setvar('GROUP(meetme)','${MEETME_ROOMNUM}'));
 				$ext->add($contextname, 'STARTMEETME', '', new ext_gotoif('$[${MAX_PARTICIPANTS} > 0 && ${GROUP_COUNT(${MEETME_ROOMNUM}@meetme)}>${MAX_PARTICIPANTS}]','MEETMEFULL,1'));
-				$ext->add($contextname, 'STARTMEETME', '', new ext_meetme('${MEETME_ROOMNUM}','${MEETME_OPTS}','${PIN}'));
+				if ($confapp != 'ext_confbridge') {
+					$ext->add($contextname, 'STARTMEETME', '', new ext_meetme('${MEETME_ROOMNUM}','${MEETME_OPTS}','${PIN}'));
+				} else {
+					$ext->add($contextname, 'STARTMEETME', '', new ext_confbridge('${MEETME_ROOMNUM}','${MEETME_OPTS}','${PIN}'));
+				}
 				$ext->add($contextname, 'STARTMEETME', '', new ext_hangup(''));
 
 				//meetme full
