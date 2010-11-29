@@ -7,8 +7,8 @@ class conferences_conf {
 	function get_filename() {
 		return "meetme_additional.conf";
 	}
-	function addMeetme($room, $pin) {
-		$this->_meetmes[$room] = $pin;
+  function addMeetme($room, $userpin, $adminpin='') {
+    $this->_meetmes[$room] = $userpin.($adminpin != '' ? ','.$adminpin : '');
 	}
 	// return the output that goes in the file
 	function generateConf() {
@@ -213,7 +213,7 @@ function conferences_get_config($engine) {
 					$ext->add($contextname, $roomnum, '', new ext_goto('STARTMEETME,1'));
 					
 					// add meetme config
-					$conferences_conf->addMeetme($room['exten'],$room['userpin']);
+          $conferences_conf->addMeetme($room['exten'],$room['userpin'],$room['adminpin']);
 				}
 			}
 
