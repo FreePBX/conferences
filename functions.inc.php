@@ -114,9 +114,15 @@ function conferences_get_config($engine) {
 			$ext->addInclude('from-internal-additional','ext-meetme');
 			$contextname = 'ext-meetme';
 			if(is_array($conflist = conferences_list())) {
+
+        $ast_ge_14 = version_compare($version, "1.4","ge");
 				
 				// Start the conference
-				$ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','SetMusicOnHold','${MEETME_MUSIC}'));
+        if ($ast_ge_14) {
+				  $ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','Set','CHANNEL(musicclass)=${MEETME_MUSIC}'));
+        } else {
+				  $ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','SetMusicOnHold','${MEETME_MUSIC}'));
+        }
 				$ext->add($contextname, 'STARTMEETME', '', new ext_setvar('GROUP(meetme)','${MEETME_ROOMNUM}'));
 				$ext->add($contextname, 'STARTMEETME', '', new ext_gotoif('$[${MAX_PARTICIPANTS} > 0 && ${GROUP_COUNT(${MEETME_ROOMNUM}@meetme)}>${MAX_PARTICIPANTS}]','MEETMEFULL,1'));
 				if ($confapp != 'ext_confbridge') {
@@ -138,10 +144,10 @@ function conferences_get_config($engine) {
 					
 					$roomnum = ltrim($item['0']);
 					$roomoptions = $room['options'];
-					if (version_compare($version, "1.4",">=")) {
+					if ($ast_ge_14) {
 						$roomoptions = str_replace('i','I',$roomoptions);
 					}
-					if (version_compare($version, "1.4","lt")) {
+					if (!$ast_ge_14) {
 						$roomoptions = str_replace('o','',$roomoptions);
 						$roomoptions = str_replace('T','',$roomoptions);
 					}
