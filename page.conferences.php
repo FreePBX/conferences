@@ -19,6 +19,7 @@ isset($_REQUEST['action'])?$action = $_REQUEST['action']:$action='';
 isset($_REQUEST['extdisplay'])?$extdisplay=$_REQUEST['extdisplay']:$extdisplay='';
 
 $account = isset($_REQUEST['account']) ? $_REQUEST['account'] : '';
+$orig_account = isset($_REQUEST['orig_account']) ? $_REQUEST['orig_account'] : '';
 $music = isset($_REQUEST['music']) ? $_REQUEST['music'] : '';
 $users = isset($_REQUEST['users']) ? $_REQUEST['users'] : '0';
 
@@ -46,7 +47,17 @@ if (isset($account) && !checkRange($account)){
 			redirect_standard();
 		break;
 		case "edit":  //just delete and re-add
-			conferences_del($account);
+			//check to see if the room number has changed
+			if ($orig_account != '' && $orig_account != $account) {
+				conferences_del($orig_account);
+				$_REQUEST['extdisplay'] = $account;//redirect to the new ext
+				$old = conferences_getdest($orig_account);
+				$new = conferences_getdest($account);
+				framework_change_destination($old[0], $new[0]);
+			} else {
+				conferences_del($account);
+			}
+			
 			conferences_add($account,$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id'],$music,$users);
 			needreload();
 			redirect_standard('extdisplay');
@@ -150,18 +161,16 @@ if ($action == 'delete') {
 ?>
 	<form autocomplete="off" name="editMM" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkConf();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">
-	<input type="hidden" name="action" value="<?php echo ($extdisplay ? 'edit' : 'add') ?>">
+	<input type="hidden" name="action" value="<?php echo ($extdisplay != '' ? 'edit' : 'add') ?>">
 	<input type="hidden" name="options" value="<?php echo $options; ?>">
 <?php		if ($extdisplay != ""){ ?>
-		<input type="hidden" name="account" value="<?php echo $extdisplay; ?>">
+		<input type="hidden" name="orig_account" value="<?php echo $extdisplay; ?>">
 <?php		}?>
 	<table>
 	<tr><td colspan="2"><h5><?php echo ($extdisplay != "" ? _("Edit Conference") : _("Add Conference")) ?><hr></h5></td></tr>
 	<tr>
-<?php		if ($extdisplay == ""){ ?>
 		<td><a href="#" class="info"><?php echo _("Conference Number:")?><span><?php echo _("Use this number to dial into the conference.")?></span></a></td>
-		<td><input type="text" name="account" value="" tabindex="<?php echo ++$tabindex;?>"></td>
-<?php		} ?>
+		<td><input type="text" name="account" value="<?php echo $extdisplay ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Conference Name:")?><span><?php echo _("Give this conference a brief name to help you identify it.")?></span></a></td>
