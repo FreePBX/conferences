@@ -49,11 +49,18 @@ if (isset($account) && !checkRange($account)){
 		case "edit":  //just delete and re-add
 			//check to see if the room number has changed
 			if ($orig_account != '' && $orig_account != $account) {
-				conferences_del($orig_account);
-				$_REQUEST['extdisplay'] = $account;//redirect to the new ext
-				$old = conferences_getdest($orig_account);
-				$new = conferences_getdest($account);
-				framework_change_destination($old[0], $new[0]);
+				$conflict_url = array();
+				$usage_arr = framework_check_extension_usage($account);
+				if (!empty($usage_arr)) {
+					$conflict_url = framework_display_extension_usage_alert($usage_arr);
+					break;
+				} else {
+					conferences_del($orig_account);
+					$_REQUEST['extdisplay'] = $account;//redirect to the new ext
+					$old = conferences_getdest($orig_account);
+					$new = conferences_getdest($account);
+					framework_change_destination($old[0], $new[0]);
+				}
 			} else {
 				conferences_del($account);
 			}
