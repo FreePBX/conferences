@@ -24,7 +24,7 @@ $music = isset($_REQUEST['music']) ? $_REQUEST['music'] : '';
 $users = isset($_REQUEST['users']) ? $_REQUEST['users'] : '0';
 
 //check if the extension is within range for this user
-if (isset($account) && !checkRange($account)){
+if ($account != "" && !checkRange($account)){
 	echo "<script>javascript:alert('"._("Warning! Extension")." $account "._("is not allowed for your account.")."');</script>";
 } else {
 	
