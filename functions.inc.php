@@ -89,11 +89,7 @@ function conferences_get_config($engine) {
 	global $amp_conf;
 	global $astman;
 	
-	if ($astver === null) {
-		$engineinfo = engine_getinfo();
-		$astver =  $engineinfo['version'];
-	}
-	$ast_ge_162 = version_compare($astver, '1.6.2', 'ge');
+	$ast_ge_162 = version_compare($version, '1.6.2', 'ge');
 	// Default to conference meetme
 	$confapp = 'ext_meetme';
 	if ($ast_ge_162 && $amp_conf['AMPENGINE'] == 'asterisk' && isset($astman) && $astman->connected()) {
