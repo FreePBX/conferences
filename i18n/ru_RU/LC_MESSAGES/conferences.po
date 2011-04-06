@@ -16,202 +16,201 @@
 # Russian freePBX ver. translation
 # Copyright (c) 2006-2008 PostMet Corporation
 # This file is distributed under the same license as the freePBX package.
-# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2008.
+# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2011.
 #
-# ������������ iconv amp.new -f UTF-8 -t ISO-8859-5 -o amp.po
+# Использовать iconv conferences.utf8.po -f UTF-8 -t ISO-8859-5 -o conferences.po
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-09 07:11+0100\n"
-"PO-Revision-Date: 2008-01-16 16:38+0100\n"
+"POT-Creation-Date: 2011-03-18 08:25+0100\n"
+"PO-Revision-Date: 2011-04-06 14:11+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-5\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Conferences"
-msgstr ""
+msgstr "Конференции"
 
-msgid ""
-"Internal Options \n"
-"&\n"
-" Configuration"
-msgstr ""
+msgid "Internal Options & Configuration"
+msgstr "Конфигурация и дополнительные опции"
 
 msgid ""
 "Allow creation of conference rooms (meet-me) where multiple people can talk "
 "together."
 msgstr ""
+"Разрешить создание конференц-комнат (meet-me) для общения многих "
+"пользователей "
 
 #, php-format
 msgid "Conference Room %s : %s"
-msgstr ""
+msgstr "Конференц-комната %s : %s"
 
 #, php-format
 msgid "Conference: %s"
-msgstr ""
+msgstr "Конференция: %s"
 
 msgid "Conference: "
-msgstr ""
+msgstr "Конференция: "
 
 msgid "Checking if music field present.."
-msgstr ""
+msgstr "Проверяем установлено ли значение в поле Музыка.."
 
 msgid "adding music field.."
-msgstr ""
+msgstr "добавляем поле Музыка.."
 
 msgid "fatal error"
-msgstr ""
+msgstr "неустранимая ошибка"
 
 msgid "ok"
-msgstr ""
+msgstr "ок"
 
 msgid "already present"
-msgstr ""
+msgstr "уже существует"
 
 msgid "Checking if recordings need migration.."
-msgstr ""
+msgstr "Проверяем необходимость миграции записей.."
 
 msgid "migrating"
-msgstr ""
+msgstr "переносим"
 
 msgid "adding joinmsg_id field.."
-msgstr ""
+msgstr "добавляется поле joinmsg_id.."
 
 msgid "migrate to recording ids.."
-msgstr ""
+msgstr "переносим идентификаторы записей.."
 
 #, php-format
 msgid "migrated %s entries"
-msgstr ""
+msgstr "перенесено %s записей"
 
 msgid "dropping joinmsg field.."
-msgstr ""
+msgstr "игнорируется поле joinmsg"
 
 msgid "no joinmsg field???"
-msgstr ""
+msgstr "нет поля joinmsg???"
 
 msgid "already migrated"
-msgstr ""
+msgstr "уже перенесено"
 
 msgid "Checking for users field.."
-msgstr ""
+msgstr "Проверяем поле Пользователи.."
 
 msgid "adding.."
-msgstr ""
+msgstr "добавляем.."
 
 msgid "FATAL error"
-msgstr ""
+msgstr "Неустранимая ошибка"
 
 msgid "Warning! Extension"
-msgstr "��������! ���������� �����"
+msgstr "Внимание! Внутренний номер"
 
 msgid "is not allowed for your account."
-msgstr "�� �������� � ������������� � � ���� ��������."
+msgstr "не разрешён к использованию в в этом аккаунте."
 
 msgid "Add Conference"
-msgstr "�������� �����������"
+msgstr "Добавить конференцию"
 
 msgid "Conference"
-msgstr "�����������"
+msgstr "Конференция"
 
 msgid "deleted"
-msgstr "�������"
+msgstr "удалено"
 
 msgid "Conference:"
-msgstr "�����������:"
+msgstr "Конференция:"
 
 #, php-format
 msgid "Delete Conference %s"
-msgstr "������� ����������� %s"
+msgstr "Удалить конференцию %s"
 
 msgid "Conflicting Extensions"
-msgstr ""
+msgstr "Конфликт внутренних номеров"
 
 msgid "Edit Conference"
-msgstr "�������� �����������"
+msgstr "Изменить конференцию"
 
 msgid "Conference Number:"
-msgstr "����� �����������:"
+msgstr "Номер конференции:"
 
 msgid "Use this number to dial into the conference."
-msgstr "����� ��������� � ����������� ����������� ���� �����."
+msgstr "Чтобы позвонить в конференцию используйте этот номер."
 
 msgid "Conference Name:"
-msgstr "�������� �����������:"
+msgstr "Название конференции:"
 
 msgid "Give this conference a brief name to help you identify it."
-msgstr "��������� ����������� �������� ��� ��� �������������."
+msgstr "Присвойте конференции короткое имя для идентификации."
 
 msgid "User PIN:"
-msgstr "PIN ������������:"
+msgstr "PIN пользователя:"
 
 msgid ""
 "You can require callers to enter a password before they can enter this "
 "conference.<br><br>This setting is optional.<br><br>If either PIN is "
 "entered, the user will be prompted to enter a PIN."
 msgstr ""
-"����� ��������� ������ ������ ��� ����� ������������� � �����������."
-"<br><br>��� �������������� ��������.<br><br>���� ������ PIN � ���� ����, "
-"������������ ����� ���������� ������� ���."
+"Можно требовать ввести пароль для входя пользователей в конференцию."
+"<br><br>Это необязательный параметр.<br><br>Если указан PIN в этом поле, "
+"пользователю будет предложено набрать его."
 
 msgid "Admin PIN:"
-msgstr "PIN ��������������:"
+msgstr "PIN администратора:"
 
 msgid ""
 "Enter a PIN number for the admin user.<br><br>This setting is optional "
 "unless the 'leader wait' option is in use, then this PIN will identify the "
 "leader."
 msgstr ""
-"������� PIN ��� ��������������.<br><br>��� �������������� ��������, ���� "
-"������������ ����� '����� ����', �� ���� PIN �������������� ������."
+"Укажите PIN для администратора.<br><br>Это необязательный параметр, если "
+"используется опция 'лидер ждёт', то этот PIN идентифицирует лидера."
 
 msgid "Conference Options"
-msgstr "����� �����������"
+msgstr "Опции конференции"
 
 msgid "Join Message:"
-msgstr "��������� � �������������?"
+msgstr "Сообщение о подсоединении?"
 
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>To "
 "add additional recordings please use the \"System Recordings\" MENU to the "
 "left"
 msgstr ""
-"��� ������������� � ����������� ������������ ����� �������������� ��� "
-"���������.<br><br>����� ������� ��������� ������������� ������� ������ "
-"��������� � ���� �����."
+"При подсоединении к конференции пользователю будет воспроизведено это "
+"сообщение.<br><br>Чтобы создать сообщение воспоьзуйтесь секцией Запись "
+"сообщений в меню слева."
 
 msgid "None"
-msgstr "���"
+msgstr "Нет"
 
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>You "
 "must install and enable the \"Systems Recordings\" Module to edit this option"
 msgstr ""
-"��� ������������� � ����������� ������������ ����� �������������� ���������."
-"<br><br>���������� �������������� � ������������ ������ '������ ���������' "
-"��� ��������� ���� �����."
+"При подсоединении к конференции пользователю будет воспроизведено сообщение."
+"<br><br>Необходимо инсталлировать и активировать модуль 'Запись сообщений' "
+"для изменения этой опции."
 
 msgid "Leader Wait:"
-msgstr "����� ������������?"
+msgstr "Ждать организатора?"
 
 msgid ""
 "Wait until the conference leader (admin user) arrives before starting the "
 "conference"
 msgstr ""
-"����� ������������ ����������� (������������ �������������) ���� �� �� "
-"�������������, ����� ������ �����������."
+"Ждать организатора конференции (пользователь администратор) пока он не "
+"подсоединится, чтобы начать конференцию."
 
 msgid "No"
-msgstr "���"
+msgstr "Нет"
 
 msgid "Yes"
-msgstr "��"
+msgstr "Да"
 
 msgid "Talker Optimization:"
-msgstr ""
+msgstr "Оптимизация для выступающего:"
 
 msgid ""
 "Turns on talker optimization. With talker optimization, Asterisk treats "
@@ -222,9 +221,13 @@ msgid ""
 "causing no\n"
 "buildup in background noise."
 msgstr ""
+"Включает оптимизацию для выступающего. При включеной опции Астериск "
+"распознаёт пассивных слушателей и приглушает им микрофон, тем самым уменьшая "
+"нагрузку на декодирование незадействованных каналов и снижая тем самым общий "
+"шум заднего плана."
 
 msgid "Talker Detection:"
-msgstr ""
+msgstr "Распознавание выступающего:"
 
 msgid ""
 "Sets talker detection. Asterisk will sends events on the Manager Interface "
@@ -233,35 +236,39 @@ msgid ""
 "output of\n"
 "the meetme list CLI command."
 msgstr ""
+"Устанавливает распознавание выступающего оратора. Астериск посылает "
+"уведомления через AMI - Asterisk Manager Interface идентифицируя канал по "
+"которому идёт активное выступление. Выступающий также идентифицируется в "
+"командном режиме CLI среди команд модуля meetme."
 
 msgid "Quiet Mode:"
-msgstr "����� �����?"
+msgstr "Тихий режим:"
 
 msgid "Quiet mode (do not play enter/leave sounds)"
 msgstr ""
-"����� ����� (�� ��������������� ��������� � ��� ��� ����� ��� ����� �� "
-"�����������)"
+"Тихий режим (не воспроизводятся сообщения о том кто вошёл или вышел из "
+"конференции)"
 
 msgid "User Count:"
-msgstr "���������� ����������?"
+msgstr "Количество участников?"
 
 msgid "Announce user(s) count on joining conference"
-msgstr "������������ ���������� ���������� ����������� ��� �������������?"
+msgstr "Анонсировать количество участников конференции при подсоединении?"
 
 msgid "User join/leave:"
-msgstr "�������� �������������/����������?"
+msgstr "Участник подсоединился/отключился?"
 
 msgid "Announce user join/leave"
-msgstr "������������ �������������/���������� ����������?"
+msgstr "Анонсировать подсоединение/отключение участников?"
 
 msgid "Music on Hold:"
-msgstr "������ � ��������?"
+msgstr "Музыка в ожидании?"
 
 msgid "Enable Music On Hold when the conference has a single caller"
-msgstr "������������ ������ � ��������, ���� � ����������� ���� ���� ��������?"
+msgstr "Использовать музыку в ожидании, если в конференции пока один участник?"
 
 msgid "Music on Hold Class:"
-msgstr ""
+msgstr "Класс Музыки в ожидании:"
 
 msgid ""
 "Music (or Commercial) played to the caller while they wait in line for the "
@@ -269,45 +276,67 @@ msgid ""
 "is currently selected, such as by the inbound route.<br><br>  This music is "
 "defined in the \"Music on Hold\" to the left."
 msgstr ""
+"Музыка (или реклама) будет воспроизводится пристутствующим, пока они ожидают "
+"начала конференции. Выбирайте \"наследованый\" если хотите использовать тот "
+"класс МоН, который уже используется по умолчанию, например - на входящем "
+"маршруте.<br><br> Это конфигурируется в модуле Музыка в ожидании слева."
 
 msgid "inherit"
-msgstr ""
+msgstr "наследованый"
 
 msgid "default"
-msgstr ""
+msgstr "по умолчанию"
 
 msgid "Allow Menu:"
-msgstr "��������� ����?"
+msgstr "Разрешить меню?"
 
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
 msgstr ""
-"������������ ������ � ���� (��������� ��� ��������������) ��� ������� '*'?"
+"Предоставить доступ в меню (участнику или администратору) при нажатии '*'?"
 
 msgid "Record Conference:"
-msgstr "���������� �����������?"
+msgstr "Записывать конференцию?"
 
 msgid "Record the conference call"
-msgstr "���������� ���������� �����������?"
+msgstr "Записывать содержание конференции?"
 
 msgid "Maximum Participants:"
-msgstr ""
+msgstr "Максимально участников:"
 
 msgid "Maximum Number of users allowed to join this conference."
 msgstr ""
+"Максимальное количество пользователей присутствующих одновременно в этой "
+"конференции."
 
 msgid "No Limit"
+msgstr "Без ограничений"
+
+msgid "Mute on Join:"
+msgstr ""
+
+msgid ""
+"Mute everyone when they initially join the conference. Please note that if "
+"you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
+"Yes to unmute yourself"
 msgstr ""
 
 msgid "Submit Changes"
-msgstr "��������� ���������"
+msgstr "Применить изменения"
 
 msgid "Please enter a valid Conference Number"
-msgstr ""
+msgstr "Введите действительный номер для конференции"
 
 msgid "Please enter a valid Conference Name"
-msgstr ""
+msgstr "Введите действительное название для конференции"
 
 msgid ""
 "You must set an admin PIN for the Conference Leader when selecting the "
 "leader wait option"
+msgstr ""
+"Вы должны ввести пин-код администратора если хотите использовать опцию "
+"ожидания модератора"
+
+msgid ""
+"You must set Allow Menu to Yes when not using a Leader or Admin in your "
+"conference, otherwise you will be unable to unmute yourself"
 msgstr ""
