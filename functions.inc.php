@@ -170,9 +170,7 @@ function conferences_get_config($engine) {
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_ROOMNUM',$roomnum));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MAX_PARTICIPANTS', $roomusers));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_MUSIC',$music));
-					if (strstr($room['options'],'r') !== false) {
-						$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_RECORDINGFILE','${ASTSPOOLDIR}/monitor/meetme-conf-rec-${MEETME_ROOMNUM}-${UNIQUEID}'));
-					}
+          $ext->add($contextname, $roomnum, '', new ext_gosub('1','s','sub-record-check',"conf,$roomnum," . (strstr($room['options'],'r') !== false ? 'always' : 'never')));
 					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DIALSTATUS}" = "ANSWER"]',($roomuserpin == '' && $roomadminpin == '' ? 'USER' : 'READPIN')));	
 					$ext->add($contextname, $roomnum, '', new ext_answer(''));
 					$ext->add($contextname, $roomnum, '', new ext_wait(1));
