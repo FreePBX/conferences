@@ -100,7 +100,6 @@ if ($ast_ge_162 && $amp_conf['AMPENGINE'] == 'asterisk' && isset($astman) && $as
 $meetmes = conferences_list();
 ?>
 
-</div>
 
 <!-- right side menu -->
 <div class="rnav"><ul>
@@ -114,8 +113,6 @@ if (isset($meetmes)) {
 ?>
 </ul></div>
 
-
-<div class="content">
 <?php
 if ($action == 'delete') {
 	echo '<br><h3>'._("Conference").' '.$extdisplay.' '._("deleted").'!</h3><br><br><br><br><br><br><br><br>';
