@@ -2,12 +2,13 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>2.9.0.2</version>
+	<version>2.10.0.0</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms (meet-me) where multiple people can talk together.</description>
 	<changelog>
+		*2.10.0.0* new version changes
 		*2.9.0.2* #4914
 		*2.9.0.1* removed duplicate functions
 		*2.9.0.0* #4417, #4213, #4660, #4697, #4655, #4735
@@ -46,6 +47,6 @@
 	<menuitems>
 		<conferences>Conferences</conferences>
 	</menuitems>
-	<location>release/2.9/conferences-2.9.0.2.tgz</location>
-	<md5sum>10c86306b7e3c093e5066fbc850b5a28</md5sum>
+	<location>release/2.10/conferences-2.10.0.0.tgz</location>
+	<md5sum>5d749d2d0bc48839f4343e25d3c3869c</md5sum>
 </module>
