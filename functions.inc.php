@@ -143,7 +143,9 @@ function conferences_get_config($engine) {
 					
 					// Add optional hint
 					if ($amp_conf['USEDEVSTATE']) {
-						$ext->addHint($contextname, $roomnum, "MeetMe:".$roomnum);
+
+						$hint_pre = $amp_conf['ASTCONFAPP'] == 'app_meetme' ? 'MeetMe' : 'confbridge';
+						$ext->addHint($contextname, $roomnum, $hint_pre . ":" . $roomnum);
 					}
 					// entry point
 					$ext->add($contextname, $roomnum, '', new ext_macro('user-callerid'));
