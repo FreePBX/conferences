@@ -50,6 +50,6 @@
 	<menuitems>
 		<conferences>Conferences</conferences>
 	</menuitems>
-	<location>release/2.10/conferences-2.10.0.2.tgz</location>
-	<md5sum>4b855cc3e1362c82229f080555855643</md5sum>
+	<location>release/2.10/conferences-2.10.0.3.tgz</location>
+	<md5sum>0c50fb3c1b4df66d23af8f2ab7a8c80a</md5sum>
 </module>
