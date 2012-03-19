@@ -218,7 +218,8 @@ if ($action == 'delete') {
 <?php
 $engineinfo = engine_getinfo();
 $astver =  $engineinfo['version'];
-if (version_compare($astver, '1.4', 'ge') && $amp_conf['ASTCONFAPP']=='app_meetme') {
+$ast_ge_10 = version_compare($astver, '10', 'ge');
+if (version_compare($astver, '1.4', 'ge') && $amp_conf['ASTCONFAPP']=='app_meetme' || $ast_ge_10) {
 ?>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Talker Optimization:")?><span><?php echo _("Turns on talker optimization. With talker optimization, Asterisk treats talkers who
@@ -281,7 +282,7 @@ the meetme list CLI command.")?></span></a></td>
 		</td>
 	</tr>
 	<?php
-		if ($amp_conf['ASTCONFAPP']=='app_meetme') {
+		if ($amp_conf['ASTCONFAPP']=='app_meetme' || $ast_ge_10) {
 	?>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("User join/leave:")?><span><?php echo _("Announce user join/leave")?></span></a></td>
@@ -349,7 +350,7 @@ the meetme list CLI command.")?></span></a></td>
 		</td>
 	</tr>
 	<?php
-		if ($amp_conf['ASTCONFAPP'] == 'app_meetme') {
+		if ($amp_conf['ASTCONFAPP'] == 'app_meetme' || $ast_ge_10) {
 	?>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Record Conference:")?><span><?php echo _("Record the conference call")?></span></a></td>

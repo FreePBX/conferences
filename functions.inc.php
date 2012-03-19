@@ -3,6 +3,8 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 
 // extend extensions class.
 // This example is about as simple as it gets
+
+// TODO: Check if app_meetme or not and handle appropriately
 class conferences_conf {
 	// return the filename to write
 	function get_filename() {
@@ -87,6 +89,7 @@ function conferences_get_config($engine) {
 	global $ext, $conferences_conf, $version, $amp_conf, $astman;
 	
 	$ast_ge_162 = version_compare($version, '1.6.2', 'ge');
+	$ast_ge_10 = version_compare($version, '10', 'ge');
 	
 	switch($engine) {
 		case "asterisk":
@@ -98,13 +101,21 @@ function conferences_get_config($engine) {
 				
 				// Start the conference
 				if ($ast_ge_14) {
-					$ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','Set','CHANNEL(musicclass)=${MEETME_MUSIC}'));
+					if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
+						$ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','Set','CONFBRIDGE(user,music_on_hold_class)=${MEETME_MUSIC}'));
+					} else {
+						$ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','Set','CHANNEL(musicclass)=${MEETME_MUSIC}'));
+					}
 				} else {
 					$ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','SetMusicOnHold','${MEETME_MUSIC}'));
 				}
 				$ext->add($contextname, 'STARTMEETME', '', new ext_setvar('GROUP(meetme)','${MEETME_ROOMNUM}'));
 				$ext->add($contextname, 'STARTMEETME', '', new ext_gotoif('$[${MAX_PARTICIPANTS} > 0 && ${GROUP_COUNT(${MEETME_ROOMNUM}@meetme)}>${MAX_PARTICIPANTS}]','MEETMEFULL,1'));
-				$ext->add($contextname, 'STARTMEETME', '', new ext_meetme('${MEETME_ROOMNUM}','${MEETME_OPTS}','${PIN}'));
+				if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
+					$ext->add($contextname, 'STARTMEETME', '', new ext_meetme('${MEETME_ROOMNUM}',',','${MENU_PROFILE}'));
+				} else {
+					$ext->add($contextname, 'STARTMEETME', '', new ext_meetme('${MEETME_ROOMNUM}','${MEETME_OPTS}','${music_on_hold_class}'));
+				}
 
 				$ext->add($contextname, 'STARTMEETME', '', new ext_hangup(''));
 
@@ -120,16 +131,9 @@ function conferences_get_config($engine) {
 					
 					$roomnum = ltrim($item['0']);
 					$roomoptions = $room['options'];
-					if ($ast_ge_14) {
-						$roomoptions = str_replace('i','I',$roomoptions);
-					}
-					if (!$ast_ge_14) {
-						$roomoptions = str_replace('o','',$roomoptions);
-						$roomoptions = str_replace('T','',$roomoptions);
-					}
+					$roomusers = $room['users'];
 					$roomuserpin = $room['userpin'];
 					$roomadminpin = $room['adminpin'];
-					$roomusers = $room['users'];
 					if(isset($room['music']) && $room['music'] !='' && $room['music']!='inherit') {
 						$music = $room['music'];
 					} else {
@@ -139,6 +143,14 @@ function conferences_get_config($engine) {
 						$roomjoinmsg = recordings_get_file($room['joinmsg_id']);
 					} else {
 						$roomjoinmsg = '';
+					}
+
+					if ($ast_ge_14) {
+						$roomoptions = str_replace('i','I',$roomoptions);
+					}
+					if (!$ast_ge_14) {
+						$roomoptions = str_replace('o','',$roomoptions);
+						$roomoptions = str_replace('T','',$roomoptions);
 					}
 					
 					// Add optional hint
@@ -179,7 +191,11 @@ function conferences_get_config($engine) {
 						
 						// admin mode -- only valid if there is an admin pin
 						if ($roomadminpin != '') {
-							$ext->add($contextname, $roomnum, 'ADMIN', new ext_setvar('MEETME_OPTS','aA'.str_replace('m','',$roomoptions)));
+							if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
+								conferences_get_config_confbridge_helper($contextname, $roomnum, $roomoptions, 'admin');
+							} else {
+								$ext->add($contextname, $roomnum, 'ADMIN', new ext_setvar('MEETME_OPTS','aA'.str_replace('m','',$roomoptions)));
+							}
 							if ($roomjoinmsg != '') {  // play joining message if one defined
 								$ext->add($contextname, $roomnum, '', new ext_playback($roomjoinmsg));
 							}
@@ -188,18 +204,81 @@ function conferences_get_config($engine) {
 					}
 					
 					// user mode
-					$ext->add($contextname, $roomnum, 'USER', new ext_setvar('MEETME_OPTS',$roomoptions));
+					if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
+						conferences_get_config_confbridge_helper($contextname, $roomnum, $roomoptions, 'user');
+					} else {
+						$ext->add($contextname, $roomnum, 'USER', new ext_setvar('MEETME_OPTS',$roomoptions));
+					}
 					if ($roomjoinmsg != '') {  // play joining message if one defined
 						$ext->add($contextname, $roomnum, '', new ext_playback($roomjoinmsg));
 					}
 					$ext->add($contextname, $roomnum, '', new ext_goto('STARTMEETME,1'));
 					
 					// add meetme config
-					$conferences_conf->addMeetme($room['exten'],$room['userpin'],$room['adminpin']);
+					if ($amp_conf['ASTCONFAPP'] == 'app_meetme') {
+						$conferences_conf->addMeetme($room['exten'],$room['userpin'],$room['adminpin']);
+					}
 				}
 			}
 
 		break;
+	}
+}
+
+function conferences_get_config_confbridge_helper($contextname, $roomnum, $roomoptions, $user_type) {
+	global $ext, $conferences_conf, $version, $amp_conf;
+
+	$user_type - strtolower($user_type);
+	if ($user_type == 'admin') {
+		$ext->add($contextname, $roomnum, 'ADMIN', new ext_set('CONFBRIDGE(user,admin)','yes'));
+		$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,marked)','yes'));
+	} else {
+		$ext->add($contextname, $roomnum, 'USER', new ext_noop('User Options:'));
+	}
+	$options = str_split($roomoptions);
+	foreach ($options as $opt) {
+		switch ($opt) {
+		case 'w':
+			if ($user_type != 'admin') {
+				$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,wait_marked)','yes'));
+				$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,end_marked)','yes'));
+			}
+			break;
+		case 'q':
+			$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,quiet)','yes'));
+			break;
+		case 'c':
+			$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,announce_user_count)','yes'));
+			break;
+		case 'i':
+		case 'I':
+			$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,announce_join_leave)','yes'));
+			break;
+		case 'o':
+			$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,dsp_drop_silence)','yes'));
+			break;
+		case 'T':
+			$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,talk_detection_events)','yes'));
+			break;
+		case 'M':
+			$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,music_on_hold_when_empty)','yes'));
+			break;
+		case 's':
+			if ($user_type == 'admin') {
+				$ext->add($contextname, $roomnum, '', new ext_set('MENU_PROFILE','admin_menu'));
+			} else {
+				$ext->add($contextname, $roomnum, '', new ext_set('MENU_PROFILE','user_menu'));
+			}
+			break;
+		case 'r':
+			// Set by sub-record-check
+			break;
+		case 'm':
+			if ($user_type != 'admin') {
+				$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,startmuted)','yes'));
+			}
+			break;
+		}
 	}
 }
 
