@@ -1,25 +1,124 @@
 <?php /* $Id$ */
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 
-// extend extensions class.
-// This example is about as simple as it gets
-
-// TODO: Check if app_meetme or not and handle appropriately
 class conferences_conf {
+
+  function __construct() {
+		$this->_confbridge['general'] = array();
+		$this->_confbridge['user'] = array();
+		$this->_confbridge['bridge'] = array();
+		$this->_confbridge['menu'] = array();
+	}
+
 	// return the filename to write
 	function get_filename() {
-		return "meetme_additional.conf";
+		global $amp_conf;
+
+		$files = array(
+			'meetme_additional.conf',
+		 	'confbridge_additional.conf',
+		);
+
+		return $files;
 	}
+
 	function addMeetme($room, $userpin, $adminpin='') {
 		$this->_meetmes[$room] = $userpin.($adminpin != '' ? ','.$adminpin : '');
 	}
+
+	function addConfUser($section, $key, $value) {
+		$this->_confbridge['user'][$section][] = array($key => $value);
+	}
+
+	function addConfBridge($section, $key, $value) {
+		$this->_confbridge['bridge'][$section][] = array($key => $value);
+	}
+
+	function addConfMenu($section, $key, $value) {
+		$this->_confbridge['menu'][$section][] = array($key => $value);
+	}
+
 	// return the output that goes in the file
-	function generateConf() {
+	function generateConf($file) {
+		global $amp_conf;
+		global $version;
+
 		$output = "";
-		if (isset($this->_meetmes) && is_array($this->_meetmes)) {
-			foreach (array_keys($this->_meetmes) as $meetme) {
-				$output .= 'conf => '.$meetme.",".$this->_meetmes[$meetme]."\n";
+
+		switch ($file) {
+		case 'meetme_additional.conf':
+			if ($amp_conf['ASTCONFAPP'] == 'app_meetme' && !empty($this->_meetmes)) {
+				foreach (array_keys($this->_meetmes) as $meetme) {
+					$output .= 'conf => '.$meetme.",".$this->_meetmes[$meetme]."\n";
+				}
 			}
+		break;
+		case 'confbridge_additional.conf':
+			if ($amp_conf['ASTCONFAPP'] != 'app_confbridge' || version_compare($version, '10', 'lt')) {
+				break;
+			}
+			if (empty($this->_confbridge['general'])) {
+				$output .= "[general]\n";
+				$output .= ";This section reserved for future use\n";
+				$output .= "\n";
+			}
+			// Default if nothing configured
+			if (empty($this->_confbridge['menu']['admin_menu'])) {
+				$this->_confbridge['menu']['admin_menu'] = array(
+					'*'  => 'playback_and_continue(conf-adminmenu)',
+					'*1' => 'toggle_mute',
+					'1'  => 'toggle_mute',
+					'*2' => 'admin_toggle_conference_lock',
+					'2'  => 'admin_toggle_conference_lock',
+					'*3' => 'admin_kick_last',
+					'3'  => 'admin_kick_last',
+					'*4' => 'decrease_listening_volume',
+					'4'  => 'decrease_listening_volume',
+					'*6' => 'increase_listening_volume',
+					'6'  => 'increase_listening_volume',
+					'*7' => 'decrease_talking_volume',
+					'7'  => 'decrease_talking_volume',
+					'*8' => 'no_op',
+					'8'  => 'no_op',
+					'*9' => 'increase_talking_volume',
+					'9'  => 'increase_talking_volume',
+				);
+			}
+			// Default if nothing configured
+			if (empty($this->_confbridge['menu']['user_menu'])) {
+				$this->_confbridge['menu']['user_menu'] = array(
+					'*'  => 'playback_and_continue(conf-usermenu)',
+					'*1' => 'toggle_mute',
+					'1'  => 'toggle_mute',
+					'*4' => 'decrease_listening_volume',
+					'4'  => 'decrease_listening_volume',
+					'*6' => 'increase_listening_volume',
+					'6'  => 'increase_listening_volume',
+					'*7' => 'decrease_talking_volume',
+					'7'  => 'decrease_talking_volume',
+					'*8' => 'leave_conference',
+					'8'  => 'leave_conference',
+					'*9' => 'increase_talking_volume',
+					'9'  => 'increase_talking_volume',
+				);
+			}
+			if (empty($this->_confbridge['menu']['user_menu'])) {
+			}
+			foreach (array('user','bridge','menu') as $type) {
+				foreach ($this->_confbridge[$type] as $section => $settings) {
+					$output .= "[" . $section . "]\n";
+					$output .= "type = " . $type . "\n";
+					foreach ($settings as $key => $value) {
+						$output .= $key . " = " . $value . "\n";
+					}
+					$output .= "\n";
+				}
+			}
+			if (empty($this->_confbridge['menu']['admin_menu'])) {
+			}
+			if (empty($this->_confbridge['menu']['user_menu'])) {
+			}
+		break;
 		}
 		return $output;
 	}
@@ -114,7 +213,7 @@ function conferences_get_config($engine) {
 				if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
 					$ext->add($contextname, 'STARTMEETME', '', new ext_meetme('${MEETME_ROOMNUM}',',','${MENU_PROFILE}'));
 				} else {
-					$ext->add($contextname, 'STARTMEETME', '', new ext_meetme('${MEETME_ROOMNUM}','${MEETME_OPTS}','${music_on_hold_class}'));
+					$ext->add($contextname, 'STARTMEETME', '', new ext_meetme('${MEETME_ROOMNUM}','${MEETME_OPTS}','${PIN}'));
 				}
 
 				$ext->add($contextname, 'STARTMEETME', '', new ext_hangup(''));
