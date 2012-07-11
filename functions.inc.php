@@ -6,7 +6,9 @@ class conferences_conf {
   function __construct() {
 		$this->_confbridge['general'] = array();
 		$this->_confbridge['user'] = array();
+		$this->_confbridge['user']['default_user'] = array();
 		$this->_confbridge['bridge'] = array();
+		$this->_confbridge['bridge']['default_bridge'] = array();
 		$this->_confbridge['menu'] = array();
 	}
 
@@ -27,15 +29,15 @@ class conferences_conf {
 	}
 
 	function addConfUser($section, $key, $value) {
-		$this->_confbridge['user'][$section][] = array($key => $value);
+		$this->_confbridge['user'][$section][$key] = $value;
 	}
 
 	function addConfBridge($section, $key, $value) {
-		$this->_confbridge['bridge'][$section][] = array($key => $value);
+		$this->_confbridge['bridge'][$section][$key] = $value;
 	}
 
 	function addConfMenu($section, $key, $value) {
-		$this->_confbridge['menu'][$section][] = array($key => $value);
+		$this->_confbridge['menu'][$section][$key] = $value;
 	}
 
 	// return the output that goes in the file
@@ -210,6 +212,12 @@ function conferences_get_config($engine) {
 				}
 				$ext->add($contextname, 'STARTMEETME', '', new ext_setvar('GROUP(meetme)','${MEETME_ROOMNUM}'));
 				$ext->add($contextname, 'STARTMEETME', '', new ext_gotoif('$[${MAX_PARTICIPANTS} > 0 && ${GROUP_COUNT(${MEETME_ROOMNUM}@meetme)}>${MAX_PARTICIPANTS}]','MEETMEFULL,1'));
+				// No harm done if quietmode, these will just then be ignored
+				//
+				if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && !$ast_ge_10) {
+					$ext->add($contextname, 'STARTMEETME', '', new ext_set('CONFBRIDGE_JOIN_SOUND','beep'));
+					$ext->add($contextname, 'STARTMEETME', '', new ext_set('CONFBRIDGE_LEAVE_SOUND','beeperr'));
+				}
 				if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
 					$ext->add($contextname, 'STARTMEETME', '', new ext_meetme('${MEETME_ROOMNUM}',',','${MENU_PROFILE}'));
 				} else {

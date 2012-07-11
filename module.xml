@@ -2,12 +2,15 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>2.10.0.5</version>
+	<version>2.10.0.8</version>
 	<publisher>FreePBX</publisher>
 	<license>GPLv2+</license>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms (meet-me) where multiple people can talk together.</description>
 	<changelog>
+		*2.10.0.8* #5916
+		*2.10.0.7* #5806 Asterisk 10 only
+		*2.10.0.6* #5800 Asterisk 10 only
 		*2.10.0.5* #5752 double pin request
 		*2.10.0.4* #5664 get app_confbridge working on Asterisk 10
 		*2.10.0.3* #5632
@@ -52,6 +55,6 @@
 	<menuitems>
 		<conferences>Conferences</conferences>
 	</menuitems>
-	<location>release/2.10/conferences-2.10.0.5.tgz</location>
-	<md5sum>88430195e2ee57ed38842f2416711ad9</md5sum>
+	<location>release/2.10/conferences-2.10.0.8.tgz</location>
+	<md5sum>9f442ec891670562245b26d75727f153</md5sum>
 </module>
