@@ -61,6 +61,6 @@
 			<display>conferences</display>
 		</conferences>
  	</popovers>
-	<location>release/2.11/conferences-2.10.0.8.tgz</location>
-	<md5sum>f11b04d221686d74e6496cd0b37dad22</md5sum>
+	<location>release/2.11/conferences-2.11.0.0.tgz</location>
+	<md5sum>b68804c941e630ff8fc976918e0c80c6</md5sum>
 </module>
