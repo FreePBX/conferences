@@ -12,14 +12,16 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //GNU General Public License for more details.
 
+dbug($_REQUEST);
 $dispnum = "conferences"; //used for switch on config.php
 $tabindex = 0;
 
 isset($_REQUEST['action'])?$action = $_REQUEST['action']:$action='';
 //the extension we are currently displaying
-isset($_REQUEST['extdisplay'])?$extdisplay=$_REQUEST['extdisplay']:$extdisplay='';
 
 $account = isset($_REQUEST['account']) ? $_REQUEST['account'] : '';
+$extdisplay = isset($_REQUEST['extdisplay']) && $_REQUEST['extdisplay'] != '' ? $_REQUEST['extdisplay'] : $account;
+
 $orig_account = isset($_REQUEST['orig_account']) ? $_REQUEST['orig_account'] : '';
 $music = isset($_REQUEST['music']) ? $_REQUEST['music'] : '';
 $users = isset($_REQUEST['users']) ? $_REQUEST['users'] : '0';
@@ -39,7 +41,7 @@ if ($account != "" && !checkRange($account)){
 				$conflict_url = framework_display_extension_usage_alert($usage_arr);
 			} elseif (conferences_add($account,$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id'],$music,$users) !== false) {
 				needreload();
-				redirect_standard();
+				redirect_standard('account');
 			}
 		break;
 		case "delete":
