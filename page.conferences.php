@@ -12,7 +12,6 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //GNU General Public License for more details.
 
-dbug($_REQUEST);
 $dispnum = "conferences"; //used for switch on config.php
 $tabindex = 0;
 
