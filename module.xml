@@ -49,4 +49,4 @@
 	</menuitems>
 	<location>release/2.10/conferences-2.10.0.0.tgz</location>
 	<md5sum>5d749d2d0bc48839f4343e25d3c3869c</md5sum>
-</module>
+<supported><version>2.10</version></supported></module>
