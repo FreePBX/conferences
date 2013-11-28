@@ -52,4 +52,4 @@
 	</menuitems>
 	<location>release/2.10/conferences-2.10.0.3.tgz</location>
 	<md5sum>0c50fb3c1b4df66d23af8f2ab7a8c80a</md5sum>
-</module>
+<supported><version>2.10</version></supported></module>
