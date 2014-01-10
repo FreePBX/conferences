@@ -32,6 +32,9 @@
 			<display>conferences</display>
 		</conferences>
  	</popovers>
+	<supported>
+		<version>2.10</version>
+	</supported>
 	<location>release/2.11/conferences-2.11.0.1.tgz</location>
 	<md5sum>1ff1a30c643c8de67b2d03c30d0caf51</md5sum>
 </module>
