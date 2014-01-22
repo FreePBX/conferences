@@ -2,6 +2,16 @@
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 
 class conferences_conf {
+	private static $obj;
+
+	// FreePBX magic ::create() call
+	public static function create() {
+		if (!isset(self::$obj))
+			self::$obj = new conferences_conf();
+
+		return self::$obj;
+	}
+
 
   function __construct() {
 		$this->_confbridge['general'] = array();
@@ -10,6 +20,8 @@ class conferences_conf {
 		$this->_confbridge['bridge'] = array();
 		$this->_confbridge['bridge']['default_bridge'] = array();
 		$this->_confbridge['menu'] = array();
+
+		self::$obj = $this;
 	}
 
 	// return the filename to write
