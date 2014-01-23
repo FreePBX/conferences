@@ -304,7 +304,7 @@ function conferences_get_config($engine) {
 
 						// pin invalid
 						$ext->add($contextname, $roomnum, '', new ext_setvar('PINCOUNT','$[${PINCOUNT}+1]'));
-						$ext->add($contextname, $roomnum, '', new ext_gotoif('$[${PINCOUNT}>3]', "h"));
+						$ext->add($contextname, $roomnum, '', new ext_gotoif('$[${PINCOUNT}>3]', "h,1"));
 						$ext->add($contextname, $roomnum, '', new ext_playback('conf-invalidpin'));
 						$ext->add($contextname, $roomnum, '', new ext_goto('READPIN'));
 						
