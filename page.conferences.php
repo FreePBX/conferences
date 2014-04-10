@@ -424,7 +424,7 @@ function checkConf()
 	if (!isInteger(theForm.account.value))
 		return warnInvalid(theForm.account, msgInvalidConfNumb);
 
-	var sizeDisplayName = "<?php echo conferences_get_field_size('description', 50); ?>";
+	var sizeDisplayName = "<?php echo module_get_field_size('meetme', 'description', 50); ?>";
 	if (!isCorrectLength(theForm.name.value, sizeDisplayName))
                 return warnInvalid(theForm.name, "<?php echo _('The Conference Name provided is too long.'); ?>")
 		
