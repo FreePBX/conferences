@@ -200,10 +200,10 @@ function conferences_recordings_usage($recording_id) {
 */
 function conferences_get_config($engine) {
 	global $ext, $conferences_conf, $version, $amp_conf, $astman;
-	
+
 	$ast_ge_162 = version_compare($version, '1.6.2', 'ge');
 	$ast_ge_10 = version_compare($version, '10', 'ge');
-	
+
 	switch($engine) {
 		case "asterisk":
 			$ext->addInclude('from-internal-additional','ext-meetme');
@@ -211,7 +211,7 @@ function conferences_get_config($engine) {
 			if(is_array($conflist = conferences_list())) {
 
 				$ast_ge_14 = version_compare($version, "1.4","ge");
-				
+
 				// Start the conference
 				if ($ast_ge_14) {
 					if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
@@ -241,13 +241,13 @@ function conferences_get_config($engine) {
 				//meetme full
 				$ext->add($contextname, 'MEETMEFULL', '', new ext_playback('im-sorry&conf-full&goodbye'));
 				$ext->add($contextname, 'MEETMEFULL', '', new ext_hangup(''));
-				
+
 				// hangup for whole context
 				$ext->add($contextname, 'h', '', new ext_hangup(''));
-				
+
 				foreach($conflist as $item) {
 					$room = conferences_get(ltrim($item['0']));
-					
+
 					$roomnum = ltrim($item['0']);
 					$roomoptions = $room['options'];
 					$roomusers = $room['users'];
@@ -271,7 +271,7 @@ function conferences_get_config($engine) {
 						$roomoptions = str_replace('o','',$roomoptions);
 						$roomoptions = str_replace('T','',$roomoptions);
 					}
-					
+
 					// Add optional hint
 					if ($amp_conf['USEDEVSTATE']) {
 
@@ -284,15 +284,15 @@ function conferences_get_config($engine) {
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MAX_PARTICIPANTS', $roomusers));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_MUSIC',$music));
           $ext->add($contextname, $roomnum, '', new ext_gosub('1','s','sub-record-check',"conf,$roomnum," . (strstr($room['options'],'r') !== false ? 'always' : 'never')));
-					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DIALSTATUS}" = "ANSWER"]',($roomuserpin == '' && $roomadminpin == '' ? 'USER' : 'READPIN')));	
+					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DIALSTATUS}" = "ANSWER"]',($roomuserpin == '' && $roomadminpin == '' ? 'USER' : 'READPIN')));
 					$ext->add($contextname, $roomnum, '', new ext_answer(''));
 					$ext->add($contextname, $roomnum, '', new ext_wait(1));
-					
+
 					// Deal with PINs -- if exist
 					if ($roomuserpin != '' || $roomadminpin != '') {
 						$ext->add($contextname, $roomnum, '', new ext_setvar('PINCOUNT','0'));
 						$ext->add($contextname, $roomnum, 'READPIN', new ext_read('PIN','enter-conf-pin-number'));
-						
+
 						// userpin -- must do always, otherwise if there is just an adminpin
 						// there would be no way to get to the conference !
 						$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x'.$roomuserpin.']','USER'));
@@ -307,7 +307,7 @@ function conferences_get_config($engine) {
 						$ext->add($contextname, $roomnum, '', new ext_gotoif('$[${PINCOUNT}>3]', "h,1"));
 						$ext->add($contextname, $roomnum, '', new ext_playback('conf-invalidpin'));
 						$ext->add($contextname, $roomnum, '', new ext_goto('READPIN'));
-						
+
 						// admin mode -- only valid if there is an admin pin
 						if ($roomadminpin != '') {
 							if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
@@ -318,10 +318,10 @@ function conferences_get_config($engine) {
 							if ($roomjoinmsg != '') {  // play joining message if one defined
 								$ext->add($contextname, $roomnum, '', new ext_playback($roomjoinmsg));
 							}
-							$ext->add($contextname, $roomnum, '', new ext_goto('STARTMEETME,1'));							
+							$ext->add($contextname, $roomnum, '', new ext_goto('STARTMEETME,1'));
 						}
 					}
-					
+
 					// user mode
 					if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
 						conferences_get_config_confbridge_helper($contextname, $roomnum, $roomoptions, 'user');
@@ -332,7 +332,7 @@ function conferences_get_config($engine) {
 						$ext->add($contextname, $roomnum, '', new ext_playback($roomjoinmsg));
 					}
 					$ext->add($contextname, $roomnum, '', new ext_goto('STARTMEETME,1'));
-					
+
 					// add meetme config
 					if ($amp_conf['ASTCONFAPP'] == 'app_meetme') {
 						$conferences_conf->addMeetme($room['exten'],$room['userpin'],$room['adminpin']);
