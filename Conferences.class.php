@@ -75,4 +75,7 @@ class Conferences implements BMO {
 	public function getConference($room) {
 		return conferences_get($room);
 	}
+	public function listConferences() {
+		return conferences_list();
+	}
 }
