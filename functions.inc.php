@@ -426,44 +426,18 @@ function conferences_check_extensions($exten=true) {
 
 //get the existing meetme extensions
 function conferences_list() {
-	$results = sql("SELECT exten,description FROM meetme ORDER BY exten","getAll",DB_FETCHMODE_ASSOC);
-	foreach($results as $result){
-		// check to see if we are in-range for the current AMP User.
-		if (isset($result['exten']) && checkRange($result['exten'])){
-			// return this item's dialplan destination, and the description
-			$extens[] = array($result['exten'],$result['description']);
-		}
-	}
-	if (isset($extens)) {
-		return $extens;
-	} else {
-		return null;
-	}
+	FreePBX::Conferences()->listConferences();
 }
 
 function conferences_get($account){
-  global $db;
-	//get all the variables for the meetme
-	$results = sql("SELECT exten,options,userpin,adminpin,description,joinmsg_id,music,users FROM meetme WHERE exten = '".$db->escapeSimple($account)."'","getRow",DB_FETCHMODE_ASSOC);
-	return $results;
+	FreePBX::Conferences()->getConference($account);
 }
 
 function conferences_del($account){
-	global $db;
-	$results = sql("DELETE FROM meetme WHERE exten = '".$db->escapeSimple($account)."'","query");
+	FreePBX::Conferences()->deleteConference($account);
 }
 
 function conferences_add($account,$name,$userpin,$adminpin,$options,$joinmsg_id=null,$music='',$users=0){
-	global $active_modules;
-	global $db;
-	$account    = $db->escapeSimple($account);
-	$name       = $db->escapeSimple($name);
-	$userpin    = $db->escapeSimple($userpin);
-	$adminpin   = $db->escapeSimple($adminpin);
-	$options    = $db->escapeSimple($options);
-	$joinmsg_id = $db->escapeSimple($joinmsg_id);
-	$music      = $db->escapeSimple($music);
-	$users      = $db->escapeSimple($users);
-	$results = sql("INSERT INTO meetme (exten,description,userpin,adminpin,options,joinmsg_id,music,users) values (\"$account\",\"$name\",\"$userpin\",\"$adminpin\",\"$options\",\"$joinmsg_id\",\"$music\",\"$users\")");
+	FreePBX::Conferences()->addConference($account,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users);
 }
 ?>
