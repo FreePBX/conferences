@@ -426,18 +426,18 @@ function conferences_check_extensions($exten=true) {
 
 //get the existing meetme extensions
 function conferences_list() {
-	FreePBX::Conferences()->listConferences();
+	return FreePBX::Conferences()->listConferences();
 }
 
 function conferences_get($account){
-	FreePBX::Conferences()->getConference($account);
+	return FreePBX::Conferences()->getConference($account);
 }
 
 function conferences_del($account){
-	FreePBX::Conferences()->deleteConference($account);
+	return FreePBX::Conferences()->deleteConference($account);
 }
 
 function conferences_add($account,$name,$userpin,$adminpin,$options,$joinmsg_id=null,$music='',$users=0){
-	FreePBX::Conferences()->addConference($account,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users);
+	return FreePBX::Conferences()->addConference($account,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users);
 }
 ?>
