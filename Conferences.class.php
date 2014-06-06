@@ -24,10 +24,7 @@ class Conferences implements BMO {
 
 	}
 	public function restore($backup){
-
-	}
-	public function genConfig() {
-
+		
 	}
 
 	/**
