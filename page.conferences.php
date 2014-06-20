@@ -18,7 +18,7 @@ $users = isset($_REQUEST['users']) ? $_REQUEST['users'] : '0';
 if ($account != "" && !checkRange($account)){
 	echo "<script>javascript:alert('"._("Warning! Extension")." $account "._("is not allowed for your account.")."');</script>";
 } else {
-	
+
 	//if submitting form, update database
 	switch ($action) {
 		case "add":
@@ -55,7 +55,7 @@ if ($account != "" && !checkRange($account)){
 			} else {
 				conferences_del($account);
 			}
-			
+
 			conferences_add($account,$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id'],$music,$users);
 			needreload();
 			redirect_standard('extdisplay');
@@ -80,7 +80,7 @@ $meetmes = conferences_list();
 
 <!-- right side menu -->
 <div class="rnav"><ul>
-    <li><a id="<?php echo ($extdisplay=='' ? 'current':'') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add Conference")?></a></li>
+		<li><a id="<?php echo ($extdisplay=='' ? 'current':'') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add Conference")?></a></li>
 <?php
 if (isset($meetmes)) {
 	foreach ($meetmes as $meetme) {
@@ -94,7 +94,7 @@ if (isset($meetmes)) {
 if ($action == 'delete') {
 	echo '<br><h3>'._("Conference").' '.$extdisplay.' '._("deleted").'!</h3><br><br><br><br><br><br><br><br>';
 } else {
-	if ($extdisplay != ""){ 
+	if ($extdisplay != ""){
 		//get details for this meetme
 		$thisMeetme = conferences_get($extdisplay);
 		$options     = $thisMeetme['options'];
@@ -165,7 +165,7 @@ if ($action == 'delete') {
 		<td><a href="#" class="info"><?php echo _("Admin PIN:")?><span><?php echo _("Enter a PIN number for the admin user.<br><br>This setting is optional unless the 'leader wait' option is in use, then this PIN will identify the leader.")?></span></a></td>
 		<td><input size="8" type="text" name="adminpin" value="<?php echo $adminpin; ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
-	
+
 	<tr><td colspan="2"><br><h5><?php echo _("Conference Options")?><hr></h5></td></tr>
 <?php if(function_exists('recordings_list')) { //only include if recordings is enabled?>
 	<tr>
@@ -180,8 +180,8 @@ if ($action == 'delete') {
 						echo '<option value="'.$tresult['id'].'"'.($tresult['id'] == $joinmsg_id ? ' SELECTED' : '').'>'.$tresult['displayname']."</option>\n";
 					}
 				}
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 <?php }	else { ?>
@@ -200,8 +200,8 @@ if ($action == 'delete') {
 				$optselect = strpos($options, "w");
 				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
 				echo '<option value="w"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 
@@ -222,8 +222,8 @@ buildup in background noise.")?></span></a></td>
 				$optselect = strpos($options, "o");
 				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
 				echo '<option value="o"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 
@@ -238,8 +238,8 @@ the meetme list CLI command.")?></span></a></td>
 				$optselect = strpos($options, "T");
 				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
 				echo '<option value="T"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 <?php
@@ -255,8 +255,8 @@ the meetme list CLI command.")?></span></a></td>
 				$optselect = strpos($options, "q");
 				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
 				echo '<option value="q"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 	<tr>
@@ -267,8 +267,8 @@ the meetme list CLI command.")?></span></a></td>
 				$optselect = strpos($options, "c");
 				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
 				echo '<option value="c"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 	<?php
@@ -282,8 +282,8 @@ the meetme list CLI command.")?></span></a></td>
 				$optselect = strpos($options, "i");
 				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
 				echo '<option value="i"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 	<?php } else {//when using confbridge, hide option, but save it anyway
@@ -297,34 +297,34 @@ the meetme list CLI command.")?></span></a></td>
 				$optselect = strpos($options, "M");
 				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
 				echo '<option value="M"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 
 <?php if(function_exists('music_list')) { //only include if music module is enabled?>
-        <tr>
-                <td><a href="#" class="info"><?php echo _("Music on Hold Class:")?><span><?php echo _("Music (or Commercial) played to the caller while they wait in line for the conference to start. Choose \"inherit\" if you want the MoH class to be what is currently selected, such as by the inbound route.<br><br>  This music is defined in the \"Music on Hold\" to the left.")?></span></a></td>
-                <td>
-                        <select name="music" tabindex="<?php echo ++$tabindex;?>">
-                        <?php
-                                $tresults = music_list();
-                                array_unshift($tresults,'inherit');
-                                $default = (isset($music) ? $music : 'inherit');
-                                if (isset($tresults)) {
-                                        foreach ($tresults as $tresult) {
-                                                $searchvalue="$tresult";
-                                                ( $tresult == 'inherit' ? $ttext = _("inherit") : $ttext = $tresult );
+				<tr>
+								<td><a href="#" class="info"><?php echo _("Music on Hold Class:")?><span><?php echo _("Music (or Commercial) played to the caller while they wait in line for the conference to start. Choose \"inherit\" if you want the MoH class to be what is currently selected, such as by the inbound route.<br><br>  This music is defined in the \"Music on Hold\" to the left.")?></span></a></td>
+								<td>
+												<select name="music" tabindex="<?php echo ++$tabindex;?>">
+												<?php
+																$tresults = music_list();
+																array_unshift($tresults,'inherit');
+																$default = (isset($music) ? $music : 'inherit');
+																if (isset($tresults)) {
+																				foreach ($tresults as $tresult) {
+																								$searchvalue="$tresult";
+																								( $tresult == 'inherit' ? $ttext = _("inherit") : $ttext = $tresult );
 // there is a separate flag for turning off moh - just leaving this in case it should be unified to the way this is managed for queues (via "none" selection)
 //                                              ( $tresult == 'none' ? $ttext = _("none") : $ttext = $tresult );
-                                                ( $tresult == 'default' ? $ttext = _("default") : $ttext = $tresult );                                        
-                                                echo '<option value="'.$tresult.'" '.($searchvalue == $default ? 'SELECTED' : '').'>'.$ttext;
-                                        }
-                                }
-                        ?>
-                        </select>
-                </td>
-        </tr>
+																								( $tresult == 'default' ? $ttext = _("default") : $ttext = $tresult );
+																								echo '<option value="'.$tresult.'" '.($searchvalue == $default ? 'SELECTED' : '').'>'.$ttext;
+																				}
+																}
+												?>
+												</select>
+								</td>
+				</tr>
 <?php } ?>
 
 	<tr>
@@ -335,8 +335,8 @@ the meetme list CLI command.")?></span></a></td>
 				$optselect = strpos($options, "s");
 				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
 				echo '<option value="s"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 	<?php
@@ -359,7 +359,7 @@ the meetme list CLI command.")?></span></a></td>
 	}?>
 	<?php //Begin Maximum Participants Code ?>
 	<tr>
-    <td><a href="#" class="info"><?php echo _("Maximum Participants:")?><span><?php echo _("Maximum Number of users allowed to join this conference.")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Maximum Participants:")?><span><?php echo _("Maximum Number of users allowed to join this conference.")?></span></a></td>
 		<td>
 		  <select name="users" tabindex="<?php echo ++$tabindex;?>">
 			<?php
@@ -383,7 +383,7 @@ the meetme list CLI command.")?></span></a></td>
 				?>
 				</select>
 		</td>
-    </tr>
+		</tr>
 	</table>
 <?php
 	// implementation of module hook
@@ -408,18 +408,20 @@ function checkConf()
 	var msgInvalidConfName = "<?php echo _('Please enter a valid Conference Name'); ?>";
 	var msgNeedAdminPIN = "<?php echo _('You must set an admin PIN for the Conference Leader when selecting the leader wait option'); ?>";
 	var msgInvalidMuteOnJoin = "<?php echo _('You must set Allow Menu to Yes when not using a Leader or Admin in your conference, otherwise you will be unable to unmute yourself'); ?>";
-	
+
 	defaultEmptyOK = false;
 	if (!isInteger(theForm.account.value))
 		return warnInvalid(theForm.account, msgInvalidConfNumb);
 
-	var sizeDisplayName = "<?php echo module_get_field_size('meetme', 'description', 50); ?>";
-	if (!isCorrectLength(theForm.name.value, sizeDisplayName))
-                return warnInvalid(theForm.name, "<?php echo _('The Conference Name provided is too long.'); ?>")
-		
+	<?php if (function_exists('module_get_field_size')) { ?>
+		var sizeDisplayName = "<?php echo module_get_field_size('meetme', 'description', 50); ?>";
+		if (!isCorrectLength(theForm.name.value, sizeDisplayName))
+			return warnInvalid(theForm.name, "<?php echo _('The Conference Name provided is too long.'); ?>")
+	<?php } ?>
+	
 	if (!isAlphanumeric(theForm.name.value))
 		return warnInvalid(theForm.name, msgInvalidConfName);
-		
+
 	// update $options
 	var theOptionsFld = theForm.options;
 	theOptionsFld.value = "";
@@ -438,10 +440,10 @@ function checkConf()
 	// not possible to have a 'leader' conference with no adminpin
 	if (theForm.options.value.indexOf("w") > -1 && theForm.adminpin.value == "")
 		return warnInvalid(theForm.adminpin, msgNeedAdminPIN);
-	
+
 	// should not have a conference with no 'leader', mute on join, and no allow menu, so let's complain
 	if ($('[name=opt\\#m]').val() != '' && $('[name=adminpin]').val() == '' && !$('[name=opt\\#s]').val())
-		return warnInvalid(theForm.options, msgInvalidMuteOnJoin);	
+		return warnInvalid(theForm.options, msgInvalidMuteOnJoin);
 
 	return true;
 }
@@ -449,6 +451,6 @@ function checkConf()
 //-->
 </script>
 	</form>
-<?php		
+<?php
 } //end if action == delGRP
 ?>
