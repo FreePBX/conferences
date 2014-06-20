@@ -2,13 +2,14 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>12.0.5</version>
+	<version>12.0.6</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
+		*12.0.6* Merge outstanding changes from 2.11 branch
 		*12.0.5* Add BLF feature code (*87)
 		*12.0.4* Integrity Constraint on Insert
 		*12.0.3* Would help to actually HAVE conferences wouldnt it. Ouch
