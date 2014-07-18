@@ -279,6 +279,7 @@ function conferences_get_config($engine) {
 
 						$hint_pre = $amp_conf['ASTCONFAPP'] == 'app_meetme' ? 'MeetMe' : 'confbridge';
 						$ext->addHint($contextname, $roomnum, $hint_pre . ":" . $roomnum);
+						$hints[] = $hint_pre . ":" . $roomnum;
 					}
 					// entry point
 					$ext->add($contextname, $roomnum, '', new ext_macro('user-callerid'));
@@ -338,6 +339,17 @@ function conferences_get_config($engine) {
 					// add meetme config
 					if ($amp_conf['ASTCONFAPP'] == 'app_meetme') {
 						$conferences_conf->addMeetme($room['exten'],$room['userpin'],$room['adminpin']);
+					}
+				}
+
+				$fcc = new featurecode('conferences', 'conf_status');
+				$conf_code = $fcc->getCodeActive();
+				unset($fcc);
+
+				if ($conf_code != '') {
+					$ext->add($contextname, $conf_code, '', new ext_hangup(''));
+					if ($amp_conf['USEDEVSTATE']) {
+						$ext->addHint($contextname, $conf_code, implode('&', $hints));
 					}
 				}
 			}
