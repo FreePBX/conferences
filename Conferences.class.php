@@ -24,10 +24,7 @@ class Conferences implements BMO {
 
 	}
 	public function restore($backup){
-
-	}
-	public function genConfig() {
-
+		
 	}
 
 	/**
@@ -90,7 +87,7 @@ class Conferences implements BMO {
 		$sql = "INSERT INTO meetme (exten,description,userpin,adminpin,options,joinmsg_id,music,users) values (?,?,?,?,?,?,?,?)";
 		$sth = $this->db->prepare($sql);
 		try {
-			$sth->execute(array($account,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users));
+			$sth->execute(array($room,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users));
 		} catch(\Exception $e) {
 			return false;
 		}
