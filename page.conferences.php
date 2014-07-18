@@ -18,7 +18,7 @@ $users = isset($_REQUEST['users']) ? $_REQUEST['users'] : '0';
 if ($account != "" && !checkRange($account)){
 	echo "<script>javascript:alert('"._("Warning! Extension")." $account "._("is not allowed for your account.")."');</script>";
 } else {
-	
+
 	//if submitting form, update database
 	switch ($action) {
 		case "add":
@@ -55,7 +55,7 @@ if ($account != "" && !checkRange($account)){
 			} else {
 				conferences_del($account);
 			}
-			
+
 			conferences_add($account,$_REQUEST['name'],$_REQUEST['userpin'],$_REQUEST['adminpin'],$_REQUEST['options'],$_REQUEST['joinmsg_id'],$music,$users);
 			needreload();
 			redirect_standard('extdisplay');
@@ -94,7 +94,7 @@ if (isset($meetmes)) {
 if ($action == 'delete') {
 	echo '<br><h3>'._("Conference").' '.$extdisplay.' '._("deleted").'!</h3><br><br><br><br><br><br><br><br>';
 } else {
-	if ($extdisplay != ""){ 
+	if ($extdisplay != ""){
 		//get details for this meetme
 		$thisMeetme = conferences_get($extdisplay);
 		$options     = $thisMeetme['options'];
@@ -118,7 +118,7 @@ if ($action == 'delete') {
 <?php		if ($extdisplay != ""){ ?>
 	<h2><?php echo _("Conference:")." ". $extdisplay; ?></h2>
 <?php
-					$delURL = $_SERVER['PHP_SELF'].'?'.$_SERVER['QUERY_STRING'].'&action=delete';
+					$delURL = '?'.$_SERVER['QUERY_STRING'].'&action=delete';
 					$tlabel = sprintf(_("Delete Conference %s"),$extdisplay);
 					$label = '<span><img width="16" height="16" border="0" title="'.$tlabel.'" alt="" src="images/core_delete.png"/>&nbsp;'.$tlabel.'</span>';
 ?>
@@ -140,7 +140,7 @@ if ($action == 'delete') {
 					echo implode('<br .>',$conflict_url);
 				}
 ?>
-	<form autocomplete="off" name="editMM" action="<?php $_SERVER['PHP_SELF'] ?>" method="post" onsubmit="return checkConf();">
+	<form autocomplete="off" name="editMM" action="" method="post" onsubmit="return checkConf();">
 	<input type="hidden" name="display" value="<?php echo $dispnum?>">
 	<input type="hidden" name="action" value="<?php echo ($extdisplay != '' ? 'edit' : 'add') ?>">
 	<input type="hidden" name="options" value="<?php echo $options; ?>">
@@ -165,7 +165,7 @@ if ($action == 'delete') {
 		<td><a href="#" class="info"><?php echo _("Admin PIN:")?><span><?php echo _("Enter a PIN number for the admin user.<br><br>This setting is optional unless the 'leader wait' option is in use, then this PIN will identify the leader.")?></span></a></td>
 		<td><input size="8" type="text" name="adminpin" value="<?php echo $adminpin; ?>" tabindex="<?php echo ++$tabindex;?>"></td>
 	</tr>
-	
+
 	<tr><td colspan="2"><br><h5><?php echo _("Conference Options")?><hr></h5></td></tr>
 <?php if(function_exists('recordings_list')) { //only include if recordings is enabled?>
 	<tr>
@@ -180,8 +180,8 @@ if ($action == 'delete') {
 						echo '<option value="'.$tresult['id'].'"'.($tresult['id'] == $joinmsg_id ? ' SELECTED' : '').'>'.$tresult['displayname']."</option>\n";
 					}
 				}
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 <?php }	else { ?>
@@ -200,8 +200,8 @@ if ($action == 'delete') {
 				$optselect = strpos($options, "w");
 				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
 				echo '<option value="w"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 
@@ -222,8 +222,8 @@ buildup in background noise.")?></span></a></td>
 				$optselect = strpos($options, "o");
 				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
 				echo '<option value="o"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 
@@ -238,8 +238,8 @@ the meetme list CLI command.")?></span></a></td>
 				$optselect = strpos($options, "T");
 				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
 				echo '<option value="T"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 <?php
@@ -255,8 +255,8 @@ the meetme list CLI command.")?></span></a></td>
 				$optselect = strpos($options, "q");
 				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
 				echo '<option value="q"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 	<tr>
@@ -267,8 +267,8 @@ the meetme list CLI command.")?></span></a></td>
 				$optselect = strpos($options, "c");
 				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
 				echo '<option value="c"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 	<?php
@@ -282,8 +282,8 @@ the meetme list CLI command.")?></span></a></td>
 				$optselect = strpos($options, "i");
 				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
 				echo '<option value="i"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 	<?php } else {//when using confbridge, hide option, but save it anyway
@@ -297,8 +297,8 @@ the meetme list CLI command.")?></span></a></td>
 				$optselect = strpos($options, "M");
 				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
 				echo '<option value="M"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 
@@ -317,7 +317,7 @@ the meetme list CLI command.")?></span></a></td>
                                                 ( $tresult == 'inherit' ? $ttext = _("inherit") : $ttext = $tresult );
 // there is a separate flag for turning off moh - just leaving this in case it should be unified to the way this is managed for queues (via "none" selection)
 //                                              ( $tresult == 'none' ? $ttext = _("none") : $ttext = $tresult );
-                                                ( $tresult == 'default' ? $ttext = _("default") : $ttext = $tresult );                                        
+                                                ( $tresult == 'default' ? $ttext = _("default") : $ttext = $tresult );
                                                 echo '<option value="'.$tresult.'" '.($searchvalue == $default ? 'SELECTED' : '').'>'.$ttext;
                                         }
                                 }
@@ -335,8 +335,8 @@ the meetme list CLI command.")?></span></a></td>
 				$optselect = strpos($options, "s");
 				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
 				echo '<option value="s"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
-			?>		
-			</select>		
+			?>
+			</select>
 		</td>
 	</tr>
 	<?php
@@ -408,14 +408,14 @@ function checkConf()
 	var msgInvalidConfName = "<?php echo _('Please enter a valid Conference Name'); ?>";
 	var msgNeedAdminPIN = "<?php echo _('You must set an admin PIN for the Conference Leader when selecting the leader wait option'); ?>";
 	var msgInvalidMuteOnJoin = "<?php echo _('You must set Allow Menu to Yes when not using a Leader or Admin in your conference, otherwise you will be unable to unmute yourself'); ?>";
-	
+
 	defaultEmptyOK = false;
 	if (!isInteger(theForm.account.value))
 		return warnInvalid(theForm.account, msgInvalidConfNumb);
-		
+
 	if (!isAlphanumeric(theForm.name.value))
 		return warnInvalid(theForm.name, msgInvalidConfName);
-		
+
 	// update $options
 	var theOptionsFld = theForm.options;
 	theOptionsFld.value = "";
@@ -434,10 +434,10 @@ function checkConf()
 	// not possible to have a 'leader' conference with no adminpin
 	if (theForm.options.value.indexOf("w") > -1 && theForm.adminpin.value == "")
 		return warnInvalid(theForm.adminpin, msgNeedAdminPIN);
-	
+
 	// should not have a conference with no 'leader', mute on join, and no allow menu, so let's complain
 	if ($('[name=opt\\#m]').val() != '' && $('[name=adminpin]').val() == '' && !$('[name=opt\\#s]').val())
-		return warnInvalid(theForm.options, msgInvalidMuteOnJoin);	
+		return warnInvalid(theForm.options, msgInvalidMuteOnJoin);
 
 	return true;
 }
@@ -445,6 +445,6 @@ function checkConf()
 //-->
 </script>
 	</form>
-<?php		
+<?php
 } //end if action == delGRP
 ?>
