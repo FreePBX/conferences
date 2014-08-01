@@ -212,18 +212,13 @@ function conferences_get_config($engine) {
 			$contextname = 'ext-meetme';
 			if(is_array($conflist = conferences_list())) {
 
-				$ast_ge_14 = version_compare($version, "1.4","ge");
-
 				// Start the conference
-				if ($ast_ge_14) {
-					if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
-						$ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','Set','CONFBRIDGE(user,music_on_hold_class)=${MEETME_MUSIC}'));
-					} else {
-						$ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','Set','CHANNEL(musicclass)=${MEETME_MUSIC}'));
-					}
+				if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
+					$ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','Set','CONFBRIDGE(user,music_on_hold_class)=${MEETME_MUSIC}'));
 				} else {
-					$ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','SetMusicOnHold','${MEETME_MUSIC}'));
+					$ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','Set','CHANNEL(musicclass)=${MEETME_MUSIC}'));
 				}
+
 				$ext->add($contextname, 'STARTMEETME', '', new ext_setvar('GROUP(meetme)','${MEETME_ROOMNUM}'));
 				$ext->add($contextname, 'STARTMEETME', '', new ext_gotoif('$[${MAX_PARTICIPANTS} > 0 && ${GROUP_COUNT(${MEETME_ROOMNUM}@meetme)}>${MAX_PARTICIPANTS}]','MEETMEFULL,1'));
 				// No harm done if quietmode, these will just then be ignored
@@ -266,13 +261,7 @@ function conferences_get_config($engine) {
 						$roomjoinmsg = '';
 					}
 
-					if ($ast_ge_14) {
-						$roomoptions = str_replace('i','I',$roomoptions);
-					}
-					if (!$ast_ge_14) {
-						$roomoptions = str_replace('o','',$roomoptions);
-						$roomoptions = str_replace('T','',$roomoptions);
-					}
+					$roomoptions = str_replace('i','I',$roomoptions);
 
 					// Add optional hint
 					if ($amp_conf['USEDEVSTATE']) {
