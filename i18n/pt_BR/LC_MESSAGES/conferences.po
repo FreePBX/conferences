@@ -21,21 +21,25 @@ msgstr ""
 "Project-Id-Version: FreePBX Conference Module\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-09-23 09:52+0000\n"
-"PO-Revision-Date: 2010-01-23 00:00-0300\n"
-"Last-Translator: Marcelo Araujo <marcelo.araujo@voffice.com.br>\n"
-"Language-Team: MidiVTS team <info@midivts.org.br>\n"
+"PO-Revision-Date: 2014-07-26 00:48+0200\n"
+"Last-Translator: Rafael <rafael@ibinetwork.com.br>\n"
+"Language-Team: Portuguese (Brazil) "
+"<http://git.freepbx.org/projects/freepbx/conferences/pt_BR/>\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 1.10-dev\n"
 "X-Poedit-Language: Portuguese\n"
 "X-Poedit-Country: BRAZIL\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
 msgid "Conferences"
-msgstr ""
+msgstr "Conferencias"
 
 msgid "Applications"
-msgstr ""
+msgstr "Aplicações"
 
 msgid ""
 "Allow creation of conference rooms (meet-me) where multiple people can talk "
@@ -48,7 +52,7 @@ msgstr "Sala de conferência %s: %s"
 
 #, php-format
 msgid "Conference: %s"
-msgstr "Conferência: %s"
+msgstr "Conferencia: %s"
 
 msgid "Conference: "
 msgstr "Conferência:"
@@ -66,13 +70,13 @@ msgid "ok"
 msgstr "ok"
 
 msgid "already present"
-msgstr ""
+msgstr "já esta presente"
 
 msgid "Checking if recordings need migration.."
 msgstr "Verificando se as gravações precisam de migração"
 
 msgid "migrating"
-msgstr "Migrando"
+msgstr "migrando"
 
 msgid "adding joinmsg_id field.."
 msgstr "Adicionando o campo joimsg_id."
@@ -94,53 +98,53 @@ msgid "already migrated"
 msgstr "já migrado"
 
 msgid "Checking for users field.."
-msgstr ""
+msgstr "Verificando usuários..."
 
 msgid "adding.."
-msgstr ""
+msgstr "adicionando..."
 
 msgid "FATAL error"
-msgstr ""
+msgstr "erro FATAL"
 
 msgid "Warning! Extension"
-msgstr "Cuidado! Extensão"
+msgstr "Cuidado! Ramal"
 
 msgid "is not allowed for your account."
 msgstr "não é permitido para a sua conta"
 
 msgid "Add Conference"
-msgstr "Adicionar Conferência"
+msgstr "Adicionar Conferencia"
 
 msgid "Conference"
-msgstr "Conferência"
+msgstr "Conferencia"
 
 msgid "deleted"
 msgstr "apagado"
 
 msgid "Conference:"
-msgstr "Conferência"
+msgstr "Conferencia"
 
 #, php-format
 msgid "Delete Conference %s"
-msgstr "Apagar a conferência %s"
+msgstr "Apagar a conferencia %s"
 
 msgid "Conflicting Extensions"
-msgstr "Extensões conflitantes"
+msgstr "Ramais conflitantes"
 
 msgid "Edit Conference"
-msgstr "Editar conferência"
+msgstr "Editar conferencia"
 
 msgid "Conference Number:"
-msgstr "Número da conferência"
+msgstr "Número da conferencia"
 
 msgid "Use this number to dial into the conference."
-msgstr "Use este número para discar para a conferência"
+msgstr "Use este número para discar para a conferencia"
 
 msgid "Conference Name:"
-msgstr "Nome da conferência"
+msgstr "Nome da conferencia"
 
 msgid "Give this conference a brief name to help you identify it."
-msgstr "Dê a esta conferência um breve nome para ajudar a identificá-la"
+msgstr "Dê a esta conferencia um breve nome para ajudar a identificá-la"
 
 msgid "User PIN:"
 msgstr "PIN do usuário"
@@ -152,10 +156,10 @@ msgid ""
 msgstr ""
 "Você pode fazer com que a origem entre com uma senha antes que ela possa "
 "entrar nesta conferência. <br><br>Esta configuração é opcional.<br><br>Se um "
-"PIN for inserido, será pedido o PIN do usuário. "
+"PIN for inserido, será pedido o PIN do usuário."
 
 msgid "Admin PIN:"
-msgstr "PIN do Admin"
+msgstr "PIN do Administrador"
 
 msgid ""
 "Enter a PIN number for the admin user.<br><br>This setting is optional "
@@ -164,13 +168,13 @@ msgid ""
 msgstr ""
 "Entre com o número PIN do usuário administrador.<br><br>Esta configuração é "
 "opcional a menos que a opção 'aguardar o líder\" esteja em uso, então este "
-"PIN irá identificar o líder. "
+"PIN irá identificar o líder."
 
 msgid "Conference Options"
-msgstr "Opções da conferência"
+msgstr "Opções da conferencia"
 
 msgid "Join Message:"
-msgstr "Mensagem de chegada:"
+msgstr "Mensagem de entrada:"
 
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>To "
@@ -193,7 +197,7 @@ msgstr ""
 "para editar esta opção"
 
 msgid "Leader Wait:"
-msgstr "Aguarda o líder"
+msgstr "Aguardar o líder"
 
 msgid ""
 "Wait until the conference leader (admin user) arrives before starting the "
@@ -209,7 +213,7 @@ msgid "Yes"
 msgstr "Sim"
 
 msgid "Talker Optimization:"
-msgstr ""
+msgstr "Otimizar conversa:"
 
 msgid ""
 "Turns on talker optimization. With talker optimization, Asterisk treats "
@@ -222,7 +226,7 @@ msgid ""
 msgstr ""
 
 msgid "Talker Detection:"
-msgstr ""
+msgstr "Detectar conversa:"
 
 msgid ""
 "Sets talker detection. Asterisk will sends events on the Manager Interface "
@@ -267,10 +271,10 @@ msgid ""
 msgstr ""
 
 msgid "inherit"
-msgstr ""
+msgstr "herdar"
 
 msgid "default"
-msgstr ""
+msgstr "padrão"
 
 msgid "Allow Menu:"
 msgstr "Menu de permissões"
@@ -286,16 +290,16 @@ msgid "Record the conference call"
 msgstr "Gravar a chamada em conferência"
 
 msgid "Maximum Participants:"
-msgstr ""
+msgstr "Maximo de participantes:"
 
 msgid "Maximum Number of users allowed to join this conference."
 msgstr ""
 
 msgid "No Limit"
-msgstr ""
+msgstr "Sem Limite"
 
 msgid "Mute on Join:"
-msgstr ""
+msgstr "Mudo ao entrar:"
 
 msgid ""
 "Mute everyone when they initially join the conference. Please note that if "
@@ -304,7 +308,7 @@ msgid ""
 msgstr ""
 
 msgid "Submit Changes"
-msgstr "Submeter mudanças"
+msgstr "Enviar Alterações"
 
 msgid "Please enter a valid Conference Number"
 msgstr "Por favor, entre com um número válido de conferência"
