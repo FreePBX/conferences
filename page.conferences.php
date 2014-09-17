@@ -80,7 +80,7 @@ $meetmes = conferences_list();
 
 <!-- right side menu -->
 <div class="rnav"><ul>
-    <li><a id="<?php echo ($extdisplay=='' ? 'current':'') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add Conference")?></a></li>
+		<li><a id="<?php echo ($extdisplay=='' ? 'current':'') ?>" href="config.php?display=<?php echo urlencode($dispnum)?>"><?php echo _("Add Conference")?></a></li>
 <?php
 if (isset($meetmes)) {
 	foreach ($meetmes as $meetme) {
@@ -303,28 +303,28 @@ the meetme list CLI command.")?></span></a></td>
 	</tr>
 
 <?php if(function_exists('music_list')) { //only include if music module is enabled?>
-        <tr>
-                <td><a href="#" class="info"><?php echo _("Music on Hold Class:")?><span><?php echo _("Music (or Commercial) played to the caller while they wait in line for the conference to start. Choose \"inherit\" if you want the MoH class to be what is currently selected, such as by the inbound route.<br><br>  This music is defined in the \"Music on Hold\" to the left.")?></span></a></td>
-                <td>
-                        <select name="music" tabindex="<?php echo ++$tabindex;?>">
-                        <?php
-                                $tresults = music_list();
-                                array_unshift($tresults,'inherit');
-                                $default = (isset($music) ? $music : 'inherit');
-                                if (isset($tresults)) {
-                                        foreach ($tresults as $tresult) {
-                                                $searchvalue="$tresult";
-                                                ( $tresult == 'inherit' ? $ttext = _("inherit") : $ttext = $tresult );
+				<tr>
+								<td><a href="#" class="info"><?php echo _("Music on Hold Class:")?><span><?php echo _("Music (or Commercial) played to the caller while they wait in line for the conference to start. Choose \"inherit\" if you want the MoH class to be what is currently selected, such as by the inbound route.<br><br>  This music is defined in the \"Music on Hold\" to the left.")?></span></a></td>
+								<td>
+												<select name="music" tabindex="<?php echo ++$tabindex;?>">
+												<?php
+																$tresults = music_list();
+																array_unshift($tresults,'inherit');
+																$default = (isset($music) ? $music : 'inherit');
+																if (isset($tresults)) {
+																				foreach ($tresults as $tresult) {
+																								$searchvalue="$tresult";
+																								( $tresult == 'inherit' ? $ttext = _("inherit") : $ttext = $tresult );
 // there is a separate flag for turning off moh - just leaving this in case it should be unified to the way this is managed for queues (via "none" selection)
 //                                              ( $tresult == 'none' ? $ttext = _("none") : $ttext = $tresult );
-                                                ( $tresult == 'default' ? $ttext = _("default") : $ttext = $tresult );
-                                                echo '<option value="'.$tresult.'" '.($searchvalue == $default ? 'SELECTED' : '').'>'.$ttext;
-                                        }
-                                }
-                        ?>
-                        </select>
-                </td>
-        </tr>
+																								( $tresult == 'default' ? $ttext = _("default") : $ttext = $tresult );
+																								echo '<option value="'.$tresult.'" '.($searchvalue == $default ? 'SELECTED' : '').'>'.$ttext;
+																				}
+																}
+												?>
+												</select>
+								</td>
+				</tr>
 <?php } ?>
 
 	<tr>
@@ -359,7 +359,7 @@ the meetme list CLI command.")?></span></a></td>
 	}?>
 	<?php //Begin Maximum Participants Code ?>
 	<tr>
-    <td><a href="#" class="info"><?php echo _("Maximum Participants:")?><span><?php echo _("Maximum Number of users allowed to join this conference.")?></span></a></td>
+		<td><a href="#" class="info"><?php echo _("Maximum Participants:")?><span><?php echo _("Maximum Number of users allowed to join this conference.")?></span></a></td>
 		<td>
 		  <select name="users" tabindex="<?php echo ++$tabindex;?>">
 			<?php
@@ -383,7 +383,7 @@ the meetme list CLI command.")?></span></a></td>
 				?>
 				</select>
 		</td>
-    </tr>
+		</tr>
 	</table>
 <?php
 	// implementation of module hook
@@ -412,6 +412,12 @@ function checkConf()
 	defaultEmptyOK = false;
 	if (!isInteger(theForm.account.value))
 		return warnInvalid(theForm.account, msgInvalidConfNumb);
+
+	<?php if (function_exists('module_get_field_size')) { ?>
+		var sizeDisplayName = "<?php echo module_get_field_size('meetme', 'description', 50); ?>";
+		if (!isCorrectLength(theForm.name.value, sizeDisplayName))
+			return warnInvalid(theForm.name, "<?php echo _('The Conference Name provided is too long.'); ?>")
+	<?php } ?>
 
 	if (!isAlphanumeric(theForm.name.value))
 		return warnInvalid(theForm.name, msgInvalidConfName);
