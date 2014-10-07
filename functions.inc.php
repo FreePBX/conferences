@@ -276,13 +276,18 @@ function conferences_get_config($engine) {
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MAX_PARTICIPANTS', $roomusers));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_MUSIC',$music));
           $ext->add($contextname, $roomnum, '', new ext_gosub('1','s','sub-record-check',"conf,$roomnum," . (strstr($room['options'],'r') !== false ? 'always' : 'never')));
-					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DIALSTATUS}" = "ANSWER"]',($roomuserpin == '' && $roomadminpin == '' ? 'USER' : 'READPIN')));
+					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DIALSTATUS}" = "ANSWER"]',($roomuserpin == '' && $roomadminpin == '' ? 'USER' : 'CHECKPIN')));
 					$ext->add($contextname, $roomnum, '', new ext_answer(''));
 					$ext->add($contextname, $roomnum, '', new ext_wait(1));
 
 					// Deal with PINs -- if exist
 					if ($roomuserpin != '' || $roomadminpin != '') {
 						$ext->add($contextname, $roomnum, '', new ext_setvar('PINCOUNT','0'));
+						$ext->add($contextname, $roomnum, 'CHECKPIN', new ext_gotoif('$["z${PIN}" = "z"]',"READPIN"));
+
+						$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x'.$roomuserpin.']','USER'));
+						$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x'.$roomadminpin.']','ADMIN'));
+
 						$ext->add($contextname, $roomnum, 'READPIN', new ext_read('PIN','enter-conf-pin-number'));
 
 						// userpin -- must do always, otherwise if there is just an adminpin
