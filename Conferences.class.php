@@ -9,13 +9,23 @@ class Conferences implements BMO {
 
 		$this->FreePBX = $freepbx;
 		$this->db = $freepbx->Database;
+		$this->astman = $this->FreePBX->astman;
 	}
 
 	public function doConfigPageInit($page) {
 	}
 
 	public function install() {
-
+		//Migrate bad option
+		$confs = $this->listConferences();
+		foreach($confs as $conf) {
+			$conf = $this->getConference($conf[0]);
+			$optselect = strpos($conf['options'], "i");
+			if($optselect) {
+				$conf['options'] = str_replace("i","I",$conf['options']);
+				$this->updateConferenceSettingById($conf['exten'],'options',$conf['options']);
+			}
+		}
 	}
 	public function uninstall() {
 
@@ -24,7 +34,7 @@ class Conferences implements BMO {
 
 	}
 	public function restore($backup){
-		
+
 	}
 
 	/**
@@ -54,6 +64,7 @@ class Conferences implements BMO {
 		$sql = 'UPDATE meetme SET options = ? WHERE exten = ?';
 		$sth = $this->db->prepare($sql);
 		$sth->execute(array($options,$room));
+		$this->astman->database_put('CONFERENCE/'.$room,'options',$options);
 	}
 
 	/**
@@ -70,6 +81,12 @@ class Conferences implements BMO {
 		$sql = 'UPDATE meetme SET '.$key.' = ? WHERE exten = ?';
 		$sth = $this->db->prepare($sql);
 		$sth->execute(array($value,$room));
+		if($key != 'description' && $key != 'joinmsg_id') {
+			$this->astman->database_put('CONFERENCE/'.$room,$key,$value);
+		} elseif($key == 'joinmsg_id') {
+			$recording = $this->FreePBX->Recordings->getFilenameById($value);
+			$this->astman->database_put('CONFERENCE/'.$room,'joinmsg',(!empty($recording) ? $recording : ''));
+		}
 	}
 
 	/**
@@ -88,6 +105,13 @@ class Conferences implements BMO {
 		$sth = $this->db->prepare($sql);
 		try {
 			$sth->execute(array($room,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users));
+			$this->astman->database_put('CONFERENCE/'.$room,'userpin',$userpin);
+			$this->astman->database_put('CONFERENCE/'.$room,'adminpin',$adminpin);
+			$this->astman->database_put('CONFERENCE/'.$room,'options',$options);
+			$this->astman->database_put('CONFERENCE/'.$room,'music',$music);
+			$this->astman->database_put('CONFERENCE/'.$room,'users',$users);
+			$recording = $this->FreePBX->Recordings->getFilenameById($joinmsg_id);
+			$this->astman->database_put('CONFERENCE/'.$room,'joinmsg',(!empty($recording) ? $recording : ''));
 		} catch(\Exception $e) {
 			return false;
 		}
@@ -103,6 +127,7 @@ class Conferences implements BMO {
 		$sth = $this->db->prepare($sql);
 		try {
 			$sth->execute(array($room));
+			$this->astman->database_deltree('CONFERENCE/'.$room);
 		} catch(\Exception $e) {
 			return false;
 		}
@@ -120,6 +145,29 @@ class Conferences implements BMO {
 		try {
 			$sth->execute(array($room));
 			$ret = $sth->fetch(PDO::FETCH_ASSOC);
+			$asettings = $this->astman->database_show('CONFERENCE/'.$room);
+			foreach($ret as $key => $value) {
+				if($key == 'description') {
+					continue;
+				} elseif($key == 'joinmsg_id') {
+					$recording = $this->FreePBX->Recordings->getFilenameById($value);
+					$this->astman->database_put('CONFERENCE/'.$room,'joinmsg',(!empty($recording) ? $recording : ''));
+					continue;
+				}
+				if(!isset($asettings['/CONFERENCE/'.$room.'/'.$key])) {
+					$this->astman->database_put('CONFERENCE/'.$room,$key,$value);
+				} elseif($asettings['/CONFERENCE/'.$room.'/'.$key] != $value) {
+					$this->updateConferenceSettingById($room,$key,$asettings['/CONFERENCE/'.$room.'/'.$key]);
+				}
+			}
+			//Divergent information, sync from the master which is Asterisk Manager
+			foreach($asettings as $family => $value) {
+				$parts = explode("/",$family);
+				$key = $parts[3];
+				if((!isset($ret[$key]) || $key == 'description') && $key != 'joinmsg') {
+					$this->astman->database_del("CONFERENCE/".$room,$key);
+				}
+			}
 		} catch(\Exception $e) {
 			return false;
 		}

@@ -231,7 +231,7 @@ buildup in background noise.")?></span></a></td>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Talker Detection:")?><span><?php echo _("Sets talker detection. Asterisk will sends events on the Manager Interface identifying
 the channel that is talking. The talker will also be identified on the output of
-the meetme list CLI command.")?></span></a></td>
+the conference list CLI command. Note: If Conferences Pro is installed and licensed this will always be enabled")?></span></a></td>
 		<td>
 			<select name="opt#T">
 			<?php
@@ -277,17 +277,17 @@ the meetme list CLI command.")?></span></a></td>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("User join/leave:")?><span><?php echo _("Announce user join/leave")?></span></a></td>
 		<td>
-			<select name="opt#i" tabindex="<?php echo ++$tabindex;?>">
+			<select name="opt#I" tabindex="<?php echo ++$tabindex;?>">
 			<?php
-				$optselect = strpos($options, "i");
+				$optselect = strpos($options, "I");
 				echo '<option value=""' . ($optselect === false ? ' SELECTED' : '') . '>'._("No") . '</option>';
-				echo '<option value="i"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
+				echo '<option value="I"'. ($optselect !== false ? ' SELECTED' : '') . '>'._("Yes"). '</option>';
 			?>
 			</select>
 		</td>
 	</tr>
 	<?php } else {//when using confbridge, hide option, but save it anyway
-		echo '<input type="hidden" name="opt#i" value="' . (strpos($options, "i") !== false ? 'i' : '') . '"';
+		echo '<input type="hidden" name="opt#I" value="' . (strpos($options, "I") !== false ? 'I' : '') . '"';
 	}?>
 	<tr>
 		<td><a href="#" class="info"><?php echo _("Music on Hold:")?><span><?php echo _("Enable Music On Hold when the conference has a single caller")?></span></a></td>

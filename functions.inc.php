@@ -250,18 +250,6 @@ function conferences_get_config($engine) {
 					$roomusers = $room['users'];
 					$roomuserpin = $room['userpin'];
 					$roomadminpin = $room['adminpin'];
-					if(isset($room['music']) && $room['music'] !='' && $room['music']!='inherit') {
-						$music = $room['music'];
-					} else {
-						$music='${MOHCLASS}'; // inherit channel moh class
-					}
-					if (isset($room['joinmsg_id']) && $room['joinmsg_id'] != '') {
-						$roomjoinmsg = recordings_get_file($room['joinmsg_id']);
-					} else {
-						$roomjoinmsg = '';
-					}
-
-					$roomoptions = str_replace('i','I',$roomoptions);
 
 					// Add optional hint
 					if ($amp_conf['USEDEVSTATE']) {
@@ -273,61 +261,115 @@ function conferences_get_config($engine) {
 					// entry point
 					$ext->add($contextname, $roomnum, '', new ext_macro('user-callerid'));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_ROOMNUM',$roomnum));
-					$ext->add($contextname, $roomnum, '', new ext_setvar('MAX_PARTICIPANTS', $roomusers));
-					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_MUSIC',$music));
+					$ext->add($contextname, $roomnum, '', new ext_setvar('MAX_PARTICIPANTS', '0'));
+					$ext->add($contextname, $roomnum, '', new ext_execif('$["${DB(CONFERENCE/'.$roomnum.'/users)}" != ""]','Set','MAX_PARTICIPANTS=${DB(CONFERENCE/'.$roomnum.'/users)}'));
+					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_MUSIC','IF($["${DB(CONFERENCE/'.$roomnum.'/music)}" = "inherit" | "${DB(CONFERENCE/'.$roomnum.'/music)}" = ""]?${MOHCLASS}:${DB(CONFERENCE/'.$roomnum.'/music)})'));
           $ext->add($contextname, $roomnum, '', new ext_gosub('1','s','sub-record-check',"conf,$roomnum," . (strstr($room['options'],'r') !== false ? 'always' : 'never')));
-					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DIALSTATUS}" = "ANSWER"]',($roomuserpin == '' && $roomadminpin == '' ? 'USER' : 'CHECKPIN')));
+					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DIALSTATUS}" = "ANSWER"]','ANSWERED'));
 					$ext->add($contextname, $roomnum, '', new ext_answer(''));
 					$ext->add($contextname, $roomnum, '', new ext_wait(1));
 
+					//Check if a pin exists
+					$ext->add($contextname, $roomnum, 'ANSWERED', new ext_gotoif('$["${DB(CONFERENCE/'.$roomnum.'/userpin)}" = "" & "${DB(CONFERENCE/'.$roomnum.'/music)}" = ""]','USER','CHECKPIN'));
+
 					// Deal with PINs -- if exist
-					if ($roomuserpin != '' || $roomadminpin != '') {
-						$ext->add($contextname, $roomnum, '', new ext_setvar('PINCOUNT','0'));
-						$ext->add($contextname, $roomnum, 'CHECKPIN', new ext_gotoif('$["z${PIN}" = "z"]',"READPIN"));
+					//First check to see if the PIN variable has already been set (through a call file per say)
+					$ext->add($contextname, $roomnum, 'CHECKPIN', new ext_gotoif('$["z${PIN}" = "z"]',"READPIN"));
 
-						$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x'.$roomuserpin.']','USER'));
-						$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x'.$roomadminpin.']','ADMIN'));
+					$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x${DB(CONFERENCE/'.$roomnum.'/userpin)}]','USER'));
+					$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x${DB(CONFERENCE/'.$roomnum.'/adminpin)}]','ADMIN'));
 
-						$ext->add($contextname, $roomnum, 'READPIN', new ext_read('PIN','enter-conf-pin-number'));
+					//No pins set so ask the user now
+					$ext->add($contextname, $roomnum, 'READPIN', new ext_setvar('PINCOUNT','0'));
+					$ext->add($contextname, $roomnum, '', new ext_read('PIN','enter-conf-pin-number'));
 
-						// userpin -- must do always, otherwise if there is just an adminpin
-						// there would be no way to get to the conference !
-						$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x'.$roomuserpin.']','USER'));
+					// userpin -- must do always, otherwise if there is just an adminpin
+					// there would be no way to get to the conference !
+					$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x${DB(CONFERENCE/'.$roomnum.'/userpin)}]','USER'));
 
-						// admin pin -- exists
-						if ($roomadminpin != '') {
-							$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x'.$roomadminpin.']','ADMIN'));
-						}
-
-						// pin invalid
-						$ext->add($contextname, $roomnum, '', new ext_setvar('PINCOUNT','$[${PINCOUNT}+1]'));
-						$ext->add($contextname, $roomnum, '', new ext_gotoif('$[${PINCOUNT}>3]', "h,1"));
-						$ext->add($contextname, $roomnum, '', new ext_playback('conf-invalidpin'));
-						$ext->add($contextname, $roomnum, '', new ext_goto('READPIN'));
-
-						// admin mode -- only valid if there is an admin pin
-						if ($roomadminpin != '') {
-							if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
-								conferences_get_config_confbridge_helper($contextname, $roomnum, $roomoptions, 'admin');
-							} else {
-								$ext->add($contextname, $roomnum, 'ADMIN', new ext_setvar('MEETME_OPTS','aA'.str_replace('m','',$roomoptions)));
-							}
-							if ($roomjoinmsg != '') {  // play joining message if one defined
-								$ext->add($contextname, $roomnum, '', new ext_playback($roomjoinmsg));
-							}
-							$ext->add($contextname, $roomnum, '', new ext_goto('STARTMEETME,1'));
-						}
+					// admin pin -- exists
+					if ($roomadminpin != '') {
+						$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x${DB(CONFERENCE/'.$roomnum.'/adminpin)}]','ADMIN'));
 					}
+
+					// pin invalid
+					$ext->add($contextname, $roomnum, '', new ext_setvar('PINCOUNT','$[${PINCOUNT}+1]'));
+					$ext->add($contextname, $roomnum, '', new ext_gotoif('$[${PINCOUNT}>3]', "h,1"));
+					$ext->add($contextname, $roomnum, '', new ext_playback('conf-invalidpin'));
+					$ext->add($contextname, $roomnum, '', new ext_goto('READPIN'));
+
+					$subconfcontext = 'sub-conference-options';
+					$ext->add($subconfcontext, 's', '', new ext_noop('Setting options for Conference ${ARG1}'));
+					$ext->add($subconfcontext, 's', '', new ext_goto('${ARG2}'));
+					if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
+						//w
+						$ext->add($subconfcontext, 's', 'USER', new ext_execif('${REGEX("w" ${DB(CONFERENCE/'.$roomnum.'/options)})}','Set','CONFBRIDGE(user,wait_marked)=yes'));
+						$ext->add($subconfcontext, 's', '', new ext_execif('${REGEX("w" ${DB(CONFERENCE/'.$roomnum.'/options)})}','Set','CONFBRIDGE(user,end_marked)=yes'));
+
+						//s
+						$ext->add($subconfcontext, 's', '', new ext_execif('${REGEX("s" ${DB(CONFERENCE/'.$roomnum.'/options)})}','Set','MENU_PROFILE=user_menu'));
+
+						//m
+						$ext->add($subconfcontext, 's', '', new ext_execif('${REGEX("m" ${DB(CONFERENCE/'.$roomnum.'/options)})}','Set','CONFBRIDGE(user,startmuted)=yes'));
+
+						$ext->add($subconfcontext, 's', '', new ext_goto('RETURN'));
+						$ext->add($subconfcontext, 's', 'ADMIN', new ext_setvar('CONFBRIDGE(user,admin)','yes'));
+						$ext->add($subconfcontext, 's', '', new ext_setvar('CONFBRIDGE(user,marked)','yes'));
+
+						//s
+						$ext->add($subconfcontext, 's', '', new ext_execif('${REGEX("s" ${DB(CONFERENCE/'.$roomnum.'/options)})}','Set','MENU_PROFILE=admin_menu'));
+
+						$ext->add($subconfcontext, 's', '', new ext_goto('RETURN'));
+					} else {
+						$ext->add($subconfcontext, 's', 'USER', new ext_noop('meetme user'));
+						$ext->add($subconfcontext, 's', '', new ext_setvar('MEETME_OPTS','${DB(CONFERENCE/${ARG1}/options)}'));
+						$ext->add($subconfcontext, 's', '', new ext_goto('RETURN'));
+						$ext->add($subconfcontext, 's', 'ADMIN', new ext_noop('meetme admin'));
+						$ext->add($subconfcontext, 's', '', new ext_setvar('MEETME_OPTS','aA${DB(CONFERENCE/${ARG1}/options)}'));
+						$ext->add($subconfcontext, 's', '', new ext_setvar('MEETME_OPTS','${REPLACE(MEETME_OPTS,"m","")}'));
+						$ext->add($subconfcontext, 's', '', new ext_goto('RETURN'));
+					}
+					if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
+						$ext->add($subconfcontext, 's', 'RETURN', new ext_noop('Setting Additional Options:'));
+						//q
+						$ext->add($subconfcontext, 's', '', new ext_execif('${REGEX("q" ${DB(CONFERENCE/'.$roomnum.'/options)})}','Set','CONFBRIDGE(user,quiet)=yes'));
+						//c
+						$ext->add($subconfcontext, 's', '', new ext_execif('${REGEX("c" ${DB(CONFERENCE/'.$roomnum.'/options)})}','Set','CONFBRIDGE(user,announce_user_count)=yes'));
+						//I
+						$ext->add($subconfcontext, 's', '', new ext_execif('${REGEX("I" ${DB(CONFERENCE/'.$roomnum.'/options)})}','Set','CONFBRIDGE(user,announce_join_leave)=yes'));
+						//o
+						$ext->add($subconfcontext, 's', '', new ext_execif('${REGEX("o" ${DB(CONFERENCE/'.$roomnum.'/options)})}','Set','CONFBRIDGE(user,dsp_drop_silence)=yes'));
+						//T
+						$ext->add($subconfcontext, 's', '', new ext_execif('${REGEX("T" ${DB(CONFERENCE/'.$roomnum.'/options)})}','Set','CONFBRIDGE(user,talk_detection_events)=yes'));
+						//M
+						$ext->add($subconfcontext, 's', '', new ext_execif('${REGEX("M" ${DB(CONFERENCE/'.$roomnum.'/options)})}','Set','CONFBRIDGE(user,music_on_hold_when_empty)=yes'));
+
+						$ext->add($subconfcontext, 's', '', new ext_return());
+					} else {
+						$ext->add($subconfcontext, 's', 'RETURN', new ext_return());
+					}
+
+					// admin mode -- only valid if there is an admin pin
+					if ($roomadminpin != '') {
+						if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
+							//conferences_get_config_confbridge_helper($contextname, $roomnum, $roomoptions, 'admin');
+						} else {
+							//$ext->add($contextname, $roomnum, 'ADMIN', new ext_setvar('MEETME_OPTS','aA'.str_replace('m','',$roomoptions)));
+						}
+						$ext->add($contextname, $roomnum, 'ADMIN', new ext_gosub('1', 's', $subconfcontext, $roomnum.',ADMIN'));
+						$ext->add($contextname, $roomnum, '', new ext_execif('$["${DB(CONFERENCE/'.$roomnum.'/joinmsg)}" != ""]','Playback','${DB(CONFERENCE/'.$roomnum.'/joinmsg)}'));
+						$ext->add($contextname, $roomnum, '', new ext_goto('STARTMEETME,1'));
+					}
+					//end pin checking
 
 					// user mode
 					if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
-						conferences_get_config_confbridge_helper($contextname, $roomnum, $roomoptions, 'user');
+						//conferences_get_config_confbridge_helper($contextname, $roomnum, $roomoptions, 'user');
 					} else {
-						$ext->add($contextname, $roomnum, 'USER', new ext_setvar('MEETME_OPTS',$roomoptions));
+						//$ext->add($contextname, $roomnum, 'USER', new ext_setvar('MEETME_OPTS',$roomoptions));
 					}
-					if ($roomjoinmsg != '') {  // play joining message if one defined
-						$ext->add($contextname, $roomnum, '', new ext_playback($roomjoinmsg));
-					}
+					$ext->add($contextname, $roomnum, 'USER', new ext_gosub('1', 's', $subconfcontext, $roomnum.',USER'));
+					$ext->add($contextname, $roomnum, '', new ext_execif('$["${DB(CONFERENCE/'.$roomnum.'/joinmsg)}" != ""]','Playback','${DB(CONFERENCE/'.$roomnum.'/joinmsg)}'));
 					$ext->add($contextname, $roomnum, '', new ext_goto('STARTMEETME,1'));
 
 					// add meetme config
@@ -377,7 +419,6 @@ function conferences_get_config_confbridge_helper($contextname, $roomnum, $roomo
 		case 'c':
 			$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,announce_user_count)','yes'));
 			break;
-		case 'i':
 		case 'I':
 			$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,announce_join_leave)','yes'));
 			break;
