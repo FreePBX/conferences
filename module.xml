@@ -9,7 +9,7 @@
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
-		*12.0.9*
+		*12.0.9* FREEPBX-8539 Move Conference MySQL Settings to Asterisk Database
 		*12.0.8* Allow pinless entry into conference with pins set
 		*12.0.7* Merging everything from 2.11 into this branch
 		*12.0.6* Merge outstanding changes from 2.11 branch
