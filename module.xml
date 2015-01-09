@@ -2,13 +2,14 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>12.0.10</version>
+	<version>12.0.11</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
+		*12.0.11* Cleanup
 		*12.0.10* Fixes for the below commit
 		*12.0.9* FREEPBX-8539 Move Conference MySQL Settings to Asterisk Database
 		*12.0.8* Allow pinless entry into conference with pins set

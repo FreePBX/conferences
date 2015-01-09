@@ -384,62 +384,6 @@ function conferences_get_config($engine) {
 	}
 }
 
-function conferences_get_config_confbridge_helper($contextname, $roomnum, $roomoptions, $user_type) {
-	global $ext, $conferences_conf, $version, $amp_conf;
-
-	$user_type - strtolower($user_type);
-	if ($user_type == 'admin') {
-		$ext->add($contextname, $roomnum, 'ADMIN', new ext_set('CONFBRIDGE(user,admin)','yes'));
-		$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,marked)','yes'));
-	} else {
-		$ext->add($contextname, $roomnum, 'USER', new ext_noop('User Options:'));
-	}
-	$options = str_split($roomoptions);
-	foreach ($options as $opt) {
-		switch ($opt) {
-		case 'w':
-			if ($user_type != 'admin') {
-				$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,wait_marked)','yes'));
-				$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,end_marked)','yes'));
-			}
-			break;
-		case 'q':
-			$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,quiet)','yes'));
-			break;
-		case 'c':
-			$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,announce_user_count)','yes'));
-			break;
-		case 'I':
-			$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,announce_join_leave)','yes'));
-			break;
-		case 'o':
-			$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,dsp_drop_silence)','yes'));
-			break;
-		case 'T':
-			$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,talk_detection_events)','yes'));
-			break;
-		case 'M':
-			$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,music_on_hold_when_empty)','yes'));
-			break;
-		case 's':
-			if ($user_type == 'admin') {
-				$ext->add($contextname, $roomnum, '', new ext_set('MENU_PROFILE','admin_menu'));
-			} else {
-				$ext->add($contextname, $roomnum, '', new ext_set('MENU_PROFILE','user_menu'));
-			}
-			break;
-		case 'r':
-			// Set by sub-record-check
-			break;
-		case 'm':
-			if ($user_type != 'admin') {
-				$ext->add($contextname, $roomnum, '', new ext_set('CONFBRIDGE(user,startmuted)','yes'));
-			}
-			break;
-		}
-	}
-}
-
 function conferences_check_extensions($exten=true) {
 	$extenlist = array();
 	if (is_array($exten) && empty($exten)) {
