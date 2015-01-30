@@ -408,7 +408,7 @@ function checkConf()
 	var msgInvalidConfName = "<?php echo _('Please enter a valid Conference Name'); ?>";
 	var msgNeedAdminPIN = "<?php echo _('You must set an admin PIN for the Conference Leader when selecting the leader wait option'); ?>";
 	var msgInvalidMuteOnJoin = "<?php echo _('You must set Allow Menu to Yes when not using a Leader or Admin in your conference, otherwise you will be unable to unmute yourself'); ?>";
-
+	var msgMatchingPins = "<?php echo _('The user and admin can not have the same pin code.')?>";
 	defaultEmptyOK = false;
 	if (!isInteger(theForm.account.value))
 		return warnInvalid(theForm.account, msgInvalidConfNumb);
@@ -440,6 +440,9 @@ function checkConf()
 	// not possible to have a 'leader' conference with no adminpin
 	if (theForm.options.value.indexOf("w") > -1 && theForm.adminpin.value == "")
 		return warnInvalid(theForm.adminpin, msgNeedAdminPIN);
+	//Users and Admin should not have the same pin
+	if (theForm.adminpin.value == theForm.userpin.value && theForm.adminpin.value.length > 0)
+		return warnInvalid(theForm.userpin, msgMatchingPins);
 
 	// should not have a conference with no 'leader', mute on join, and no allow menu, so let's complain
 	if ($('[name=opt\\#m]').val() != '' && $('[name=adminpin]').val() == '' && !$('[name=opt\\#s]').val())
