@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX conferences\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 17:39-0500\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,132 +30,92 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-msgid "Conferences"
-msgstr "Konferenser"
+#: /usr/src/freepbx/conferences/page.conferences.php:83
+#: /usr/src/freepbx/conferences/page.conferences.php:136
+#: /usr/src/freepbx/conferences/page.conferences.php:151
+msgid "Add Conference"
+msgstr "Lägg till konferens"
 
-msgid "Applications"
-msgstr ""
+#: /usr/src/freepbx/conferences/page.conferences.php:165
+msgid "Admin PIN:"
+msgstr "Administratörslösenord:"
 
-msgid ""
-"Allow creation of conference rooms (meet-me) where multiple people can talk "
-"together."
-msgstr "Modulen ger möjlighet att skapa konferenser"
+#: /usr/src/freepbx/conferences/page.conferences.php:331
+msgid "Allow Menu:"
+msgstr "Tillåt meny:"
 
+#: /usr/src/freepbx/conferences/page.conferences.php:278
+msgid "Announce user join/leave"
+msgstr "Annonsera när användare ansluter/lämnar"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:263
+msgid "Announce user(s) count on joining conference"
+msgstr "Berätta antalet användare när anslutning till konferensen sker"
+
+#: /usr/src/freepbx/conferences/install.php:108
+msgid "Checking for users field.."
+msgstr "Kontrollerar om fälet users finns.."
+
+#: /usr/src/freepbx/conferences/install.php:29
+msgid "Checking if music field present.."
+msgstr "Kontrollerar om musicfältet finns.."
+
+#: /usr/src/freepbx/conferences/install.php:48
+msgid "Checking if recordings need migration.."
+msgstr "Kontrollerar om inspelningar behöver migreras.."
+
+#: /usr/src/freepbx/conferences/page.conferences.php:95
+msgid "Conference"
+msgstr "Konferens"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:157
+msgid "Conference Name:"
+msgstr "Konferensnamn:"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:153
+msgid "Conference Number:"
+msgstr "Konferensnummer:"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:169
+msgid "Conference Options"
+msgstr "Konferensval"
+
+#: /usr/src/freepbx/conferences/functions.inc.php:174
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Konferensrum %s : %s"
 
+#: /usr/src/freepbx/conferences/page.conferences.php:119
+msgid "Conference:"
+msgstr "Konferens:"
+
+#: /usr/src/freepbx/conferences/functions.inc.php:398
+msgid "Conference: "
+msgstr "Konferens:"
+
+#: /usr/src/freepbx/conferences/functions.inc.php:193
 #, php-format
 msgid "Conference: %s"
 msgstr "Konferens: %s"
 
-msgid "Conference: "
-msgstr "Konferens:"
+#: /usr/src/freepbx/conferences/page.conferences.php:139
+msgid "Conflicting Extensions"
+msgstr "Anknytningarna är i konflikt"
 
-msgid "Checking if music field present.."
-msgstr "Kontrollerar om musicfältet finns.."
-
-msgid "adding music field.."
-msgstr "lägger till musicfältet"
-
-msgid "fatal error"
-msgstr "allvarligt fel"
-
-msgid "ok"
-msgstr "ok"
-
-msgid "already present"
-msgstr "finns redan"
-
-msgid "Checking if recordings need migration.."
-msgstr "Kontrollerar om inspelningar behöver migreras.."
-
-msgid "migrating"
-msgstr "migrerar"
-
-msgid "adding joinmsg_id field.."
-msgstr "lägger till fältet joinmsg_id.."
-
-msgid "migrate to recording ids.."
-msgstr "migrerar till recording ids.."
-
-#, php-format
-msgid "migrated %s entries"
-msgstr "migrerade %s poster"
-
-msgid "dropping joinmsg field.."
-msgstr "kastar fältet joinmsg.."
-
-msgid "no joinmsg field???"
-msgstr "inget fält som heter joinmsg???"
-
-msgid "already migrated"
-msgstr "redan migrerad"
-
-msgid "Checking for users field.."
-msgstr "Kontrollerar om fälet users finns.."
-
-msgid "adding.."
-msgstr "lägger till.."
-
-msgid "FATAL error"
-msgstr "ALLVARLIGT fel"
-
-msgid "Warning! Extension"
-msgstr "Varning! Anknytning"
-
-msgid "is not allowed for your account."
-msgstr "är inte tillåtet för ditt konto."
-
-msgid "Add Conference"
-msgstr "Lägg till konferens"
-
-msgid "Conference"
-msgstr "Konferens"
-
-msgid "deleted"
-msgstr "borttagen"
-
-msgid "Conference:"
-msgstr "Konferens:"
-
+#: /usr/src/freepbx/conferences/page.conferences.php:122
 #, php-format
 msgid "Delete Conference %s"
 msgstr "Ta bort konferens %s"
 
-msgid "Conflicting Extensions"
-msgstr "Anknytningarna är i konflikt"
-
+#: /usr/src/freepbx/conferences/page.conferences.php:151
 msgid "Edit Conference"
 msgstr "Redigera konferens"
 
-msgid "Conference Number:"
-msgstr "Konferensnummer:"
+#: /usr/src/freepbx/conferences/page.conferences.php:293
+msgid "Enable Music On Hold when the conference has a single caller"
+msgstr "Aktivera pausmusik när det endast är en användare i konferensen"
 
-msgid "Use this number to dial into the conference."
-msgstr "Använd detta nummer för att ringa till konferensen."
-
-msgid "Conference Name:"
-msgstr "Konferensnamn:"
-
-msgid "Give this conference a brief name to help you identify it."
-msgstr "Ge konferensen ett kortfattat namn."
-
-msgid "User PIN:"
-msgstr "Användarlösenord:"
-
-msgid ""
-"You can require callers to enter a password before they can enter this "
-"conference.<br><br>This setting is optional.<br><br>If either PIN is "
-"entered, the user will be prompted to enter a PIN."
-msgstr ""
-"Du kan kräva att uppringare anger ett lösenord innan de når konferensen."
-"<br><br>Denna inställning är valfri.<br><br>Om ett lösenord (endast siffror) "
-"skrivs in får uppringaren en fråga om att mata in ett lösenord."
-
-msgid "Admin PIN:"
-msgstr "Administratörslösenord:"
-
+#: /usr/src/freepbx/conferences/page.conferences.php:165
 msgid ""
 "Enter a PIN number for the admin user.<br><br>This setting is optional "
 "unless the 'leader wait' option is in use, then this PIN will identify the "
@@ -165,12 +125,32 @@ msgstr ""
 "inställning är valfri om inte 'Invänta ledare' är valt, då kommer detta "
 "lösenord att identifiera ledaren."
 
-msgid "Conference Options"
-msgstr "Konferensval"
+#: /usr/src/freepbx/conferences/install.php:116
+msgid "FATAL error"
+msgstr "ALLVARLIGT fel"
 
+#: /usr/src/freepbx/conferences/page.conferences.php:157
+msgid "Give this conference a brief name to help you identify it."
+msgstr "Ge konferensen ett kortfattat namn."
+
+#: /usr/src/freepbx/conferences/page.conferences.php:172
+#: /usr/src/freepbx/conferences/page.conferences.php:189
 msgid "Join Message:"
 msgstr "Anslutningsmeddelande:"
 
+#: /usr/src/freepbx/conferences/page.conferences.php:196
+msgid "Leader Wait:"
+msgstr "Vänta på ledaren:"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:362
+msgid "Maximum Number of users allowed to join this conference."
+msgstr "Det maximala antalet deltagare som tillåts i konferensen"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:362
+msgid "Maximum Participants:"
+msgstr "Max antal deltagare"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:172
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>To "
 "add additional recordings please use the \"System Recordings\" MENU to the "
@@ -180,9 +160,7 @@ msgstr ""
 "konferensen.<br><br>För att lägga till fler inspelningar väljer du "
 "\"Systeminspelningar\" i menyn till vänster"
 
-msgid "None"
-msgstr "Inget"
-
+#: /usr/src/freepbx/conferences/page.conferences.php:189
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>You "
 "must install and enable the \"Systems Recordings\" Module to edit this option"
@@ -191,25 +169,118 @@ msgstr ""
 "konferensen.<br><br>Du måste installera och aktivera modulen "
 "\"Systeminspelningar\" för att kunna redigera detta val"
 
-msgid "Leader Wait:"
-msgstr "Vänta på ledaren:"
-
+#: /usr/src/freepbx/conferences/page.conferences.php:307
 msgid ""
-"Wait until the conference leader (admin user) arrives before starting the "
-"conference"
+"Music (or Commercial) played to the caller while they wait in line for the "
+"conference to start. Choose \"inherit\" if you want the MoH class to be what "
+"is currently selected, such as by the inbound route.<br><br>  This music is "
+"defined in the \"Music on Hold\" to the left."
 msgstr ""
-"Vänta till konferensledaren (administratören) ansluter innan konferensen "
-"startas"
+"Musik (eller reklam) som spelas upp för uppringaren när dom väntar på att "
+"konferensen ska starta. Välj \"ärv\" om du vill att musikklassen ska vara "
+"samma klass som redan är definierad i inkommande väg.<br><br> Musiken "
+"definieras i \"Pausmusik\" i menyn till vänster"
 
+#: /usr/src/freepbx/conferences/page.conferences.php:307
+msgid "Music on Hold Class:"
+msgstr "Klasser för pausmusik"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:293
+msgid "Music on Hold:"
+msgstr "Pausmusik:"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:376
+msgid ""
+"Mute everyone when they initially join the conference. Please note that if "
+"you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
+"Yes to unmute yourself"
+msgstr ""
+"Stäng av ljudet för alla som ansluter till konferensen. Notera att om du "
+"inte har 'Vänta på ledare' aktiverad måste du ha 'Tillåt meny' aktiverad för "
+"att kunna slå på ljudetför dig själv"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:376
+msgid "Mute on Join:"
+msgstr "Stäng av ljud vid anslutning:"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:201
+#: /usr/src/freepbx/conferences/page.conferences.php:223
+#: /usr/src/freepbx/conferences/page.conferences.php:239
+#: /usr/src/freepbx/conferences/page.conferences.php:256
+#: /usr/src/freepbx/conferences/page.conferences.php:268
+#: /usr/src/freepbx/conferences/page.conferences.php:283
+#: /usr/src/freepbx/conferences/page.conferences.php:298
+#: /usr/src/freepbx/conferences/page.conferences.php:336
+#: /usr/src/freepbx/conferences/page.conferences.php:351
+#: /usr/src/freepbx/conferences/page.conferences.php:381
 msgid "No"
 msgstr "Nej"
 
-msgid "Yes"
-msgstr "Ja"
+#: /usr/src/freepbx/conferences/page.conferences.php:367
+msgid "No Limit"
+msgstr "Ingen begränsning"
 
+#: /usr/src/freepbx/conferences/page.conferences.php:177
+msgid "None"
+msgstr "Inget"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:408
+msgid "Please enter a valid Conference Name"
+msgstr "Skriv in ett giltigt konferensnamn"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:407
+msgid "Please enter a valid Conference Number"
+msgstr "Skriv in ett giltig konferensnummer"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:331
+msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
+msgstr ""
+"Ge tillgång till en meny (användare eller administratör) när '*' trycks på "
+"telefonen"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:251
+msgid "Quiet Mode:"
+msgstr "Tyst läge:"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:251
+msgid "Quiet mode (do not play enter/leave sounds)"
+msgstr "Tyst läge (spela inte upp ljud för anslut/lämna)"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:346
+msgid "Record Conference:"
+msgstr "Spela in konferens:"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:346
+msgid "Record the conference call"
+msgstr "Välj om konferensen ska spelas in"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:232
+msgid ""
+"Sets talker detection. Asterisk will sends events on the Manager Interface "
+"identifying\n"
+"the channel that is talking. The talker will also be identified on the "
+"output of\n"
+"the conference list CLI command. Note: If Conferences Pro is installed and "
+"licensed this will always be enabled"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:393
+msgid "Submit Changes"
+msgstr "Spara ändringar"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:232
+msgid "Talker Detection:"
+msgstr "Taldetektering"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:215
 msgid "Talker Optimization:"
 msgstr "Taloptimering"
 
+#: /usr/src/freepbx/conferences/page.conferences.php:419
+msgid "The Conference Name provided is too long."
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:215
 msgid ""
 "Turns on talker optimization. With talker optimization, Asterisk treats "
 "talkers who\n"
@@ -223,108 +294,66 @@ msgstr ""
 "betraktade som mikrofonavstängda. Detta betyder att ingen kodning sker och "
 "mottaget ljud som inte detekteras som prat elimineras"
 
-msgid "Talker Detection:"
-msgstr "Taldetektering"
+#: /usr/src/freepbx/conferences/page.conferences.php:153
+msgid "Use this number to dial into the conference."
+msgstr "Använd detta nummer för att ringa till konferensen."
 
-msgid ""
-"Sets talker detection. Asterisk will sends events on the Manager Interface "
-"identifying\n"
-"the channel that is talking. The talker will also be identified on the "
-"output of\n"
-"the meetme list CLI command."
-msgstr ""
-"Tillåter taldetektering. Asterisk kommer att skicka händelser i "
-"Managerinterfacet där identifiering av vilken kanal det är som innehåller "
-"tal. Talaren kommer också att identifieras och visas på meete listan"
-
-msgid "Quiet Mode:"
-msgstr "Tyst läge:"
-
-msgid "Quiet mode (do not play enter/leave sounds)"
-msgstr "Tyst läge (spela inte upp ljud för anslut/lämna)"
-
+#: /usr/src/freepbx/conferences/page.conferences.php:263
 msgid "User Count:"
 msgstr "Räkna användare:"
 
-msgid "Announce user(s) count on joining conference"
-msgstr "Berätta antalet användare när anslutning till konferensen sker"
+#: /usr/src/freepbx/conferences/page.conferences.php:161
+msgid "User PIN:"
+msgstr "Användarlösenord:"
 
+#: /usr/src/freepbx/conferences/page.conferences.php:278
 msgid "User join/leave:"
 msgstr "Användare ansluter/lämnar:"
 
-msgid "Announce user join/leave"
-msgstr "Annonsera när användare ansluter/lämnar"
-
-msgid "Music on Hold:"
-msgstr "Pausmusik:"
-
-msgid "Enable Music On Hold when the conference has a single caller"
-msgstr "Aktivera pausmusik när det endast är en användare i konferensen"
-
-msgid "Music on Hold Class:"
-msgstr "Klasser för pausmusik"
-
+#: /usr/src/freepbx/conferences/page.conferences.php:196
 msgid ""
-"Music (or Commercial) played to the caller while they wait in line for the "
-"conference to start. Choose \"inherit\" if you want the MoH class to be what "
-"is currently selected, such as by the inbound route.<br><br>  This music is "
-"defined in the \"Music on Hold\" to the left."
+"Wait until the conference leader (admin user) arrives before starting the "
+"conference"
 msgstr ""
-"Musik (eller reklam) som spelas upp för uppringaren när dom väntar på att "
-"konferensen ska starta. Välj \"ärv\" om du vill att musikklassen ska vara "
-"samma klass som redan är definierad i inkommande väg.<br><br> Musiken "
-"definieras i \"Pausmusik\" i menyn till vänster"
+"Vänta till konferensledaren (administratören) ansluter innan konferensen "
+"startas"
 
-msgid "inherit"
-msgstr "ärv"
+#: /usr/src/freepbx/conferences/page.conferences.php:19
+msgid "Warning! Extension"
+msgstr "Varning! Anknytning"
 
-msgid "default"
-msgstr "standard"
+#: /usr/src/freepbx/conferences/page.conferences.php:202
+#: /usr/src/freepbx/conferences/page.conferences.php:224
+#: /usr/src/freepbx/conferences/page.conferences.php:240
+#: /usr/src/freepbx/conferences/page.conferences.php:257
+#: /usr/src/freepbx/conferences/page.conferences.php:269
+#: /usr/src/freepbx/conferences/page.conferences.php:284
+#: /usr/src/freepbx/conferences/page.conferences.php:299
+#: /usr/src/freepbx/conferences/page.conferences.php:337
+#: /usr/src/freepbx/conferences/page.conferences.php:352
+#: /usr/src/freepbx/conferences/page.conferences.php:382
+msgid "Yes"
+msgstr "Ja"
 
-msgid "Allow Menu:"
-msgstr "Tillåt meny:"
-
-msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
-msgstr ""
-"Ge tillgång till en meny (användare eller administratör) när '*' trycks på "
-"telefonen"
-
-msgid "Record Conference:"
-msgstr "Spela in konferens:"
-
-msgid "Record the conference call"
-msgstr "Välj om konferensen ska spelas in"
-
-msgid "Maximum Participants:"
-msgstr "Max antal deltagare"
-
-msgid "Maximum Number of users allowed to join this conference."
-msgstr "Det maximala antalet deltagare som tillåts i konferensen"
-
-msgid "No Limit"
-msgstr "Ingen begränsning"
-
-msgid "Mute on Join:"
-msgstr "Stäng av ljud vid anslutning:"
-
+#: /usr/src/freepbx/conferences/page.conferences.php:161
 msgid ""
-"Mute everyone when they initially join the conference. Please note that if "
-"you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
-"Yes to unmute yourself"
+"You can require callers to enter a password before they can enter this "
+"conference.<br><br>This setting is optional.<br><br>If either PIN is "
+"entered, the user will be prompted to enter a PIN."
 msgstr ""
-"Stäng av ljudet för alla som ansluter till konferensen. Notera att om du "
-"inte har 'Vänta på ledare' aktiverad måste du ha 'Tillåt meny' aktiverad för "
-"att kunna slå på ljudetför dig själv"
+"Du kan kräva att uppringare anger ett lösenord innan de når konferensen."
+"<br><br>Denna inställning är valfri.<br><br>Om ett lösenord (endast siffror) "
+"skrivs in får uppringaren en fråga om att mata in ett lösenord."
 
-msgid "Submit Changes"
-msgstr "Spara ändringar"
+#: /usr/src/freepbx/conferences/page.conferences.php:410
+msgid ""
+"You must set Allow Menu to Yes when not using a Leader or Admin in your "
+"conference, otherwise you will be unable to unmute yourself"
+msgstr ""
+"Du måste aktivera Tillåt meny om du inte använer Ledare eller Admin i din "
+"konferens, annars kan du inte aktivera ljudet för dig själv"
 
-msgid "Please enter a valid Conference Number"
-msgstr "Skriv in ett giltig konferensnummer"
-
-msgid "Please enter a valid Conference Name"
-msgstr "Skriv in ett giltigt konferensnamn"
-
+#: /usr/src/freepbx/conferences/page.conferences.php:409
 msgid ""
 "You must set an admin PIN for the Conference Leader when selecting the "
 "leader wait option"
@@ -332,12 +361,96 @@ msgstr ""
 "Du måste sätta en administratörs-PIN för konferensledaren när du väljer "
 "Vänta på ledare"
 
-msgid ""
-"You must set Allow Menu to Yes when not using a Leader or Admin in your "
-"conference, otherwise you will be unable to unmute yourself"
-msgstr ""
-"Du måste aktivera Tillåt meny om du inte använer Ledare eller Admin i din "
-"konferens, annars kan du inte aktivera ljudet för dig själv"
+#: /usr/src/freepbx/conferences/install.php:55
+msgid "adding joinmsg_id field.."
+msgstr "lägger till fältet joinmsg_id.."
+
+#: /usr/src/freepbx/conferences/install.php:33
+msgid "adding music field.."
+msgstr "lägger till musicfältet"
+
+#: /usr/src/freepbx/conferences/install.php:112
+msgid "adding.."
+msgstr "lägger till.."
+
+#: /usr/src/freepbx/conferences/install.php:105
+msgid "already migrated"
+msgstr "redan migrerad"
+
+#: /usr/src/freepbx/conferences/install.php:43
+#: /usr/src/freepbx/conferences/install.php:122
+msgid "already present"
+msgstr "finns redan"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:320
+msgid "default"
+msgstr "standard"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:95
+msgid "deleted"
+msgstr "borttagen"
+
+#: /usr/src/freepbx/conferences/install.php:95
+msgid "dropping joinmsg field.."
+msgstr "kastar fältet joinmsg.."
+
+#: /usr/src/freepbx/conferences/install.php:37
+#: /usr/src/freepbx/conferences/install.php:59
+#: /usr/src/freepbx/conferences/install.php:71
+#: /usr/src/freepbx/conferences/install.php:87
+msgid "fatal error"
+msgstr "allvarligt fel"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:317
+msgid "inherit"
+msgstr "ärv"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:19
+msgid "is not allowed for your account."
+msgstr "är inte tillåtet för ditt konto."
+
+#: /usr/src/freepbx/conferences/install.php:67
+msgid "migrate to recording ids.."
+msgstr "migrerar till recording ids.."
+
+#: /usr/src/freepbx/conferences/install.php:91
+#, php-format
+msgid "migrated %s entries"
+msgstr "migrerade %s poster"
+
+#: /usr/src/freepbx/conferences/install.php:54
+msgid "migrating"
+msgstr "migrerar"
+
+#: /usr/src/freepbx/conferences/install.php:99
+msgid "no joinmsg field???"
+msgstr "inget fält som heter joinmsg???"
+
+#: /usr/src/freepbx/conferences/install.php:40
+#: /usr/src/freepbx/conferences/install.php:62
+#: /usr/src/freepbx/conferences/install.php:101
+#: /usr/src/freepbx/conferences/install.php:119
+msgid "ok"
+msgstr "ok"
+
+#~ msgid "Conferences"
+#~ msgstr "Konferenser"
+
+#~ msgid ""
+#~ "Allow creation of conference rooms (meet-me) where multiple people can "
+#~ "talk together."
+#~ msgstr "Modulen ger möjlighet att skapa konferenser"
+
+#~ msgid ""
+#~ "Sets talker detection. Asterisk will sends events on the Manager "
+#~ "Interface identifying\n"
+#~ "the channel that is talking. The talker will also be identified on the "
+#~ "output of\n"
+#~ "the meetme list CLI command."
+#~ msgstr ""
+#~ "Tillåter taldetektering. Asterisk kommer att skicka händelser i "
+#~ "Managerinterfacet där identifiering av vilken kanal det är som innehåller "
+#~ "tal. Talaren kommer också att identifieras och visas på meete listan"
 
 #~ msgid "Internal Options & Configuration"
 #~ msgstr "Interna val och konfigurationer"

@@ -22,139 +22,99 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 17:39-0500\n"
 "PO-Revision-Date: 2010-01-23 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Conferences"
+#: /usr/src/freepbx/conferences/page.conferences.php:83
+#: /usr/src/freepbx/conferences/page.conferences.php:136
+#: /usr/src/freepbx/conferences/page.conferences.php:151
+msgid "Add Conference"
+msgstr "הוסף ועידה"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:165
+msgid "Admin PIN:"
+msgstr "סיסמת מנהל:"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:331
+msgid "Allow Menu:"
+msgstr "אפשר תפריט:"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:278
+msgid "Announce user join/leave"
+msgstr "הכרז על כניסה/יציאה של משתמשים"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:263
+msgid "Announce user(s) count on joining conference"
+msgstr "הכרז על מספר הנמצאים בועידה בזמן הכניסה לועידה"
+
+#: /usr/src/freepbx/conferences/install.php:108
+msgid "Checking for users field.."
 msgstr ""
 
-msgid "Applications"
+#: /usr/src/freepbx/conferences/install.php:29
+msgid "Checking if music field present.."
 msgstr ""
 
-msgid ""
-"Allow creation of conference rooms (meet-me) where multiple people can talk "
-"together."
+#: /usr/src/freepbx/conferences/install.php:48
+msgid "Checking if recordings need migration.."
 msgstr ""
 
+#: /usr/src/freepbx/conferences/page.conferences.php:95
+msgid "Conference"
+msgstr "ועידה"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:157
+msgid "Conference Name:"
+msgstr "שם הועידה:"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:153
+msgid "Conference Number:"
+msgstr "מספר ועידה:"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:169
+msgid "Conference Options"
+msgstr "אפשרויות ועידה"
+
+#: /usr/src/freepbx/conferences/functions.inc.php:174
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr ""
 
+#: /usr/src/freepbx/conferences/page.conferences.php:119
+msgid "Conference:"
+msgstr "ועידה:"
+
+#: /usr/src/freepbx/conferences/functions.inc.php:398
+msgid "Conference: "
+msgstr ""
+
+#: /usr/src/freepbx/conferences/functions.inc.php:193
 #, php-format
 msgid "Conference: %s"
 msgstr ""
 
-msgid "Conference: "
+#: /usr/src/freepbx/conferences/page.conferences.php:139
+msgid "Conflicting Extensions"
 msgstr ""
 
-msgid "Checking if music field present.."
-msgstr ""
-
-msgid "adding music field.."
-msgstr ""
-
-msgid "fatal error"
-msgstr ""
-
-msgid "ok"
-msgstr ""
-
-msgid "already present"
-msgstr ""
-
-msgid "Checking if recordings need migration.."
-msgstr ""
-
-msgid "migrating"
-msgstr ""
-
-msgid "adding joinmsg_id field.."
-msgstr ""
-
-msgid "migrate to recording ids.."
-msgstr ""
-
-#, php-format
-msgid "migrated %s entries"
-msgstr ""
-
-msgid "dropping joinmsg field.."
-msgstr ""
-
-msgid "no joinmsg field???"
-msgstr ""
-
-msgid "already migrated"
-msgstr ""
-
-msgid "Checking for users field.."
-msgstr ""
-
-msgid "adding.."
-msgstr ""
-
-msgid "FATAL error"
-msgstr ""
-
-msgid "Warning! Extension"
-msgstr "אזהרה! שלוחה"
-
-msgid "is not allowed for your account."
-msgstr "אינה מורשית עבור החשבון שלך."
-
-msgid "Add Conference"
-msgstr "הוסף ועידה"
-
-msgid "Conference"
-msgstr "ועידה"
-
-msgid "deleted"
-msgstr "נמחקה"
-
-msgid "Conference:"
-msgstr "ועידה:"
-
+#: /usr/src/freepbx/conferences/page.conferences.php:122
 #, php-format
 msgid "Delete Conference %s"
 msgstr "מחק ועידה %s"
 
-msgid "Conflicting Extensions"
-msgstr ""
-
+#: /usr/src/freepbx/conferences/page.conferences.php:151
 msgid "Edit Conference"
 msgstr "ערוך ועידה"
 
-msgid "Conference Number:"
-msgstr "מספר ועידה:"
+#: /usr/src/freepbx/conferences/page.conferences.php:293
+msgid "Enable Music On Hold when the conference has a single caller"
+msgstr "הפעל מוסיקה בהמתנה כאשר בועידה יש רק מתקשר אחד"
 
-msgid "Use this number to dial into the conference."
-msgstr "השתמש במספר זה כדי לחייג לתוך הועידה"
-
-msgid "Conference Name:"
-msgstr "שם הועידה:"
-
-msgid "Give this conference a brief name to help you identify it."
-msgstr "תן לועידה זו שם קצר שיעזור לך לזהות אותה."
-
-msgid "User PIN:"
-msgstr "סיסמת משתמש:"
-
-msgid ""
-"You can require callers to enter a password before they can enter this "
-"conference.<br><br>This setting is optional.<br><br>If either PIN is "
-"entered, the user will be prompted to enter a PIN."
-msgstr ""
-"אתה יכול לדרוש שמתקשרים יצטרכו להכניס סיסמא לפני שהם יכולים להיכנס לועידה זו."
-"<br /><br />הגדרה זו היא רשות.<br /><br />אם הוכנסה סיסמת משתמש כלשהיא, "
-"המשתמש יתבקש לחייגה בכניסה."
-
-msgid "Admin PIN:"
-msgstr "סיסמת מנהל:"
-
+#: /usr/src/freepbx/conferences/page.conferences.php:165
 msgid ""
 "Enter a PIN number for the admin user.<br><br>This setting is optional "
 "unless the 'leader wait' option is in use, then this PIN will identify the "
@@ -163,12 +123,32 @@ msgstr ""
 "הכנס סיסמא עבור המשתמש המנהל.<br /><br />אפשרות זו היא רשות אלא אם כן "
 "האפשרות 'המתן למנהל' מסומנת, ובמקרה זה, סיסמא זו תזהה את המנהל."
 
-msgid "Conference Options"
-msgstr "אפשרויות ועידה"
+#: /usr/src/freepbx/conferences/install.php:116
+msgid "FATAL error"
+msgstr ""
 
+#: /usr/src/freepbx/conferences/page.conferences.php:157
+msgid "Give this conference a brief name to help you identify it."
+msgstr "תן לועידה זו שם קצר שיעזור לך לזהות אותה."
+
+#: /usr/src/freepbx/conferences/page.conferences.php:172
+#: /usr/src/freepbx/conferences/page.conferences.php:189
 msgid "Join Message:"
 msgstr "הודעת הצטרפות:"
 
+#: /usr/src/freepbx/conferences/page.conferences.php:196
+msgid "Leader Wait:"
+msgstr "המתנה למנהל:"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:362
+msgid "Maximum Number of users allowed to join this conference."
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:362
+msgid "Maximum Participants:"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:172
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>To "
 "add additional recordings please use the \"System Recordings\" MENU to the "
@@ -177,9 +157,7 @@ msgstr ""
 "הודעה שתושמע למתקשר לפני הכניסה לועידה.<br /><br />כדי להוסיף הודעות נוספות, "
 "אנא השתמש <em>בתפריט</em> \"הקלטות מערכת\" שבצד שמאל."
 
-msgid "None"
-msgstr "אין"
-
+#: /usr/src/freepbx/conferences/page.conferences.php:189
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>You "
 "must install and enable the \"Systems Recordings\" Module to edit this option"
@@ -187,24 +165,109 @@ msgstr ""
 "הודעה שתושמע למתקשר לפני הכניסה לועידה.<br /><br />אתה חייב להתקין ולהפעיל "
 "את המודול \"הקלטות מערכת\" כדי לערוך אפשרות זאת"
 
-msgid "Leader Wait:"
-msgstr "המתנה למנהל:"
-
+#: /usr/src/freepbx/conferences/page.conferences.php:307
 msgid ""
-"Wait until the conference leader (admin user) arrives before starting the "
-"conference"
+"Music (or Commercial) played to the caller while they wait in line for the "
+"conference to start. Choose \"inherit\" if you want the MoH class to be what "
+"is currently selected, such as by the inbound route.<br><br>  This music is "
+"defined in the \"Music on Hold\" to the left."
 msgstr ""
-"המתן עד שמנהל הועידה (משתמש עם סיסמא מיוחדת) יגיע לפני שתחבר את כולם לועידה"
 
+#: /usr/src/freepbx/conferences/page.conferences.php:307
+msgid "Music on Hold Class:"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:293
+msgid "Music on Hold:"
+msgstr "מוסיקה בהמתנה:"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:376
+msgid ""
+"Mute everyone when they initially join the conference. Please note that if "
+"you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
+"Yes to unmute yourself"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:376
+msgid "Mute on Join:"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:201
+#: /usr/src/freepbx/conferences/page.conferences.php:223
+#: /usr/src/freepbx/conferences/page.conferences.php:239
+#: /usr/src/freepbx/conferences/page.conferences.php:256
+#: /usr/src/freepbx/conferences/page.conferences.php:268
+#: /usr/src/freepbx/conferences/page.conferences.php:283
+#: /usr/src/freepbx/conferences/page.conferences.php:298
+#: /usr/src/freepbx/conferences/page.conferences.php:336
+#: /usr/src/freepbx/conferences/page.conferences.php:351
+#: /usr/src/freepbx/conferences/page.conferences.php:381
 msgid "No"
 msgstr "לא"
 
-msgid "Yes"
-msgstr "כן"
+#: /usr/src/freepbx/conferences/page.conferences.php:367
+msgid "No Limit"
+msgstr ""
 
+#: /usr/src/freepbx/conferences/page.conferences.php:177
+msgid "None"
+msgstr "אין"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:408
+msgid "Please enter a valid Conference Name"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:407
+msgid "Please enter a valid Conference Number"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:331
+msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
+msgstr "הצג תפריט (משתמש או מנהל) כאשר לוחצים על כוכבית ('שליחה' אל התפריט)"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:251
+msgid "Quiet Mode:"
+msgstr "מצב שקט:"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:251
+msgid "Quiet mode (do not play enter/leave sounds)"
+msgstr "מצב שקט (אל תשמיע צלילי כניסה/יציאה)"
+
+#: /usr/src/freepbx/conferences/page.conferences.php:346
+msgid "Record Conference:"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:346
+msgid "Record the conference call"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:232
+msgid ""
+"Sets talker detection. Asterisk will sends events on the Manager Interface "
+"identifying\n"
+"the channel that is talking. The talker will also be identified on the "
+"output of\n"
+"the conference list CLI command. Note: If Conferences Pro is installed and "
+"licensed this will always be enabled"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:393
+msgid "Submit Changes"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:232
+msgid "Talker Detection:"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:215
 msgid "Talker Optimization:"
 msgstr ""
 
+#: /usr/src/freepbx/conferences/page.conferences.php:419
+msgid "The Conference Name provided is too long."
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:215
 msgid ""
 "Turns on talker optimization. With talker optimization, Asterisk treats "
 "talkers who\n"
@@ -215,102 +278,136 @@ msgid ""
 "buildup in background noise."
 msgstr ""
 
-msgid "Talker Detection:"
-msgstr ""
+#: /usr/src/freepbx/conferences/page.conferences.php:153
+msgid "Use this number to dial into the conference."
+msgstr "השתמש במספר זה כדי לחייג לתוך הועידה"
 
-msgid ""
-"Sets talker detection. Asterisk will sends events on the Manager Interface "
-"identifying\n"
-"the channel that is talking. The talker will also be identified on the "
-"output of\n"
-"the meetme list CLI command."
-msgstr ""
-
-msgid "Quiet Mode:"
-msgstr "מצב שקט:"
-
-msgid "Quiet mode (do not play enter/leave sounds)"
-msgstr "מצב שקט (אל תשמיע צלילי כניסה/יציאה)"
-
+#: /usr/src/freepbx/conferences/page.conferences.php:263
 msgid "User Count:"
 msgstr "ספירת משתמשים:"
 
-msgid "Announce user(s) count on joining conference"
-msgstr "הכרז על מספר הנמצאים בועידה בזמן הכניסה לועידה"
+#: /usr/src/freepbx/conferences/page.conferences.php:161
+msgid "User PIN:"
+msgstr "סיסמת משתמש:"
 
+#: /usr/src/freepbx/conferences/page.conferences.php:278
 msgid "User join/leave:"
 msgstr "כניסת/יציאת משתמש:"
 
-msgid "Announce user join/leave"
-msgstr "הכרז על כניסה/יציאה של משתמשים"
-
-msgid "Music on Hold:"
-msgstr "מוסיקה בהמתנה:"
-
-msgid "Enable Music On Hold when the conference has a single caller"
-msgstr "הפעל מוסיקה בהמתנה כאשר בועידה יש רק מתקשר אחד"
-
-msgid "Music on Hold Class:"
-msgstr ""
-
+#: /usr/src/freepbx/conferences/page.conferences.php:196
 msgid ""
-"Music (or Commercial) played to the caller while they wait in line for the "
-"conference to start. Choose \"inherit\" if you want the MoH class to be what "
-"is currently selected, such as by the inbound route.<br><br>  This music is "
-"defined in the \"Music on Hold\" to the left."
+"Wait until the conference leader (admin user) arrives before starting the "
+"conference"
 msgstr ""
+"המתן עד שמנהל הועידה (משתמש עם סיסמא מיוחדת) יגיע לפני שתחבר את כולם לועידה"
 
-msgid "inherit"
-msgstr ""
+#: /usr/src/freepbx/conferences/page.conferences.php:19
+msgid "Warning! Extension"
+msgstr "אזהרה! שלוחה"
 
-msgid "default"
-msgstr ""
+#: /usr/src/freepbx/conferences/page.conferences.php:202
+#: /usr/src/freepbx/conferences/page.conferences.php:224
+#: /usr/src/freepbx/conferences/page.conferences.php:240
+#: /usr/src/freepbx/conferences/page.conferences.php:257
+#: /usr/src/freepbx/conferences/page.conferences.php:269
+#: /usr/src/freepbx/conferences/page.conferences.php:284
+#: /usr/src/freepbx/conferences/page.conferences.php:299
+#: /usr/src/freepbx/conferences/page.conferences.php:337
+#: /usr/src/freepbx/conferences/page.conferences.php:352
+#: /usr/src/freepbx/conferences/page.conferences.php:382
+msgid "Yes"
+msgstr "כן"
 
-msgid "Allow Menu:"
-msgstr "אפשר תפריט:"
-
-msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
-msgstr "הצג תפריט (משתמש או מנהל) כאשר לוחצים על כוכבית ('שליחה' אל התפריט)"
-
-msgid "Record Conference:"
-msgstr ""
-
-msgid "Record the conference call"
-msgstr ""
-
-msgid "Maximum Participants:"
-msgstr ""
-
-msgid "Maximum Number of users allowed to join this conference."
-msgstr ""
-
-msgid "No Limit"
-msgstr ""
-
-msgid "Mute on Join:"
-msgstr ""
-
+#: /usr/src/freepbx/conferences/page.conferences.php:161
 msgid ""
-"Mute everyone when they initially join the conference. Please note that if "
-"you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
-"Yes to unmute yourself"
+"You can require callers to enter a password before they can enter this "
+"conference.<br><br>This setting is optional.<br><br>If either PIN is "
+"entered, the user will be prompted to enter a PIN."
+msgstr ""
+"אתה יכול לדרוש שמתקשרים יצטרכו להכניס סיסמא לפני שהם יכולים להיכנס לועידה זו."
+"<br /><br />הגדרה זו היא רשות.<br /><br />אם הוכנסה סיסמת משתמש כלשהיא, "
+"המשתמש יתבקש לחייגה בכניסה."
+
+#: /usr/src/freepbx/conferences/page.conferences.php:410
+msgid ""
+"You must set Allow Menu to Yes when not using a Leader or Admin in your "
+"conference, otherwise you will be unable to unmute yourself"
 msgstr ""
 
-msgid "Submit Changes"
-msgstr ""
-
-msgid "Please enter a valid Conference Number"
-msgstr ""
-
-msgid "Please enter a valid Conference Name"
-msgstr ""
-
+#: /usr/src/freepbx/conferences/page.conferences.php:409
 msgid ""
 "You must set an admin PIN for the Conference Leader when selecting the "
 "leader wait option"
 msgstr ""
 
-msgid ""
-"You must set Allow Menu to Yes when not using a Leader or Admin in your "
-"conference, otherwise you will be unable to unmute yourself"
+#: /usr/src/freepbx/conferences/install.php:55
+msgid "adding joinmsg_id field.."
+msgstr ""
+
+#: /usr/src/freepbx/conferences/install.php:33
+msgid "adding music field.."
+msgstr ""
+
+#: /usr/src/freepbx/conferences/install.php:112
+msgid "adding.."
+msgstr ""
+
+#: /usr/src/freepbx/conferences/install.php:105
+msgid "already migrated"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/install.php:43
+#: /usr/src/freepbx/conferences/install.php:122
+msgid "already present"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:320
+msgid "default"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:95
+msgid "deleted"
+msgstr "נמחקה"
+
+#: /usr/src/freepbx/conferences/install.php:95
+msgid "dropping joinmsg field.."
+msgstr ""
+
+#: /usr/src/freepbx/conferences/install.php:37
+#: /usr/src/freepbx/conferences/install.php:59
+#: /usr/src/freepbx/conferences/install.php:71
+#: /usr/src/freepbx/conferences/install.php:87
+msgid "fatal error"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:317
+msgid "inherit"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/page.conferences.php:19
+msgid "is not allowed for your account."
+msgstr "אינה מורשית עבור החשבון שלך."
+
+#: /usr/src/freepbx/conferences/install.php:67
+msgid "migrate to recording ids.."
+msgstr ""
+
+#: /usr/src/freepbx/conferences/install.php:91
+#, php-format
+msgid "migrated %s entries"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/install.php:54
+msgid "migrating"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/install.php:99
+msgid "no joinmsg field???"
+msgstr ""
+
+#: /usr/src/freepbx/conferences/install.php:40
+#: /usr/src/freepbx/conferences/install.php:62
+#: /usr/src/freepbx/conferences/install.php:101
+#: /usr/src/freepbx/conferences/install.php:119
+msgid "ok"
 msgstr ""

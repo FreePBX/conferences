@@ -286,11 +286,8 @@ function conferences_get_config($engine) {
 					// userpin -- must do always, otherwise if there is just an adminpin
 					// there would be no way to get to the conference !
 					$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x${DB(CONFERENCE/'.$roomnum.'/userpin)}]','USER'));
-
 					// admin pin -- exists
-					if ($roomadminpin != '') {
-						$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x${DB(CONFERENCE/'.$roomnum.'/adminpin)}]','ADMIN'));
-					}
+					$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x${DB(CONFERENCE/'.$roomnum.'/adminpin)}]','ADMIN'));
 
 					// pin invalid
 					$ext->add($contextname, $roomnum, '', new ext_setvar('PINCOUNT','$[${PINCOUNT}+1]'));
