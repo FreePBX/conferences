@@ -264,7 +264,7 @@ function conferences_get_config($engine) {
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MAX_PARTICIPANTS', '0'));
 					$ext->add($contextname, $roomnum, '', new ext_execif('$["${DB(CONFERENCE/'.$roomnum.'/users)}" != ""]','Set','MAX_PARTICIPANTS=${DB(CONFERENCE/'.$roomnum.'/users)}'));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_MUSIC','IF($["${DB(CONFERENCE/'.$roomnum.'/music)}" = "inherit" | "${DB(CONFERENCE/'.$roomnum.'/music)}" = ""]?${MOHCLASS}:${DB(CONFERENCE/'.$roomnum.'/music)})'));
-          $ext->add($contextname, $roomnum, '', new ext_gosub('1','s','sub-record-check',"conf,$roomnum," . (strstr($room['options'],'r') !== false ? 'always' : 'never')));
+					$ext->add($contextname, $roomnum, '', new ext_gosub('1','s','sub-record-check',"conf,$roomnum," . (strstr($room['options'],'r') !== false ? 'always' : 'never')));
 					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DIALSTATUS}" = "ANSWER"]','ANSWERED'));
 					$ext->add($contextname, $roomnum, '', new ext_answer(''));
 					$ext->add($contextname, $roomnum, '', new ext_wait(1));

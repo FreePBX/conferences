@@ -13,6 +13,65 @@ class Conferences implements BMO {
 	}
 
 	public function doConfigPageInit($page) {
+		$request = $_REQUEST;
+		isset($request['action'])?$action = $request['action']:$action='';
+		isset($request['view'])?$view = $request['view']:$view='form';
+		//the extension we are currently displaying
+
+		$account = isset($request['account']) ? $request['account'] : '';
+		$extdisplay = isset($request['extdisplay']) && $request['extdisplay'] != '' ? $request['extdisplay'] : $account;
+
+		$orig_account = isset($request['orig_account']) ? $request['orig_account'] : '';
+		$music = isset($request['music']) ? $request['music'] : '';
+		$users = isset($request['users']) ? $request['users'] : '0';
+
+		//check if the extension is within range for this user
+		if ($account != "" && !checkRange($account)){
+			echo "<script>javascript:alert('"._("Warning! Extension")." $account "._("is not allowed for your account.")."');</script>";
+		} else {
+
+			//if submitting form, update database
+			switch ($action) {
+				case "add":
+					$conflict_url = array();
+					$usage_arr = framework_check_extension_usage($account);
+					if (!empty($usage_arr)) {
+						$conflict_url = framework_display_extension_usage_alert($usage_arr);
+					} elseif ($this->addConference($account,$request['name'],$request['userpin'],$request['adminpin'],$request['options'],$request['joinmsg_id'],$music,$users) !== false) {
+						needreload();
+						redirect_standard('account','view');
+					}
+				break;
+				case "delete":
+					$this->deleteConference($extdisplay);
+					needreload();
+					redirect_standard();
+				break;
+				case "edit":  //just delete and re-add
+					//check to see if the room number has changed
+					if ($orig_account != '' && $orig_account != $account) {
+						$conflict_url = array();
+						$usage_arr = framework_check_extension_usage($account);
+						if (!empty($usage_arr)) {
+							$conflict_url = framework_display_extension_usage_alert($usage_arr);
+							break;
+						} else {
+							$this->deleteConference($orig_account);
+							$request['extdisplay'] = $account;//redirect to the new ext
+							$old = conferences_getdest($orig_account);
+							$new = conferences_getdest($account);
+							framework_change_destination($old[0], $new[0]);
+						}
+					} else {
+						$this->deleteConference($account);
+					}
+
+					$this->addConference($account,$request['name'],$request['userpin'],$request['adminpin'],$request['options'],$request['joinmsg_id'],$music,$users);
+					needreload();
+					redirect_standard('extdisplay', 'view');
+				break;
+			}
+		}
 	}
 
 	public function install() {
@@ -200,4 +259,34 @@ class Conferences implements BMO {
 			return null;
 		}
 	}
+	public function getActionBar($request){
+		switch($request['display']){
+			case 'conferences':
+				$buttons = array(
+					'submit' => array(
+						'name' => 'submit',
+						'id' => 'submit',
+						'value' => _('Submit')
+					),
+					'reset' => array(
+						'name' => 'reset',
+						'id' => 'reset',
+						'value' => _('Reset')
+					),
+					'delete' => array(
+						'name' => 'delete',
+						'id' => 'delete',
+						'value' => _('Delete')
+					)
+    			);
+    		break;
+    	}
+    	if (empty($request['extdisplay']) && empty($request['account']) ) {
+    		unset($buttons['delete']);
+    	}
+    	if($request['view'] != 'form'){
+    		unset($buttons);
+    	}
+    	return $buttons;
+    }
 }
