@@ -2,7 +2,7 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>12.0.11</version>
+	<version>13.0.1</version>
 	<publisher>Schmooze Com Inc</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -50,7 +50,7 @@
 		</conferences>
  	</popovers>
 	<supported>
-		<version>12.0</version>
+		<version>13.0</version>
 	</supported>
 	<location>release/2.11/conferences-2.11.0.1.tgz</location>
 	<md5sum>1ff1a30c643c8de67b2d03c30d0caf51</md5sum>
