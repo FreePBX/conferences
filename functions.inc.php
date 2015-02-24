@@ -3,6 +3,8 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright 2013 Schmooze Com Inc.
 //
+//TODO: This should be moved into BMO
+//its here so that other modules can hook into it
 class conferences_conf {
 	private static $obj;
 
@@ -262,9 +264,10 @@ function conferences_get_config($engine) {
 					$ext->add($contextname, $roomnum, '', new ext_macro('user-callerid'));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_ROOMNUM',$roomnum));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MAX_PARTICIPANTS', '0'));
+					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_MUSIC', '${MOHCLASS}'));
 					$ext->add($contextname, $roomnum, '', new ext_execif('$["${DB(CONFERENCE/'.$roomnum.'/users)}" != ""]','Set','MAX_PARTICIPANTS=${DB(CONFERENCE/'.$roomnum.'/users)}'));
-					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_MUSIC','IF($["${DB(CONFERENCE/'.$roomnum.'/music)}" = "inherit" | "${DB(CONFERENCE/'.$roomnum.'/music)}" = ""]?${MOHCLASS}:${DB(CONFERENCE/'.$roomnum.'/music)})'));
-          $ext->add($contextname, $roomnum, '', new ext_gosub('1','s','sub-record-check',"conf,$roomnum," . (strstr($room['options'],'r') !== false ? 'always' : 'never')));
+					$ext->add($contextname, $roomnum, '', new ext_execif('$["${DB(CONFERENCE/'.$roomnum.'/music)}" != "inherit" & "${DB(CONFERENCE/'.$roomnum.'/music)}" != ""]','Set','MEETME_MUSIC=${DB(CONFERENCE/'.$roomnum.'/music)}'));
+					$ext->add($contextname, $roomnum, '', new ext_gosub('1','s','sub-record-check',"conf,$roomnum," . (strstr($room['options'],'r') !== false ? 'always' : 'never')));
 					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DIALSTATUS}" = "ANSWER"]','ANSWERED'));
 					$ext->add($contextname, $roomnum, '', new ext_answer(''));
 					$ext->add($contextname, $roomnum, '', new ext_wait(1));
