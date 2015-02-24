@@ -120,6 +120,8 @@ class Conferences implements BMO {
 			}
 		}
 
+		$options = count_chars($options, 3);
+
 		$sql = 'UPDATE meetme SET options = ? WHERE exten = ?';
 		$sth = $this->db->prepare($sql);
 		$sth->execute(array($options,$room));
