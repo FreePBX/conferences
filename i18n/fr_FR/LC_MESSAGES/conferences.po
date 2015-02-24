@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:07-0500\n"
+"POT-Creation-Date: 2015-02-24 13:36-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Jouniaux <c.jouniaux@techtelecom.fr>\n"
 "Language-Team: \n"
@@ -84,7 +84,7 @@ msgstr "Numéro de conférence"
 msgid "Conference Options"
 msgstr "Options conférence"
 
-#: functions.inc.php:174
+#: functions.inc.php:176
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Chambre de conférence %s : %s"
@@ -93,11 +93,11 @@ msgstr "Chambre de conférence %s : %s"
 msgid "Conference:"
 msgstr "Conférence:"
 
-#: functions.inc.php:398
+#: functions.inc.php:401
 msgid "Conference: "
 msgstr "Conférence: "
 
-#: functions.inc.php:193
+#: functions.inc.php:195
 #, php-format
 msgid "Conference: %s"
 msgstr "Conférence: %s"

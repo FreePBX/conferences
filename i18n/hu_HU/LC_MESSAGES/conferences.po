@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:07-0500\n"
+"POT-Creation-Date: 2015-02-24 13:36-0500\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
 "Language-Team: Magyar <freepbx@freepbx.hu>\n"
@@ -87,7 +87,7 @@ msgstr "Konferenciaszám:"
 msgid "Conference Options"
 msgstr "Konferencia opciók"
 
-#: functions.inc.php:174
+#: functions.inc.php:176
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr ""
@@ -96,11 +96,11 @@ msgstr ""
 msgid "Conference:"
 msgstr "Konferencia:"
 
-#: functions.inc.php:398
+#: functions.inc.php:401
 msgid "Conference: "
 msgstr "Konferencia:"
 
-#: functions.inc.php:193
+#: functions.inc.php:195
 #, php-format
 msgid "Conference: %s"
 msgstr ""

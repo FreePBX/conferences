@@ -37,15 +37,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:07-0500\n"
+"POT-Creation-Date: 2015-02-24 13:36-0500\n"
 "PO-Revision-Date: 2015-02-21 11:10+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
-"Language-Team: Japanese "
-"<http://weblate.freepbx.org/projects/freepbx/conferences/ja_JP/>\n"
-"Language: ja_JP\n"
+"Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
+"conferences/ja_JP/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja_JP\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
@@ -106,7 +106,7 @@ msgstr "音声会議の番号："
 msgid "Conference Options"
 msgstr "音声会議のオプション"
 
-#: functions.inc.php:174
+#: functions.inc.php:176
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "音声会議室 %s ： %s"
@@ -115,11 +115,11 @@ msgstr "音声会議室 %s ： %s"
 msgid "Conference:"
 msgstr "音声会議："
 
-#: functions.inc.php:398
+#: functions.inc.php:401
 msgid "Conference: "
 msgstr "音声会議： "
 
-#: functions.inc.php:193
+#: functions.inc.php:195
 #, php-format
 msgid "Conference: %s"
 msgstr "音声会議： %s"

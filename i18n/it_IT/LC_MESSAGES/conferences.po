@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:07-0500\n"
+"POT-Creation-Date: 2015-02-24 13:36-0500\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -86,7 +86,7 @@ msgstr "Numero Conferenza:"
 msgid "Conference Options"
 msgstr "Opzioni Conferenza"
 
-#: functions.inc.php:174
+#: functions.inc.php:176
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Stanza di Conferenza %s: %s"
@@ -95,11 +95,11 @@ msgstr "Stanza di Conferenza %s: %s"
 msgid "Conference:"
 msgstr "Conferenza:"
 
-#: functions.inc.php:398
+#: functions.inc.php:401
 msgid "Conference: "
 msgstr "Conferenza:"
 
-#: functions.inc.php:193
+#: functions.inc.php:195
 #, php-format
 msgid "Conference: %s"
 msgstr "Conferenza: %s"

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:07-0500\n"
+"POT-Creation-Date: 2015-02-24 13:36-0500\n"
 "PO-Revision-Date: 2014-07-21 16:05+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -91,7 +91,7 @@ msgstr "Конференция Номер:"
 msgid "Conference Options"
 msgstr "Опции на Конференция"
 
-#: functions.inc.php:174
+#: functions.inc.php:176
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Стая за Конференции %s : %s"
@@ -100,11 +100,11 @@ msgstr "Стая за Конференции %s : %s"
 msgid "Conference:"
 msgstr "Конференция:"
 
-#: functions.inc.php:398
+#: functions.inc.php:401
 msgid "Conference: "
 msgstr "Конференция: "
 
-#: functions.inc.php:193
+#: functions.inc.php:195
 #, php-format
 msgid "Conference: %s"
 msgstr "Конференция: %s"
