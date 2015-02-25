@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-24 13:36-0500\n"
+"POT-Creation-Date: 2015-02-25 16:47-0500\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Jouniaux <c.jouniaux@techtelecom.fr>\n"
 "Language-Team: \n"
@@ -93,7 +93,7 @@ msgstr "Chambre de conférence %s : %s"
 msgid "Conference:"
 msgstr "Conférence:"
 
-#: functions.inc.php:401
+#: functions.inc.php:402
 msgid "Conference: "
 msgstr "Conférence: "
 
