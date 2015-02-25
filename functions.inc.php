@@ -217,9 +217,10 @@ function conferences_get_config($engine) {
 				// Start the conference
 				if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
 					$ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','Set','CONFBRIDGE(user,music_on_hold_class)=${MEETME_MUSIC}'));
-				} else {
-					$ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','Set','CHANNEL(musicclass)=${MEETME_MUSIC}'));
 				}
+				//Always reset the musicclass for the channel because inbound routes might have previously set one, or whereever we came from before
+				//http://issues.freepbx.org/browse/FREEPBX-8782
+				$ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','Set','CHANNEL(musicclass)=${MEETME_MUSIC}'));
 
 				$ext->add($contextname, 'STARTMEETME', '', new ext_setvar('GROUP(meetme)','${MEETME_ROOMNUM}'));
 				$ext->add($contextname, 'STARTMEETME', '', new ext_gotoif('$[${MAX_PARTICIPANTS} > 0 && ${GROUP_COUNT(${MEETME_ROOMNUM}@meetme)}>${MAX_PARTICIPANTS}]','MEETMEFULL,1'));
