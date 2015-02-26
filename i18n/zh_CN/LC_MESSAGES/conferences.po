@@ -62,11 +62,11 @@ msgstr ""
 
 #: install.php:108
 msgid "Checking for users field.."
-msgstr ""
+msgstr "检查用户域"
 
 #: install.php:29
 msgid "Checking if music field present.."
-msgstr ""
+msgstr "设置音乐检查"
 
 #: install.php:48
 msgid "Checking if recordings need migration.."
@@ -109,7 +109,7 @@ msgstr "会议：%s"
 #: conferences.i18n.php:3 conferences.i18n.php:6 conferences.i18n.php:8
 #: conferences.i18n.php:14
 msgid "Conferences"
-msgstr ""
+msgstr "语音会议"
 
 #: page.conferences.php:139
 msgid "Conflicting Extensions"
@@ -139,7 +139,7 @@ msgstr ""
 
 #: install.php:116
 msgid "FATAL error"
-msgstr ""
+msgstr "严重错误"
 
 #: page.conferences.php:157
 msgid "Give this conference a brief name to help you identify it."
@@ -155,11 +155,11 @@ msgstr "等待主持人："
 
 #: page.conferences.php:362
 msgid "Maximum Number of users allowed to join this conference."
-msgstr ""
+msgstr "允许最多会议创建人数"
 
 #: page.conferences.php:362
 msgid "Maximum Participants:"
-msgstr ""
+msgstr "最大会议人数"
 
 #: page.conferences.php:172
 msgid ""
@@ -188,7 +188,7 @@ msgstr ""
 
 #: page.conferences.php:307
 msgid "Music on Hold Class:"
-msgstr ""
+msgstr "会议语音等待"
 
 #: page.conferences.php:293
 msgid "Music on Hold:"
@@ -203,7 +203,7 @@ msgstr ""
 
 #: page.conferences.php:376
 msgid "Mute on Join:"
-msgstr ""
+msgstr "对加入的静音"
 
 #: page.conferences.php:201 page.conferences.php:223 page.conferences.php:239
 #: page.conferences.php:256 page.conferences.php:268 page.conferences.php:283
@@ -214,7 +214,7 @@ msgstr "否"
 
 #: page.conferences.php:367
 msgid "No Limit"
-msgstr ""
+msgstr "无限制"
 
 #: page.conferences.php:177
 msgid "None"
@@ -264,11 +264,11 @@ msgstr "提交更改"
 
 #: page.conferences.php:232
 msgid "Talker Detection:"
-msgstr ""
+msgstr "讲话人检测"
 
 #: page.conferences.php:215
 msgid "Talker Optimization:"
-msgstr ""
+msgstr "讲话人优先"
 
 #: page.conferences.php:419
 msgid "The Conference Name provided is too long."
@@ -350,7 +350,7 @@ msgstr ""
 
 #: install.php:112
 msgid "adding.."
-msgstr ""
+msgstr "添加.."
 
 #: install.php:105
 msgid "already migrated"
@@ -358,11 +358,11 @@ msgstr "已经迁移过了"
 
 #: install.php:43 install.php:122
 msgid "already present"
-msgstr ""
+msgstr "已经出席"
 
 #: page.conferences.php:320
 msgid "default"
-msgstr ""
+msgstr "默认"
 
 #: page.conferences.php:95
 msgid "deleted"
@@ -378,7 +378,7 @@ msgstr "致命错误"
 
 #: page.conferences.php:317
 msgid "inherit"
-msgstr ""
+msgstr "继承"
 
 #: page.conferences.php:19
 msgid "is not allowed for your account."
