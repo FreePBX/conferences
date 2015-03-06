@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-25 16:47-0500\n"
+"POT-Creation-Date: 2015-03-06 17:29-0500\n"
 "PO-Revision-Date: 2014-02-28 04:52+0200\n"
 "Last-Translator: Andrew <andrew.nagy@the159.com>\n"
 "Language-Team: Russian <http://example.com/projects/freepbx-211/conferences/"
@@ -48,7 +48,7 @@ msgstr "PIN администратора:"
 msgid "Allow Menu:"
 msgstr "Разрешить меню?"
 
-#: conferences.i18n.php:5 conferences.i18n.php:12
+#: conferences.i18n.php:8
 msgid ""
 "Allow creation of conference rooms where multiple people can talk together"
 msgstr ""
@@ -61,7 +61,7 @@ msgstr "Анонсировать подсоединение/отключение
 msgid "Announce user(s) count on joining conference"
 msgstr "Анонсировать количество участников конференции при подсоединении?"
 
-#: conferences.i18n.php:4 conferences.i18n.php:10
+#: conferences.i18n.php:6 conferences.i18n.php:12
 msgid "Applications"
 msgstr "Приложения"
 
@@ -111,8 +111,7 @@ msgstr "Конференция: "
 msgid "Conference: %s"
 msgstr "Конференция: %s"
 
-#: conferences.i18n.php:3 conferences.i18n.php:6 conferences.i18n.php:8
-#: conferences.i18n.php:14
+#: conferences.i18n.php:4 conferences.i18n.php:10
 msgid "Conferences"
 msgstr "Конференции"
 
@@ -292,6 +291,10 @@ msgstr "Оптимизация для выступающего:"
 
 #: page.conferences.php:419
 msgid "The Conference Name provided is too long."
+msgstr ""
+
+#: page.conferences.php:411
+msgid "The user and admin can not have the same pin code."
 msgstr ""
 
 #: page.conferences.php:215

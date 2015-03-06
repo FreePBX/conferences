@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX Conference Module\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-25 16:47-0500\n"
+"POT-Creation-Date: 2015-03-06 17:29-0500\n"
 "PO-Revision-Date: 2014-07-26 00:48+0200\n"
 "Last-Translator: Rafael <rafael@ibinetwork.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://git.freepbx.org/projects/freepbx/"
@@ -47,7 +47,7 @@ msgstr "PIN do Administrador"
 msgid "Allow Menu:"
 msgstr "Menu de permissões"
 
-#: conferences.i18n.php:5 conferences.i18n.php:12
+#: conferences.i18n.php:8
 msgid ""
 "Allow creation of conference rooms where multiple people can talk together"
 msgstr ""
@@ -60,7 +60,7 @@ msgstr "Anuncia a entrada e saída de usuários"
 msgid "Announce user(s) count on joining conference"
 msgstr "Anuncia o número de usuários ao se juntar a conferência"
 
-#: conferences.i18n.php:4 conferences.i18n.php:10
+#: conferences.i18n.php:6 conferences.i18n.php:12
 msgid "Applications"
 msgstr "Aplicações"
 
@@ -110,8 +110,7 @@ msgstr "Conferência:"
 msgid "Conference: %s"
 msgstr "Conferencia: %s"
 
-#: conferences.i18n.php:3 conferences.i18n.php:6 conferences.i18n.php:8
-#: conferences.i18n.php:14
+#: conferences.i18n.php:4 conferences.i18n.php:10
 msgid "Conferences"
 msgstr "Conferencias"
 
@@ -280,6 +279,10 @@ msgstr "Otimizar conversa:"
 
 #: page.conferences.php:419
 msgid "The Conference Name provided is too long."
+msgstr ""
+
+#: page.conferences.php:411
+msgid "The user and admin can not have the same pin code."
 msgstr ""
 
 #: page.conferences.php:215

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-25 16:47-0500\n"
+"POT-Creation-Date: 2015-03-06 17:29-0500\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
 "Language-Team: Magyar <freepbx@freepbx.hu>\n"
@@ -42,7 +42,7 @@ msgstr "Admin PIN:"
 msgid "Allow Menu:"
 msgstr "Elfogadva menü:"
 
-#: conferences.i18n.php:5 conferences.i18n.php:12
+#: conferences.i18n.php:8
 msgid ""
 "Allow creation of conference rooms where multiple people can talk together"
 msgstr ""
@@ -55,7 +55,7 @@ msgstr "Esemény felhasználó fel/lecsatlakozásakor"
 msgid "Announce user(s) count on joining conference"
 msgstr "Esemény a felhasználók csatlakozásakor"
 
-#: conferences.i18n.php:4 conferences.i18n.php:10
+#: conferences.i18n.php:6 conferences.i18n.php:12
 msgid "Applications"
 msgstr ""
 
@@ -105,8 +105,7 @@ msgstr "Konferencia:"
 msgid "Conference: %s"
 msgstr ""
 
-#: conferences.i18n.php:3 conferences.i18n.php:6 conferences.i18n.php:8
-#: conferences.i18n.php:14
+#: conferences.i18n.php:4 conferences.i18n.php:10
 msgid "Conferences"
 msgstr ""
 
@@ -274,6 +273,10 @@ msgstr ""
 
 #: page.conferences.php:419
 msgid "The Conference Name provided is too long."
+msgstr ""
+
+#: page.conferences.php:411
+msgid "The user and admin can not have the same pin code."
 msgstr ""
 
 #: page.conferences.php:215

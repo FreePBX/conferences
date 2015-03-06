@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-25 16:47-0500\n"
+"POT-Creation-Date: 2015-03-06 17:29-0500\n"
 "PO-Revision-Date: 2015-02-21 11:10+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -61,7 +61,7 @@ msgstr "管理者PIN："
 msgid "Allow Menu:"
 msgstr "メニューを許可："
 
-#: conferences.i18n.php:5 conferences.i18n.php:12
+#: conferences.i18n.php:8
 msgid ""
 "Allow creation of conference rooms where multiple people can talk together"
 msgstr ""
@@ -74,7 +74,7 @@ msgstr "ユーザーの参加/退出をアナウンスします"
 msgid "Announce user(s) count on joining conference"
 msgstr "カンファレンスに参加しているユーザーの数をアナウンスします"
 
-#: conferences.i18n.php:4 conferences.i18n.php:10
+#: conferences.i18n.php:6 conferences.i18n.php:12
 msgid "Applications"
 msgstr "アプリケーション"
 
@@ -124,8 +124,7 @@ msgstr "音声会議： "
 msgid "Conference: %s"
 msgstr "音声会議： %s"
 
-#: conferences.i18n.php:3 conferences.i18n.php:6 conferences.i18n.php:8
-#: conferences.i18n.php:14
+#: conferences.i18n.php:4 conferences.i18n.php:10
 msgid "Conferences"
 msgstr "音声会議"
 
@@ -300,6 +299,10 @@ msgstr "話者最適化："
 
 #: page.conferences.php:419
 msgid "The Conference Name provided is too long."
+msgstr ""
+
+#: page.conferences.php:411
+msgid "The user and admin can not have the same pin code."
 msgstr ""
 
 #: page.conferences.php:215
