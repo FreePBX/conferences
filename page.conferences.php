@@ -3,7 +3,6 @@
 //	Copyright 2015 Sangoma Technologies.
 //
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
-debug($_REQUEST);
 $dispnum = "conferences"; //used for switch on config.php
 $tabindex = 0;
 $request = $_REQUEST;

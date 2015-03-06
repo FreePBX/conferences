@@ -17,6 +17,7 @@ function checkConf()
 	var msgInvalidConfName = _('Please enter a valid Conference Name');
 	var msgNeedAdminPIN = _('You must set an admin PIN for the Conference Leader when selecting the leader wait option');
 	var msgInvalidMuteOnJoin = _('You must set Allow Menu to Yes when not using a Leader or Admin in your conference, otherwise you will be unable to unmute yourself');
+	var msgMatchingPins = _('The user and admin can not have the same pin code.');
 
 	defaultEmptyOK = false;
 	if (!isInteger(theForm.account.value))
@@ -34,11 +35,14 @@ function checkConf()
 		}
 	});
 	$("#options").val(ops.join(""));
-	
+
 
 	// not possible to have a 'leader' conference with no adminpin
 	if (theForm.options.value.indexOf("w") > -1 && theForm.adminpin.value === "")
 		return warnInvalid(theForm.adminpin, msgNeedAdminPIN);
+	//Users and Admin should not have the same pin
+	if (theForm.adminpin.value == theForm.userpin.value && theForm.adminpin.value.length > 0)
+		return warnInvalid(theForm.userpin, msgMatchingPins);
 
 	// should not have a conference with no 'leader', mute on join, and no allow menu, so let's complain
 	if ($('[name=opt_m]').val() !== '' && $('[name=adminpin]').val() === '' && !$('[name=opt_s]').val())
