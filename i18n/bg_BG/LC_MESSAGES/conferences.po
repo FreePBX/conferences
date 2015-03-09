@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 17:29-0500\n"
+"POT-Creation-Date: 2015-03-09 12:34-0400\n"
 "PO-Revision-Date: 2014-07-21 16:05+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -34,28 +34,32 @@ msgstr ""
 "X-Poedit-Country: BULGARIA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: page.conferences.php:83 page.conferences.php:136 page.conferences.php:151
+#: views/grid.php:32
+msgid "Actions"
+msgstr ""
+
+#: views/bootnav.php:2
 msgid "Add Conference"
 msgstr "Добави Конференция"
 
-#: page.conferences.php:165
-msgid "Admin PIN:"
-msgstr "Администраторски PIN:"
+#: views/form.php:201
+msgid "Admin PIN"
+msgstr ""
 
-#: page.conferences.php:331
-msgid "Allow Menu:"
-msgstr "Позволи Меню:"
+#: views/form.php:416
+msgid "Allow Menu"
+msgstr ""
 
 #: conferences.i18n.php:8
 msgid ""
 "Allow creation of conference rooms where multiple people can talk together"
 msgstr ""
 
-#: page.conferences.php:278
+#: views/form.php:376
 msgid "Announce user join/leave"
 msgstr "Известява за влизане/излизане на потребител"
 
-#: page.conferences.php:263
+#: views/form.php:349
 msgid "Announce user(s) count on joining conference"
 msgstr "Известява за броя на потребителите при влизане в конференцията"
 
@@ -75,30 +79,22 @@ msgstr "Проверка дали поле music съществува.."
 msgid "Checking if recordings need migration.."
 msgstr "Проверка дали записите имат нужда от преместване.."
 
-#: page.conferences.php:95
+#: views/grid.php:30
 msgid "Conference"
 msgstr "Конференция"
 
-#: page.conferences.php:157
-msgid "Conference Name:"
-msgstr "Име на Конференция:"
+#: views/form.php:153
+msgid "Conference Name"
+msgstr ""
 
-#: page.conferences.php:153
-msgid "Conference Number:"
-msgstr "Конференция Номер:"
-
-#: page.conferences.php:169
-msgid "Conference Options"
-msgstr "Опции на Конференция"
+#: views/form.php:129
+msgid "Conference Number"
+msgstr ""
 
 #: functions.inc.php:176
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Стая за Конференции %s : %s"
-
-#: page.conferences.php:119
-msgid "Conference:"
-msgstr "Конференция:"
 
 #: functions.inc.php:402
 msgid "Conference: "
@@ -109,105 +105,87 @@ msgstr "Конференция: "
 msgid "Conference: %s"
 msgstr "Конференция: %s"
 
-#: conferences.i18n.php:4 conferences.i18n.php:10
+#: conferences.i18n.php:4 conferences.i18n.php:10 page.conferences.php:10
 msgid "Conferences"
 msgstr "Конференции"
 
-#: page.conferences.php:139
+#: views/form.php:112
 msgid "Conflicting Extensions"
 msgstr "Вътрешни Линии в Конфликт"
 
-#: page.conferences.php:122
-#, php-format
-msgid "Delete Conference %s"
-msgstr "Изтрий Конференция %s"
+#: Conferences.class.php:281
+msgid "Delete"
+msgstr ""
 
-#: page.conferences.php:151
-msgid "Edit Conference"
-msgstr "Редактирай Конференция"
+#: views/grid.php:31
+msgid "Description"
+msgstr ""
 
-#: page.conferences.php:293
+#: views/form.php:403
 msgid "Enable Music On Hold when the conference has a single caller"
 msgstr ""
 "Разрешава Музика при Задържане когато конференцията има само един обаждащ се"
 
-#: page.conferences.php:165
+#: views/form.php:213
 msgid ""
 "Enter a PIN number for the admin user.<br><br>This setting is optional "
 "unless the 'leader wait' option is in use, then this PIN will identify the "
-"leader."
+"leader.<br>This pin should be different than the user pin."
 msgstr ""
-"Въведете PIN номер за потребител админ.<br><br>Тази настройка не е "
-"задължителна освен ако 'изчакване на водещия' опцията се използва, тогава "
-"този PIN ще идентифицира водещия."
 
 #: install.php:116
 msgid "FATAL error"
 msgstr "ФАТАЛНА грешка"
 
-#: page.conferences.php:157
+#: views/form.php:165
 msgid "Give this conference a brief name to help you identify it."
 msgstr ""
 "Дайте на тази конференция описващо име за да ви помогне при идентифицирането."
 
-#: page.conferences.php:172 page.conferences.php:189
-msgid "Join Message:"
-msgstr "Съобщение при Влизане:"
+#: views/form.php:45
+msgid "Join Message"
+msgstr ""
 
-#: page.conferences.php:196
-msgid "Leader Wait:"
-msgstr "Изчакване на Водещия:"
+#: views/form.php:226
+msgid "Leader Wait"
+msgstr ""
 
-#: page.conferences.php:362
+#: views/bootnav.php:1
+msgid "List Conferences"
+msgstr ""
+
+#: views/form.php:482
 msgid "Maximum Number of users allowed to join this conference."
 msgstr ""
 "Максимален брой потребители които могат да се включат в тази конференция."
 
-#: page.conferences.php:362
-msgid "Maximum Participants:"
-msgstr "Максимално Участници:"
+#: views/form.php:470
+msgid "Maximum Participants"
+msgstr ""
 
-#: page.conferences.php:172
+#: views/form.php:59
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>To "
-"add additional recordings please use the \"System Recordings\" MENU to the "
-"left"
+"add additional recordings please use the \"System Recordings\" MENU above"
 msgstr ""
-"Съобщение което ще се възпроизведе на обаждащия се преди да се присъедини "
-"към конференцията.<br><br>За да добавите допълнителни записи използвайте "
-"меню \"Системни Записи\""
 
-#: page.conferences.php:189
-msgid ""
-"Message to be played to the caller before joining the conference.<br><br>You "
-"must install and enable the \"Systems Recordings\" Module to edit this option"
-msgstr ""
-"Съобщение което ще се възпроизведе на обаждащия се преди да се присъедини "
-"към конференцията.<br><br>Трябва да сте инсталирали и разрешили Модул "
-"\"Системни Записи\" за да редактирате тази опция"
-
-#: page.conferences.php:307
+#: views/form.php:102
 msgid ""
 "Music (or Commercial) played to the caller while they wait in line for the "
 "conference to start. Choose \"inherit\" if you want the MoH class to be what "
 "is currently selected, such as by the inbound route.<br><br>  This music is "
-"defined in the \"Music on Hold\" to the left."
+"defined in the \"Music on Hold\" above."
 msgstr ""
-"Музика (или Реклами) възпроизвеждани на обаждащия се докато чака на линия за "
-"започване на конференцията. Изберете \"наследи\" ако искате категорията на "
-"Музиката при Задържане да бъде същата, каквато е избрана във входящия "
-"маршрути.<br><br>  Тази музика е определена в меню \"Музика при Задържане\" "
-"отляво."
 
-#: page.conferences.php:307
-msgid "Music on Hold Class:"
-msgstr "Категория на Музика при Задържане:"
+#: views/form.php:388
+msgid "Music on Hold"
+msgstr ""
 
-#: page.conferences.php:293
-msgid "Music on Hold:"
-msgstr "Музика при Задържане:"
+#: views/form.php:88
+msgid "Music on Hold Class"
+msgstr ""
 
-#: page.conferences.php:376
+#: views/form.php:509
 msgid ""
 "Mute everyone when they initially join the conference. Please note that if "
 "you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
@@ -217,119 +195,107 @@ msgstr ""
 "нямате \"Изчакване на Водещия\" установено на Да, трябва да установите "
 "\"Позволи Меню\" на Да ако искате да говорите"
 
-#: page.conferences.php:376
-msgid "Mute on Join:"
-msgstr "Заглуши при Влизане:"
+#: views/form.php:494
+msgid "Mute on Join"
+msgstr ""
 
-#: page.conferences.php:201 page.conferences.php:223 page.conferences.php:239
-#: page.conferences.php:256 page.conferences.php:268 page.conferences.php:283
-#: page.conferences.php:298 page.conferences.php:336 page.conferences.php:351
-#: page.conferences.php:381
+#: views/form.php:233 views/form.php:260 views/form.php:287 views/form.php:314
+#: views/form.php:341 views/form.php:368 views/form.php:395 views/form.php:423
+#: views/form.php:450 views/form.php:501
 msgid "No"
 msgstr "Не"
 
-#: page.conferences.php:367
+#: views/form.php:474
 msgid "No Limit"
 msgstr "Без Лимит"
 
-#: page.conferences.php:177
+#: views/form.php:31
 msgid "None"
 msgstr "Няма"
 
-#: page.conferences.php:408
+#: assets/js/conferences.js:17
 msgid "Please enter a valid Conference Name"
 msgstr "Моля въведете правилно Име на Конференция"
 
-#: page.conferences.php:407
+#: assets/js/conferences.js:16
 msgid "Please enter a valid Conference Number"
 msgstr "Моля въведете правилен Номер на Конференция"
 
-#: page.conferences.php:331
+#: views/form.php:431
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
 msgstr ""
 "Представя Меню (потребител или администратор) когато '*' е получена "
 "('изпрати' към меню)"
 
-#: page.conferences.php:251
-msgid "Quiet Mode:"
-msgstr "Тих Режим:"
+#: views/form.php:307
+msgid "Quiet Mode"
+msgstr ""
 
-#: page.conferences.php:251
+#: views/form.php:322
 msgid "Quiet mode (do not play enter/leave sounds)"
 msgstr "Тих режим (не възпроизвежда влизане/излизане звуци)"
 
-#: page.conferences.php:346
-msgid "Record Conference:"
-msgstr "Записвай Конференция:"
+#: views/form.php:443
+msgid "Record Conference"
+msgstr ""
 
-#: page.conferences.php:346
+#: views/form.php:458
 msgid "Record the conference call"
 msgstr "Записва конферентния разговор"
 
-#: page.conferences.php:232
+#: Conferences.class.php:276
+msgid "Reset"
+msgstr ""
+
+#: views/form.php:295
 msgid ""
 "Sets talker detection. Asterisk will sends events on the Manager Interface "
-"identifying\n"
-"the channel that is talking. The talker will also be identified on the "
-"output of\n"
-"the conference list CLI command. Note: If Conferences Pro is installed and "
-"licensed this will always be enabled"
+"identifying 0the channel that is talking. The talker will also be identified "
+"on the output of the conference list CLI command. Note: If Conferences Pro "
+"is installed and licensed this will always be enabled"
 msgstr ""
 
-#: page.conferences.php:393
-msgid "Submit Changes"
-msgstr "Приеми Промените"
-
-#: page.conferences.php:232
-msgid "Talker Detection:"
-msgstr "Откриване на Говорещия:"
-
-#: page.conferences.php:215
-msgid "Talker Optimization:"
-msgstr "Оптимизиране на Говорещия:"
-
-#: page.conferences.php:419
-msgid "The Conference Name provided is too long."
+#: Conferences.class.php:271
+msgid "Submit"
 msgstr ""
 
-#: page.conferences.php:411
+#: views/form.php:280
+msgid "Talker Detection"
+msgstr ""
+
+#: views/form.php:253
+msgid "Talker Optimization"
+msgstr ""
+
+#: assets/js/conferences.js:20
 msgid "The user and admin can not have the same pin code."
 msgstr ""
 
-#: page.conferences.php:215
+#: views/form.php:268
 msgid ""
 "Turns on talker optimization. With talker optimization, Asterisk treats "
-"talkers who\n"
-"are not speaking as being muted, meaning that no encoding is done on "
-"transmission\n"
-"and that received audio that is not registered as talking is omitted, "
-"causing no\n"
-"buildup in background noise."
+"talkers who are not speaking as being muted, meaning that no encoding is "
+"done on transmission and that received audio that is not registered as "
+"talking is omitted, causing no buildup in background noise."
 msgstr ""
-"С оптимизиране на говорещия, Астериск третира говорещите които не говорят "
-"като заглушени,\n"
-"което означава че няма да се извършва кодиране при предаването и полученото "
-"аудио\n"
-"което не е регистрирано като говорещ се премахва. Резултата е намален фонов "
-"шум."
 
-#: page.conferences.php:153
+#: views/form.php:141
 msgid "Use this number to dial into the conference."
 msgstr "Използва този номер за набиране на конференцията."
 
-#: page.conferences.php:263
-msgid "User Count:"
-msgstr "Броене на Потребителите:"
+#: views/form.php:334
+msgid "User Count"
+msgstr ""
 
-#: page.conferences.php:161
-msgid "User PIN:"
-msgstr "Потребителски PIN:"
+#: views/form.php:177
+msgid "User PIN"
+msgstr ""
 
-#: page.conferences.php:278
-msgid "User join/leave:"
-msgstr "Потребител влиза/излиза:"
+#: views/form.php:361
+msgid "User join/leave"
+msgstr ""
 
-#: page.conferences.php:196
+#: views/form.php:241
 msgid ""
 "Wait until the conference leader (admin user) arrives before starting the "
 "conference"
@@ -337,28 +303,25 @@ msgstr ""
 "Изчаква докато водещия на конференцията (потребител админ) се включи преди "
 "да стартира конференцията"
 
-#: page.conferences.php:19
+#: Conferences.class.php:30
 msgid "Warning! Extension"
 msgstr "Внимание! Вътрешна Линия"
 
-#: page.conferences.php:202 page.conferences.php:224 page.conferences.php:240
-#: page.conferences.php:257 page.conferences.php:269 page.conferences.php:284
-#: page.conferences.php:299 page.conferences.php:337 page.conferences.php:352
-#: page.conferences.php:382
+#: views/form.php:231 views/form.php:258 views/form.php:285 views/form.php:312
+#: views/form.php:339 views/form.php:366 views/form.php:393 views/form.php:421
+#: views/form.php:448 views/form.php:499
 msgid "Yes"
 msgstr "Да"
 
-#: page.conferences.php:161
+#: views/form.php:189
 msgid ""
 "You can require callers to enter a password before they can enter this "
 "conference.<br><br>This setting is optional.<br><br>If either PIN is "
-"entered, the user will be prompted to enter a PIN."
+"entered, the user will be prompted to enter a PIN.<br> This pin should be "
+"different than the Admin pin"
 msgstr ""
-"Можете да изисквате от обаждащите се да въведат парола преди да се "
-"присъединят към конференцията.<br><br>Тази настройка не е задължителна."
-"<br><br>Ако е въведен PIN, потребителите ще бъдат помолени да въведат PIN."
 
-#: page.conferences.php:410
+#: assets/js/conferences.js:19
 msgid ""
 "You must set Allow Menu to Yes when not using a Leader or Admin in your "
 "conference, otherwise you will be unable to unmute yourself"
@@ -366,7 +329,7 @@ msgstr ""
 "Трябва да установите \"Позволи Меню\" на Да ако не използвате Водещ или "
 "Администратор в конференцията, в противен случай няма да можете да говорите"
 
-#: page.conferences.php:409
+#: assets/js/conferences.js:18
 msgid ""
 "You must set an admin PIN for the Conference Leader when selecting the "
 "leader wait option"
@@ -394,13 +357,9 @@ msgstr "вече са преместени"
 msgid "already present"
 msgstr "вече съществува"
 
-#: page.conferences.php:320
+#: views/form.php:76
 msgid "default"
 msgstr "по-подразбиране"
-
-#: page.conferences.php:95
-msgid "deleted"
-msgstr "изтрита"
 
 #: install.php:95
 msgid "dropping joinmsg field.."
@@ -410,11 +369,11 @@ msgstr "премахване на поле joinmsg.."
 msgid "fatal error"
 msgstr "фатална грешка"
 
-#: page.conferences.php:317
+#: views/form.php:75
 msgid "inherit"
 msgstr "наследи"
 
-#: page.conferences.php:19
+#: Conferences.class.php:30
 msgid "is not allowed for your account."
 msgstr "не е разрешена за вашия акаунт."
 
@@ -438,6 +397,139 @@ msgstr "няма joinmsg поле???"
 #: install.php:40 install.php:62 install.php:101 install.php:119
 msgid "ok"
 msgstr "ok"
+
+#~ msgid "Admin PIN:"
+#~ msgstr "Администраторски PIN:"
+
+#~ msgid "Allow Menu:"
+#~ msgstr "Позволи Меню:"
+
+#~ msgid "Conference Name:"
+#~ msgstr "Име на Конференция:"
+
+#~ msgid "Conference Number:"
+#~ msgstr "Конференция Номер:"
+
+#~ msgid "Conference Options"
+#~ msgstr "Опции на Конференция"
+
+#~ msgid "Conference:"
+#~ msgstr "Конференция:"
+
+#~ msgid "Delete Conference %s"
+#~ msgstr "Изтрий Конференция %s"
+
+#~ msgid "Edit Conference"
+#~ msgstr "Редактирай Конференция"
+
+#~ msgid ""
+#~ "Enter a PIN number for the admin user.<br><br>This setting is optional "
+#~ "unless the 'leader wait' option is in use, then this PIN will identify "
+#~ "the leader."
+#~ msgstr ""
+#~ "Въведете PIN номер за потребител админ.<br><br>Тази настройка не е "
+#~ "задължителна освен ако 'изчакване на водещия' опцията се използва, тогава "
+#~ "този PIN ще идентифицира водещия."
+
+#~ msgid "Join Message:"
+#~ msgstr "Съобщение при Влизане:"
+
+#~ msgid "Leader Wait:"
+#~ msgstr "Изчакване на Водещия:"
+
+#~ msgid "Maximum Participants:"
+#~ msgstr "Максимално Участници:"
+
+#~ msgid ""
+#~ "Message to be played to the caller before joining the conference."
+#~ "<br><br>To add additional recordings please use the \"System Recordings\" "
+#~ "MENU to the left"
+#~ msgstr ""
+#~ "Съобщение което ще се възпроизведе на обаждащия се преди да се присъедини "
+#~ "към конференцията.<br><br>За да добавите допълнителни записи използвайте "
+#~ "меню \"Системни Записи\""
+
+#~ msgid ""
+#~ "Message to be played to the caller before joining the conference."
+#~ "<br><br>You must install and enable the \"Systems Recordings\" Module to "
+#~ "edit this option"
+#~ msgstr ""
+#~ "Съобщение което ще се възпроизведе на обаждащия се преди да се присъедини "
+#~ "към конференцията.<br><br>Трябва да сте инсталирали и разрешили Модул "
+#~ "\"Системни Записи\" за да редактирате тази опция"
+
+#~ msgid ""
+#~ "Music (or Commercial) played to the caller while they wait in line for "
+#~ "the conference to start. Choose \"inherit\" if you want the MoH class to "
+#~ "be what is currently selected, such as by the inbound route.<br><br>  "
+#~ "This music is defined in the \"Music on Hold\" to the left."
+#~ msgstr ""
+#~ "Музика (или Реклами) възпроизвеждани на обаждащия се докато чака на линия "
+#~ "за започване на конференцията. Изберете \"наследи\" ако искате "
+#~ "категорията на Музиката при Задържане да бъде същата, каквато е избрана "
+#~ "във входящия маршрути.<br><br>  Тази музика е определена в меню \"Музика "
+#~ "при Задържане\" отляво."
+
+#~ msgid "Music on Hold Class:"
+#~ msgstr "Категория на Музика при Задържане:"
+
+#~ msgid "Music on Hold:"
+#~ msgstr "Музика при Задържане:"
+
+#~ msgid "Mute on Join:"
+#~ msgstr "Заглуши при Влизане:"
+
+#~ msgid "Quiet Mode:"
+#~ msgstr "Тих Режим:"
+
+#~ msgid "Record Conference:"
+#~ msgstr "Записвай Конференция:"
+
+#~ msgid "Submit Changes"
+#~ msgstr "Приеми Промените"
+
+#~ msgid "Talker Detection:"
+#~ msgstr "Откриване на Говорещия:"
+
+#~ msgid "Talker Optimization:"
+#~ msgstr "Оптимизиране на Говорещия:"
+
+#~ msgid ""
+#~ "Turns on talker optimization. With talker optimization, Asterisk treats "
+#~ "talkers who\n"
+#~ "are not speaking as being muted, meaning that no encoding is done on "
+#~ "transmission\n"
+#~ "and that received audio that is not registered as talking is omitted, "
+#~ "causing no\n"
+#~ "buildup in background noise."
+#~ msgstr ""
+#~ "С оптимизиране на говорещия, Астериск третира говорещите които не говорят "
+#~ "като заглушени,\n"
+#~ "което означава че няма да се извършва кодиране при предаването и "
+#~ "полученото аудио\n"
+#~ "което не е регистрирано като говорещ се премахва. Резултата е намален "
+#~ "фонов шум."
+
+#~ msgid "User Count:"
+#~ msgstr "Броене на Потребителите:"
+
+#~ msgid "User PIN:"
+#~ msgstr "Потребителски PIN:"
+
+#~ msgid "User join/leave:"
+#~ msgstr "Потребител влиза/излиза:"
+
+#~ msgid ""
+#~ "You can require callers to enter a password before they can enter this "
+#~ "conference.<br><br>This setting is optional.<br><br>If either PIN is "
+#~ "entered, the user will be prompted to enter a PIN."
+#~ msgstr ""
+#~ "Можете да изисквате от обаждащите се да въведат парола преди да се "
+#~ "присъединят към конференцията.<br><br>Тази настройка не е задължителна."
+#~ "<br><br>Ако е въведен PIN, потребителите ще бъдат помолени да въведат PIN."
+
+#~ msgid "deleted"
+#~ msgstr "изтрита"
 
 #~ msgid ""
 #~ "Allow creation of conference rooms (meet-me) where multiple people can "
