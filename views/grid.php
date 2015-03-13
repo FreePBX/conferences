@@ -16,7 +16,7 @@ foreach ($confs as $conf) {
 	$crows .= '<a href="?display=conferences&view=form&extdisplay='.$conf[0].'">';
 	$crows .= '<i class="fa fa-edit"></i>';
 	$crows .= '</a>&nbsp;';
-	$crows .= '<a href="?display=conferences&action=delete&extdisplay='.$conf[0].'">';
+	$crows .= '<a class="delAction" href="?display=conferences&action=delete&extdisplay='.$conf[0].'">';
 	$crows .= '<i class="fa fa-trash"></i>';
 	$crows .= '</a>&nbsp;';
 	$crows .= '</td>';
