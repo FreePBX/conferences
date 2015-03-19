@@ -43,4 +43,3 @@ switch($request['view']){
 		</div>
 	</div>
 </div>
-<script type="text/javascript" src="/admin/modules/conferences/assets/js/conferences.js"></script>
