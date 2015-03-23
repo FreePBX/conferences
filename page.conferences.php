@@ -8,7 +8,6 @@ $tabindex = 0;
 $request = $_REQUEST;
 
 $heading = _("Conferences");
-echo HERE;
 switch($request['view']){
 	case "form":
 		if($request['extdisplay'] != ''){
