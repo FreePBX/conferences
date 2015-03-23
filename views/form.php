@@ -112,6 +112,8 @@ if (!empty($conflict_url)) {
 	echo "<h5>"._("Conflicting Extensions")."</h5>";
 	echo implode('<br .>',$conflict_url);
 }
+$module_hook = \moduleHook::create();
+
 ?>
 <form autocomplete="off" name="editMM" id="editMM" class="fpbx-submit" action="" method="post" onsubmit="return checkConf();" data-fpbx-delete="?display=conferences&action=delete&extdisplay=<?php echo $extdisplay ?>">
 <input type="hidden" name="display" id="display" value="conferences">
@@ -119,6 +121,7 @@ if (!empty($conflict_url)) {
 <input type="hidden" name="options" id="options" value="<?php echo $options; ?>">
 <input type="hidden" name="view" id="view" value="form">
 <?php echo $orig_accounthtml ?>
+
 <!--Conference Number-->
 <div class="element-container">
 	<div class="row">
@@ -511,5 +514,7 @@ if (!empty($conflict_url)) {
 	</div>
 </div>
 <!--END Mute on Join-->
-<?php echo $module_hook->hookHtml; ?>
+<?php 
+echo $module_hook->hookHtml; 
+?>
 </form>

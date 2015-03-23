@@ -6,7 +6,6 @@ class Conferences implements BMO {
 		if ($freepbx == null) {
 			throw new Exception("Not given a FreePBX Object");
 		}
-
 		$this->FreePBX = $freepbx;
 		$this->db = $freepbx->Database;
 		$this->astman = $this->FreePBX->astman;
@@ -39,13 +38,11 @@ class Conferences implements BMO {
 						$conflict_url = framework_display_extension_usage_alert($usage_arr);
 					} elseif ($this->addConference($account,$request['name'],$request['userpin'],$request['adminpin'],$request['options'],$request['joinmsg_id'],$music,$users) !== false) {
 						needreload();
-						redirect_standard('account','view');
 					}
 				break;
 				case "delete":
 					$this->deleteConference($extdisplay);
 					needreload();
-					redirect_standard();
 				break;
 				case "edit":  //just delete and re-add
 					//check to see if the room number has changed
@@ -68,7 +65,6 @@ class Conferences implements BMO {
 
 					$this->addConference($account,$request['name'],$request['userpin'],$request['adminpin'],$request['options'],$request['joinmsg_id'],$music,$users);
 					needreload();
-					redirect_standard('extdisplay', 'view');
 				break;
 			}
 		}
