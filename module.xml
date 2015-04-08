@@ -50,6 +50,11 @@
 			<display>conferences</display>
 		</conferences>
  	</popovers>
+	<hooks>
+		<printextensions namespace="FreePBX\modules" class="Printextensions">
+			<method class="Conferences" callingMethod="getSections">printExtensions</method>
+		</printextensions>
+	</hooks>
 	<supported>
 		<version>13.0</version>
 	</supported>

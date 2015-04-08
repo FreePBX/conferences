@@ -287,4 +287,16 @@ class Conferences implements BMO {
     	}
     	return $buttons;
     }
+    public function printExtensions(){
+		$ret = array();
+    	$ret['title'] = _("Conferences");
+		$featurecodes = \featurecodes_getAllFeaturesDetailed();
+		$ret['textdesc'] = _('Conference');
+    	$ret['numdesc'] = _('Extension');
+    	$ret['items'] = array();
+    	foreach ($this->listConferences() as $conf) {
+    		$ret['items'][] = array($conf[1],$conf[0]);
+    	}
+    	return $ret;
+    }
 }
