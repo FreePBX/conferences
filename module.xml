@@ -48,6 +48,7 @@
 	<popovers>
 		<conferences>
 			<display>conferences</display>
+			<view>form</view>
 		</conferences>
  	</popovers>
 	<hooks>
