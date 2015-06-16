@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX conferences\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-09 12:34-0400\n"
+"POT-Creation-Date: 2015-06-15 21:07-0400\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -30,38 +30,29 @@ msgstr ""
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: SWEDEN\n"
 
-#: views/grid.php:32
+#: views/grid.php:34
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:2
-msgid "Add Conference"
-msgstr "Lägg till konferens"
+#: page.conferences.php:17 views/grid.php:27
+msgid "Add"
+msgstr ""
 
-#: views/form.php:201
+#: views/form.php:204
 msgid "Admin PIN"
 msgstr ""
 
-#: views/form.php:416
+#: views/form.php:419
 msgid "Allow Menu"
 msgstr ""
 
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-
-#: views/form.php:376
+#: views/form.php:379
 msgid "Announce user join/leave"
 msgstr "Annonsera när användare ansluter/lämnar"
 
-#: views/form.php:349
+#: views/form.php:352
 msgid "Announce user(s) count on joining conference"
 msgstr "Berätta antalet användare när anslutning till konferensen sker"
-
-#: conferences.i18n.php:6 conferences.i18n.php:12
-msgid "Applications"
-msgstr ""
 
 #: install.php:108
 msgid "Checking for users field.."
@@ -75,15 +66,15 @@ msgstr "Kontrollerar om musicfältet finns.."
 msgid "Checking if recordings need migration.."
 msgstr "Kontrollerar om inspelningar behöver migreras.."
 
-#: views/grid.php:30
+#: Conferences.class.php:80 Conferences.class.php:315 views/grid.php:32
 msgid "Conference"
 msgstr "Konferens"
 
-#: views/form.php:153
+#: views/form.php:156
 msgid "Conference Name"
 msgstr ""
 
-#: views/form.php:129
+#: views/form.php:132
 msgid "Conference Number"
 msgstr ""
 
@@ -101,7 +92,7 @@ msgstr "Konferens:"
 msgid "Conference: %s"
 msgstr "Konferens: %s"
 
-#: conferences.i18n.php:4 conferences.i18n.php:10 page.conferences.php:10
+#: Conferences.class.php:313 page.conferences.php:10
 msgid "Conferences"
 msgstr "Konferenser"
 
@@ -109,30 +100,38 @@ msgstr "Konferenser"
 msgid "Conflicting Extensions"
 msgstr "Anknytningarna är i konflikt"
 
-#: Conferences.class.php:281
+#: Conferences.class.php:298
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:31
+#: views/grid.php:33
 msgid "Description"
 msgstr ""
 
-#: views/form.php:403
+#: page.conferences.php:15
+msgid "Edit"
+msgstr ""
+
+#: views/form.php:406
 msgid "Enable Music On Hold when the conference has a single caller"
 msgstr "Aktivera pausmusik när det endast är en användare i konferensen"
 
-#: views/form.php:213
+#: views/form.php:216
 msgid ""
 "Enter a PIN number for the admin user.<br><br>This setting is optional "
 "unless the 'leader wait' option is in use, then this PIN will identify the "
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
+#: Conferences.class.php:316
+msgid "Extension"
+msgstr ""
+
 #: install.php:116
 msgid "FATAL error"
 msgstr "ALLVARLIGT fel"
 
-#: views/form.php:165
+#: views/form.php:168
 msgid "Give this conference a brief name to help you identify it."
 msgstr "Ge konferensen ett kortfattat namn."
 
@@ -140,7 +139,7 @@ msgstr "Ge konferensen ett kortfattat namn."
 msgid "Join Message"
 msgstr ""
 
-#: views/form.php:226
+#: views/form.php:229
 msgid "Leader Wait"
 msgstr ""
 
@@ -148,11 +147,11 @@ msgstr ""
 msgid "List Conferences"
 msgstr ""
 
-#: views/form.php:482
+#: views/form.php:485
 msgid "Maximum Number of users allowed to join this conference."
 msgstr "Det maximala antalet deltagare som tillåts i konferensen"
 
-#: views/form.php:470
+#: views/form.php:473
 msgid "Maximum Participants"
 msgstr ""
 
@@ -170,7 +169,7 @@ msgid ""
 "defined in the \"Music on Hold\" above."
 msgstr ""
 
-#: views/form.php:388
+#: views/form.php:391
 msgid "Music on Hold"
 msgstr ""
 
@@ -178,7 +177,7 @@ msgstr ""
 msgid "Music on Hold Class"
 msgstr ""
 
-#: views/form.php:509
+#: views/form.php:512
 msgid ""
 "Mute everyone when they initially join the conference. Please note that if "
 "you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
@@ -188,17 +187,17 @@ msgstr ""
 "inte har 'Vänta på ledare' aktiverad måste du ha 'Tillåt meny' aktiverad för "
 "att kunna slå på ljudetför dig själv"
 
-#: views/form.php:494
+#: views/form.php:497
 msgid "Mute on Join"
 msgstr ""
 
-#: views/form.php:233 views/form.php:260 views/form.php:287 views/form.php:314
-#: views/form.php:341 views/form.php:368 views/form.php:395 views/form.php:423
-#: views/form.php:450 views/form.php:501
+#: views/form.php:236 views/form.php:263 views/form.php:290 views/form.php:317
+#: views/form.php:344 views/form.php:371 views/form.php:398 views/form.php:426
+#: views/form.php:453 views/form.php:504
 msgid "No"
 msgstr "Nej"
 
-#: views/form.php:474
+#: views/form.php:477
 msgid "No Limit"
 msgstr "Ingen begränsning"
 
@@ -214,33 +213,33 @@ msgstr "Skriv in ett giltigt konferensnamn"
 msgid "Please enter a valid Conference Number"
 msgstr "Skriv in ett giltig konferensnummer"
 
-#: views/form.php:431
+#: views/form.php:434
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
 msgstr ""
 "Ge tillgång till en meny (användare eller administratör) när '*' trycks på "
 "telefonen"
 
-#: views/form.php:307
+#: views/form.php:310
 msgid "Quiet Mode"
 msgstr ""
 
-#: views/form.php:322
+#: views/form.php:325
 msgid "Quiet mode (do not play enter/leave sounds)"
 msgstr "Tyst läge (spela inte upp ljud för anslut/lämna)"
 
-#: views/form.php:443
+#: views/form.php:446
 msgid "Record Conference"
 msgstr ""
 
-#: views/form.php:458
+#: views/form.php:461
 msgid "Record the conference call"
 msgstr "Välj om konferensen ska spelas in"
 
-#: Conferences.class.php:276
+#: Conferences.class.php:293
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:295
+#: views/form.php:298
 msgid ""
 "Sets talker detection. Asterisk will sends events on the Manager Interface "
 "identifying 0the channel that is talking. The talker will also be identified "
@@ -248,15 +247,15 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:271
+#: Conferences.class.php:288
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:280
+#: views/form.php:283
 msgid "Talker Detection"
 msgstr ""
 
-#: views/form.php:253
+#: views/form.php:256
 msgid "Talker Optimization"
 msgstr ""
 
@@ -264,7 +263,7 @@ msgstr ""
 msgid "The user and admin can not have the same pin code."
 msgstr ""
 
-#: views/form.php:268
+#: views/form.php:271
 msgid ""
 "Turns on talker optimization. With talker optimization, Asterisk treats "
 "talkers who are not speaking as being muted, meaning that no encoding is "
@@ -272,23 +271,23 @@ msgid ""
 "talking is omitted, causing no buildup in background noise."
 msgstr ""
 
-#: views/form.php:141
+#: views/form.php:144
 msgid "Use this number to dial into the conference."
 msgstr "Använd detta nummer för att ringa till konferensen."
 
-#: views/form.php:334
+#: views/form.php:337
 msgid "User Count"
 msgstr ""
 
-#: views/form.php:177
+#: views/form.php:180
 msgid "User PIN"
 msgstr ""
 
-#: views/form.php:361
+#: views/form.php:364
 msgid "User join/leave"
 msgstr ""
 
-#: views/form.php:241
+#: views/form.php:244
 msgid ""
 "Wait until the conference leader (admin user) arrives before starting the "
 "conference"
@@ -296,17 +295,17 @@ msgstr ""
 "Vänta till konferensledaren (administratören) ansluter innan konferensen "
 "startas"
 
-#: Conferences.class.php:30
+#: Conferences.class.php:29
 msgid "Warning! Extension"
 msgstr "Varning! Anknytning"
 
-#: views/form.php:231 views/form.php:258 views/form.php:285 views/form.php:312
-#: views/form.php:339 views/form.php:366 views/form.php:393 views/form.php:421
-#: views/form.php:448 views/form.php:499
+#: views/form.php:234 views/form.php:261 views/form.php:288 views/form.php:315
+#: views/form.php:342 views/form.php:369 views/form.php:396 views/form.php:424
+#: views/form.php:451 views/form.php:502
 msgid "Yes"
 msgstr "Ja"
 
-#: views/form.php:189
+#: views/form.php:192
 msgid ""
 "You can require callers to enter a password before they can enter this "
 "conference.<br><br>This setting is optional.<br><br>If either PIN is "
@@ -366,7 +365,7 @@ msgstr "allvarligt fel"
 msgid "inherit"
 msgstr "ärv"
 
-#: Conferences.class.php:30
+#: Conferences.class.php:29
 msgid "is not allowed for your account."
 msgstr "är inte tillåtet för ditt konto."
 
@@ -390,6 +389,9 @@ msgstr "inget fält som heter joinmsg???"
 #: install.php:40 install.php:62 install.php:101 install.php:119
 msgid "ok"
 msgstr "ok"
+
+#~ msgid "Add Conference"
+#~ msgstr "Lägg till konferens"
 
 #~ msgid "Admin PIN:"
 #~ msgstr "Administratörslösenord:"

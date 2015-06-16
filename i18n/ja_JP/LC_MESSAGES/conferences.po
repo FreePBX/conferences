@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-09 12:34-0400\n"
+"POT-Creation-Date: 2015-06-15 21:07-0400\n"
 "PO-Revision-Date: 2015-02-21 11:10+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -49,38 +49,29 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
-#: views/grid.php:32
+#: views/grid.php:34
 msgid "Actions"
 msgstr ""
 
-#: views/bootnav.php:2
-msgid "Add Conference"
-msgstr "カンファレンスを追加"
+#: page.conferences.php:17 views/grid.php:27
+msgid "Add"
+msgstr ""
 
-#: views/form.php:201
+#: views/form.php:204
 msgid "Admin PIN"
 msgstr ""
 
-#: views/form.php:416
+#: views/form.php:419
 msgid "Allow Menu"
 msgstr ""
 
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-
-#: views/form.php:376
+#: views/form.php:379
 msgid "Announce user join/leave"
 msgstr "ユーザーの参加/退出をアナウンスします"
 
-#: views/form.php:349
+#: views/form.php:352
 msgid "Announce user(s) count on joining conference"
 msgstr "カンファレンスに参加しているユーザーの数をアナウンスします"
-
-#: conferences.i18n.php:6 conferences.i18n.php:12
-msgid "Applications"
-msgstr "アプリケーション"
 
 #: install.php:108
 msgid "Checking for users field.."
@@ -94,15 +85,15 @@ msgstr "musicフィールドが存在しているかどうかチェック.."
 msgid "Checking if recordings need migration.."
 msgstr "録音の移行が必要かチェック中.."
 
-#: views/grid.php:30
+#: Conferences.class.php:80 Conferences.class.php:315 views/grid.php:32
 msgid "Conference"
 msgstr "音声会議"
 
-#: views/form.php:153
+#: views/form.php:156
 msgid "Conference Name"
 msgstr ""
 
-#: views/form.php:129
+#: views/form.php:132
 msgid "Conference Number"
 msgstr ""
 
@@ -120,7 +111,7 @@ msgstr "音声会議： "
 msgid "Conference: %s"
 msgstr "音声会議： %s"
 
-#: conferences.i18n.php:4 conferences.i18n.php:10 page.conferences.php:10
+#: Conferences.class.php:313 page.conferences.php:10
 msgid "Conferences"
 msgstr "音声会議"
 
@@ -128,30 +119,38 @@ msgstr "音声会議"
 msgid "Conflicting Extensions"
 msgstr "内線の競合"
 
-#: Conferences.class.php:281
+#: Conferences.class.php:298
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:31
+#: views/grid.php:33
 msgid "Description"
 msgstr ""
 
-#: views/form.php:403
+#: page.conferences.php:15
+msgid "Edit"
+msgstr ""
+
+#: views/form.php:406
 msgid "Enable Music On Hold when the conference has a single caller"
 msgstr "カンファレンスの参加者が一人の場合は保留音を有効にします"
 
-#: views/form.php:213
+#: views/form.php:216
 msgid ""
 "Enter a PIN number for the admin user.<br><br>This setting is optional "
 "unless the 'leader wait' option is in use, then this PIN will identify the "
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
+#: Conferences.class.php:316
+msgid "Extension"
+msgstr ""
+
 #: install.php:116
 msgid "FATAL error"
 msgstr "致命的なエラー"
 
-#: views/form.php:165
+#: views/form.php:168
 msgid "Give this conference a brief name to help you identify it."
 msgstr "認識しやすいように、このカンファレンスに簡潔な名前を付けます。"
 
@@ -159,7 +158,7 @@ msgstr "認識しやすいように、このカンファレンスに簡潔な名
 msgid "Join Message"
 msgstr ""
 
-#: views/form.php:226
+#: views/form.php:229
 msgid "Leader Wait"
 msgstr ""
 
@@ -167,11 +166,11 @@ msgstr ""
 msgid "List Conferences"
 msgstr ""
 
-#: views/form.php:482
+#: views/form.php:485
 msgid "Maximum Number of users allowed to join this conference."
 msgstr "このカンファレンスに参加が許可される最大ユーザー数。"
 
-#: views/form.php:470
+#: views/form.php:473
 msgid "Maximum Participants"
 msgstr ""
 
@@ -189,7 +188,7 @@ msgid ""
 "defined in the \"Music on Hold\" above."
 msgstr ""
 
-#: views/form.php:388
+#: views/form.php:391
 msgid "Music on Hold"
 msgstr ""
 
@@ -197,7 +196,7 @@ msgstr ""
 msgid "Music on Hold Class"
 msgstr ""
 
-#: views/form.php:509
+#: views/form.php:512
 msgid ""
 "Mute everyone when they initially join the conference. Please note that if "
 "you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
@@ -207,17 +206,17 @@ msgstr ""
 "い'に設定しない場合、'メニュー許可' を必ず'はい'に設定し、ミュートを解除して"
 "ください"
 
-#: views/form.php:494
+#: views/form.php:497
 msgid "Mute on Join"
 msgstr ""
 
-#: views/form.php:233 views/form.php:260 views/form.php:287 views/form.php:314
-#: views/form.php:341 views/form.php:368 views/form.php:395 views/form.php:423
-#: views/form.php:450 views/form.php:501
+#: views/form.php:236 views/form.php:263 views/form.php:290 views/form.php:317
+#: views/form.php:344 views/form.php:371 views/form.php:398 views/form.php:426
+#: views/form.php:453 views/form.php:504
 msgid "No"
 msgstr "いいえ"
 
-#: views/form.php:474
+#: views/form.php:477
 msgid "No Limit"
 msgstr "無制限"
 
@@ -233,32 +232,32 @@ msgstr "正しいカンファレンス名を入力してください"
 msgid "Please enter a valid Conference Number"
 msgstr "正しいカンファレンス番号を入力してください"
 
-#: views/form.php:431
+#: views/form.php:434
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
 msgstr ""
 "'*'が押された際に(ユーザーor管理者)メニューを流します。(メニューに'送る')"
 
-#: views/form.php:307
+#: views/form.php:310
 msgid "Quiet Mode"
 msgstr ""
 
-#: views/form.php:322
+#: views/form.php:325
 msgid "Quiet mode (do not play enter/leave sounds)"
 msgstr "サイレントモード(入室/退出音を再生しない)"
 
-#: views/form.php:443
+#: views/form.php:446
 msgid "Record Conference"
 msgstr ""
 
-#: views/form.php:458
+#: views/form.php:461
 msgid "Record the conference call"
 msgstr "カンファレンス通話を録音します"
 
-#: Conferences.class.php:276
+#: Conferences.class.php:293
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:295
+#: views/form.php:298
 msgid ""
 "Sets talker detection. Asterisk will sends events on the Manager Interface "
 "identifying 0the channel that is talking. The talker will also be identified "
@@ -266,15 +265,15 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:271
+#: Conferences.class.php:288
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:280
+#: views/form.php:283
 msgid "Talker Detection"
 msgstr ""
 
-#: views/form.php:253
+#: views/form.php:256
 msgid "Talker Optimization"
 msgstr ""
 
@@ -282,7 +281,7 @@ msgstr ""
 msgid "The user and admin can not have the same pin code."
 msgstr ""
 
-#: views/form.php:268
+#: views/form.php:271
 msgid ""
 "Turns on talker optimization. With talker optimization, Asterisk treats "
 "talkers who are not speaking as being muted, meaning that no encoding is "
@@ -290,39 +289,39 @@ msgid ""
 "talking is omitted, causing no buildup in background noise."
 msgstr ""
 
-#: views/form.php:141
+#: views/form.php:144
 msgid "Use this number to dial into the conference."
 msgstr "カンファレンスにダイヤルインするのにこの番号を使用します。"
 
-#: views/form.php:334
+#: views/form.php:337
 msgid "User Count"
 msgstr ""
 
-#: views/form.php:177
+#: views/form.php:180
 msgid "User PIN"
 msgstr ""
 
-#: views/form.php:361
+#: views/form.php:364
 msgid "User join/leave"
 msgstr ""
 
-#: views/form.php:241
+#: views/form.php:244
 msgid ""
 "Wait until the conference leader (admin user) arrives before starting the "
 "conference"
 msgstr "リーダー(管理ユーザー)が参加する迄、カンファレンス開始を待ちます"
 
-#: Conferences.class.php:30
+#: Conferences.class.php:29
 msgid "Warning! Extension"
 msgstr "警告! 内線"
 
-#: views/form.php:231 views/form.php:258 views/form.php:285 views/form.php:312
-#: views/form.php:339 views/form.php:366 views/form.php:393 views/form.php:421
-#: views/form.php:448 views/form.php:499
+#: views/form.php:234 views/form.php:261 views/form.php:288 views/form.php:315
+#: views/form.php:342 views/form.php:369 views/form.php:396 views/form.php:424
+#: views/form.php:451 views/form.php:502
 msgid "Yes"
 msgstr "はい"
 
-#: views/form.php:189
+#: views/form.php:192
 msgid ""
 "You can require callers to enter a password before they can enter this "
 "conference.<br><br>This setting is optional.<br><br>If either PIN is "
@@ -382,7 +381,7 @@ msgstr "致命的なエラー"
 msgid "inherit"
 msgstr "継承"
 
-#: Conferences.class.php:30
+#: Conferences.class.php:29
 msgid "is not allowed for your account."
 msgstr "は、あなたのアカウントには権限がありません。"
 
@@ -406,6 +405,12 @@ msgstr "joinmsg フィールドが存在しません???"
 #: install.php:40 install.php:62 install.php:101 install.php:119
 msgid "ok"
 msgstr "ok"
+
+#~ msgid "Add Conference"
+#~ msgstr "カンファレンスを追加"
+
+#~ msgid "Applications"
+#~ msgstr "アプリケーション"
 
 #~ msgid "Admin PIN:"
 #~ msgstr "管理者PIN："
