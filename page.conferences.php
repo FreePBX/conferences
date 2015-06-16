@@ -8,12 +8,13 @@ $tabindex = 0;
 $request = $_REQUEST;
 
 $heading = _("Conferences");
+$request['view'] = !empty($request['view']) ? $request['view'] : "";
 switch($request['view']){
 	case "form":
 		if($request['extdisplay'] != ''){
-			$heading .= ": Edit " . $request['extdisplay'];
+			$heading .= ": "._("Edit")." " . $request['extdisplay'];
 		}else{
-			$heading .= ": Add";
+			$heading .= ": "._("Add");
 		}
 		$content = load_view(__DIR__.'/views/form.php', array('request' => $request));
 	break;
@@ -25,11 +26,11 @@ switch($request['view']){
 ?>
 <div class="container-fluid">
 	<h1><?php echo $heading ?></h1>
-	<div class = "display full-border">
+	<div class = "display">
 		<div class="row">
 			<div class="<?php echo $request['fw_popover']?'col-sm-12':'col-sm-9'?>">
 				<div class="fpbx-container">
-					<div class="display full-border">
+					<div class="display <?php echo ($request['view'] == "form") ? "full" : "no"?>-border">
 						<?php echo $content ?>
 					</div>
 				</div>

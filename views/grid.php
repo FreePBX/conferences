@@ -23,14 +23,16 @@ foreach ($confs as $conf) {
 	$crows .= '</tr>';
 }
 ?>
-
-<table class="table table-striped">
+<div id="toolbar-all">
+	<a class="btn btn-primary" href="config.php?display=conferences&amp;view=form"><i class="fa fa-plus"></i> <?php echo _("Add")?></a>
+</div>
+<table data-toolbar="#toolbar-all" data-toggle="table" class="table table-striped">
 <thead>
 	<tr>
-		<th><?php echo _("Conference")?></th>
-		<th><?php echo _("Description")?></th>
+		<th data-sortable="true"><?php echo _("Conference")?></th>
+		<th data-sortable="true"><?php echo _("Description")?></th>
 		<th><?php echo _("Actions")?></th>
-	</tr>	
+	</tr>
 </thead>
 <tbody>
 	<?php echo $crows ?>
