@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-15 21:07-0400\n"
+"POT-Creation-Date: 2015-06-15 21:28-0400\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Jouniaux <c.jouniaux@techtelecom.fr>\n"
 "Language-Team: \n"
@@ -63,7 +63,7 @@ msgstr ""
 msgid "Checking if recordings need migration.."
 msgstr "Vérification si enregistrement a besoin d'une migration"
 
-#: Conferences.class.php:80 Conferences.class.php:315 views/grid.php:32
+#: Conferences.class.php:88 Conferences.class.php:315 views/grid.php:32
 msgid "Conference"
 msgstr "Conférence"
 

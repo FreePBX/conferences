@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-15 21:07-0400\n"
+"POT-Creation-Date: 2015-06-15 21:28-0400\n"
 "PO-Revision-Date: 2015-02-21 11:10+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -85,7 +85,7 @@ msgstr "musicフィールドが存在しているかどうかチェック.."
 msgid "Checking if recordings need migration.."
 msgstr "録音の移行が必要かチェック中.."
 
-#: Conferences.class.php:80 Conferences.class.php:315 views/grid.php:32
+#: Conferences.class.php:88 Conferences.class.php:315 views/grid.php:32
 msgid "Conference"
 msgstr "音声会議"
 

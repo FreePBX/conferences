@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX Conference Module\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-15 21:07-0400\n"
+"POT-Creation-Date: 2015-06-15 21:28-0400\n"
 "PO-Revision-Date: 2015-04-29 08:00+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -71,7 +71,7 @@ msgstr "Verificando se o campo música está presente.."
 msgid "Checking if recordings need migration.."
 msgstr "Verificando se as gravações precisam de migração.."
 
-#: Conferences.class.php:80 Conferences.class.php:315 views/grid.php:32
+#: Conferences.class.php:88 Conferences.class.php:315 views/grid.php:32
 msgid "Conference"
 msgstr "Conferência"
 

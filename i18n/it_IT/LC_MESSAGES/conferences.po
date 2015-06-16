@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-15 21:07-0400\n"
+"POT-Creation-Date: 2015-06-15 21:28-0400\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -65,7 +65,7 @@ msgstr ""
 msgid "Checking if recordings need migration.."
 msgstr "Controllo se le registrazioni hanno bisogno della migrazione.."
 
-#: Conferences.class.php:80 Conferences.class.php:315 views/grid.php:32
+#: Conferences.class.php:88 Conferences.class.php:315 views/grid.php:32
 msgid "Conference"
 msgstr "Conferenza"
 
