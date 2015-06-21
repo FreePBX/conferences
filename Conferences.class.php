@@ -259,12 +259,8 @@ class Conferences implements BMO {
 	public function listConferences() {
 		$sql = "SELECT exten,description FROM meetme ORDER BY exten";
 		$sth = $this->db->prepare($sql);
-		try {
-			$sth->execute();
-			$results = $sth->fetchAll(PDO::FETCH_ASSOC);
-		} catch(\Exception $e) {
-			return false;
-		}
+		$sth->execute();
+		$results = $sth->fetchAll(PDO::FETCH_ASSOC);
 		foreach($results as $result){
 			// check to see if we are in-range for the current AMP User.
 			if (isset($result['exten']) && checkRange($result['exten'])){
@@ -275,7 +271,7 @@ class Conferences implements BMO {
 		if (isset($extens)) {
 			return $extens;
 		} else {
-			return null;
+			return array();
 		}
 	}
 	public function getActionBar($request){
