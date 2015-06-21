@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX conferences\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-15 21:28-0400\n"
+"POT-Creation-Date: 2015-06-22 07:37+1000\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -46,6 +46,11 @@ msgstr ""
 msgid "Allow Menu"
 msgstr ""
 
+#: conferences.i18n.php:8
+msgid ""
+"Allow creation of conference rooms where multiple people can talk together"
+msgstr ""
+
 #: views/form.php:379
 msgid "Announce user join/leave"
 msgstr "Annonsera när användare ansluter/lämnar"
@@ -53,6 +58,10 @@ msgstr "Annonsera när användare ansluter/lämnar"
 #: views/form.php:352
 msgid "Announce user(s) count on joining conference"
 msgstr "Berätta antalet användare när anslutning till konferensen sker"
+
+#: conferences.i18n.php:6 conferences.i18n.php:12
+msgid "Applications"
+msgstr ""
 
 #: install.php:108
 msgid "Checking for users field.."
@@ -66,7 +75,7 @@ msgstr "Kontrollerar om musicfältet finns.."
 msgid "Checking if recordings need migration.."
 msgstr "Kontrollerar om inspelningar behöver migreras.."
 
-#: Conferences.class.php:88 Conferences.class.php:315 views/grid.php:32
+#: Conferences.class.php:88 Conferences.class.php:311 views/grid.php:32
 msgid "Conference"
 msgstr "Konferens"
 
@@ -92,7 +101,8 @@ msgstr "Konferens:"
 msgid "Conference: %s"
 msgstr "Konferens: %s"
 
-#: Conferences.class.php:313 page.conferences.php:10
+#: Conferences.class.php:309 conferences.i18n.php:4 conferences.i18n.php:10
+#: page.conferences.php:10
 msgid "Conferences"
 msgstr "Konferenser"
 
@@ -100,7 +110,7 @@ msgstr "Konferenser"
 msgid "Conflicting Extensions"
 msgstr "Anknytningarna är i konflikt"
 
-#: Conferences.class.php:298
+#: Conferences.class.php:294
 msgid "Delete"
 msgstr ""
 
@@ -123,7 +133,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:316
+#: Conferences.class.php:312
 msgid "Extension"
 msgstr ""
 
@@ -235,7 +245,7 @@ msgstr ""
 msgid "Record the conference call"
 msgstr "Välj om konferensen ska spelas in"
 
-#: Conferences.class.php:293
+#: Conferences.class.php:289
 msgid "Reset"
 msgstr ""
 
@@ -247,7 +257,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:288
+#: Conferences.class.php:284
 msgid "Submit"
 msgstr ""
 
