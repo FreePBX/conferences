@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX conferences\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-22 07:37+1000\n"
+"POT-Creation-Date: 2015-06-22 07:54+1000\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -75,7 +75,7 @@ msgstr "Kontrollerar om musicfältet finns.."
 msgid "Checking if recordings need migration.."
 msgstr "Kontrollerar om inspelningar behöver migreras.."
 
-#: Conferences.class.php:88 Conferences.class.php:311 views/grid.php:32
+#: Conferences.class.php:88 Conferences.class.php:316 views/grid.php:32
 msgid "Conference"
 msgstr "Konferens"
 
@@ -101,7 +101,7 @@ msgstr "Konferens:"
 msgid "Conference: %s"
 msgstr "Konferens: %s"
 
-#: Conferences.class.php:309 conferences.i18n.php:4 conferences.i18n.php:10
+#: Conferences.class.php:314 conferences.i18n.php:4 conferences.i18n.php:10
 #: page.conferences.php:10
 msgid "Conferences"
 msgstr "Konferenser"
@@ -110,7 +110,7 @@ msgstr "Konferenser"
 msgid "Conflicting Extensions"
 msgstr "Anknytningarna är i konflikt"
 
-#: Conferences.class.php:294
+#: Conferences.class.php:299
 msgid "Delete"
 msgstr ""
 
@@ -133,7 +133,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:312
+#: Conferences.class.php:317
 msgid "Extension"
 msgstr ""
 
@@ -245,7 +245,7 @@ msgstr ""
 msgid "Record the conference call"
 msgstr "Välj om konferensen ska spelas in"
 
-#: Conferences.class.php:289
+#: Conferences.class.php:294
 msgid "Reset"
 msgstr ""
 
@@ -257,7 +257,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:284
+#: Conferences.class.php:289
 msgid "Submit"
 msgstr ""
 
