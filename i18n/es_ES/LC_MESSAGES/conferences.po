@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo conferences module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-22 07:54+1000\n"
+"POT-Creation-Date: 2015-06-22 08:20+1000\n"
 "PO-Revision-Date: 2015-03-23 21:31+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -81,7 +81,7 @@ msgstr "Revisando si el Campo de música esta presente .."
 msgid "Checking if recordings need migration.."
 msgstr "Comprobando si las grabaciones necesitan migrarse..."
 
-#: Conferences.class.php:88 Conferences.class.php:316 views/grid.php:32
+#: Conferences.class.php:88 Conferences.class.php:314 views/grid.php:32
 msgid "Conference"
 msgstr "Conferencia"
 
@@ -107,7 +107,7 @@ msgstr "Conferencia: "
 msgid "Conference: %s"
 msgstr "Conferencia: %s"
 
-#: Conferences.class.php:314 conferences.i18n.php:4 conferences.i18n.php:10
+#: Conferences.class.php:312 conferences.i18n.php:4 conferences.i18n.php:10
 #: page.conferences.php:10
 msgid "Conferences"
 msgstr "Conferencias"
@@ -116,7 +116,7 @@ msgstr "Conferencias"
 msgid "Conflicting Extensions"
 msgstr "Extensiones en conflicto"
 
-#: Conferences.class.php:299
+#: Conferences.class.php:297
 msgid "Delete"
 msgstr ""
 
@@ -140,7 +140,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:317
+#: Conferences.class.php:315
 msgid "Extension"
 msgstr ""
 
@@ -257,7 +257,7 @@ msgstr ""
 msgid "Record the conference call"
 msgstr "Graba las llamadas de la conferencia"
 
-#: Conferences.class.php:294
+#: Conferences.class.php:292
 msgid "Reset"
 msgstr ""
 
@@ -269,7 +269,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:289
+#: Conferences.class.php:287
 msgid "Submit"
 msgstr ""
 

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-22 07:54+1000\n"
+"POT-Creation-Date: 2015-06-22 08:20+1000\n"
 "PO-Revision-Date: 2010-01-23 00:00+0800\n"
 "Last-Translator: 周征晟 <zhougongjizhe@163.com>\n"
 "Language-Team: EdwardBadBoy <zhougongjizhe@163.com>\n"
@@ -76,7 +76,7 @@ msgstr "设置音乐检查"
 msgid "Checking if recordings need migration.."
 msgstr "检查是否需要迁移录音。。"
 
-#: Conferences.class.php:88 Conferences.class.php:316 views/grid.php:32
+#: Conferences.class.php:88 Conferences.class.php:314 views/grid.php:32
 msgid "Conference"
 msgstr "会议"
 
@@ -102,7 +102,7 @@ msgstr "会议："
 msgid "Conference: %s"
 msgstr "会议：%s"
 
-#: Conferences.class.php:314 conferences.i18n.php:4 conferences.i18n.php:10
+#: Conferences.class.php:312 conferences.i18n.php:4 conferences.i18n.php:10
 #: page.conferences.php:10
 msgid "Conferences"
 msgstr "语音会议"
@@ -111,7 +111,7 @@ msgstr "语音会议"
 msgid "Conflicting Extensions"
 msgstr "分机号冲突"
 
-#: Conferences.class.php:299
+#: Conferences.class.php:297
 msgid "Delete"
 msgstr ""
 
@@ -134,7 +134,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:317
+#: Conferences.class.php:315
 msgid "Extension"
 msgstr ""
 
@@ -241,7 +241,7 @@ msgstr ""
 msgid "Record the conference call"
 msgstr "为会议录音"
 
-#: Conferences.class.php:294
+#: Conferences.class.php:292
 msgid "Reset"
 msgstr ""
 
@@ -253,7 +253,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:289
+#: Conferences.class.php:287
 msgid "Submit"
 msgstr ""
 
