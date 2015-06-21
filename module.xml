@@ -2,14 +2,14 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>13.0.2.2</version>
+	<version>13.0.2.3</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
-		*13.0.2.2* Compatibility fix
+		*13.0.2.3* Compatibility fix
 		*13.0.2* Version bump Beta
 		*13.0.1alpha2* FREEPBX-9467 Added search hooks
 		*13.0.1alpha1* Visual Changes
