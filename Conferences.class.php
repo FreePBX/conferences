@@ -94,6 +94,11 @@ class Conferences implements BMO {
 	public function install() {
 		//Migrate bad option
 		$confs = $this->listConferences();
+		if (!is_array($confs)) {
+			print "Warning - didn't get an array back from listConferences\n";
+			print_r($confs);
+			return true;
+		}
 		foreach($confs as $conf) {
 			$conf = $this->getConference($conf[0]);
 			$optselect = strpos($conf['options'], "i");
