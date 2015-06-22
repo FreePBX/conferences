@@ -212,7 +212,7 @@ function conferences_get_config($engine) {
 		case "asterisk":
 			$ext->addInclude('from-internal-additional','ext-meetme');
 			$contextname = 'ext-meetme';
-			if(is_array($conflist = conferences_list())) {
+			if($conflist = conferences_list()) {
 
 				// Start the conference
 				if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
