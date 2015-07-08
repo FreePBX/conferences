@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-22 08:20+1000\n"
+"POT-Creation-Date: 2015-07-08 14:54-0400\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Jouniaux <c.jouniaux@techtelecom.fr>\n"
 "Language-Team: \n"
@@ -43,11 +43,6 @@ msgstr ""
 msgid "Allow Menu"
 msgstr ""
 
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-
 #: views/form.php:379
 msgid "Announce user join/leave"
 msgstr "Annonce qu'un utilisateur arrive ou quitte la conférence"
@@ -55,10 +50,6 @@ msgstr "Annonce qu'un utilisateur arrive ou quitte la conférence"
 #: views/form.php:352
 msgid "Announce user(s) count on joining conference"
 msgstr "Annonce le nombre de personnes ayant rejoint la conférence"
-
-#: conferences.i18n.php:6 conferences.i18n.php:12
-msgid "Applications"
-msgstr "Applications"
 
 #: install.php:108
 msgid "Checking for users field.."
@@ -72,7 +63,7 @@ msgstr ""
 msgid "Checking if recordings need migration.."
 msgstr "Vérification si enregistrement a besoin d'une migration"
 
-#: Conferences.class.php:88 Conferences.class.php:314 views/grid.php:32
+#: Conferences.class.php:93 Conferences.class.php:319 views/grid.php:32
 msgid "Conference"
 msgstr "Conférence"
 
@@ -98,8 +89,7 @@ msgstr "Conférence: "
 msgid "Conference: %s"
 msgstr "Conférence: %s"
 
-#: Conferences.class.php:312 conferences.i18n.php:4 conferences.i18n.php:10
-#: page.conferences.php:10
+#: Conferences.class.php:317 page.conferences.php:10
 msgid "Conferences"
 msgstr "Conférences"
 
@@ -107,7 +97,7 @@ msgstr "Conférences"
 msgid "Conflicting Extensions"
 msgstr "Conflit d'extensions"
 
-#: Conferences.class.php:297
+#: Conferences.class.php:302
 msgid "Delete"
 msgstr ""
 
@@ -132,7 +122,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:315
+#: Conferences.class.php:320
 msgid "Extension"
 msgstr ""
 
@@ -211,11 +201,11 @@ msgstr ""
 msgid "None"
 msgstr "Aucun"
 
-#: assets/js/conferences.js:17
+#: assets/js/conferences.js:18
 msgid "Please enter a valid Conference Name"
 msgstr "SVP entrez un nom de conférence valide"
 
-#: assets/js/conferences.js:16
+#: assets/js/conferences.js:17
 msgid "Please enter a valid Conference Number"
 msgstr "Merci d'entrer un numéro de conférence valide"
 
@@ -241,7 +231,7 @@ msgstr ""
 msgid "Record the conference call"
 msgstr "Enregistrement de la conférence"
 
-#: Conferences.class.php:292
+#: Conferences.class.php:297
 msgid "Reset"
 msgstr ""
 
@@ -253,7 +243,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:287
+#: Conferences.class.php:292
 msgid "Submit"
 msgstr ""
 
@@ -265,7 +255,7 @@ msgstr ""
 msgid "Talker Optimization"
 msgstr ""
 
-#: assets/js/conferences.js:20
+#: assets/js/conferences.js:21
 msgid "The user and admin can not have the same pin code."
 msgstr ""
 
@@ -317,13 +307,13 @@ msgid ""
 "different than the Admin pin"
 msgstr ""
 
-#: assets/js/conferences.js:19
+#: assets/js/conferences.js:20
 msgid ""
 "You must set Allow Menu to Yes when not using a Leader or Admin in your "
 "conference, otherwise you will be unable to unmute yourself"
 msgstr ""
 
-#: assets/js/conferences.js:18
+#: assets/js/conferences.js:19
 msgid ""
 "You must set an admin PIN for the Conference Leader when selecting the "
 "leader wait option"
@@ -390,6 +380,9 @@ msgstr "Pas de champ joinmsg???"
 #: install.php:40 install.php:62 install.php:101 install.php:119
 msgid "ok"
 msgstr "ok"
+
+#~ msgid "Applications"
+#~ msgstr "Applications"
 
 #~ msgid "Add Conference"
 #~ msgstr "Ajout Conférence"

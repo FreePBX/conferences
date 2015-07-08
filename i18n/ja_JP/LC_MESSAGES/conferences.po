@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-22 08:20+1000\n"
+"POT-Creation-Date: 2015-07-08 14:54-0400\n"
 "PO-Revision-Date: 2015-02-21 11:10+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -65,11 +65,6 @@ msgstr ""
 msgid "Allow Menu"
 msgstr ""
 
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-
 #: views/form.php:379
 msgid "Announce user join/leave"
 msgstr "ユーザーの参加/退出をアナウンスします"
@@ -77,10 +72,6 @@ msgstr "ユーザーの参加/退出をアナウンスします"
 #: views/form.php:352
 msgid "Announce user(s) count on joining conference"
 msgstr "カンファレンスに参加しているユーザーの数をアナウンスします"
-
-#: conferences.i18n.php:6 conferences.i18n.php:12
-msgid "Applications"
-msgstr "アプリケーション"
 
 #: install.php:108
 msgid "Checking for users field.."
@@ -94,7 +85,7 @@ msgstr "musicフィールドが存在しているかどうかチェック.."
 msgid "Checking if recordings need migration.."
 msgstr "録音の移行が必要かチェック中.."
 
-#: Conferences.class.php:88 Conferences.class.php:314 views/grid.php:32
+#: Conferences.class.php:93 Conferences.class.php:319 views/grid.php:32
 msgid "Conference"
 msgstr "音声会議"
 
@@ -120,8 +111,7 @@ msgstr "音声会議： "
 msgid "Conference: %s"
 msgstr "音声会議： %s"
 
-#: Conferences.class.php:312 conferences.i18n.php:4 conferences.i18n.php:10
-#: page.conferences.php:10
+#: Conferences.class.php:317 page.conferences.php:10
 msgid "Conferences"
 msgstr "音声会議"
 
@@ -129,7 +119,7 @@ msgstr "音声会議"
 msgid "Conflicting Extensions"
 msgstr "内線の競合"
 
-#: Conferences.class.php:297
+#: Conferences.class.php:302
 msgid "Delete"
 msgstr ""
 
@@ -152,7 +142,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:315
+#: Conferences.class.php:320
 msgid "Extension"
 msgstr ""
 
@@ -234,11 +224,11 @@ msgstr "無制限"
 msgid "None"
 msgstr "なし"
 
-#: assets/js/conferences.js:17
+#: assets/js/conferences.js:18
 msgid "Please enter a valid Conference Name"
 msgstr "正しいカンファレンス名を入力してください"
 
-#: assets/js/conferences.js:16
+#: assets/js/conferences.js:17
 msgid "Please enter a valid Conference Number"
 msgstr "正しいカンファレンス番号を入力してください"
 
@@ -263,7 +253,7 @@ msgstr ""
 msgid "Record the conference call"
 msgstr "カンファレンス通話を録音します"
 
-#: Conferences.class.php:292
+#: Conferences.class.php:297
 msgid "Reset"
 msgstr ""
 
@@ -275,7 +265,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:287
+#: Conferences.class.php:292
 msgid "Submit"
 msgstr ""
 
@@ -287,7 +277,7 @@ msgstr ""
 msgid "Talker Optimization"
 msgstr ""
 
-#: assets/js/conferences.js:20
+#: assets/js/conferences.js:21
 msgid "The user and admin can not have the same pin code."
 msgstr ""
 
@@ -339,7 +329,7 @@ msgid ""
 "different than the Admin pin"
 msgstr ""
 
-#: assets/js/conferences.js:19
+#: assets/js/conferences.js:20
 msgid ""
 "You must set Allow Menu to Yes when not using a Leader or Admin in your "
 "conference, otherwise you will be unable to unmute yourself"
@@ -347,7 +337,7 @@ msgstr ""
 "リーダーまたは管理者が使用していない時、メニューの許可は必ず'はい'に設定しな"
 "ければ、ミュートを解除することができません"
 
-#: assets/js/conferences.js:18
+#: assets/js/conferences.js:19
 msgid ""
 "You must set an admin PIN for the Conference Leader when selecting the "
 "leader wait option"
@@ -415,6 +405,9 @@ msgstr "joinmsg フィールドが存在しません???"
 #: install.php:40 install.php:62 install.php:101 install.php:119
 msgid "ok"
 msgstr "ok"
+
+#~ msgid "Applications"
+#~ msgstr "アプリケーション"
 
 #~ msgid "Add Conference"
 #~ msgstr "カンファレンスを追加"

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX Conference Module\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-22 08:20+1000\n"
+"POT-Creation-Date: 2015-07-08 14:54-0400\n"
 "PO-Revision-Date: 2015-04-29 08:00+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -51,13 +51,6 @@ msgstr ""
 msgid "Allow Menu"
 msgstr ""
 
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-"Permitir criação de salas de conferência onde múltiplas pessoas podem falar "
-"juntas"
-
 #: views/form.php:379
 msgid "Announce user join/leave"
 msgstr "Anuncia a entrada e saída de usuários"
@@ -65,10 +58,6 @@ msgstr "Anuncia a entrada e saída de usuários"
 #: views/form.php:352
 msgid "Announce user(s) count on joining conference"
 msgstr "Anuncia o número de usuários ao se juntar à conferência"
-
-#: conferences.i18n.php:6 conferences.i18n.php:12
-msgid "Applications"
-msgstr "Aplicações"
 
 #: install.php:108
 msgid "Checking for users field.."
@@ -82,7 +71,7 @@ msgstr "Verificando se o campo música está presente.."
 msgid "Checking if recordings need migration.."
 msgstr "Verificando se as gravações precisam de migração.."
 
-#: Conferences.class.php:88 Conferences.class.php:314 views/grid.php:32
+#: Conferences.class.php:93 Conferences.class.php:319 views/grid.php:32
 msgid "Conference"
 msgstr "Conferência"
 
@@ -108,8 +97,7 @@ msgstr "Conferência: "
 msgid "Conference: %s"
 msgstr "Conferência: %s"
 
-#: Conferences.class.php:312 conferences.i18n.php:4 conferences.i18n.php:10
-#: page.conferences.php:10
+#: Conferences.class.php:317 page.conferences.php:10
 msgid "Conferences"
 msgstr "Conferências"
 
@@ -117,7 +105,7 @@ msgstr "Conferências"
 msgid "Conflicting Extensions"
 msgstr "Ramais Conflitantes"
 
-#: Conferences.class.php:297
+#: Conferences.class.php:302
 msgid "Delete"
 msgstr ""
 
@@ -140,7 +128,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:315
+#: Conferences.class.php:320
 msgid "Extension"
 msgstr ""
 
@@ -222,11 +210,11 @@ msgstr "Sem Limite"
 msgid "None"
 msgstr "Nenhum"
 
-#: assets/js/conferences.js:17
+#: assets/js/conferences.js:18
 msgid "Please enter a valid Conference Name"
 msgstr "Por favor, entre com um Nome de Conferência válido"
 
-#: assets/js/conferences.js:16
+#: assets/js/conferences.js:17
 msgid "Please enter a valid Conference Number"
 msgstr "Por favor, entre com um Número de Conferência válido"
 
@@ -251,7 +239,7 @@ msgstr ""
 msgid "Record the conference call"
 msgstr "Gravar a chamada em conferência"
 
-#: Conferences.class.php:292
+#: Conferences.class.php:297
 msgid "Reset"
 msgstr ""
 
@@ -263,7 +251,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:287
+#: Conferences.class.php:292
 msgid "Submit"
 msgstr ""
 
@@ -275,7 +263,7 @@ msgstr ""
 msgid "Talker Optimization"
 msgstr ""
 
-#: assets/js/conferences.js:20
+#: assets/js/conferences.js:21
 msgid "The user and admin can not have the same pin code."
 msgstr "O usuário e admin não podem ter o mesmo código pin."
 
@@ -329,7 +317,7 @@ msgid ""
 "different than the Admin pin"
 msgstr ""
 
-#: assets/js/conferences.js:19
+#: assets/js/conferences.js:20
 msgid ""
 "You must set Allow Menu to Yes when not using a Leader or Admin in your "
 "conference, otherwise you will be unable to unmute yourself"
@@ -338,7 +326,7 @@ msgstr ""
 "ou Admin em sua conferência, caso contrário você não será capaz de não "
 "silenciar-se"
 
-#: assets/js/conferences.js:18
+#: assets/js/conferences.js:19
 msgid ""
 "You must set an admin PIN for the Conference Leader when selecting the "
 "leader wait option"
@@ -406,6 +394,15 @@ msgstr "nenhum campo joinmsg???"
 #: install.php:40 install.php:62 install.php:101 install.php:119
 msgid "ok"
 msgstr "ok"
+
+#~ msgid ""
+#~ "Allow creation of conference rooms where multiple people can talk together"
+#~ msgstr ""
+#~ "Permitir criação de salas de conferência onde múltiplas pessoas podem "
+#~ "falar juntas"
+
+#~ msgid "Applications"
+#~ msgstr "Aplicações"
 
 #~ msgid "Add Conference"
 #~ msgstr "Adicionar Conferência"
