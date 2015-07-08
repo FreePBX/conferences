@@ -4,11 +4,12 @@
 
 //Javascript moved from page.conferences.php
 var theForm = document.editMM;
-
-if (theForm.account.value === "") {
-	theForm.account.focus();
-} else {
-	theForm.name.focus();
+if(theForm){
+	if (theForm.account.value === "") {
+		theForm.account.focus();
+	} else {
+		theForm.name.focus();
+	}
 }
 
 function checkConf()

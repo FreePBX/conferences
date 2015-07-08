@@ -26,7 +26,7 @@ foreach ($confs as $conf) {
 <div id="toolbar-all">
 	<a class="btn btn-primary" href="config.php?display=conferences&amp;view=form"><i class="fa fa-plus"></i> <?php echo _("Add")?></a>
 </div>
-<table data-toolbar="#toolbar-all" data-toggle="table" class="table table-striped">
+<table data-toolbar="#toolbar-all" data-search="true" data-toggle="table" class="table table-striped">
 <thead>
 	<tr>
 		<th data-sortable="true"><?php echo _("Conference")?></th>
