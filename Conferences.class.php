@@ -70,6 +70,11 @@ class Conferences implements BMO {
 		}
 	}
 
+	/**
+	 * Search hook for global search
+	 * @param  string $query   The query string
+	 * @param  array $results Array of results (note: pass-by-ref)
+	 */
 	public function search($query, &$results) {
 		if(!ctype_digit($query)) {
 			$sql = "SELECT * FROM meetme WHERE description LIKE ?";
@@ -77,7 +82,7 @@ class Conferences implements BMO {
 			$sth->execute(array("%".$query."%"));
 			$rows = $sth->fetchAll(\PDO::FETCH_ASSOC);
 			foreach($rows as $row) {
-				$results[] = array("text" => $row['description'] . " (".$row['id'].")", "type" => "get", "dest" => "?display=conferences&view=form&extdisplay=".$row['exten']);
+				$results[] = array("text" => $row['description'] . " (".$row['exten'].")", "type" => "get", "dest" => "?display=conferences&view=form&extdisplay=".$row['exten']);
 			}
 		} else {
 			$sql = "SELECT * FROM meetme WHERE exten LIKE ?";
@@ -85,7 +90,7 @@ class Conferences implements BMO {
 			$sth->execute(array("%".$query."%"));
 			$rows = $sth->fetchAll(\PDO::FETCH_ASSOC);
 			foreach($rows as $row) {
-				$results[] = array("text" => _("Conference")." ".$row['id'], "type" => "get", "dest" => "?display=conferences&view=form&extdisplay=".$row['exten']);
+				$results[] = array("text" => _("Conference")." ".$row['exten'], "type" => "get", "dest" => "?display=conferences&view=form&extdisplay=".$row['exten']);
 			}
 		}
 	}
