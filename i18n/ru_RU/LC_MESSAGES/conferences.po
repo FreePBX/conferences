@@ -24,17 +24,17 @@ msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-06 17:29-0500\n"
-"PO-Revision-Date: 2014-02-28 04:52+0200\n"
-"Last-Translator: Andrew <andrew.nagy@the159.com>\n"
-"Language-Team: Russian <http://example.com/projects/freepbx-211/conferences/"
-"ru/>\n"
+"PO-Revision-Date: 2015-04-25 18:46+0200\n"
+"Last-Translator: Yuriy <alliancesko@gmail.com>\n"
+"Language-Team: Russian "
+"<http://weblate.freepbx.org/projects/freepbx/conferences/ru_RU/>\n"
+"Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru_RU\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
-"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 1.9-dev\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: page.conferences.php:83 page.conferences.php:136 page.conferences.php:151
 msgid "Add Conference"
@@ -46,20 +46,22 @@ msgstr "PIN администратора:"
 
 #: page.conferences.php:331
 msgid "Allow Menu:"
-msgstr "Разрешить меню?"
+msgstr "Разрешить меню:"
 
 #: conferences.i18n.php:8
 msgid ""
 "Allow creation of conference rooms where multiple people can talk together"
 msgstr ""
+"Разрешить создание конференций, где несколько человек могут говорить друг с "
+"другом"
 
 #: page.conferences.php:278
 msgid "Announce user join/leave"
-msgstr "Анонсировать подсоединение/отключение участников?"
+msgstr "Анонсировать подсоединение/отключение участников"
 
 #: page.conferences.php:263
 msgid "Announce user(s) count on joining conference"
-msgstr "Анонсировать количество участников конференции при подсоединении?"
+msgstr "Анонсировать количество участников конференции при подсоединении"
 
 #: conferences.i18n.php:6 conferences.i18n.php:12
 msgid "Applications"
@@ -130,7 +132,7 @@ msgstr "Изменить конференцию"
 
 #: page.conferences.php:293
 msgid "Enable Music On Hold when the conference has a single caller"
-msgstr "Использовать музыку в ожидании, если в конференции пока один участник?"
+msgstr "Использовать музыку в ожидании, если в конференции пока один участник"
 
 #: page.conferences.php:165
 msgid ""
@@ -151,11 +153,11 @@ msgstr "Присвойте конференции короткое имя для
 
 #: page.conferences.php:172 page.conferences.php:189
 msgid "Join Message:"
-msgstr "Сообщение о подсоединении?"
+msgstr "Сообщение о присоединении:"
 
 #: page.conferences.php:196
 msgid "Leader Wait:"
-msgstr "Ждать организатора?"
+msgstr "Ждать организатора:"
 
 #: page.conferences.php:362
 msgid "Maximum Number of users allowed to join this conference."
@@ -174,17 +176,17 @@ msgid ""
 "left"
 msgstr ""
 "При подсоединении к конференции пользователю будет воспроизведено это "
-"сообщение.<br><br>Чтобы создать сообщение воспоьзуйтесь секцией Запись "
-"сообщений в меню слева."
+"сообщение.<br><br>Чтобы создать сообщение воспользуйтесь секцией \"Запись "
+"сообщений\" в меню слева"
 
 #: page.conferences.php:189
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>You "
 "must install and enable the \"Systems Recordings\" Module to edit this option"
 msgstr ""
-"При подсоединении к конференции пользователю будет воспроизведено сообщение."
-"<br><br>Необходимо инсталлировать и активировать модуль 'Запись сообщений' "
-"для изменения этой опции."
+"При подсоединении к конференции пользователю будет воспроизведено "
+"сообщение.<br><br>Необходимо инсталлировать и активировать модуль 'Запись "
+"сообщений' для изменения этой опции"
 
 #: page.conferences.php:307
 msgid ""
@@ -204,7 +206,7 @@ msgstr "Класс Музыки в ожидании:"
 
 #: page.conferences.php:293
 msgid "Music on Hold:"
-msgstr "Музыка в ожидании?"
+msgstr "Музыка в ожидании:"
 
 #: page.conferences.php:376
 msgid ""
@@ -219,7 +221,7 @@ msgstr ""
 
 #: page.conferences.php:376
 msgid "Mute on Join:"
-msgstr "Отключение микрофона при подключении к конференции"
+msgstr "Отключение микрофона при подключении к конференции:"
 
 #: page.conferences.php:201 page.conferences.php:223 page.conferences.php:239
 #: page.conferences.php:256 page.conferences.php:268 page.conferences.php:283
@@ -247,7 +249,7 @@ msgstr "Введите действительный номер для конфе
 #: page.conferences.php:331
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
 msgstr ""
-"Предоставить доступ в меню (участнику или администратору) при нажатии '*'?"
+"Предоставить доступ в меню (участнику или администратору) при нажатии '*'"
 
 #: page.conferences.php:251
 msgid "Quiet Mode:"
@@ -261,11 +263,11 @@ msgstr ""
 
 #: page.conferences.php:346
 msgid "Record Conference:"
-msgstr "Записывать конференцию?"
+msgstr "Записывать конференцию:"
 
 #: page.conferences.php:346
 msgid "Record the conference call"
-msgstr "Записывать содержание конференции?"
+msgstr "Записывать содержание конференции"
 
 #: page.conferences.php:232
 msgid ""
@@ -276,6 +278,12 @@ msgid ""
 "the conference list CLI command. Note: If Conferences Pro is installed and "
 "licensed this will always be enabled"
 msgstr ""
+"Устанавливает обнаружение говорящего. Астериск посылает событие  на "
+"интерфейс\n"
+"менеджера выявления говорящего канала. Говорящий может быть также определен\n"
+"при вводе команды conference list в CLI. Примечание: Если установлен и "
+"лицензирован\n"
+"модуль Conferences PRO это всегда будет включено"
 
 #: page.conferences.php:393
 msgid "Submit Changes"
@@ -291,11 +299,11 @@ msgstr "Оптимизация для выступающего:"
 
 #: page.conferences.php:419
 msgid "The Conference Name provided is too long."
-msgstr ""
+msgstr "Введенное имя конференции слишком длинное."
 
 #: page.conferences.php:411
 msgid "The user and admin can not have the same pin code."
-msgstr ""
+msgstr "Пользователь и админ не могут иметь одинаковый ПИН код."
 
 #: page.conferences.php:215
 msgid ""
@@ -318,7 +326,7 @@ msgstr "Чтобы позвонить в конференцию использу
 
 #: page.conferences.php:263
 msgid "User Count:"
-msgstr "Количество участников?"
+msgstr "Количество участников:"
 
 #: page.conferences.php:161
 msgid "User PIN:"
@@ -326,15 +334,15 @@ msgstr "PIN пользователя:"
 
 #: page.conferences.php:278
 msgid "User join/leave:"
-msgstr "Участник подсоединился/отключился?"
+msgstr "Участник подсоединился/отключился:"
 
 #: page.conferences.php:196
 msgid ""
 "Wait until the conference leader (admin user) arrives before starting the "
 "conference"
 msgstr ""
-"Ждать организатора конференции (пользователь администратор) пока он не "
-"подсоединится, чтобы начать конференцию."
+"Ждать организатора конференции (пользователь, администратор) пока он не "
+"подсоединится, чтобы начать конференцию"
 
 #: page.conferences.php:19
 msgid "Warning! Extension"
@@ -404,7 +412,7 @@ msgstr "удалено"
 
 #: install.php:95
 msgid "dropping joinmsg field.."
-msgstr "игнорируется поле joinmsg"
+msgstr "отбрасывается поле joinmsg.."
 
 #: install.php:37 install.php:59 install.php:71 install.php:87
 msgid "fatal error"

@@ -20,12 +20,16 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-06 17:29-0500\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Jouniaux <c.jouniaux@techtelecom.fr>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2015-04-29 21:25+0200\n"
+"Last-Translator: philippebolduc <philippe@florenceinc.com>\n"
+"Language-Team: French "
+"<http://weblate.freepbx.org/projects/freepbx/conferences/fr_FR/>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: page.conferences.php:83 page.conferences.php:136 page.conferences.php:151
 msgid "Add Conference"
@@ -54,7 +58,7 @@ msgstr "Annonce le nombre de personnes ayant rejoint la conférence"
 
 #: conferences.i18n.php:6 conferences.i18n.php:12
 msgid "Applications"
-msgstr ""
+msgstr "Applications"
 
 #: install.php:108
 msgid "Checking for users field.."
