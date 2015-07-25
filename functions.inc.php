@@ -285,7 +285,7 @@ function conferences_get_config($engine) {
 
 					//No pins set so ask the user now
 					$ext->add($contextname, $roomnum, 'READPIN', new ext_setvar('PINCOUNT','0'));
-					$ext->add($contextname, $roomnum, '', new ext_read('PIN','enter-conf-pin-number'));
+					$ext->add($contextname, $roomnum, 'RETRYPIN', new ext_read('PIN','enter-conf-pin-number'));
 
 					// userpin -- must do always, otherwise if there is just an adminpin
 					// there would be no way to get to the conference !
@@ -297,7 +297,7 @@ function conferences_get_config($engine) {
 					$ext->add($contextname, $roomnum, '', new ext_setvar('PINCOUNT','$[${PINCOUNT}+1]'));
 					$ext->add($contextname, $roomnum, '', new ext_gotoif('$[${PINCOUNT}>3]', "h,1"));
 					$ext->add($contextname, $roomnum, '', new ext_playback('conf-invalidpin'));
-					$ext->add($contextname, $roomnum, '', new ext_goto('READPIN'));
+					$ext->add($contextname, $roomnum, '', new ext_goto('RETRYPIN'));
 
 					$subconfcontext = 'sub-conference-options';
 
