@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 17:29-0500\n"
+"POT-Creation-Date: 2015-07-24 22:29-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,22 +31,12 @@ msgstr ""
 msgid "Allow Menu:"
 msgstr ""
 
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-
 #: page.conferences.php:278
 msgid "Announce user join/leave"
 msgstr ""
 
 #: page.conferences.php:263
 msgid "Announce user(s) count on joining conference"
-msgstr ""
-
-#: conferences.i18n.php:6
-#: conferences.i18n.php:12
-msgid "Applications"
 msgstr ""
 
 #: install.php:108
@@ -93,11 +83,6 @@ msgstr ""
 #: functions.inc.php:195
 #, php-format
 msgid "Conference: %s"
-msgstr ""
-
-#: conferences.i18n.php:4
-#: conferences.i18n.php:10
-msgid "Conferences"
 msgstr ""
 
 #: page.conferences.php:139

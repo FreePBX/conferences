@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 17:29-0500\n"
+"POT-Creation-Date: 2015-07-24 22:29-0400\n"
 "PO-Revision-Date: 2015-02-21 11:10+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -61,11 +61,6 @@ msgstr "管理者PIN："
 msgid "Allow Menu:"
 msgstr "メニューを許可："
 
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-
 #: page.conferences.php:278
 msgid "Announce user join/leave"
 msgstr "ユーザーの参加/退出をアナウンスします"
@@ -73,10 +68,6 @@ msgstr "ユーザーの参加/退出をアナウンスします"
 #: page.conferences.php:263
 msgid "Announce user(s) count on joining conference"
 msgstr "カンファレンスに参加しているユーザーの数をアナウンスします"
-
-#: conferences.i18n.php:6 conferences.i18n.php:12
-msgid "Applications"
-msgstr "アプリケーション"
 
 #: install.php:108
 msgid "Checking for users field.."
@@ -123,10 +114,6 @@ msgstr "音声会議： "
 #, php-format
 msgid "Conference: %s"
 msgstr "音声会議： %s"
-
-#: conferences.i18n.php:4 conferences.i18n.php:10
-msgid "Conferences"
-msgstr "音声会議"
 
 #: page.conferences.php:139
 msgid "Conflicting Extensions"
@@ -443,6 +430,12 @@ msgstr "joinmsg フィールドが存在しません???"
 #: install.php:40 install.php:62 install.php:101 install.php:119
 msgid "ok"
 msgstr "ok"
+
+#~ msgid "Applications"
+#~ msgstr "アプリケーション"
+
+#~ msgid "Conferences"
+#~ msgstr "音声会議"
 
 #~ msgid ""
 #~ "Allow creation of conference rooms (meet-me) where multiple people can "

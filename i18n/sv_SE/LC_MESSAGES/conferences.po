@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX conferences\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 17:29-0500\n"
+"POT-Creation-Date: 2015-07-24 22:29-0400\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -42,11 +42,6 @@ msgstr "Administratörslösenord:"
 msgid "Allow Menu:"
 msgstr "Tillåt meny:"
 
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-
 #: page.conferences.php:278
 msgid "Announce user join/leave"
 msgstr "Annonsera när användare ansluter/lämnar"
@@ -54,10 +49,6 @@ msgstr "Annonsera när användare ansluter/lämnar"
 #: page.conferences.php:263
 msgid "Announce user(s) count on joining conference"
 msgstr "Berätta antalet användare när anslutning till konferensen sker"
-
-#: conferences.i18n.php:6 conferences.i18n.php:12
-msgid "Applications"
-msgstr ""
 
 #: install.php:108
 msgid "Checking for users field.."
@@ -104,10 +95,6 @@ msgstr "Konferens:"
 #, php-format
 msgid "Conference: %s"
 msgstr "Konferens: %s"
-
-#: conferences.i18n.php:4 conferences.i18n.php:10
-msgid "Conferences"
-msgstr "Konferenser"
 
 #: page.conferences.php:139
 msgid "Conflicting Extensions"
@@ -427,6 +414,9 @@ msgstr "inget fält som heter joinmsg???"
 #: install.php:40 install.php:62 install.php:101 install.php:119
 msgid "ok"
 msgstr "ok"
+
+#~ msgid "Conferences"
+#~ msgstr "Konferenser"
 
 #~ msgid ""
 #~ "Allow creation of conference rooms (meet-me) where multiple people can "

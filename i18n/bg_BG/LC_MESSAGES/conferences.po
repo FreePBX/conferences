@@ -19,15 +19,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 17:29-0500\n"
+"POT-Creation-Date: 2015-07-24 22:29-0400\n"
 "PO-Revision-Date: 2015-07-07 16:23+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
-"Language-Team: Bulgarian "
-"<http://weblate.freepbx.org/projects/freepbx/conferences/bg_BG/>\n"
-"Language: bg_BG\n"
+"Language-Team: Bulgarian <http://weblate.freepbx.org/projects/freepbx/"
+"conferences/bg_BG/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: bg_BG\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Bulgarian\n"
@@ -46,13 +46,6 @@ msgstr "Администраторски PIN:"
 msgid "Allow Menu:"
 msgstr "Позволи Меню:"
 
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-"Позволява създаване на конферентни стаи, където много хора могат да говорят "
-"заедно"
-
 #: page.conferences.php:278
 msgid "Announce user join/leave"
 msgstr "Известява за влизане/излизане на потребител"
@@ -60,10 +53,6 @@ msgstr "Известява за влизане/излизане на потре�
 #: page.conferences.php:263
 msgid "Announce user(s) count on joining conference"
 msgstr "Известява за броя на потребителите при влизане в конференцията"
-
-#: conferences.i18n.php:6 conferences.i18n.php:12
-msgid "Applications"
-msgstr "Приложения"
 
 #: install.php:108
 msgid "Checking for users field.."
@@ -110,10 +99,6 @@ msgstr "Конференция: "
 #, php-format
 msgid "Conference: %s"
 msgstr "Конференция: %s"
-
-#: conferences.i18n.php:4 conferences.i18n.php:10
-msgid "Conferences"
-msgstr "Конференции"
 
 #: page.conferences.php:139
 msgid "Conflicting Extensions"
@@ -440,6 +425,18 @@ msgstr "няма joinmsg поле???"
 #: install.php:40 install.php:62 install.php:101 install.php:119
 msgid "ok"
 msgstr "ok"
+
+#~ msgid ""
+#~ "Allow creation of conference rooms where multiple people can talk together"
+#~ msgstr ""
+#~ "Позволява създаване на конферентни стаи, където много хора могат да "
+#~ "говорят заедно"
+
+#~ msgid "Applications"
+#~ msgstr "Приложения"
+
+#~ msgid "Conferences"
+#~ msgstr "Конференции"
 
 #~ msgid ""
 #~ "Allow creation of conference rooms (meet-me) where multiple people can "

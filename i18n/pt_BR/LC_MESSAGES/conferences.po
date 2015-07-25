@@ -20,15 +20,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX Conference Module\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 17:29-0500\n"
+"POT-Creation-Date: 2015-07-24 22:29-0400\n"
 "PO-Revision-Date: 2015-04-29 08:00+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
-"Language-Team: Portuguese (Brazil) "
-"<http://weblate.freepbx.org/projects/freepbx/conferences/pt_BR/>\n"
-"Language: pt_BR\n"
+"Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
+"freepbx/conferences/pt_BR/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Portuguese\n"
@@ -47,13 +47,6 @@ msgstr "PIN do Admin:"
 msgid "Allow Menu:"
 msgstr "Permitir Menu:"
 
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-"Permitir criação de salas de conferência onde múltiplas pessoas podem falar "
-"juntas"
-
 #: page.conferences.php:278
 msgid "Announce user join/leave"
 msgstr "Anuncia a entrada e saída de usuários"
@@ -61,10 +54,6 @@ msgstr "Anuncia a entrada e saída de usuários"
 #: page.conferences.php:263
 msgid "Announce user(s) count on joining conference"
 msgstr "Anuncia o número de usuários ao se juntar à conferência"
-
-#: conferences.i18n.php:6 conferences.i18n.php:12
-msgid "Applications"
-msgstr "Aplicações"
 
 #: install.php:108
 msgid "Checking for users field.."
@@ -111,10 +100,6 @@ msgstr "Conferência: "
 #, php-format
 msgid "Conference: %s"
 msgstr "Conferência: %s"
-
-#: conferences.i18n.php:4 conferences.i18n.php:10
-msgid "Conferences"
-msgstr "Conferências"
 
 #: page.conferences.php:139
 msgid "Conflicting Extensions"
@@ -173,18 +158,18 @@ msgid ""
 "add additional recordings please use the \"System Recordings\" MENU to the "
 "left"
 msgstr ""
-"Mensagem a ser tocada para a origem antes que ela se junte na "
-"conferência.<br><br>Para adicionar novas gravações, por favor use o menu \""
-"Gravações do Sistema\" à esquerda"
+"Mensagem a ser tocada para a origem antes que ela se junte na conferência."
+"<br><br>Para adicionar novas gravações, por favor use o menu \"Gravações do "
+"Sistema\" à esquerda"
 
 #: page.conferences.php:189
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>You "
 "must install and enable the \"Systems Recordings\" Module to edit this option"
 msgstr ""
-"Mensagem a ser tocada para o chamador antes dele se juntar à "
-"conferência.<br><br>Você deve instalar e habilitar o módulo \"Gravações do "
-"Sistema\"  para editar esta opção"
+"Mensagem a ser tocada para o chamador antes dele se juntar à conferência."
+"<br><br>Você deve instalar e habilitar o módulo \"Gravações do Sistema\"  "
+"para editar esta opção"
 
 #: page.conferences.php:307
 msgid ""
@@ -443,3 +428,15 @@ msgstr "nenhum campo joinmsg???"
 #: install.php:40 install.php:62 install.php:101 install.php:119
 msgid "ok"
 msgstr "ok"
+
+#~ msgid ""
+#~ "Allow creation of conference rooms where multiple people can talk together"
+#~ msgstr ""
+#~ "Permitir criação de salas de conferência onde múltiplas pessoas podem "
+#~ "falar juntas"
+
+#~ msgid "Applications"
+#~ msgstr "Aplicações"
+
+#~ msgid "Conferences"
+#~ msgstr "Conferências"

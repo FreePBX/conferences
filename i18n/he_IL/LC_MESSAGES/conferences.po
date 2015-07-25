@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-06 17:29-0500\n"
+"POT-Creation-Date: 2015-07-24 22:29-0400\n"
 "PO-Revision-Date: 2010-01-23 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -41,11 +41,6 @@ msgstr "סיסמת מנהל:"
 msgid "Allow Menu:"
 msgstr "אפשר תפריט:"
 
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-
 #: page.conferences.php:278
 msgid "Announce user join/leave"
 msgstr "הכרז על כניסה/יציאה של משתמשים"
@@ -53,10 +48,6 @@ msgstr "הכרז על כניסה/יציאה של משתמשים"
 #: page.conferences.php:263
 msgid "Announce user(s) count on joining conference"
 msgstr "הכרז על מספר הנמצאים בועידה בזמן הכניסה לועידה"
-
-#: conferences.i18n.php:6 conferences.i18n.php:12
-msgid "Applications"
-msgstr ""
 
 #: install.php:108
 msgid "Checking for users field.."
@@ -102,10 +93,6 @@ msgstr ""
 #: functions.inc.php:195
 #, php-format
 msgid "Conference: %s"
-msgstr ""
-
-#: conferences.i18n.php:4 conferences.i18n.php:10
-msgid "Conferences"
 msgstr ""
 
 #: page.conferences.php:139
