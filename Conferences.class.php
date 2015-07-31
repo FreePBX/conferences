@@ -97,6 +97,11 @@ class Conferences implements BMO {
 
 
 	public function install() {
+
+		$sql = "CREATE TABLE IF NOT EXISTS `meetme` ( `exten` VARCHAR( 50 ) NOT NULL , `options` VARCHAR( 15 ) , 
+				`userpin` VARCHAR( 50 ) , `adminpin` VARCHAR( 50 ) , `description` VARCHAR( 50 ) , 
+				`joinmsg_id` INTEGER, `music` VARCHAR(80), `users` TINYINT DEFAULT 0) ";
+		$this->db->query($sql);
 		//Migrate bad option
 		$confs = $this->listConferences();
 		if (!is_array($confs)) {
