@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-24 22:35-0400\n"
+"POT-Creation-Date: 2015-07-30 21:20-0700\n"
 "PO-Revision-Date: 2014-07-21 16:05+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -58,19 +58,7 @@ msgstr "Известява за влизане/излизане на потре�
 msgid "Announce user(s) count on joining conference"
 msgstr "Известява за броя на потребителите при влизане в конференцията"
 
-#: install.php:108
-msgid "Checking for users field.."
-msgstr "Проверка за поле users.."
-
-#: install.php:29
-msgid "Checking if music field present.."
-msgstr "Проверка дали поле music съществува.."
-
-#: install.php:48
-msgid "Checking if recordings need migration.."
-msgstr "Проверка дали записите имат нужда от преместване.."
-
-#: Conferences.class.php:93 Conferences.class.php:319 views/grid.php:32
+#: Conferences.class.php:93 Conferences.class.php:324 views/grid.php:32
 msgid "Conference"
 msgstr "Конференция"
 
@@ -96,7 +84,7 @@ msgstr "Конференция: "
 msgid "Conference: %s"
 msgstr "Конференция: %s"
 
-#: Conferences.class.php:317 page.conferences.php:10
+#: Conferences.class.php:322 page.conferences.php:10
 msgid "Conferences"
 msgstr "Конференции"
 
@@ -104,7 +92,7 @@ msgstr "Конференции"
 msgid "Conflicting Extensions"
 msgstr "Вътрешни Линии в Конфликт"
 
-#: Conferences.class.php:302
+#: Conferences.class.php:307
 msgid "Delete"
 msgstr ""
 
@@ -128,13 +116,9 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:320
+#: Conferences.class.php:325
 msgid "Extension"
 msgstr ""
-
-#: install.php:116
-msgid "FATAL error"
-msgstr "ФАТАЛНА грешка"
 
 #: views/form.php:168
 msgid "Give this conference a brief name to help you identify it."
@@ -242,7 +226,7 @@ msgstr ""
 msgid "Record the conference call"
 msgstr "Записва конферентния разговор"
 
-#: Conferences.class.php:297
+#: Conferences.class.php:302
 msgid "Reset"
 msgstr ""
 
@@ -254,7 +238,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:292
+#: Conferences.class.php:297
 msgid "Submit"
 msgstr ""
 
@@ -336,37 +320,9 @@ msgstr ""
 "Трбва да въведете администраторски PIN за Водещия на Конференцията когато "
 "избирате опция изчакване на водещия"
 
-#: install.php:55
-msgid "adding joinmsg_id field.."
-msgstr "добаване на joinmsg_id поле.."
-
-#: install.php:33
-msgid "adding music field.."
-msgstr "добаване на поле music.."
-
-#: install.php:112
-msgid "adding.."
-msgstr "добаване.."
-
-#: install.php:105
-msgid "already migrated"
-msgstr "вече са преместени"
-
-#: install.php:43 install.php:122
-msgid "already present"
-msgstr "вече съществува"
-
 #: views/form.php:76
 msgid "default"
 msgstr "по-подразбиране"
-
-#: install.php:95
-msgid "dropping joinmsg field.."
-msgstr "премахване на поле joinmsg.."
-
-#: install.php:37 install.php:59 install.php:71 install.php:87
-msgid "fatal error"
-msgstr "фатална грешка"
 
 #: views/form.php:75
 msgid "inherit"
@@ -376,26 +332,53 @@ msgstr "наследи"
 msgid "is not allowed for your account."
 msgstr "не е разрешена за вашия акаунт."
 
-#: install.php:67
-msgid "migrate to recording ids.."
-msgstr "преместване към recording ids.."
+#~ msgid "Checking for users field.."
+#~ msgstr "Проверка за поле users.."
 
-#: install.php:91
-#, php-format
-msgid "migrated %s entries"
-msgstr "преместени %s въвеждания"
+#~ msgid "Checking if music field present.."
+#~ msgstr "Проверка дали поле music съществува.."
 
-#: install.php:54
-msgid "migrating"
-msgstr "преместване"
+#~ msgid "Checking if recordings need migration.."
+#~ msgstr "Проверка дали записите имат нужда от преместване.."
 
-#: install.php:99
-msgid "no joinmsg field???"
-msgstr "няма joinmsg поле???"
+#~ msgid "FATAL error"
+#~ msgstr "ФАТАЛНА грешка"
 
-#: install.php:40 install.php:62 install.php:101 install.php:119
-msgid "ok"
-msgstr "ok"
+#~ msgid "adding joinmsg_id field.."
+#~ msgstr "добаване на joinmsg_id поле.."
+
+#~ msgid "adding music field.."
+#~ msgstr "добаване на поле music.."
+
+#~ msgid "adding.."
+#~ msgstr "добаване.."
+
+#~ msgid "already migrated"
+#~ msgstr "вече са преместени"
+
+#~ msgid "already present"
+#~ msgstr "вече съществува"
+
+#~ msgid "dropping joinmsg field.."
+#~ msgstr "премахване на поле joinmsg.."
+
+#~ msgid "fatal error"
+#~ msgstr "фатална грешка"
+
+#~ msgid "migrate to recording ids.."
+#~ msgstr "преместване към recording ids.."
+
+#~ msgid "migrated %s entries"
+#~ msgstr "преместени %s въвеждания"
+
+#~ msgid "migrating"
+#~ msgstr "преместване"
+
+#~ msgid "no joinmsg field???"
+#~ msgstr "няма joinmsg поле???"
+
+#~ msgid "ok"
+#~ msgstr "ok"
 
 #~ msgid "Add Conference"
 #~ msgstr "Добави Конференция"

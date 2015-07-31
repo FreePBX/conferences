@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-24 22:35-0400\n"
+"POT-Creation-Date: 2015-07-30 21:20-0700\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
 "Language-Team: Magyar <freepbx@freepbx.hu>\n"
@@ -54,19 +54,7 @@ msgstr "Esemény felhasználó fel/lecsatlakozásakor"
 msgid "Announce user(s) count on joining conference"
 msgstr "Esemény a felhasználók csatlakozásakor"
 
-#: install.php:108
-msgid "Checking for users field.."
-msgstr ""
-
-#: install.php:29
-msgid "Checking if music field present.."
-msgstr ""
-
-#: install.php:48
-msgid "Checking if recordings need migration.."
-msgstr ""
-
-#: Conferences.class.php:93 Conferences.class.php:319 views/grid.php:32
+#: Conferences.class.php:93 Conferences.class.php:324 views/grid.php:32
 msgid "Conference"
 msgstr "Konferencia"
 
@@ -92,7 +80,7 @@ msgstr "Konferencia:"
 msgid "Conference: %s"
 msgstr ""
 
-#: Conferences.class.php:317 page.conferences.php:10
+#: Conferences.class.php:322 page.conferences.php:10
 msgid "Conferences"
 msgstr ""
 
@@ -100,7 +88,7 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr "Mellékek ütközése"
 
-#: Conferences.class.php:302
+#: Conferences.class.php:307
 msgid "Delete"
 msgstr ""
 
@@ -123,12 +111,8 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:320
+#: Conferences.class.php:325
 msgid "Extension"
-msgstr ""
-
-#: install.php:116
-msgid "FATAL error"
 msgstr ""
 
 #: views/form.php:168
@@ -230,7 +214,7 @@ msgstr ""
 msgid "Record the conference call"
 msgstr "Rögzíti a teljes konferenciabeszélgetést"
 
-#: Conferences.class.php:297
+#: Conferences.class.php:302
 msgid "Reset"
 msgstr ""
 
@@ -242,7 +226,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:292
+#: Conferences.class.php:297
 msgid "Submit"
 msgstr ""
 
@@ -319,36 +303,8 @@ msgid ""
 "leader wait option"
 msgstr ""
 
-#: install.php:55
-msgid "adding joinmsg_id field.."
-msgstr ""
-
-#: install.php:33
-msgid "adding music field.."
-msgstr ""
-
-#: install.php:112
-msgid "adding.."
-msgstr ""
-
-#: install.php:105
-msgid "already migrated"
-msgstr ""
-
-#: install.php:43 install.php:122
-msgid "already present"
-msgstr ""
-
 #: views/form.php:76
 msgid "default"
-msgstr ""
-
-#: install.php:95
-msgid "dropping joinmsg field.."
-msgstr ""
-
-#: install.php:37 install.php:59 install.php:71 install.php:87
-msgid "fatal error"
 msgstr ""
 
 #: views/form.php:75
@@ -358,27 +314,6 @@ msgstr ""
 #: Conferences.class.php:29
 msgid "is not allowed for your account."
 msgstr "nem elfogadható a hozzáférés."
-
-#: install.php:67
-msgid "migrate to recording ids.."
-msgstr ""
-
-#: install.php:91
-#, php-format
-msgid "migrated %s entries"
-msgstr ""
-
-#: install.php:54
-msgid "migrating"
-msgstr ""
-
-#: install.php:99
-msgid "no joinmsg field???"
-msgstr ""
-
-#: install.php:40 install.php:62 install.php:101 install.php:119
-msgid "ok"
-msgstr ""
 
 #~ msgid "Add Conference"
 #~ msgstr "Konferencia hozzásadása"

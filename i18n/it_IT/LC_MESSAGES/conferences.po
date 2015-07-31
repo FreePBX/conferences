@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-24 22:35-0400\n"
+"POT-Creation-Date: 2015-07-30 21:20-0700\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -53,19 +53,7 @@ msgstr "Annucia l'ingresso/uscita degli utenti"
 msgid "Announce user(s) count on joining conference"
 msgstr "Annuncia il conteggio degli utenti quando entrano in conferenza"
 
-#: install.php:108
-msgid "Checking for users field.."
-msgstr ""
-
-#: install.php:29
-msgid "Checking if music field present.."
-msgstr ""
-
-#: install.php:48
-msgid "Checking if recordings need migration.."
-msgstr "Controllo se le registrazioni hanno bisogno della migrazione.."
-
-#: Conferences.class.php:93 Conferences.class.php:319 views/grid.php:32
+#: Conferences.class.php:93 Conferences.class.php:324 views/grid.php:32
 msgid "Conference"
 msgstr "Conferenza"
 
@@ -91,7 +79,7 @@ msgstr "Conferenza:"
 msgid "Conference: %s"
 msgstr "Conferenza: %s"
 
-#: Conferences.class.php:317 page.conferences.php:10
+#: Conferences.class.php:322 page.conferences.php:10
 msgid "Conferences"
 msgstr "Conferenze"
 
@@ -99,7 +87,7 @@ msgstr "Conferenze"
 msgid "Conflicting Extensions"
 msgstr "Interni in conflitto"
 
-#: Conferences.class.php:302
+#: Conferences.class.php:307
 msgid "Delete"
 msgstr ""
 
@@ -122,12 +110,8 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:320
+#: Conferences.class.php:325
 msgid "Extension"
-msgstr ""
-
-#: install.php:116
-msgid "FATAL error"
 msgstr ""
 
 #: views/form.php:168
@@ -233,7 +217,7 @@ msgstr ""
 msgid "Record the conference call"
 msgstr "Registra la conferenza"
 
-#: Conferences.class.php:297
+#: Conferences.class.php:302
 msgid "Reset"
 msgstr ""
 
@@ -245,7 +229,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:292
+#: Conferences.class.php:297
 msgid "Submit"
 msgstr ""
 
@@ -324,37 +308,9 @@ msgstr ""
 "Devi impostare un PIN per il Leader della Conferenza quando si seleziona "
 "l'opzione attesa amministratore"
 
-#: install.php:55
-msgid "adding joinmsg_id field.."
-msgstr "sto aggiungendo il campo joinmsg_id.."
-
-#: install.php:33
-msgid "adding music field.."
-msgstr ""
-
-#: install.php:112
-msgid "adding.."
-msgstr ""
-
-#: install.php:105
-msgid "already migrated"
-msgstr "già migrato"
-
-#: install.php:43 install.php:122
-msgid "already present"
-msgstr ""
-
 #: views/form.php:76
 msgid "default"
 msgstr ""
-
-#: install.php:95
-msgid "dropping joinmsg field.."
-msgstr "sto scartando il campo joinmsg.."
-
-#: install.php:37 install.php:59 install.php:71 install.php:87
-msgid "fatal error"
-msgstr "errore fatale"
 
 #: views/form.php:75
 msgid "inherit"
@@ -364,26 +320,35 @@ msgstr ""
 msgid "is not allowed for your account."
 msgstr "Non hai i permessi."
 
-#: install.php:67
-msgid "migrate to recording ids.."
-msgstr "sto migrando nelle id registrazioni.."
+#~ msgid "Checking if recordings need migration.."
+#~ msgstr "Controllo se le registrazioni hanno bisogno della migrazione.."
 
-#: install.php:91
-#, php-format
-msgid "migrated %s entries"
-msgstr "migrate %s voci"
+#~ msgid "adding joinmsg_id field.."
+#~ msgstr "sto aggiungendo il campo joinmsg_id.."
 
-#: install.php:54
-msgid "migrating"
-msgstr "migrazione"
+#~ msgid "already migrated"
+#~ msgstr "già migrato"
 
-#: install.php:99
-msgid "no joinmsg field???"
-msgstr "nessun campo joinmsg???"
+#~ msgid "dropping joinmsg field.."
+#~ msgstr "sto scartando il campo joinmsg.."
 
-#: install.php:40 install.php:62 install.php:101 install.php:119
-msgid "ok"
-msgstr "ok"
+#~ msgid "fatal error"
+#~ msgstr "errore fatale"
+
+#~ msgid "migrate to recording ids.."
+#~ msgstr "sto migrando nelle id registrazioni.."
+
+#~ msgid "migrated %s entries"
+#~ msgstr "migrate %s voci"
+
+#~ msgid "migrating"
+#~ msgstr "migrazione"
+
+#~ msgid "no joinmsg field???"
+#~ msgstr "nessun campo joinmsg???"
+
+#~ msgid "ok"
+#~ msgstr "ok"
 
 #~ msgid "Add Conference"
 #~ msgstr "Aggiungi Conferenza"

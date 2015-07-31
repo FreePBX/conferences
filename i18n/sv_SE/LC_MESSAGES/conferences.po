@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX conferences\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-24 22:35-0400\n"
+"POT-Creation-Date: 2015-07-30 21:20-0700\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -54,19 +54,7 @@ msgstr "Annonsera när användare ansluter/lämnar"
 msgid "Announce user(s) count on joining conference"
 msgstr "Berätta antalet användare när anslutning till konferensen sker"
 
-#: install.php:108
-msgid "Checking for users field.."
-msgstr "Kontrollerar om fälet users finns.."
-
-#: install.php:29
-msgid "Checking if music field present.."
-msgstr "Kontrollerar om musicfältet finns.."
-
-#: install.php:48
-msgid "Checking if recordings need migration.."
-msgstr "Kontrollerar om inspelningar behöver migreras.."
-
-#: Conferences.class.php:93 Conferences.class.php:319 views/grid.php:32
+#: Conferences.class.php:93 Conferences.class.php:324 views/grid.php:32
 msgid "Conference"
 msgstr "Konferens"
 
@@ -92,7 +80,7 @@ msgstr "Konferens:"
 msgid "Conference: %s"
 msgstr "Konferens: %s"
 
-#: Conferences.class.php:317 page.conferences.php:10
+#: Conferences.class.php:322 page.conferences.php:10
 msgid "Conferences"
 msgstr "Konferenser"
 
@@ -100,7 +88,7 @@ msgstr "Konferenser"
 msgid "Conflicting Extensions"
 msgstr "Anknytningarna är i konflikt"
 
-#: Conferences.class.php:302
+#: Conferences.class.php:307
 msgid "Delete"
 msgstr ""
 
@@ -123,13 +111,9 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:320
+#: Conferences.class.php:325
 msgid "Extension"
 msgstr ""
-
-#: install.php:116
-msgid "FATAL error"
-msgstr "ALLVARLIGT fel"
 
 #: views/form.php:168
 msgid "Give this conference a brief name to help you identify it."
@@ -235,7 +219,7 @@ msgstr ""
 msgid "Record the conference call"
 msgstr "Välj om konferensen ska spelas in"
 
-#: Conferences.class.php:297
+#: Conferences.class.php:302
 msgid "Reset"
 msgstr ""
 
@@ -247,7 +231,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:292
+#: Conferences.class.php:297
 msgid "Submit"
 msgstr ""
 
@@ -329,37 +313,9 @@ msgstr ""
 "Du måste sätta en administratörs-PIN för konferensledaren när du väljer "
 "Vänta på ledare"
 
-#: install.php:55
-msgid "adding joinmsg_id field.."
-msgstr "lägger till fältet joinmsg_id.."
-
-#: install.php:33
-msgid "adding music field.."
-msgstr "lägger till musicfältet"
-
-#: install.php:112
-msgid "adding.."
-msgstr "lägger till.."
-
-#: install.php:105
-msgid "already migrated"
-msgstr "redan migrerad"
-
-#: install.php:43 install.php:122
-msgid "already present"
-msgstr "finns redan"
-
 #: views/form.php:76
 msgid "default"
 msgstr "standard"
-
-#: install.php:95
-msgid "dropping joinmsg field.."
-msgstr "kastar fältet joinmsg.."
-
-#: install.php:37 install.php:59 install.php:71 install.php:87
-msgid "fatal error"
-msgstr "allvarligt fel"
 
 #: views/form.php:75
 msgid "inherit"
@@ -369,26 +325,53 @@ msgstr "ärv"
 msgid "is not allowed for your account."
 msgstr "är inte tillåtet för ditt konto."
 
-#: install.php:67
-msgid "migrate to recording ids.."
-msgstr "migrerar till recording ids.."
+#~ msgid "Checking for users field.."
+#~ msgstr "Kontrollerar om fälet users finns.."
 
-#: install.php:91
-#, php-format
-msgid "migrated %s entries"
-msgstr "migrerade %s poster"
+#~ msgid "Checking if music field present.."
+#~ msgstr "Kontrollerar om musicfältet finns.."
 
-#: install.php:54
-msgid "migrating"
-msgstr "migrerar"
+#~ msgid "Checking if recordings need migration.."
+#~ msgstr "Kontrollerar om inspelningar behöver migreras.."
 
-#: install.php:99
-msgid "no joinmsg field???"
-msgstr "inget fält som heter joinmsg???"
+#~ msgid "FATAL error"
+#~ msgstr "ALLVARLIGT fel"
 
-#: install.php:40 install.php:62 install.php:101 install.php:119
-msgid "ok"
-msgstr "ok"
+#~ msgid "adding joinmsg_id field.."
+#~ msgstr "lägger till fältet joinmsg_id.."
+
+#~ msgid "adding music field.."
+#~ msgstr "lägger till musicfältet"
+
+#~ msgid "adding.."
+#~ msgstr "lägger till.."
+
+#~ msgid "already migrated"
+#~ msgstr "redan migrerad"
+
+#~ msgid "already present"
+#~ msgstr "finns redan"
+
+#~ msgid "dropping joinmsg field.."
+#~ msgstr "kastar fältet joinmsg.."
+
+#~ msgid "fatal error"
+#~ msgstr "allvarligt fel"
+
+#~ msgid "migrate to recording ids.."
+#~ msgstr "migrerar till recording ids.."
+
+#~ msgid "migrated %s entries"
+#~ msgstr "migrerade %s poster"
+
+#~ msgid "migrating"
+#~ msgstr "migrerar"
+
+#~ msgid "no joinmsg field???"
+#~ msgstr "inget fält som heter joinmsg???"
+
+#~ msgid "ok"
+#~ msgstr "ok"
 
 #~ msgid "Add Conference"
 #~ msgstr "Lägg till konferens"
