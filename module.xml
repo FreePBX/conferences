@@ -17,36 +17,9 @@
 		*13.0.1alpha2* FREEPBX-9467 Added search hooks
 		*13.0.1alpha1* Visual Changes
 		*12.0.11* Cleanup
-		*12.0.10* Fixes for the below commit
-		*12.0.9* FREEPBX-8539 Move Conference MySQL Settings to Asterisk Database
-		*12.0.8* Allow pinless entry into conference with pins set
-		*12.0.7* Merging everything from 2.11 into this branch
-		*12.0.6* Merge outstanding changes from 2.11 branch
-		*12.0.5* Add BLF feature code (*87)
-		*12.0.4* Integrity Constraint on Insert
-		*12.0.3* Would help to actually HAVE conferences wouldnt it. Ouch
-		*12.0.2* Force functions to use BMO
-		*12.0.1* BMO Module Addition
-		*2.11.0.6* #1953
-		*2.11.0.5* Add BLF feature code (*87)
-		*2.11.0.4* Update license
-		*2.11.0.3* #6098
-		*2.11.0.2* Ensure object isn't duplicated
-		*2.11.0.1* removed leftover dbug statement
-		*2.11.0.0* #6051
-		*2.10.0.8* #5916
-		*2.10.0.7* #5806 Asterisk 10 only
-		*2.10.0.6* #5800 Asterisk 10 only
-		*2.10.0.5* #5752 double pin request
-		*2.10.0.4* #5664 get app_confbridge working on Asterisk 10
-		*2.10.0.3* #5632
-		*2.10.0.2* #5478
-		*2.10.0.1* #5451
-		*2.10.0.0* new version changes
 	</changelog>
 	<depends>
-		<version>12.0.1alpha40</version>
-		<module>recordings ge 12.0.4</module>
+		<module>recordings ge 13.0.2</module>
 	</depends>
 	<menuitems>
 		<conferences needsenginedb="yes">Conferences</conferences>
@@ -65,6 +38,6 @@
 	<supported>
 		<version>13.0</version>
 	</supported>
-	<location>release/2.11/conferences-2.11.0.1.tgz</location>
-	<md5sum>1ff1a30c643c8de67b2d03c30d0caf51</md5sum>
+	<location>undefined</location>
+	<md5sum>undefined</md5sum>
 </module>
