@@ -268,7 +268,6 @@ function conferences_get_config($engine) {
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_MUSIC', '${MOHCLASS}'));
 					$ext->add($contextname, $roomnum, '', new ext_execif('$["${DB(CONFERENCE/'.$roomnum.'/users)}" != ""]','Set','MAX_PARTICIPANTS=${DB(CONFERENCE/'.$roomnum.'/users)}'));
 					$ext->add($contextname, $roomnum, '', new ext_execif('$["${DB(CONFERENCE/'.$roomnum.'/music)}" != "inherit" & "${DB(CONFERENCE/'.$roomnum.'/music)}" != ""]','Set','MEETME_MUSIC=${DB(CONFERENCE/'.$roomnum.'/music)}'));
-					$ext->add($contextname, $roomnum, '', new ext_gosub('1','s','sub-record-check',"conf,$roomnum," . (strstr($room['options'],'r') !== false ? 'always' : 'never')));
 					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DIALSTATUS}" = "ANSWER"]','ANSWERED'));
 					$ext->add($contextname, $roomnum, '', new ext_answer(''));
 					$ext->add($contextname, $roomnum, '', new ext_wait(1));
@@ -278,10 +277,10 @@ function conferences_get_config($engine) {
 
 					// Deal with PINs -- if exist
 					//First check to see if the PIN variable has already been set (through a call file per say)
-					$ext->add($contextname, $roomnum, 'CHECKPIN', new ext_gotoif('$["z${PIN}" = "z"]',"READPIN"));
+					$ext->add($contextname, $roomnum, 'CHECKPIN', new ext_gotoif('$["${PIN}" = ""]',"READPIN"));
 
-					$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x${DB(CONFERENCE/'.$roomnum.'/userpin)}]','USER'));
-					$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x${DB(CONFERENCE/'.$roomnum.'/adminpin)}]','ADMIN'));
+					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DB(CONFERENCE/'.$roomnum.'/userpin)}" != "" & "${PIN}" = "${DB(CONFERENCE/'.$roomnum.'/userpin)}"]','USER'));
+					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DB(CONFERENCE/'.$roomnum.'/adminpin)}" != "" & "${PIN}" = "${DB(CONFERENCE/'.$roomnum.'/adminpin)}"]','ADMIN'));
 
 					//No pins set so ask the user now
 					$ext->add($contextname, $roomnum, 'READPIN', new ext_setvar('PINCOUNT','0'));
@@ -289,9 +288,9 @@ function conferences_get_config($engine) {
 
 					// userpin -- must do always, otherwise if there is just an adminpin
 					// there would be no way to get to the conference !
-					$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x${DB(CONFERENCE/'.$roomnum.'/userpin)}]','USER'));
+					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DB(CONFERENCE/'.$roomnum.'/userpin)}" != "" & "${PIN}" = "${DB(CONFERENCE/'.$roomnum.'/userpin)}"]','USER'));
 					// admin pin -- exists
-					$ext->add($contextname, $roomnum, '', new ext_gotoif('$[x${PIN} = x${DB(CONFERENCE/'.$roomnum.'/adminpin)}]','ADMIN'));
+					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DB(CONFERENCE/'.$roomnum.'/adminpin)}" != "" & "${PIN}" = "${DB(CONFERENCE/'.$roomnum.'/adminpin)}"]','ADMIN'));
 
 					// pin invalid
 					$ext->add($contextname, $roomnum, '', new ext_setvar('PINCOUNT','$[${PINCOUNT}+1]'));
@@ -303,12 +302,14 @@ function conferences_get_config($engine) {
 
 					// admin mode -- only valid if there is an admin pin
 					$ext->add($contextname, $roomnum, 'ADMIN', new ext_gosub('1', 's', $subconfcontext, $roomnum.',ADMIN'));
+					$ext->add($contextname, $roomnum, '', new ext_gosub('1','s','sub-record-check',"conf,$roomnum," . (strstr($room['options'],'r') !== false ? 'always' : 'never')));
 					$ext->add($contextname, $roomnum, '', new ext_execif('$["${DB(CONFERENCE/'.$roomnum.'/joinmsg)}" != ""]','Playback','${DB(CONFERENCE/'.$roomnum.'/joinmsg)}'));
 					$ext->add($contextname, $roomnum, '', new ext_goto('STARTMEETME,1'));
 					//end pin checking
 
 					// user mode
 					$ext->add($contextname, $roomnum, 'USER', new ext_gosub('1', 's', $subconfcontext, $roomnum.',USER'));
+					$ext->add($contextname, $roomnum, '', new ext_gosub('1','s','sub-record-check',"conf,$roomnum," . (strstr($room['options'],'r') !== false ? 'always' : 'never')));
 					$ext->add($contextname, $roomnum, '', new ext_execif('$["${DB(CONFERENCE/'.$roomnum.'/joinmsg)}" != ""]','Playback','${DB(CONFERENCE/'.$roomnum.'/joinmsg)}'));
 					$ext->add($contextname, $roomnum, '', new ext_goto('STARTMEETME,1'));
 
