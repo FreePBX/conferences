@@ -2,13 +2,14 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>13.0.5</version>
+	<version>13.0.7</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
+		*13.0.7* FREEPBX-10273 dont allow blank pins
 		*13.0.5* FREEPBX-9915 - Install issues.
 		*13.0.4* FREEPBX-9850 dont reset the invalid pin count on an invalid pin
 		*13.0.3* Fix undefined indexes when searching for conferences globally

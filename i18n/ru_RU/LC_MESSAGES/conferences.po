@@ -23,15 +23,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-07-30 21:20-0700\n"
+"POT-Creation-Date: 2015-09-22 16:34-0700\n"
 "PO-Revision-Date: 2015-04-25 18:46+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
-"Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/conferences/ru_RU/>\n"
+"Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
+"conferences/ru_RU/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ru_RU\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.2-dev\n"
 
 #: views/grid.php:34
@@ -75,7 +77,7 @@ msgstr ""
 msgid "Conference Room %s : %s"
 msgstr "Конференц-комната %s : %s"
 
-#: functions.inc.php:402
+#: functions.inc.php:403
 msgid "Conference: "
 msgstr "Конференция: "
 
@@ -109,7 +111,10 @@ msgid "Enable Music On Hold when the conference has a single caller"
 msgstr "Использовать музыку в ожидании, если в конференции пока один участник"
 
 #: views/form.php:216
-msgid "Enter a PIN number for the admin user.<br><br>This setting is optional unless the 'leader wait' option is in use, then this PIN will identify the leader.<br>This pin should be different than the user pin."
+msgid ""
+"Enter a PIN number for the admin user.<br><br>This setting is optional "
+"unless the 'leader wait' option is in use, then this PIN will identify the "
+"leader.<br>This pin should be different than the user pin."
 msgstr ""
 
 #: Conferences.class.php:325
@@ -134,18 +139,26 @@ msgstr ""
 
 #: views/form.php:485
 msgid "Maximum Number of users allowed to join this conference."
-msgstr "Максимальное количество пользователей присутствующих одновременно в этой конференции."
+msgstr ""
+"Максимальное количество пользователей присутствующих одновременно в этой "
+"конференции."
 
 #: views/form.php:473
 msgid "Maximum Participants"
 msgstr ""
 
 #: views/form.php:59
-msgid "Message to be played to the caller before joining the conference.<br><br>To add additional recordings please use the \"System Recordings\" MENU above"
+msgid ""
+"Message to be played to the caller before joining the conference.<br><br>To "
+"add additional recordings please use the \"System Recordings\" MENU above"
 msgstr ""
 
 #: views/form.php:102
-msgid "Music (or Commercial) played to the caller while they wait in line for the conference to start. Choose \"inherit\" if you want the MoH class to be what is currently selected, such as by the inbound route.<br><br>  This music is defined in the \"Music on Hold\" above."
+msgid ""
+"Music (or Commercial) played to the caller while they wait in line for the "
+"conference to start. Choose \"inherit\" if you want the MoH class to be what "
+"is currently selected, such as by the inbound route.<br><br>  This music is "
+"defined in the \"Music on Hold\" above."
 msgstr ""
 
 #: views/form.php:391
@@ -157,8 +170,15 @@ msgid "Music on Hold Class"
 msgstr ""
 
 #: views/form.php:512
-msgid "Mute everyone when they initially join the conference. Please note that if you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to Yes to unmute yourself"
-msgstr "Отключать микрофон у каждого кто присоединяется к конференции. Пожалуйста заметьтеесли опция 'Ждать организатора' не установлена у вас в значение 'Yes',значит у вас должна бытьустановленна опция 'Разрешить меню', что бы вы могли включить микрофон"
+msgid ""
+"Mute everyone when they initially join the conference. Please note that if "
+"you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
+"Yes to unmute yourself"
+msgstr ""
+"Отключать микрофон у каждого кто присоединяется к конференции. Пожалуйста "
+"заметьтеесли опция 'Ждать организатора' не установлена у вас в значение "
+"'Yes',значит у вас должна бытьустановленна опция 'Разрешить меню', что бы вы "
+"могли включить микрофон"
 
 #: views/form.php:497
 msgid "Mute on Join"
@@ -188,7 +208,8 @@ msgstr "Введите действительный номер для конфе
 
 #: views/form.php:434
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
-msgstr "Предоставить доступ в меню (участнику или администратору) при нажатии '*'"
+msgstr ""
+"Предоставить доступ в меню (участнику или администратору) при нажатии '*'"
 
 #: views/form.php:310
 msgid "Quiet Mode"
@@ -196,7 +217,9 @@ msgstr ""
 
 #: views/form.php:325
 msgid "Quiet mode (do not play enter/leave sounds)"
-msgstr "Тихий режим (не воспроизводятся сообщения о том кто вошёл или вышел из конференции)"
+msgstr ""
+"Тихий режим (не воспроизводятся сообщения о том кто вошёл или вышел из "
+"конференции)"
 
 #: views/form.php:446
 msgid "Record Conference"
@@ -211,7 +234,11 @@ msgid "Reset"
 msgstr ""
 
 #: views/form.php:298
-msgid "Sets talker detection. Asterisk will sends events on the Manager Interface identifying 0the channel that is talking. The talker will also be identified on the output of the conference list CLI command. Note: If Conferences Pro is installed and licensed this will always be enabled"
+msgid ""
+"Sets talker detection. Asterisk will sends events on the Manager Interface "
+"identifying 0the channel that is talking. The talker will also be identified "
+"on the output of the conference list CLI command. Note: If Conferences Pro "
+"is installed and licensed this will always be enabled"
 msgstr ""
 
 #: Conferences.class.php:297
@@ -231,7 +258,11 @@ msgid "The user and admin can not have the same pin code."
 msgstr "Пользователь и админ не могут иметь одинаковый ПИН код."
 
 #: views/form.php:271
-msgid "Turns on talker optimization. With talker optimization, Asterisk treats talkers who are not speaking as being muted, meaning that no encoding is done on transmission and that received audio that is not registered as talking is omitted, causing no buildup in background noise."
+msgid ""
+"Turns on talker optimization. With talker optimization, Asterisk treats "
+"talkers who are not speaking as being muted, meaning that no encoding is "
+"done on transmission and that received audio that is not registered as "
+"talking is omitted, causing no buildup in background noise."
 msgstr ""
 
 #: views/form.php:144
@@ -251,8 +282,12 @@ msgid "User join/leave"
 msgstr ""
 
 #: views/form.php:244
-msgid "Wait until the conference leader (admin user) arrives before starting the conference"
-msgstr "Ждать организатора конференции (пользователь, администратор) пока он не подсоединится, чтобы начать конференцию"
+msgid ""
+"Wait until the conference leader (admin user) arrives before starting the "
+"conference"
+msgstr ""
+"Ждать организатора конференции (пользователь, администратор) пока он не "
+"подсоединится, чтобы начать конференцию"
 
 #: Conferences.class.php:29
 msgid "Warning! Extension"
@@ -265,16 +300,29 @@ msgid "Yes"
 msgstr "Да"
 
 #: views/form.php:192
-msgid "You can require callers to enter a password before they can enter this conference.<br><br>This setting is optional.<br><br>If either PIN is entered, the user will be prompted to enter a PIN.<br> This pin should be different than the Admin pin"
+msgid ""
+"You can require callers to enter a password before they can enter this "
+"conference.<br><br>This setting is optional.<br><br>If either PIN is "
+"entered, the user will be prompted to enter a PIN.<br> This pin should be "
+"different than the Admin pin"
 msgstr ""
 
 #: assets/js/conferences.js:20
-msgid "You must set Allow Menu to Yes when not using a Leader or Admin in your conference, otherwise you will be unable to unmute yourself"
-msgstr "Вы должны установть опцию 'Разрешить меню' в значение 'Yes', если не исппользуетеопции 'Организатор' или 'Админ' в вашей конференции, иначе вы не сможете сами включить микрофон"
+msgid ""
+"You must set Allow Menu to Yes when not using a Leader or Admin in your "
+"conference, otherwise you will be unable to unmute yourself"
+msgstr ""
+"Вы должны установть опцию 'Разрешить меню' в значение 'Yes', если не "
+"исппользуетеопции 'Организатор' или 'Админ' в вашей конференции, иначе вы не "
+"сможете сами включить микрофон"
 
 #: assets/js/conferences.js:19
-msgid "You must set an admin PIN for the Conference Leader when selecting the leader wait option"
-msgstr "Вы должны ввести пин-код администратора если хотите использовать опцию ожидания модератора"
+msgid ""
+"You must set an admin PIN for the Conference Leader when selecting the "
+"leader wait option"
+msgstr ""
+"Вы должны ввести пин-код администратора если хотите использовать опцию "
+"ожидания модератора"
 
 #: views/form.php:76
 msgid "default"
@@ -297,11 +345,18 @@ msgstr "не разрешён к использованию в в этом ак�
 #~ msgid "Allow Menu:"
 #~ msgstr "Разрешить меню:"
 
-#~ msgid "Allow creation of conference rooms (meet-me) where multiple people can talk together."
-#~ msgstr "Разрешить создание конференц-комнат (meet-me) для общения многих пользователей "
+#~ msgid ""
+#~ "Allow creation of conference rooms (meet-me) where multiple people can "
+#~ "talk together."
+#~ msgstr ""
+#~ "Разрешить создание конференц-комнат (meet-me) для общения многих "
+#~ "пользователей "
 
-#~ msgid "Allow creation of conference rooms where multiple people can talk together"
-#~ msgstr "Разрешить создание конференций, где несколько человек могут говорить друг с другом"
+#~ msgid ""
+#~ "Allow creation of conference rooms where multiple people can talk together"
+#~ msgstr ""
+#~ "Разрешить создание конференций, где несколько человек могут говорить друг "
+#~ "с другом"
 
 #~ msgid "Applications"
 #~ msgstr "Приложения"
@@ -333,8 +388,13 @@ msgstr "не разрешён к использованию в в этом ак�
 #~ msgid "Edit Conference"
 #~ msgstr "Изменить конференцию"
 
-#~ msgid "Enter a PIN number for the admin user.<br><br>This setting is optional unless the 'leader wait' option is in use, then this PIN will identify the leader."
-#~ msgstr "Укажите PIN для администратора.<br><br>Это необязательный параметр, если используется опция 'лидер ждёт', то этот PIN идентифицирует лидера."
+#~ msgid ""
+#~ "Enter a PIN number for the admin user.<br><br>This setting is optional "
+#~ "unless the 'leader wait' option is in use, then this PIN will identify "
+#~ "the leader."
+#~ msgstr ""
+#~ "Укажите PIN для администратора.<br><br>Это необязательный параметр, если "
+#~ "используется опция 'лидер ждёт', то этот PIN идентифицирует лидера."
 
 #~ msgid "FATAL error"
 #~ msgstr "Неустранимая ошибка"
@@ -348,14 +408,35 @@ msgstr "не разрешён к использованию в в этом ак�
 #~ msgid "Maximum Participants:"
 #~ msgstr "Максимально участников:"
 
-#~ msgid "Message to be played to the caller before joining the conference.<br><br>To add additional recordings please use the \"System Recordings\" MENU to the left"
-#~ msgstr "При подсоединении к конференции пользователю будет воспроизведено это сообщение.<br><br>Чтобы создать сообщение воспользуйтесь секцией \"Запись сообщений\" в меню слева"
+#~ msgid ""
+#~ "Message to be played to the caller before joining the conference."
+#~ "<br><br>To add additional recordings please use the \"System Recordings\" "
+#~ "MENU to the left"
+#~ msgstr ""
+#~ "При подсоединении к конференции пользователю будет воспроизведено это "
+#~ "сообщение.<br><br>Чтобы создать сообщение воспользуйтесь секцией \"Запись "
+#~ "сообщений\" в меню слева"
 
-#~ msgid "Message to be played to the caller before joining the conference.<br><br>You must install and enable the \"Systems Recordings\" Module to edit this option"
-#~ msgstr "При подсоединении к конференции пользователю будет воспроизведено сообщение.<br><br>Необходимо инсталлировать и активировать модуль 'Запись сообщений' для изменения этой опции"
+#~ msgid ""
+#~ "Message to be played to the caller before joining the conference."
+#~ "<br><br>You must install and enable the \"Systems Recordings\" Module to "
+#~ "edit this option"
+#~ msgstr ""
+#~ "При подсоединении к конференции пользователю будет воспроизведено "
+#~ "сообщение.<br><br>Необходимо инсталлировать и активировать модуль 'Запись "
+#~ "сообщений' для изменения этой опции"
 
-#~ msgid "Music (or Commercial) played to the caller while they wait in line for the conference to start. Choose \"inherit\" if you want the MoH class to be what is currently selected, such as by the inbound route.<br><br>  This music is defined in the \"Music on Hold\" to the left."
-#~ msgstr "Музыка (или реклама) будет воспроизводится пристутствующим, пока они ожидают начала конференции. Выбирайте \"наследованый\" если хотите использовать тот класс МоН, который уже используется по умолчанию, например - на входящем маршруте.<br><br> Это конфигурируется в модуле Музыка в ожидании слева."
+#~ msgid ""
+#~ "Music (or Commercial) played to the caller while they wait in line for "
+#~ "the conference to start. Choose \"inherit\" if you want the MoH class to "
+#~ "be what is currently selected, such as by the inbound route.<br><br>  "
+#~ "This music is defined in the \"Music on Hold\" to the left."
+#~ msgstr ""
+#~ "Музыка (или реклама) будет воспроизводится пристутствующим, пока они "
+#~ "ожидают начала конференции. Выбирайте \"наследованый\" если хотите "
+#~ "использовать тот класс МоН, который уже используется по умолчанию, "
+#~ "например - на входящем маршруте.<br><br> Это конфигурируется в модуле "
+#~ "Музыка в ожидании слева."
 
 #~ msgid "Music on Hold Class:"
 #~ msgstr "Класс Музыки в ожидании:"
@@ -373,20 +454,32 @@ msgstr "не разрешён к использованию в в этом ак�
 #~ msgstr "Записывать конференцию:"
 
 #~ msgid ""
-#~ "Sets talker detection. Asterisk will sends events on the Manager Interface identifying\n"
-#~ "the channel that is talking. The talker will also be identified on the output of\n"
-#~ "the conference list CLI command. Note: If Conferences Pro is installed and licensed this will always be enabled"
+#~ "Sets talker detection. Asterisk will sends events on the Manager "
+#~ "Interface identifying\n"
+#~ "the channel that is talking. The talker will also be identified on the "
+#~ "output of\n"
+#~ "the conference list CLI command. Note: If Conferences Pro is installed "
+#~ "and licensed this will always be enabled"
 #~ msgstr ""
-#~ "Устанавливает обнаружение говорящего. Астериск посылает событие  на интерфейс\n"
-#~ "менеджера выявления говорящего канала. Говорящий может быть также определен\n"
-#~ "при вводе команды conference list в CLI. Примечание: Если установлен и лицензирован\n"
+#~ "Устанавливает обнаружение говорящего. Астериск посылает событие  на "
+#~ "интерфейс\n"
+#~ "менеджера выявления говорящего канала. Говорящий может быть также "
+#~ "определен\n"
+#~ "при вводе команды conference list в CLI. Примечание: Если установлен и "
+#~ "лицензирован\n"
 #~ "модуль Conferences PRO это всегда будет включено"
 
 #~ msgid ""
-#~ "Sets talker detection. Asterisk will sends events on the Manager Interface identifying\n"
-#~ "the channel that is talking. The talker will also be identified on the output of\n"
+#~ "Sets talker detection. Asterisk will sends events on the Manager "
+#~ "Interface identifying\n"
+#~ "the channel that is talking. The talker will also be identified on the "
+#~ "output of\n"
 #~ "the meetme list CLI command."
-#~ msgstr "Устанавливает распознавание выступающего оратора. Астериск посылает уведомления через AMI - Asterisk Manager Interface идентифицируя канал по которому идёт активное выступление. Выступающий также идентифицируется в командном режиме CLI среди команд модуля meetme."
+#~ msgstr ""
+#~ "Устанавливает распознавание выступающего оратора. Астериск посылает "
+#~ "уведомления через AMI - Asterisk Manager Interface идентифицируя канал по "
+#~ "которому идёт активное выступление. Выступающий также идентифицируется в "
+#~ "командном режиме CLI среди команд модуля meetme."
 
 #~ msgid "Submit Changes"
 #~ msgstr "Применить изменения"
@@ -401,11 +494,18 @@ msgstr "не разрешён к использованию в в этом ак�
 #~ msgstr "Введенное имя конференции слишком длинное."
 
 #~ msgid ""
-#~ "Turns on talker optimization. With talker optimization, Asterisk treats talkers who\n"
-#~ "are not speaking as being muted, meaning that no encoding is done on transmission\n"
-#~ "and that received audio that is not registered as talking is omitted, causing no\n"
+#~ "Turns on talker optimization. With talker optimization, Asterisk treats "
+#~ "talkers who\n"
+#~ "are not speaking as being muted, meaning that no encoding is done on "
+#~ "transmission\n"
+#~ "and that received audio that is not registered as talking is omitted, "
+#~ "causing no\n"
 #~ "buildup in background noise."
-#~ msgstr "Включает оптимизацию для выступающего. При включеной опции Астериск распознаёт пассивных слушателей и приглушает им микрофон, тем самым уменьшая нагрузку на декодирование незадействованных каналов и снижая тем самым общий шум заднего плана."
+#~ msgstr ""
+#~ "Включает оптимизацию для выступающего. При включеной опции Астериск "
+#~ "распознаёт пассивных слушателей и приглушает им микрофон, тем самым "
+#~ "уменьшая нагрузку на декодирование незадействованных каналов и снижая тем "
+#~ "самым общий шум заднего плана."
 
 #~ msgid "User Count:"
 #~ msgstr "Количество участников:"
@@ -416,8 +516,14 @@ msgstr "не разрешён к использованию в в этом ак�
 #~ msgid "User join/leave:"
 #~ msgstr "Участник подсоединился/отключился:"
 
-#~ msgid "You can require callers to enter a password before they can enter this conference.<br><br>This setting is optional.<br><br>If either PIN is entered, the user will be prompted to enter a PIN."
-#~ msgstr "Можно требовать ввести пароль для входя пользователей в конференцию.<br><br>Это необязательный параметр.<br><br>Если указан PIN в этом поле, пользователю будет предложено набрать его."
+#~ msgid ""
+#~ "You can require callers to enter a password before they can enter this "
+#~ "conference.<br><br>This setting is optional.<br><br>If either PIN is "
+#~ "entered, the user will be prompted to enter a PIN."
+#~ msgstr ""
+#~ "Можно требовать ввести пароль для входя пользователей в конференцию."
+#~ "<br><br>Это необязательный параметр.<br><br>Если указан PIN в этом поле, "
+#~ "пользователю будет предложено набрать его."
 
 #~ msgid "adding joinmsg_id field.."
 #~ msgstr "добавляется поле joinmsg_id.."
