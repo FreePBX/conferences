@@ -105,10 +105,7 @@ msgid "Enable Music On Hold when the conference has a single caller"
 msgstr "Aktivera pausmusik när det endast är en användare i konferensen"
 
 #: views/form.php:216
-msgid ""
-"Enter a PIN number for the admin user.<br><br>This setting is optional "
-"unless the 'leader wait' option is in use, then this PIN will identify the "
-"leader.<br>This pin should be different than the user pin."
+msgid "Enter a PIN number for the admin user.<br><br>This setting is optional unless the 'leader wait' option is in use, then this PIN will identify the leader.<br>This pin should be different than the user pin."
 msgstr ""
 
 #: Conferences.class.php:325
@@ -140,17 +137,11 @@ msgid "Maximum Participants"
 msgstr ""
 
 #: views/form.php:59
-msgid ""
-"Message to be played to the caller before joining the conference.<br><br>To "
-"add additional recordings please use the \"System Recordings\" MENU above"
+msgid "Message to be played to the caller before joining the conference.<br><br>To add additional recordings please use the \"System Recordings\" MENU above"
 msgstr ""
 
 #: views/form.php:102
-msgid ""
-"Music (or Commercial) played to the caller while they wait in line for the "
-"conference to start. Choose \"inherit\" if you want the MoH class to be what "
-"is currently selected, such as by the inbound route.<br><br>  This music is "
-"defined in the \"Music on Hold\" above."
+msgid "Music (or Commercial) played to the caller while they wait in line for the conference to start. Choose \"inherit\" if you want the MoH class to be what is currently selected, such as by the inbound route.<br><br>  This music is defined in the \"Music on Hold\" above."
 msgstr ""
 
 #: views/form.php:391
@@ -162,14 +153,8 @@ msgid "Music on Hold Class"
 msgstr ""
 
 #: views/form.php:512
-msgid ""
-"Mute everyone when they initially join the conference. Please note that if "
-"you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
-"Yes to unmute yourself"
-msgstr ""
-"Stäng av ljudet för alla som ansluter till konferensen. Notera att om du "
-"inte har 'Vänta på ledare' aktiverad måste du ha 'Tillåt meny' aktiverad för "
-"att kunna slå på ljudetför dig själv"
+msgid "Mute everyone when they initially join the conference. Please note that if you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to Yes to unmute yourself"
+msgstr "Stäng av ljudet för alla som ansluter till konferensen. Notera att om du inte har 'Vänta på ledare' aktiverad måste du ha 'Tillåt meny' aktiverad för att kunna slå på ljudetför dig själv"
 
 #: views/form.php:497
 msgid "Mute on Join"
@@ -199,9 +184,7 @@ msgstr "Skriv in ett giltig konferensnummer"
 
 #: views/form.php:434
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
-msgstr ""
-"Ge tillgång till en meny (användare eller administratör) när '*' trycks på "
-"telefonen"
+msgstr "Ge tillgång till en meny (användare eller administratör) när '*' trycks på telefonen"
 
 #: views/form.php:310
 msgid "Quiet Mode"
@@ -224,11 +207,7 @@ msgid "Reset"
 msgstr ""
 
 #: views/form.php:298
-msgid ""
-"Sets talker detection. Asterisk will sends events on the Manager Interface "
-"identifying 0the channel that is talking. The talker will also be identified "
-"on the output of the conference list CLI command. Note: If Conferences Pro "
-"is installed and licensed this will always be enabled"
+msgid "Sets talker detection. Asterisk will sends events on the Manager Interface identifying 0the channel that is talking. The talker will also be identified on the output of the conference list CLI command. Note: If Conferences Pro is installed and licensed this will always be enabled"
 msgstr ""
 
 #: Conferences.class.php:297
@@ -248,11 +227,7 @@ msgid "The user and admin can not have the same pin code."
 msgstr ""
 
 #: views/form.php:271
-msgid ""
-"Turns on talker optimization. With talker optimization, Asterisk treats "
-"talkers who are not speaking as being muted, meaning that no encoding is "
-"done on transmission and that received audio that is not registered as "
-"talking is omitted, causing no buildup in background noise."
+msgid "Turns on talker optimization. With talker optimization, Asterisk treats talkers who are not speaking as being muted, meaning that no encoding is done on transmission and that received audio that is not registered as talking is omitted, causing no buildup in background noise."
 msgstr ""
 
 #: views/form.php:144
@@ -272,12 +247,8 @@ msgid "User join/leave"
 msgstr ""
 
 #: views/form.php:244
-msgid ""
-"Wait until the conference leader (admin user) arrives before starting the "
-"conference"
-msgstr ""
-"Vänta till konferensledaren (administratören) ansluter innan konferensen "
-"startas"
+msgid "Wait until the conference leader (admin user) arrives before starting the conference"
+msgstr "Vänta till konferensledaren (administratören) ansluter innan konferensen startas"
 
 #: Conferences.class.php:29
 msgid "Warning! Extension"
@@ -290,28 +261,16 @@ msgid "Yes"
 msgstr "Ja"
 
 #: views/form.php:192
-msgid ""
-"You can require callers to enter a password before they can enter this "
-"conference.<br><br>This setting is optional.<br><br>If either PIN is "
-"entered, the user will be prompted to enter a PIN.<br> This pin should be "
-"different than the Admin pin"
+msgid "You can require callers to enter a password before they can enter this conference.<br><br>This setting is optional.<br><br>If either PIN is entered, the user will be prompted to enter a PIN.<br> This pin should be different than the Admin pin"
 msgstr ""
 
 #: assets/js/conferences.js:20
-msgid ""
-"You must set Allow Menu to Yes when not using a Leader or Admin in your "
-"conference, otherwise you will be unable to unmute yourself"
-msgstr ""
-"Du måste aktivera Tillåt meny om du inte använer Ledare eller Admin i din "
-"konferens, annars kan du inte aktivera ljudet för dig själv"
+msgid "You must set Allow Menu to Yes when not using a Leader or Admin in your conference, otherwise you will be unable to unmute yourself"
+msgstr "Du måste aktivera Tillåt meny om du inte använer Ledare eller Admin i din konferens, annars kan du inte aktivera ljudet för dig själv"
 
 #: assets/js/conferences.js:19
-msgid ""
-"You must set an admin PIN for the Conference Leader when selecting the "
-"leader wait option"
-msgstr ""
-"Du måste sätta en administratörs-PIN för konferensledaren när du väljer "
-"Vänta på ledare"
+msgid "You must set an admin PIN for the Conference Leader when selecting the leader wait option"
+msgstr "Du måste sätta en administratörs-PIN för konferensledaren när du väljer Vänta på ledare"
 
 #: views/form.php:76
 msgid "default"
@@ -325,6 +284,17 @@ msgstr "ärv"
 msgid "is not allowed for your account."
 msgstr "är inte tillåtet för ditt konto."
 
+#: page.conferences.php:232
+msgid ""
+"Sets talker detection. Asterisk will sends events on the Manager Interface identifying\n"
+"the channel that is talking. The talker will also be identified on the output of\n"
+"the conference list CLI command. Note: If Conferences Pro is installed and licensed this will always be enabled"
+msgstr ""
+
+#: page.conferences.php:419
+msgid "The Conference Name provided is too long."
+msgstr ""
+
 #~ msgid "Add Conference"
 #~ msgstr "Lägg till konferens"
 
@@ -334,9 +304,7 @@ msgstr "är inte tillåtet för ditt konto."
 #~ msgid "Allow Menu:"
 #~ msgstr "Tillåt meny:"
 
-#~ msgid ""
-#~ "Allow creation of conference rooms (meet-me) where multiple people can "
-#~ "talk together."
+#~ msgid "Allow creation of conference rooms (meet-me) where multiple people can talk together."
 #~ msgstr "Modulen ger möjlighet att skapa konferenser"
 
 #~ msgid "Checking for users field.."
@@ -366,14 +334,8 @@ msgstr "är inte tillåtet för ditt konto."
 #~ msgid "Edit Conference"
 #~ msgstr "Redigera konferens"
 
-#~ msgid ""
-#~ "Enter a PIN number for the admin user.<br><br>This setting is optional "
-#~ "unless the 'leader wait' option is in use, then this PIN will identify "
-#~ "the leader."
-#~ msgstr ""
-#~ "Skriv in ett lösenord (endast siffror) för administratören.<br>Denna "
-#~ "inställning är valfri om inte 'Invänta ledare' är valt, då kommer detta "
-#~ "lösenord att identifiera ledaren."
+#~ msgid "Enter a PIN number for the admin user.<br><br>This setting is optional unless the 'leader wait' option is in use, then this PIN will identify the leader."
+#~ msgstr "Skriv in ett lösenord (endast siffror) för administratören.<br>Denna inställning är valfri om inte 'Invänta ledare' är valt, då kommer detta lösenord att identifiera ledaren."
 
 #~ msgid "FATAL error"
 #~ msgstr "ALLVARLIGT fel"
@@ -390,34 +352,14 @@ msgstr "är inte tillåtet för ditt konto."
 #~ msgid "Maximum Participants:"
 #~ msgstr "Max antal deltagare"
 
-#~ msgid ""
-#~ "Message to be played to the caller before joining the conference."
-#~ "<br><br>To add additional recordings please use the \"System Recordings\" "
-#~ "MENU to the left"
-#~ msgstr ""
-#~ "Meddelande som ska spelas upp för uppringaren innan anslutning sker till "
-#~ "konferensen.<br><br>För att lägga till fler inspelningar väljer du "
-#~ "\"Systeminspelningar\" i menyn till vänster"
+#~ msgid "Message to be played to the caller before joining the conference.<br><br>To add additional recordings please use the \"System Recordings\" MENU to the left"
+#~ msgstr "Meddelande som ska spelas upp för uppringaren innan anslutning sker till konferensen.<br><br>För att lägga till fler inspelningar väljer du \"Systeminspelningar\" i menyn till vänster"
 
-#~ msgid ""
-#~ "Message to be played to the caller before joining the conference."
-#~ "<br><br>You must install and enable the \"Systems Recordings\" Module to "
-#~ "edit this option"
-#~ msgstr ""
-#~ "Meddelande som ska spelas upp för uppringaren innan anslutning sker till "
-#~ "konferensen.<br><br>Du måste installera och aktivera modulen "
-#~ "\"Systeminspelningar\" för att kunna redigera detta val"
+#~ msgid "Message to be played to the caller before joining the conference.<br><br>You must install and enable the \"Systems Recordings\" Module to edit this option"
+#~ msgstr "Meddelande som ska spelas upp för uppringaren innan anslutning sker till konferensen.<br><br>Du måste installera och aktivera modulen \"Systeminspelningar\" för att kunna redigera detta val"
 
-#~ msgid ""
-#~ "Music (or Commercial) played to the caller while they wait in line for "
-#~ "the conference to start. Choose \"inherit\" if you want the MoH class to "
-#~ "be what is currently selected, such as by the inbound route.<br><br>  "
-#~ "This music is defined in the \"Music on Hold\" to the left."
-#~ msgstr ""
-#~ "Musik (eller reklam) som spelas upp för uppringaren när dom väntar på att "
-#~ "konferensen ska starta. Välj \"ärv\" om du vill att musikklassen ska vara "
-#~ "samma klass som redan är definierad i inkommande väg.<br><br> Musiken "
-#~ "definieras i \"Pausmusik\" i menyn till vänster"
+#~ msgid "Music (or Commercial) played to the caller while they wait in line for the conference to start. Choose \"inherit\" if you want the MoH class to be what is currently selected, such as by the inbound route.<br><br>  This music is defined in the \"Music on Hold\" to the left."
+#~ msgstr "Musik (eller reklam) som spelas upp för uppringaren när dom väntar på att konferensen ska starta. Välj \"ärv\" om du vill att musikklassen ska vara samma klass som redan är definierad i inkommande väg.<br><br> Musiken definieras i \"Pausmusik\" i menyn till vänster"
 
 #~ msgid "Music on Hold Class:"
 #~ msgstr "Klasser för pausmusik"
@@ -435,15 +377,10 @@ msgstr "är inte tillåtet för ditt konto."
 #~ msgstr "Spela in konferens:"
 
 #~ msgid ""
-#~ "Sets talker detection. Asterisk will sends events on the Manager "
-#~ "Interface identifying\n"
-#~ "the channel that is talking. The talker will also be identified on the "
-#~ "output of\n"
+#~ "Sets talker detection. Asterisk will sends events on the Manager Interface identifying\n"
+#~ "the channel that is talking. The talker will also be identified on the output of\n"
 #~ "the meetme list CLI command."
-#~ msgstr ""
-#~ "Tillåter taldetektering. Asterisk kommer att skicka händelser i "
-#~ "Managerinterfacet där identifiering av vilken kanal det är som innehåller "
-#~ "tal. Talaren kommer också att identifieras och visas på meete listan"
+#~ msgstr "Tillåter taldetektering. Asterisk kommer att skicka händelser i Managerinterfacet där identifiering av vilken kanal det är som innehåller tal. Talaren kommer också att identifieras och visas på meete listan"
 
 #~ msgid "Submit Changes"
 #~ msgstr "Spara ändringar"
@@ -455,17 +392,11 @@ msgstr "är inte tillåtet för ditt konto."
 #~ msgstr "Taloptimering"
 
 #~ msgid ""
-#~ "Turns on talker optimization. With talker optimization, Asterisk treats "
-#~ "talkers who\n"
-#~ "are not speaking as being muted, meaning that no encoding is done on "
-#~ "transmission\n"
-#~ "and that received audio that is not registered as talking is omitted, "
-#~ "causing no\n"
+#~ "Turns on talker optimization. With talker optimization, Asterisk treats talkers who\n"
+#~ "are not speaking as being muted, meaning that no encoding is done on transmission\n"
+#~ "and that received audio that is not registered as talking is omitted, causing no\n"
 #~ "buildup in background noise."
-#~ msgstr ""
-#~ "Sätter på taloptimering. Med taloptimering är personer som inte pratar "
-#~ "betraktade som mikrofonavstängda. Detta betyder att ingen kodning sker "
-#~ "och mottaget ljud som inte detekteras som prat elimineras"
+#~ msgstr "Sätter på taloptimering. Med taloptimering är personer som inte pratar betraktade som mikrofonavstängda. Detta betyder att ingen kodning sker och mottaget ljud som inte detekteras som prat elimineras"
 
 #~ msgid "User Count:"
 #~ msgstr "Räkna användare:"
@@ -476,14 +407,8 @@ msgstr "är inte tillåtet för ditt konto."
 #~ msgid "User join/leave:"
 #~ msgstr "Användare ansluter/lämnar:"
 
-#~ msgid ""
-#~ "You can require callers to enter a password before they can enter this "
-#~ "conference.<br><br>This setting is optional.<br><br>If either PIN is "
-#~ "entered, the user will be prompted to enter a PIN."
-#~ msgstr ""
-#~ "Du kan kräva att uppringare anger ett lösenord innan de når konferensen."
-#~ "<br><br>Denna inställning är valfri.<br><br>Om ett lösenord (endast "
-#~ "siffror) skrivs in får uppringaren en fråga om att mata in ett lösenord."
+#~ msgid "You can require callers to enter a password before they can enter this conference.<br><br>This setting is optional.<br><br>If either PIN is entered, the user will be prompted to enter a PIN."
+#~ msgstr "Du kan kräva att uppringare anger ett lösenord innan de når konferensen.<br><br>Denna inställning är valfri.<br><br>Om ett lösenord (endast siffror) skrivs in får uppringaren en fråga om att mata in ett lösenord."
 
 #~ msgid "adding joinmsg_id field.."
 #~ msgstr "lägger till fältet joinmsg_id.."
