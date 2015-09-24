@@ -297,7 +297,8 @@ function conferences_get_config($engine) {
 					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DB(CONFERENCE/'.$roomnum.'/userpin)}" != "" & "${PIN}" = "${DB(CONFERENCE/'.$roomnum.'/userpin)}"]','USER'));
 					// admin pin -- exists
 					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DB(CONFERENCE/'.$roomnum.'/adminpin)}" != "" & "${PIN}" = "${DB(CONFERENCE/'.$roomnum.'/adminpin)}"]','ADMIN'));
-
+					//fall back if no pin exists on this room they are a user
+					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DB(CONFERENCE/'.$roomnum.'/userpin)}" = ""]','USER'));
 					// pin invalid
 					$ext->add($contextname, $roomnum, '', new ext_setvar('PINCOUNT','$[${PINCOUNT}+1]'));
 					$ext->add($contextname, $roomnum, '', new ext_gotoif('$[${PINCOUNT}>3]', "h,1"));
