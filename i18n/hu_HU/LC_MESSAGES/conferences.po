@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-24 16:16-0700\n"
+"POT-Creation-Date: 2015-09-24 16:27-0700\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
 "Language-Team: Magyar <freepbx@freepbx.hu>\n"
@@ -87,7 +87,7 @@ msgstr ""
 msgid "Conference:"
 msgstr "Konferencia:"
 
-#: functions.inc.php:409
+#: functions.inc.php:410
 msgid "Conference: "
 msgstr "Konferencia:"
 

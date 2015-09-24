@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-24 16:16-0700\n"
+"POT-Creation-Date: 2015-09-24 16:27-0700\n"
 "PO-Revision-Date: 2010-01-23 00:00+0300\n"
 "Last-Translator: Shimi <shimi@shimi.net>\n"
 "MIME-Version: 1.0\n"
@@ -86,7 +86,7 @@ msgstr ""
 msgid "Conference:"
 msgstr "ועידה:"
 
-#: functions.inc.php:409
+#: functions.inc.php:410
 msgid "Conference: "
 msgstr ""
 

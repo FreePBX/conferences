@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-24 16:16-0700\n"
+"POT-Creation-Date: 2015-09-24 16:27-0700\n"
 "PO-Revision-Date: 2015-04-29 21:25+0200\n"
 "Last-Translator: philippebolduc <philippe@florenceinc.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -88,7 +88,7 @@ msgstr "Chambre de conférence %s : %s"
 msgid "Conference:"
 msgstr "Conférence:"
 
-#: functions.inc.php:409
+#: functions.inc.php:410
 msgid "Conference: "
 msgstr "Conférence: "
 
