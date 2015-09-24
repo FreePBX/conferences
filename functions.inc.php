@@ -279,7 +279,13 @@ function conferences_get_config($engine) {
 					//First check to see if the PIN variable has already been set (through a call file per say)
 					$ext->add($contextname, $roomnum, 'CHECKPIN', new ext_gotoif('$["${PIN}" = ""]',"READPIN"));
 
+					//Are user pin and admin pin both blank? Ok then they area user
+					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DB(CONFERENCE/'.$roomnum.'/userpin)}" = "" & "${DB(CONFERENCE/'.$roomnum.'/adminpin)}" = ""]','USER'));
+
+					//Check if user
 					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DB(CONFERENCE/'.$roomnum.'/userpin)}" != "" & "${PIN}" = "${DB(CONFERENCE/'.$roomnum.'/userpin)}"]','USER'));
+
+					//Check if admin
 					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DB(CONFERENCE/'.$roomnum.'/adminpin)}" != "" & "${PIN}" = "${DB(CONFERENCE/'.$roomnum.'/adminpin)}"]','ADMIN'));
 
 					//No pins set so ask the user now
