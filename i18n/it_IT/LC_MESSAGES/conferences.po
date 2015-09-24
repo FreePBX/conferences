@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-24 16:18-0700\n"
+"POT-Creation-Date: 2015-09-24 16:29-0700\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Francesco Romano <francesco.romano@alteclab.it>\n"
 "Language-Team: Italian\n"
@@ -70,7 +70,7 @@ msgstr ""
 msgid "Conference Room %s : %s"
 msgstr "Stanza di Conferenza %s: %s"
 
-#: functions.inc.php:409
+#: functions.inc.php:410
 msgid "Conference: "
 msgstr "Conferenza:"
 
@@ -104,7 +104,10 @@ msgid "Enable Music On Hold when the conference has a single caller"
 msgstr "Attiva la Musica di Attesa quando c'è solo un utente nella conferenza"
 
 #: views/form.php:216
-msgid "Enter a PIN number for the admin user.<br><br>This setting is optional unless the 'leader wait' option is in use, then this PIN will identify the leader.<br>This pin should be different than the user pin."
+msgid ""
+"Enter a PIN number for the admin user.<br><br>This setting is optional "
+"unless the 'leader wait' option is in use, then this PIN will identify the "
+"leader.<br>This pin should be different than the user pin."
 msgstr ""
 
 #: Conferences.class.php:325
@@ -136,11 +139,17 @@ msgid "Maximum Participants"
 msgstr ""
 
 #: views/form.php:59
-msgid "Message to be played to the caller before joining the conference.<br><br>To add additional recordings please use the \"System Recordings\" MENU above"
+msgid ""
+"Message to be played to the caller before joining the conference.<br><br>To "
+"add additional recordings please use the \"System Recordings\" MENU above"
 msgstr ""
 
 #: views/form.php:102
-msgid "Music (or Commercial) played to the caller while they wait in line for the conference to start. Choose \"inherit\" if you want the MoH class to be what is currently selected, such as by the inbound route.<br><br>  This music is defined in the \"Music on Hold\" above."
+msgid ""
+"Music (or Commercial) played to the caller while they wait in line for the "
+"conference to start. Choose \"inherit\" if you want the MoH class to be what "
+"is currently selected, such as by the inbound route.<br><br>  This music is "
+"defined in the \"Music on Hold\" above."
 msgstr ""
 
 #: views/form.php:391
@@ -152,7 +161,10 @@ msgid "Music on Hold Class"
 msgstr ""
 
 #: views/form.php:512
-msgid "Mute everyone when they initially join the conference. Please note that if you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to Yes to unmute yourself"
+msgid ""
+"Mute everyone when they initially join the conference. Please note that if "
+"you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
+"Yes to unmute yourself"
 msgstr ""
 
 #: views/form.php:497
@@ -183,7 +195,9 @@ msgstr "Prego immettere un Numero di Conferenza valido"
 
 #: views/form.php:434
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
-msgstr "Presenta il menu (utente o amministratore) quando si preme '*' ('invia' al menu)"
+msgstr ""
+"Presenta il menu (utente o amministratore) quando si preme '*' ('invia' al "
+"menu)"
 
 #: views/form.php:310
 msgid "Quiet Mode"
@@ -191,7 +205,9 @@ msgstr ""
 
 #: views/form.php:325
 msgid "Quiet mode (do not play enter/leave sounds)"
-msgstr "Attiva la modalità silenziosa, non riproduce i suoni quando si entra o esce dalla conferenza"
+msgstr ""
+"Attiva la modalità silenziosa, non riproduce i suoni quando si entra o esce "
+"dalla conferenza"
 
 #: views/form.php:446
 msgid "Record Conference"
@@ -206,7 +222,11 @@ msgid "Reset"
 msgstr ""
 
 #: views/form.php:298
-msgid "Sets talker detection. Asterisk will sends events on the Manager Interface identifying 0the channel that is talking. The talker will also be identified on the output of the conference list CLI command. Note: If Conferences Pro is installed and licensed this will always be enabled"
+msgid ""
+"Sets talker detection. Asterisk will sends events on the Manager Interface "
+"identifying 0the channel that is talking. The talker will also be identified "
+"on the output of the conference list CLI command. Note: If Conferences Pro "
+"is installed and licensed this will always be enabled"
 msgstr ""
 
 #: Conferences.class.php:297
@@ -226,7 +246,11 @@ msgid "The user and admin can not have the same pin code."
 msgstr ""
 
 #: views/form.php:271
-msgid "Turns on talker optimization. With talker optimization, Asterisk treats talkers who are not speaking as being muted, meaning that no encoding is done on transmission and that received audio that is not registered as talking is omitted, causing no buildup in background noise."
+msgid ""
+"Turns on talker optimization. With talker optimization, Asterisk treats "
+"talkers who are not speaking as being muted, meaning that no encoding is "
+"done on transmission and that received audio that is not registered as "
+"talking is omitted, causing no buildup in background noise."
 msgstr ""
 
 #: views/form.php:144
@@ -246,8 +270,11 @@ msgid "User join/leave"
 msgstr ""
 
 #: views/form.php:244
-msgid "Wait until the conference leader (admin user) arrives before starting the conference"
-msgstr "Attende l'arrivo dell'amministratore (leader) prima di iniziare la conferenza"
+msgid ""
+"Wait until the conference leader (admin user) arrives before starting the "
+"conference"
+msgstr ""
+"Attende l'arrivo dell'amministratore (leader) prima di iniziare la conferenza"
 
 #: Conferences.class.php:29
 msgid "Warning! Extension"
@@ -260,16 +287,26 @@ msgid "Yes"
 msgstr "Sì"
 
 #: views/form.php:192
-msgid "You can require callers to enter a password before they can enter this conference.<br><br>This setting is optional.<br><br>If either PIN is entered, the user will be prompted to enter a PIN.<br> This pin should be different than the Admin pin"
+msgid ""
+"You can require callers to enter a password before they can enter this "
+"conference.<br><br>This setting is optional.<br><br>If either PIN is "
+"entered, the user will be prompted to enter a PIN.<br> This pin should be "
+"different than the Admin pin"
 msgstr ""
 
 #: assets/js/conferences.js:20
-msgid "You must set Allow Menu to Yes when not using a Leader or Admin in your conference, otherwise you will be unable to unmute yourself"
+msgid ""
+"You must set Allow Menu to Yes when not using a Leader or Admin in your "
+"conference, otherwise you will be unable to unmute yourself"
 msgstr ""
 
 #: assets/js/conferences.js:19
-msgid "You must set an admin PIN for the Conference Leader when selecting the leader wait option"
-msgstr "Devi impostare un PIN per il Leader della Conferenza quando si seleziona l'opzione attesa amministratore"
+msgid ""
+"You must set an admin PIN for the Conference Leader when selecting the "
+"leader wait option"
+msgstr ""
+"Devi impostare un PIN per il Leader della Conferenza quando si seleziona "
+"l'opzione attesa amministratore"
 
 #: views/form.php:76
 msgid "default"
@@ -282,73 +319,6 @@ msgstr ""
 #: Conferences.class.php:29
 msgid "is not allowed for your account."
 msgstr "Non hai i permessi."
-
-#: install.php:108
-msgid "Checking for users field.."
-msgstr ""
-
-#: install.php:29
-msgid "Checking if music field present.."
-msgstr ""
-
-#: install.php:116
-msgid "FATAL error"
-msgstr ""
-
-#: page.conferences.php:362
-msgid "Maximum Participants:"
-msgstr ""
-
-#: page.conferences.php:307
-msgid "Music (or Commercial) played to the caller while they wait in line for the conference to start. Choose \"inherit\" if you want the MoH class to be what is currently selected, such as by the inbound route.<br><br>  This music is defined in the \"Music on Hold\" to the left."
-msgstr ""
-
-#: page.conferences.php:307
-msgid "Music on Hold Class:"
-msgstr ""
-
-#: page.conferences.php:376
-msgid "Mute on Join:"
-msgstr ""
-
-#: page.conferences.php:232
-msgid ""
-"Sets talker detection. Asterisk will sends events on the Manager Interface identifying\n"
-"the channel that is talking. The talker will also be identified on the output of\n"
-"the conference list CLI command. Note: If Conferences Pro is installed and licensed this will always be enabled"
-msgstr ""
-
-#: page.conferences.php:232
-msgid "Talker Detection:"
-msgstr ""
-
-#: page.conferences.php:215
-msgid "Talker Optimization:"
-msgstr ""
-
-#: page.conferences.php:419
-msgid "The Conference Name provided is too long."
-msgstr ""
-
-#: page.conferences.php:215
-msgid ""
-"Turns on talker optimization. With talker optimization, Asterisk treats talkers who\n"
-"are not speaking as being muted, meaning that no encoding is done on transmission\n"
-"and that received audio that is not registered as talking is omitted, causing no\n"
-"buildup in background noise."
-msgstr ""
-
-#: install.php:33
-msgid "adding music field.."
-msgstr ""
-
-#: install.php:112
-msgid "adding.."
-msgstr ""
-
-#: install.php:43 install.php:122
-msgid "already present"
-msgstr ""
 
 #~ msgid "Add Conference"
 #~ msgstr "Aggiungi Conferenza"
@@ -380,8 +350,14 @@ msgstr ""
 #~ msgid "Edit Conference"
 #~ msgstr "Modifica Conferenza"
 
-#~ msgid "Enter a PIN number for the admin user.<br><br>This setting is optional unless the 'leader wait' option is in use, then this PIN will identify the leader."
-#~ msgstr "Inserire il numero PIN per l'utente amministratore.<br><br>Questa impostazione è opzionale fino a quando non si seleziona 'Attendere amministratore' che lo indentificherà tramite questo PIN."
+#~ msgid ""
+#~ "Enter a PIN number for the admin user.<br><br>This setting is optional "
+#~ "unless the 'leader wait' option is in use, then this PIN will identify "
+#~ "the leader."
+#~ msgstr ""
+#~ "Inserire il numero PIN per l'utente amministratore.<br><br>Questa "
+#~ "impostazione è opzionale fino a quando non si seleziona 'Attendere "
+#~ "amministratore' che lo indentificherà tramite questo PIN."
 
 #~ msgid "Join Message:"
 #~ msgstr "Messaggio di ingresso:"
@@ -389,11 +365,23 @@ msgstr ""
 #~ msgid "Leader Wait:"
 #~ msgstr "Attendere l'amministratore:"
 
-#~ msgid "Message to be played to the caller before joining the conference.<br><br>To add additional recordings please use the \"System Recordings\" MENU to the left"
-#~ msgstr "Selezionare il messaggio da riprodurre ai chiamanti prima di entrate in conferenza.<br><br>Bisogna installare e attivare il modulo \"Registrazioni di Sistema\" prima di modificare questa opzione."
+#~ msgid ""
+#~ "Message to be played to the caller before joining the conference."
+#~ "<br><br>To add additional recordings please use the \"System Recordings\" "
+#~ "MENU to the left"
+#~ msgstr ""
+#~ "Selezionare il messaggio da riprodurre ai chiamanti prima di entrate in "
+#~ "conferenza.<br><br>Bisogna installare e attivare il modulo "
+#~ "\"Registrazioni di Sistema\" prima di modificare questa opzione."
 
-#~ msgid "Message to be played to the caller before joining the conference.<br><br>You must install and enable the \"Systems Recordings\" Module to edit this option"
-#~ msgstr "Selezionare il messaggio da riprodurre ai chiamanti prima di entrare in conferenza.<br><br>Bisogna installare e attivare il modulo \"Registrazioni di Sistema\" prima di modificare questa opzione."
+#~ msgid ""
+#~ "Message to be played to the caller before joining the conference."
+#~ "<br><br>You must install and enable the \"Systems Recordings\" Module to "
+#~ "edit this option"
+#~ msgstr ""
+#~ "Selezionare il messaggio da riprodurre ai chiamanti prima di entrare in "
+#~ "conferenza.<br><br>Bisogna installare e attivare il modulo "
+#~ "\"Registrazioni di Sistema\" prima di modificare questa opzione."
 
 #~ msgid "Music on Hold:"
 #~ msgstr "Musica di Attesa"
@@ -416,8 +404,14 @@ msgstr ""
 #~ msgid "User join/leave:"
 #~ msgstr "Ingresso/uscita utenti:"
 
-#~ msgid "You can require callers to enter a password before they can enter this conference.<br><br>This setting is optional.<br><br>If either PIN is entered, the user will be prompted to enter a PIN."
-#~ msgstr "Si può richiedere ai chiamanti di digitare una password prima di entrare in conferenza.<br><br>Questa impostazione è opzionale.<br><br>Se nessun PIN è stato inserito il sistema richiederà di digitarlo."
+#~ msgid ""
+#~ "You can require callers to enter a password before they can enter this "
+#~ "conference.<br><br>This setting is optional.<br><br>If either PIN is "
+#~ "entered, the user will be prompted to enter a PIN."
+#~ msgstr ""
+#~ "Si può richiedere ai chiamanti di digitare una password prima di entrare "
+#~ "in conferenza.<br><br>Questa impostazione è opzionale.<br><br>Se nessun "
+#~ "PIN è stato inserito il sistema richiederà di digitarlo."
 
 #~ msgid "adding joinmsg_id field.."
 #~ msgstr "sto aggiungendo il campo joinmsg_id.."
