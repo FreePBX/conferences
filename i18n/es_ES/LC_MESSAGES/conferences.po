@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo conferences module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-22 16:26-0700\n"
+"POT-Creation-Date: 2015-09-24 16:16-0700\n"
 "PO-Revision-Date: 2015-03-23 21:31+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -91,7 +91,7 @@ msgstr "Sala de conferencia %s: %s"
 msgid "Conference:"
 msgstr "Conferencia:"
 
-#: functions.inc.php:403
+#: functions.inc.php:409
 msgid "Conference: "
 msgstr "Conferencia: "
 
