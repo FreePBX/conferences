@@ -10,86 +10,90 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-24 16:29-0700\n"
-"PO-Revision-Date: 2015-09-24 16:29-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2015-10-10 15:49+0200\n"
+"Last-Translator: Media <mousavi.media@gmail.com>\n"
+"Language-Team: Persian "
+"<http://weblate.freepbx.org/projects/freepbx/conferences/fa/>\n"
+"Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.2-dev\n"
 
 #: views/grid.php:34
 msgid "Actions"
-msgstr ""
+msgstr "عملیات"
 
 #: page.conferences.php:17 views/grid.php:27
 msgid "Add"
-msgstr ""
+msgstr "افزودن"
 
 #: views/form.php:204
 msgid "Admin PIN"
-msgstr ""
+msgstr "PIN مدیر"
 
 #: views/form.php:419
 msgid "Allow Menu"
-msgstr ""
+msgstr "منو مجاز"
 
 #: views/form.php:379
 msgid "Announce user join/leave"
-msgstr ""
+msgstr "اعلام عضویت/لغو عضویت کاربر"
 
 #: views/form.php:352
 msgid "Announce user(s) count on joining conference"
-msgstr ""
+msgstr "اعلام تعداد کاربر(های) عضو شده در کنفرانس"
 
 #: Conferences.class.php:93 Conferences.class.php:324 views/grid.php:32
 msgid "Conference"
-msgstr ""
+msgstr "کنفرانس"
 
 #: views/form.php:156
 msgid "Conference Name"
-msgstr ""
+msgstr "نام کنفرانس"
 
 #: views/form.php:132
 msgid "Conference Number"
-msgstr ""
+msgstr "شماره کنفرانس"
 
 #: functions.inc.php:176
 #, php-format
 msgid "Conference Room %s : %s"
-msgstr ""
+msgstr "اتاق کنفرانس %s: %s"
 
 #: functions.inc.php:410
 msgid "Conference: "
-msgstr ""
+msgstr "کنفرانس ： "
 
 #: functions.inc.php:195
 #, php-format
 msgid "Conference: %s"
-msgstr ""
+msgstr "کنفرانس ：%s"
 
 #: Conferences.class.php:322 page.conferences.php:10
 msgid "Conferences"
-msgstr ""
+msgstr "کنفرانس ها"
 
 #: views/form.php:112
 msgid "Conflicting Extensions"
-msgstr ""
+msgstr "داخلی های متضاد"
 
 #: Conferences.class.php:307
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: views/grid.php:33
 msgid "Description"
-msgstr ""
+msgstr "شرح"
 
 #: page.conferences.php:15
 msgid "Edit"
-msgstr ""
+msgstr "ویرایش"
 
 #: views/form.php:406
 msgid "Enable Music On Hold when the conference has a single caller"
-msgstr ""
+msgstr "وقتی کنفرانس یک تماس گیرنده دارد موسیقی انتظار تماس را فعال کنید"
 
 #: views/form.php:216
 msgid ""
@@ -100,31 +104,31 @@ msgstr ""
 
 #: Conferences.class.php:325
 msgid "Extension"
-msgstr ""
+msgstr "داخلی"
 
 #: views/form.php:168
 msgid "Give this conference a brief name to help you identify it."
-msgstr ""
+msgstr "به این کنفرانس نامی اختصاص دهید تا به شما در یافتن آن کمک کند."
 
 #: views/form.php:45
 msgid "Join Message"
-msgstr ""
+msgstr "پیام عضویت"
 
 #: views/form.php:229
 msgid "Leader Wait"
-msgstr ""
+msgstr "صبر رهبر"
 
 #: views/bootnav.php:1
 msgid "List Conferences"
-msgstr ""
+msgstr "فهرست کنفرانس ها"
 
 #: views/form.php:485
 msgid "Maximum Number of users allowed to join this conference."
-msgstr ""
+msgstr "بیشترین تعداد کاربران که میتوانند در کنفرانس عضو شوند."
 
 #: views/form.php:473
 msgid "Maximum Participants"
-msgstr ""
+msgstr "بیشترین شرکت کنندگان"
 
 #: views/form.php:59
 msgid ""
@@ -142,7 +146,7 @@ msgstr ""
 
 #: views/form.php:391
 msgid "Music on Hold"
-msgstr ""
+msgstr "موسیقی انتظار تماس"
 
 #: views/form.php:88
 msgid "Music on Hold Class"
@@ -157,29 +161,29 @@ msgstr ""
 
 #: views/form.php:497
 msgid "Mute on Join"
-msgstr ""
+msgstr "عضویت بی صدا"
 
 #: views/form.php:236 views/form.php:263 views/form.php:290 views/form.php:317
 #: views/form.php:344 views/form.php:371 views/form.php:398 views/form.php:426
 #: views/form.php:453 views/form.php:504
 msgid "No"
-msgstr ""
+msgstr "خیر"
 
 #: views/form.php:477
 msgid "No Limit"
-msgstr ""
+msgstr "بدون محدودیت"
 
 #: views/form.php:31
 msgid "None"
-msgstr ""
+msgstr "هیچ"
 
 #: assets/js/conferences.js:18
 msgid "Please enter a valid Conference Name"
-msgstr ""
+msgstr "نام کنفرانس معتبر وارد کنید"
 
 #: assets/js/conferences.js:17
 msgid "Please enter a valid Conference Number"
-msgstr ""
+msgstr "تعداد کنفرانس معتبر وارد کنید"
 
 #: views/form.php:434
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
@@ -187,7 +191,7 @@ msgstr ""
 
 #: views/form.php:310
 msgid "Quiet Mode"
-msgstr ""
+msgstr "حالت سکوت"
 
 #: views/form.php:325
 msgid "Quiet mode (do not play enter/leave sounds)"
@@ -195,15 +199,15 @@ msgstr ""
 
 #: views/form.php:446
 msgid "Record Conference"
-msgstr ""
+msgstr "ضبط کنفرانس"
 
 #: views/form.php:461
 msgid "Record the conference call"
-msgstr ""
+msgstr "ضبط تماس کنفرانس"
 
 #: Conferences.class.php:302
 msgid "Reset"
-msgstr ""
+msgstr "بازنشانی"
 
 #: views/form.php:298
 msgid ""
@@ -215,19 +219,19 @@ msgstr ""
 
 #: Conferences.class.php:297
 msgid "Submit"
-msgstr ""
+msgstr "ثبت"
 
 #: views/form.php:283
 msgid "Talker Detection"
-msgstr ""
+msgstr "تشخیص گوینده"
 
 #: views/form.php:256
 msgid "Talker Optimization"
-msgstr ""
+msgstr "بهینه سازی گوینده"
 
 #: assets/js/conferences.js:21
 msgid "The user and admin can not have the same pin code."
-msgstr ""
+msgstr "کاربر و مدیر نمیتوانند پین کد یکسان داشته باشند."
 
 #: views/form.php:271
 msgid ""
@@ -291,12 +295,12 @@ msgstr ""
 
 #: views/form.php:76
 msgid "default"
-msgstr ""
+msgstr "پیش فرض"
 
 #: views/form.php:75
 msgid "inherit"
-msgstr ""
+msgstr "ارث بردن"
 
 #: Conferences.class.php:29
 msgid "is not allowed for your account."
-msgstr ""
+msgstr "برای حساب شما مجاز نمیباشد."
