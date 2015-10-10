@@ -1,0 +1,302 @@
+# This file is part of FreePBX.
+#
+# For licensing information, please see the file named LICENSE located in the module directory
+#
+# FreePBX language template for conferences
+# Copyright (C) 2008-2015 Sangoma, Inc.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-09-24 16:29-0700\n"
+"PO-Revision-Date: 2015-09-24 16:29-0700\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: views/grid.php:34
+msgid "Actions"
+msgstr ""
+
+#: page.conferences.php:17 views/grid.php:27
+msgid "Add"
+msgstr ""
+
+#: views/form.php:204
+msgid "Admin PIN"
+msgstr ""
+
+#: views/form.php:419
+msgid "Allow Menu"
+msgstr ""
+
+#: views/form.php:379
+msgid "Announce user join/leave"
+msgstr ""
+
+#: views/form.php:352
+msgid "Announce user(s) count on joining conference"
+msgstr ""
+
+#: Conferences.class.php:93 Conferences.class.php:324 views/grid.php:32
+msgid "Conference"
+msgstr ""
+
+#: views/form.php:156
+msgid "Conference Name"
+msgstr ""
+
+#: views/form.php:132
+msgid "Conference Number"
+msgstr ""
+
+#: functions.inc.php:176
+#, php-format
+msgid "Conference Room %s : %s"
+msgstr ""
+
+#: functions.inc.php:410
+msgid "Conference: "
+msgstr ""
+
+#: functions.inc.php:195
+#, php-format
+msgid "Conference: %s"
+msgstr ""
+
+#: Conferences.class.php:322 page.conferences.php:10
+msgid "Conferences"
+msgstr ""
+
+#: views/form.php:112
+msgid "Conflicting Extensions"
+msgstr ""
+
+#: Conferences.class.php:307
+msgid "Delete"
+msgstr ""
+
+#: views/grid.php:33
+msgid "Description"
+msgstr ""
+
+#: page.conferences.php:15
+msgid "Edit"
+msgstr ""
+
+#: views/form.php:406
+msgid "Enable Music On Hold when the conference has a single caller"
+msgstr ""
+
+#: views/form.php:216
+msgid ""
+"Enter a PIN number for the admin user.<br><br>This setting is optional "
+"unless the 'leader wait' option is in use, then this PIN will identify the "
+"leader.<br>This pin should be different than the user pin."
+msgstr ""
+
+#: Conferences.class.php:325
+msgid "Extension"
+msgstr ""
+
+#: views/form.php:168
+msgid "Give this conference a brief name to help you identify it."
+msgstr ""
+
+#: views/form.php:45
+msgid "Join Message"
+msgstr ""
+
+#: views/form.php:229
+msgid "Leader Wait"
+msgstr ""
+
+#: views/bootnav.php:1
+msgid "List Conferences"
+msgstr ""
+
+#: views/form.php:485
+msgid "Maximum Number of users allowed to join this conference."
+msgstr ""
+
+#: views/form.php:473
+msgid "Maximum Participants"
+msgstr ""
+
+#: views/form.php:59
+msgid ""
+"Message to be played to the caller before joining the conference.<br><br>To "
+"add additional recordings please use the \"System Recordings\" MENU above"
+msgstr ""
+
+#: views/form.php:102
+msgid ""
+"Music (or Commercial) played to the caller while they wait in line for the "
+"conference to start. Choose \"inherit\" if you want the MoH class to be what "
+"is currently selected, such as by the inbound route.<br><br>  This music is "
+"defined in the \"Music on Hold\" above."
+msgstr ""
+
+#: views/form.php:391
+msgid "Music on Hold"
+msgstr ""
+
+#: views/form.php:88
+msgid "Music on Hold Class"
+msgstr ""
+
+#: views/form.php:512
+msgid ""
+"Mute everyone when they initially join the conference. Please note that if "
+"you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
+"Yes to unmute yourself"
+msgstr ""
+
+#: views/form.php:497
+msgid "Mute on Join"
+msgstr ""
+
+#: views/form.php:236 views/form.php:263 views/form.php:290 views/form.php:317
+#: views/form.php:344 views/form.php:371 views/form.php:398 views/form.php:426
+#: views/form.php:453 views/form.php:504
+msgid "No"
+msgstr ""
+
+#: views/form.php:477
+msgid "No Limit"
+msgstr ""
+
+#: views/form.php:31
+msgid "None"
+msgstr ""
+
+#: assets/js/conferences.js:18
+msgid "Please enter a valid Conference Name"
+msgstr ""
+
+#: assets/js/conferences.js:17
+msgid "Please enter a valid Conference Number"
+msgstr ""
+
+#: views/form.php:434
+msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
+msgstr ""
+
+#: views/form.php:310
+msgid "Quiet Mode"
+msgstr ""
+
+#: views/form.php:325
+msgid "Quiet mode (do not play enter/leave sounds)"
+msgstr ""
+
+#: views/form.php:446
+msgid "Record Conference"
+msgstr ""
+
+#: views/form.php:461
+msgid "Record the conference call"
+msgstr ""
+
+#: Conferences.class.php:302
+msgid "Reset"
+msgstr ""
+
+#: views/form.php:298
+msgid ""
+"Sets talker detection. Asterisk will sends events on the Manager Interface "
+"identifying 0the channel that is talking. The talker will also be identified "
+"on the output of the conference list CLI command. Note: If Conferences Pro "
+"is installed and licensed this will always be enabled"
+msgstr ""
+
+#: Conferences.class.php:297
+msgid "Submit"
+msgstr ""
+
+#: views/form.php:283
+msgid "Talker Detection"
+msgstr ""
+
+#: views/form.php:256
+msgid "Talker Optimization"
+msgstr ""
+
+#: assets/js/conferences.js:21
+msgid "The user and admin can not have the same pin code."
+msgstr ""
+
+#: views/form.php:271
+msgid ""
+"Turns on talker optimization. With talker optimization, Asterisk treats "
+"talkers who are not speaking as being muted, meaning that no encoding is "
+"done on transmission and that received audio that is not registered as "
+"talking is omitted, causing no buildup in background noise."
+msgstr ""
+
+#: views/form.php:144
+msgid "Use this number to dial into the conference."
+msgstr ""
+
+#: views/form.php:337
+msgid "User Count"
+msgstr ""
+
+#: views/form.php:180
+msgid "User PIN"
+msgstr ""
+
+#: views/form.php:364
+msgid "User join/leave"
+msgstr ""
+
+#: views/form.php:244
+msgid ""
+"Wait until the conference leader (admin user) arrives before starting the "
+"conference"
+msgstr ""
+
+#: Conferences.class.php:29
+msgid "Warning! Extension"
+msgstr ""
+
+#: views/form.php:234 views/form.php:261 views/form.php:288 views/form.php:315
+#: views/form.php:342 views/form.php:369 views/form.php:396 views/form.php:424
+#: views/form.php:451 views/form.php:502
+msgid "Yes"
+msgstr ""
+
+#: views/form.php:192
+msgid ""
+"You can require callers to enter a password before they can enter this "
+"conference.<br><br>This setting is optional.<br><br>If either PIN is "
+"entered, the user will be prompted to enter a PIN.<br> This pin should be "
+"different than the Admin pin"
+msgstr ""
+
+#: assets/js/conferences.js:20
+msgid ""
+"You must set Allow Menu to Yes when not using a Leader or Admin in your "
+"conference, otherwise you will be unable to unmute yourself"
+msgstr ""
+
+#: assets/js/conferences.js:19
+msgid ""
+"You must set an admin PIN for the Conference Leader when selecting the "
+"leader wait option"
+msgstr ""
+
+#: views/form.php:76
+msgid "default"
+msgstr ""
+
+#: views/form.php:75
+msgid "inherit"
+msgstr ""
+
+#: Conferences.class.php:29
+msgid "is not allowed for your account."
+msgstr ""
