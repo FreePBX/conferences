@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX conferences\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-24 16:29-0700\n"
+"POT-Creation-Date: 2015-10-20 14:28-0700\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -34,7 +34,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: page.conferences.php:17 views/grid.php:27
+#: page.conferences.php:17 views/grid.php:27 views/rnav.php:20
 msgid "Add"
 msgstr ""
 
@@ -54,7 +54,8 @@ msgstr "Annonsera när användare ansluter/lämnar"
 msgid "Announce user(s) count on joining conference"
 msgstr "Berätta antalet användare när anslutning till konferensen sker"
 
-#: Conferences.class.php:93 Conferences.class.php:324 views/grid.php:32
+#: Conferences.class.php:101 Conferences.class.php:333 views/grid.php:32
+#: views/rnav.php:25
 msgid "Conference"
 msgstr "Konferens"
 
@@ -80,7 +81,7 @@ msgstr "Konferens:"
 msgid "Conference: %s"
 msgstr "Konferens: %s"
 
-#: Conferences.class.php:322 page.conferences.php:10
+#: Conferences.class.php:331 page.conferences.php:10
 msgid "Conferences"
 msgstr "Konferenser"
 
@@ -88,11 +89,11 @@ msgstr "Konferenser"
 msgid "Conflicting Extensions"
 msgstr "Anknytningarna är i konflikt"
 
-#: Conferences.class.php:307
+#: Conferences.class.php:316
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:33
+#: views/grid.php:33 views/rnav.php:26
 msgid "Description"
 msgstr ""
 
@@ -111,7 +112,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:325
+#: Conferences.class.php:334
 msgid "Extension"
 msgstr ""
 
@@ -127,7 +128,7 @@ msgstr ""
 msgid "Leader Wait"
 msgstr ""
 
-#: views/bootnav.php:1
+#: views/rnav.php:19
 msgid "List Conferences"
 msgstr ""
 
@@ -189,11 +190,11 @@ msgstr "Ingen begränsning"
 msgid "None"
 msgstr "Inget"
 
-#: assets/js/conferences.js:18
+#: assets/js/conferences.js:20
 msgid "Please enter a valid Conference Name"
 msgstr "Skriv in ett giltigt konferensnamn"
 
-#: assets/js/conferences.js:17
+#: assets/js/conferences.js:19
 msgid "Please enter a valid Conference Number"
 msgstr "Skriv in ett giltig konferensnummer"
 
@@ -219,7 +220,7 @@ msgstr ""
 msgid "Record the conference call"
 msgstr "Välj om konferensen ska spelas in"
 
-#: Conferences.class.php:302
+#: Conferences.class.php:311
 msgid "Reset"
 msgstr ""
 
@@ -231,7 +232,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:297
+#: Conferences.class.php:306
 msgid "Submit"
 msgstr ""
 
@@ -243,7 +244,7 @@ msgstr ""
 msgid "Talker Optimization"
 msgstr ""
 
-#: assets/js/conferences.js:21
+#: assets/js/conferences.js:23
 msgid "The user and admin can not have the same pin code."
 msgstr ""
 
@@ -297,7 +298,7 @@ msgid ""
 "different than the Admin pin"
 msgstr ""
 
-#: assets/js/conferences.js:20
+#: assets/js/conferences.js:22
 msgid ""
 "You must set Allow Menu to Yes when not using a Leader or Admin in your "
 "conference, otherwise you will be unable to unmute yourself"
@@ -305,7 +306,7 @@ msgstr ""
 "Du måste aktivera Tillåt meny om du inte använer Ledare eller Admin i din "
 "konferens, annars kan du inte aktivera ljudet för dig själv"
 
-#: assets/js/conferences.js:19
+#: assets/js/conferences.js:21
 msgid ""
 "You must set an admin PIN for the Conference Leader when selecting the "
 "leader wait option"
