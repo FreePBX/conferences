@@ -70,6 +70,14 @@ class Conferences implements BMO {
 		}
 	}
 
+	public function getRightNav($request) {
+		if(isset($request['view']) && $request['view'] == "form") {
+			return load_view(__DIR__."/views/rnav.php",array());
+		} else {
+			return '';
+		}
+	}
+
 	/**
 	 * Search hook for global search
 	 * @param  string $query   The query string
@@ -98,8 +106,8 @@ class Conferences implements BMO {
 
 	public function install() {
 
-		$sql = "CREATE TABLE IF NOT EXISTS `meetme` ( `exten` VARCHAR( 50 ) NOT NULL , `options` VARCHAR( 15 ) , 
-				`userpin` VARCHAR( 50 ) , `adminpin` VARCHAR( 50 ) , `description` VARCHAR( 50 ) , 
+		$sql = "CREATE TABLE IF NOT EXISTS `meetme` ( `exten` VARCHAR( 50 ) NOT NULL , `options` VARCHAR( 15 ) ,
+				`userpin` VARCHAR( 50 ) , `adminpin` VARCHAR( 50 ) , `description` VARCHAR( 50 ) ,
 				`joinmsg_id` INTEGER, `music` VARCHAR(80), `users` TINYINT DEFAULT 0) ";
 		$this->db->query($sql);
 		//Migrate bad option
@@ -237,6 +245,7 @@ class Conferences implements BMO {
 			$sth->execute(array($room));
 			$ret = $sth->fetch(PDO::FETCH_ASSOC);
 			$asettings = $this->astman->database_show('CONFERENCE/'.$room);
+			$ret = is_array($ret) ? $ret : array();
 			foreach($ret as $key => $value) {
 				if($key == 'description') {
 					continue;

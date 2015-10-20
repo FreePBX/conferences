@@ -1,7 +1,9 @@
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright 2015 Sangoma Technologies.
 //
-
+$("#conferences-side").on("click-row.bs.table", function(row, $element) {
+	window.location = "?display=conferences&view=form&extdisplay="+$element[0];
+});
 //Javascript moved from page.conferences.php
 var theForm = document.editMM;
 if(theForm){

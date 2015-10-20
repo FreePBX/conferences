@@ -12,26 +12,18 @@ foreach ($confs as $conf) {
 	$crows .= '<td>';
 	$crows .= $conf[1];
 	$crows .= '</td>';
-	$crows .= '<td>';
-	$crows .= '<a href="?display=conferences&view=form&extdisplay='.$conf[0].'">';
-	$crows .= '<i class="fa fa-edit"></i>';
-	$crows .= '</a>&nbsp;';
-	$crows .= '<a class="delAction" href="?display=conferences&action=delete&extdisplay='.$conf[0].'">';
-	$crows .= '<i class="fa fa-trash"></i>';
-	$crows .= '</a>&nbsp;';
-	$crows .= '</td>';
 	$crows .= '</tr>';
 }
 ?>
-<div id="toolbar-all">
+<div id="toolbar-all-side">
+	<a href="config.php?display=conferences" class="btn"><i class="fa fa-list"></i>&nbsp; <?php echo _("List Conferences") ?></a>
 	<a class="btn btn-primary" href="config.php?display=conferences&amp;view=form"><i class="fa fa-plus"></i> <?php echo _("Add")?></a>
 </div>
-<table data-toolbar="#toolbar-all" data-search="true" data-toggle="table" data-pagination="true" class="table table-striped">
+<table id="conferences-side" data-toolbar="#toolbar-all-side" data-search="true" data-toggle="table" class="table">
 <thead>
 	<tr>
 		<th data-sortable="true"><?php echo _("Conference")?></th>
 		<th data-sortable="true"><?php echo _("Description")?></th>
-		<th><?php echo _("Actions")?></th>
 	</tr>
 </thead>
 <tbody>

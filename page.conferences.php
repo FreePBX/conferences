@@ -28,16 +28,11 @@ switch($request['view']){
 	<h1><?php echo $heading ?></h1>
 	<div class = "display">
 		<div class="row">
-			<div class="<?php echo $request['fw_popover']?'col-sm-12':'col-sm-9'?>">
+			<div class="col-sm-12">
 				<div class="fpbx-container">
 					<div class="display <?php echo ($request['view'] == "form") ? "full" : "no"?>-border">
 						<?php echo $content ?>
 					</div>
-				</div>
-			</div>
-			<div class="col-sm-3 hidden-xs bootnav <?php echo $request['fw_popover']?'hidden':''?>">
-				<div class="list-group">
-					<?php echo load_view(__DIR__.'/views/bootnav.php', array('request' => $request));?>
 				</div>
 			</div>
 		</div>
