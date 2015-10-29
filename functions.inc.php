@@ -92,14 +92,20 @@ class conferences_conf {
 					'3'  => 'admin_kick_last',
 					'*4' => 'decrease_listening_volume',
 					'4'  => 'decrease_listening_volume',
+					'*5' => 'reset_listening_volume',
+					'5'  => 'dreset_listening_volume',
 					'*6' => 'increase_listening_volume',
 					'6'  => 'increase_listening_volume',
 					'*7' => 'decrease_talking_volume',
 					'7'  => 'decrease_talking_volume',
-					'*8' => 'no_op',
-					'8'  => 'no_op',
+					'*8' => 'reset_talking_volume',
+					'8'  => 'reset_talking_volume',
 					'*9' => 'increase_talking_volume',
 					'9'  => 'increase_talking_volume',
+					'#' => 'leave_conference',
+					'*#'  => 'leave_conference',
+					'*0' => 'admin_toggle_mute_participants',
+					'0' => 'admin_toggle_mute_participants',
 				);
 			}
 			// Default if nothing configured
@@ -110,14 +116,18 @@ class conferences_conf {
 					'1'  => 'toggle_mute',
 					'*4' => 'decrease_listening_volume',
 					'4'  => 'decrease_listening_volume',
+					'*5' => 'reset_listening_volume',
+					'5'  => 'dreset_listening_volume',
 					'*6' => 'increase_listening_volume',
 					'6'  => 'increase_listening_volume',
 					'*7' => 'decrease_talking_volume',
 					'7'  => 'decrease_talking_volume',
-					'*8' => 'leave_conference',
-					'8'  => 'leave_conference',
+					'*8' => 'no_op',
+					'8'  => 'no_op',
 					'*9' => 'increase_talking_volume',
 					'9'  => 'increase_talking_volume',
+					'#' => 'leave_conference',
+					'*#'  => 'leave_conference',
 				);
 			}
 			if (empty($this->_confbridge['menu']['user_menu'])) {
