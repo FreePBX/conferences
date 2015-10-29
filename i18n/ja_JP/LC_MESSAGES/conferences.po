@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-24 16:27-0700\n"
+"POT-Creation-Date: 2015-10-29 13:36-0700\n"
 "PO-Revision-Date: 2015-07-27 13:33+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -97,7 +97,7 @@ msgstr "音声会議の番号："
 msgid "Conference Options"
 msgstr "音声会議のオプション"
 
-#: functions.inc.php:176
+#: functions.inc.php:186
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "音声会議室 %s ： %s"
@@ -106,11 +106,11 @@ msgstr "音声会議室 %s ： %s"
 msgid "Conference:"
 msgstr "音声会議："
 
-#: functions.inc.php:410
+#: functions.inc.php:420
 msgid "Conference: "
 msgstr "音声会議： "
 
-#: functions.inc.php:195
+#: functions.inc.php:205
 #, php-format
 msgid "Conference: %s"
 msgstr "音声会議： %s"
