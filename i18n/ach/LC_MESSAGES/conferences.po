@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-20 14:28-0700\n"
+"POT-Creation-Date: 2015-10-29 13:38-0700\n"
 "PO-Revision-Date: 2015-09-24 16:29-0700\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -54,16 +54,16 @@ msgstr ""
 msgid "Conference Number"
 msgstr ""
 
-#: functions.inc.php:176
+#: functions.inc.php:186
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr ""
 
-#: functions.inc.php:410
+#: functions.inc.php:420
 msgid "Conference: "
 msgstr ""
 
-#: functions.inc.php:195
+#: functions.inc.php:205
 #, php-format
 msgid "Conference: %s"
 msgstr ""

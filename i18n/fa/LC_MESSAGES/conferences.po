@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-20 14:28-0700\n"
+"POT-Creation-Date: 2015-10-29 13:38-0700\n"
 "PO-Revision-Date: 2015-10-10 15:49+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/"
@@ -58,16 +58,16 @@ msgstr "نام کنفرانس"
 msgid "Conference Number"
 msgstr "شماره کنفرانس"
 
-#: functions.inc.php:176
+#: functions.inc.php:186
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "اتاق کنفرانس %s: %s"
 
-#: functions.inc.php:410
+#: functions.inc.php:420
 msgid "Conference: "
 msgstr "کنفرانس ： "
 
-#: functions.inc.php:195
+#: functions.inc.php:205
 #, php-format
 msgid "Conference: %s"
 msgstr "کنفرانس ：%s"
