@@ -349,11 +349,13 @@ function conferences_get_config($engine) {
 
 				$subconfcontext = 'sub-conference-options';
 				$ext->add($subconfcontext, 's', '', new ext_noop('Setting options for Conference ${ARG1}'));
+				//
+				$ext->add($subconfcontext, 's', '', new ext_execif('$["${DB(CONFERENCE/${ARG1}/language)}" == ""]','Set','CONFBRIDGE(bridge,language)=${CHANNEL(language)}','Set','CONFBRIDGE(bridge,language)=${DB(CONFERENCE/${ARG1}/language)}'));
 				$ext->add($subconfcontext, 's', '', new ext_goto('${ARG2}'));
 				if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
 					//w
 					$ext->add($subconfcontext, 's', 'USER', new ext_execif('${REGEX("w" ${DB(CONFERENCE/${ARG1}/options)})}','Set','CONFBRIDGE(user,wait_marked)=yes'));
-					$ext->add($subconfcontext, 's', '', new ext_execif('${REGEX("w" ${DB(CONFERENCE/${ARG1}/options)})}','Set','CONFBRIDGE(user,end_marked)=yes'));
+					$ext->add($subconfcontext, 's', '', new ext_execif('${REGEX("x" ${DB(CONFERENCE/${ARG1}/options)})}','Set','CONFBRIDGE(user,end_marked)=yes'));
 
 					//s
 					$ext->add($subconfcontext, 's', '', new ext_execif('${REGEX("s" ${DB(CONFERENCE/${ARG1}/options)})}','Set','MENU_PROFILE=user_menu'));

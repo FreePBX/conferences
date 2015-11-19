@@ -1,6 +1,6 @@
 <?php
 // vim: set ai ts=4 sw=4 ft=php:
-class Conferences implements BMO {
+class Conferences extends \FreePBX_Helpers implements BMO {
 	private $module = 'Conferences';
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
@@ -36,7 +36,7 @@ class Conferences implements BMO {
 					$usage_arr = framework_check_extension_usage($account);
 					if (!empty($usage_arr)) {
 						$conflict_url = framework_display_extension_usage_alert($usage_arr);
-					} elseif ($this->addConference($account,$request['name'],$request['userpin'],$request['adminpin'],$request['options'],$request['joinmsg_id'],$music,$users) !== false) {
+					} elseif ($this->addConference($account,$request['name'],$request['userpin'],$request['adminpin'],$request['options'],$request['joinmsg_id'],$music,$users,$request['adminpin']) !== false) {
 						needreload();
 					}
 				break;
@@ -63,7 +63,7 @@ class Conferences implements BMO {
 						$this->deleteConference($account);
 					}
 
-					$this->addConference($account,$request['name'],$request['userpin'],$request['adminpin'],$request['options'],$request['joinmsg_id'],$music,$users);
+					$this->addConference($account,$request['name'],$request['userpin'],$request['adminpin'],$request['options'],$request['joinmsg_id'],$music,$users,$request['language']);
 					needreload();
 				break;
 			}
@@ -105,23 +105,36 @@ class Conferences implements BMO {
 
 
 	public function install() {
-
 		$sql = "CREATE TABLE IF NOT EXISTS `meetme` ( `exten` VARCHAR( 50 ) NOT NULL , `options` VARCHAR( 15 ) ,
 				`userpin` VARCHAR( 50 ) , `adminpin` VARCHAR( 50 ) , `description` VARCHAR( 50 ) ,
-				`joinmsg_id` INTEGER, `music` VARCHAR(80), `users` TINYINT DEFAULT 0) ";
+				`joinmsg_id` INTEGER, `music` VARCHAR(80), `users` TINYINT DEFAULT 0, `language` VARCHAR(10) NOT NULL DEFAULT '') ";
 		$this->db->query($sql);
+
+		global $db;
+		if (!$db->getAll('SHOW COLUMNS FROM meetme WHERE FIELD = "language"')) {
+			out(_("Adding language column"));
+			$sql = "ALTER TABLE `meetme` ADD COLUMN `language` varchar (10) NOT NULL DEFAULT ''";
+			$result = $db->query($sql);
+		}
 		//Migrate bad option
 		$confs = $this->listConferences();
 		if (!is_array($confs)) {
 			return true;
 		}
+		$leaderleave = method_exists($this,"getConfig") && $this->getConfig("leaderleave");
 		foreach($confs as $conf) {
 			$conf = $this->getConference($conf[0]);
 			$optselect = strpos($conf['options'], "i");
 			if($optselect) {
 				$conf['options'] = str_replace("i","I",$conf['options']);
-				$this->updateConferenceSettingById($conf['exten'],'options',$conf['options']);
 			}
+			if(!$leaderleave && strpos($conf['options'], "x") === false) {
+				$conf['options'] .= 'x';
+			}
+			$this->updateConferenceSettingById($conf['exten'],'options',$conf['options']);
+		}
+		if(method_exists($this,"setConfig")) {
+			$this->setConfig("leaderleave",true);
 		}
 	}
 	public function uninstall() {
@@ -169,11 +182,11 @@ class Conferences implements BMO {
 	/**
 	 * Update Conference Setting
 	 * @param {int} $room  The conference room to update
-	 * @param {string} $key   The keyword of the setting to change ("description","userpin","adminpin","options","joinmsg_id","music","users")
+	 * @param {string} $key   The keyword of the setting to change ("description","userpin","adminpin","options","joinmsg_id","music","users","language")
 	 * @param {string} $value The value of the setting
 	 */
 	public function updateConferenceSettingById($room,$key,$value) {
-		$valid = array("description","userpin","adminpin","options","joinmsg_id","music","users");
+		$valid = array("description","userpin","adminpin","options","joinmsg_id","music","users","language");
 		if(!in_array($key,$valid)) {
 			return false;
 		}
@@ -199,21 +212,18 @@ class Conferences implements BMO {
 	 * @param {string} $music        MOH to play on hold
 	 * @param {int} $users
 	 */
-	public function addConference($room,$name,$userpin,$adminpin,$options,$joinmsg_id = null,$music = '',$users = 0) {
-		$sql = "INSERT INTO meetme (exten,description,userpin,adminpin,options,joinmsg_id,music,users) values (?,?,?,?,?,?,?,?)";
+	public function addConference($room,$name,$userpin,$adminpin,$options,$joinmsg_id = null,$music = '',$users = 0,$language='') {
+		$sql = "INSERT INTO meetme (exten,description,userpin,adminpin,options,joinmsg_id,music,users,language) values (?,?,?,?,?,?,?,?,?)";
 		$sth = $this->db->prepare($sql);
-		try {
-			$sth->execute(array($room,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users));
-			$this->astman->database_put('CONFERENCE/'.$room,'userpin',$userpin);
-			$this->astman->database_put('CONFERENCE/'.$room,'adminpin',$adminpin);
-			$this->astman->database_put('CONFERENCE/'.$room,'options',$options);
-			$this->astman->database_put('CONFERENCE/'.$room,'music',$music);
-			$this->astman->database_put('CONFERENCE/'.$room,'users',$users);
-			$recording = $this->FreePBX->Recordings->getFilenameById($joinmsg_id);
-			$this->astman->database_put('CONFERENCE/'.$room,'joinmsg',(!empty($recording) ? $recording : ''));
-		} catch(\Exception $e) {
-			return false;
-		}
+		$sth->execute(array($room,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users,$language));
+		$this->astman->database_put('CONFERENCE/'.$room,'language',$language);
+		$this->astman->database_put('CONFERENCE/'.$room,'userpin',$userpin);
+		$this->astman->database_put('CONFERENCE/'.$room,'adminpin',$adminpin);
+		$this->astman->database_put('CONFERENCE/'.$room,'options',$options);
+		$this->astman->database_put('CONFERENCE/'.$room,'music',$music);
+		$this->astman->database_put('CONFERENCE/'.$room,'users',$users);
+		$recording = $this->FreePBX->Recordings->getFilenameById($joinmsg_id);
+		$this->astman->database_put('CONFERENCE/'.$room,'joinmsg',(!empty($recording) ? $recording : ''));
 		return true;
 	}
 
@@ -239,7 +249,7 @@ class Conferences implements BMO {
 	 *
 	 */
 	public function getConference($room) {
-		$sql = "SELECT exten,options,userpin,adminpin,description,joinmsg_id,music,users FROM meetme WHERE exten = ?";
+		$sql = "SELECT exten,options,userpin,adminpin,description,language,joinmsg_id,music,users FROM meetme WHERE exten = ?";
 		$sth = $this->db->prepare($sql);
 		try {
 			$sth->execute(array($room));

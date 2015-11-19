@@ -23,7 +23,7 @@ if ($extdisplay != ""){
 	$music       = "";
 	$users	      = "0";
 }
-if ($extdisplay != ""){ 
+if ($extdisplay != ""){
 	$orig_accounthtml =	'<input type="hidden" name="orig_account" value="'.$extdisplay.'">';
 }
 if(function_exists('recordings_list')) {
@@ -115,11 +115,9 @@ if (!empty($conflict_url)) {
 $module_hook = \moduleHook::create();
 
 ?>
-<form autocomplete="off" name="editMM" id="editMM" class="fpbx-submit" action="" method="post" onsubmit="return checkConf();" data-fpbx-delete="?display=conferences&action=delete&extdisplay=<?php echo $extdisplay ?>">
-<input type="hidden" name="display" id="display" value="conferences">
+<form autocomplete="off" name="editMM" id="editMM" class="fpbx-submit" action="?display=conferences" method="post" onsubmit="return checkConf();" data-fpbx-delete="?display=conferences&amp;action=delete&amp;extdisplay=<?php echo $extdisplay ?>">
 <input type="hidden" name="action" id="action" value="<?php echo ($extdisplay != '' ? 'edit' : 'add') ?>">
 <input type="hidden" name="options" id="options" value="<?php echo $options; ?>">
-<input type="hidden" name="view" id="view" value="form">
 <?php echo $orig_accounthtml ?>
 
 <!--Conference Number-->
@@ -218,6 +216,39 @@ $module_hook = \moduleHook::create();
 	</div>
 </div>
 <!--END Admin PIN-->
+<!--language-->
+<div class="element-container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="form-group">
+					<div class="col-md-3">
+						<label class="control-label" for="language"><?php echo _("Language")?></label>
+						<i class="fa fa-question-circle fpbx-help-icon" data-for="language"></i>
+					</div>
+					<div class="col-md-9">
+						<?php if(\FreePBX::Modules()->checkStatus("soundlang")) { ?>
+							<select class="form-control" id="language" name="language">
+								<option value=""><?php echo _("Inherit")?></option>
+								<?php foreach(\FreePBX::Soundlang()->getLanguages() as $key => $value) { ?>
+									<option value="<?php echo $key?>"><?php echo $value?></option>
+								<?php } ?>
+							</select>
+						<?php } else { ?>
+							<input class="form-control" id="language" name="language" value="<?php echo $language?>">
+						<?php } ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<span id="language-help" class="help-block fpbx-help-block"><?php echo _("The language for the conference. If set to inherit or blank the language will be inherited from the first person who joins the conference esentially making the language of this conference dynamic. After the first person has joined the language can not be changed until all users have left the conference. If you set a value here the langauge will be forced irregardless of what language users have set")?></span>
+		</div>
+	</div>
+</div>
+<!--END language-->
 <?php echo $jmhtml ?>
 <!--Leader Wait-->
 <div class="element-container">
@@ -242,6 +273,33 @@ $module_hook = \moduleHook::create();
 	<div class="row">
 		<div class="col-md-12">
 			<span id="opt_w-help" class="help-block fpbx-help-block"><?php echo _("Wait until the conference leader (admin user) arrives before starting the conference")?></span>
+		</div>
+	</div>
+</div>
+<!--END Leader Wait-->
+<!--Leader Wait-->
+<div class="element-container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="form-group">
+					<div class="col-md-3">
+						<label class="control-label" for="opt_x"><?php echo _("Leader Leave") ?></label>
+						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_x"></i>
+					</div>
+					<div class="col-md-9 radioset">
+						<input type="radio" name="opt_x" id="opt_xyes" value="x" <?php echo (strpos($options, "x") === false ?"":"CHECKED") ?>>
+						<label for="opt_xyes"><?php echo _("Yes");?></label>
+						<input type="radio" name="opt_x" id="opt_xno" value="NO" <?php echo (strpos($options, "x") === false ?"CHECKED":"") ?>>
+						<label for="opt_xno"><?php echo _("No");?></label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<span id="opt_x-help" class="help-block fpbx-help-block"><?php echo _("When the conference leader (admin user) leaves all users will be kicked from the conference")?></span>
 		</div>
 	</div>
 </div>
@@ -295,7 +353,7 @@ $module_hook = \moduleHook::create();
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<span id="opt_T-help" class="help-block fpbx-help-block"><?php echo _("Sets talker detection. Asterisk will sends events on the Manager Interface identifying 0the channel that is talking. The talker will also be identified on the output of the conference list CLI command. Note: If Conferences Pro is installed and licensed this will always be enabled")?></span>
+			<span id="opt_T-help" class="help-block fpbx-help-block"><?php echo _("Sets talker detection. Asterisk will send events on the manager interface identifying the channel that is talking. The talker will also be identified on the output of the conference list CLI command. Note: If Conferences Pro is installed and licensed this will always be enabled")?></span>
 		</div>
 	</div>
 </div>
@@ -376,7 +434,7 @@ $module_hook = \moduleHook::create();
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<span id="opt_I-help" class="help-block fpbx-help-block"><?php echo _("Announce user join/leave")?></span>
+			<span id="opt_I-help" class="help-block fpbx-help-block"><?php echo _("Announce user join/leave. If enabled this will require the user to record their name before joining the conference")?></span>
 		</div>
 	</div>
 </div>
@@ -514,7 +572,7 @@ $module_hook = \moduleHook::create();
 	</div>
 </div>
 <!--END Mute on Join-->
-<?php 
-echo $module_hook->hookHtml; 
+<?php
+echo $module_hook->hookHtml;
 ?>
 </form>
