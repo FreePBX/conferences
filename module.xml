@@ -2,13 +2,14 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>13.0.11</version>
+	<version>13.0.12</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
+		*13.0.12* FREEPBX-9044
 		*13.0.11* Conference menu options need to line up to what is in the voice prompt
 		*13.0.10* Sliding bootnav
 		*13.0.9* FREEPBX-10273 fall back on pin entry if there is no pin on users but there is on admin
