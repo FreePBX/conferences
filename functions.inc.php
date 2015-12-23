@@ -154,6 +154,7 @@ class conferences_conf {
 
 // returns a associative arrays with keys 'destination' and 'description'
 function conferences_destinations() {
+	$extens = array();
 	//get the list of meetmes
 	$results = conferences_list();
 
