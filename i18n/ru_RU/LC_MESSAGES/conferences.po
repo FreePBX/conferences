@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-11 11:56-0800\n"
+"POT-Creation-Date: 2015-12-23 11:32-0800\n"
 "PO-Revision-Date: 2015-04-25 18:46+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -90,16 +90,16 @@ msgstr ""
 msgid "Conference Number"
 msgstr ""
 
-#: functions.inc.php:186
+#: functions.inc.php:187
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Конференц-комната %s : %s"
 
-#: functions.inc.php:422
+#: functions.inc.php:423
 msgid "Conference: "
 msgstr "Конференция: "
 
-#: functions.inc.php:205
+#: functions.inc.php:206
 #, php-format
 msgid "Conference: %s"
 msgstr "Конференция: %s"
