@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 13:36-0700\n"
+"POT-Creation-Date: 2015-12-28 13:04-0800\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
 "Language-Team: Magyar <freepbx@freepbx.hu>\n"
@@ -42,6 +42,11 @@ msgstr "Admin PIN:"
 msgid "Allow Menu:"
 msgstr "Elfogadva menü:"
 
+#: conferences.i18n.php:8
+msgid ""
+"Allow creation of conference rooms where multiple people can talk together"
+msgstr ""
+
 #: page.conferences.php:278
 msgid "Announce user join/leave"
 msgstr "Esemény felhasználó fel/lecsatlakozásakor"
@@ -49,6 +54,10 @@ msgstr "Esemény felhasználó fel/lecsatlakozásakor"
 #: page.conferences.php:263
 msgid "Announce user(s) count on joining conference"
 msgstr "Esemény a felhasználók csatlakozásakor"
+
+#: conferences.i18n.php:6 conferences.i18n.php:12
+msgid "Applications"
+msgstr ""
 
 #: install.php:108
 msgid "Checking for users field.."
@@ -94,6 +103,10 @@ msgstr "Konferencia:"
 #: functions.inc.php:205
 #, php-format
 msgid "Conference: %s"
+msgstr ""
+
+#: conferences.i18n.php:4 conferences.i18n.php:10
+msgid "Conferences"
 msgstr ""
 
 #: page.conferences.php:139

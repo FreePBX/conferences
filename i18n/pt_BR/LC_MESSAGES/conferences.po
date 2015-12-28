@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX Conference Module\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 13:36-0700\n"
+"POT-Creation-Date: 2015-12-28 13:04-0800\n"
 "PO-Revision-Date: 2015-04-29 08:00+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -47,6 +47,13 @@ msgstr "PIN do Admin:"
 msgid "Allow Menu:"
 msgstr "Permitir Menu:"
 
+#: conferences.i18n.php:8
+msgid ""
+"Allow creation of conference rooms where multiple people can talk together"
+msgstr ""
+"Permitir criação de salas de conferência onde múltiplas pessoas podem falar "
+"juntas"
+
 #: page.conferences.php:278
 msgid "Announce user join/leave"
 msgstr "Anuncia a entrada e saída de usuários"
@@ -54,6 +61,10 @@ msgstr "Anuncia a entrada e saída de usuários"
 #: page.conferences.php:263
 msgid "Announce user(s) count on joining conference"
 msgstr "Anuncia o número de usuários ao se juntar à conferência"
+
+#: conferences.i18n.php:6 conferences.i18n.php:12
+msgid "Applications"
+msgstr "Aplicações"
 
 #: install.php:108
 msgid "Checking for users field.."
@@ -100,6 +111,10 @@ msgstr "Conferência: "
 #, php-format
 msgid "Conference: %s"
 msgstr "Conferência: %s"
+
+#: conferences.i18n.php:4 conferences.i18n.php:10
+msgid "Conferences"
+msgstr "Conferências"
 
 #: page.conferences.php:139
 msgid "Conflicting Extensions"
@@ -428,15 +443,3 @@ msgstr "nenhum campo joinmsg???"
 #: install.php:40 install.php:62 install.php:101 install.php:119
 msgid "ok"
 msgstr "ok"
-
-#~ msgid ""
-#~ "Allow creation of conference rooms where multiple people can talk together"
-#~ msgstr ""
-#~ "Permitir criação de salas de conferência onde múltiplas pessoas podem "
-#~ "falar juntas"
-
-#~ msgid "Applications"
-#~ msgstr "Aplicações"
-
-#~ msgid "Conferences"
-#~ msgstr "Conferências"

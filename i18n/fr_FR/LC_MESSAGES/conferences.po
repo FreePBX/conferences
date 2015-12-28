@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-29 13:36-0700\n"
+"POT-Creation-Date: 2015-12-28 13:04-0800\n"
 "PO-Revision-Date: 2015-04-29 21:25+0200\n"
 "Last-Translator: philippebolduc <philippe@florenceinc.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -43,6 +43,11 @@ msgstr "PIN organisateur"
 msgid "Allow Menu:"
 msgstr "Autorise menu"
 
+#: conferences.i18n.php:8
+msgid ""
+"Allow creation of conference rooms where multiple people can talk together"
+msgstr ""
+
 #: page.conferences.php:278
 msgid "Announce user join/leave"
 msgstr "Annonce qu'un utilisateur arrive ou quitte la conférence"
@@ -50,6 +55,10 @@ msgstr "Annonce qu'un utilisateur arrive ou quitte la conférence"
 #: page.conferences.php:263
 msgid "Announce user(s) count on joining conference"
 msgstr "Annonce le nombre de personnes ayant rejoint la conférence"
+
+#: conferences.i18n.php:6 conferences.i18n.php:12
+msgid "Applications"
+msgstr "Applications"
 
 #: install.php:108
 msgid "Checking for users field.."
@@ -96,6 +105,10 @@ msgstr "Conférence: "
 #, php-format
 msgid "Conference: %s"
 msgstr "Conférence: %s"
+
+#: conferences.i18n.php:4 conferences.i18n.php:10
+msgid "Conferences"
+msgstr "Conférences"
 
 #: page.conferences.php:139
 msgid "Conflicting Extensions"
@@ -402,9 +415,3 @@ msgstr "Pas de champ joinmsg???"
 #: install.php:40 install.php:62 install.php:101 install.php:119
 msgid "ok"
 msgstr "ok"
-
-#~ msgid "Applications"
-#~ msgstr "Applications"
-
-#~ msgid "Conferences"
-#~ msgstr "Conférences"
