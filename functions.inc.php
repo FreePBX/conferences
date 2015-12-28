@@ -102,7 +102,7 @@ class conferences_conf {
 					'8'  => 'reset_talking_volume',
 					'*9' => 'increase_talking_volume',
 					'9'  => 'increase_talking_volume',
-					'#' => 'leave_conference',
+					'\#' => 'leave_conference',
 					'*#'  => 'leave_conference',
 					'*0' => 'admin_toggle_mute_participants',
 					'0' => 'admin_toggle_mute_participants',
@@ -126,7 +126,7 @@ class conferences_conf {
 					'8'  => 'no_op',
 					'*9' => 'increase_talking_volume',
 					'9'  => 'increase_talking_volume',
-					'#' => 'leave_conference',
+					'\#' => 'leave_conference',
 					'*#'  => 'leave_conference',
 				);
 			}
