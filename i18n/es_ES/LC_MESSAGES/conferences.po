@@ -20,13 +20,14 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo conferences module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-23 11:32-0800\n"
-"PO-Revision-Date: 2015-03-23 21:31+0200\n"
+"PO-Revision-Date: 2016-01-14 23:49+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
-"Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/conferences/es_ES/>\n"
+"Language-Team: Spanish "
+"<http://weblate.freepbx.org/projects/freepbx/conferences/es_ES/>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.2-dev\n"
 "X-Poedit-Language: Spanish\n"
@@ -35,23 +36,23 @@ msgstr ""
 
 #: views/grid.php:34
 msgid "Actions"
-msgstr ""
+msgstr "Acciones"
 
 #: page.conferences.php:17 views/grid.php:27 views/rnav.php:20
 msgid "Add"
-msgstr ""
+msgstr "Agregar"
 
 #: Conferences.class.php:115
 msgid "Adding language column"
-msgstr ""
+msgstr "Agregando columna idioma"
 
 #: views/form.php:202
 msgid "Admin PIN"
-msgstr ""
+msgstr "PIN Administrador"
 
 #: views/form.php:477
 msgid "Allow Menu"
-msgstr ""
+msgstr "Permitir Menú"
 
 #: conferences.i18n.php:8
 msgid "Allow creation of conference rooms where multiple people can talk together"
@@ -60,6 +61,8 @@ msgstr "Permitir creación de salas de conferencia donde varias personas pueden 
 #: views/form.php:437
 msgid "Announce user join/leave. If enabled this will require the user to record their name before joining the conference"
 msgstr ""
+"Anunciar usuario al  entrar/salir. Si está habilitada será necesario que el "
+"usuario grabe su nombre antes de unirse a la conferencia"
 
 #: views/form.php:410
 msgid "Announce user(s) count on joining conference"
@@ -76,11 +79,11 @@ msgstr "Conferencia"
 
 #: views/form.php:154
 msgid "Conference Name"
-msgstr ""
+msgstr "Nombre de la Conferencia"
 
 #: views/form.php:130
 msgid "Conference Number"
-msgstr ""
+msgstr "Numero de la Conferencia"
 
 #: functions.inc.php:187
 #, php-format
@@ -107,15 +110,15 @@ msgstr "Extensiones en conflicto"
 
 #: Conferences.class.php:326
 msgid "Delete"
-msgstr ""
+msgstr "Borrar"
 
 #: views/grid.php:33 views/rnav.php:26
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: page.conferences.php:15
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: views/form.php:464
 msgid "Enable Music On Hold when the conference has a single caller"
@@ -124,10 +127,14 @@ msgstr "Habilita la música en espera mientras la conferencia sólo tiene un asi
 #: views/form.php:214
 msgid "Enter a PIN number for the admin user.<br><br>This setting is optional unless the 'leader wait' option is in use, then this PIN will identify the leader.<br>This pin should be different than the user pin."
 msgstr ""
+"Introducir un número PIN para el usuario admin. <br><br>Este ajuste es "
+"opcional a menos que la opción 'espera por lider' está en uso, entonces este "
+"PIN identificará el líder. <br> Este pin debe ser diferente que el pin de "
+"usuario ."
 
 #: Conferences.class.php:344
 msgid "Extension"
-msgstr ""
+msgstr "Extensión"
 
 #: views/form.php:166
 msgid "Give this conference a brief name to help you identify it."
@@ -135,27 +142,27 @@ msgstr "Asigne a esta conferencia un nombre descriptivo para ayudarle a identifi
 
 #: views/form.php:232
 msgid "Inherit"
-msgstr ""
+msgstr "Hereda"
 
 #: views/form.php:45
 msgid "Join Message"
-msgstr ""
+msgstr "Mensaje de Incorporacion"
 
 #: views/form.php:226
 msgid "Language"
-msgstr ""
+msgstr "Idioma"
 
 #: views/form.php:287
 msgid "Leader Leave"
-msgstr ""
+msgstr "Líder se retira"
 
 #: views/form.php:260
 msgid "Leader Wait"
-msgstr ""
+msgstr "Espera Líder"
 
 #: views/rnav.php:19
 msgid "List Conferences"
-msgstr ""
+msgstr "Lista de Cnferencias"
 
 #: views/form.php:543
 msgid "Maximum Number of users allowed to join this conference."
@@ -163,23 +170,30 @@ msgstr "Numero Maximo de usuarios permitidos en esta conferencia."
 
 #: views/form.php:531
 msgid "Maximum Participants"
-msgstr ""
+msgstr "Máximos Participantes"
 
 #: views/form.php:59
 msgid "Message to be played to the caller before joining the conference.<br><br>To add additional recordings please use the \"System Recordings\" MENU above"
 msgstr ""
+"Mensaje a reproducir  a la persona que llama antes de unirse a la "
+"conferencia. <br>Para añadir grabaciones adicionales por favor utilice el "
+"menú \"Grabaciones de Sistema\" Arriba"
 
 #: views/form.php:102
 msgid "Music (or Commercial) played to the caller while they wait in line for the conference to start. Choose \"inherit\" if you want the MoH class to be what is currently selected, such as by the inbound route.<br><br>  This music is defined in the \"Music on Hold\" above."
 msgstr ""
+"Música (o comercial) a reproducir a la persona que llama mientras esperan en "
+"fila durante la espera para la conferencia. Elija \"heredar\" si quieres MoH "
+"que sea  lo que está seleccionado actualmente, como por la ruta de "
+"entrada.<br> Esta música se define en el \"Música en espera\" más arriba."
 
 #: views/form.php:449
 msgid "Music on Hold"
-msgstr ""
+msgstr "Música en espera"
 
 #: views/form.php:88
 msgid "Music on Hold Class"
-msgstr ""
+msgstr "Clase Música en espera"
 
 #: views/form.php:570
 msgid "Mute everyone when they initially join the conference. Please note that if you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to Yes to unmute yourself"
@@ -187,7 +201,7 @@ msgstr "Poner en Mudo a cada quien al unirse al principio a la conferencia. Por 
 
 #: views/form.php:555
 msgid "Mute on Join"
-msgstr ""
+msgstr "Mudo al unirse"
 
 #: views/form.php:267 views/form.php:294 views/form.php:321 views/form.php:348
 #: views/form.php:375 views/form.php:402 views/form.php:429 views/form.php:456
@@ -217,7 +231,7 @@ msgstr "Permitir el acceso al menú al usuario o al administrador cuando se se p
 
 #: views/form.php:368
 msgid "Quiet Mode"
-msgstr ""
+msgstr "Modo Silencioso"
 
 #: views/form.php:383
 msgid "Quiet mode (do not play enter/leave sounds)"
@@ -225,7 +239,7 @@ msgstr "Modo silencioso (no reproducir sonidos cuando alguien entre o salga de l
 
 #: views/form.php:504
 msgid "Record Conference"
-msgstr ""
+msgstr "Grabar Conferencia"
 
 #: views/form.php:519
 msgid "Record the conference call"
@@ -233,27 +247,37 @@ msgstr "Graba las llamadas de la conferencia"
 
 #: Conferences.class.php:321
 msgid "Reset"
-msgstr ""
+msgstr "Reiniciar"
 
 #: views/form.php:356
 msgid "Sets talker detection. Asterisk will send events on the manager interface identifying the channel that is talking. The talker will also be identified on the output of the conference list CLI command. Note: If Conferences Pro is installed and licensed this will always be enabled"
 msgstr ""
+"Establece la detección conversador. Asterisk enviará eventos en la interfaz "
+"del gestor que identifican que canal es que está hablando. El orador también "
+"se identificará en la salida del comando CLI lista de la conferencia. Nota: "
+"Si Conferencias-Pro está instalado y con licencia esto siempre se habilitará"
 
 #: Conferences.class.php:316
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: views/form.php:341
 msgid "Talker Detection"
-msgstr ""
+msgstr "Deteccion de orador"
 
 #: views/form.php:314
 msgid "Talker Optimization"
-msgstr ""
+msgstr "Optimizacion de Orador"
 
 #: views/form.php:247
 msgid "The language for the conference. If set to inherit or blank the language will be inherited from the first person who joins the conference esentially making the language of this conference dynamic. After the first person has joined the language can not be changed until all users have left the conference. If you set a value here the langauge will be forced irregardless of what language users have set"
 msgstr ""
+"El idioma de la conferencia. Si se pone a heredar o en blanco el idioma se "
+"hereda de la primera persona que se une a la conferencia haciendo el idioma  "
+"de esta conferencia dinámica. Después que la primera persona que se ha unido "
+"el idioma no se puede cambiar hasta que todos los usuarios han salido de la "
+"conferencia. Si establece un valor aquí el idioma será independientemente "
+"del idioma frzado para los usuarios"
 
 #: assets/js/conferences.js:23
 msgid "The user and admin can not have the same pin code."
@@ -262,6 +286,11 @@ msgstr "El usuario y administrador no pueden tener el mismo código pin."
 #: views/form.php:329
 msgid "Turns on talker optimization. With talker optimization, Asterisk treats talkers who are not speaking as being muted, meaning that no encoding is done on transmission and that received audio that is not registered as talking is omitted, causing no buildup in background noise."
 msgstr ""
+"Activa la optimización orador. Con la optimización, Asterisk trata "
+"participantes que no están hablando como estando  silenciados, lo que "
+"significa que ninguna codificación se realiza en la transmisión de los "
+"participantes que no esten identificandos como Hablando, sin causar la "
+"acumulación de ruido de fondo."
 
 #: views/form.php:142
 msgid "Use this number to dial into the conference."
@@ -269,15 +298,15 @@ msgstr "Use este número para llamar a la conferencia."
 
 #: views/form.php:395
 msgid "User Count"
-msgstr ""
+msgstr "Cuenta de usuarios"
 
 #: views/form.php:178
 msgid "User PIN"
-msgstr ""
+msgstr "PIN de Usuario"
 
 #: views/form.php:422
 msgid "User join/leave"
-msgstr ""
+msgstr "Usuario entra/sale"
 
 #: views/form.php:275
 msgid "Wait until the conference leader (admin user) arrives before starting the conference"
@@ -290,6 +319,8 @@ msgstr "¡Atención! La extensión"
 #: views/form.php:302
 msgid "When the conference leader (admin user) leaves all users will be kicked from the conference"
 msgstr ""
+"Cuando el líder (usuario admin) de la conferencia sale, todos los usuarios "
+"serán expulsados de la conferencia"
 
 #: views/form.php:265 views/form.php:292 views/form.php:319 views/form.php:346
 #: views/form.php:373 views/form.php:400 views/form.php:427 views/form.php:454
@@ -300,6 +331,11 @@ msgstr "Sí"
 #: views/form.php:190
 msgid "You can require callers to enter a password before they can enter this conference.<br><br>This setting is optional.<br><br>If either PIN is entered, the user will be prompted to enter a PIN.<br> This pin should be different than the Admin pin"
 msgstr ""
+"Puede exigir a  personas que llaman que deben  introducir una contraseña "
+"antes de que puedan entrar en esta conferencia. <br><br>Esta configuración "
+"es opcional. <br><br> Si se introduce un PIN, el usuario se le pedirá que "
+"introduzca el PIN. <br > Este PIN debe ser diferente al PIN  de "
+"administración"
 
 #: assets/js/conferences.js:22
 msgid "You must set Allow Menu to Yes when not using a Leader or Admin in your conference, otherwise you will be unable to unmute yourself"
