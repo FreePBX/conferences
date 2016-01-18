@@ -66,6 +66,7 @@ class Conferences implements BMO {
 		$sql = 'UPDATE meetme SET options = ? WHERE exten = ?';
 		$sth = $this->db->prepare($sql);
 		$sth->execute(array($options,$room));
+		$options = !is_null($options) ? $options : "";
 		$this->astman->database_put('CONFERENCE/'.$room,'options',$options);
 	}
 
@@ -84,6 +85,7 @@ class Conferences implements BMO {
 		$sth = $this->db->prepare($sql);
 		$sth->execute(array($value,$room));
 		if($key != 'description' && $key != 'joinmsg_id') {
+			$value = !is_null($value) ? $value : "";
 			$this->astman->database_put('CONFERENCE/'.$room,$key,$value);
 		} elseif($key == 'joinmsg_id') {
 			$recording = $this->FreePBX->Recordings->getFilenameById($value);
@@ -107,10 +109,17 @@ class Conferences implements BMO {
 		$sth = $this->db->prepare($sql);
 		try {
 			$sth->execute(array($room,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users));
+			$language = !is_null($language) ? $language : "";
+			$this->astman->database_put('CONFERENCE/'.$room,'language',$language);
+			$userpin = !is_null($userpin) ? $userpin : "";
 			$this->astman->database_put('CONFERENCE/'.$room,'userpin',$userpin);
+			$adminpin = !is_null($adminpin) ? $adminpin : "";
 			$this->astman->database_put('CONFERENCE/'.$room,'adminpin',$adminpin);
+			$options = !is_null($options) ? $options : "";
 			$this->astman->database_put('CONFERENCE/'.$room,'options',$options);
+			$music = !is_null($music) ? $music : "";
 			$this->astman->database_put('CONFERENCE/'.$room,'music',$music);
+			$users = !is_null($users) ? $users : "";
 			$this->astman->database_put('CONFERENCE/'.$room,'users',$users);
 			$recording = $this->FreePBX->Recordings->getFilenameById($joinmsg_id);
 			$this->astman->database_put('CONFERENCE/'.$room,'joinmsg',(!empty($recording) ? $recording : ''));
@@ -157,6 +166,7 @@ class Conferences implements BMO {
 					continue;
 				}
 				if(!isset($asettings['/CONFERENCE/'.$room.'/'.$key])) {
+					$value = !is_null($value) ? $value : "";
 					$this->astman->database_put('CONFERENCE/'.$room,$key,$value);
 				} elseif($asettings['/CONFERENCE/'.$room.'/'.$key] != $value) {
 					$this->updateConferenceSettingById($room,$key,$asettings['/CONFERENCE/'.$room.'/'.$key]);
