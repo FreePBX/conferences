@@ -2,13 +2,14 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>12.0.21</version>
+	<version>12.0.22</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
+		*12.0.22* FREEPBX-10477 dont set null values into astdb
 		*12.0.21* FREEPBX-11121
 		*12.0.20* Conference menu options need to line up to what is in the voice prompt
 		*12.0.19* FREEPBX-10273 fall back on pin entry if there is no pin on users but there is on admin
