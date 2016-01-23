@@ -334,27 +334,28 @@ class Conferences extends \FreePBX_Helpers implements BMO {
 						'id' => 'delete',
 						'value' => _('Delete')
 					)
-    			);
-    		break;
-    	}
-    	if (empty($request['extdisplay']) && empty($request['account']) ) {
-    		unset($buttons['delete']);
-    	}
-    	if($request['view'] != 'form'){
-    		unset($buttons);
-    	}
-    	return $buttons;
-    }
-    public function printExtensions(){
+				);
+				break;
+		}
+		if (empty($request['extdisplay']) && empty($request['account'])) {
+			unset($buttons['delete']);
+		}
+		if ($request['view'] != 'form') {
+			unset($buttons);
+		}
+		return $buttons;
+	}
+
+	public function printExtensions(){
 		$ret = array();
-    	$ret['title'] = _("Conferences");
+		$ret['title'] = _("Conferences");
 		$featurecodes = \featurecodes_getAllFeaturesDetailed();
 		$ret['textdesc'] = _('Conference');
-    	$ret['numdesc'] = _('Extension');
-    	$ret['items'] = array();
-    	foreach ($this->listConferences() as $conf) {
-    		$ret['items'][] = array($conf[1],$conf[0]);
-    	}
-    	return $ret;
-    }
+		$ret['numdesc'] = _('Extension');
+		$ret['items'] = array();
+		foreach ($this->listConferences() as $conf) {
+			$ret['items'][] = array($conf[1],$conf[0]);
+		}
+	return $ret;
+	}
 }

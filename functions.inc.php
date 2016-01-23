@@ -17,7 +17,7 @@ class conferences_conf {
 	}
 
 
-  function __construct() {
+	function __construct() {
 		$this->_confbridge['general'] = array();
 		$this->_confbridge['user'] = array();
 		$this->_confbridge['user']['default_user'] = array();
