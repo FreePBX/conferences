@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-08 18:12-0800\n"
+"POT-Creation-Date: 2016-02-03 17:21-0800\n"
 "PO-Revision-Date: 2014-07-21 16:05+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -75,7 +75,7 @@ msgstr "Известява за броя на потребителите при 
 msgid "Applications"
 msgstr "Приложения"
 
-#: Conferences.class.php:101 Conferences.class.php:343 views/grid.php:32
+#: Conferences.class.php:101 Conferences.class.php:353 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "Конференция"
@@ -102,7 +102,7 @@ msgstr "Конференция: "
 msgid "Conference: %s"
 msgstr "Конференция: %s"
 
-#: Conferences.class.php:341 conferences.i18n.php:4 conferences.i18n.php:10
+#: Conferences.class.php:351 conferences.i18n.php:4 conferences.i18n.php:10
 #: page.conferences.php:10
 msgid "Conferences"
 msgstr "Конференции"
@@ -111,7 +111,7 @@ msgstr "Конференции"
 msgid "Conflicting Extensions"
 msgstr "Вътрешни Линии в Конфликт"
 
-#: Conferences.class.php:326
+#: Conferences.class.php:335
 msgid "Delete"
 msgstr ""
 
@@ -135,7 +135,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:344
+#: Conferences.class.php:354
 msgid "Extension"
 msgstr ""
 
@@ -257,7 +257,7 @@ msgstr ""
 msgid "Record the conference call"
 msgstr "Записва конферентния разговор"
 
-#: Conferences.class.php:321
+#: Conferences.class.php:330
 msgid "Reset"
 msgstr ""
 
@@ -269,7 +269,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:316
+#: Conferences.class.php:325
 msgid "Submit"
 msgstr ""
 
