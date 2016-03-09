@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-02-03 17:21-0800\n"
+"POT-Creation-Date: 2016-03-09 12:04-0800\n"
 "PO-Revision-Date: 2015-10-19 14:43+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -87,16 +87,16 @@ msgstr "会议名称"
 msgid "Conference Number"
 msgstr "会议号码"
 
-#: functions.inc.php:187
+#: functions.inc.php:191
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "会议室 %s：%s"
 
-#: functions.inc.php:423
+#: functions.inc.php:427
 msgid "Conference: "
 msgstr "会议："
 
-#: functions.inc.php:206
+#: functions.inc.php:210
 #, php-format
 msgid "Conference: %s"
 msgstr "会议：%s"
