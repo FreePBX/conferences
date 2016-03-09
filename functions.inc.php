@@ -80,6 +80,13 @@ class conferences_conf {
 				$output .= ";This section reserved for future use\n";
 				$output .= "\n";
 			}
+			global $version;
+			if(version_compare($version, '13.4', 'ge') || (version_compare($version, '11.20', 'ge') && version_compare($version, '13.0', 'lt'))) {
+				$escapePound = '\#';
+			} else {
+				$escapePound = '#';
+			}
+
 			// Default if nothing configured
 			if (empty($this->_confbridge['menu']['admin_menu'])) {
 				$this->_confbridge['menu']['admin_menu'] = array(
@@ -102,7 +109,7 @@ class conferences_conf {
 					'8'  => 'reset_talking_volume',
 					'*9' => 'increase_talking_volume',
 					'9'  => 'increase_talking_volume',
-					'\#' => 'leave_conference',
+					$escapePound => 'leave_conference',
 					'*#'  => 'leave_conference',
 					'*0' => 'admin_toggle_mute_participants',
 					'0' => 'admin_toggle_mute_participants',
@@ -126,7 +133,7 @@ class conferences_conf {
 					'8'  => 'no_op',
 					'*9' => 'increase_talking_volume',
 					'9'  => 'increase_talking_volume',
-					'\#' => 'leave_conference',
+					$escapePound => 'leave_conference',
 					'*#'  => 'leave_conference',
 				);
 			}
@@ -174,8 +181,6 @@ function conferences_getdest($exten) {
 }
 
 function conferences_getdestinfo($dest) {
-	global $active_modules;
-
 	if (substr(trim($dest),0,11) == 'ext-meetme,') {
 		$exten = explode(',',$dest);
 		$exten = $exten[1];
@@ -183,7 +188,6 @@ function conferences_getdestinfo($dest) {
 		if (empty($thisexten)) {
 			return array();
 		} else {
-			//$type = isset($active_modules['announcement']['type'])?$active_modules['announcement']['type']:'setup';
 			return array('description' => sprintf(_("Conference Room %s : %s"),$exten,$thisexten['description']),
 			             'edit_url' => 'config.php?display=conferences&extdisplay='.urlencode($exten),
 					);
