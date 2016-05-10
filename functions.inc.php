@@ -92,27 +92,16 @@ class conferences_conf {
 				$this->_confbridge['menu']['admin_menu'] = array(
 					'*'  => 'playback_and_continue(conf-adminmenu)',
 					'*1' => 'toggle_mute',
-					'1'  => 'toggle_mute',
 					'*2' => 'admin_toggle_conference_lock',
-					'2'  => 'admin_toggle_conference_lock',
 					'*3' => 'admin_kick_last',
-					'3'  => 'admin_kick_last',
 					'*4' => 'decrease_listening_volume',
-					'4'  => 'decrease_listening_volume',
 					'*5' => 'reset_listening_volume',
-					'5'  => 'dreset_listening_volume',
 					'*6' => 'increase_listening_volume',
-					'6'  => 'increase_listening_volume',
 					'*7' => 'decrease_talking_volume',
-					'7'  => 'decrease_talking_volume',
 					'*8' => 'reset_talking_volume',
-					'8'  => 'reset_talking_volume',
 					'*9' => 'increase_talking_volume',
-					'9'  => 'increase_talking_volume',
-					$escapePound => 'leave_conference',
 					'*#'  => 'leave_conference',
 					'*0' => 'admin_toggle_mute_participants',
-					'0' => 'admin_toggle_mute_participants',
 				);
 			}
 			// Default if nothing configured
@@ -120,20 +109,12 @@ class conferences_conf {
 				$this->_confbridge['menu']['user_menu'] = array(
 					'*'  => 'playback_and_continue(conf-usermenu)',
 					'*1' => 'toggle_mute',
-					'1'  => 'toggle_mute',
 					'*4' => 'decrease_listening_volume',
-					'4'  => 'decrease_listening_volume',
 					'*5' => 'reset_listening_volume',
-					'5'  => 'dreset_listening_volume',
 					'*6' => 'increase_listening_volume',
-					'6'  => 'increase_listening_volume',
 					'*7' => 'decrease_talking_volume',
-					'7'  => 'decrease_talking_volume',
 					'*8' => 'no_op',
-					'8'  => 'no_op',
 					'*9' => 'increase_talking_volume',
-					'9'  => 'increase_talking_volume',
-					$escapePound => 'leave_conference',
 					'*#'  => 'leave_conference',
 				);
 			}
