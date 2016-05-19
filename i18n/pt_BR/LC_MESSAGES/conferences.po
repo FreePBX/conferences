@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX Conference Module\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-09 12:04-0800\n"
+"POT-Creation-Date: 2016-05-19 08:17-0700\n"
 "PO-Revision-Date: 2015-04-29 08:00+0200\n"
 "Last-Translator: Renato <fiuza@tecnologia.inf.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -43,7 +43,7 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
-#: Conferences.class.php:115
+#: Conferences.class.php:162
 msgid "Adding language column"
 msgstr ""
 
@@ -76,7 +76,7 @@ msgstr "Anuncia o número de usuários ao se juntar à conferência"
 msgid "Applications"
 msgstr "Aplicações"
 
-#: Conferences.class.php:101 Conferences.class.php:353 views/grid.php:32
+#: Conferences.class.php:101 Conferences.class.php:400 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "Conferência"
@@ -89,21 +89,21 @@ msgstr ""
 msgid "Conference Number"
 msgstr ""
 
-#: functions.inc.php:191
+#: functions.inc.php:172
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Sala de Conferência %s : %s"
 
-#: functions.inc.php:427
+#: functions.inc.php:408
 msgid "Conference: "
 msgstr "Conferência: "
 
-#: functions.inc.php:210
+#: functions.inc.php:191
 #, php-format
 msgid "Conference: %s"
 msgstr "Conferência: %s"
 
-#: Conferences.class.php:351 conferences.i18n.php:4 conferences.i18n.php:10
+#: Conferences.class.php:398 conferences.i18n.php:4 conferences.i18n.php:10
 #: page.conferences.php:10
 msgid "Conferences"
 msgstr "Conferências"
@@ -112,7 +112,7 @@ msgstr "Conferências"
 msgid "Conflicting Extensions"
 msgstr "Ramais Conflitantes"
 
-#: Conferences.class.php:335
+#: Conferences.class.php:382
 msgid "Delete"
 msgstr ""
 
@@ -135,7 +135,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:354
+#: Conferences.class.php:401
 msgid "Extension"
 msgstr ""
 
@@ -254,7 +254,7 @@ msgstr ""
 msgid "Record the conference call"
 msgstr "Gravar a chamada em conferência"
 
-#: Conferences.class.php:330
+#: Conferences.class.php:377
 msgid "Reset"
 msgstr ""
 
@@ -266,7 +266,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:325
+#: Conferences.class.php:372
 msgid "Submit"
 msgstr ""
 

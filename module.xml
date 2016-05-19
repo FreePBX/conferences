@@ -2,13 +2,14 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>13.0.18</version>
+	<version>13.0.19</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
+		*13.0.19* Update button mapping file when in conferences
 		*13.0.18* FREEPBX-11693 attempt to revert for older versions of Asterisk
 		*13.0.17* FREEPBX-10477 dont set null values into astdb
 		*13.0.16* FREEPBX-11233
@@ -32,6 +33,7 @@
 	</changelog>
 	<depends>
 		<module>recordings ge 13.0.2</module>
+		<module>framework ge 13.0.121</module>
 	</depends>
 	<menuitems>
 		<conferences needsenginedb="yes">Conferences</conferences>

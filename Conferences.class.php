@@ -105,10 +105,57 @@ class Conferences extends \FreePBX_Helpers implements BMO {
 
 
 	public function install() {
-		$sql = "CREATE TABLE IF NOT EXISTS `meetme` ( `exten` VARCHAR( 50 ) NOT NULL , `options` VARCHAR( 15 ) ,
-				`userpin` VARCHAR( 50 ) , `adminpin` VARCHAR( 50 ) , `description` VARCHAR( 50 ) ,
-				`joinmsg_id` INTEGER, `music` VARCHAR(80), `users` TINYINT DEFAULT 0, `language` VARCHAR(10) NOT NULL DEFAULT '') ";
-		$this->db->query($sql);
+
+		$table = $this->FreePBX->Database->migrate("meetme");
+		$cols = array(
+			"exten" => array(
+				"type" => "string",
+				"length" => 50,
+				"primaryKey" => true
+			),
+			"options" => array(
+				"type" => "string",
+				"length" => 15,
+				"notnull" => false,
+			),
+			"userpin" => array(
+				"type" => "string",
+				"length" => 50,
+				"notnull" => false,
+			),
+			"adminpin" => array(
+				"type" => "string",
+				"length" => 50,
+				"notnull" => false,
+			),
+			"description" => array(
+				"type" => "string",
+				"length" => 50,
+				"notnull" => false,
+			),
+			"joinmsg_id" => array(
+				"type" => "integer",
+				"notnull" => false,
+			),
+			"music" => array(
+				"type" => "string",
+				"length" => 80,
+				"notnull" => false,
+			),
+			"users" => array(
+				"type" => "smallint",
+				"unsigned" => false,
+				"default" => 0,
+				"notnull" => false
+			),
+			"language" => array(
+				"type" => "string",
+				"length" => 10,
+				"default" => "",
+			),
+		);
+		$table->modify($cols);
+		unset($table);
 
 		global $db;
 		if (!$db->getAll('SHOW COLUMNS FROM meetme WHERE FIELD = "language"')) {

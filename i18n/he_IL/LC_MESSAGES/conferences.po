@@ -22,15 +22,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-03-09 12:04-0800\n"
+"POT-Creation-Date: 2016-05-19 08:17-0700\n"
 "PO-Revision-Date: 2016-05-12 01:10+0200\n"
 "Last-Translator: Avishay <baabad@outlook.com>\n"
-"Language-Team: Hebrew "
-"<http://weblate.freepbx.org/projects/freepbx/conferences/he_IL/>\n"
-"Language: he_IL\n"
+"Language-Team: Hebrew <http://weblate.freepbx.org/projects/freepbx/"
+"conferences/he_IL/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: he_IL\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -42,7 +42,7 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
-#: Conferences.class.php:115
+#: Conferences.class.php:162
 msgid "Adding language column"
 msgstr ""
 
@@ -73,7 +73,7 @@ msgstr "הכרז על מספר הנמצאים בועידה בזמן הכניסה
 msgid "Applications"
 msgstr ""
 
-#: Conferences.class.php:101 Conferences.class.php:353 views/grid.php:32
+#: Conferences.class.php:101 Conferences.class.php:400 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "ועידה"
@@ -86,21 +86,21 @@ msgstr ""
 msgid "Conference Number"
 msgstr ""
 
-#: functions.inc.php:191
+#: functions.inc.php:172
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr ""
 
-#: functions.inc.php:427
+#: functions.inc.php:408
 msgid "Conference: "
 msgstr ""
 
-#: functions.inc.php:210
+#: functions.inc.php:191
 #, php-format
 msgid "Conference: %s"
 msgstr ""
 
-#: Conferences.class.php:351 conferences.i18n.php:4 conferences.i18n.php:10
+#: Conferences.class.php:398 conferences.i18n.php:4 conferences.i18n.php:10
 #: page.conferences.php:10
 msgid "Conferences"
 msgstr ""
@@ -109,7 +109,7 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr ""
 
-#: Conferences.class.php:335
+#: Conferences.class.php:382
 msgid "Delete"
 msgstr ""
 
@@ -132,7 +132,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:354
+#: Conferences.class.php:401
 msgid "Extension"
 msgstr ""
 
@@ -247,7 +247,7 @@ msgstr ""
 msgid "Record the conference call"
 msgstr ""
 
-#: Conferences.class.php:330
+#: Conferences.class.php:377
 msgid "Reset"
 msgstr ""
 
@@ -259,7 +259,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:325
+#: Conferences.class.php:372
 msgid "Submit"
 msgstr ""
 
@@ -364,9 +364,6 @@ msgstr ""
 msgid "is not allowed for your account."
 msgstr "אינה מורשית עבור החשבון שלך."
 
-#~ msgid "Announce user join/leave"
-#~ msgstr "הכרז על כניסה/יציאה של משתמשים"
-
 #~ msgid "Add Conference"
 #~ msgstr "הוסף ועידה"
 
@@ -375,6 +372,9 @@ msgstr "אינה מורשית עבור החשבון שלך."
 
 #~ msgid "Allow Menu:"
 #~ msgstr "אפשר תפריט:"
+
+#~ msgid "Announce user join/leave"
+#~ msgstr "הכרז על כניסה/יציאה של משתמשים"
 
 #~ msgid "Conference Name:"
 #~ msgstr "שם הועידה:"
