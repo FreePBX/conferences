@@ -14,6 +14,7 @@ if ($extdisplay != ""){
 	$joinmsg_id  = $thisMeetme['joinmsg_id'];
 	$music       = $thisMeetme['music'];
 	$users       = $thisMeetme['users'];
+	$language       = $thisMeetme['language'];
 } else {
 	$options     = "";
 	$userpin     = "";
@@ -21,7 +22,8 @@ if ($extdisplay != ""){
 	$description = "";
 	$joinmsg_id  = "";
 	$music       = "";
-	$users	      = "0";
+	$users	     = "0";
+	$language		 = "";
 }
 if ($extdisplay != ""){
 	$orig_accounthtml =	'<input type="hidden" name="orig_account" value="'.$extdisplay.'">';
@@ -230,8 +232,10 @@ $module_hook = \moduleHook::create();
 						<?php if(\FreePBX::Modules()->checkStatus("soundlang")) { ?>
 							<select class="form-control" id="language" name="language">
 								<option value=""><?php echo _("Inherit")?></option>
-								<?php foreach(\FreePBX::Soundlang()->getLanguages() as $key => $value) { ?>
-									<option value="<?php echo $key?>"><?php echo $value?></option>
+								<?php foreach(\FreePBX::Soundlang()->getLanguages() as $key => $value) {
+										$selected = ($language == $key)?'SELECTED':'';
+								?>
+									<option value="<?php echo $key?>" <?php echo $selected;?>><?php echo $value?></option>
 								<?php } ?>
 							</select>
 						<?php } else { ?>
