@@ -157,12 +157,6 @@ class Conferences extends \FreePBX_Helpers implements BMO {
 		$table->modify($cols);
 		unset($table);
 
-		global $db;
-		if (!$db->getAll('SHOW COLUMNS FROM meetme WHERE FIELD = "language"')) {
-			out(_("Adding language column"));
-			$sql = "ALTER TABLE `meetme` ADD COLUMN `language` varchar (10) NOT NULL DEFAULT ''";
-			$result = $db->query($sql);
-		}
 		//Migrate bad option
 		$confs = $this->listConferences();
 		if (!is_array($confs)) {
