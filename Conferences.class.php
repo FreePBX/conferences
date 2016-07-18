@@ -255,9 +255,13 @@ class Conferences extends \FreePBX_Helpers implements BMO {
 	 * @param {string} $music        MOH to play on hold
 	 * @param {int} $users
 	 */
-	public function addConference($room,$name,$userpin,$adminpin,$options,$joinmsg_id = null,$music = '',$users = 0,$language='') {
+	public function addConference($room,$name,$userpin,$adminpin,$options,$joinmsg_id = NULL,$music = '',$users = 0,$language='') {
 		$sql = "INSERT INTO meetme (exten,description,userpin,adminpin,options,joinmsg_id,music,users,language) values (?,?,?,?,?,?,?,?,?)";
 		$sth = $this->db->prepare($sql);
+		/* fixup joinmsg_id to be NULL, not an empty string */
+		if ($joinmsg_id == '') {
+			$joinmsg_id = NULL;
+		}
 		$sth->execute(array($room,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users,$language));
 		$language = !is_null($language) ? $language : "";
 		$this->astman->database_put('CONFERENCE/'.$room,'language',$language);
