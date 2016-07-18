@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo conferences module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-06 15:33-0700\n"
+"POT-Creation-Date: 2016-07-17 17:51-0700\n"
 "PO-Revision-Date: 2016-01-14 23:49+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -41,10 +41,6 @@ msgstr "Acciones"
 #: page.conferences.php:17 views/grid.php:27 views/rnav.php:20
 msgid "Add"
 msgstr "Agregar"
-
-#: Conferences.class.php:162
-msgid "Adding language column"
-msgstr "Agregando columna idioma"
 
 #: views/form.php:204
 msgid "Admin PIN"
@@ -77,7 +73,7 @@ msgstr "Dice el número de usuarios de la conferencia al entrar a la misma"
 msgid "Applications"
 msgstr "Aplicaciones"
 
-#: Conferences.class.php:101 Conferences.class.php:400 views/grid.php:32
+#: Conferences.class.php:101 Conferences.class.php:398 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "Conferencia"
@@ -104,7 +100,7 @@ msgstr "Conferencia: "
 msgid "Conference: %s"
 msgstr "Conferencia: %s"
 
-#: Conferences.class.php:398 conferences.i18n.php:4 conferences.i18n.php:10
+#: Conferences.class.php:396 conferences.i18n.php:4 conferences.i18n.php:10
 #: page.conferences.php:10
 msgid "Conferences"
 msgstr "Conferencias"
@@ -113,7 +109,7 @@ msgstr "Conferencias"
 msgid "Conflicting Extensions"
 msgstr "Extensiones en conflicto"
 
-#: Conferences.class.php:382
+#: Conferences.class.php:380
 msgid "Delete"
 msgstr "Borrar"
 
@@ -141,7 +137,7 @@ msgstr ""
 "PIN identificará el líder. <br> Este pin debe ser diferente que el pin de "
 "usuario ."
 
-#: Conferences.class.php:401
+#: Conferences.class.php:399
 msgid "Extension"
 msgstr "Extensión"
 
@@ -273,7 +269,7 @@ msgstr "Grabar Conferencia"
 msgid "Record the conference call"
 msgstr "Graba las llamadas de la conferencia"
 
-#: Conferences.class.php:377
+#: Conferences.class.php:375
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -289,7 +285,7 @@ msgstr ""
 "se identificará en la salida del comando CLI lista de la conferencia. Nota: "
 "Si Conferencias-Pro está instalado y con licencia esto siempre se habilitará"
 
-#: Conferences.class.php:372
+#: Conferences.class.php:370
 msgid "Submit"
 msgstr "Enviar"
 
@@ -415,6 +411,9 @@ msgstr "heredado"
 #: Conferences.class.php:29
 msgid "is not allowed for your account."
 msgstr "no está autorizada en su cuenta"
+
+#~ msgid "Adding language column"
+#~ msgstr "Agregando columna idioma"
 
 #~ msgid "Announce user join/leave"
 #~ msgstr "Anuncia la entrada o salida de un usuario de la conferencia"
