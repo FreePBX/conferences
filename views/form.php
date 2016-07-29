@@ -536,7 +536,7 @@ $module_hook = \moduleHook::create();
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="users"></i>
 					</div>
 					<div class="col-md-9">
-						<input type="number"  max="20" placeholder="<?php echo _('No Limit')?>" class="form-control" id="users" name="users" value="<?php echo $users ?>">
+						<input type="number" placeholder="<?php echo _('No Limit')?>" class="form-control" id="users" name="users" value="<?php echo $users ?>">
 					</div>
 				</div>
 			</div>
@@ -544,7 +544,7 @@ $module_hook = \moduleHook::create();
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<span id="users-help" class="help-block fpbx-help-block"><?php echo _("Maximum Number of users allowed to join this conference.")?></span>
+			<span id="users-help" class="help-block fpbx-help-block"><?php echo _("Maximum Number of users allowed to join this conference.")." "._("Please note depending on hardware and settings a higher limit may cause call quality issues.")?></span>
 		</div>
 	</div>
 </div>
