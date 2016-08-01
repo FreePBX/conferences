@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-17 17:51-0700\n"
+"POT-Creation-Date: 2016-08-01 11:14-0700\n"
 "PO-Revision-Date: 2010-01-23 00:00+0100\n"
 "Last-Translator: Lónyai Gergely <alephlg@gmail.com>\n"
 "Language-Team: Magyar <freepbx@freepbx.hu>\n"
@@ -217,6 +217,12 @@ msgstr ""
 
 #: assets/js/conferences.js:19
 msgid "Please enter a valid Conference Number"
+msgstr ""
+
+#: views/form.php:547
+msgid ""
+"Please note depending on hardware and settings a higher limit may cause call "
+"quality issues."
 msgstr ""
 
 #: views/form.php:496

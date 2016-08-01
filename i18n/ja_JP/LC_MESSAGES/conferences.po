@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-17 17:51-0700\n"
+"POT-Creation-Date: 2016-08-01 11:14-0700\n"
 "PO-Revision-Date: 2015-02-21 11:10+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -240,6 +240,12 @@ msgstr "正しいカンファレンス名を入力してください"
 #: assets/js/conferences.js:19
 msgid "Please enter a valid Conference Number"
 msgstr "正しいカンファレンス番号を入力してください"
+
+#: views/form.php:547
+msgid ""
+"Please note depending on hardware and settings a higher limit may cause call "
+"quality issues."
+msgstr ""
 
 #: views/form.php:496
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"

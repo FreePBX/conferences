@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-17 17:51-0700\n"
+"POT-Creation-Date: 2016-08-01 11:14-0700\n"
 "PO-Revision-Date: 2016-05-12 01:10+0200\n"
 "Last-Translator: Avishay <baabad@outlook.com>\n"
 "Language-Team: Hebrew <http://weblate.freepbx.org/projects/freepbx/"
@@ -221,6 +221,12 @@ msgstr ""
 
 #: assets/js/conferences.js:19
 msgid "Please enter a valid Conference Number"
+msgstr ""
+
+#: views/form.php:547
+msgid ""
+"Please note depending on hardware and settings a higher limit may cause call "
+"quality issues."
 msgstr ""
 
 #: views/form.php:496

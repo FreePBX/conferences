@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo conferences module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-17 17:51-0700\n"
+"POT-Creation-Date: 2016-08-01 11:14-0700\n"
 "PO-Revision-Date: 2016-01-14 23:49+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -244,6 +244,12 @@ msgstr "Por favor, introduzca un nombre de conferencia válido"
 #: assets/js/conferences.js:19
 msgid "Please enter a valid Conference Number"
 msgstr "Por favor, introduzca un número de conferencia válido"
+
+#: views/form.php:547
+msgid ""
+"Please note depending on hardware and settings a higher limit may cause call "
+"quality issues."
+msgstr ""
 
 #: views/form.php:496
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"

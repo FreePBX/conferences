@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-17 17:51-0700\n"
+"POT-Creation-Date: 2016-08-01 11:14-0700\n"
 "PO-Revision-Date: 2015-10-19 14:43+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -223,6 +223,12 @@ msgstr "请输入有效的会议名称"
 #: assets/js/conferences.js:19
 msgid "Please enter a valid Conference Number"
 msgstr "请输入有效的会议号码"
+
+#: views/form.php:547
+msgid ""
+"Please note depending on hardware and settings a higher limit may cause call "
+"quality issues."
+msgstr ""
 
 #: views/form.php:496
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"

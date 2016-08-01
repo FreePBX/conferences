@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-17 17:51-0700\n"
+"POT-Creation-Date: 2016-08-01 11:14-0700\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Jouniaux <c.jouniaux@techtelecom.fr>\n"
 "Language-Team: \n"
@@ -217,6 +217,12 @@ msgstr "SVP entrez un nom de conférence valide"
 #: assets/js/conferences.js:19
 msgid "Please enter a valid Conference Number"
 msgstr "Merci d'entrer un numéro de conférence valide"
+
+#: views/form.php:547
+msgid ""
+"Please note depending on hardware and settings a higher limit may cause call "
+"quality issues."
+msgstr ""
 
 #: views/form.php:496
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
