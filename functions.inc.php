@@ -125,7 +125,17 @@ class conferences_conf {
 					$output .= "[" . $section . "]\n";
 					$output .= "type = " . $type . "\n";
 					foreach ($settings as $key => $value) {
-						$output .= $key . " = " . $value . "\n";
+						switch ($key) {
+							case 'timeout':
+								//Timeout added in 13.7.0 And 14.0.0+
+								if(version_compare($version, '13.7.0', 'lt')){
+									continue;
+								}
+							break;
+							default:
+								$output .= $key . " = " . $value . "\n";
+							break;
+						}
 					}
 					$output .= "\n";
 				}
@@ -203,6 +213,7 @@ function conferences_get_config($engine) {
 
 	$ast_ge_162 = version_compare($version, '1.6.2', 'ge');
 	$ast_ge_10 = version_compare($version, '10', 'ge');
+	$ast_ge_1370 = version_compare($version, '13.7.0', 'ge');
 
 	switch($engine) {
 		case "asterisk":
@@ -381,6 +392,10 @@ function conferences_get_config($engine) {
 					//M
 					$ext->add($subconfcontext, 's', '', new ext_execif('${REGEX("M" ${DB(CONFERENCE/${ARG1}/options)})}','Set','CONFBRIDGE(user,music_on_hold_when_empty)=yes'));
 
+					if ($ast_ge_1370){
+						$ext->add($subconfcontext, 's', '', new ext_execif('$["${DB(CONFERENCE/${ARG1}/timeout)}" != ""]','Set','CONFBRIDGE(user,timeout)=${DB(CONFERENCE/${ARG1}/timeout)}'));
+					}
+
 					$ext->add($subconfcontext, 's', '', new ext_return());
 				} else {
 					$ext->add($subconfcontext, 's', 'RETURN', new ext_return());
@@ -425,7 +440,7 @@ function conferences_del($account){
 	return FreePBX::Conferences()->deleteConference($account);
 }
 
-function conferences_add($account,$name,$userpin,$adminpin,$options,$joinmsg_id=null,$music='',$users=0){
-	return FreePBX::Conferences()->addConference($account,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users);
+function conferences_add($account,$name,$userpin,$adminpin,$options,$joinmsg_id=null,$music='',$users=0, $timeout=21600){
+	return FreePBX::Conferences()->addConference($account,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users,$timeout);
 }
 ?>

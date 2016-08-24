@@ -2,11 +2,16 @@
 //	License for all code of this FreePBX module can be found in the license file inside the module directory
 //	Copyright 2015 Sangoma Technologies.
 //
-extract($request);
+$engineinfo = engine_getinfo();
+$version =  $engineinfo['version'];
+extract($request, EXTR_SKIP);
 $extdisplay = isset($account)?$account:$extdisplay;
+$confC = FreePBX::Conferences();
+$class1370 = version_compare($version, '13.7.0', 'ge')?'':'hidden';
+dbug(array($version, $class1370));
 if ($extdisplay != ""){
 	//get details for this meetme
-	$thisMeetme = conferences_get($extdisplay);
+	$thisMeetme = $confC->getConference($extdisplay);
 	$options     = $thisMeetme['options'];
 	$userpin     = $thisMeetme['userpin'];
 	$adminpin    = $thisMeetme['adminpin'];
@@ -15,6 +20,7 @@ if ($extdisplay != ""){
 	$music       = $thisMeetme['music'];
 	$users       = $thisMeetme['users'];
 	$language       = $thisMeetme['language'];
+	$timeout       = $thisMeetme['timeout'];
 } else {
 	$options     = "";
 	$userpin     = "";
@@ -24,6 +30,7 @@ if ($extdisplay != ""){
 	$music       = "";
 	$users	     = "0";
 	$language		 = "";
+	$timeout = 21600;
 }
 if ($extdisplay != ""){
 	$orig_accounthtml =	'<input type="hidden" name="orig_account" value="'.$extdisplay.'">';
@@ -576,6 +583,30 @@ $module_hook = \moduleHook::create();
 	</div>
 </div>
 <!--END Mute on Join-->
+<!--Member Timeout-->
+<div class="element-container <?php echo $class1370?>">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="form-group">
+					<div class="col-md-3">
+						<label class="control-label" for="timeout"><?php echo _("Member Timeout") ?></label>
+						<i class="fa fa-question-circle fpbx-help-icon" data-for="timeout"></i>
+					</div>
+					<div class="col-md-9">
+						<input type="number" min = '0' class="form-control" id="timeout" name="timeout" value="<?php echo isset($timeout)?$timeout:'21600'?>">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<span id="timeout-help" class="help-block fpbx-help-block"><?php echo _("This specifies the number of seconds that the participant may stay in the conference before being automatically ejected. 0 = disabled, default is 21600 (6 hours)")?></span>
+		</div>
+	</div>
+</div>
+<!--END Member Timeout-->
 <?php
 echo $module_hook->hookHtml;
 ?>
