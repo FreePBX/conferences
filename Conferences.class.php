@@ -153,6 +153,12 @@ class Conferences extends \FreePBX_Helpers implements BMO {
 				"length" => 10,
 				"default" => "",
 			),
+			"timeout" => array(
+				"type" => "integer",
+				"unsigned" => false,
+				"default" => 21600,
+				"notnull" => false
+			),
 		);
 		$table->modify($cols);
 		unset($table);
@@ -228,7 +234,7 @@ class Conferences extends \FreePBX_Helpers implements BMO {
 	 * @param {string} $value The value of the setting
 	 */
 	public function updateConferenceSettingById($room,$key,$value) {
-		$valid = array("description","userpin","adminpin","options","joinmsg_id","music","users","language");
+		$valid = array("description","userpin","adminpin","options","joinmsg_id","music","users","language","timeout");
 		if(!in_array($key,$valid)) {
 			return false;
 		}
@@ -255,14 +261,14 @@ class Conferences extends \FreePBX_Helpers implements BMO {
 	 * @param {string} $music        MOH to play on hold
 	 * @param {int} $users
 	 */
-	public function addConference($room,$name,$userpin,$adminpin,$options,$joinmsg_id = NULL,$music = '',$users = 0,$language='') {
-		$sql = "INSERT INTO meetme (exten,description,userpin,adminpin,options,joinmsg_id,music,users,language) values (?,?,?,?,?,?,?,?,?)";
+	public function addConference($room,$name,$userpin,$adminpin,$options,$joinmsg_id = NULL,$music = '',$users = 0,$language='',$timeout=21600) {
+		$sql = "INSERT INTO meetme (exten,description,userpin,adminpin,options,joinmsg_id,music,users,language,timeout) values (?,?,?,?,?,?,?,?,?,?)";
 		$sth = $this->db->prepare($sql);
 		/* fixup joinmsg_id to be NULL, not an empty string */
 		if ($joinmsg_id == '') {
 			$joinmsg_id = NULL;
 		}
-		$sth->execute(array($room,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users,$language));
+		$sth->execute(array($room,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users,$language,$timeout));
 		$language = !is_null($language) ? $language : "";
 		$this->astman->database_put('CONFERENCE/'.$room,'language',$language);
 		$userpin = !is_null($userpin) ? $userpin : "";
@@ -302,7 +308,7 @@ class Conferences extends \FreePBX_Helpers implements BMO {
 	 *
 	 */
 	public function getConference($room) {
-		$sql = "SELECT exten,options,userpin,adminpin,description,language,joinmsg_id,music,users FROM meetme WHERE exten = ?";
+		$sql = "SELECT exten,options,userpin,adminpin,description,language,joinmsg_id,music,users,timeout FROM meetme WHERE exten = ?";
 		$sth = $this->db->prepare($sql);
 		try {
 			$sth->execute(array($room));
