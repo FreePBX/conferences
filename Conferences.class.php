@@ -155,7 +155,7 @@ class Conferences extends \FreePBX_Helpers implements BMO {
 			),
 			"timeout" => array(
 				"type" => "integer",
-				"unsigned" => false,
+				"unsigned" => true,
 				"default" => 21600,
 				"notnull" => false
 			),
