@@ -144,7 +144,7 @@ class Conferences extends \FreePBX_Helpers implements BMO {
 			),
 			"users" => array(
 				"type" => "smallint",
-				"unsigned" => false,
+				"unsigned" => true,
 				"default" => 0,
 				"notnull" => false
 			),
