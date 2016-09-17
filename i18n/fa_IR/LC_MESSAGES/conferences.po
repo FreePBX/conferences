@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-01 11:14-0700\n"
+"POT-Creation-Date: 2016-09-16 17:28-0700\n"
 "PO-Revision-Date: 2016-08-07 06:55+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian (Iran) "
-"<http://weblate.freepbx.org/projects/freepbx/conferences/fa_IR/>\n"
-"Language: fa_IR\n"
+"Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
+"conferences/fa_IR/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fa_IR\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -29,11 +29,11 @@ msgstr "عملیات"
 msgid "Add"
 msgstr "افزودن"
 
-#: views/form.php:204
+#: views/form.php:211
 msgid "Admin PIN"
 msgstr "PIN مدیر"
 
-#: views/form.php:481
+#: views/form.php:488
 msgid "Allow Menu"
 msgstr "منو مجاز"
 
@@ -42,7 +42,7 @@ msgid ""
 "Allow creation of conference rooms where multiple people can talk together"
 msgstr "اجازه ساخت اتاق کنفرانس برای آنکه چند کاربر با یکدیگر صحبت کنند"
 
-#: views/form.php:441
+#: views/form.php:448
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
 "their name before joining the conference"
@@ -50,7 +50,7 @@ msgstr ""
 "اعلان پیوست/ترک کاربر.در صورت فعال بودن کاربر باید قبل از ورود یک نام برای "
 "خود انتخاب کند"
 
-#: views/form.php:414
+#: views/form.php:421
 msgid "Announce user(s) count on joining conference"
 msgstr "اعلام تعداد کاربر(های) عضو شده در کنفرانس"
 
@@ -58,43 +58,43 @@ msgstr "اعلام تعداد کاربر(های) عضو شده در کنفران
 msgid "Applications"
 msgstr "درخواست"
 
-#: Conferences.class.php:101 Conferences.class.php:398 views/grid.php:32
+#: Conferences.class.php:101 Conferences.class.php:404 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "کنفرانس"
 
-#: views/form.php:156
+#: views/form.php:163
 msgid "Conference Name"
 msgstr "نام کنفرانس"
 
-#: views/form.php:132
+#: views/form.php:139
 msgid "Conference Number"
 msgstr "شماره کنفرانس"
 
-#: functions.inc.php:172
+#: functions.inc.php:182
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "اتاق کنفرانس %s: %s"
 
-#: functions.inc.php:408
+#: functions.inc.php:423
 msgid "Conference: "
 msgstr "کنفرانس ： "
 
-#: functions.inc.php:191
+#: functions.inc.php:201
 #, php-format
 msgid "Conference: %s"
 msgstr "کنفرانس ：%s"
 
-#: Conferences.class.php:396 conferences.i18n.php:4 conferences.i18n.php:10
+#: Conferences.class.php:402 conferences.i18n.php:4 conferences.i18n.php:10
 #: page.conferences.php:10
 msgid "Conferences"
 msgstr "کنفرانس ها"
 
-#: views/form.php:114
+#: views/form.php:121
 msgid "Conflicting Extensions"
 msgstr "داخلی های متضاد"
 
-#: Conferences.class.php:380
+#: Conferences.class.php:386
 msgid "Delete"
 msgstr "حذف"
 
@@ -106,11 +106,11 @@ msgstr "شرح"
 msgid "Edit"
 msgstr "ویرایش"
 
-#: views/form.php:468
+#: views/form.php:475
 msgid "Enable Music On Hold when the conference has a single caller"
 msgstr "وقتی کنفرانس یک تماس گیرنده دارد موسیقی انتظار تماس را فعال کنید"
 
-#: views/form.php:216
+#: views/form.php:223
 msgid ""
 "Enter a PIN number for the admin user.<br><br>This setting is optional "
 "unless the 'leader wait' option is in use, then this PIN will identify the "
@@ -119,31 +119,31 @@ msgstr ""
 "برای کاربر مدیر شماره پین را وارد کنید. <br><br> این گزینه اختیاری است. <br> "
 "این پین باید با پین کاربر دیگر متفاوت باشد."
 
-#: Conferences.class.php:399
+#: Conferences.class.php:405
 msgid "Extension"
 msgstr "داخلی"
 
-#: views/form.php:168
+#: views/form.php:175
 msgid "Give this conference a brief name to help you identify it."
 msgstr "به این کنفرانس نامی اختصاص دهید تا به شما در یافتن آن کمک کند."
 
-#: views/form.php:234
+#: views/form.php:241
 msgid "Inherit"
 msgstr "ارثی"
 
-#: views/form.php:47
+#: views/form.php:54
 msgid "Join Message"
 msgstr "پیام عضویت"
 
-#: views/form.php:228
+#: views/form.php:235
 msgid "Language"
 msgstr "زبان"
 
-#: views/form.php:291
+#: views/form.php:298
 msgid "Leader Leave"
 msgstr "ترک رهبر"
 
-#: views/form.php:264
+#: views/form.php:271
 msgid "Leader Wait"
 msgstr "صبر رهبر"
 
@@ -151,15 +151,19 @@ msgstr "صبر رهبر"
 msgid "List Conferences"
 msgstr "فهرست کنفرانس ها"
 
-#: views/form.php:547
+#: views/form.php:554
 msgid "Maximum Number of users allowed to join this conference."
 msgstr "بیشترین تعداد کاربران که میتوانند در کنفرانس عضو شوند."
 
-#: views/form.php:535
+#: views/form.php:542
 msgid "Maximum Participants"
 msgstr "بیشترین شرکت کنندگان"
 
-#: views/form.php:61
+#: views/form.php:593
+msgid "Member Timeout"
+msgstr ""
+
+#: views/form.php:68
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>To "
 "add additional recordings please use the \"System Recordings\" MENU above"
@@ -167,7 +171,7 @@ msgstr ""
 "آهنگی که قبل از پیوستن تماس گیرنده به کنفرانس پخش میشود. <br><br> برای موارد "
 "ضبط شده دیگر از منو \"سیستم ضبط شده\" استفاده کنید"
 
-#: views/form.php:104
+#: views/form.php:111
 msgid ""
 "Music (or Commercial) played to the caller while they wait in line for the "
 "conference to start. Choose \"inherit\" if you want the MoH class to be what "
@@ -179,36 +183,36 @@ msgstr ""
 "is currently selected, such as by the inbound route.<br><br>  This music is "
 "defined in the \"Music on Hold\" above ."
 
-#: views/form.php:453
+#: views/form.php:460
 msgid "Music on Hold"
 msgstr "موسیقی انتظار تماس"
 
-#: views/form.php:90
+#: views/form.php:97
 msgid "Music on Hold Class"
 msgstr "کلاس موزیک انتظار مکالمه"
 
-#: views/form.php:574
+#: views/form.php:581
 msgid ""
 "Mute everyone when they initially join the conference. Please note that if "
 "you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
 "Yes to unmute yourself"
 msgstr "ساکت کردن هرکسی که به کنفرانس میپیوندد"
 
-#: views/form.php:559
+#: views/form.php:566
 msgid "Mute on Join"
 msgstr "عضویت بی صدا"
 
-#: views/form.php:271 views/form.php:298 views/form.php:325 views/form.php:352
-#: views/form.php:379 views/form.php:406 views/form.php:433 views/form.php:460
-#: views/form.php:488 views/form.php:515 views/form.php:566
+#: views/form.php:278 views/form.php:305 views/form.php:332 views/form.php:359
+#: views/form.php:386 views/form.php:413 views/form.php:440 views/form.php:467
+#: views/form.php:495 views/form.php:522 views/form.php:573
 msgid "No"
 msgstr "خیر"
 
-#: views/form.php:539
+#: views/form.php:546
 msgid "No Limit"
 msgstr "بدون محدودیت"
 
-#: views/form.php:33
+#: views/form.php:40
 msgid "None"
 msgstr "هیچ"
 
@@ -220,7 +224,7 @@ msgstr "نام کنفرانس معتبر وارد کنید"
 msgid "Please enter a valid Conference Number"
 msgstr "تعداد کنفرانس معتبر وارد کنید"
 
-#: views/form.php:547
+#: views/form.php:554
 msgid ""
 "Please note depending on hardware and settings a higher limit may cause call "
 "quality issues."
@@ -228,31 +232,31 @@ msgstr ""
 "نکته مهم بنا به تنظیمات سخت افزار تنظیم بیشترین حد سبب بروز اشکالاتی در "
 "کیفیت تماس میشود."
 
-#: views/form.php:496
+#: views/form.php:503
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
 msgstr "منوی فعلی(کاربر یا مدیر) وقتی'*' دریافت شد (ارسال به منو)"
 
-#: views/form.php:372
+#: views/form.php:379
 msgid "Quiet Mode"
 msgstr "حالت سکوت"
 
-#: views/form.php:387
+#: views/form.php:394
 msgid "Quiet mode (do not play enter/leave sounds)"
 msgstr "حالت آرام(صدای ورود/خروج پخش نمیشود)"
 
-#: views/form.php:508
+#: views/form.php:515
 msgid "Record Conference"
 msgstr "ضبط کنفرانس"
 
-#: views/form.php:523
+#: views/form.php:530
 msgid "Record the conference call"
 msgstr "ضبط تماس کنفرانس"
 
-#: Conferences.class.php:375
+#: Conferences.class.php:381
 msgid "Reset"
 msgstr "بازنشانی"
 
-#: views/form.php:360
+#: views/form.php:367
 msgid ""
 "Sets talker detection. Asterisk will send events on the manager interface "
 "identifying the channel that is talking. The talker will also be identified "
@@ -264,19 +268,19 @@ msgstr ""
 "on the output of the conference list CLI command. Note: If Conferences Pro "
 "is installed and licensed this will always be enabled"
 
-#: Conferences.class.php:370
+#: Conferences.class.php:376
 msgid "Submit"
 msgstr "ثبت"
 
-#: views/form.php:345
+#: views/form.php:352
 msgid "Talker Detection"
 msgstr "تشخیص گوینده"
 
-#: views/form.php:318
+#: views/form.php:325
 msgid "Talker Optimization"
 msgstr "بهینه سازی گوینده"
 
-#: views/form.php:251
+#: views/form.php:258
 msgid ""
 "The language for the conference. If set to inherit or blank the language "
 "will be inherited from the first person who joins the conference esentially "
@@ -290,7 +294,14 @@ msgstr "زبان کنفرانس"
 msgid "The user and admin can not have the same pin code."
 msgstr "کاربر و مدیر نمیتوانند پین کد یکسان داشته باشند."
 
-#: views/form.php:333
+#: views/form.php:605
+msgid ""
+"This specifies the number of seconds that the participant may stay in the "
+"conference before being automatically ejected. 0 = disabled, default is "
+"21600 (6 hours)"
+msgstr ""
+
+#: views/form.php:340
 msgid ""
 "Turns on talker optimization. With talker optimization, Asterisk treats "
 "talkers who are not speaking as being muted, meaning that no encoding is "
@@ -302,23 +313,23 @@ msgstr ""
 "done on transmission and that received audio that is not registered as "
 "talking is omitted, causing no buildup in background noise."
 
-#: views/form.php:144
+#: views/form.php:151
 msgid "Use this number to dial into the conference."
 msgstr "این شماره جهت ورود به کنفرانس است."
 
-#: views/form.php:399
+#: views/form.php:406
 msgid "User Count"
 msgstr "تعداد کاربر"
 
-#: views/form.php:180
+#: views/form.php:187
 msgid "User PIN"
 msgstr "پین کاربر"
 
-#: views/form.php:426
+#: views/form.php:433
 msgid "User join/leave"
 msgstr "کاربر پیوست/ترک کرد"
 
-#: views/form.php:279
+#: views/form.php:286
 msgid ""
 "Wait until the conference leader (admin user) arrives before starting the "
 "conference"
@@ -328,19 +339,19 @@ msgstr "انتظار برای رسیدن مدیر(کاربر مدیر) کنفر�
 msgid "Warning! Extension"
 msgstr "هشدار! داخلی"
 
-#: views/form.php:306
+#: views/form.php:313
 msgid ""
 "When the conference leader (admin user) leaves all users will be kicked from "
 "the conference"
 msgstr "وقتی مدیراز کنفرانس خارج شد تمام کاربران نیز خارج شوند"
 
-#: views/form.php:269 views/form.php:296 views/form.php:323 views/form.php:350
-#: views/form.php:377 views/form.php:404 views/form.php:431 views/form.php:458
-#: views/form.php:486 views/form.php:513 views/form.php:564
+#: views/form.php:276 views/form.php:303 views/form.php:330 views/form.php:357
+#: views/form.php:384 views/form.php:411 views/form.php:438 views/form.php:465
+#: views/form.php:493 views/form.php:520 views/form.php:571
 msgid "Yes"
 msgstr "بله"
 
-#: views/form.php:192
+#: views/form.php:199
 msgid ""
 "You can require callers to enter a password before they can enter this "
 "conference.<br><br>This setting is optional.<br><br>If either PIN is "
@@ -366,11 +377,11 @@ msgstr ""
 "وقتی گزینه انتظار رهبر را انتخاب میکنید باید برای رهبر کنفرانس پین مدیر "
 "تنظیم کنید"
 
-#: views/form.php:78
+#: views/form.php:85
 msgid "default"
 msgstr "پیش فرض"
 
-#: views/form.php:77
+#: views/form.php:84
 msgid "inherit"
 msgstr "ارث بردن"
 
