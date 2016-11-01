@@ -2,14 +2,15 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>13.0.23</version>
+	<version>13.0.23.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
-		*13.0.23.* FREEPBX-12955 Add user timeout above Asterisk 13.7.0
+		*13.0.23.1* FREEPBX-13505 Conference timeout value stuck at default
+		*13.0.23* FREEPBX-12955 Add user timeout above Asterisk 13.7.0
 		*13.0.22* FREEPBX-12841 Max Conference Participant Increase
 		*13.0.21* FREEPBX-12748
 		*13.0.20* FREEPBX-12406 Conference Language always set to 'Inherit'

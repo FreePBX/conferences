@@ -36,7 +36,7 @@ class Conferences extends \FreePBX_Helpers implements BMO {
 					$usage_arr = framework_check_extension_usage($account);
 					if (!empty($usage_arr)) {
 						$conflict_url = framework_display_extension_usage_alert($usage_arr);
-					} elseif ($this->addConference($account,$request['name'],$request['userpin'],$request['adminpin'],$request['options'],$request['joinmsg_id'],$music,$users,$request['adminpin']) !== false) {
+					} elseif ($this->addConference($account,$request['name'],$request['userpin'],$request['adminpin'],$request['options'],$request['joinmsg_id'],$music,$users,$request['language'],$request['timeout']) !== false) {
 						needreload();
 					}
 				break;
@@ -63,7 +63,7 @@ class Conferences extends \FreePBX_Helpers implements BMO {
 						$this->deleteConference($account);
 					}
 
-					$this->addConference($account,$request['name'],$request['userpin'],$request['adminpin'],$request['options'],$request['joinmsg_id'],$music,$users,$request['language']);
+					$this->addConference($account,$request['name'],$request['userpin'],$request['adminpin'],$request['options'],$request['joinmsg_id'],$music,$users,$request['language'],$request['timeout']);
 					needreload();
 				break;
 			}
