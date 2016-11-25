@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-16 17:28-0700\n"
-"PO-Revision-Date: 2016-11-25 03:57+0200\n"
+"PO-Revision-Date: 2016-11-25 04:20+0200\n"
 "Last-Translator: Pascal <pascal.noyel@ipexia.com>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/conferences/fr_FR/>\n"
@@ -68,7 +68,7 @@ msgstr "Annonce le nombre de personnes ayant rejoint la conférence"
 
 #: conferences.i18n.php:6 conferences.i18n.php:12
 msgid "Applications"
-msgstr "Applications"
+msgstr ""
 
 #: Conferences.class.php:101 Conferences.class.php:404 views/grid.php:32
 #: views/rnav.php:25
@@ -130,56 +130,63 @@ msgid ""
 "unless the 'leader wait' option is in use, then this PIN will identify the "
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
+"Entre un code PIN pour l'administrateur.<br><br>Ce paramètres est optionnel "
+"sauf si l'option \"attente du maître de Conférence\" est activée, alors le "
+"Code PIN identifie le \"maître de Conférence\".<br>Ce code PIN doit être "
+"différent du code PIN utilisateur."
 
 #: Conferences.class.php:405
 msgid "Extension"
-msgstr ""
+msgstr "Poste"
 
 #: views/form.php:175
 msgid "Give this conference a brief name to help you identify it."
-msgstr "Donnez un nom à cette conférence pour vous aider à l'identifier"
+msgstr "Donnez un nom à cette conférence pour vous aider à l'identifier."
 
 #: views/form.php:241
 msgid "Inherit"
-msgstr ""
+msgstr "Par défaut"
 
 #: views/form.php:54
 msgid "Join Message"
-msgstr ""
+msgstr "Joindre Message"
 
 #: views/form.php:235
 msgid "Language"
-msgstr ""
+msgstr "Langue"
 
 #: views/form.php:298
 msgid "Leader Leave"
-msgstr ""
+msgstr "Arrêt Maître de Conférence"
 
 #: views/form.php:271
 msgid "Leader Wait"
-msgstr ""
+msgstr "Attendre le Maître de Conférence"
 
 #: views/rnav.php:19
 msgid "List Conferences"
-msgstr ""
+msgstr "Liste des Conférences"
 
 #: views/form.php:554
 msgid "Maximum Number of users allowed to join this conference."
-msgstr ""
+msgstr "Nombre maximum de participants dans la Conférence."
 
 #: views/form.php:542
 msgid "Maximum Participants"
-msgstr ""
+msgstr "Maximum de Participants"
 
 #: views/form.php:593
 msgid "Member Timeout"
-msgstr ""
+msgstr "Délais des membres"
 
 #: views/form.php:68
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>To "
 "add additional recordings please use the \"System Recordings\" MENU above"
 msgstr ""
+"Jouer ce message au participant avant de rejoindre la conférence.<br><br>"
+"Pour ajouter des enregistrements merci d'utiliser le menu au dessus \""
+"Enregistrement Système\""
 
 #: views/form.php:111
 msgid ""
@@ -191,11 +198,11 @@ msgstr ""
 
 #: views/form.php:460
 msgid "Music on Hold"
-msgstr ""
+msgstr "Musique d'Attente"
 
 #: views/form.php:97
 msgid "Music on Hold Class"
-msgstr ""
+msgstr "Type de Musique d'Attente"
 
 #: views/form.php:581
 msgid ""
@@ -206,7 +213,7 @@ msgstr ""
 
 #: views/form.php:566
 msgid "Mute on Join"
-msgstr ""
+msgstr "Coupe le son à la connexion"
 
 #: views/form.php:278 views/form.php:305 views/form.php:332 views/form.php:359
 #: views/form.php:386 views/form.php:413 views/form.php:440 views/form.php:467
@@ -216,7 +223,7 @@ msgstr "Non"
 
 #: views/form.php:546
 msgid "No Limit"
-msgstr ""
+msgstr "Aucune limite"
 
 #: views/form.php:40
 msgid "None"
@@ -235,6 +242,8 @@ msgid ""
 "Please note depending on hardware and settings a higher limit may cause call "
 "quality issues."
 msgstr ""
+"Merci de prendre en compte qu'en fonction du materiel et des paramètres une "
+"limite plus haute peut entrainer des problèmes de qualité."
 
 #: views/form.php:503
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
@@ -244,7 +253,7 @@ msgstr ""
 
 #: views/form.php:379
 msgid "Quiet Mode"
-msgstr ""
+msgstr "Mode silencieux"
 
 #: views/form.php:394
 msgid "Quiet mode (do not play enter/leave sounds)"
@@ -252,7 +261,7 @@ msgstr "Ne joue pas les messages entrée/sortie"
 
 #: views/form.php:515
 msgid "Record Conference"
-msgstr ""
+msgstr "Enregistrer la Conférence"
 
 #: views/form.php:530
 msgid "Record the conference call"
@@ -260,7 +269,7 @@ msgstr "Enregistrement de la conférence"
 
 #: Conferences.class.php:381
 msgid "Reset"
-msgstr ""
+msgstr "Remise à zéro"
 
 #: views/form.php:367
 msgid ""
@@ -272,15 +281,15 @@ msgstr ""
 
 #: Conferences.class.php:376
 msgid "Submit"
-msgstr ""
+msgstr "Envoyer"
 
 #: views/form.php:352
 msgid "Talker Detection"
-msgstr ""
+msgstr "Détection de la personne qui parle"
 
 #: views/form.php:325
 msgid "Talker Optimization"
-msgstr ""
+msgstr "Optimisation de la personne qui parle"
 
 #: views/form.php:258
 msgid ""
@@ -295,6 +304,8 @@ msgstr ""
 #: assets/js/conferences.js:23
 msgid "The user and admin can not have the same pin code."
 msgstr ""
+"L'utilisateur et le Maître de Conférence ne peuvent pas avoir le même code "
+"PIN."
 
 #: views/form.php:605
 msgid ""
@@ -313,19 +324,19 @@ msgstr ""
 
 #: views/form.php:151
 msgid "Use this number to dial into the conference."
-msgstr "Numéro pour appeler la conférence"
+msgstr "Numéro pour appeler la conférence."
 
 #: views/form.php:406
 msgid "User Count"
-msgstr ""
+msgstr "Nombre de participants"
 
 #: views/form.php:187
 msgid "User PIN"
-msgstr ""
+msgstr "Code PIN utilisateur"
 
 #: views/form.php:433
 msgid "User join/leave"
-msgstr ""
+msgstr "Utilisateur Rejoindre/Quitter"
 
 #: views/form.php:286
 msgid ""
@@ -342,6 +353,8 @@ msgid ""
 "When the conference leader (admin user) leaves all users will be kicked from "
 "the conference"
 msgstr ""
+"Lorsque le Maître de Conférence quitte, tous les utilisateurs quitteront la "
+"Chambre de Conférence"
 
 #: views/form.php:276 views/form.php:303 views/form.php:330 views/form.php:357
 #: views/form.php:384 views/form.php:411 views/form.php:438 views/form.php:465
@@ -372,11 +385,11 @@ msgstr ""
 
 #: views/form.php:85
 msgid "default"
-msgstr ""
+msgstr "Défaut"
 
 #: views/form.php:84
 msgid "inherit"
-msgstr ""
+msgstr "Par défaut"
 
 #: Conferences.class.php:29
 msgid "is not allowed for your account."
