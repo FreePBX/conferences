@@ -20,39 +20,47 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-16 17:28-0700\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Jouniaux <c.jouniaux@techtelecom.fr>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2016-11-25 03:57+0200\n"
+"Last-Translator: Pascal <pascal.noyel@ipexia.com>\n"
+"Language-Team: French "
+"<http://weblate.freepbx.org/projects/freepbx/conferences/fr_FR/>\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/grid.php:34
 msgid "Actions"
-msgstr ""
+msgstr "Actions"
 
 #: page.conferences.php:17 views/grid.php:27 views/rnav.php:20
 msgid "Add"
-msgstr ""
+msgstr "Ajouter"
 
 #: views/form.php:211
 msgid "Admin PIN"
-msgstr ""
+msgstr "Code PIN Administrateur"
 
 #: views/form.php:488
 msgid "Allow Menu"
-msgstr ""
+msgstr "Autorise le Menu"
 
 #: conferences.i18n.php:8
 msgid ""
 "Allow creation of conference rooms where multiple people can talk together"
 msgstr ""
+"Autorise la création de Chambre de Conférence ou plusieurs personnes peuvent "
+"converser ensemble"
 
 #: views/form.php:448
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
 "their name before joining the conference"
 msgstr ""
+"Joue l'annonce utilisateur \"rejoint/quitte\". Si activé, l'utilisateur "
+"devra enregistrer son nom avant de rejoindre la conférence"
 
 #: views/form.php:421
 msgid "Announce user(s) count on joining conference"
@@ -69,11 +77,11 @@ msgstr "Conférence"
 
 #: views/form.php:163
 msgid "Conference Name"
-msgstr ""
+msgstr "Nom de la Conférence"
 
 #: views/form.php:139
 msgid "Conference Number"
-msgstr ""
+msgstr "N° de Conférence"
 
 #: functions.inc.php:182
 #, php-format
@@ -100,15 +108,15 @@ msgstr "Conflit d'extensions"
 
 #: Conferences.class.php:386
 msgid "Delete"
-msgstr ""
+msgstr "Supprimer"
 
 #: views/grid.php:33 views/rnav.php:26
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #: page.conferences.php:15
 msgid "Edit"
-msgstr ""
+msgstr "Editer"
 
 #: views/form.php:475
 msgid "Enable Music On Hold when the conference has a single caller"
