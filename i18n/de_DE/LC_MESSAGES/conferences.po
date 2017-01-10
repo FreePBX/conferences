@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-16 17:28-0700\n"
-"PO-Revision-Date: 2017-01-09 20:33+0200\n"
+"PO-Revision-Date: 2017-01-10 16:36+0200\n"
 "Last-Translator: Sven <spiderrs4@web.de>\n"
 "Language-Team: German "
 "<http://weblate.freepbx.org/projects/freepbx/conferences/de_DE/>\n"
@@ -31,11 +31,11 @@ msgstr "Hinzufügen"
 
 #: views/form.php:211
 msgid "Admin PIN"
-msgstr ""
+msgstr "Administrator PIN"
 
 #: views/form.php:488
 msgid "Allow Menu"
-msgstr ""
+msgstr "Menü zulassen"
 
 #: conferences.i18n.php:8
 msgid ""
@@ -54,39 +54,39 @@ msgstr ""
 
 #: conferences.i18n.php:6 conferences.i18n.php:12
 msgid "Applications"
-msgstr ""
+msgstr "Anwendungen"
 
 #: Conferences.class.php:101 Conferences.class.php:404 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
-msgstr ""
+msgstr "Konferenz"
 
 #: views/form.php:163
 msgid "Conference Name"
-msgstr ""
+msgstr "Konferenzname"
 
 #: views/form.php:139
 msgid "Conference Number"
-msgstr ""
+msgstr "Konferenznummer"
 
 #: functions.inc.php:182
 #, php-format
 msgid "Conference Room %s : %s"
-msgstr ""
+msgstr "Konferenzraum %s : %s"
 
 #: functions.inc.php:423
 msgid "Conference: "
-msgstr ""
+msgstr "Konferenz: "
 
 #: functions.inc.php:201
 #, php-format
 msgid "Conference: %s"
-msgstr ""
+msgstr "Konferenz: %s"
 
 #: Conferences.class.php:402 conferences.i18n.php:4 conferences.i18n.php:10
 #: page.conferences.php:10
 msgid "Conferences"
-msgstr ""
+msgstr "Konferenzen"
 
 #: views/form.php:121
 msgid "Conflicting Extensions"
@@ -94,15 +94,15 @@ msgstr ""
 
 #: Conferences.class.php:386
 msgid "Delete"
-msgstr ""
+msgstr "Löschen"
 
 #: views/grid.php:33 views/rnav.php:26
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: page.conferences.php:15
 msgid "Edit"
-msgstr ""
+msgstr "Bearbeiten"
 
 #: views/form.php:475
 msgid "Enable Music On Hold when the conference has a single caller"
@@ -117,7 +117,7 @@ msgstr ""
 
 #: Conferences.class.php:405
 msgid "Extension"
-msgstr ""
+msgstr "Nebenstelle"
 
 #: views/form.php:175
 msgid "Give this conference a brief name to help you identify it."
@@ -125,7 +125,7 @@ msgstr ""
 
 #: views/form.php:241
 msgid "Inherit"
-msgstr ""
+msgstr "Erben"
 
 #: views/form.php:54
 msgid "Join Message"
@@ -133,7 +133,7 @@ msgstr ""
 
 #: views/form.php:235
 msgid "Language"
-msgstr ""
+msgstr "Sprache"
 
 #: views/form.php:298
 msgid "Leader Leave"
@@ -145,15 +145,16 @@ msgstr ""
 
 #: views/rnav.php:19
 msgid "List Conferences"
-msgstr ""
+msgstr "Konferenzen auflisten"
 
 #: views/form.php:554
 msgid "Maximum Number of users allowed to join this conference."
 msgstr ""
+"Maximale Anzahl der Benutzer, die an dieser Konferenz teilnehmen dürfen."
 
 #: views/form.php:542
 msgid "Maximum Participants"
-msgstr ""
+msgstr "Maximale Teilnehmerzahl"
 
 #: views/form.php:593
 msgid "Member Timeout"
@@ -175,11 +176,11 @@ msgstr ""
 
 #: views/form.php:460
 msgid "Music on Hold"
-msgstr ""
+msgstr "Musik bei Halten"
 
 #: views/form.php:97
 msgid "Music on Hold Class"
-msgstr ""
+msgstr "Musik bei Halten Klasse"
 
 #: views/form.php:581
 msgid ""
@@ -190,29 +191,29 @@ msgstr ""
 
 #: views/form.php:566
 msgid "Mute on Join"
-msgstr ""
+msgstr "Stummschalten beim Verbinden"
 
 #: views/form.php:278 views/form.php:305 views/form.php:332 views/form.php:359
 #: views/form.php:386 views/form.php:413 views/form.php:440 views/form.php:467
 #: views/form.php:495 views/form.php:522 views/form.php:573
 msgid "No"
-msgstr ""
+msgstr "Nein"
 
 #: views/form.php:546
 msgid "No Limit"
-msgstr ""
+msgstr "Unbegrenzt"
 
 #: views/form.php:40
 msgid "None"
-msgstr ""
+msgstr "keine"
 
 #: assets/js/conferences.js:20
 msgid "Please enter a valid Conference Name"
-msgstr ""
+msgstr "Geben Sie einen gültigen Konferenznamen ein."
 
 #: assets/js/conferences.js:19
 msgid "Please enter a valid Conference Number"
-msgstr ""
+msgstr "Geben Sie eine gültige Konferenznummer ein."
 
 #: views/form.php:554
 msgid ""
@@ -226,23 +227,23 @@ msgstr ""
 
 #: views/form.php:379
 msgid "Quiet Mode"
-msgstr ""
+msgstr "Ruhemodus"
 
 #: views/form.php:394
 msgid "Quiet mode (do not play enter/leave sounds)"
-msgstr ""
+msgstr "Ruhemodus (spielt keine Betreten/Verlassen Töne ab)"
 
 #: views/form.php:515
 msgid "Record Conference"
-msgstr ""
+msgstr "Konferenz Aufzeichnen"
 
 #: views/form.php:530
 msgid "Record the conference call"
-msgstr ""
+msgstr "Zeichnet die Konferenz auf."
 
 #: Conferences.class.php:381
 msgid "Reset"
-msgstr ""
+msgstr "Zurücksetzen"
 
 #: views/form.php:367
 msgid ""
@@ -254,15 +255,15 @@ msgstr ""
 
 #: Conferences.class.php:376
 msgid "Submit"
-msgstr ""
+msgstr "Bestätigen"
 
 #: views/form.php:352
 msgid "Talker Detection"
-msgstr ""
+msgstr "Rednererkennung"
 
 #: views/form.php:325
 msgid "Talker Optimization"
-msgstr ""
+msgstr "Redneroptimierung"
 
 #: views/form.php:258
 msgid ""
@@ -299,15 +300,15 @@ msgstr ""
 
 #: views/form.php:406
 msgid "User Count"
-msgstr ""
+msgstr "Benutzerzähler"
 
 #: views/form.php:187
 msgid "User PIN"
-msgstr ""
+msgstr "Benutzer PIN"
 
 #: views/form.php:433
 msgid "User join/leave"
-msgstr ""
+msgstr "Benutzer Beitritt/Verlassen"
 
 #: views/form.php:286
 msgid ""
@@ -317,19 +318,21 @@ msgstr ""
 
 #: Conferences.class.php:29
 msgid "Warning! Extension"
-msgstr ""
+msgstr "Achtung! Nebenstelle"
 
 #: views/form.php:313
 msgid ""
 "When the conference leader (admin user) leaves all users will be kicked from "
 "the conference"
 msgstr ""
+"Wenn der Konferenzleiter (Admin-Benutzer) die Konferenz verlässt, werden "
+"alle Benutzer von der Konferenz getrennt."
 
 #: views/form.php:276 views/form.php:303 views/form.php:330 views/form.php:357
 #: views/form.php:384 views/form.php:411 views/form.php:438 views/form.php:465
 #: views/form.php:493 views/form.php:520 views/form.php:571
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #: views/form.php:199
 msgid ""
@@ -353,12 +356,12 @@ msgstr ""
 
 #: views/form.php:85
 msgid "default"
-msgstr ""
+msgstr "Standard"
 
 #: views/form.php:84
 msgid "inherit"
-msgstr ""
+msgstr "Erben"
 
 #: Conferences.class.php:29
 msgid "is not allowed for your account."
-msgstr ""
+msgstr "Ist für Ihr Konto nicht erlaubt."
