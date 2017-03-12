@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-16 17:28-0700\n"
-"PO-Revision-Date: 2017-03-12 17:33+0200\n"
+"PO-Revision-Date: 2017-03-12 18:10+0200\n"
 "Last-Translator: Nicolas <freepbx@riendeau.org>\n"
 "Language-Team: French "
 "<http://weblate.freepbx.org/projects/freepbx/conferences/fr_FR/>\n"
@@ -157,36 +157,36 @@ msgstr "Langue"
 
 #: views/form.php:298
 msgid "Leader Leave"
-msgstr "Arrêt Maître de Conférence"
+msgstr "Terminer l'appel si l'initiateur quitte"
 
 #: views/form.php:271
 msgid "Leader Wait"
-msgstr "Attendre le Maître de Conférence"
+msgstr "Attendre l'initiateur"
 
 #: views/rnav.php:19
 msgid "List Conferences"
-msgstr "Liste des Conférences"
+msgstr "Liste des conférences"
 
 #: views/form.php:554
 msgid "Maximum Number of users allowed to join this conference."
-msgstr "Nombre maximum de participants dans la Conférence."
+msgstr "Nombre maximum de participants dans la conférence."
 
 #: views/form.php:542
 msgid "Maximum Participants"
-msgstr "Maximum de Participants"
+msgstr "Nombre maximum de participants"
 
 #: views/form.php:593
 msgid "Member Timeout"
-msgstr "Délais des membres"
+msgstr "Délai des membres"
 
 #: views/form.php:68
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>To "
 "add additional recordings please use the \"System Recordings\" MENU above"
 msgstr ""
-"Jouer ce message au participant avant de rejoindre la conférence.<br><br>"
-"Pour ajouter des enregistrements merci d'utiliser le menu au dessus \""
-"Enregistrement Système\""
+"Message à faire écouter au participant avant de rejoindre la "
+"conférence.<br><br>Pour ajouter des enregistrements additionnels utiliser le "
+"menu \"Enregistrement système\""
 
 #: views/form.php:111
 msgid ""
@@ -202,7 +202,7 @@ msgstr "Musique d'Attente"
 
 #: views/form.php:97
 msgid "Music on Hold Class"
-msgstr "Type de Musique d'Attente"
+msgstr "Type de musique d'attente"
 
 #: views/form.php:581
 msgid ""
