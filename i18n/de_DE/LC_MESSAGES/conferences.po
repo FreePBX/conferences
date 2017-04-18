@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-16 17:28-0700\n"
+"POT-Creation-Date: 2017-04-18 15:12-0400\n"
 "PO-Revision-Date: 2017-01-10 16:36+0200\n"
 "Last-Translator: Sven <spiderrs4@web.de>\n"
-"Language-Team: German "
-"<http://weblate.freepbx.org/projects/freepbx/conferences/de_DE/>\n"
-"Language: de_DE\n"
+"Language-Team: German <http://weblate.freepbx.org/projects/freepbx/"
+"conferences/de_DE/>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.4\n"
 
@@ -52,7 +52,7 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr ""
 
-#: conferences.i18n.php:6 conferences.i18n.php:12
+#: conferences.i18n.php:6
 msgid "Applications"
 msgstr "Anwendungen"
 
@@ -73,6 +73,15 @@ msgstr "Konferenznummer"
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Konferenzraum %s : %s"
+
+#: conferences.i18n.php:12
+msgid "Conference Status"
+msgstr ""
+
+#: views/form.php:534
+#, php-format
+msgid "Conference recording is only available in %s"
+msgstr ""
 
 #: functions.inc.php:423
 msgid "Conference: "
@@ -147,16 +156,16 @@ msgstr ""
 msgid "List Conferences"
 msgstr "Konferenzen auflisten"
 
-#: views/form.php:554
+#: views/form.php:558
 msgid "Maximum Number of users allowed to join this conference."
 msgstr ""
 "Maximale Anzahl der Benutzer, die an dieser Konferenz teilnehmen dürfen."
 
-#: views/form.php:542
+#: views/form.php:546
 msgid "Maximum Participants"
 msgstr "Maximale Teilnehmerzahl"
 
-#: views/form.php:593
+#: views/form.php:597
 msgid "Member Timeout"
 msgstr ""
 
@@ -182,24 +191,24 @@ msgstr "Musik bei Halten"
 msgid "Music on Hold Class"
 msgstr "Musik bei Halten Klasse"
 
-#: views/form.php:581
+#: views/form.php:585
 msgid ""
 "Mute everyone when they initially join the conference. Please note that if "
 "you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
 "Yes to unmute yourself"
 msgstr ""
 
-#: views/form.php:566
+#: views/form.php:570
 msgid "Mute on Join"
 msgstr "Stummschalten beim Verbinden"
 
 #: views/form.php:278 views/form.php:305 views/form.php:332 views/form.php:359
 #: views/form.php:386 views/form.php:413 views/form.php:440 views/form.php:467
-#: views/form.php:495 views/form.php:522 views/form.php:573
+#: views/form.php:495 views/form.php:526 views/form.php:577
 msgid "No"
 msgstr "Nein"
 
-#: views/form.php:546
+#: views/form.php:550
 msgid "No Limit"
 msgstr "Unbegrenzt"
 
@@ -215,7 +224,7 @@ msgstr "Geben Sie einen gültigen Konferenznamen ein."
 msgid "Please enter a valid Conference Number"
 msgstr "Geben Sie eine gültige Konferenznummer ein."
 
-#: views/form.php:554
+#: views/form.php:558
 msgid ""
 "Please note depending on hardware and settings a higher limit may cause call "
 "quality issues."
@@ -233,11 +242,11 @@ msgstr "Ruhemodus"
 msgid "Quiet mode (do not play enter/leave sounds)"
 msgstr "Ruhemodus (spielt keine Betreten/Verlassen Töne ab)"
 
-#: views/form.php:515
+#: views/form.php:519
 msgid "Record Conference"
 msgstr "Konferenz Aufzeichnen"
 
-#: views/form.php:530
+#: views/form.php:534
 msgid "Record the conference call"
 msgstr "Zeichnet die Konferenz auf."
 
@@ -279,7 +288,7 @@ msgstr ""
 msgid "The user and admin can not have the same pin code."
 msgstr ""
 
-#: views/form.php:605
+#: views/form.php:609
 msgid ""
 "This specifies the number of seconds that the participant may stay in the "
 "conference before being automatically ejected. 0 = disabled, default is "
@@ -330,7 +339,7 @@ msgstr ""
 
 #: views/form.php:276 views/form.php:303 views/form.php:330 views/form.php:357
 #: views/form.php:384 views/form.php:411 views/form.php:438 views/form.php:465
-#: views/form.php:493 views/form.php:520 views/form.php:571
+#: views/form.php:493 views/form.php:524 views/form.php:575
 msgid "Yes"
 msgstr "Ja"
 

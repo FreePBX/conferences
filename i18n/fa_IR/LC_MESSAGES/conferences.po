@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-16 17:28-0700\n"
+"POT-Creation-Date: 2017-04-18 15:12-0400\n"
 "PO-Revision-Date: 2016-08-07 06:55+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -54,7 +54,7 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "اعلام تعداد کاربر(های) عضو شده در کنفرانس"
 
-#: conferences.i18n.php:6 conferences.i18n.php:12
+#: conferences.i18n.php:6
 msgid "Applications"
 msgstr "درخواست"
 
@@ -75,6 +75,15 @@ msgstr "شماره کنفرانس"
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "اتاق کنفرانس %s: %s"
+
+#: conferences.i18n.php:12
+msgid "Conference Status"
+msgstr ""
+
+#: views/form.php:534
+#, php-format
+msgid "Conference recording is only available in %s"
+msgstr ""
 
 #: functions.inc.php:423
 msgid "Conference: "
@@ -151,15 +160,15 @@ msgstr "صبر رهبر"
 msgid "List Conferences"
 msgstr "فهرست کنفرانس ها"
 
-#: views/form.php:554
+#: views/form.php:558
 msgid "Maximum Number of users allowed to join this conference."
 msgstr "بیشترین تعداد کاربران که میتوانند در کنفرانس عضو شوند."
 
-#: views/form.php:542
+#: views/form.php:546
 msgid "Maximum Participants"
 msgstr "بیشترین شرکت کنندگان"
 
-#: views/form.php:593
+#: views/form.php:597
 msgid "Member Timeout"
 msgstr ""
 
@@ -191,24 +200,24 @@ msgstr "موسیقی انتظار تماس"
 msgid "Music on Hold Class"
 msgstr "کلاس موزیک انتظار مکالمه"
 
-#: views/form.php:581
+#: views/form.php:585
 msgid ""
 "Mute everyone when they initially join the conference. Please note that if "
 "you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
 "Yes to unmute yourself"
 msgstr "ساکت کردن هرکسی که به کنفرانس میپیوندد"
 
-#: views/form.php:566
+#: views/form.php:570
 msgid "Mute on Join"
 msgstr "عضویت بی صدا"
 
 #: views/form.php:278 views/form.php:305 views/form.php:332 views/form.php:359
 #: views/form.php:386 views/form.php:413 views/form.php:440 views/form.php:467
-#: views/form.php:495 views/form.php:522 views/form.php:573
+#: views/form.php:495 views/form.php:526 views/form.php:577
 msgid "No"
 msgstr "خیر"
 
-#: views/form.php:546
+#: views/form.php:550
 msgid "No Limit"
 msgstr "بدون محدودیت"
 
@@ -224,7 +233,7 @@ msgstr "نام کنفرانس معتبر وارد کنید"
 msgid "Please enter a valid Conference Number"
 msgstr "تعداد کنفرانس معتبر وارد کنید"
 
-#: views/form.php:554
+#: views/form.php:558
 msgid ""
 "Please note depending on hardware and settings a higher limit may cause call "
 "quality issues."
@@ -244,11 +253,11 @@ msgstr "حالت سکوت"
 msgid "Quiet mode (do not play enter/leave sounds)"
 msgstr "حالت آرام(صدای ورود/خروج پخش نمیشود)"
 
-#: views/form.php:515
+#: views/form.php:519
 msgid "Record Conference"
 msgstr "ضبط کنفرانس"
 
-#: views/form.php:530
+#: views/form.php:534
 msgid "Record the conference call"
 msgstr "ضبط تماس کنفرانس"
 
@@ -294,7 +303,7 @@ msgstr "زبان کنفرانس"
 msgid "The user and admin can not have the same pin code."
 msgstr "کاربر و مدیر نمیتوانند پین کد یکسان داشته باشند."
 
-#: views/form.php:605
+#: views/form.php:609
 msgid ""
 "This specifies the number of seconds that the participant may stay in the "
 "conference before being automatically ejected. 0 = disabled, default is "
@@ -347,7 +356,7 @@ msgstr "وقتی مدیراز کنفرانس خارج شد تمام کاربرا
 
 #: views/form.php:276 views/form.php:303 views/form.php:330 views/form.php:357
 #: views/form.php:384 views/form.php:411 views/form.php:438 views/form.php:465
-#: views/form.php:493 views/form.php:520 views/form.php:571
+#: views/form.php:493 views/form.php:524 views/form.php:575
 msgid "Yes"
 msgstr "بله"
 

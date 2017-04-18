@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-16 17:28-0700\n"
+"POT-Creation-Date: 2017-04-18 15:12-0400\n"
 "PO-Revision-Date: 2016-05-12 01:10+0200\n"
 "Last-Translator: Avishay <baabad@outlook.com>\n"
 "Language-Team: Hebrew <http://weblate.freepbx.org/projects/freepbx/"
@@ -65,7 +65,7 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "הכרז על מספר הנמצאים בועידה בזמן הכניסה לועידה"
 
-#: conferences.i18n.php:6 conferences.i18n.php:12
+#: conferences.i18n.php:6
 msgid "Applications"
 msgstr ""
 
@@ -85,6 +85,15 @@ msgstr ""
 #: functions.inc.php:182
 #, php-format
 msgid "Conference Room %s : %s"
+msgstr ""
+
+#: conferences.i18n.php:12
+msgid "Conference Status"
+msgstr ""
+
+#: views/form.php:534
+#, php-format
+msgid "Conference recording is only available in %s"
 msgstr ""
 
 #: functions.inc.php:423
@@ -160,15 +169,15 @@ msgstr ""
 msgid "List Conferences"
 msgstr ""
 
-#: views/form.php:554
+#: views/form.php:558
 msgid "Maximum Number of users allowed to join this conference."
 msgstr ""
 
-#: views/form.php:542
+#: views/form.php:546
 msgid "Maximum Participants"
 msgstr ""
 
-#: views/form.php:593
+#: views/form.php:597
 msgid "Member Timeout"
 msgstr ""
 
@@ -194,24 +203,24 @@ msgstr ""
 msgid "Music on Hold Class"
 msgstr ""
 
-#: views/form.php:581
+#: views/form.php:585
 msgid ""
 "Mute everyone when they initially join the conference. Please note that if "
 "you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
 "Yes to unmute yourself"
 msgstr ""
 
-#: views/form.php:566
+#: views/form.php:570
 msgid "Mute on Join"
 msgstr ""
 
 #: views/form.php:278 views/form.php:305 views/form.php:332 views/form.php:359
 #: views/form.php:386 views/form.php:413 views/form.php:440 views/form.php:467
-#: views/form.php:495 views/form.php:522 views/form.php:573
+#: views/form.php:495 views/form.php:526 views/form.php:577
 msgid "No"
 msgstr "לא"
 
-#: views/form.php:546
+#: views/form.php:550
 msgid "No Limit"
 msgstr ""
 
@@ -227,7 +236,7 @@ msgstr ""
 msgid "Please enter a valid Conference Number"
 msgstr ""
 
-#: views/form.php:554
+#: views/form.php:558
 msgid ""
 "Please note depending on hardware and settings a higher limit may cause call "
 "quality issues."
@@ -245,11 +254,11 @@ msgstr ""
 msgid "Quiet mode (do not play enter/leave sounds)"
 msgstr "מצב שקט (אל תשמיע צלילי כניסה/יציאה)"
 
-#: views/form.php:515
+#: views/form.php:519
 msgid "Record Conference"
 msgstr ""
 
-#: views/form.php:530
+#: views/form.php:534
 msgid "Record the conference call"
 msgstr ""
 
@@ -291,7 +300,7 @@ msgstr ""
 msgid "The user and admin can not have the same pin code."
 msgstr ""
 
-#: views/form.php:605
+#: views/form.php:609
 msgid ""
 "This specifies the number of seconds that the participant may stay in the "
 "conference before being automatically ejected. 0 = disabled, default is "
@@ -341,7 +350,7 @@ msgstr ""
 
 #: views/form.php:276 views/form.php:303 views/form.php:330 views/form.php:357
 #: views/form.php:384 views/form.php:411 views/form.php:438 views/form.php:465
-#: views/form.php:493 views/form.php:520 views/form.php:571
+#: views/form.php:493 views/form.php:524 views/form.php:575
 msgid "Yes"
 msgstr "כן"
 
