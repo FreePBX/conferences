@@ -505,6 +505,10 @@ $module_hook = \moduleHook::create();
 	</div>
 </div>
 <!--END Allow Menu-->
+<?php
+	$ast_info = engine_getinfo();
+	$version = $ast_info["version"];
+?>
 <!--Record Conference-->
 <div class="element-container">
 	<div class="row">
@@ -516,9 +520,9 @@ $module_hook = \moduleHook::create();
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_r"></i>
 					</div>
 					<div class="col-md-9 radioset">
-						<input type="radio" name="opt_r" id="opt_ryes" value="r" <?php echo (strpos($options, "r") === false ? "":"CHECKED") ?>>
+						<input type="radio" name="opt_r" id="opt_ryes" value="r" <?php echo (strpos($options, "r") === false ? "":"CHECKED") ?> <?php echo version_compare($version,"14.0","ge") ? '' : 'disabled'?>>
 						<label for="opt_ryes"><?php echo _("Yes");?></label>
-						<input type="radio" name="opt_r" id="opt_rno" value="NO" <?php echo (strpos($options, "r") === false ? "CHECKED":"") ?>>
+						<input type="radio" name="opt_r" id="opt_rno" value="NO" <?php echo (strpos($options, "r") === false ? "CHECKED":"") ?> <?php echo version_compare($version,"14.0","ge") ? '' : 'disabled'?>>
 						<label for="opt_rno"><?php echo _("No");?></label>
 					</div>
 				</div>
@@ -527,7 +531,7 @@ $module_hook = \moduleHook::create();
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<span id="opt_r-help" class="help-block fpbx-help-block"><?php echo _("Record the conference call")?></span>
+			<span id="opt_r-help" class="help-block fpbx-help-block"><?php echo _("Record the conference call")?>. <?php echo version_compare($version,"14.0","ge") ? '' : sprintf(_("Conference recording is only available in %s"),'Asterisk 14+')?></span>
 		</div>
 	</div>
 </div>
