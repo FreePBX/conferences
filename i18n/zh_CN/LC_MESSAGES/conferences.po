@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-18 15:12-0400\n"
+"POT-Creation-Date: 2017-05-02 12:35-0400\n"
 "PO-Revision-Date: 2015-10-19 14:43+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -39,7 +39,7 @@ msgstr ""
 msgid "Actions"
 msgstr "命令"
 
-#: page.conferences.php:17 views/grid.php:27 views/rnav.php:20
+#: page.conferences.php:19 views/grid.php:27 views/rnav.php:20
 msgid "Add"
 msgstr "添加"
 
@@ -123,7 +123,7 @@ msgstr "删除"
 msgid "Description"
 msgstr "描述"
 
-#: page.conferences.php:15
+#: page.conferences.php:17
 msgid "Edit"
 msgstr "编辑"
 

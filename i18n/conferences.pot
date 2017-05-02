@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-18 15:12-0400\n"
+"POT-Creation-Date: 2017-05-02 12:35-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "Actions"
 msgstr ""
 
-#: page.conferences.php:17
+#: page.conferences.php:19
 #: views/grid.php:27
 #: views/rnav.php:20
 msgid "Add"
@@ -112,7 +112,7 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: page.conferences.php:15
+#: page.conferences.php:17
 msgid "Edit"
 msgstr ""
 

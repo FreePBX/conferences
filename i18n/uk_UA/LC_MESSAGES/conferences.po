@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-04-18 15:12-0400\n"
+"POT-Creation-Date: 2017-05-02 12:35-0400\n"
 "PO-Revision-Date: 2016-10-06 14:02+0200\n"
 "Last-Translator: Maxim <maxim@ua.fm>\n"
 "Language-Team: Ukrainian <http://weblate.freepbx.org/projects/freepbx/"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "Actions"
 msgstr "Дії"
 
-#: page.conferences.php:17 views/grid.php:27 views/rnav.php:20
+#: page.conferences.php:19 views/grid.php:27 views/rnav.php:20
 msgid "Add"
 msgstr "Додати"
 
@@ -115,7 +115,7 @@ msgstr "Видалити"
 msgid "Description"
 msgstr "Опис"
 
-#: page.conferences.php:15
+#: page.conferences.php:17
 msgid "Edit"
 msgstr "Редагувати"
 
