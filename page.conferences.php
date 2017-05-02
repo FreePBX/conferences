@@ -13,20 +13,7 @@ $usagehtml = '';
 switch($request['view']){
 	case "form":
 		if($request['extdisplay'] != ''){
-			$usage_list = framework_display_destination_usage(conferences_getdest($request['extdisplay']));
-			if(!empty($usage_list)){
-				$usagehtml = <<< HTML
-<div class="panel panel-default fpbx-usageinfo">
-	<div class="panel-heading">
-		$usage_list[text]
-	</div>
-	<div class="panel-body">
-		$usage_list[tooltip]
-	</div>
-</div>
-
-HTML;
-			}
+			$usagehtml = FreePBX::View()->destinationUsage(conferences_getdest($request['extdisplay']));
 			$heading .= ": "._("Edit")." " . $request['extdisplay'];
 		}else{
 			$heading .= ": "._("Add");
