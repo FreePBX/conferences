@@ -2,13 +2,14 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>13.0.23.4</version>
+	<version>13.0.23.5</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
+		*13.0.23.5* FREEPBX-14609 Add advanced setting to override conference call recording feature added in FREEPBX-13029
 		*13.0.23.4* FREEPBX-14652 :Messages will play in english even after selecting different language
 		*13.0.23.3* FREEPBX-12690 add view for destinations usage
 		*13.0.23.2* FREEPBX-13029 Disable conference call recording unless using Asterisk 14
