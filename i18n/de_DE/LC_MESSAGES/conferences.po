@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-05-15 20:40-0400\n"
+"POT-Creation-Date: 2017-06-02 15:31-0400\n"
 "PO-Revision-Date: 2017-01-10 16:36+0200\n"
 "Last-Translator: Sven <spiderrs4@web.de>\n"
 "Language-Team: German <http://weblate.freepbx.org/projects/freepbx/"
@@ -74,13 +74,8 @@ msgstr "Konferenznummer"
 msgid "Conference Room %s : %s"
 msgstr "Konferenzraum %s : %s"
 
-#: conferences.i18n.php:12
+#: conferences.i18n.php:18
 msgid "Conference Status"
-msgstr ""
-
-#: views/form.php:534
-#, php-format
-msgid "Conference recording is only available in %s"
 msgstr ""
 
 #: functions.inc.php:425
@@ -93,7 +88,7 @@ msgid "Conference: %s"
 msgstr "Konferenz: %s"
 
 #: Conferences.class.php:402 conferences.i18n.php:4 conferences.i18n.php:10
-#: page.conferences.php:10
+#: conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr "Konferenzen"
 
@@ -128,6 +123,10 @@ msgstr ""
 msgid "Extension"
 msgstr "Nebenstelle"
 
+#: conferences.i18n.php:12
+msgid "Force allow conference recording"
+msgstr ""
+
 #: views/form.php:175
 msgid "Give this conference a brief name to help you identify it."
 msgstr ""
@@ -156,16 +155,16 @@ msgstr ""
 msgid "List Conferences"
 msgstr "Konferenzen auflisten"
 
-#: views/form.php:558
+#: views/form.php:554
 msgid "Maximum Number of users allowed to join this conference."
 msgstr ""
 "Maximale Anzahl der Benutzer, die an dieser Konferenz teilnehmen dürfen."
 
-#: views/form.php:546
+#: views/form.php:542
 msgid "Maximum Participants"
 msgstr "Maximale Teilnehmerzahl"
 
-#: views/form.php:597
+#: views/form.php:593
 msgid "Member Timeout"
 msgstr ""
 
@@ -191,24 +190,24 @@ msgstr "Musik bei Halten"
 msgid "Music on Hold Class"
 msgstr "Musik bei Halten Klasse"
 
-#: views/form.php:585
+#: views/form.php:581
 msgid ""
 "Mute everyone when they initially join the conference. Please note that if "
 "you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
 "Yes to unmute yourself"
 msgstr ""
 
-#: views/form.php:570
+#: views/form.php:566
 msgid "Mute on Join"
 msgstr "Stummschalten beim Verbinden"
 
 #: views/form.php:278 views/form.php:305 views/form.php:332 views/form.php:359
 #: views/form.php:386 views/form.php:413 views/form.php:440 views/form.php:467
-#: views/form.php:495 views/form.php:526 views/form.php:577
+#: views/form.php:495 views/form.php:522 views/form.php:573
 msgid "No"
 msgstr "Nein"
 
-#: views/form.php:550
+#: views/form.php:546
 msgid "No Limit"
 msgstr "Unbegrenzt"
 
@@ -224,7 +223,7 @@ msgstr "Geben Sie einen gültigen Konferenznamen ein."
 msgid "Please enter a valid Conference Number"
 msgstr "Geben Sie eine gültige Konferenznummer ein."
 
-#: views/form.php:558
+#: views/form.php:554
 msgid ""
 "Please note depending on hardware and settings a higher limit may cause call "
 "quality issues."
@@ -242,13 +241,21 @@ msgstr "Ruhemodus"
 msgid "Quiet mode (do not play enter/leave sounds)"
 msgstr "Ruhemodus (spielt keine Betreten/Verlassen Töne ab)"
 
-#: views/form.php:519
+#: views/form.php:515
 msgid "Record Conference"
 msgstr "Konferenz Aufzeichnen"
 
-#: views/form.php:534
+#: views/form.php:530
 msgid "Record the conference call"
 msgstr "Zeichnet die Konferenz auf."
+
+#: views/form.php:530
+#, php-format
+msgid ""
+"Record the conference call. Note: This is broken when using %s or lower, and "
+"is therefore disabled. Enable \"Force allow conference recording\" to "
+"override this"
+msgstr ""
 
 #: Conferences.class.php:381
 msgid "Reset"
@@ -288,7 +295,7 @@ msgstr ""
 msgid "The user and admin can not have the same pin code."
 msgstr ""
 
-#: views/form.php:609
+#: views/form.php:605
 msgid ""
 "This specifies the number of seconds that the participant may stay in the "
 "conference before being automatically ejected. 0 = disabled, default is "
@@ -301,6 +308,15 @@ msgid ""
 "talkers who are not speaking as being muted, meaning that no encoding is "
 "done on transmission and that received audio that is not registered as "
 "talking is omitted, causing no buildup in background noise."
+msgstr ""
+
+#: conferences.i18n.php:16
+msgid ""
+"Until Asterisk 14+ a random timestamp would be added to the end of the "
+"conference call recording which could not be determined in post call "
+"handling. Thus enabling conference call recording is disabled if using "
+"Asterisk 13 or lower. Enable this option to allow Conference Call recording "
+"to be enabled in Astrisk 13 or lower"
 msgstr ""
 
 #: views/form.php:151
@@ -339,7 +355,7 @@ msgstr ""
 
 #: views/form.php:276 views/form.php:303 views/form.php:330 views/form.php:357
 #: views/form.php:384 views/form.php:411 views/form.php:438 views/form.php:465
-#: views/form.php:493 views/form.php:524 views/form.php:575
+#: views/form.php:493 views/form.php:520 views/form.php:571
 msgid "Yes"
 msgstr "Ja"
 
