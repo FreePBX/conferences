@@ -271,7 +271,7 @@ function conferences_get_config($engine) {
 					// entry point
 					$ext->add($contextname, $roomnum, '', new ext_macro('user-callerid'));
 					// added FREEPBX-14652 : set languge when dialed the particular conf no.
-					$ext->add($contextname, $roomnum, '', new ext_setvar('CHANNEL(language)','${DB(CONFERENCE/'.$roomnum.'/language)}'));
+					$ext->add($contextname, $roomnum, '', new ext_execif('$["{DB(CONFERENCE/'.$roomnum.'/language)}" != ""]','Set','CHANNEL(language)=${DB(CONFERENCE/'.$roomnum.'/language)}'));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_ROOMNUM',$roomnum));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MAX_PARTICIPANTS', '0'));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_MUSIC', '${MOHCLASS}'));
