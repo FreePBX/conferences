@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-02 15:31-0400\n"
+"POT-Creation-Date: 2017-06-09 17:10+0530\n"
 "PO-Revision-Date: 2017-01-10 16:36+0200\n"
 "Last-Translator: Sven <spiderrs4@web.de>\n"
 "Language-Team: German <http://weblate.freepbx.org/projects/freepbx/"
@@ -124,7 +124,7 @@ msgid "Extension"
 msgstr "Nebenstelle"
 
 #: conferences.i18n.php:12
-msgid "Force allow conference recording"
+msgid "Force Allow Conference Recording"
 msgstr ""
 
 #: views/form.php:175

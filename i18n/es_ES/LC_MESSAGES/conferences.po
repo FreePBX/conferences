@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo conferences module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-06-02 15:31-0400\n"
+"POT-Creation-Date: 2017-06-09 17:10+0530\n"
 "PO-Revision-Date: 2016-12-10 10:11+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -146,7 +146,7 @@ msgid "Extension"
 msgstr "Extensión"
 
 #: conferences.i18n.php:12
-msgid "Force allow conference recording"
+msgid "Force Allow Conference Recording"
 msgstr ""
 
 #: views/form.php:175
