@@ -10,104 +10,110 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-09 17:10+0530\n"
-"PO-Revision-Date: 2017-06-09 17:10+0530\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2017-06-19 12:01+0200\n"
+"Last-Translator: PETER <ftek@ymail.com>\n"
+"Language-Team: Vietnamese "
+"<http://weblate.freepbx.org/projects/freepbx/conferences/vi/>\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.4\n"
 
 #: views/grid.php:34
 msgid "Actions"
-msgstr ""
+msgstr "Các thao tác"
 
 #: page.conferences.php:19 views/grid.php:27 views/rnav.php:20
 msgid "Add"
-msgstr ""
+msgstr "Thêm"
 
 #: views/form.php:211
 msgid "Admin PIN"
-msgstr ""
+msgstr "Quản trị viên PIN"
 
 #: views/form.php:488
 msgid "Allow Menu"
-msgstr ""
+msgstr "Cho phép Menu"
 
 #: conferences.i18n.php:8
 msgid ""
 "Allow creation of conference rooms where multiple people can talk together"
 msgstr ""
+"Cho phép tạo các phòng hội nghị nơi nhiều người có thể nói chuyện với nhau"
 
 #: views/form.php:448
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
 "their name before joining the conference"
 msgstr ""
+"Thông báo người dùng tham gia/ rời khỏi. Nêu bật tính năng này, nó sẽ yêu "
+"cầu người dùng ghi tên của họ trước khi tham gia hội nghị"
 
 #: views/form.php:421
 msgid "Announce user(s) count on joining conference"
-msgstr ""
+msgstr "Thông báo người dùng đang tham gia hội nghị"
 
 #: conferences.i18n.php:6
 msgid "Applications"
-msgstr ""
+msgstr "Các ứng dụng"
 
 #: Conferences.class.php:101 Conferences.class.php:404 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
-msgstr ""
+msgstr "Hội nghị"
 
 #: views/form.php:163
 msgid "Conference Name"
-msgstr ""
+msgstr "Tên hội nghị"
 
 #: views/form.php:139
 msgid "Conference Number"
-msgstr ""
+msgstr "Số hội nghị"
 
 #: functions.inc.php:182
 #, php-format
 msgid "Conference Room %s : %s"
-msgstr ""
+msgstr "Phòng hội nghị %s : %s"
 
 #: conferences.i18n.php:18
 msgid "Conference Status"
-msgstr ""
+msgstr "Trạng thái hội nghị"
 
 #: functions.inc.php:425
 msgid "Conference: "
-msgstr ""
+msgstr "Hội nghị: "
 
 #: functions.inc.php:201
 #, php-format
 msgid "Conference: %s"
-msgstr ""
+msgstr "Hội nghị: %s"
 
 #: Conferences.class.php:402 conferences.i18n.php:4 conferences.i18n.php:10
 #: conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
-msgstr ""
+msgstr "Các hội nghị"
 
 #: views/form.php:121
 msgid "Conflicting Extensions"
-msgstr ""
+msgstr "Các máy nhánh đang xung đột"
 
 #: Conferences.class.php:386
 msgid "Delete"
-msgstr ""
+msgstr "Xóa"
 
 #: views/grid.php:33 views/rnav.php:26
 msgid "Description"
-msgstr ""
+msgstr "Mô tả"
 
 #: page.conferences.php:17
 msgid "Edit"
-msgstr ""
+msgstr "Hiệu chỉnh"
 
 #: views/form.php:475
 msgid "Enable Music On Hold when the conference has a single caller"
-msgstr ""
+msgstr "Bật Nhạc chờ khi hội nghị đang có người gọi cấp cao hơn"
 
 #: views/form.php:223
 msgid ""
@@ -115,30 +121,34 @@ msgid ""
 "unless the 'leader wait' option is in use, then this PIN will identify the "
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
+"Nhập một số PIN cho người admin. <br><br>. Cài đặt này mang tính lựa chọn "
+"trừ khi \" lựa chọn 'leader wait' ( Đợi lãnh đạo) đang được chọn, sau đó PIN "
+"này sẽ xác định lãnh đạo. <br> Pin này cần phải khác hơn so với pin người "
+"dùng."
 
 #: Conferences.class.php:405
 msgid "Extension"
-msgstr ""
+msgstr "Máy nhánh"
 
 #: conferences.i18n.php:12
 msgid "Force Allow Conference Recording"
-msgstr ""
+msgstr "Bắt buộc cho phép ghi âm hội nghị"
 
 #: views/form.php:175
 msgid "Give this conference a brief name to help you identify it."
-msgstr ""
+msgstr "Gửi tới hội nghị một tên ngắn gọn để giúp bạn xác nhận nó."
 
 #: views/form.php:241
 msgid "Inherit"
-msgstr ""
+msgstr "Kế thừa"
 
 #: views/form.php:54
 msgid "Join Message"
-msgstr ""
+msgstr "Tham gia Message"
 
 #: views/form.php:235
 msgid "Language"
-msgstr ""
+msgstr "Ngôn ngữ"
 
 #: views/form.php:298
 msgid "Leader Leave"
