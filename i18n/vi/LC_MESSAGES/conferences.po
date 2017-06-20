@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-06-09 17:10+0530\n"
-"PO-Revision-Date: 2017-06-20 09:21+0200\n"
+"PO-Revision-Date: 2017-06-20 09:23+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese "
 "<http://weblate.freepbx.org/projects/freepbx/conferences/vi/>\n"
@@ -122,9 +122,9 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 "Nhập một số PIN cho người admin. <br><br>. Cài đặt này mang tính lựa chọn "
-"trừ khi \" lựa chọn 'leader wait' ( Đợi lãnh đạo) đang được chọn, sau đó PIN "
-"này sẽ xác định lãnh đạo. <br> Pin này cần phải khác hơn so với pin người "
-"dùng."
+"trừ khi \" lựa chọn 'leader wait' ( Đợi người chủ trì) đang được chọn, sau "
+"đó PIN này sẽ xác định người chủ trì. <br> Pin này cần phải khác hơn so với "
+"pin người dùng."
 
 #: Conferences.class.php:405
 msgid "Extension"
@@ -152,11 +152,11 @@ msgstr "Ngôn ngữ"
 
 #: views/form.php:298
 msgid "Leader Leave"
-msgstr "Lãnh đạo rời khỏi"
+msgstr "Người chủ trì rời khỏi"
 
 #: views/form.php:271
 msgid "Leader Wait"
-msgstr "Lãnh đạo đợi"
+msgstr "Đợi người chủ trì"
 
 #: views/rnav.php:19
 msgid "List Conferences"
@@ -385,8 +385,8 @@ msgid ""
 "Wait until the conference leader (admin user) arrives before starting the "
 "conference"
 msgstr ""
-"Đợi đến khi lãnh đạo hội nghị ( quản trị người dùng) đến trước khi bắt đầu "
-"hội nghị"
+"Đợi đến khi người chủ trì hội nghị ( quản trị người dùng) đến trước khi bắt "
+"đầu hội nghị"
 
 #: Conferences.class.php:29
 msgid "Warning! Extension"
@@ -397,8 +397,8 @@ msgid ""
 "When the conference leader (admin user) leaves all users will be kicked from "
 "the conference"
 msgstr ""
-"Khi chủ trì hội nghị ( quản trị người dùng) rời khỏi thì tất cả người dùng "
-"sẽ bị đẩy ra khỏi hội nghị"
+"Khi người chủ trì hội nghị ( quản trị người dùng) rời khỏi thì tất cả người "
+"dùng sẽ bị đẩy ra khỏi hội nghị"
 
 #: views/form.php:276 views/form.php:303 views/form.php:330 views/form.php:357
 #: views/form.php:384 views/form.php:411 views/form.php:438 views/form.php:465
@@ -423,16 +423,16 @@ msgid ""
 "You must set Allow Menu to Yes when not using a Leader or Admin in your "
 "conference, otherwise you will be unable to unmute yourself"
 msgstr ""
-"Bạn phải cài đặt Allow Menu về Yes khi không sử dụng một chủ trì hay quản "
-"trị viên trong hội nghị, nếu không bạn sẽ không thể tự tắt tiếng"
+"Bạn phải cài đặt Allow Menu về Yes khi không sử dụng một người chủ trì hay "
+"quản trị viên trong hội nghị, nếu không bạn sẽ không thể tự tắt tiếng"
 
 #: assets/js/conferences.js:21
 msgid ""
 "You must set an admin PIN for the Conference Leader when selecting the "
 "leader wait option"
 msgstr ""
-"Bạn phải cài đặt một PIN quản trị cho chủ trì hội nghị khi chọn vào lựa chọn "
-"'đợi chủ trì'"
+"Bạn phải cài đặt một PIN quản trị cho người chủ trì hội nghị khi chọn vào "
+"lựa chọn 'đợi người chủ trì'"
 
 #: views/form.php:85
 msgid "default"
