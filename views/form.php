@@ -527,7 +527,7 @@ $module_hook = \moduleHook::create();
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<span id="opt_r-help" class="help-block fpbx-help-block"><?php echo _("Record the conference call")?>. <?php echo sprintf(_('Record the conference call. Note: This is broken when using %s or lower, and is therefore disabled. Enable "Force allow conference recording" to override this'),'Asterisk 13')?></span>
+			<span id="opt_r-help" class="help-block fpbx-help-block"><?php echo _("Record the conference call")?>. <?php echo sprintf(_('Record the conference call. Note: This is broken when using %s or lower, and is therefore disabled. Enable "Force allow conference recording" under Advanced settings to override this. The Recording will not be available in either the CDR nor in Call Recordings and has to be downloaded by logging into the backend.'),'Asterisk 13')?></span>
 		</div>
 	</div>
 </div>
