@@ -349,8 +349,7 @@ function conferences_get_config($engine) {
 				$subconfcontext = 'sub-conference-options';
 				$ext->add($subconfcontext, 's', '', new ext_noop('Setting options for Conference ${ARG1}'));
 				//
-				$ext->add($subconfcontext, 's', '', new ext_execif('$["${DB(CONFERENCE/${ARG1}/language)}" == ""]','Set','CONFBRIDGE(bridge,language)=${SIPLANG}','Set','CONFBRIDGE(bridge,language)=${DB(CONFERENCE/${ARG1}/language)}'));
-				$ext->add($subconfcontext, 's', '', new ext_set('CHANNEL(language)','${IF($[${LEN(${DB(CONFERENCE/${ARG1}/language)})}>0]?${DB(CONFERENCE/${ARG1}/language)}:${SIPLANG})}'));
+				$ext->add($subconfcontext, 's', '', new ext_execif('$["${DB(CONFERENCE/${ARG1}/language)}" == ""]','Set','CONFBRIDGE(bridge,language)=${CHANNEL(language)}','Set','CONFBRIDGE(bridge,language)=${DB(CONFERENCE/${ARG1}/language)}'));
 				$ext->add($subconfcontext, 's', '', new ext_goto('${ARG2}'));
 				if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
 					//w
