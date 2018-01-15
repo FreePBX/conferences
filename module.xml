@@ -2,13 +2,14 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>13.0.23.8</version>
+	<version>13.0.23.9</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
+		*13.0.23.9* Revert "FREEPBX-15482 Inviting users to Conference from UCP does not use system default language" 
 		*13.0.23.8* FREEPBX-15482 Inviting users to Conference from UCP does not use system default language
 		*13.0.23.7* FREEPBX-14609 clarify messages
 		*13.0.23.6* FREEPBX-14652 Messages will play in english even after selecting different language under Conferences.

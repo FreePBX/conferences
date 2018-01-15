@@ -9,11 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-19 20:50-0400\n"
+"POT-Creation-Date: 2018-01-15 13:55-0500\n"
 "PO-Revision-Date: 2017-12-18 17:35+0200\n"
 "Last-Translator: Nils <Nils@heckenkamp.info>\n"
-"Language-Team: German "
-"<http://weblate.freepbx.org/projects/freepbx/conferences/de_DE/>\n"
+"Language-Team: German <http://weblate.freepbx.org/projects/freepbx/"
+"conferences/de_DE/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -80,7 +80,7 @@ msgstr "Konferenzraum %s : %s"
 msgid "Conference Status"
 msgstr ""
 
-#: functions.inc.php:426
+#: functions.inc.php:425
 msgid "Conference: "
 msgstr "Konferenz: "
 
