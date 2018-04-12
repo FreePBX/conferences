@@ -299,7 +299,9 @@ function conferences_get_config($engine) {
 
 					//No pins set so ask the user now
 					$ext->add($contextname, $roomnum, 'READPIN', new ext_setvar('PINCOUNT','0'));
-					$ext->add($contextname, $roomnum, 'RETRYPIN', new ext_read('PIN','enter-conf-pin-number'));
+
+					// for i18n playback in multiple languages
+					$ext->add($contextname, $roomnum, 'RETRYPIN', new ext_gosubif('$[${DIALPLAN_EXISTS('.$contextname.'-lang-playback,${CHANNEL(language)})}]', $contextname.'-lang-playback,${CHANNEL(language)},retrypin', $contextname.'-lang-playback,en,retrypin'));
 
 					// userpin -- must do always, otherwise if there is just an adminpin
 					// there would be no way to get to the conference !
@@ -333,6 +335,17 @@ function conferences_get_config($engine) {
 					if ($amp_conf['ASTCONFAPP'] == 'app_meetme') {
 						$conferences_conf->addMeetme($room['exten'],$room['userpin'],$room['adminpin']);
 					}
+				}
+
+				//en English
+				$lang = 'en';
+				$ext->add($contextname."-lang-playback", $lang, 'retrypin', new ext_read('PIN','enter-conf-pin-number'));
+				$ext->add($contextname."-lang-playback", $lang, '', new ext_return());
+
+				//Language Corrections
+				foreach(array('it', 'en_NZ', 'en_AU', 'cs', 'fa', 'fr', 'he', 'ja', 'nl', 'no', 'pl', 'ru', 'sv', 'tr') as $lang) {
+					$ext->add($contextname."-lang-playback", $lang, 'retrypin', new ext_read('PIN','conf-getpin'));
+					$ext->add($contextname."-lang-playback", $lang, '', new ext_return());
 				}
 
 				$fcc = new featurecode('conferences', 'conf_status');
