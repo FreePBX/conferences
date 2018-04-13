@@ -1,7 +1,9 @@
 <?php
 // vim: set ai ts=4 sw=4 ft=php:
-class Conferences extends \FreePBX_Helpers implements BMO {
+namespace FreePBX\modules;
+class Conferences extends \FreePBX_Helpers implements \BMO {
 	private $module = 'Conferences';
+	
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
 			throw new Exception("Not given a FreePBX Object");
@@ -69,7 +71,78 @@ class Conferences extends \FreePBX_Helpers implements BMO {
 			}
 		}
 	}
+	
+	public function bulkhandlerGetHeaders($type) {
+		
+        switch ($type) {
+			case 'conferences':
+				$headers = array();
+				$headers['exten'] 		= array('required' => true,  'identifier' => _("Conf Number"), 'description' => _("Conference number used."));
+				$headers['options'] 	= array('required' => true,  'identifier' => _("Options"), 'description' => _("Option of the Conference."));
+				$headers['userpin'] 	= array('required' => false, 'identifier' => _("User PIN"), 'description' => _("PIN code for user."));
+				$headers['adminpin'] 	= array('required' => false, 'identifier' => _("Admin PIN"), 'description' => _("PIN code for admin."));
+				$headers['description']	= array('required' => true,  'identifier' => _("Desctiption"), 'description' => _("Desctiption of the conference."));
+				$headers['joinmsg_id'] 	= array('required' => false, 'identifier' => _("join message id"), 'description' => _("Join message id."));
+				$headers['music'] 		= array('required' => false, 'identifier' => _("Music"), 'description' => _("Music."));
+				$headers['users'] 		= array('required' => false, 'identifier' => _("Users"), 'description' => _("Users."));
+				$headers['language'] 	= array('required' => false, 'identifier' => _("Language"), 'description' => _("Language."));
+				$headers['timeout'] 	= array('required' => false, 'identifier' => _("Timeout"), 'description' => _("Timeout of the conference."));
+				return $headers;
+			break;
+		}
+    }
+	
+	public function bulkhandlerGetTypes() {
+		return array(
+			'conferences' => array(
+				'name' => _('Conferences'),
+				'description' => _('Import/Export Conferences')
+			)
+		);
+	}	
+	
+    public function bulkhandlerImport($type, $rawData) {
+		/* 
+			Import Conferences from CSV 
+		*/
+		
+        $ret = NULL;
+		switch ($type) {
+            case 'conferences':
+                foreach ($rawData as $data) {
+					$this->deleteConference($data["exten"]);
+					$this->addConference($data["exten"],$data["description"],$data["userpin"],$data["adminpin"],$data["options"],$data["joinmsg_id"],$data["music"],$data["users"],$data["language"],$data["timeout"]);
+				}
+                $ret = array(
+                    'status' => true,
+                );
+				needreload();			
+			break;
+		}
+        return $ret;
+    }
+	
+    public function bulkhandlerExport($type) {
+		/* 
+			Export Conferences to CSV 
+		*/
+		
+        switch ($type) {
+        case 'conferences':
+			$data = array();
+			$sql = "SELECT * FROM meetme ORDER BY exten";
+			$sth = $this->db->prepare($sql);
+			$sth->execute();
+			$conferences = $sth->fetchAll(\PDO::FETCH_ASSOC);
+			if(!empty($conferences) && is_array($conferences)){
+				return $conferences;
+			}
 
+            break;
+        }
+        return "";
+    }
+	
 	public function getRightNav($request) {
 		if(isset($request['view']) && $request['view'] == "form") {
 			return load_view(__DIR__."/views/rnav.php",array());
@@ -312,7 +385,7 @@ class Conferences extends \FreePBX_Helpers implements BMO {
 		$sth = $this->db->prepare($sql);
 		try {
 			$sth->execute(array($room));
-			$ret = $sth->fetch(PDO::FETCH_ASSOC);
+			$ret = $sth->fetch(\PDO::FETCH_ASSOC);
 			$asettings = $this->astman->database_show('CONFERENCE/'.$room);
 			$ret = is_array($ret) ? $ret : array();
 			foreach($ret as $key => $value) {
@@ -352,7 +425,7 @@ class Conferences extends \FreePBX_Helpers implements BMO {
 		$sql = "SELECT exten,description FROM meetme ORDER BY exten";
 		$sth = $this->db->prepare($sql);
 		$sth->execute();
-		$results = $sth->fetchAll(PDO::FETCH_ASSOC);
+		$results = $sth->fetchAll(\PDO::FETCH_ASSOC);
 		foreach($results as $result){
 			// check to see if we are in-range for the current AMP User.
 			if (isset($result['exten']) && checkRange($result['exten'])){

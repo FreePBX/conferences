@@ -59,8 +59,14 @@
 		</conferences>
  	</popovers>
 	<hooks>
+		<bulkhandler class="Bulkhandler" namespace="FreePBX\modules">
+			<method callingMethod="getHeaders" class="Conferences" namespace="FreePBX\modules">bulkhandlerGetHeaders</method>
+			<method callingMethod="getTypes" class="Conferences">bulkhandlerGetTypes</method>
+			<method callingMethod="import" class="Conferences" namespace="FreePBX\modules">bulkhandlerImport</method>
+			<method callingMethod="export" class="Conferences" namespace="FreePBX\modules">bulkhandlerExport</method>
+		</bulkhandler>		
 		<printextensions class="Printextensions" namespace="FreePBX\modules">
-			<method callingMethod="getSections" class="Conferences">printExtensions</method>
+			<method callingMethod="getSections" class="Conferences" namespace="FreePBX\modules">printExtensions</method>
 		</printextensions>
 	</hooks>
 	<supported>
