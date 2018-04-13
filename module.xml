@@ -65,7 +65,7 @@
 			<method callingMethod="export" class="Conferences" namespace="FreePBX\modules">bulkhandlerExport</method>
 		</bulkhandler>		
 		<printextensions class="Printextensions" namespace="FreePBX\modules">
-			<method callingMethod="getSections" class="Conferences">printExtensions</method>
+			<method callingMethod="getSections" class="Conferences" namespace="FreePBX\modules">printExtensions</method>
 		</printextensions>
 	</hooks>
 	<supported>
