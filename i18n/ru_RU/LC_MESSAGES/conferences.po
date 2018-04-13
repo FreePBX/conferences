@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-11 22:05-0400\n"
+"POT-Creation-Date: 2018-04-13 16:26-0400\n"
 "PO-Revision-Date: 2017-06-09 20:45+0200\n"
 "Last-Translator: Evgeniy <yen81@mail.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -44,7 +44,7 @@ msgstr "Действия"
 msgid "Add"
 msgstr "Добавить"
 
-#: views/form.php:211
+#: Conferences.class.php:83 views/form.php:211
 msgid "Admin PIN"
 msgstr ""
 
@@ -73,7 +73,11 @@ msgstr "Анонсировать количество участников ко�
 msgid "Applications"
 msgstr "Приложения"
 
-#: Conferences.class.php:101 Conferences.class.php:404 views/grid.php:32
+#: Conferences.class.php:80
+msgid "Conf Number"
+msgstr ""
+
+#: Conferences.class.php:174 Conferences.class.php:477 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "Конференция"
@@ -95,6 +99,10 @@ msgstr "Конференц-комната %s : %s"
 msgid "Conference Status"
 msgstr ""
 
+#: Conferences.class.php:80
+msgid "Conference number used."
+msgstr ""
+
 #: functions.inc.php:438
 msgid "Conference: "
 msgstr "Конференция: "
@@ -104,8 +112,8 @@ msgstr "Конференция: "
 msgid "Conference: %s"
 msgstr "Конференция: %s"
 
-#: Conferences.class.php:402 conferences.i18n.php:4 conferences.i18n.php:10
-#: conferences.i18n.php:14 page.conferences.php:10
+#: Conferences.class.php:98 Conferences.class.php:475 conferences.i18n.php:4
+#: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr "Конференции"
 
@@ -113,12 +121,20 @@ msgstr "Конференции"
 msgid "Conflicting Extensions"
 msgstr "Конфликт внутренних номеров"
 
-#: Conferences.class.php:386
+#: Conferences.class.php:459
 msgid "Delete"
 msgstr ""
 
 #: views/grid.php:33 views/rnav.php:26
 msgid "Description"
+msgstr ""
+
+#: Conferences.class.php:84
+msgid "Desctiption"
+msgstr ""
+
+#: Conferences.class.php:84
+msgid "Desctiption of the conference."
 msgstr ""
 
 #: page.conferences.php:17
@@ -136,7 +152,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:405
+#: Conferences.class.php:478
 msgid "Extension"
 msgstr ""
 
@@ -148,6 +164,10 @@ msgstr ""
 msgid "Give this conference a brief name to help you identify it."
 msgstr "Присвойте конференции короткое имя для идентификации."
 
+#: Conferences.class.php:99
+msgid "Import/Export Conferences"
+msgstr ""
+
 #: views/form.php:241
 msgid "Inherit"
 msgstr ""
@@ -156,8 +176,16 @@ msgstr ""
 msgid "Join Message"
 msgstr ""
 
-#: views/form.php:235
+#: Conferences.class.php:85
+msgid "Join message id."
+msgstr ""
+
+#: Conferences.class.php:88 views/form.php:235
 msgid "Language"
+msgstr ""
+
+#: Conferences.class.php:88
+msgid "Language."
 msgstr ""
 
 #: views/form.php:298
@@ -192,6 +220,10 @@ msgid ""
 "add additional recordings please use the \"System Recordings\" MENU above"
 msgstr ""
 
+#: Conferences.class.php:86
+msgid "Music"
+msgstr ""
+
 #: views/form.php:111
 msgid ""
 "Music (or Commercial) played to the caller while they wait in line for the "
@@ -206,6 +238,10 @@ msgstr ""
 
 #: views/form.php:97
 msgid "Music on Hold Class"
+msgstr ""
+
+#: Conferences.class.php:86
+msgid "Music."
 msgstr ""
 
 #: views/form.php:581
@@ -236,6 +272,22 @@ msgstr "Без ограничений"
 #: views/form.php:40
 msgid "None"
 msgstr "Нет"
+
+#: Conferences.class.php:81
+msgid "Option of the Conference."
+msgstr ""
+
+#: Conferences.class.php:81
+msgid "Options"
+msgstr ""
+
+#: Conferences.class.php:83
+msgid "PIN code for admin."
+msgstr ""
+
+#: Conferences.class.php:82
+msgid "PIN code for user."
+msgstr ""
 
 #: assets/js/conferences.js:20
 msgid "Please enter a valid Conference Name"
@@ -284,7 +336,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:381
+#: Conferences.class.php:454
 msgid "Reset"
 msgstr ""
 
@@ -296,7 +348,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:376
+#: Conferences.class.php:449
 msgid "Submit"
 msgstr ""
 
@@ -329,6 +381,14 @@ msgid ""
 "21600 (6 hours)"
 msgstr ""
 
+#: Conferences.class.php:89
+msgid "Timeout"
+msgstr ""
+
+#: Conferences.class.php:89
+msgid "Timeout of the conference."
+msgstr ""
+
 #: views/form.php:340
 msgid ""
 "Turns on talker optimization. With talker optimization, Asterisk treats "
@@ -354,12 +414,20 @@ msgstr "Чтобы позвонить в конференцию использу
 msgid "User Count"
 msgstr ""
 
-#: views/form.php:187
+#: Conferences.class.php:82 views/form.php:187
 msgid "User PIN"
 msgstr ""
 
 #: views/form.php:433
 msgid "User join/leave"
+msgstr ""
+
+#: Conferences.class.php:87
+msgid "Users"
+msgstr ""
+
+#: Conferences.class.php:87
+msgid "Users."
 msgstr ""
 
 #: views/form.php:286
@@ -370,7 +438,7 @@ msgstr ""
 "Ждать организатора конференции (пользователь, администратор) пока он не "
 "подсоединится, чтобы начать конференцию"
 
-#: Conferences.class.php:29
+#: Conferences.class.php:31
 msgid "Warning! Extension"
 msgstr "Внимание! Внутренний номер"
 
@@ -419,9 +487,13 @@ msgstr "по умолчанию"
 msgid "inherit"
 msgstr "наследованый"
 
-#: Conferences.class.php:29
+#: Conferences.class.php:31
 msgid "is not allowed for your account."
 msgstr "не разрешён к использованию в в этом аккаунте."
+
+#: Conferences.class.php:85
+msgid "join message id"
+msgstr ""
 
 #~ msgid "Announce user join/leave"
 #~ msgstr "Анонсировать подсоединение/отключение участников"
