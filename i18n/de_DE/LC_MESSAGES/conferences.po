@@ -10,16 +10,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-15 13:55-0500\n"
-"PO-Revision-Date: 2017-12-18 17:35+0200\n"
-"Last-Translator: Nils <Nils@heckenkamp.info>\n"
-"Language-Team: German <http://weblate.freepbx.org/projects/freepbx/"
-"conferences/de_DE/>\n"
+"PO-Revision-Date: 2018-06-28 12:06+0000\n"
+"Last-Translator: Nils Heckenkamp <nheckenkamp@sangoma.com>\n"
+"Language-Team: German <http://*/projects/freepbx/conferences/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 2.19.1\n"
 
 #: views/grid.php:34
 msgid "Actions"
@@ -49,10 +48,12 @@ msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
 "their name before joining the conference"
 msgstr ""
+"Benutzer anmelden / abmelden Wenn dies aktiviert ist, muss der Benutzer "
+"seinen Namen aufzeichnen, bevor er der Konferenz beitritt"
 
 #: views/form.php:421
 msgid "Announce user(s) count on joining conference"
-msgstr ""
+msgstr "Angemeldete Benutzer zählen beim Beitritt zur Konferenz"
 
 #: conferences.i18n.php:6
 msgid "Applications"
@@ -78,7 +79,7 @@ msgstr "Konferenzraum %s : %s"
 
 #: conferences.i18n.php:18
 msgid "Conference Status"
-msgstr ""
+msgstr "Konferenzstatus"
 
 #: functions.inc.php:425
 msgid "Conference: "
@@ -96,7 +97,7 @@ msgstr "Konferenzen"
 
 #: views/form.php:121
 msgid "Conflicting Extensions"
-msgstr ""
+msgstr "Widersprüchliche Erweiterungen"
 
 #: Conferences.class.php:386
 msgid "Delete"
@@ -113,6 +114,8 @@ msgstr "Bearbeiten"
 #: views/form.php:475
 msgid "Enable Music On Hold when the conference has a single caller"
 msgstr ""
+"Aktivieren Sie Music On Hold, wenn die Konferenz einen einzelnen Teilnehmer "
+"hat"
 
 #: views/form.php:223
 msgid ""
@@ -120,6 +123,10 @@ msgid ""
 "unless the 'leader wait' option is in use, then this PIN will identify the "
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
+"Geben Sie eine PIN-Nummer für den Benutzer admin ein. <br> <br> Diese "
+"Einstellung ist optional, es sei denn, die Option 'leader wait' wird "
+"verwendet, dann identifiziert diese PIN den Leader. <br> Dieser Pin sollte "
+"sich vom Benutzer-Pin unterscheiden ."
 
 #: Conferences.class.php:405
 msgid "Extension"
@@ -127,11 +134,13 @@ msgstr "Nebenstelle"
 
 #: conferences.i18n.php:12
 msgid "Force Allow Conference Recording"
-msgstr ""
+msgstr "Erzwingen der Konferenzaufnahme"
 
 #: views/form.php:175
 msgid "Give this conference a brief name to help you identify it."
 msgstr ""
+"Geben Sie dieser Konferenz einen kurzen Namen, damit Sie diese leichter "
+"identifizieren können."
 
 #: views/form.php:241
 msgid "Inherit"
@@ -139,7 +148,7 @@ msgstr "Übernehmen"
 
 #: views/form.php:54
 msgid "Join Message"
-msgstr ""
+msgstr "Join/Beitritt Mitteilung"
 
 #: views/form.php:235
 msgid "Language"
@@ -175,6 +184,9 @@ msgid ""
 "Message to be played to the caller before joining the conference.<br><br>To "
 "add additional recordings please use the \"System Recordings\" MENU above"
 msgstr ""
+"Nachricht, die dem Anrufer vorgespielt werden soll, bevor er der Konferenz "
+"beitritt. Um zusätzliche Aufnahmen hinzuzufügen, verwenden Sie bitte das \""
+"System Recordings\" -Menü oben"
 
 #: views/form.php:111
 msgid ""
