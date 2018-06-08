@@ -2,49 +2,14 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>13.0.23.11</version>
+	<version>15.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
-		*13.0.23.11* FREEPBX-16499
-		*13.0.23.10* FREEPBX-17051
-		*13.0.23.9* Revert "FREEPBX-15482 Inviting users to Conference from UCP does not use system default language" 
-		*13.0.23.8* FREEPBX-15482 Inviting users to Conference from UCP does not use system default language
-		*13.0.23.7* FREEPBX-14609 clarify messages
-		*13.0.23.6* FREEPBX-14652 Messages will play in english even after selecting different language under Conferences.
-		*13.0.23.5* FREEPBX-14609 Add advanced setting to override conference call recording feature added in FREEPBX-13029
-		*13.0.23.4* FREEPBX-14652 :Messages will play in english even after selecting different language
-		*13.0.23.3* FREEPBX-12690 add view for destinations usage
-		*13.0.23.2* FREEPBX-13029 Disable conference call recording unless using Asterisk 14
-		*13.0.23.1* FREEPBX-13505 Conference timeout value stuck at default
-		*13.0.23* FREEPBX-12955 Add user timeout above Asterisk 13.7.0
-		*13.0.22* FREEPBX-12841 Max Conference Participant Increase
-		*13.0.21* FREEPBX-12748
-		*13.0.20* FREEPBX-12406 Conference Language always set to 'Inherit'
-		*13.0.19* Update button mapping file when in conferences
-		*13.0.18* FREEPBX-11693 attempt to revert for older versions of Asterisk
-		*13.0.17* FREEPBX-10477 dont set null values into astdb
-		*13.0.16* FREEPBX-11233
-		*13.0.15* FREEPBX-11121
-		*13.0.14* FREEPBX-11167
-		*13.0.13* FREEPBX-10990
-		*13.0.12* FREEPBX-9044
-		*13.0.11* Conference menu options need to line up to what is in the voice prompt
-		*13.0.10* Sliding bootnav
-		*13.0.9* FREEPBX-10273 fall back on pin entry if there is no pin on users but there is on admin
-		*13.0.8* FREEPBX-10273 make sure at least one pin is set
-		*13.0.7* FREEPBX-10273 dont allow blank pins
-		*13.0.5* FREEPBX-9915 - Install issues.
-		*13.0.4* FREEPBX-9850 dont reset the invalid pin count on an invalid pin
-		*13.0.3* Fix undefined indexes when searching for conferences globally
-		*13.0.2.4* Compatibility fix
-		*13.0.2* Version bump Beta
-		*13.0.1alpha2* FREEPBX-9467 Added search hooks
-		*13.0.1alpha1* Visual Changes
-		*12.0.11* Cleanup
+		*13.0.23.11* Fork to 15.0, add backup
 	</changelog>
 	<depends>
 		<module>recordings ge 13.0.2</module>
@@ -59,6 +24,20 @@
 			<view>form</view>
 		</conferences>
  	</popovers>
+    <database>
+        <table name="meetme">
+            <field name="exten" type="string" length="50" primarykey="true"/>
+            <field name="options" type="string" length="15" notnull="false"/>
+            <field name="userpin" type="string" length="50" notnull="false"/>
+            <field name="adminpin" type="string" length="50" notnull="false"/>
+            <field name="description" type="string" length="50" notnull="false"/>
+            <field name="joinmsg_id" type="integer" notnull="false"/>
+            <field name="music" type="string" length="80" notnull="false"/>
+            <field name="users" type="smallint" default="0" unsigned="true" notnull="false"/>
+            <field name="language" type="string" length="10" default=""/>
+            <field name="timeout" type="integer" default="21600" unsigned="true" notnull="false"/>
+        </table>
+    </database>
 	<hooks>
 		<bulkhandler class="Bulkhandler" namespace="FreePBX\modules">
 			<method callingMethod="getHeaders" class="Conferences" namespace="FreePBX\modules">bulkhandlerGetHeaders</method>
@@ -71,8 +50,6 @@
 		</printextensions>
 	</hooks>
 	<supported>
-		<version>13.0</version>
+		<version>15.0</version>
 	</supported>
-	<location>undefined</location>
-	<md5sum>undefined</md5sum>
 </module>
