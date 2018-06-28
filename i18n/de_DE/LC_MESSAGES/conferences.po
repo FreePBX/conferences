@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-15 13:55-0500\n"
-"PO-Revision-Date: 2018-06-28 12:06+0000\n"
-"Last-Translator: Nils Heckenkamp <nheckenkamp@sangoma.com>\n"
+"PO-Revision-Date: 2018-07-18 19:13+0000\n"
+"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/conferences/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
@@ -195,6 +195,10 @@ msgid ""
 "is currently selected, such as by the inbound route.<br><br>  This music is "
 "defined in the \"Music on Hold\" above."
 msgstr ""
+"Musik (oder Werbung), die einem Anrufer, der auf den Konferenzbeginn wartet, "
+"vorgespielt wird.Wählen Sie „erben“, wenn die Warteschleifenmusik zu "
+"übernehmen, die z.B. von der eingehenden Route vorgegeben wurde.<br /><br />"
+"Diese Musik wird oben unter „Warteschleifenmusik“ festgelegt."
 
 #: views/form.php:460
 msgid "Music on Hold"
@@ -231,17 +235,19 @@ msgstr "keine"
 
 #: assets/js/conferences.js:20
 msgid "Please enter a valid Conference Name"
-msgstr "Geben Sie einen gültigen Konferenznamen ein."
+msgstr "Geben Sie einen gültigen Konferenznamen ein"
 
 #: assets/js/conferences.js:19
 msgid "Please enter a valid Conference Number"
-msgstr "Geben Sie eine gültige Konferenznummer ein."
+msgstr "Geben Sie eine gültige Konferenznummer ein"
 
 #: views/form.php:554
 msgid ""
 "Please note depending on hardware and settings a higher limit may cause call "
 "quality issues."
 msgstr ""
+"Bitte beachten Sie, dass ein höheres Limit, abhängig von Hardware und "
+"Einstellungen, zu Qualitätseinbußen führen kann."
 
 #: views/form.php:503
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
@@ -261,7 +267,7 @@ msgstr "Konferenz Aufzeichnen"
 
 #: views/form.php:530
 msgid "Record the conference call"
-msgstr "Zeichnet die Konferenz auf."
+msgstr "Zeichnet die Konferenz auf"
 
 #: views/form.php:530
 #, php-format
@@ -367,7 +373,7 @@ msgid ""
 "the conference"
 msgstr ""
 "Wenn der Konferenzleiter (Admin-Benutzer) die Konferenz verlässt, werden "
-"alle Benutzer von der Konferenz getrennt."
+"alle Benutzer von der Konferenz getrennt"
 
 #: views/form.php:276 views/form.php:303 views/form.php:330 views/form.php:357
 #: views/form.php:384 views/form.php:411 views/form.php:438 views/form.php:465
