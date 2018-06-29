@@ -243,14 +243,14 @@ function conferences_get_config($engine) {
 					$ext->add($contextname, 'STARTMEETME', '', new ext_meetme('${MEETME_ROOMNUM}','${MEETME_OPTS}','${PIN}'));
 				}
 
-				$ext->add($contextname, 'STARTMEETME', '', new ext_hangup(''));
+				$ext->add($contextname, 'STARTMEETME', '', new ext_macro('hangupcall'));
 
 				//meetme full
 				$ext->add($contextname, 'MEETMEFULL', '', new ext_playback('im-sorry&conf-full&goodbye'));
-				$ext->add($contextname, 'MEETMEFULL', '', new ext_hangup(''));
+				$ext->add($contextname, 'MEETMEFULL', '', new ext_macro('hangupcall'));
 
 				// hangup for whole context
-				$ext->add($contextname, 'h', '', new ext_hangup(''));
+				$ext->add($contextname, 'h', '', new ext_macro('hangupcall'));
 
 				foreach($conflist as $item) {
 					$room = conferences_get(ltrim($item['0']));
@@ -353,7 +353,7 @@ function conferences_get_config($engine) {
 				unset($fcc);
 
 				if ($conf_code != '') {
-					$ext->add($contextname, $conf_code, '', new ext_hangup(''));
+					$ext->add($contextname, $conf_code, '', new ext_macro('hangupcall'));
 					if ($amp_conf['USEDEVSTATE']) {
 						$ext->addHint($contextname, $conf_code, implode('&', $hints));
 					}
