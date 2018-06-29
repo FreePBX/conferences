@@ -2,13 +2,14 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>13.0.23.11</version>
+	<version>13.0.23.12</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
+		*13.0.23.12* Bugfix/FREEPBX-13464 ext-meetme context does not use hangupcall macro 
 		*13.0.23.11* FREEPBX-16499
 		*13.0.23.10* FREEPBX-17051
 		*13.0.23.9* Revert "FREEPBX-15482 Inviting users to Conference from UCP does not use system default language" 
