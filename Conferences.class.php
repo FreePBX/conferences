@@ -259,7 +259,6 @@ class Conferences extends FreePBX_Helpers implements BMO {
 		if ($joinmsg_id == '') {
 			$joinmsg_id = NULL;
 		}
-		$sth->execute(array($room,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users,$language,$timeout));
 		$language = !is_null($language) ? $language : "";
 		$this->FreePBX->astman->database_put('CONFERENCE/'.$room,'language',$language);
 		$userpin = !is_null($userpin) ? $userpin : "";
@@ -274,6 +273,7 @@ class Conferences extends FreePBX_Helpers implements BMO {
 		$this->FreePBX->astman->database_put('CONFERENCE/'.$room,'users',$users);
 		$recording = $this->FreePBX->Recordings->getFilenameById($joinmsg_id);
 		$this->FreePBX->astman->database_put('CONFERENCE/'.$room,'joinmsg',(!empty($recording) ? $recording : ''));
+		$sth->execute(array($room,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users,$language,$timeout));
 		return true;
 	}
 
