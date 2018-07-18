@@ -243,14 +243,14 @@ function conferences_get_config($engine) {
 					$ext->add($contextname, 'STARTMEETME', '', new ext_meetme('${MEETME_ROOMNUM}','${MEETME_OPTS}','${PIN}'));
 				}
 
-				$ext->add($contextname, 'STARTMEETME', '', new ext_hangup(''));
+				$ext->add($contextname, 'STARTMEETME', '', new ext_macro('hangupcall'));
 
 				//meetme full
 				$ext->add($contextname, 'MEETMEFULL', '', new ext_playback('im-sorry&conf-full&goodbye'));
-				$ext->add($contextname, 'MEETMEFULL', '', new ext_hangup(''));
+				$ext->add($contextname, 'MEETMEFULL', '', new ext_macro('hangupcall'));
 
 				// hangup for whole context
-				$ext->add($contextname, 'h', '', new ext_hangup(''));
+				$ext->add($contextname, 'h', '', new ext_macro('hangupcall'));
 
 				foreach($conflist as $item) {
 					$room = conferences_get(ltrim($item['0']));
@@ -299,7 +299,9 @@ function conferences_get_config($engine) {
 
 					//No pins set so ask the user now
 					$ext->add($contextname, $roomnum, 'READPIN', new ext_setvar('PINCOUNT','0'));
-					$ext->add($contextname, $roomnum, 'RETRYPIN', new ext_read('PIN','enter-conf-pin-number'));
+
+					// for i18n playback in multiple languages
+					$ext->add($contextname, $roomnum, 'RETRYPIN', new ext_gosubif('$[${DIALPLAN_EXISTS('.$contextname.'-lang-playback,${CHANNEL(language)})}]', $contextname.'-lang-playback,${CHANNEL(language)},retrypin', $contextname.'-lang-playback,en,retrypin'));
 
 					// userpin -- must do always, otherwise if there is just an adminpin
 					// there would be no way to get to the conference !
@@ -335,12 +337,23 @@ function conferences_get_config($engine) {
 					}
 				}
 
+				//en English
+				$lang = 'en';
+				$ext->add($contextname."-lang-playback", $lang, 'retrypin', new ext_read('PIN','enter-conf-pin-number'));
+				$ext->add($contextname."-lang-playback", $lang, '', new ext_return());
+
+				//Language Corrections
+				foreach(array('it', 'en_NZ', 'en_AU', 'cs', 'fa', 'fr', 'he', 'ja', 'nl', 'no', 'pl', 'ru', 'sv', 'tr') as $lang) {
+					$ext->add($contextname."-lang-playback", $lang, 'retrypin', new ext_read('PIN','conf-getpin'));
+					$ext->add($contextname."-lang-playback", $lang, '', new ext_return());
+				}
+
 				$fcc = new featurecode('conferences', 'conf_status');
 				$conf_code = $fcc->getCodeActive();
 				unset($fcc);
 
 				if ($conf_code != '') {
-					$ext->add($contextname, $conf_code, '', new ext_hangup(''));
+					$ext->add($contextname, $conf_code, '', new ext_macro('hangupcall'));
 					if ($amp_conf['USEDEVSTATE']) {
 						$ext->addHint($contextname, $conf_code, implode('&', $hints));
 					}

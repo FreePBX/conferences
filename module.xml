@@ -2,13 +2,16 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>13.0.23.9</version>
+	<version>13.0.23.12</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
+		*13.0.23.12* Bugfix/FREEPBX-13464 ext-meetme context does not use hangupcall macro 
+		*13.0.23.11* FREEPBX-16499
+		*13.0.23.10* FREEPBX-17051
 		*13.0.23.9* Revert "FREEPBX-15482 Inviting users to Conference from UCP does not use system default language" 
 		*13.0.23.8* FREEPBX-15482 Inviting users to Conference from UCP does not use system default language
 		*13.0.23.7* FREEPBX-14609 clarify messages
@@ -58,8 +61,14 @@
 		</conferences>
  	</popovers>
 	<hooks>
+		<bulkhandler class="Bulkhandler" namespace="FreePBX\modules">
+			<method callingMethod="getHeaders" class="Conferences" namespace="FreePBX\modules">bulkhandlerGetHeaders</method>
+			<method callingMethod="getTypes" class="Conferences">bulkhandlerGetTypes</method>
+			<method callingMethod="import" class="Conferences" namespace="FreePBX\modules">bulkhandlerImport</method>
+			<method callingMethod="export" class="Conferences" namespace="FreePBX\modules">bulkhandlerExport</method>
+		</bulkhandler>		
 		<printextensions class="Printextensions" namespace="FreePBX\modules">
-			<method callingMethod="getSections" class="Conferences">printExtensions</method>
+			<method callingMethod="getSections" class="Conferences" namespace="FreePBX\modules">printExtensions</method>
 		</printextensions>
 	</hooks>
 	<supported>
