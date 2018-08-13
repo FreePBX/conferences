@@ -7,6 +7,14 @@ use PDO;
 
 class Conferences extends FreePBX_Helpers implements BMO {
 	private $module = 'Conferences';
+	public function setDatabase($database){
+		$this->Database = $database;
+		return $this;
+	}
+
+	public function resetDatabase(){
+		$this->Database = $this->FreePBX->Database;
+	}
 
 	public function doConfigPageInit($page) {
 		$request = $_REQUEST;
@@ -117,7 +125,7 @@ class Conferences extends FreePBX_Helpers implements BMO {
 		*/
 		if($type === 'conferences'){
             $sql = "SELECT * FROM meetme ORDER BY exten";
-            $sth = $this->FreePBX->Database->prepare($sql);
+            $sth = $this->Database->prepare($sql);
             $sth->execute();
             $conferences = $sth->fetchAll(PDO::FETCH_ASSOC);
             if (!empty($conferences) && is_array($conferences)) {
@@ -143,7 +151,7 @@ class Conferences extends FreePBX_Helpers implements BMO {
 	public function search($query, &$results) {
 		if(!ctype_digit($query)) {
 			$sql = "SELECT * FROM meetme WHERE description LIKE ?";
-			$sth = $this->FreePBX->Database->prepare($sql);
+			$sth = $this->Database->prepare($sql);
 			$sth->execute(array("%".$query."%"));
 			$rows = $sth->fetchAll(PDO::FETCH_ASSOC);
 			foreach($rows as $row) {
@@ -151,7 +159,7 @@ class Conferences extends FreePBX_Helpers implements BMO {
 			}
 		} else {
 			$sql = "SELECT * FROM meetme WHERE exten LIKE ?";
-			$sth = $this->FreePBX->Database->prepare($sql);
+			$sth = $this->Database->prepare($sql);
 			$sth->execute(array("%".$query."%"));
 			$rows = $sth->fetchAll(PDO::FETCH_ASSOC);
 			foreach($rows as $row) {
@@ -212,7 +220,7 @@ class Conferences extends FreePBX_Helpers implements BMO {
 		$options = count_chars($options, 3);
 
 		$sql = 'UPDATE meetme SET options = ? WHERE exten = ?';
-		$sth = $this->FreePBX->Database->prepare($sql);
+		$sth = $this->Database->prepare($sql);
 		$sth->execute(array($options,$room));
 		$options = !is_null($options) ? $options : "";
 		$this->FreePBX->astman->database_put('CONFERENCE/'.$room,'options',$options);
@@ -230,7 +238,7 @@ class Conferences extends FreePBX_Helpers implements BMO {
 			return false;
 		}
 		$sql = 'UPDATE meetme SET '.$key.' = ? WHERE exten = ?';
-		$sth = $this->FreePBX->Database->prepare($sql);
+		$sth = $this->Database->prepare($sql);
 		$sth->execute(array($value,$room));
 		if($key != 'description' && $key != 'joinmsg_id') {
 			$value = !is_null($value) ? $value : "";
@@ -254,7 +262,7 @@ class Conferences extends FreePBX_Helpers implements BMO {
 	 */
 	public function addConference($room,$name,$userpin,$adminpin,$options,$joinmsg_id = NULL,$music = '',$users = 0,$language='',$timeout=21600) {
 		$sql = "INSERT INTO meetme (exten,description,userpin,adminpin,options,joinmsg_id,music,users,language,timeout) values (?,?,?,?,?,?,?,?,?,?)";
-		$sth = $this->FreePBX->Database->prepare($sql);
+		$sth = $this->Database->prepare($sql);
 		/* fixup joinmsg_id to be NULL, not an empty string */
 		if ($joinmsg_id == '') {
 			$joinmsg_id = NULL;
@@ -283,7 +291,7 @@ class Conferences extends FreePBX_Helpers implements BMO {
 	 */
 	public function deleteConference($room) {
 		$sql = "DELETE FROM meetme WHERE exten = ?";
-        $sth = $this->FreePBX->Database->prepare($sql);
+        $sth = $this->Database->prepare($sql);
 		try {
 			$sth->execute(array($room));
 			$this->FreePBX->astman->database_deltree('CONFERENCE/'.$room);
@@ -300,7 +308,7 @@ class Conferences extends FreePBX_Helpers implements BMO {
 	 */
 	public function getConference($room) {
 		$sql = "SELECT exten,options,userpin,adminpin,description,language,joinmsg_id,music,users,timeout FROM meetme WHERE exten = ?";
-		$sth = $this->FreePBX->Database->prepare($sql);
+		$sth = $this->Database->prepare($sql);
 		try {
 			$sth->execute(array($room));
 			$ret = $sth->fetch(PDO::FETCH_ASSOC);
@@ -341,7 +349,7 @@ class Conferences extends FreePBX_Helpers implements BMO {
 	 */
 	public function listConferences() {
 		$sql = "SELECT exten,description FROM meetme ORDER BY exten";
-		$sth = $this->FreePBX->Database->prepare($sql);
+		$sth = $this->Database->prepare($sql);
 		$sth->execute();
 		$results = $sth->fetchAll(PDO::FETCH_ASSOC);
 		foreach($results as $result){
