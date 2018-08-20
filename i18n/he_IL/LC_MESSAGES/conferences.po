@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-29 17:30-0400\n"
+"POT-Creation-Date: 2018-08-20 12:43-0400\n"
 "PO-Revision-Date: 2016-05-12 01:10+0200\n"
 "Last-Translator: Avishay <baabad@outlook.com>\n"
 "Language-Team: Hebrew <http://weblate.freepbx.org/projects/freepbx/"
@@ -42,7 +42,7 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
-#: Conferences.class.php:76 views/form.php:211
+#: Conferences.class.php:84 views/form.php:211
 msgid "Admin PIN"
 msgstr "קוד מנהל"
 
@@ -69,11 +69,11 @@ msgstr "הכרז על מספר הנמצאים בועידה בזמן הכניסה
 msgid "Applications"
 msgstr ""
 
-#: Conferences.class.php:73
+#: Conferences.class.php:81
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:158 Conferences.class.php:395 views/grid.php:32
+#: Conferences.class.php:166 Conferences.class.php:403 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "ועידה"
@@ -95,7 +95,7 @@ msgstr ""
 msgid "Conference Status"
 msgstr ""
 
-#: Conferences.class.php:73
+#: Conferences.class.php:81
 msgid "Conference number used."
 msgstr ""
 
@@ -108,7 +108,7 @@ msgstr ""
 msgid "Conference: %s"
 msgstr ""
 
-#: Conferences.class.php:90 Conferences.class.php:393 conferences.i18n.php:4
+#: Conferences.class.php:98 Conferences.class.php:401 conferences.i18n.php:4
 #: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr ""
@@ -117,7 +117,7 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr ""
 
-#: Conferences.class.php:377
+#: Conferences.class.php:385
 msgid "Delete"
 msgstr ""
 
@@ -125,11 +125,11 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: Conferences.class.php:77
+#: Conferences.class.php:85
 msgid "Desctiption"
 msgstr ""
 
-#: Conferences.class.php:77
+#: Conferences.class.php:85
 msgid "Desctiption of the conference."
 msgstr ""
 
@@ -148,7 +148,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:396
+#: Conferences.class.php:404
 msgid "Extension"
 msgstr ""
 
@@ -160,7 +160,7 @@ msgstr ""
 msgid "Give this conference a brief name to help you identify it."
 msgstr "תן לועידה זו שם קצר שיעזור לך לזהות אותה."
 
-#: Conferences.class.php:91
+#: Conferences.class.php:99
 msgid "Import/Export Conferences"
 msgstr ""
 
@@ -172,15 +172,15 @@ msgstr ""
 msgid "Join Message"
 msgstr ""
 
-#: Conferences.class.php:78
+#: Conferences.class.php:86
 msgid "Join message id."
 msgstr ""
 
-#: Conferences.class.php:81 views/form.php:235
+#: Conferences.class.php:89 views/form.php:235
 msgid "Language"
 msgstr ""
 
-#: Conferences.class.php:81
+#: Conferences.class.php:89
 msgid "Language."
 msgstr ""
 
@@ -214,7 +214,7 @@ msgid ""
 "add additional recordings please use the \"System Recordings\" MENU above"
 msgstr ""
 
-#: Conferences.class.php:79
+#: Conferences.class.php:87
 msgid "Music"
 msgstr ""
 
@@ -234,7 +234,7 @@ msgstr ""
 msgid "Music on Hold Class"
 msgstr ""
 
-#: Conferences.class.php:79
+#: Conferences.class.php:87
 msgid "Music."
 msgstr ""
 
@@ -263,19 +263,19 @@ msgstr ""
 msgid "None"
 msgstr "אין"
 
-#: Conferences.class.php:74
+#: Conferences.class.php:82
 msgid "Option of the Conference."
 msgstr ""
 
-#: Conferences.class.php:74
+#: Conferences.class.php:82
 msgid "Options"
 msgstr ""
 
-#: Conferences.class.php:76
+#: Conferences.class.php:84
 msgid "PIN code for admin."
 msgstr ""
 
-#: Conferences.class.php:75
+#: Conferences.class.php:83
 msgid "PIN code for user."
 msgstr ""
 
@@ -323,7 +323,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:372
+#: Conferences.class.php:380
 msgid "Reset"
 msgstr ""
 
@@ -335,7 +335,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:367
+#: Conferences.class.php:375
 msgid "Submit"
 msgstr ""
 
@@ -368,11 +368,11 @@ msgid ""
 "21600 (6 hours)"
 msgstr ""
 
-#: Conferences.class.php:82
+#: Conferences.class.php:90
 msgid "Timeout"
 msgstr ""
 
-#: Conferences.class.php:82
+#: Conferences.class.php:90
 msgid "Timeout of the conference."
 msgstr ""
 
@@ -401,7 +401,7 @@ msgstr "השתמש במספר זה כדי לחייג לתוך הועידה"
 msgid "User Count"
 msgstr ""
 
-#: Conferences.class.php:75 views/form.php:187
+#: Conferences.class.php:83 views/form.php:187
 msgid "User PIN"
 msgstr ""
 
@@ -409,11 +409,11 @@ msgstr ""
 msgid "User join/leave"
 msgstr ""
 
-#: Conferences.class.php:80
+#: Conferences.class.php:88
 msgid "Users"
 msgstr ""
 
-#: Conferences.class.php:80
+#: Conferences.class.php:88
 msgid "Users."
 msgstr ""
 
@@ -424,7 +424,7 @@ msgid ""
 msgstr ""
 "המתן עד שמנהל הועידה (משתמש עם סיסמא מיוחדת) יגיע לפני שתחבר את כולם לועידה"
 
-#: Conferences.class.php:26
+#: Conferences.class.php:34
 msgid "Warning! Extension"
 msgstr "אזהרה! שלוחה"
 
@@ -468,11 +468,11 @@ msgstr ""
 msgid "inherit"
 msgstr ""
 
-#: Conferences.class.php:26
+#: Conferences.class.php:34
 msgid "is not allowed for your account."
 msgstr "אינה מורשית עבור החשבון שלך."
 
-#: Conferences.class.php:78
+#: Conferences.class.php:86
 msgid "join message id"
 msgstr ""
 
