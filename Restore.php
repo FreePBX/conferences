@@ -15,7 +15,7 @@ class Restore Extends Base\RestoreBase{
         $cb->setDatabase($pdo);
         $configs = $cb->bulkhandlerExport('conferences');
         $cb->resetDatabase();
-        $this->FreePBX->Conferences->bulkhandlerImport('conferences', reset($configs));
+        $this->FreePBX->Conferences->bulkhandlerImport('conferences', $configs);
 
         return $this;
     }
