@@ -2,13 +2,14 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>15.0.3</version>
+	<version>15.0.4</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
+		*15.0.4* Rest Api 
 		*15.0.3* Packaging of ver 15.0.3
 		*15.0.2* Bugfix/FREEPBX-13464 ext-meetme context does not use hangupcall macro 
 		*13.0.23.11* Fork to 15.0, add backup
