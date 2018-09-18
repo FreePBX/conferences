@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-15 13:55-0500\n"
-"PO-Revision-Date: 2018-08-25 12:00+0000\n"
+"PO-Revision-Date: 2018-09-19 16:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/conferences/de/>\n"
 "Language: de_DE\n"
@@ -156,11 +156,11 @@ msgstr "Sprache"
 
 #: views/form.php:298
 msgid "Leader Leave"
-msgstr ""
+msgstr "Leiter geht"
 
 #: views/form.php:271
 msgid "Leader Wait"
-msgstr ""
+msgstr "Auf Leiter warten"
 
 #: views/rnav.php:19
 msgid "List Conferences"
@@ -177,7 +177,7 @@ msgstr "Maximale Teilnehmerzahl"
 
 #: views/form.php:593
 msgid "Member Timeout"
-msgstr ""
+msgstr "Zeitüberschreitung für Mitglieder"
 
 #: views/form.php:68
 msgid ""
@@ -214,6 +214,10 @@ msgid ""
 "you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
 "Yes to unmute yourself"
 msgstr ""
+"Jeden beim ersten Beitritt zur Konferenz stummschalten. Bitte beachten Sie, "
+"dass sie 'Menü zulassen auf 'ja' gestellt haben müssen, sofern Sie 'Auf "
+"Leiter warten' auf 'ja' gestellt haben, um ihre eigene Stummschaltung zu "
+"beenden"
 
 #: views/form.php:566
 msgid "Mute on Join"
@@ -252,6 +256,8 @@ msgstr ""
 #: views/form.php:503
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
 msgstr ""
+"Menü ansagen (Benutzer oder Admin), wenn '*' empfangen wird (an Menü "
+"'senden')"
 
 #: views/form.php:379
 msgid "Quiet Mode"
@@ -278,6 +284,12 @@ msgid ""
 "either the CDR nor in Call Recordings and has to be downloaded by logging "
 "into the backend."
 msgstr ""
+"Konferenztelefonat aufzeichnen. Hinweis: Dies funktioniert mit %s oder älter "
+"nicht und ist deshalb deaktiviert. Aktivieren Sie 'Das Zulassen von "
+"Konferenzaufzeichnungen erzwingen' unter den erweiterten Einstellungen, um "
+"dies zu übersteuern. Die Aufzeichnung wird weder im CRD noch in den "
+"Rufaufzeichnungen verfügbar sein, sondern muss manuell über das Backend "
+"heruntergeladen werden."
 
 #: Conferences.class.php:381
 msgid "Reset"
@@ -290,6 +302,11 @@ msgid ""
 "on the output of the conference list CLI command. Note: If Conferences Pro "
 "is installed and licensed this will always be enabled"
 msgstr ""
+"Stellt die Sprecher-Erkennung ein. Asterisk wird Ereignisse auf das Manager-"
+"Interface senden, die den Kanal identifizieren, der spricht. Der Sprecher "
+"wird außerdem in der Ausgabe der 'conference list'-Befehls auf der "
+"Kommandozeile identifiziert. Hinweis: Wenn \"Konferenzen Pro\" installiert "
+"und lizenziert ist, ist diese Option immer aktiviert"
 
 #: Conferences.class.php:376
 msgid "Submit"
@@ -297,11 +314,11 @@ msgstr "Absenden"
 
 #: views/form.php:352
 msgid "Talker Detection"
-msgstr "Rednererkennung"
+msgstr "Sprechererkennung"
 
 #: views/form.php:325
 msgid "Talker Optimization"
-msgstr "Redneroptimierung"
+msgstr "Sprecheroptimierung"
 
 #: views/form.php:258
 msgid ""
@@ -343,7 +360,7 @@ msgstr ""
 
 #: views/form.php:151
 msgid "Use this number to dial into the conference."
-msgstr ""
+msgstr "Diese Nummer verwenden, um sich in die Konferenz einzuwählen."
 
 #: views/form.php:406
 msgid "User Count"
@@ -362,10 +379,12 @@ msgid ""
 "Wait until the conference leader (admin user) arrives before starting the "
 "conference"
 msgstr ""
+"Warten bis der Konferenzleiter (Admin-Benutzer) ankommt, bevor die Konferenz "
+"beginnt"
 
 #: Conferences.class.php:29
 msgid "Warning! Extension"
-msgstr "Achtung! Nebenstelle"
+msgstr "Warnung! Nebenstelle"
 
 #: views/form.php:313
 msgid ""
