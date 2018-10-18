@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-15 13:55-0500\n"
-"PO-Revision-Date: 2018-09-19 16:00+0000\n"
+"PO-Revision-Date: 2018-10-18 19:45+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/conferences/de/>\n"
 "Language: de_DE\n"
@@ -144,7 +144,7 @@ msgstr ""
 
 #: views/form.php:241
 msgid "Inherit"
-msgstr "Übernehmen"
+msgstr "Erben"
 
 #: views/form.php:54
 msgid "Join Message"
@@ -235,7 +235,7 @@ msgstr "Unbegrenzt"
 
 #: views/form.php:40
 msgid "None"
-msgstr "keine"
+msgstr "Kein*e"
 
 #: assets/js/conferences.js:20
 msgid "Please enter a valid Conference Name"
@@ -329,10 +329,17 @@ msgid ""
 "conference. If you set a value here the langauge will be forced irregardless "
 "of what language users have set"
 msgstr ""
+"Die Sprache für die Konferenz. Wird dies leer gelassen oder auf „Erben“ "
+"gestellt, wird die Sprache von der ersten Person übernommen, die die "
+"Konferenz betritt, wodurch die Sprache dieser Konferenz im Grunde dynamisch "
+"wird. Nachdem die erste Person die Konferenz betreten hat, kann die Sprache "
+"nicht geändert werden, bis alle Benutzer die Konferenz verlassen haben. "
+"Geben Sie hier eine Sprache vor, wird diese, unabhängig von den "
+"Einstellungen der Nutzer, für alle Teilnehmer erzwungen"
 
 #: assets/js/conferences.js:23
 msgid "The user and admin can not have the same pin code."
-msgstr ""
+msgstr "Der Benutzer kann nicht denselben PIN-Code haben wie der Admin."
 
 #: views/form.php:605
 msgid ""
@@ -340,6 +347,9 @@ msgid ""
 "conference before being automatically ejected. 0 = disabled, default is "
 "21600 (6 hours)"
 msgstr ""
+"Diese Einstellung gibt eine Sekundenzahl an, für die ein Teilnehmer in der "
+"Konferenz bleiben kann, bevor er automatisch rausgeworfen wird. 0 = "
+"deaktiviert, Standardwert ist 21600 (sechs Stunden)"
 
 #: views/form.php:340
 msgid ""
@@ -348,6 +358,11 @@ msgid ""
 "done on transmission and that received audio that is not registered as "
 "talking is omitted, causing no buildup in background noise."
 msgstr ""
+"Schaltet die Sprecheroptimierung ein. Mit der Sprecheroptimierung behandelt "
+"Asterisk Teilnehmer, die nicht sprechen als wären sie stummgeschaltet. Dies "
+"bedeutet, dass dass Übertragungen nicht encodiert werden und empfangene "
+"Töne, die nicht als Sprechen erkannt werden, ignoriert werden, wodurch ein "
+"Anstieg von Hintergrundgeräuschen vermieden wird."
 
 #: conferences.i18n.php:16
 msgid ""
@@ -357,6 +372,12 @@ msgid ""
 "Asterisk 13 or lower. Enable this option to allow Conference Call recording "
 "to be enabled in Astrisk 13 or lower"
 msgstr ""
+"Vor Asterisk 14+ wurde am Ende der Aufzeichnung einer Konferenz ein "
+"zufälliger Zeitstempel ergänzt, der in der Anrufnachbehandlung nicht "
+"bestimmt werden konnte. Daher die Möglichkeit, Konferenzaufzeichnungen zu "
+"aktivieren, deaktiviert, wenn Sie Asterisk 13 oder älter nutzen. Aktivieren "
+"Sie diese Option, um die die Aktivierung von Konferenzaufzeichnungen in "
+"Asterisk 13 oder älter zu erlauben"
 
 #: views/form.php:151
 msgid "Use this number to dial into the conference."
@@ -407,18 +428,27 @@ msgid ""
 "entered, the user will be prompted to enter a PIN.<br> This pin should be "
 "different than the Admin pin"
 msgstr ""
+"Sie können Benutzer zur Eingabe eines Passworts zwingen, bevor sie dieser "
+"Konferenz beitreten können. <br /><br />Diese Einstellung ist optional.<br "
+"/><br />Wenn eine PIN angegeben wird, werden die Benutzer zur Eingabe der "
+"PIN aufgefordert.<br />Dies PIN muss anders sein als die Admin-PIN"
 
 #: assets/js/conferences.js:22
 msgid ""
 "You must set Allow Menu to Yes when not using a Leader or Admin in your "
 "conference, otherwise you will be unable to unmute yourself"
 msgstr ""
+"Sie müssen „Menü erlauben“ auf „Ja“ setzen, wenn Sie für Ihre Kopnferenz "
+"keinen Leiter oder Admin verwenden, anderenfalls können Sie Ihre eigene "
+"Stummschaltung nicht selbst aufheben"
 
 #: assets/js/conferences.js:21
 msgid ""
 "You must set an admin PIN for the Conference Leader when selecting the "
 "leader wait option"
 msgstr ""
+"Sie müssen eine Admin-PIN für den Konferenzleiter einstellen, wenn Sie die "
+"Option „Auf Leiter warten“ auswählen"
 
 #: views/form.php:85
 msgid "default"
@@ -430,4 +460,4 @@ msgstr "Erben"
 
 #: Conferences.class.php:29
 msgid "is not allowed for your account."
-msgstr "Ist für Ihr Konto nicht erlaubt."
+msgstr "ist für Ihr Konto nicht erlaubt."
