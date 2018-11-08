@@ -107,14 +107,20 @@ class Conferences extends FreePBX_Helpers implements BMO {
         */
         $ret = null;
 		if($type === 'conferences'){
-            foreach ($rawData as $data) {
-                $this->deleteConference($data["exten"]);
-                $this->addConference($data["exten"],$data["description"],$data["userpin"],$data["adminpin"],$data["options"],$data["joinmsg_id"],$data["music"],$data["users"],$data["language"],$data["timeout"]);
-            }
-            $ret = array(
-                'status' => true,
-            );
-            needreload(); 
+			if(is_array($rawData)){
+				foreach ($rawData as $data) {
+					$this->deleteConference($data["exten"]);
+					$this->addConference($data["exten"],$data["description"],$data["userpin"],$data["adminpin"],$data["options"],$data["joinmsg_id"],$data["music"],$data["users"],$data["language"],$data["timeout"]);
+				}
+				$ret = array(
+					'status' => true,
+				);
+				needreload();
+			}else{
+				$ret = array(
+					'status' => false,
+				);
+			}
         }
         return $ret;
     }
