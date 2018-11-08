@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:43-0400\n"
+"POT-Creation-Date: 2018-11-07 20:58-0500\n"
 "PO-Revision-Date: 2016-10-06 14:02+0200\n"
 "Last-Translator: Maxim <maxim@ua.fm>\n"
 "Language-Team: Ukrainian <http://weblate.freepbx.org/projects/freepbx/"
@@ -66,7 +66,7 @@ msgstr "Додатки"
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:166 Conferences.class.php:403 views/grid.php:32
+#: Conferences.class.php:172 Conferences.class.php:409 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "Конференція"
@@ -101,7 +101,7 @@ msgstr "Конференція: "
 msgid "Conference: %s"
 msgstr "Конференція: %s"
 
-#: Conferences.class.php:98 Conferences.class.php:401 conferences.i18n.php:4
+#: Conferences.class.php:98 Conferences.class.php:407 conferences.i18n.php:4
 #: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr "Конференції"
@@ -110,7 +110,7 @@ msgstr "Конференції"
 msgid "Conflicting Extensions"
 msgstr "Конфліктні  додаткові номери"
 
-#: Conferences.class.php:385
+#: Conferences.class.php:391
 msgid "Delete"
 msgstr "Видалити"
 
@@ -145,7 +145,7 @@ msgstr ""
 "то цей PIN ідентифікує лідера.<br>Цей код повинен бути іншим, ніж PIN-код "
 "користувача."
 
-#: Conferences.class.php:404
+#: Conferences.class.php:410
 msgid "Extension"
 msgstr "Додатковий номер"
 
@@ -328,7 +328,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:380
+#: Conferences.class.php:386
 msgid "Reset"
 msgstr "Скинути"
 
@@ -340,7 +340,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:375
+#: Conferences.class.php:381
 msgid "Submit"
 msgstr "Застосувати"
 

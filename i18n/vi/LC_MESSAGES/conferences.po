@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:43-0400\n"
+"POT-Creation-Date: 2018-11-07 20:58-0500\n"
 "PO-Revision-Date: 2017-07-10 20:00+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -63,7 +63,7 @@ msgstr "Các ứng dụng"
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:166 Conferences.class.php:403 views/grid.php:32
+#: Conferences.class.php:172 Conferences.class.php:409 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "Hội nghị"
@@ -98,7 +98,7 @@ msgstr "Hội nghị: "
 msgid "Conference: %s"
 msgstr "Hội nghị: %s"
 
-#: Conferences.class.php:98 Conferences.class.php:401 conferences.i18n.php:4
+#: Conferences.class.php:98 Conferences.class.php:407 conferences.i18n.php:4
 #: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr "Các hội nghị"
@@ -107,7 +107,7 @@ msgstr "Các hội nghị"
 msgid "Conflicting Extensions"
 msgstr "Các máy nhánh đang xung đột"
 
-#: Conferences.class.php:385
+#: Conferences.class.php:391
 msgid "Delete"
 msgstr "Xóa"
 
@@ -142,7 +142,7 @@ msgstr ""
 "đó PIN này sẽ xác định người chủ trì. <br> Pin này cần phải khác hơn so với "
 "pin người dùng."
 
-#: Conferences.class.php:404
+#: Conferences.class.php:410
 msgid "Extension"
 msgstr "Máy nhánh"
 
@@ -331,7 +331,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:380
+#: Conferences.class.php:386
 msgid "Reset"
 msgstr "Cài đặt lại"
 
@@ -347,7 +347,7 @@ msgstr ""
 "trên đầu ra của lệnh CLI danh sách hội nghị. Lưu ý: Nếu các hội nghị Pro "
 "được cài đặt và cấp phép thì điều này sẽ luôn được bật"
 
-#: Conferences.class.php:375
+#: Conferences.class.php:381
 msgid "Submit"
 msgstr "Gửi đi"
 

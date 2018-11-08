@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:43-0400\n"
+"POT-Creation-Date: 2018-11-07 20:58-0500\n"
 "PO-Revision-Date: 2017-12-18 17:35+0200\n"
 "Last-Translator: Nils <Nils@heckenkamp.info>\n"
 "Language-Team: German <http://weblate.freepbx.org/projects/freepbx/"
@@ -62,7 +62,7 @@ msgstr "Anwendungen"
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:166 Conferences.class.php:403 views/grid.php:32
+#: Conferences.class.php:172 Conferences.class.php:409 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "Konferenz"
@@ -97,7 +97,7 @@ msgstr "Konferenz: "
 msgid "Conference: %s"
 msgstr "Konferenz: %s"
 
-#: Conferences.class.php:98 Conferences.class.php:401 conferences.i18n.php:4
+#: Conferences.class.php:98 Conferences.class.php:407 conferences.i18n.php:4
 #: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr "Konferenzen"
@@ -106,7 +106,7 @@ msgstr "Konferenzen"
 msgid "Conflicting Extensions"
 msgstr ""
 
-#: Conferences.class.php:385
+#: Conferences.class.php:391
 msgid "Delete"
 msgstr "Löschen"
 
@@ -137,7 +137,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:404
+#: Conferences.class.php:410
 msgid "Extension"
 msgstr "Nebenstelle"
 
@@ -313,7 +313,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:380
+#: Conferences.class.php:386
 msgid "Reset"
 msgstr "Zurücksetzen"
 
@@ -325,7 +325,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:375
+#: Conferences.class.php:381
 msgid "Submit"
 msgstr "Bestätigen"
 

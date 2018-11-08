@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-05 14:21-0400\n"
+"POT-Creation-Date: 2018-11-07 20:58-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,8 +60,8 @@ msgstr ""
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:166
-#: Conferences.class.php:403
+#: Conferences.class.php:172
+#: Conferences.class.php:409
 #: views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
@@ -98,7 +98,7 @@ msgid "Conference: %s"
 msgstr ""
 
 #: Conferences.class.php:98
-#: Conferences.class.php:401
+#: Conferences.class.php:407
 #: conferences.i18n.php:4
 #: conferences.i18n.php:10
 #: conferences.i18n.php:14
@@ -110,7 +110,7 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr ""
 
-#: Conferences.class.php:385
+#: Conferences.class.php:391
 msgid "Delete"
 msgstr ""
 
@@ -142,7 +142,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:404
+#: Conferences.class.php:410
 msgid "Extension"
 msgstr ""
 
@@ -326,7 +326,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:380
+#: Conferences.class.php:386
 msgid "Reset"
 msgstr ""
 
@@ -338,7 +338,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:375
+#: Conferences.class.php:381
 msgid "Submit"
 msgstr ""
 

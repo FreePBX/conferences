@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo conferences module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:43-0400\n"
+"POT-Creation-Date: 2018-11-07 20:58-0500\n"
 "PO-Revision-Date: 2016-12-10 10:11+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -77,7 +77,7 @@ msgstr "Aplicaciones"
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:166 Conferences.class.php:403 views/grid.php:32
+#: Conferences.class.php:172 Conferences.class.php:409 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "Conferencia"
@@ -112,7 +112,7 @@ msgstr "Conferencia: "
 msgid "Conference: %s"
 msgstr "Conferencia: %s"
 
-#: Conferences.class.php:98 Conferences.class.php:401 conferences.i18n.php:4
+#: Conferences.class.php:98 Conferences.class.php:407 conferences.i18n.php:4
 #: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr "Conferencias"
@@ -121,7 +121,7 @@ msgstr "Conferencias"
 msgid "Conflicting Extensions"
 msgstr "Extensiones en conflicto"
 
-#: Conferences.class.php:385
+#: Conferences.class.php:391
 msgid "Delete"
 msgstr "Borrar"
 
@@ -157,7 +157,7 @@ msgstr ""
 "PIN identificará el líder. <br> Este pin debe ser diferente que el pin de "
 "usuario ."
 
-#: Conferences.class.php:404
+#: Conferences.class.php:410
 msgid "Extension"
 msgstr "Extensión"
 
@@ -351,7 +351,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:380
+#: Conferences.class.php:386
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -367,7 +367,7 @@ msgstr ""
 "se identificará en la salida del comando CLI lista de la conferencia. Nota: "
 "Si Conferencias-Pro está instalado y con licencia esto siempre se habilitará"
 
-#: Conferences.class.php:375
+#: Conferences.class.php:381
 msgid "Submit"
 msgstr "Enviar"
 
