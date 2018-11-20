@@ -188,7 +188,7 @@ $module_hook = \moduleHook::create();
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="userpin"></i>
 					</div>
 					<div class="col-md-9">
-						<input type="text" class="form-control" id="userpin" name="userpin" value="<?php echo $userpin; ?>">
+						<input pattern="^[0-9]+$" type="text" class="form-control" id="userpin" name="userpin" value="<?php echo $userpin; ?>">
 					</div>
 				</div>
 			</div>
@@ -212,7 +212,7 @@ $module_hook = \moduleHook::create();
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="adminpin"></i>
 					</div>
 					<div class="col-md-9">
-						<input type="text" class="form-control" id="adminpin" name="adminpin" value="<?php echo $adminpin; ?>">
+						<input pattern="^[0-9]+$" type="text" class="form-control" id="adminpin" name="adminpin" value="<?php echo $adminpin; ?>">
 					</div>
 				</div>
 			</div>
