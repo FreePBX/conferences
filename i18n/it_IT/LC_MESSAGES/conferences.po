@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-26 16:28+0530\n"
-"PO-Revision-Date: 2019-01-08 14:19+0000\n"
+"PO-Revision-Date: 2019-01-09 15:00+0000\n"
 "Last-Translator: Maurizio Longhitano <mlonghitano@teampower.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/conferences/it/>\n"
 "Language: it_IT\n"
@@ -454,7 +454,7 @@ msgstr "Utilizzare questo numero per entrare nella conferenza."
 
 #: views/form.php:406
 msgid "User Count"
-msgstr "Conta utente"
+msgstr "Conteggio utenti"
 
 #: Conferences.class.php:82 views/form.php:187
 msgid "User PIN"
