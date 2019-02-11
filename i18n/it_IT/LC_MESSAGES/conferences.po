@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-26 16:28+0530\n"
+"POT-Creation-Date: 2019-02-11 13:22-0500\n"
 "PO-Revision-Date: 2019-01-09 15:00+0000\n"
 "Last-Translator: Maurizio Longhitano <mlonghitano@teampower.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/conferences/it/>\n"
@@ -40,7 +40,7 @@ msgstr "Azioni"
 msgid "Add"
 msgstr "Aggiungere"
 
-#: Conferences.class.php:83 views/form.php:211
+#: Conferences.class.php:84 views/form.php:211
 msgid "Admin PIN"
 msgstr "Amministratore PIN"
 
@@ -72,11 +72,11 @@ msgstr "Annuncia il conteggio degli utenti quando entrano in conferenza"
 msgid "Applications"
 msgstr "Applicazioni"
 
-#: Conferences.class.php:80
+#: Conferences.class.php:81
 msgid "Conf Number"
 msgstr "Numero Conferenza"
 
-#: Conferences.class.php:174 Conferences.class.php:477 views/grid.php:32
+#: Conferences.class.php:172 Conferences.class.php:409 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "Conferenza"
@@ -98,7 +98,7 @@ msgstr "Stanza di Conferenza %s: %s"
 msgid "Conference Status"
 msgstr "Stato di conferenza"
 
-#: Conferences.class.php:80
+#: Conferences.class.php:81
 msgid "Conference number used."
 msgstr "Numero conferenza usato."
 
@@ -111,7 +111,7 @@ msgstr "Conferenza: "
 msgid "Conference: %s"
 msgstr "Conferenza: %s"
 
-#: Conferences.class.php:98 Conferences.class.php:475 conferences.i18n.php:4
+#: Conferences.class.php:98 Conferences.class.php:407 conferences.i18n.php:4
 #: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr "Conferenze"
@@ -120,7 +120,7 @@ msgstr "Conferenze"
 msgid "Conflicting Extensions"
 msgstr "Interni in conflitto"
 
-#: Conferences.class.php:459
+#: Conferences.class.php:391
 msgid "Delete"
 msgstr "Elimina"
 
@@ -128,11 +128,11 @@ msgstr "Elimina"
 msgid "Description"
 msgstr "Descrizione"
 
-#: Conferences.class.php:84
+#: Conferences.class.php:85
 msgid "Desctiption"
 msgstr "Descrizione"
 
-#: Conferences.class.php:84
+#: Conferences.class.php:85
 msgid "Desctiption of the conference."
 msgstr "Descrizione della conferenza."
 
@@ -155,7 +155,7 @@ msgstr ""
 "attesa', quindi questo PIN identificherà il leader. <br> Questo pin dovrebbe "
 "essere diverso da quello dell'utente."
 
-#: Conferences.class.php:478
+#: Conferences.class.php:410
 msgid "Extension"
 msgstr "Estensione"
 
@@ -179,15 +179,15 @@ msgstr "Ereditare"
 msgid "Join Message"
 msgstr "Unisciti al messaggio"
 
-#: Conferences.class.php:85
+#: Conferences.class.php:86
 msgid "Join message id."
 msgstr "Id messaggio ingresso."
 
-#: Conferences.class.php:88 views/form.php:235
+#: Conferences.class.php:89 views/form.php:235
 msgid "Language"
 msgstr "Linguaggio"
 
-#: Conferences.class.php:88
+#: Conferences.class.php:89
 msgid "Language."
 msgstr "Lingua."
 
@@ -225,7 +225,7 @@ msgstr ""
 "<br> Per aggiungere ulteriori registrazioni, utilizzare il \"MENU delle "
 "registrazioni di sistema\" sopra"
 
-#: Conferences.class.php:86
+#: Conferences.class.php:87
 msgid "Music"
 msgstr "Musica"
 
@@ -249,7 +249,7 @@ msgstr "Musica di attesa"
 msgid "Music on Hold Class"
 msgstr "Musica in attesa di classe"
 
-#: Conferences.class.php:86
+#: Conferences.class.php:87
 msgid "Music."
 msgstr "Musica."
 
@@ -281,19 +281,19 @@ msgstr "Senza limiti"
 msgid "None"
 msgstr "Nessuno"
 
-#: Conferences.class.php:81
+#: Conferences.class.php:82
 msgid "Option of the Conference."
 msgstr "Opzioni Conferenza."
 
-#: Conferences.class.php:81
+#: Conferences.class.php:82
 msgid "Options"
 msgstr "Opzioni"
 
-#: Conferences.class.php:83
+#: Conferences.class.php:84
 msgid "PIN code for admin."
 msgstr "Codice PIN admin."
 
-#: Conferences.class.php:82
+#: Conferences.class.php:83
 msgid "PIN code for user."
 msgstr "Codice PIN utente."
 
@@ -352,7 +352,7 @@ msgstr ""
 "sovrascriverlo. La registrazione non sarà disponibile né nel CDR né nelle "
 "registrazioni delle chiamate e dovrà essere scaricata accedendo al back-end."
 
-#: Conferences.class.php:454
+#: Conferences.class.php:386
 msgid "Reset"
 msgstr "Azzerare"
 
@@ -369,7 +369,7 @@ msgstr ""
 "conferenze. Nota: Se Conferences Pro è installato e concesso in licenza, "
 "questo sarà sempre abilitato"
 
-#: Conferences.class.php:449
+#: Conferences.class.php:381
 msgid "Submit"
 msgstr "Sottoscrivi"
 
@@ -412,11 +412,11 @@ msgstr ""
 "conferenza prima di essere espulso automaticamente. 0 = disabilitato, "
 "l'impostazione predefinita è 21600 (6 ore)"
 
-#: Conferences.class.php:89
+#: Conferences.class.php:90
 msgid "Timeout"
 msgstr "Timeout"
 
-#: Conferences.class.php:89
+#: Conferences.class.php:90
 msgid "Timeout of the conference."
 msgstr "Timeout conferenza."
 
@@ -456,7 +456,7 @@ msgstr "Utilizzare questo numero per entrare nella conferenza."
 msgid "User Count"
 msgstr "Conteggio utenti"
 
-#: Conferences.class.php:82 views/form.php:187
+#: Conferences.class.php:83 views/form.php:187
 msgid "User PIN"
 msgstr "PIN utente"
 
@@ -464,11 +464,11 @@ msgstr "PIN utente"
 msgid "User join/leave"
 msgstr "L'utente entra / esce"
 
-#: Conferences.class.php:87
+#: Conferences.class.php:88
 msgid "Users"
 msgstr "Utenti"
 
-#: Conferences.class.php:87
+#: Conferences.class.php:88
 msgid "Users."
 msgstr "Utenti."
 
@@ -479,7 +479,7 @@ msgid ""
 msgstr ""
 "Attende l'arrivo dell'amministratore (leader) prima di iniziare la conferenza"
 
-#: Conferences.class.php:31
+#: Conferences.class.php:34
 msgid "Warning! Extension"
 msgstr "Attenzione!"
 
@@ -534,11 +534,11 @@ msgstr "predefinito"
 msgid "inherit"
 msgstr "ereditare"
 
-#: Conferences.class.php:31
+#: Conferences.class.php:34
 msgid "is not allowed for your account."
 msgstr "Non hai i permessi."
 
-#: Conferences.class.php:85
+#: Conferences.class.php:86
 msgid "join message id"
 msgstr "Id messaggio ingresso"
 
