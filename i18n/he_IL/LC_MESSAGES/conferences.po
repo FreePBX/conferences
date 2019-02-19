@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-07 20:58-0500\n"
+"POT-Creation-Date: 2019-02-19 11:51+0530\n"
 "PO-Revision-Date: 2016-05-12 01:10+0200\n"
 "Last-Translator: Avishay <baabad@outlook.com>\n"
 "Language-Team: Hebrew <http://weblate.freepbx.org/projects/freepbx/"
@@ -73,7 +73,7 @@ msgstr ""
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:172 Conferences.class.php:409 views/grid.php:32
+#: Conferences.class.php:191 Conferences.class.php:428 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "ועידה"
@@ -84,6 +84,10 @@ msgstr ""
 
 #: views/form.php:139
 msgid "Conference Number"
+msgstr ""
+
+#: Conferences.class.php:109
+msgid "Conference Number is missing."
 msgstr ""
 
 #: functions.inc.php:182
@@ -108,7 +112,7 @@ msgstr ""
 msgid "Conference: %s"
 msgstr ""
 
-#: Conferences.class.php:98 Conferences.class.php:407 conferences.i18n.php:4
+#: Conferences.class.php:98 Conferences.class.php:426 conferences.i18n.php:4
 #: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr ""
@@ -117,7 +121,7 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr ""
 
-#: Conferences.class.php:391
+#: Conferences.class.php:410
 msgid "Delete"
 msgstr ""
 
@@ -148,7 +152,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:410
+#: Conferences.class.php:429
 msgid "Extension"
 msgstr ""
 
@@ -263,6 +267,10 @@ msgstr ""
 msgid "None"
 msgstr "אין"
 
+#: Conferences.class.php:112
+msgid "Option of the Conference is missing."
+msgstr ""
+
 #: Conferences.class.php:82
 msgid "Option of the Conference."
 msgstr ""
@@ -323,7 +331,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:386
+#: Conferences.class.php:405
 msgid "Reset"
 msgstr ""
 
@@ -335,7 +343,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:381
+#: Conferences.class.php:400
 msgid "Submit"
 msgstr ""
 
@@ -462,6 +470,10 @@ msgstr ""
 
 #: views/form.php:85
 msgid "default"
+msgstr ""
+
+#: Conferences.class.php:115
+msgid "description is blank."
 msgstr ""
 
 #: views/form.php:84
