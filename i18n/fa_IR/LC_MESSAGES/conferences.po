@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-13 16:26-0400\n"
+"POT-Creation-Date: 2019-02-19 11:39+0530\n"
 "PO-Revision-Date: 2019-01-25 15:36+0000\n"
 "Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://*/projects/freepbx/conferences/fa/>\n"
@@ -61,7 +61,7 @@ msgstr "درخواست"
 msgid "Conf Number"
 msgstr "شماره Conf"
 
-#: Conferences.class.php:174 Conferences.class.php:477 views/grid.php:32
+#: Conferences.class.php:193 Conferences.class.php:496 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "کنفرانس"
@@ -73,6 +73,10 @@ msgstr "نام کنفرانس"
 #: views/form.php:139
 msgid "Conference Number"
 msgstr "شماره کنفرانس"
+
+#: Conferences.class.php:109
+msgid "Conference Number is missing."
+msgstr ""
 
 #: functions.inc.php:182
 #, php-format
@@ -96,7 +100,7 @@ msgstr "کنفرانس ： "
 msgid "Conference: %s"
 msgstr "کنفرانس ：%s"
 
-#: Conferences.class.php:98 Conferences.class.php:475 conferences.i18n.php:4
+#: Conferences.class.php:98 Conferences.class.php:494 conferences.i18n.php:4
 #: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr "کنفرانس ها"
@@ -105,7 +109,7 @@ msgstr "کنفرانس ها"
 msgid "Conflicting Extensions"
 msgstr "داخلی های متضاد"
 
-#: Conferences.class.php:459
+#: Conferences.class.php:478
 msgid "Delete"
 msgstr "حذف"
 
@@ -138,7 +142,7 @@ msgstr ""
 "برای کاربر مدیر شماره پین را وارد کنید. <br><br> این گزینه اختیاری است. <br> "
 "این پین باید با پین کاربر دیگر متفاوت باشد."
 
-#: Conferences.class.php:478
+#: Conferences.class.php:497
 msgid "Extension"
 msgstr "داخلی"
 
@@ -259,6 +263,10 @@ msgstr "بدون محدودیت"
 msgid "None"
 msgstr "هیچ"
 
+#: Conferences.class.php:112
+msgid "Option of the Conference is missing."
+msgstr ""
+
 #: Conferences.class.php:81
 msgid "Option of the Conference."
 msgstr "گزینه کنفرانس."
@@ -321,11 +329,11 @@ msgid ""
 "into the backend."
 msgstr ""
 "تماس کنفرانسی را ضبط کنید نکته: هنگام استفاده از ٪ s1 یا پایین تر از آن "
-"شکسته می شود و بنابراین غیر فعال است. برای غیرفعال کردن این گزینه در «"
-"تنظیمات پیشرفته» «مجاز به ضبط کنفرانس» را فعال کنید. ضبط در CDR یا در ضبط "
+"شکسته می شود و بنابراین غیر فعال است. برای غیرفعال کردن این گزینه در "
+"«تنظیمات پیشرفته» «مجاز به ضبط کنفرانس» را فعال کنید. ضبط در CDR یا در ضبط "
 "تماس ها در دسترس نخواهد بود و باید با وارد شدن به backend دانلود شود."
 
-#: Conferences.class.php:454
+#: Conferences.class.php:473
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -341,7 +349,7 @@ msgstr ""
 "on the output of the conference list CLI command. Note: If Conferences Pro "
 "is installed and licensed this will always be enabled"
 
-#: Conferences.class.php:449
+#: Conferences.class.php:468
 msgid "Submit"
 msgstr "ثبت"
 
@@ -485,6 +493,10 @@ msgstr ""
 #: views/form.php:85
 msgid "default"
 msgstr "پیش فرض"
+
+#: Conferences.class.php:115
+msgid "description is blank."
+msgstr ""
 
 #: views/form.php:84
 msgid "inherit"

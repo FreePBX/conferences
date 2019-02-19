@@ -2,13 +2,14 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>13.0.23.13</version>
+	<version>13.0.23.14</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
+		*13.0.23.14* FREEPBX-19392 Bulk handler allows to upload and create conference with empty Conference Number Field. 
 		*13.0.23.13* FREEPBX-18570 Conference PIN allows alphanumeric and special characters to set as password 
 		*13.0.23.12* Bugfix/FREEPBX-13464 ext-meetme context does not use hangupcall macro 
 		*13.0.23.11* FREEPBX-16499

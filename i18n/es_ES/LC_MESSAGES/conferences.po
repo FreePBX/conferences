@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo conferences module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-13 16:26-0400\n"
+"POT-Creation-Date: 2019-02-19 11:39+0530\n"
 "PO-Revision-Date: 2016-12-10 10:11+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -77,7 +77,7 @@ msgstr "Aplicaciones"
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:174 Conferences.class.php:477 views/grid.php:32
+#: Conferences.class.php:193 Conferences.class.php:496 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "Conferencia"
@@ -89,6 +89,10 @@ msgstr "Nombre de la Conferencia"
 #: views/form.php:139
 msgid "Conference Number"
 msgstr "Numero de la Conferencia"
+
+#: Conferences.class.php:109
+msgid "Conference Number is missing."
+msgstr ""
 
 #: functions.inc.php:182
 #, php-format
@@ -112,7 +116,7 @@ msgstr "Conferencia: "
 msgid "Conference: %s"
 msgstr "Conferencia: %s"
 
-#: Conferences.class.php:98 Conferences.class.php:475 conferences.i18n.php:4
+#: Conferences.class.php:98 Conferences.class.php:494 conferences.i18n.php:4
 #: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr "Conferencias"
@@ -121,7 +125,7 @@ msgstr "Conferencias"
 msgid "Conflicting Extensions"
 msgstr "Extensiones en conflicto"
 
-#: Conferences.class.php:459
+#: Conferences.class.php:478
 msgid "Delete"
 msgstr "Borrar"
 
@@ -157,7 +161,7 @@ msgstr ""
 "PIN identificará el líder. <br> Este pin debe ser diferente que el pin de "
 "usuario ."
 
-#: Conferences.class.php:478
+#: Conferences.class.php:497
 msgid "Extension"
 msgstr "Extensión"
 
@@ -285,6 +289,10 @@ msgstr "No Limte"
 msgid "None"
 msgstr "Ninguno"
 
+#: Conferences.class.php:112
+msgid "Option of the Conference is missing."
+msgstr ""
+
 #: Conferences.class.php:81
 msgid "Option of the Conference."
 msgstr ""
@@ -351,7 +359,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:454
+#: Conferences.class.php:473
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -367,7 +375,7 @@ msgstr ""
 "se identificará en la salida del comando CLI lista de la conferencia. Nota: "
 "Si Conferencias-Pro está instalado y con licencia esto siempre se habilitará"
 
-#: Conferences.class.php:449
+#: Conferences.class.php:468
 msgid "Submit"
 msgstr "Enviar"
 
@@ -520,6 +528,10 @@ msgstr ""
 #: views/form.php:85
 msgid "default"
 msgstr "defecto"
+
+#: Conferences.class.php:115
+msgid "description is blank."
+msgstr ""
 
 #: views/form.php:84
 msgid "inherit"
