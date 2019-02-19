@@ -10,16 +10,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-13 16:26-0400\n"
-"PO-Revision-Date: 2016-08-07 06:55+0200\n"
-"Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
-"conferences/fa_IR/>\n"
+"PO-Revision-Date: 2019-01-25 15:36+0000\n"
+"Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
+"Language-Team: Persian <http://*/projects/freepbx/conferences/fa/>\n"
 "Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: views/grid.php:34
 msgid "Actions"
@@ -60,7 +59,7 @@ msgstr "درخواست"
 
 #: Conferences.class.php:80
 msgid "Conf Number"
-msgstr ""
+msgstr "شماره Conf"
 
 #: Conferences.class.php:174 Conferences.class.php:477 views/grid.php:32
 #: views/rnav.php:25
@@ -82,11 +81,11 @@ msgstr "اتاق کنفرانس %s: %s"
 
 #: conferences.i18n.php:18
 msgid "Conference Status"
-msgstr ""
+msgstr "وضعیت کنفرانس"
 
 #: Conferences.class.php:80
 msgid "Conference number used."
-msgstr ""
+msgstr "شماره کنفرانس مصرفی."
 
 #: functions.inc.php:438
 msgid "Conference: "
@@ -116,11 +115,11 @@ msgstr "شرح"
 
 #: Conferences.class.php:84
 msgid "Desctiption"
-msgstr ""
+msgstr "شرح"
 
 #: Conferences.class.php:84
 msgid "Desctiption of the conference."
-msgstr ""
+msgstr "شرح کنفرانس."
 
 #: page.conferences.php:17
 msgid "Edit"
@@ -145,7 +144,7 @@ msgstr "داخلی"
 
 #: conferences.i18n.php:12
 msgid "Force Allow Conference Recording"
-msgstr ""
+msgstr "مجاز به ضبط کنفرانس"
 
 #: views/form.php:175
 msgid "Give this conference a brief name to help you identify it."
@@ -153,7 +152,7 @@ msgstr "به این کنفرانس نامی اختصاص دهید تا به شم
 
 #: Conferences.class.php:99
 msgid "Import/Export Conferences"
-msgstr ""
+msgstr "ورود/خروج کنفرانس"
 
 #: views/form.php:241
 msgid "Inherit"
@@ -165,7 +164,7 @@ msgstr "پیام عضویت"
 
 #: Conferences.class.php:85
 msgid "Join message id."
-msgstr ""
+msgstr "پیوستن شناسه."
 
 #: Conferences.class.php:88 views/form.php:235
 msgid "Language"
@@ -173,7 +172,7 @@ msgstr "زبان"
 
 #: Conferences.class.php:88
 msgid "Language."
-msgstr ""
+msgstr "زبان."
 
 #: views/form.php:298
 msgid "Leader Leave"
@@ -197,7 +196,7 @@ msgstr "بیشترین شرکت کنندگان"
 
 #: views/form.php:593
 msgid "Member Timeout"
-msgstr ""
+msgstr "وقفه عضو"
 
 #: views/form.php:68
 msgid ""
@@ -209,7 +208,7 @@ msgstr ""
 
 #: Conferences.class.php:86
 msgid "Music"
-msgstr ""
+msgstr "موسیقی"
 
 #: views/form.php:111
 msgid ""
@@ -233,7 +232,7 @@ msgstr "کلاس موزیک انتظار مکالمه"
 
 #: Conferences.class.php:86
 msgid "Music."
-msgstr ""
+msgstr "موسیقی."
 
 #: views/form.php:581
 msgid ""
@@ -262,19 +261,19 @@ msgstr "هیچ"
 
 #: Conferences.class.php:81
 msgid "Option of the Conference."
-msgstr ""
+msgstr "گزینه کنفرانس."
 
 #: Conferences.class.php:81
 msgid "Options"
-msgstr ""
+msgstr "گزینه ها"
 
 #: Conferences.class.php:83
 msgid "PIN code for admin."
-msgstr ""
+msgstr "کد پین برای مدیر."
 
 #: Conferences.class.php:82
 msgid "PIN code for user."
-msgstr ""
+msgstr "کد پین برای کاربر."
 
 #: assets/js/conferences.js:20
 msgid "Please enter a valid Conference Name"
@@ -321,6 +320,10 @@ msgid ""
 "either the CDR nor in Call Recordings and has to be downloaded by logging "
 "into the backend."
 msgstr ""
+"تماس کنفرانسی را ضبط کنید نکته: هنگام استفاده از ٪ s1 یا پایین تر از آن "
+"شکسته می شود و بنابراین غیر فعال است. برای غیرفعال کردن این گزینه در «"
+"تنظیمات پیشرفته» «مجاز به ضبط کنفرانس» را فعال کنید. ضبط در CDR یا در ضبط "
+"تماس ها در دسترس نخواهد بود و باید با وارد شدن به backend دانلود شود."
 
 #: Conferences.class.php:454
 msgid "Reset"
@@ -370,14 +373,17 @@ msgid ""
 "conference before being automatically ejected. 0 = disabled, default is "
 "21600 (6 hours)"
 msgstr ""
+"این مقدار تعداد ثانیه هایی است که ممکن است شرکت کننده در کنفرانس باقی بماند "
+"قبل از اینکه به صورت خودکار از بین برود. 0 = غیر فعال شده است، به طور پیش "
+"فرض 21600 (6 ساعت)"
 
 #: Conferences.class.php:89
 msgid "Timeout"
-msgstr ""
+msgstr "وقفه"
 
 #: Conferences.class.php:89
 msgid "Timeout of the conference."
-msgstr ""
+msgstr "وقفه در کنفرانس."
 
 #: views/form.php:340
 msgid ""
@@ -399,6 +405,10 @@ msgid ""
 "Asterisk 13 or lower. Enable this option to allow Conference Call recording "
 "to be enabled in Astrisk 13 or lower"
 msgstr ""
+"تا زمانی که استریسک 14+ یک نشانه تصادفی به انتهای ضبط تماس کنفرانس اضافه شود "
+"که نمیتوان آن را در اداره پست بعد تعیین کرد. بنابراین استفاده از ستاره 13 یا "
+"پایین تر از آن امکان برقراری ضبط کنفرانس غیرفعال است. فعال کردن این گزینه "
+"اجازه می دهد ضبط کنفرانس تماس در استریسک 13 یا پایین تر فعال شود"
 
 #: views/form.php:151
 msgid "Use this number to dial into the conference."
@@ -418,11 +428,11 @@ msgstr "کاربر پیوست/ترک کرد"
 
 #: Conferences.class.php:87
 msgid "Users"
-msgstr ""
+msgstr "کاربران"
 
 #: Conferences.class.php:87
 msgid "Users."
-msgstr ""
+msgstr "کاربران."
 
 #: views/form.php:286
 msgid ""
@@ -486,7 +496,7 @@ msgstr "برای حساب شما مجاز نمیباشد."
 
 #: Conferences.class.php:85
 msgid "join message id"
-msgstr ""
+msgstr "پیوست شناسه پیام"
 
 #~ msgid "Adding language column"
 #~ msgstr "افزودن ستون زبان"
