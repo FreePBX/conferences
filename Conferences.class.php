@@ -7,14 +7,6 @@ use PDO;
 
 class Conferences extends FreePBX_Helpers implements BMO {
 	private $module = 'Conferences';
-	public function setDatabase($database){
-		$this->Database = $database;
-		return $this;
-	}
-
-	public function resetDatabase(){
-		$this->Database = $this->FreePBX->Database;
-	}
 
 	public function doConfigPageInit($page) {
 		$request = $_REQUEST;
@@ -74,57 +66,38 @@ class Conferences extends FreePBX_Helpers implements BMO {
 			}
 		}
 	}
-	
+
 	public function bulkhandlerGetHeaders($type) {
 		if($type === 'conferences'){
-            return [
-                'exten' => ['required' => true, 'identifier' => _("Conf Number"), 'description' => _("Conference number used.")],
-                'options' => ['required' => true, 'identifier' => _("Options"), 'description' => _("Option of the Conference.")],
-                'userpin' => ['required' => false, 'identifier' => _("User PIN"), 'description' => _("PIN code for user.")],
-                'adminpin' => ['required' => false, 'identifier' => _("Admin PIN"), 'description' => _("PIN code for admin.")],
-                'description' => ['required' => true, 'identifier' => _("Desctiption"), 'description' => _("Desctiption of the conference.")],
-                'joinmsg_id' => ['required' => false, 'identifier' => _("join message id"), 'description' => _("Join message id.")],
-                'music' => ['required' => false, 'identifier' => _("Music"), 'description' => _("Music.")],
-                'users' => ['required' => false, 'identifier' => _("Users"), 'description' => _("Users.")],
-                'language' => ['required' => false, 'identifier' => _("Language"), 'description' => _("Language.")],
-                'timeout' => ['required' => false, 'identifier' => _("Timeout"), 'description' => _("Timeout of the conference.")],
-            ];
-        }
-    }
-	
+			return [
+				'exten' => ['required' => true, 'identifier' => _("Conf Number"), 'description' => _("Conference number used.")],
+				'options' => ['required' => true, 'identifier' => _("Options"), 'description' => _("Option of the Conference.")],
+				'userpin' => ['required' => false, 'identifier' => _("User PIN"), 'description' => _("PIN code for user.")],
+				'adminpin' => ['required' => false, 'identifier' => _("Admin PIN"), 'description' => _("PIN code for admin.")],
+				'description' => ['required' => true, 'identifier' => _("Desctiption"), 'description' => _("Desctiption of the conference.")],
+				'joinmsg_id' => ['required' => false, 'identifier' => _("join message id"), 'description' => _("Join message id.")],
+				'music' => ['required' => false, 'identifier' => _("Music"), 'description' => _("Music.")],
+				'users' => ['required' => false, 'identifier' => _("Users"), 'description' => _("Users.")],
+				'language' => ['required' => false, 'identifier' => _("Language"), 'description' => _("Language.")],
+				'timeout' => ['required' => false, 'identifier' => _("Timeout"), 'description' => _("Timeout of the conference.")],
+			];
+		}
+	}
+
 	public function bulkhandlerGetTypes() {
 		return [
 			'conferences' => [
 				'name' => _('Conferences'),
 				'description' => _('Import/Export Conferences')
-            ]
-        ];
-	}	
-	
-	public function bulkhandlerValidate($type, $rawData) {
-		switch ($type) {
-		case 'conferences':
-			foreach ($rawData as $data) {
-				if (empty($data['exten'])) {
-					return array("status" => false, "message" => _("Conference Number is missing."));
-				}
-				if (empty($data['options'])) {
-					return array("status" => false, "message" => _("Option of the Conference is missing."));
-				}
-				if(empty($data['description'])){
-					return array("status" => false, "message" => _("description is blank."));
-				}
-			}
-			return array("status" => true);
-			break;
-		}
+			]
+		];
 	}
 
-    public function bulkhandlerImport($type, $rawData) {
-		/* 
-			Import Conferences from CSV 
-        */
-        $ret = null;
+	public function bulkhandlerImport($type, $rawData) {
+		/*
+			Import Conferences from CSV
+		*/
+		$ret = null;
 		if($type === 'conferences'){
 			if(is_array($rawData)){
 				foreach ($rawData as $data) {
@@ -140,26 +113,26 @@ class Conferences extends FreePBX_Helpers implements BMO {
 					'status' => false,
 				);
 			}
-        }
-        return $ret;
-    }
-	
-    public function bulkhandlerExport($type) {
-		/* 
-			Export Conferences to CSV 
+		}
+		return $ret;
+	}
+
+	public function bulkhandlerExport($type) {
+		/*
+			Export Conferences to CSV
 		*/
 		if($type === 'conferences'){
-            $sql = "SELECT * FROM meetme ORDER BY exten";
-            $sth = $this->Database->prepare($sql);
-            $sth->execute();
-            $conferences = $sth->fetchAll(PDO::FETCH_ASSOC);
-            if (!empty($conferences) && is_array($conferences)) {
-                return $conferences;
-            }
-        }
-        return "";
-    }
-	
+			$sql = "SELECT * FROM meetme ORDER BY exten";
+			$sth = $this->Database->prepare($sql);
+			$sth->execute();
+			$conferences = $sth->fetchAll(PDO::FETCH_ASSOC);
+			if (!empty($conferences) && is_array($conferences)) {
+				return $conferences;
+			}
+		}
+		return "";
+	}
+
 	public function getRightNav($request) {
 		if(isset($request['view']) && $request['view'] == "form") {
 			return load_view(__DIR__."/views/rnav.php",array());
@@ -276,13 +249,13 @@ class Conferences extends FreePBX_Helpers implements BMO {
 
 	/**
 	 * Add Conference Room
-	 * @param {int} $room            The room number to create
-	 * @param {string} $name            The description of the room
-	 * @param {int} $userpin         The user Pin to login to the room
-	 * @param {int} $adminpin        The admin pin for the room
-	 * @param {string} $options         Options for the room
+	 * @param {int} $room			The room number to create
+	 * @param {string} $name			The description of the room
+	 * @param {int} $userpin		 The user Pin to login to the room
+	 * @param {int} $adminpin		The admin pin for the room
+	 * @param {string} $options		 Options for the room
 	 * @param {int} $joinmsg_id		The recording to play on join
-	 * @param {string} $music        MOH to play on hold
+	 * @param {string} $music		MOH to play on hold
 	 * @param {int} $users
 	 */
 	public function addConference($room,$name,$userpin,$adminpin,$options,$joinmsg_id = NULL,$music = '',$users = 0,$language='',$timeout=21600) {
@@ -316,7 +289,7 @@ class Conferences extends FreePBX_Helpers implements BMO {
 	 */
 	public function deleteConference($room) {
 		$sql = "DELETE FROM meetme WHERE exten = ?";
-        $sth = $this->Database->prepare($sql);
+		$sth = $this->Database->prepare($sql);
 		try {
 			$sth->execute(array($room));
 			$this->FreePBX->astman->database_deltree('CONFERENCE/'.$room);
