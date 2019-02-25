@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-19 11:39+0530\n"
-"PO-Revision-Date: 2018-10-18 19:45+0000\n"
+"PO-Revision-Date: 2019-02-26 13:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/conferences/de/>\n"
 "Language: de_DE\n"
@@ -78,7 +78,7 @@ msgstr "Konferenznummer"
 
 #: Conferences.class.php:109
 msgid "Conference Number is missing."
-msgstr ""
+msgstr "Die Konferenznummer fehlt."
 
 #: functions.inc.php:182
 #, php-format
@@ -91,7 +91,7 @@ msgstr "Konferenzstatus"
 
 #: Conferences.class.php:80
 msgid "Conference number used."
-msgstr ""
+msgstr "verwendete Konferenznummer."
 
 #: functions.inc.php:438
 msgid "Conference: "
@@ -109,7 +109,7 @@ msgstr "Konferenzen"
 
 #: views/form.php:121
 msgid "Conflicting Extensions"
-msgstr "Widersprüchliche Erweiterungen"
+msgstr "Nebenstellenkonflikt"
 
 #: Conferences.class.php:478
 msgid "Delete"
@@ -121,11 +121,11 @@ msgstr "Beschreibung"
 
 #: Conferences.class.php:84
 msgid "Desctiption"
-msgstr ""
+msgstr "Beschreibung"
 
 #: Conferences.class.php:84
 msgid "Desctiption of the conference."
-msgstr ""
+msgstr "Beschreibung der Konferenz."
 
 #: page.conferences.php:17
 msgid "Edit"
@@ -164,7 +164,7 @@ msgstr ""
 
 #: Conferences.class.php:99
 msgid "Import/Export Conferences"
-msgstr ""
+msgstr "Konferenzen importieren/exportieren"
 
 #: views/form.php:241
 msgid "Inherit"
@@ -184,7 +184,7 @@ msgstr "Sprache"
 
 #: Conferences.class.php:88
 msgid "Language."
-msgstr ""
+msgstr "Sprache."
 
 #: views/form.php:298
 msgid "Leader Leave"
@@ -222,7 +222,7 @@ msgstr ""
 
 #: Conferences.class.php:86
 msgid "Music"
-msgstr ""
+msgstr "Musik"
 
 #: views/form.php:111
 msgid ""
@@ -246,7 +246,7 @@ msgstr "Musik bei Halten Klasse"
 
 #: Conferences.class.php:86
 msgid "Music."
-msgstr ""
+msgstr "Musik."
 
 #: views/form.php:581
 msgid ""
@@ -287,15 +287,15 @@ msgstr ""
 
 #: Conferences.class.php:81
 msgid "Options"
-msgstr ""
+msgstr "Einstellungen"
 
 #: Conferences.class.php:83
 msgid "PIN code for admin."
-msgstr ""
+msgstr "Admini-PIN-Code."
 
 #: Conferences.class.php:82
 msgid "PIN code for user."
-msgstr ""
+msgstr "Benutzer-PIN-Code."
 
 #: assets/js/conferences.js:20
 msgid "Please enter a valid Conference Name"
@@ -413,7 +413,7 @@ msgstr ""
 
 #: Conferences.class.php:89
 msgid "Timeout"
-msgstr ""
+msgstr "Zeitlimit"
 
 #: Conferences.class.php:89
 msgid "Timeout of the conference."
