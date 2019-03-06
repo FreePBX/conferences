@@ -2,21 +2,22 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>15.0.6.3</version>
+	<version>15.0.6.4</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
-		*15.0.6.3* fixing legacy restore 
-		*15.0.6.2* FREEPBX-19392 Bulk handler allows to upload and create conference with empty Conference Number Field. 
+		*15.0.6.4* Adding feature codes and kvstore to backup
+		*15.0.6.3* fixing legacy restore
+		*15.0.6.2* FREEPBX-19392 Bulk handler allows to upload and create conference with empty Conference Number Field.
 		*15.0.6.1* Backup and restore
-		*15.0.6* FREEPBX-18570 Conference PIN allows alphanumeric and special characters to set as password 
-		*15.0.5* Fixing problems in Backup 15 (Restore Part) 
-		*15.0.4* Rest Api 
+		*15.0.6* FREEPBX-18570 Conference PIN allows alphanumeric and special characters to set as password
+		*15.0.5* Fixing problems in Backup 15 (Restore Part)
+		*15.0.4* Rest Api
 		*15.0.3* Packaging of ver 15.0.3
-		*15.0.2* Bugfix/FREEPBX-13464 ext-meetme context does not use hangupcall macro 
+		*15.0.2* Bugfix/FREEPBX-13464 ext-meetme context does not use hangupcall macro
 		*13.0.23.11* Fork to 15.0, add backup
 	</changelog>
 	<depends>
@@ -52,7 +53,7 @@
 			<method callingMethod="getTypes" class="Conferences">bulkhandlerGetTypes</method>
 			<method callingMethod="import" class="Conferences" namespace="FreePBX\modules">bulkhandlerImport</method>
 			<method callingMethod="export" class="Conferences" namespace="FreePBX\modules">bulkhandlerExport</method>
-		</bulkhandler>		
+		</bulkhandler>
 		<printextensions class="Printextensions" namespace="FreePBX\modules">
 			<method callingMethod="getSections" class="Conferences" namespace="FreePBX\modules">printExtensions</method>
 		</printextensions>
