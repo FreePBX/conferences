@@ -9,17 +9,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-21 19:07-0500\n"
-"PO-Revision-Date: 2017-12-18 17:35+0200\n"
-"Last-Translator: Nils <Nils@heckenkamp.info>\n"
-"Language-Team: German <http://weblate.freepbx.org/projects/freepbx/"
-"conferences/de_DE/>\n"
+"POT-Creation-Date: 2019-02-19 11:39+0530\n"
+"PO-Revision-Date: 2019-02-26 13:00+0000\n"
+"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
+"Language-Team: German <http://*/projects/freepbx/conferences/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: views/grid.php:34
 msgid "Actions"
@@ -29,7 +28,7 @@ msgstr "Aktionen"
 msgid "Add"
 msgstr "Hinzufügen"
 
-#: Conferences.class.php:76 views/form.php:211
+#: Conferences.class.php:83 views/form.php:211
 msgid "Admin PIN"
 msgstr "Administrator PIN"
 
@@ -49,20 +48,22 @@ msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
 "their name before joining the conference"
 msgstr ""
+"Benutzer anmelden / abmelden Wenn dies aktiviert ist, muss der Benutzer "
+"seinen Namen aufzeichnen, bevor er der Konferenz beitritt"
 
 #: views/form.php:421
 msgid "Announce user(s) count on joining conference"
-msgstr ""
+msgstr "Angemeldete Benutzer zählen beim Beitritt zur Konferenz"
 
 #: conferences.i18n.php:6
 msgid "Applications"
 msgstr "Anwendungen"
 
-#: Conferences.class.php:73
+#: Conferences.class.php:80
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:164 Conferences.class.php:401 views/grid.php:32
+#: Conferences.class.php:193 Conferences.class.php:496 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "Konferenz"
@@ -75,6 +76,10 @@ msgstr "Konferenzname"
 msgid "Conference Number"
 msgstr "Konferenznummer"
 
+#: Conferences.class.php:109
+msgid "Conference Number is missing."
+msgstr "Die Konferenznummer fehlt."
+
 #: functions.inc.php:182
 #, php-format
 msgid "Conference Room %s : %s"
@@ -82,11 +87,11 @@ msgstr "Konferenzraum %s : %s"
 
 #: conferences.i18n.php:18
 msgid "Conference Status"
-msgstr ""
+msgstr "Konferenzstatus"
 
-#: Conferences.class.php:73
+#: Conferences.class.php:80
 msgid "Conference number used."
-msgstr ""
+msgstr "verwendete Konferenznummer."
 
 #: functions.inc.php:438
 msgid "Conference: "
@@ -97,16 +102,16 @@ msgstr "Konferenz: "
 msgid "Conference: %s"
 msgstr "Konferenz: %s"
 
-#: Conferences.class.php:90 Conferences.class.php:399 conferences.i18n.php:4
+#: Conferences.class.php:98 Conferences.class.php:494 conferences.i18n.php:4
 #: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr "Konferenzen"
 
 #: views/form.php:121
 msgid "Conflicting Extensions"
-msgstr ""
+msgstr "Nebenstellenkonflikt"
 
-#: Conferences.class.php:383
+#: Conferences.class.php:478
 msgid "Delete"
 msgstr "Löschen"
 
@@ -114,13 +119,13 @@ msgstr "Löschen"
 msgid "Description"
 msgstr "Beschreibung"
 
-#: Conferences.class.php:77
+#: Conferences.class.php:84
 msgid "Desctiption"
-msgstr ""
+msgstr "Beschreibung"
 
-#: Conferences.class.php:77
+#: Conferences.class.php:84
 msgid "Desctiption of the conference."
-msgstr ""
+msgstr "Beschreibung der Konferenz."
 
 #: page.conferences.php:17
 msgid "Edit"
@@ -129,6 +134,8 @@ msgstr "Bearbeiten"
 #: views/form.php:475
 msgid "Enable Music On Hold when the conference has a single caller"
 msgstr ""
+"Aktivieren Sie Music On Hold, wenn die Konferenz einen einzelnen Teilnehmer "
+"hat"
 
 #: views/form.php:223
 msgid ""
@@ -136,50 +143,56 @@ msgid ""
 "unless the 'leader wait' option is in use, then this PIN will identify the "
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
+"Geben Sie eine PIN-Nummer für den Benutzer admin ein. <br> <br> Diese "
+"Einstellung ist optional, es sei denn, die Option 'leader wait' wird "
+"verwendet, dann identifiziert diese PIN den Leader. <br> Dieser Pin sollte "
+"sich vom Benutzer-Pin unterscheiden ."
 
-#: Conferences.class.php:402
+#: Conferences.class.php:497
 msgid "Extension"
 msgstr "Nebenstelle"
 
 #: conferences.i18n.php:12
 msgid "Force Allow Conference Recording"
-msgstr ""
+msgstr "Erzwingen der Konferenzaufnahme"
 
 #: views/form.php:175
 msgid "Give this conference a brief name to help you identify it."
 msgstr ""
+"Geben Sie dieser Konferenz einen kurzen Namen, damit Sie diese leichter "
+"identifizieren können."
 
-#: Conferences.class.php:91
+#: Conferences.class.php:99
 msgid "Import/Export Conferences"
-msgstr ""
+msgstr "Konferenzen importieren/exportieren"
 
 #: views/form.php:241
 msgid "Inherit"
-msgstr "Übernehmen"
+msgstr "Erben"
 
 #: views/form.php:54
 msgid "Join Message"
-msgstr ""
+msgstr "Join/Beitritt Mitteilung"
 
-#: Conferences.class.php:78
+#: Conferences.class.php:85
 msgid "Join message id."
 msgstr ""
 
-#: Conferences.class.php:81 views/form.php:235
+#: Conferences.class.php:88 views/form.php:235
 msgid "Language"
 msgstr "Sprache"
 
-#: Conferences.class.php:81
+#: Conferences.class.php:88
 msgid "Language."
-msgstr ""
+msgstr "Sprache."
 
 #: views/form.php:298
 msgid "Leader Leave"
-msgstr ""
+msgstr "Leiter geht"
 
 #: views/form.php:271
 msgid "Leader Wait"
-msgstr ""
+msgstr "Auf Leiter warten"
 
 #: views/rnav.php:19
 msgid "List Conferences"
@@ -196,17 +209,20 @@ msgstr "Maximale Teilnehmerzahl"
 
 #: views/form.php:593
 msgid "Member Timeout"
-msgstr ""
+msgstr "Zeitüberschreitung für Mitglieder"
 
 #: views/form.php:68
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>To "
 "add additional recordings please use the \"System Recordings\" MENU above"
 msgstr ""
+"Nachricht, die dem Anrufer vorgespielt werden soll, bevor er der Konferenz "
+"beitritt. Um zusätzliche Aufnahmen hinzuzufügen, verwenden Sie bitte das "
+"\"System Recordings\" -Menü oben"
 
-#: Conferences.class.php:79
+#: Conferences.class.php:86
 msgid "Music"
-msgstr ""
+msgstr "Musik"
 
 #: views/form.php:111
 msgid ""
@@ -215,6 +231,10 @@ msgid ""
 "is currently selected, such as by the inbound route.<br><br>  This music is "
 "defined in the \"Music on Hold\" above."
 msgstr ""
+"Musik (oder Werbung), die einem Anrufer, der auf den Konferenzbeginn wartet, "
+"vorgespielt wird.Wählen Sie „erben“, wenn die Warteschleifenmusik zu "
+"übernehmen, die z.B. von der eingehenden Route vorgegeben wurde.<br /><br /"
+">Diese Musik wird oben unter „Warteschleifenmusik“ festgelegt."
 
 #: views/form.php:460
 msgid "Music on Hold"
@@ -224,9 +244,9 @@ msgstr "Musik bei Halten"
 msgid "Music on Hold Class"
 msgstr "Musik bei Halten Klasse"
 
-#: Conferences.class.php:79
+#: Conferences.class.php:86
 msgid "Music."
-msgstr ""
+msgstr "Musik."
 
 #: views/form.php:581
 msgid ""
@@ -234,6 +254,10 @@ msgid ""
 "you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
 "Yes to unmute yourself"
 msgstr ""
+"Jeden beim ersten Beitritt zur Konferenz stummschalten. Bitte beachten Sie, "
+"dass sie 'Menü zulassen auf 'ja' gestellt haben müssen, sofern Sie 'Auf "
+"Leiter warten' auf 'ja' gestellt haben, um ihre eigene Stummschaltung zu "
+"beenden"
 
 #: views/form.php:566
 msgid "Mute on Join"
@@ -251,41 +275,49 @@ msgstr "Unbegrenzt"
 
 #: views/form.php:40
 msgid "None"
-msgstr "keine"
+msgstr "Kein*e"
 
-#: Conferences.class.php:74
+#: Conferences.class.php:112
+msgid "Option of the Conference is missing."
+msgstr ""
+
+#: Conferences.class.php:81
 msgid "Option of the Conference."
 msgstr ""
 
-#: Conferences.class.php:74
+#: Conferences.class.php:81
 msgid "Options"
-msgstr ""
+msgstr "Einstellungen"
 
-#: Conferences.class.php:76
+#: Conferences.class.php:83
 msgid "PIN code for admin."
-msgstr ""
+msgstr "Admini-PIN-Code."
 
-#: Conferences.class.php:75
+#: Conferences.class.php:82
 msgid "PIN code for user."
-msgstr ""
+msgstr "Benutzer-PIN-Code."
 
 #: assets/js/conferences.js:20
 msgid "Please enter a valid Conference Name"
-msgstr "Geben Sie einen gültigen Konferenznamen ein."
+msgstr "Geben Sie einen gültigen Konferenznamen ein"
 
 #: assets/js/conferences.js:19
 msgid "Please enter a valid Conference Number"
-msgstr "Geben Sie eine gültige Konferenznummer ein."
+msgstr "Geben Sie eine gültige Konferenznummer ein"
 
 #: views/form.php:554
 msgid ""
 "Please note depending on hardware and settings a higher limit may cause call "
 "quality issues."
 msgstr ""
+"Bitte beachten Sie, dass ein höheres Limit, abhängig von Hardware und "
+"Einstellungen, zu Qualitätseinbußen führen kann."
 
 #: views/form.php:503
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
 msgstr ""
+"Menü ansagen (Benutzer oder Admin), wenn '*' empfangen wird (an Menü "
+"'senden')"
 
 #: views/form.php:379
 msgid "Quiet Mode"
@@ -301,7 +333,7 @@ msgstr "Konferenz Aufzeichnen"
 
 #: views/form.php:530
 msgid "Record the conference call"
-msgstr "Zeichnet die Konferenz auf."
+msgstr "Zeichnet die Konferenz auf"
 
 #: views/form.php:530
 #, php-format
@@ -312,8 +344,14 @@ msgid ""
 "either the CDR nor in Call Recordings and has to be downloaded by logging "
 "into the backend."
 msgstr ""
+"Konferenztelefonat aufzeichnen. Hinweis: Dies funktioniert mit %s oder älter "
+"nicht und ist deshalb deaktiviert. Aktivieren Sie 'Das Zulassen von "
+"Konferenzaufzeichnungen erzwingen' unter den erweiterten Einstellungen, um "
+"dies zu übersteuern. Die Aufzeichnung wird weder im CRD noch in den "
+"Rufaufzeichnungen verfügbar sein, sondern muss manuell über das Backend "
+"heruntergeladen werden."
 
-#: Conferences.class.php:378
+#: Conferences.class.php:473
 msgid "Reset"
 msgstr "Zurücksetzen"
 
@@ -324,18 +362,23 @@ msgid ""
 "on the output of the conference list CLI command. Note: If Conferences Pro "
 "is installed and licensed this will always be enabled"
 msgstr ""
+"Stellt die Sprecher-Erkennung ein. Asterisk wird Ereignisse auf das Manager-"
+"Interface senden, die den Kanal identifizieren, der spricht. Der Sprecher "
+"wird außerdem in der Ausgabe der 'conference list'-Befehls auf der "
+"Kommandozeile identifiziert. Hinweis: Wenn \"Konferenzen Pro\" installiert "
+"und lizenziert ist, ist diese Option immer aktiviert"
 
-#: Conferences.class.php:373
+#: Conferences.class.php:468
 msgid "Submit"
-msgstr "Bestätigen"
+msgstr "Absenden"
 
 #: views/form.php:352
 msgid "Talker Detection"
-msgstr "Rednererkennung"
+msgstr "Sprechererkennung"
 
 #: views/form.php:325
 msgid "Talker Optimization"
-msgstr "Redneroptimierung"
+msgstr "Sprecheroptimierung"
 
 #: views/form.php:258
 msgid ""
@@ -346,10 +389,17 @@ msgid ""
 "conference. If you set a value here the langauge will be forced irregardless "
 "of what language users have set"
 msgstr ""
+"Die Sprache für die Konferenz. Wird dies leer gelassen oder auf „Erben“ "
+"gestellt, wird die Sprache von der ersten Person übernommen, die die "
+"Konferenz betritt, wodurch die Sprache dieser Konferenz im Grunde dynamisch "
+"wird. Nachdem die erste Person die Konferenz betreten hat, kann die Sprache "
+"nicht geändert werden, bis alle Benutzer die Konferenz verlassen haben. "
+"Geben Sie hier eine Sprache vor, wird diese, unabhängig von den "
+"Einstellungen der Nutzer, für alle Teilnehmer erzwungen"
 
 #: assets/js/conferences.js:23
 msgid "The user and admin can not have the same pin code."
-msgstr ""
+msgstr "Der Benutzer kann nicht denselben PIN-Code haben wie der Admin."
 
 #: views/form.php:605
 msgid ""
@@ -357,12 +407,15 @@ msgid ""
 "conference before being automatically ejected. 0 = disabled, default is "
 "21600 (6 hours)"
 msgstr ""
+"Diese Einstellung gibt eine Sekundenzahl an, für die ein Teilnehmer in der "
+"Konferenz bleiben kann, bevor er automatisch rausgeworfen wird. 0 = "
+"deaktiviert, Standardwert ist 21600 (sechs Stunden)"
 
-#: Conferences.class.php:82
+#: Conferences.class.php:89
 msgid "Timeout"
-msgstr ""
+msgstr "Zeitlimit"
 
-#: Conferences.class.php:82
+#: Conferences.class.php:89
 msgid "Timeout of the conference."
 msgstr ""
 
@@ -373,6 +426,11 @@ msgid ""
 "done on transmission and that received audio that is not registered as "
 "talking is omitted, causing no buildup in background noise."
 msgstr ""
+"Schaltet die Sprecheroptimierung ein. Mit der Sprecheroptimierung behandelt "
+"Asterisk Teilnehmer, die nicht sprechen als wären sie stummgeschaltet. Dies "
+"bedeutet, dass dass Übertragungen nicht encodiert werden und empfangene "
+"Töne, die nicht als Sprechen erkannt werden, ignoriert werden, wodurch ein "
+"Anstieg von Hintergrundgeräuschen vermieden wird."
 
 #: conferences.i18n.php:16
 msgid ""
@@ -382,16 +440,22 @@ msgid ""
 "Asterisk 13 or lower. Enable this option to allow Conference Call recording "
 "to be enabled in Astrisk 13 or lower"
 msgstr ""
+"Vor Asterisk 14+ wurde am Ende der Aufzeichnung einer Konferenz ein "
+"zufälliger Zeitstempel ergänzt, der in der Anrufnachbehandlung nicht "
+"bestimmt werden konnte. Daher die Möglichkeit, Konferenzaufzeichnungen zu "
+"aktivieren, deaktiviert, wenn Sie Asterisk 13 oder älter nutzen. Aktivieren "
+"Sie diese Option, um die die Aktivierung von Konferenzaufzeichnungen in "
+"Asterisk 13 oder älter zu erlauben"
 
 #: views/form.php:151
 msgid "Use this number to dial into the conference."
-msgstr ""
+msgstr "Diese Nummer verwenden, um sich in die Konferenz einzuwählen."
 
 #: views/form.php:406
 msgid "User Count"
 msgstr "Benutzerzähler"
 
-#: Conferences.class.php:75 views/form.php:187
+#: Conferences.class.php:82 views/form.php:187
 msgid "User PIN"
 msgstr "Benutzer PIN"
 
@@ -399,11 +463,11 @@ msgstr "Benutzer PIN"
 msgid "User join/leave"
 msgstr "Benutzer Beitritt/Verlassen"
 
-#: Conferences.class.php:80
+#: Conferences.class.php:87
 msgid "Users"
 msgstr ""
 
-#: Conferences.class.php:80
+#: Conferences.class.php:87
 msgid "Users."
 msgstr ""
 
@@ -412,10 +476,12 @@ msgid ""
 "Wait until the conference leader (admin user) arrives before starting the "
 "conference"
 msgstr ""
+"Warten bis der Konferenzleiter (Admin-Benutzer) ankommt, bevor die Konferenz "
+"beginnt"
 
-#: Conferences.class.php:26
+#: Conferences.class.php:31
 msgid "Warning! Extension"
-msgstr "Achtung! Nebenstelle"
+msgstr "Warnung! Nebenstelle"
 
 #: views/form.php:313
 msgid ""
@@ -423,7 +489,7 @@ msgid ""
 "the conference"
 msgstr ""
 "Wenn der Konferenzleiter (Admin-Benutzer) die Konferenz verlässt, werden "
-"alle Benutzer von der Konferenz getrennt."
+"alle Benutzer von der Konferenz getrennt"
 
 #: views/form.php:276 views/form.php:303 views/form.php:330 views/form.php:357
 #: views/form.php:384 views/form.php:411 views/form.php:438 views/form.php:465
@@ -438,31 +504,44 @@ msgid ""
 "entered, the user will be prompted to enter a PIN.<br> This pin should be "
 "different than the Admin pin"
 msgstr ""
+"Sie können Benutzer zur Eingabe eines Passworts zwingen, bevor sie dieser "
+"Konferenz beitreten können. <br /><br />Diese Einstellung ist optional.<br /"
+"><br />Wenn eine PIN angegeben wird, werden die Benutzer zur Eingabe der PIN "
+"aufgefordert.<br />Dies PIN muss anders sein als die Admin-PIN"
 
 #: assets/js/conferences.js:22
 msgid ""
 "You must set Allow Menu to Yes when not using a Leader or Admin in your "
 "conference, otherwise you will be unable to unmute yourself"
 msgstr ""
+"Sie müssen „Menü erlauben“ auf „Ja“ setzen, wenn Sie für Ihre Kopnferenz "
+"keinen Leiter oder Admin verwenden, anderenfalls können Sie Ihre eigene "
+"Stummschaltung nicht selbst aufheben"
 
 #: assets/js/conferences.js:21
 msgid ""
 "You must set an admin PIN for the Conference Leader when selecting the "
 "leader wait option"
 msgstr ""
+"Sie müssen eine Admin-PIN für den Konferenzleiter einstellen, wenn Sie die "
+"Option „Auf Leiter warten“ auswählen"
 
 #: views/form.php:85
 msgid "default"
 msgstr "Standard"
 
+#: Conferences.class.php:115
+msgid "description is blank."
+msgstr ""
+
 #: views/form.php:84
 msgid "inherit"
 msgstr "Erben"
 
-#: Conferences.class.php:26
+#: Conferences.class.php:31
 msgid "is not allowed for your account."
-msgstr "Ist für Ihr Konto nicht erlaubt."
+msgstr "ist für Ihr Konto nicht erlaubt."
 
-#: Conferences.class.php:78
+#: Conferences.class.php:85
 msgid "join message id"
 msgstr ""
