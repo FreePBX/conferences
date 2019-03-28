@@ -180,7 +180,7 @@ function conferences_getdestinfo($dest) {
 			return array();
 		} else {
 			return array('description' => sprintf(_("Conference Room %s : %s"),$exten,$thisexten['description']),
-			             'edit_url' => 'config.php?display=conferences&extdisplay='.urlencode($exten),
+			             'edit_url' => 'config.php?display=conferences&view=form&extdisplay='.urlencode($exten),
 					);
 		}
 	} else {
