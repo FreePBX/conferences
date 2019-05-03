@@ -93,6 +93,25 @@ class Conferences extends FreePBX_Helpers implements BMO {
 		];
 	}
 
+	public function bulkhandlerValidate($type, $rawData) {
+		switch ($type) {
+		case 'conferences':
+			foreach ($rawData as $data) {
+				if (empty($data['exten'])) {
+					return ['status' => false, 'message' => _('Conference Number is missing.')];
+				}
+				if (empty($data['options'])) {
+					return ['status' => false, 'message' => _('Option of the Conference is missing.')];
+				}
+				if(empty($data['description'])){
+					return ['status' => false, 'message' => _('description is blank.')];
+				}
+			}
+			return ['status' => true];
+			break;
+		}
+	}
+
 	public function bulkhandlerImport($type, $rawData) {
 		/*
 			Import Conferences from CSV
