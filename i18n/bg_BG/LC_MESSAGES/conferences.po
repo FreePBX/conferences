@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX v2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-21 19:07-0500\n"
+"POT-Creation-Date: 2019-05-03 21:45+0530\n"
 "PO-Revision-Date: 2014-07-21 16:05+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -75,7 +75,7 @@ msgstr "Приложения"
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:164 Conferences.class.php:401 views/grid.php:32
+#: Conferences.class.php:183 Conferences.class.php:420 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "Конференция"
@@ -86,6 +86,10 @@ msgstr ""
 
 #: views/form.php:139
 msgid "Conference Number"
+msgstr ""
+
+#: Conferences.class.php:101
+msgid "Conference Number is missing."
 msgstr ""
 
 #: functions.inc.php:182
@@ -110,7 +114,7 @@ msgstr "Конференция: "
 msgid "Conference: %s"
 msgstr "Конференция: %s"
 
-#: Conferences.class.php:90 Conferences.class.php:399 conferences.i18n.php:4
+#: Conferences.class.php:90 Conferences.class.php:418 conferences.i18n.php:4
 #: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr "Конференции"
@@ -119,7 +123,7 @@ msgstr "Конференции"
 msgid "Conflicting Extensions"
 msgstr "Вътрешни Линии в Конфликт"
 
-#: Conferences.class.php:383
+#: Conferences.class.php:402
 msgid "Delete"
 msgstr ""
 
@@ -151,7 +155,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:402
+#: Conferences.class.php:421
 msgid "Extension"
 msgstr ""
 
@@ -271,6 +275,10 @@ msgstr "Без Лимит"
 msgid "None"
 msgstr "Няма"
 
+#: Conferences.class.php:104
+msgid "Option of the Conference is missing."
+msgstr ""
+
 #: Conferences.class.php:74
 msgid "Option of the Conference."
 msgstr ""
@@ -333,7 +341,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:378
+#: Conferences.class.php:397
 msgid "Reset"
 msgstr ""
 
@@ -345,7 +353,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:373
+#: Conferences.class.php:392
 msgid "Submit"
 msgstr ""
 
@@ -478,6 +486,10 @@ msgstr ""
 #: views/form.php:85
 msgid "default"
 msgstr "по-подразбиране"
+
+#: Conferences.class.php:107
+msgid "description is blank."
+msgstr ""
 
 #: views/form.php:84
 msgid "inherit"

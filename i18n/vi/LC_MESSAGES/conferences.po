@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-21 19:07-0500\n"
+"POT-Creation-Date: 2019-05-03 21:45+0530\n"
 "PO-Revision-Date: 2017-07-10 20:00+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -63,7 +63,7 @@ msgstr "Các ứng dụng"
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:164 Conferences.class.php:401 views/grid.php:32
+#: Conferences.class.php:183 Conferences.class.php:420 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "Hội nghị"
@@ -75,6 +75,10 @@ msgstr "Tên hội nghị"
 #: views/form.php:139
 msgid "Conference Number"
 msgstr "Số hội nghị"
+
+#: Conferences.class.php:101
+msgid "Conference Number is missing."
+msgstr ""
 
 #: functions.inc.php:182
 #, php-format
@@ -98,7 +102,7 @@ msgstr "Hội nghị: "
 msgid "Conference: %s"
 msgstr "Hội nghị: %s"
 
-#: Conferences.class.php:90 Conferences.class.php:399 conferences.i18n.php:4
+#: Conferences.class.php:90 Conferences.class.php:418 conferences.i18n.php:4
 #: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr "Các hội nghị"
@@ -107,7 +111,7 @@ msgstr "Các hội nghị"
 msgid "Conflicting Extensions"
 msgstr "Các máy nhánh đang xung đột"
 
-#: Conferences.class.php:383
+#: Conferences.class.php:402
 msgid "Delete"
 msgstr "Xóa"
 
@@ -142,7 +146,7 @@ msgstr ""
 "đó PIN này sẽ xác định người chủ trì. <br> Pin này cần phải khác hơn so với "
 "pin người dùng."
 
-#: Conferences.class.php:402
+#: Conferences.class.php:421
 msgid "Extension"
 msgstr "Máy nhánh"
 
@@ -267,6 +271,10 @@ msgstr "Không giới hạn"
 msgid "None"
 msgstr "Không có"
 
+#: Conferences.class.php:104
+msgid "Option of the Conference is missing."
+msgstr ""
+
 #: Conferences.class.php:74
 msgid "Option of the Conference."
 msgstr ""
@@ -331,7 +339,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:378
+#: Conferences.class.php:397
 msgid "Reset"
 msgstr "Cài đặt lại"
 
@@ -347,7 +355,7 @@ msgstr ""
 "trên đầu ra của lệnh CLI danh sách hội nghị. Lưu ý: Nếu các hội nghị Pro "
 "được cài đặt và cấp phép thì điều này sẽ luôn được bật"
 
-#: Conferences.class.php:373
+#: Conferences.class.php:392
 msgid "Submit"
 msgstr "Gửi đi"
 
@@ -504,6 +512,10 @@ msgstr ""
 #: views/form.php:85
 msgid "default"
 msgstr "Mặc định"
+
+#: Conferences.class.php:107
+msgid "description is blank."
+msgstr ""
 
 #: views/form.php:84
 msgid "inherit"

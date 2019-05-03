@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-21 19:07-0500\n"
+"POT-Creation-Date: 2019-05-03 21:45+0530\n"
 "PO-Revision-Date: 2018-09-04 09:39+0000\n"
 "Last-Translator: Petr Varvarovsky <petrv@atlantis.cz>\n"
 "Language-Team: Czech <http://*/projects/freepbx/conferences/cs/>\n"
@@ -61,7 +61,7 @@ msgstr "Aplikace"
 msgid "Conf Number"
 msgstr "Číslo konference"
 
-#: Conferences.class.php:164 Conferences.class.php:401 views/grid.php:32
+#: Conferences.class.php:183 Conferences.class.php:420 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "Konference"
@@ -73,6 +73,10 @@ msgstr "Název konference"
 #: views/form.php:139
 msgid "Conference Number"
 msgstr "Číslo konference"
+
+#: Conferences.class.php:101
+msgid "Conference Number is missing."
+msgstr ""
 
 #: functions.inc.php:182
 #, php-format
@@ -96,7 +100,7 @@ msgstr "Konference: "
 msgid "Conference: %s"
 msgstr "Konference: %s"
 
-#: Conferences.class.php:90 Conferences.class.php:399 conferences.i18n.php:4
+#: Conferences.class.php:90 Conferences.class.php:418 conferences.i18n.php:4
 #: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr "Konference"
@@ -105,7 +109,7 @@ msgstr "Konference"
 msgid "Conflicting Extensions"
 msgstr "Pobočky v konfliktu"
 
-#: Conferences.class.php:383
+#: Conferences.class.php:402
 msgid "Delete"
 msgstr "Smazat"
 
@@ -139,7 +143,7 @@ msgstr ""
 "pokud se nepoužije volba \"čekat na moderátora\", pak tento identifikátor "
 "identifikuje moderátora.<br>Tento PIN by se měl lišit od uživatelského PINu."
 
-#: Conferences.class.php:402
+#: Conferences.class.php:421
 msgid "Extension"
 msgstr "Pobočka"
 
@@ -265,6 +269,10 @@ msgstr "Bez omezení"
 msgid "None"
 msgstr "Žádný"
 
+#: Conferences.class.php:104
+msgid "Option of the Conference is missing."
+msgstr ""
+
 #: Conferences.class.php:74
 msgid "Option of the Conference."
 msgstr "Možnosti konference."
@@ -331,7 +339,7 @@ msgstr ""
 "v části Pokročilá nastavení. Nahrávání nebude k dispozici ani v CDR, ani v "
 "nahrávání hovorů a musí být staženo přihlášením do systému."
 
-#: Conferences.class.php:378
+#: Conferences.class.php:397
 msgid "Reset"
 msgstr "Resetovat"
 
@@ -347,7 +355,7 @@ msgstr ""
 "identifikován na výstupu CLI seznamu konferencí. Poznámka: Pokud je aplikace "
 "Conferences Pro nainstalována a licencována, bude to vždy povoleno"
 
-#: Conferences.class.php:373
+#: Conferences.class.php:392
 msgid "Submit"
 msgstr "Potvrdit"
 
@@ -499,6 +507,10 @@ msgstr ""
 #: views/form.php:85
 msgid "default"
 msgstr "výchozí"
+
+#: Conferences.class.php:107
+msgid "description is blank."
+msgstr ""
 
 #: views/form.php:84
 msgid "inherit"

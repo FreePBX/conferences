@@ -2,13 +2,14 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>15.0.6.5</version>
+	<version>15.0.6.6</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
+		*15.0.6.6* FREEPBX-19392 Bulk handler allows to upload and create conference 
 		*15.0.6.5* Fixing FREEPBX-17867 
 		*15.0.6.4* Adding feature codes and kvstore to backup
 		*15.0.6.3* fixing legacy restore

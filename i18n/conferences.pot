@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-28 07:38+0530\n"
+"POT-Creation-Date: 2019-05-03 21:45+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,8 +60,8 @@ msgstr ""
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:164
-#: Conferences.class.php:401
+#: Conferences.class.php:183
+#: Conferences.class.php:420
 #: views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
@@ -73,6 +73,10 @@ msgstr ""
 
 #: views/form.php:139
 msgid "Conference Number"
+msgstr ""
+
+#: Conferences.class.php:101
+msgid "Conference Number is missing."
 msgstr ""
 
 #: functions.inc.php:182
@@ -98,7 +102,7 @@ msgid "Conference: %s"
 msgstr ""
 
 #: Conferences.class.php:90
-#: Conferences.class.php:399
+#: Conferences.class.php:418
 #: conferences.i18n.php:4
 #: conferences.i18n.php:10
 #: conferences.i18n.php:14
@@ -110,7 +114,7 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr ""
 
-#: Conferences.class.php:383
+#: Conferences.class.php:402
 msgid "Delete"
 msgstr ""
 
@@ -142,7 +146,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:402
+#: Conferences.class.php:421
 msgid "Extension"
 msgstr ""
 
@@ -266,6 +270,10 @@ msgstr ""
 msgid "None"
 msgstr ""
 
+#: Conferences.class.php:104
+msgid "Option of the Conference is missing."
+msgstr ""
+
 #: Conferences.class.php:74
 msgid "Option of the Conference."
 msgstr ""
@@ -326,7 +334,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:378
+#: Conferences.class.php:397
 msgid "Reset"
 msgstr ""
 
@@ -338,7 +346,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:373
+#: Conferences.class.php:392
 msgid "Submit"
 msgstr ""
 
@@ -473,6 +481,10 @@ msgstr ""
 
 #: views/form.php:85
 msgid "default"
+msgstr ""
+
+#: Conferences.class.php:107
+msgid "description is blank."
 msgstr ""
 
 #: views/form.php:84

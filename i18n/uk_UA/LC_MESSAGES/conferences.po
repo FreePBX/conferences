@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-21 19:07-0500\n"
+"POT-Creation-Date: 2019-05-03 21:45+0530\n"
 "PO-Revision-Date: 2016-10-06 14:02+0200\n"
 "Last-Translator: Maxim <maxim@ua.fm>\n"
 "Language-Team: Ukrainian <http://weblate.freepbx.org/projects/freepbx/"
@@ -66,7 +66,7 @@ msgstr "Додатки"
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:164 Conferences.class.php:401 views/grid.php:32
+#: Conferences.class.php:183 Conferences.class.php:420 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "Конференція"
@@ -78,6 +78,10 @@ msgstr "Назва конференції"
 #: views/form.php:139
 msgid "Conference Number"
 msgstr "Номер конференції"
+
+#: Conferences.class.php:101
+msgid "Conference Number is missing."
+msgstr ""
 
 #: functions.inc.php:182
 #, php-format
@@ -101,7 +105,7 @@ msgstr "Конференція: "
 msgid "Conference: %s"
 msgstr "Конференція: %s"
 
-#: Conferences.class.php:90 Conferences.class.php:399 conferences.i18n.php:4
+#: Conferences.class.php:90 Conferences.class.php:418 conferences.i18n.php:4
 #: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr "Конференції"
@@ -110,7 +114,7 @@ msgstr "Конференції"
 msgid "Conflicting Extensions"
 msgstr "Конфліктні  додаткові номери"
 
-#: Conferences.class.php:383
+#: Conferences.class.php:402
 msgid "Delete"
 msgstr "Видалити"
 
@@ -145,7 +149,7 @@ msgstr ""
 "то цей PIN ідентифікує лідера.<br>Цей код повинен бути іншим, ніж PIN-код "
 "користувача."
 
-#: Conferences.class.php:402
+#: Conferences.class.php:421
 msgid "Extension"
 msgstr "Додатковий номер"
 
@@ -264,6 +268,10 @@ msgstr "Немає обмежень"
 msgid "None"
 msgstr "Жоден"
 
+#: Conferences.class.php:104
+msgid "Option of the Conference is missing."
+msgstr ""
+
 #: Conferences.class.php:74
 msgid "Option of the Conference."
 msgstr ""
@@ -328,7 +336,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:378
+#: Conferences.class.php:397
 msgid "Reset"
 msgstr "Скинути"
 
@@ -340,7 +348,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:373
+#: Conferences.class.php:392
 msgid "Submit"
 msgstr "Застосувати"
 
@@ -474,6 +482,10 @@ msgstr ""
 #: views/form.php:85
 msgid "default"
 msgstr "за замовчанням"
+
+#: Conferences.class.php:107
+msgid "description is blank."
+msgstr ""
 
 #: views/form.php:84
 msgid "inherit"
