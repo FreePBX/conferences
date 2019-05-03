@@ -52,6 +52,7 @@
 		<bulkhandler class="Bulkhandler" namespace="FreePBX\modules">
 			<method callingMethod="getHeaders" class="Conferences" namespace="FreePBX\modules">bulkhandlerGetHeaders</method>
 			<method callingMethod="getTypes" class="Conferences">bulkhandlerGetTypes</method>
+			<method callingMethod="validate" class="Conferences" namespace="FreePBX\modules">bulkhandlerValidate</method>
 			<method callingMethod="import" class="Conferences" namespace="FreePBX\modules">bulkhandlerImport</method>
 			<method callingMethod="export" class="Conferences" namespace="FreePBX\modules">bulkhandlerExport</method>
 		</bulkhandler>
