@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-19 11:39+0530\n"
-"PO-Revision-Date: 2019-02-26 13:00+0000\n"
-"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
+"PO-Revision-Date: 2019-04-10 07:36+0000\n"
+"Last-Translator: florian alberts <alberts@ar-systems.de>\n"
 "Language-Team: German <http://*/projects/freepbx/conferences/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
@@ -61,7 +61,7 @@ msgstr "Anwendungen"
 
 #: Conferences.class.php:80
 msgid "Conf Number"
-msgstr ""
+msgstr "Konferenznummer"
 
 #: Conferences.class.php:193 Conferences.class.php:496 views/grid.php:32
 #: views/rnav.php:25
@@ -176,7 +176,7 @@ msgstr "Join/Beitritt Mitteilung"
 
 #: Conferences.class.php:85
 msgid "Join message id."
-msgstr ""
+msgstr "Identifikationsnummer der Begrüssungsmeldung."
 
 #: Conferences.class.php:88 views/form.php:235
 msgid "Language"
@@ -279,11 +279,11 @@ msgstr "Kein*e"
 
 #: Conferences.class.php:112
 msgid "Option of the Conference is missing."
-msgstr ""
+msgstr "Diese Einstellung existiert nicht."
 
 #: Conferences.class.php:81
 msgid "Option of the Conference."
-msgstr ""
+msgstr "Einstellung der Konferenz."
 
 #: Conferences.class.php:81
 msgid "Options"
@@ -417,7 +417,7 @@ msgstr "Zeitlimit"
 
 #: Conferences.class.php:89
 msgid "Timeout of the conference."
-msgstr ""
+msgstr "Zeitüberschreitung der Konferenz."
 
 #: views/form.php:340
 msgid ""
@@ -465,11 +465,11 @@ msgstr "Benutzer Beitritt/Verlassen"
 
 #: Conferences.class.php:87
 msgid "Users"
-msgstr ""
+msgstr "Benutzer"
 
 #: Conferences.class.php:87
 msgid "Users."
-msgstr ""
+msgstr "Benutzer."
 
 #: views/form.php:286
 msgid ""
@@ -532,7 +532,7 @@ msgstr "Standard"
 
 #: Conferences.class.php:115
 msgid "description is blank."
-msgstr ""
+msgstr "Beschreibung fehlt."
 
 #: views/form.php:84
 msgid "inherit"
@@ -544,4 +544,4 @@ msgstr "ist für Ihr Konto nicht erlaubt."
 
 #: Conferences.class.php:85
 msgid "join message id"
-msgstr ""
+msgstr "Identifikationsnummer der Begrüssungsnachricht"
