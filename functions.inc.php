@@ -154,7 +154,11 @@ function conferences_destinations() {
 	// return an associative array with destination and description
 	if (isset($results)) {
 		foreach($results as $result){
-			$extens[] = array('destination' => 'ext-meetme,'.$result['0'].',1', 'description' => $result['0']." ".$result['1']);
+			$extens[] = array(
+				'destination' => 'ext-meetme,'.$result['0'].',1',
+				'description' => $result['0']." ".$result['1'],
+				'edit_url' => 'config.php?display=conferences&view=form&extdisplay='.urlencode($result[0])
+			);
 		}
 		return $extens;
 	} else {
