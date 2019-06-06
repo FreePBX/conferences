@@ -170,7 +170,7 @@ function conferences_getdestinfo($dest) {
 	if (substr(trim($dest),0,11) == 'ext-meetme,') {
 		$exten = explode(',',$dest);
 		$exten = $exten[1];
-		$thisexten = conferences_get($exten);
+		$thisexten = conferences_get($exten, false);
 		if (empty($thisexten)) {
 			return array();
 		} else {
@@ -439,8 +439,8 @@ function conferences_list() {
 	return FreePBX::Conferences()->listConferences();
 }
 
-function conferences_get($account){
-	return FreePBX::Conferences()->getConference($account);
+function conferences_get($account, $processAstDb = true){
+	return FreePBX::Conferences()->getConference($account, $processAstDb);
 }
 
 function conferences_del($account){
