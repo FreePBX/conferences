@@ -118,8 +118,7 @@ class conferences_conf {
 					'*#'  => 'leave_conference',
 				);
 			}
-			if (empty($this->_confbridge['menu']['user_menu'])) {
-			}
+
 			foreach (array('user','bridge','menu') as $type) {
 				foreach ($this->_confbridge[$type] as $section => $settings) {
 					$output .= "[" . $section . "]\n";
@@ -139,10 +138,6 @@ class conferences_conf {
 					}
 					$output .= "\n";
 				}
-			}
-			if (empty($this->_confbridge['menu']['admin_menu'])) {
-			}
-			if (empty($this->_confbridge['menu']['user_menu'])) {
 			}
 		break;
 		}

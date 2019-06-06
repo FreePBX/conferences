@@ -3,7 +3,7 @@
 namespace FreePBX\modules;
 class Conferences extends \FreePBX_Helpers implements \BMO {
 	private $module = 'Conferences';
-	
+
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
 			throw new Exception("Not given a FreePBX Object");
@@ -71,9 +71,9 @@ class Conferences extends \FreePBX_Helpers implements \BMO {
 			}
 		}
 	}
-	
+
 	public function bulkhandlerGetHeaders($type) {
-		
+
         switch ($type) {
 			case 'conferences':
 				$headers = array();
@@ -91,7 +91,7 @@ class Conferences extends \FreePBX_Helpers implements \BMO {
 			break;
 		}
     }
-	
+
 	public function bulkhandlerGetTypes() {
 		return array(
 			'conferences' => array(
@@ -121,10 +121,10 @@ class Conferences extends \FreePBX_Helpers implements \BMO {
 	}
 
     public function bulkhandlerImport($type, $rawData) {
-		/* 
-			Import Conferences from CSV 
+		/*
+			Import Conferences from CSV
 		*/
-		
+
         $ret = NULL;
 		switch ($type) {
             case 'conferences':
@@ -135,17 +135,17 @@ class Conferences extends \FreePBX_Helpers implements \BMO {
                 $ret = array(
                     'status' => true,
                 );
-				needreload();			
+				needreload();
 			break;
 		}
         return $ret;
     }
-	
+
     public function bulkhandlerExport($type) {
-		/* 
-			Export Conferences to CSV 
+		/*
+			Export Conferences to CSV
 		*/
-		
+
         switch ($type) {
         case 'conferences':
 			$data = array();
@@ -161,7 +161,7 @@ class Conferences extends \FreePBX_Helpers implements \BMO {
         }
         return "";
     }
-	
+
 	public function getRightNav($request) {
 		if(isset($request['view']) && $request['view'] == "form") {
 			return load_view(__DIR__."/views/rnav.php",array());
