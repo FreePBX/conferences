@@ -214,8 +214,7 @@ function conferences_get_config($engine) {
 		case "asterisk":
 			$ext->addInclude('from-internal-additional','ext-meetme');
 			$contextname = 'ext-meetme';
-			if($conflist = conferences_list()) {
-
+			if ($conflist = FreePBX::Conferences()->getAllConferences()) {
 				// Start the conference
 				if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
 					$ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','Set','CONFBRIDGE(user,music_on_hold_class)=${MEETME_MUSIC}'));
@@ -247,10 +246,8 @@ function conferences_get_config($engine) {
 				// hangup for whole context
 				$ext->add($contextname, 'h', '', new ext_macro('hangupcall'));
 
-				foreach($conflist as $item) {
-					$room = conferences_get(ltrim($item['0']));
-
-					$roomnum = ltrim($item['0']);
+				foreach($conflist as $room) {
+					$roomnum = $room['exten'];
 					$roomoptions = $room['options'];
 					$roomusers = $room['users'];
 					$roomuserpin = $room['userpin'];

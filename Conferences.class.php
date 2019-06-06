@@ -395,6 +395,20 @@ class Conferences extends \FreePBX_Helpers implements \BMO {
 	}
 
 	/**
+	 * Get a list of all conference room from the database
+	 *
+	 * @return array
+	 */
+	public function getAllConferences() {
+		$sql = "SELECT exten,options,userpin,adminpin,description,language,joinmsg_id,music,users,timeout FROM meetme ORDER BY exten";
+		$sth = $this->db->prepare($sql);
+		$sth->execute();
+		$ret = $sth->fetchAll(\PDO::FETCH_ASSOC);
+
+		return $ret;
+	}
+
+	/**
 	 * Gets a All information about a Conference
 	 * @param {int} $room The room number
 	 *
