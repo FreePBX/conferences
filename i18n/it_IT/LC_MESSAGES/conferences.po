@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-03 21:45+0530\n"
+"POT-Creation-Date: 2019-06-10 17:43+0530\n"
 "PO-Revision-Date: 2019-01-09 15:00+0000\n"
 "Last-Translator: Maurizio Longhitano <mlonghitano@teampower.it>\n"
 "Language-Team: Italian <http://*/projects/freepbx/conferences/it/>\n"
@@ -76,7 +76,7 @@ msgstr "Applicazioni"
 msgid "Conf Number"
 msgstr "Numero Conferenza"
 
-#: Conferences.class.php:183 Conferences.class.php:420 views/grid.php:32
+#: Conferences.class.php:183 Conferences.class.php:439 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "Conferenza"
@@ -93,7 +93,7 @@ msgstr "Numero di conferenza"
 msgid "Conference Number is missing."
 msgstr ""
 
-#: functions.inc.php:182
+#: functions.inc.php:181
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Stanza di Conferenza %s: %s"
@@ -106,16 +106,16 @@ msgstr "Stato di conferenza"
 msgid "Conference number used."
 msgstr "Numero conferenza usato."
 
-#: functions.inc.php:438
+#: functions.inc.php:434
 msgid "Conference: "
 msgstr "Conferenza: "
 
-#: functions.inc.php:201
+#: functions.inc.php:200
 #, php-format
 msgid "Conference: %s"
 msgstr "Conferenza: %s"
 
-#: Conferences.class.php:90 Conferences.class.php:418 conferences.i18n.php:4
+#: Conferences.class.php:90 Conferences.class.php:437 conferences.i18n.php:4
 #: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr "Conferenze"
@@ -124,7 +124,7 @@ msgstr "Conferenze"
 msgid "Conflicting Extensions"
 msgstr "Interni in conflitto"
 
-#: Conferences.class.php:402
+#: Conferences.class.php:421
 msgid "Delete"
 msgstr "Elimina"
 
@@ -159,7 +159,7 @@ msgstr ""
 "attesa', quindi questo PIN identificherà il leader. <br> Questo pin dovrebbe "
 "essere diverso da quello dell'utente."
 
-#: Conferences.class.php:421
+#: Conferences.class.php:440
 msgid "Extension"
 msgstr "Estensione"
 
@@ -360,7 +360,7 @@ msgstr ""
 "sovrascriverlo. La registrazione non sarà disponibile né nel CDR né nelle "
 "registrazioni delle chiamate e dovrà essere scaricata accedendo al back-end."
 
-#: Conferences.class.php:397
+#: Conferences.class.php:416
 msgid "Reset"
 msgstr "Azzerare"
 
@@ -377,7 +377,7 @@ msgstr ""
 "conferenze. Nota: Se Conferences Pro è installato e concesso in licenza, "
 "questo sarà sempre abilitato"
 
-#: Conferences.class.php:392
+#: Conferences.class.php:411
 msgid "Submit"
 msgstr "Sottoscrivi"
 

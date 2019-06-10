@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-27 16:37+0530\n"
+"POT-Creation-Date: 2019-06-10 17:43+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgid "Conf Number"
 msgstr ""
 
 #: Conferences.class.php:183
-#: Conferences.class.php:420
+#: Conferences.class.php:439
 #: views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
@@ -79,7 +79,7 @@ msgstr ""
 msgid "Conference Number is missing."
 msgstr ""
 
-#: functions.inc.php:182
+#: functions.inc.php:181
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr ""
@@ -92,17 +92,17 @@ msgstr ""
 msgid "Conference number used."
 msgstr ""
 
-#: functions.inc.php:438
+#: functions.inc.php:434
 msgid "Conference: "
 msgstr ""
 
-#: functions.inc.php:201
+#: functions.inc.php:200
 #, php-format
 msgid "Conference: %s"
 msgstr ""
 
 #: Conferences.class.php:90
-#: Conferences.class.php:418
+#: Conferences.class.php:437
 #: conferences.i18n.php:4
 #: conferences.i18n.php:10
 #: conferences.i18n.php:14
@@ -114,7 +114,7 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr ""
 
-#: Conferences.class.php:402
+#: Conferences.class.php:421
 msgid "Delete"
 msgstr ""
 
@@ -146,7 +146,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:421
+#: Conferences.class.php:440
 msgid "Extension"
 msgstr ""
 
@@ -334,7 +334,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:397
+#: Conferences.class.php:416
 msgid "Reset"
 msgstr ""
 
@@ -346,7 +346,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:392
+#: Conferences.class.php:411
 msgid "Submit"
 msgstr ""
 
