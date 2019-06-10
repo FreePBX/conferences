@@ -118,8 +118,7 @@ class conferences_conf {
 					'*#'  => 'leave_conference',
 				);
 			}
-			if (empty($this->_confbridge['menu']['user_menu'])) {
-			}
+
 			foreach (array('user','bridge','menu') as $type) {
 				foreach ($this->_confbridge[$type] as $section => $settings) {
 					$output .= "[" . $section . "]\n";
@@ -140,10 +139,6 @@ class conferences_conf {
 					$output .= "\n";
 				}
 			}
-			if (empty($this->_confbridge['menu']['admin_menu'])) {
-			}
-			if (empty($this->_confbridge['menu']['user_menu'])) {
-			}
 		break;
 		}
 		return $output;
@@ -159,7 +154,11 @@ function conferences_destinations() {
 	// return an associative array with destination and description
 	if (isset($results)) {
 		foreach($results as $result){
-			$extens[] = array('destination' => 'ext-meetme,'.$result['0'].',1', 'description' => $result['0']." ".$result['1']);
+			$extens[] = array(
+				'destination' => 'ext-meetme,'.$result['0'].',1',
+				'description' => $result['0']." ".$result['1'],
+				'edit_url' => 'config.php?display=conferences&view=form&extdisplay='.urlencode($result[0])
+			);
 		}
 		return $extens;
 	} else {
@@ -175,7 +174,7 @@ function conferences_getdestinfo($dest) {
 	if (substr(trim($dest),0,11) == 'ext-meetme,') {
 		$exten = explode(',',$dest);
 		$exten = $exten[1];
-		$thisexten = conferences_get($exten);
+		$thisexten = conferences_get($exten, false);
 		if (empty($thisexten)) {
 			return array();
 		} else {
@@ -219,8 +218,7 @@ function conferences_get_config($engine) {
 		case "asterisk":
 			$ext->addInclude('from-internal-additional','ext-meetme');
 			$contextname = 'ext-meetme';
-			if($conflist = conferences_list()) {
-
+			if ($conflist = FreePBX::Conferences()->getAllConferences()) {
 				// Start the conference
 				if ($amp_conf['ASTCONFAPP'] == 'app_confbridge' && $ast_ge_10) {
 					$ext->add($contextname, 'STARTMEETME', '', new ext_execif('$["${MEETME_MUSIC}" != ""]','Set','CONFBRIDGE(user,music_on_hold_class)=${MEETME_MUSIC}'));
@@ -252,10 +250,8 @@ function conferences_get_config($engine) {
 				// hangup for whole context
 				$ext->add($contextname, 'h', '', new ext_macro('hangupcall'));
 
-				foreach($conflist as $item) {
-					$room = conferences_get(ltrim($item['0']));
-
-					$roomnum = ltrim($item['0']);
+				foreach($conflist as $room) {
+					$roomnum = $room['exten'];
 					$roomoptions = $room['options'];
 					$roomusers = $room['users'];
 					$roomuserpin = $room['userpin'];
@@ -447,8 +443,8 @@ function conferences_list() {
 	return FreePBX::Conferences()->listConferences();
 }
 
-function conferences_get($account){
-	return FreePBX::Conferences()->getConference($account);
+function conferences_get($account, $processAstDb = true){
+	return FreePBX::Conferences()->getConference($account, $processAstDb);
 }
 
 function conferences_del($account){
