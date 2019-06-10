@@ -8,6 +8,16 @@ use PDO;
 class Conferences extends FreePBX_Helpers implements BMO {
 	private $module = 'Conferences';
 
+	public function __construct($freepbx = null) {
+		if ($freepbx == null) {
+			throw new Exception("Not given a FreePBX Object");
+		}
+		$this->FreePBX = $freepbx;
+		$this->db = $freepbx->Database;
+		$this->astman = $this->FreePBX->astman;
+	}
+
+
 	public function doConfigPageInit($page) {
 		$request = $_REQUEST;
 		isset($request['action'])?$action = $request['action']:$action='';
