@@ -2,13 +2,14 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>13.0.23.16</version>
+	<version>13.0.23.17</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
+		*13.0.23.17* FREEI-564
 		*13.0.23.16* FREEPBX-18676 Configuration File Link removed(http://freepbx.org/configuration_files) 
 		*13.0.23.15* Fixing FREEPBX-17867 
 		*13.0.23.14* FREEPBX-19392 Bulk handler allows to upload and create conference with empty Conference Number Field. 
