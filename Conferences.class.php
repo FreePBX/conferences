@@ -3,7 +3,7 @@
 namespace FreePBX\modules;
 class Conferences extends \FreePBX_Helpers implements \BMO {
 	private $module = 'Conferences';
-	
+
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
 			throw new Exception("Not given a FreePBX Object");
@@ -71,9 +71,9 @@ class Conferences extends \FreePBX_Helpers implements \BMO {
 			}
 		}
 	}
-	
+
 	public function bulkhandlerGetHeaders($type) {
-		
+
         switch ($type) {
 			case 'conferences':
 				$headers = array();
@@ -91,7 +91,7 @@ class Conferences extends \FreePBX_Helpers implements \BMO {
 			break;
 		}
     }
-	
+
 	public function bulkhandlerGetTypes() {
 		return array(
 			'conferences' => array(
@@ -121,10 +121,10 @@ class Conferences extends \FreePBX_Helpers implements \BMO {
 	}
 
     public function bulkhandlerImport($type, $rawData) {
-		/* 
-			Import Conferences from CSV 
+		/*
+			Import Conferences from CSV
 		*/
-		
+
         $ret = NULL;
 		switch ($type) {
             case 'conferences':
@@ -135,17 +135,17 @@ class Conferences extends \FreePBX_Helpers implements \BMO {
                 $ret = array(
                     'status' => true,
                 );
-				needreload();			
+				needreload();
 			break;
 		}
         return $ret;
     }
-	
+
     public function bulkhandlerExport($type) {
-		/* 
-			Export Conferences to CSV 
+		/*
+			Export Conferences to CSV
 		*/
-		
+
         switch ($type) {
         case 'conferences':
 			$data = array();
@@ -161,7 +161,7 @@ class Conferences extends \FreePBX_Helpers implements \BMO {
         }
         return "";
     }
-	
+
 	public function getRightNav($request) {
 		if(isset($request['view']) && $request['view'] == "form") {
 			return load_view(__DIR__."/views/rnav.php",array());
@@ -395,11 +395,27 @@ class Conferences extends \FreePBX_Helpers implements \BMO {
 	}
 
 	/**
+	 * Get a list of all conference room from the database
+	 *
+	 * @return array
+	 */
+	public function getAllConferences() {
+		$sql = "SELECT exten,options,userpin,adminpin,description,language,joinmsg_id,music,users,timeout FROM meetme ORDER BY exten";
+		$sth = $this->db->prepare($sql);
+		$sth->execute();
+		$ret = $sth->fetchAll(\PDO::FETCH_ASSOC);
+
+		return $ret;
+	}
+
+	/**
 	 * Gets a All information about a Conference
 	 * @param {int} $room The room number
+	 * @param {boolean} $processAstDb Determine if we need to make changes to AstDb based on how we are using the data,
+	 * 	defaulting to true since that is existing behavior
 	 *
 	 */
-	public function getConference($room) {
+	public function getConference($room, $processAstDb = true) {
 		$sql = "SELECT exten,options,userpin,adminpin,description,language,joinmsg_id,music,users,timeout FROM meetme WHERE exten = ?";
 		$sth = $this->db->prepare($sql);
 		try {
@@ -407,28 +423,31 @@ class Conferences extends \FreePBX_Helpers implements \BMO {
 			$ret = $sth->fetch(\PDO::FETCH_ASSOC);
 			$asettings = $this->astman->database_show('CONFERENCE/'.$room);
 			$ret = is_array($ret) ? $ret : array();
-			foreach($ret as $key => $value) {
-				if($key == 'description') {
-					continue;
-				} elseif($key == 'joinmsg_id') {
-					$recording = $this->FreePBX->Recordings->getFilenameById($value);
-					$this->astman->database_put('CONFERENCE/'.$room,'joinmsg',(!empty($recording) ? $recording : ''));
-					continue;
+			//Only Process AstDB if we are told to
+			if ($processAstDb) {
+				foreach($ret as $key => $value) {
+					if($key == 'description') {
+						continue;
+					} elseif($key == 'joinmsg_id') {
+						$recording = $this->FreePBX->Recordings->getFilenameById($value);
+						$this->astman->database_put('CONFERENCE/'.$room,'joinmsg',(!empty($recording) ? $recording : ''));
+						continue;
+					}
+					if(!isset($asettings['/CONFERENCE/'.$room.'/'.$key])) {
+						$value = !is_null($value) ? $value : "";
+						$this->astman->database_put('CONFERENCE/'.$room,$key,$value);
+					} elseif($asettings['/CONFERENCE/'.$room.'/'.$key] != $value) {
+						$this->updateConferenceSettingById($room,$key,$asettings['/CONFERENCE/'.$room.'/'.$key]);
+					}
 				}
-				if(!isset($asettings['/CONFERENCE/'.$room.'/'.$key])) {
-					$value = !is_null($value) ? $value : "";
-					$this->astman->database_put('CONFERENCE/'.$room,$key,$value);
-				} elseif($asettings['/CONFERENCE/'.$room.'/'.$key] != $value) {
-					$this->updateConferenceSettingById($room,$key,$asettings['/CONFERENCE/'.$room.'/'.$key]);
-				}
-			}
-			//Divergent information, sync from the master which is Asterisk Manager
-			foreach($asettings as $family => $value) {
-				$parts = explode("/",$family);
-				$key = $parts[3];
-				if((!isset($ret[$key]) || $key == 'description') && $key != 'joinmsg') {
-					$this->astman->database_del("CONFERENCE/".$room,$key);
-				}
+				//Divergent information, sync from the master which is Asterisk Manager
+				foreach($asettings as $family => $value) {
+					$parts = explode("/",$family);
+					$key = $parts[3];
+					if((!isset($ret[$key]) || $key == 'description') && $key != 'joinmsg') {
+						$this->astman->database_del("CONFERENCE/".$room,$key);
+						}
+					}
 			}
 		} catch(\Exception $e) {
 			return false;
