@@ -2,13 +2,14 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>15.0.7.1</version>
+	<version>15.0.7.2</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
+		*15.0.7.2* FREEPBX-20105 Conference entries flushed while doing backup restore. 
 		*15.0.7.1* Fixing FREEPBX-20108
 		*15.0.7* FREEI-556
 		*15.0.6.7* FREEPBX-18676 Configuration File Link removed(http://freepbx.org/configuration_files) 
