@@ -128,7 +128,7 @@ class conferences_conf {
 							case 'timeout':
 								//Timeout added in 13.7.0 And 14.0.0+
 								if(version_compare($version, '13.7.0', 'lt')){
-									continue;
+									continue 2;
 								}
 							break;
 							default:
