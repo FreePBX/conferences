@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-10 14:45+0530\n"
-"PO-Revision-Date: 2019-01-25 15:36+0000\n"
+"PO-Revision-Date: 2019-08-13 11:43+0000\n"
 "Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://*/projects/freepbx/conferences/fa/>\n"
 "Language: fa_IR\n"
@@ -76,7 +76,7 @@ msgstr "شماره کنفرانس"
 
 #: Conferences.class.php:109
 msgid "Conference Number is missing."
-msgstr ""
+msgstr "شماره کنفرانس از بین رفت."
 
 #: functions.inc.php:181
 #, php-format
@@ -265,7 +265,7 @@ msgstr "هیچ"
 
 #: Conferences.class.php:112
 msgid "Option of the Conference is missing."
-msgstr ""
+msgstr "گزینه کنفرانس از بین رفت."
 
 #: Conferences.class.php:81
 msgid "Option of the Conference."
@@ -496,7 +496,7 @@ msgstr "پیش فرض"
 
 #: Conferences.class.php:115
 msgid "description is blank."
-msgstr ""
+msgstr "شرح خالی است."
 
 #: views/form.php:84
 msgid "inherit"
