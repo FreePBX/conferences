@@ -2,31 +2,14 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>15.0.7.4</version>
+	<version>16.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<changelog>
-		*15.0.7.4* Related to FREEPBX-20414: removed $jobid from runRestore() 
-		*15.0.7.3* FREEPBX-20205 
-		*15.0.7.2* FREEPBX-20105 Conference entries flushed while doing backup restore. 
-		*15.0.7.1* Fixing FREEPBX-20108
-		*15.0.7* FREEI-556
-		*15.0.6.7* FREEPBX-18676 Configuration File Link removed(http://freepbx.org/configuration_files) 
-		*15.0.6.6* FREEPBX-19392 Bulk handler allows to upload and create conference 
-		*15.0.6.5* Fixing FREEPBX-17867 
-		*15.0.6.4* Adding feature codes and kvstore to backup
-		*15.0.6.3* fixing legacy restore
-		*15.0.6.2* FREEPBX-19392 Bulk handler allows to upload and create conference with empty Conference Number Field.
-		*15.0.6.1* Backup and restore
-		*15.0.6* FREEPBX-18570 Conference PIN allows alphanumeric and special characters to set as password
-		*15.0.5* Fixing problems in Backup 15 (Restore Part)
-		*15.0.4* Rest Api
-		*15.0.3* Packaging of ver 15.0.3
-		*15.0.2* Bugfix/FREEPBX-13464 ext-meetme context does not use hangupcall macro
-		*13.0.23.11* Fork to 15.0, add backup
+		*16.0.1alpha* 16.0.1 alpha release
 	</changelog>
 	<depends>
 		<module>recordings ge 13.0.2</module>
@@ -68,6 +51,6 @@
 		</printextensions>
 	</hooks>
 	<supported>
-		<version>15.0</version>
+		<version>16.0</version>
 	</supported>
 </module>
