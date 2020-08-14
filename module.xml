@@ -8,6 +8,7 @@
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
+	<more-info>https://wiki.freepbx.org/display/F2/Conferences+Module</more-info>
 	<changelog>
 		*13.0.23.17* FREEI-564
 		*13.0.23.16* FREEPBX-18676 Configuration File Link removed(http://freepbx.org/configuration_files) 
