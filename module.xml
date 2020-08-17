@@ -2,13 +2,15 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>15.0.7.4</version>
+	<version>15.0.7.5</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
+	<more-info>https://wiki.freepbx.org/display/F2/Conferences+Module</more-info>
 	<changelog>
+		*15.0.7.5* Packaging of ver 15.0.7.5
 		*15.0.7.4* Related to FREEPBX-20414: removed $jobid from runRestore() 
 		*15.0.7.3* FREEPBX-20205 
 		*15.0.7.2* FREEPBX-20105 Conference entries flushed while doing backup restore. 
