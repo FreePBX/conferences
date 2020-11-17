@@ -20,8 +20,8 @@ msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-10 14:45+0530\n"
-"PO-Revision-Date: 2019-01-09 15:00+0000\n"
-"Last-Translator: Maurizio Longhitano <mlonghitano@teampower.it>\n"
+"PO-Revision-Date: 2020-11-17 07:49+0000\n"
+"Last-Translator: Danilo Smaldone <dsmaldone@sangoma.com>\n"
 "Language-Team: Italian <http://*/projects/freepbx/conferences/it/>\n"
 "Language: it_IT\n"
 "MIME-Version: 1.0\n"
@@ -91,7 +91,7 @@ msgstr "Numero di conferenza"
 
 #: Conferences.class.php:109
 msgid "Conference Number is missing."
-msgstr ""
+msgstr "Manca il numero della conferenza."
 
 #: functions.inc.php:181
 #, php-format
@@ -287,7 +287,7 @@ msgstr "Nessuno"
 
 #: Conferences.class.php:112
 msgid "Option of the Conference is missing."
-msgstr ""
+msgstr "Manca l'opzione per la Conferenza."
 
 #: Conferences.class.php:81
 msgid "Option of the Conference."
@@ -540,7 +540,7 @@ msgstr "predefinito"
 
 #: Conferences.class.php:115
 msgid "description is blank."
-msgstr ""
+msgstr "la descrizione è vuota."
 
 #: views/form.php:84
 msgid "inherit"
