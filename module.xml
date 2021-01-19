@@ -2,7 +2,7 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>15.0.7.6</version>
+	<version>15.0.7.7</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -10,6 +10,7 @@
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<more-info>https://wiki.freepbx.org/display/FPG/Conferences+Module</more-info>
 	<changelog>
+		*15.0.7.7* Packaging of ver 15.0.7.7
 		*15.0.7.6* Packaging of ver 15.0.7.6
 		*15.0.7.5* Packaging of ver 15.0.7.5
 		*15.0.7.4* Related to FREEPBX-20414: removed $jobid from runRestore() 
