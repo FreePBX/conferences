@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo conferences module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-10 14:45+0530\n"
-"PO-Revision-Date: 2021-02-07 20:54+0000\n"
+"PO-Revision-Date: 2021-02-08 22:00+0000\n"
 "Last-Translator: Javier Pastor <jpastor@cerebelum.net>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
 "conferences/es/>\n"
@@ -75,7 +75,7 @@ msgstr "Aplicaciones"
 
 #: Conferences.class.php:80
 msgid "Conf Number"
-msgstr ""
+msgstr "Conferencia Numero"
 
 #: Conferences.class.php:193 Conferences.class.php:515 views/grid.php:32
 #: views/rnav.php:25
@@ -92,7 +92,7 @@ msgstr "Numero de la Conferencia"
 
 #: Conferences.class.php:109
 msgid "Conference Number is missing."
-msgstr ""
+msgstr "Falta el número de conferencia."
 
 #: functions.inc.php:181
 #, php-format
@@ -101,11 +101,11 @@ msgstr "Sala de conferencia %s: %s"
 
 #: conferences.i18n.php:18
 msgid "Conference Status"
-msgstr ""
+msgstr "Estado de la Conferencia"
 
 #: Conferences.class.php:80
 msgid "Conference number used."
-msgstr ""
+msgstr "Número de conferencia utilizado."
 
 #: functions.inc.php:434
 msgid "Conference: "
@@ -167,7 +167,7 @@ msgstr "Extensión"
 
 #: conferences.i18n.php:12
 msgid "Force Allow Conference Recording"
-msgstr ""
+msgstr "Forzar Permitir la Grabación de Conferencia"
 
 #: views/form.php:175
 msgid "Give this conference a brief name to help you identify it."
@@ -177,7 +177,7 @@ msgstr ""
 
 #: Conferences.class.php:99
 msgid "Import/Export Conferences"
-msgstr ""
+msgstr "Importar/Exportar Conferencias"
 
 #: views/form.php:241
 msgid "Inherit"
@@ -189,7 +189,7 @@ msgstr "Mensaje de Incorporacion"
 
 #: Conferences.class.php:85
 msgid "Join message id."
-msgstr ""
+msgstr "ID de mensaje de unión."
 
 #: Conferences.class.php:88 views/form.php:235
 msgid "Language"
@@ -197,7 +197,7 @@ msgstr "Idioma"
 
 #: Conferences.class.php:88
 msgid "Language."
-msgstr ""
+msgstr "Idioma."
 
 #: views/form.php:298
 msgid "Leader Leave"
@@ -234,7 +234,7 @@ msgstr ""
 
 #: Conferences.class.php:86
 msgid "Music"
-msgstr ""
+msgstr "Música"
 
 #: views/form.php:111
 msgid ""
@@ -258,7 +258,7 @@ msgstr "Clase Música en espera"
 
 #: Conferences.class.php:86
 msgid "Music."
-msgstr ""
+msgstr "Música."
 
 #: views/form.php:581
 msgid ""
@@ -299,15 +299,15 @@ msgstr ""
 
 #: Conferences.class.php:81
 msgid "Options"
-msgstr ""
+msgstr "Opciones"
 
 #: Conferences.class.php:83
 msgid "PIN code for admin."
-msgstr ""
+msgstr "Código PIN para administrador."
 
 #: Conferences.class.php:82
 msgid "PIN code for user."
-msgstr ""
+msgstr "Código PIN para el usuario."
 
 #: assets/js/conferences.js:20
 msgid "Please enter a valid Conference Name"
@@ -358,6 +358,11 @@ msgid ""
 "either the CDR nor in Call Recordings and has to be downloaded by logging "
 "into the backend."
 msgstr ""
+"Grabe la llamada de conferencia. Nota: Esto no funciona cuando se usa %s o "
+"una versión inferior y, por lo tanto, está deshabilitado. Habilite \"Forzar "
+"la grabación de conferencias\" en la configuración avanzada para anular "
+"esto. La grabación no estará disponible ni en el CDR ni en las grabaciones "
+"de llamadas y debe descargarse iniciando sesión en el backend."
 
 #: Conferences.class.php:492
 msgid "Reset"
@@ -419,11 +424,11 @@ msgstr ""
 
 #: Conferences.class.php:89
 msgid "Timeout"
-msgstr ""
+msgstr "Timeout"
 
 #: Conferences.class.php:89
 msgid "Timeout of the conference."
-msgstr ""
+msgstr "Timeout de la conferencia."
 
 #: views/form.php:340
 msgid ""
@@ -465,11 +470,11 @@ msgstr "Usuario entra/sale"
 
 #: Conferences.class.php:87
 msgid "Users"
-msgstr ""
+msgstr "Usuarios"
 
 #: Conferences.class.php:87
 msgid "Users."
-msgstr ""
+msgstr "Usuarios."
 
 #: views/form.php:286
 msgid ""
@@ -531,7 +536,7 @@ msgstr "defecto"
 
 #: Conferences.class.php:115
 msgid "description is blank."
-msgstr ""
+msgstr "La descripción está en blanco."
 
 #: views/form.php:84
 msgid "inherit"
