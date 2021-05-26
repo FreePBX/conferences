@@ -2,7 +2,7 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>13.0.23.19</version>
+	<version>13.0.23.20</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -10,6 +10,7 @@
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<more-info>https://wiki.freepbx.org/display/F2/Conferences+Module</more-info>
 	<changelog>
+		*13.0.23.20* Packaging of ver 13.0.23.20
 		*13.0.23.19* Packaging of ver 13.0.23.19
 		*13.0.23.18* Packaging of ver 13.0.23.18
 		*13.0.23.17* FREEI-564
