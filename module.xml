@@ -2,7 +2,7 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>15.0.7.8</version>
+	<version>15.0.7.9</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -10,6 +10,7 @@
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<more-info>https://wiki.freepbx.org/display/FPG/Conferences+Module</more-info>
 	<changelog>
+		*15.0.7.9* FREEI-3352: if /AMPUSER/ext/accountcode is set to u+userId, set it as the accountcode when a conference room is called 
 		*15.0.7.8* Packaging of ver 15.0.7.8
 		*15.0.7.7* Packaging of ver 15.0.7.7
 		*15.0.7.6* Packaging of ver 15.0.7.6
