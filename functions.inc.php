@@ -271,6 +271,7 @@ function conferences_get_config($engine) {
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_ROOMNUM',$roomnum));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MAX_PARTICIPANTS', '0'));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_MUSIC', '${MOHCLASS}'));
+					$ext->add($contextname, $roomnum, '', new ext_execif('${REGEX("^u[1-9]" ${DB(AMPUSER/${AMPUSER}/accountcode)})}','Set','CHANNEL(accountcode)=${DB(AMPUSER/${AMPUSER}/accountcode)}'));
 					$ext->add($contextname, $roomnum, '', new ext_execif('$["${DB(CONFERENCE/'.$roomnum.'/users)}" != ""]','Set','MAX_PARTICIPANTS=${DB(CONFERENCE/'.$roomnum.'/users)}'));
 					$ext->add($contextname, $roomnum, '', new ext_execif('$["${DB(CONFERENCE/'.$roomnum.'/music)}" != "inherit" & "${DB(CONFERENCE/'.$roomnum.'/music)}" != ""]','Set','MEETME_MUSIC=${DB(CONFERENCE/'.$roomnum.'/music)}'));
 					$ext->add($contextname, $roomnum, '', new ext_gotoif('$["${DIALSTATUS}" = "ANSWER"]','ANSWERED'));
