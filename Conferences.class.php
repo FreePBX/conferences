@@ -48,6 +48,16 @@ class Conferences extends FreePBX_Helpers implements BMO {
 					}
 				break;
 				case "delete":
+					if ($this->FreePBX->Modules->checkStatus('sangomartapi')) {
+						$sql = "DELETE FROM restapps_rtapi_conferences WHERE conferenceNumber = ?";
+						$sth = $this->db->prepare($sql);
+						try {
+							$sth->execute(array($extdisplay));
+						} catch(\Exception $e) {
+							return false;
+						}
+					}
+
 					$this->deleteConference($extdisplay);
 					needreload();
 				break;
