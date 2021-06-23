@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 04:15+0000\n"
+"POT-Creation-Date: 2021-06-23 05:15+0000\n"
 "PO-Revision-Date: 2015-10-19 14:43+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -43,7 +43,7 @@ msgstr "命令"
 msgid "Add"
 msgstr "添加"
 
-#: Conferences.class.php:86 views/form.php:211
+#: Conferences.class.php:96 views/form.php:211
 msgid "Admin PIN"
 msgstr "管理员密码"
 
@@ -70,11 +70,11 @@ msgstr "通告加入会议的用户数量"
 msgid "Applications"
 msgstr ""
 
-#: Conferences.class.php:83
+#: Conferences.class.php:93
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:193 Conferences.class.php:449 views/grid.php:32
+#: Conferences.class.php:203 Conferences.class.php:459 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "会议"
@@ -87,7 +87,7 @@ msgstr "会议名称"
 msgid "Conference Number"
 msgstr "会议号码"
 
-#: Conferences.class.php:111
+#: Conferences.class.php:121
 msgid "Conference Number is missing."
 msgstr ""
 
@@ -100,7 +100,7 @@ msgstr "会议室 %s：%s"
 msgid "Conference Status"
 msgstr ""
 
-#: Conferences.class.php:83
+#: Conferences.class.php:93
 msgid "Conference number used."
 msgstr ""
 
@@ -113,7 +113,7 @@ msgstr "会议："
 msgid "Conference: %s"
 msgstr "会议：%s"
 
-#: Conferences.class.php:100 Conferences.class.php:447 conferences.i18n.php:4
+#: Conferences.class.php:110 Conferences.class.php:457 conferences.i18n.php:4
 #: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr "语音会议"
@@ -122,7 +122,7 @@ msgstr "语音会议"
 msgid "Conflicting Extensions"
 msgstr "分机号冲突"
 
-#: Conferences.class.php:431
+#: Conferences.class.php:441
 msgid "Delete"
 msgstr "删除"
 
@@ -130,11 +130,11 @@ msgstr "删除"
 msgid "Description"
 msgstr "描述"
 
-#: Conferences.class.php:87
+#: Conferences.class.php:97
 msgid "Desctiption"
 msgstr ""
 
-#: Conferences.class.php:87
+#: Conferences.class.php:97
 msgid "Desctiption of the conference."
 msgstr ""
 
@@ -153,7 +153,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:450
+#: Conferences.class.php:460
 msgid "Extension"
 msgstr "分机"
 
@@ -165,7 +165,7 @@ msgstr ""
 msgid "Give this conference a brief name to help you identify it."
 msgstr "为此会议取一个简短的名称以帮助你标识它。"
 
-#: Conferences.class.php:101
+#: Conferences.class.php:111
 msgid "Import/Export Conferences"
 msgstr ""
 
@@ -177,15 +177,15 @@ msgstr ""
 msgid "Join Message"
 msgstr "加入信息"
 
-#: Conferences.class.php:88
+#: Conferences.class.php:98
 msgid "Join message id."
 msgstr ""
 
-#: Conferences.class.php:91 views/form.php:235
+#: Conferences.class.php:101 views/form.php:235
 msgid "Language"
 msgstr ""
 
-#: Conferences.class.php:91
+#: Conferences.class.php:101
 msgid "Language."
 msgstr ""
 
@@ -219,7 +219,7 @@ msgid ""
 "add additional recordings please use the \"System Recordings\" MENU above"
 msgstr ""
 
-#: Conferences.class.php:89
+#: Conferences.class.php:99
 msgid "Music"
 msgstr ""
 
@@ -239,7 +239,7 @@ msgstr "音乐等待"
 msgid "Music on Hold Class"
 msgstr "音乐等待类别"
 
-#: Conferences.class.php:89
+#: Conferences.class.php:99
 msgid "Music."
 msgstr ""
 
@@ -268,23 +268,23 @@ msgstr "无限制"
 msgid "None"
 msgstr "无"
 
-#: Conferences.class.php:114
+#: Conferences.class.php:124
 msgid "Option of the Conference is missing."
 msgstr ""
 
-#: Conferences.class.php:84
+#: Conferences.class.php:94
 msgid "Option of the Conference."
 msgstr ""
 
-#: Conferences.class.php:84
+#: Conferences.class.php:94
 msgid "Options"
 msgstr ""
 
-#: Conferences.class.php:86
+#: Conferences.class.php:96
 msgid "PIN code for admin."
 msgstr ""
 
-#: Conferences.class.php:85
+#: Conferences.class.php:95
 msgid "PIN code for user."
 msgstr ""
 
@@ -332,7 +332,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:426
+#: Conferences.class.php:436
 msgid "Reset"
 msgstr "重设"
 
@@ -344,7 +344,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:421
+#: Conferences.class.php:431
 msgid "Submit"
 msgstr "提交"
 
@@ -377,11 +377,11 @@ msgid ""
 "21600 (6 hours)"
 msgstr ""
 
-#: Conferences.class.php:92
+#: Conferences.class.php:102
 msgid "Timeout"
 msgstr ""
 
-#: Conferences.class.php:92
+#: Conferences.class.php:102
 msgid "Timeout of the conference."
 msgstr ""
 
@@ -410,7 +410,7 @@ msgstr "拨打此号码以参加会议。"
 msgid "User Count"
 msgstr "用户计数"
 
-#: Conferences.class.php:85 views/form.php:187
+#: Conferences.class.php:95 views/form.php:187
 msgid "User PIN"
 msgstr "用户密码"
 
@@ -418,11 +418,11 @@ msgstr "用户密码"
 msgid "User join/leave"
 msgstr "用户加入/离开"
 
-#: Conferences.class.php:90
+#: Conferences.class.php:100
 msgid "Users"
 msgstr ""
 
-#: Conferences.class.php:90
+#: Conferences.class.php:100
 msgid "Users."
 msgstr ""
 
@@ -472,7 +472,7 @@ msgstr "如果你启用的等待主持人的选项，就必须为会议主持人
 msgid "default"
 msgstr "默认"
 
-#: Conferences.class.php:117
+#: Conferences.class.php:127
 msgid "description is blank."
 msgstr ""
 
@@ -484,7 +484,7 @@ msgstr "继承"
 msgid "is not allowed for your account."
 msgstr "。"
 
-#: Conferences.class.php:88
+#: Conferences.class.php:98
 msgid "join message id"
 msgstr ""
 
