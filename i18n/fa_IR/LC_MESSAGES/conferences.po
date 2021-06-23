@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 04:16+0000\n"
+"POT-Creation-Date: 2021-06-23 05:18+0000\n"
 "PO-Revision-Date: 2019-08-13 11:43+0000\n"
 "Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://*/projects/freepbx/conferences/fa/>\n"
@@ -28,7 +28,7 @@ msgstr "عملیات"
 msgid "Add"
 msgstr "افزودن"
 
-#: Conferences.class.php:83 views/form.php:211
+#: Conferences.class.php:93 views/form.php:211
 msgid "Admin PIN"
 msgstr "PIN مدیر"
 
@@ -57,11 +57,11 @@ msgstr "اعلام تعداد کاربر(های) عضو شده در کنفران
 msgid "Applications"
 msgstr "درخواست"
 
-#: Conferences.class.php:80
+#: Conferences.class.php:90
 msgid "Conf Number"
 msgstr "شماره Conf"
 
-#: Conferences.class.php:193 Conferences.class.php:515 views/grid.php:32
+#: Conferences.class.php:203 Conferences.class.php:525 views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
 msgstr "کنفرانس"
@@ -74,7 +74,7 @@ msgstr "نام کنفرانس"
 msgid "Conference Number"
 msgstr "شماره کنفرانس"
 
-#: Conferences.class.php:109
+#: Conferences.class.php:119
 msgid "Conference Number is missing."
 msgstr "شماره کنفرانس از بین رفت."
 
@@ -87,7 +87,7 @@ msgstr "اتاق کنفرانس %s: %s"
 msgid "Conference Status"
 msgstr "وضعیت کنفرانس"
 
-#: Conferences.class.php:80
+#: Conferences.class.php:90
 msgid "Conference number used."
 msgstr "شماره کنفرانس مصرفی."
 
@@ -100,7 +100,7 @@ msgstr "کنفرانس ： "
 msgid "Conference: %s"
 msgstr "کنفرانس ：%s"
 
-#: Conferences.class.php:98 Conferences.class.php:513 conferences.i18n.php:4
+#: Conferences.class.php:108 Conferences.class.php:523 conferences.i18n.php:4
 #: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
 msgid "Conferences"
 msgstr "کنفرانس ها"
@@ -109,7 +109,7 @@ msgstr "کنفرانس ها"
 msgid "Conflicting Extensions"
 msgstr "داخلی های متضاد"
 
-#: Conferences.class.php:497
+#: Conferences.class.php:507
 msgid "Delete"
 msgstr "حذف"
 
@@ -117,11 +117,11 @@ msgstr "حذف"
 msgid "Description"
 msgstr "شرح"
 
-#: Conferences.class.php:84
+#: Conferences.class.php:94
 msgid "Desctiption"
 msgstr "شرح"
 
-#: Conferences.class.php:84
+#: Conferences.class.php:94
 msgid "Desctiption of the conference."
 msgstr "شرح کنفرانس."
 
@@ -142,7 +142,7 @@ msgstr ""
 "برای کاربر مدیر شماره پین را وارد کنید. <br><br> این گزینه اختیاری است. <br> "
 "این پین باید با پین کاربر دیگر متفاوت باشد."
 
-#: Conferences.class.php:516
+#: Conferences.class.php:526
 msgid "Extension"
 msgstr "داخلی"
 
@@ -154,7 +154,7 @@ msgstr "مجاز به ضبط کنفرانس"
 msgid "Give this conference a brief name to help you identify it."
 msgstr "به این کنفرانس نامی اختصاص دهید تا به شما در یافتن آن کمک کند."
 
-#: Conferences.class.php:99
+#: Conferences.class.php:109
 msgid "Import/Export Conferences"
 msgstr "ورود/خروج کنفرانس"
 
@@ -166,15 +166,15 @@ msgstr "ارثی"
 msgid "Join Message"
 msgstr "پیام عضویت"
 
-#: Conferences.class.php:85
+#: Conferences.class.php:95
 msgid "Join message id."
 msgstr "پیوستن شناسه."
 
-#: Conferences.class.php:88 views/form.php:235
+#: Conferences.class.php:98 views/form.php:235
 msgid "Language"
 msgstr "زبان"
 
-#: Conferences.class.php:88
+#: Conferences.class.php:98
 msgid "Language."
 msgstr "زبان."
 
@@ -210,7 +210,7 @@ msgstr ""
 "آهنگی که قبل از پیوستن تماس گیرنده به کنفرانس پخش میشود. <br><br> برای موارد "
 "ضبط شده دیگر از منو \"سیستم ضبط شده\" استفاده کنید"
 
-#: Conferences.class.php:86
+#: Conferences.class.php:96
 msgid "Music"
 msgstr "موسیقی"
 
@@ -234,7 +234,7 @@ msgstr "موسیقی انتظار تماس"
 msgid "Music on Hold Class"
 msgstr "کلاس موزیک انتظار مکالمه"
 
-#: Conferences.class.php:86
+#: Conferences.class.php:96
 msgid "Music."
 msgstr "موسیقی."
 
@@ -263,23 +263,23 @@ msgstr "بدون محدودیت"
 msgid "None"
 msgstr "هیچ"
 
-#: Conferences.class.php:112
+#: Conferences.class.php:122
 msgid "Option of the Conference is missing."
 msgstr "گزینه کنفرانس از بین رفت."
 
-#: Conferences.class.php:81
+#: Conferences.class.php:91
 msgid "Option of the Conference."
 msgstr "گزینه کنفرانس."
 
-#: Conferences.class.php:81
+#: Conferences.class.php:91
 msgid "Options"
 msgstr "گزینه ها"
 
-#: Conferences.class.php:83
+#: Conferences.class.php:93
 msgid "PIN code for admin."
 msgstr "کد پین برای مدیر."
 
-#: Conferences.class.php:82
+#: Conferences.class.php:92
 msgid "PIN code for user."
 msgstr "کد پین برای کاربر."
 
@@ -333,7 +333,7 @@ msgstr ""
 "«تنظیمات پیشرفته» «مجاز به ضبط کنفرانس» را فعال کنید. ضبط در CDR یا در ضبط "
 "تماس ها در دسترس نخواهد بود و باید با وارد شدن به backend دانلود شود."
 
-#: Conferences.class.php:492
+#: Conferences.class.php:502
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -349,7 +349,7 @@ msgstr ""
 "on the output of the conference list CLI command. Note: If Conferences Pro "
 "is installed and licensed this will always be enabled"
 
-#: Conferences.class.php:487
+#: Conferences.class.php:497
 msgid "Submit"
 msgstr "ثبت"
 
@@ -385,11 +385,11 @@ msgstr ""
 "قبل از اینکه به صورت خودکار از بین برود. 0 = غیر فعال شده است، به طور پیش "
 "فرض 21600 (6 ساعت)"
 
-#: Conferences.class.php:89
+#: Conferences.class.php:99
 msgid "Timeout"
 msgstr "وقفه"
 
-#: Conferences.class.php:89
+#: Conferences.class.php:99
 msgid "Timeout of the conference."
 msgstr "وقفه در کنفرانس."
 
@@ -426,7 +426,7 @@ msgstr "این شماره جهت ورود به کنفرانس است."
 msgid "User Count"
 msgstr "تعداد کاربر"
 
-#: Conferences.class.php:82 views/form.php:187
+#: Conferences.class.php:92 views/form.php:187
 msgid "User PIN"
 msgstr "پین کاربر"
 
@@ -434,11 +434,11 @@ msgstr "پین کاربر"
 msgid "User join/leave"
 msgstr "کاربر پیوست/ترک کرد"
 
-#: Conferences.class.php:87
+#: Conferences.class.php:97
 msgid "Users"
 msgstr "کاربران"
 
-#: Conferences.class.php:87
+#: Conferences.class.php:97
 msgid "Users."
 msgstr "کاربران."
 
@@ -494,7 +494,7 @@ msgstr ""
 msgid "default"
 msgstr "پیش فرض"
 
-#: Conferences.class.php:115
+#: Conferences.class.php:125
 msgid "description is blank."
 msgstr "شرح خالی است."
 
@@ -506,7 +506,7 @@ msgstr "ارث بردن"
 msgid "is not allowed for your account."
 msgstr "برای حساب شما مجاز نمیباشد."
 
-#: Conferences.class.php:85
+#: Conferences.class.php:95
 msgid "join message id"
 msgstr "پیوست شناسه پیام"
 
