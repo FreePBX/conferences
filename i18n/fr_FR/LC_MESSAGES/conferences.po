@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-23 05:15+0000\n"
+"POT-Creation-Date: 2021-06-30 06:06+0000\n"
 "PO-Revision-Date: 2018-01-18 21:52+0200\n"
 "Last-Translator: Frederic <fdickey@sangoma.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -104,7 +104,7 @@ msgstr "État de la conférence"
 msgid "Conference number used."
 msgstr ""
 
-#: functions.inc.php:435
+#: functions.inc.php:434
 msgid "Conference: "
 msgstr "Conférence: "
 
