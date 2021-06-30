@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-23 05:18+0000\n"
+"POT-Creation-Date: 2021-06-30 06:08+0000\n"
 "PO-Revision-Date: 2018-09-04 09:39+0000\n"
 "Last-Translator: Petr Varvarovsky <petrv@atlantis.cz>\n"
 "Language-Team: Czech <http://*/projects/freepbx/conferences/cs/>\n"
@@ -91,7 +91,7 @@ msgstr "Stav konference"
 msgid "Conference number used."
 msgstr "Použité číslo konference."
 
-#: functions.inc.php:435
+#: functions.inc.php:434
 msgid "Conference: "
 msgstr "Konference: "
 

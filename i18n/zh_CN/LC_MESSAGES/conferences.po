@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-23 05:18+0000\n"
+"POT-Creation-Date: 2021-06-30 06:08+0000\n"
 "PO-Revision-Date: 2015-10-19 14:43+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -104,7 +104,7 @@ msgstr ""
 msgid "Conference number used."
 msgstr ""
 
-#: functions.inc.php:435
+#: functions.inc.php:434
 msgid "Conference: "
 msgstr "会议："
 

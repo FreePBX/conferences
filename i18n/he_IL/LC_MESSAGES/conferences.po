@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-23 05:18+0000\n"
+"POT-Creation-Date: 2021-06-30 06:08+0000\n"
 "PO-Revision-Date: 2016-05-12 01:10+0200\n"
 "Last-Translator: Avishay <baabad@outlook.com>\n"
 "Language-Team: Hebrew <http://weblate.freepbx.org/projects/freepbx/"
@@ -103,7 +103,7 @@ msgstr ""
 msgid "Conference number used."
 msgstr ""
 
-#: functions.inc.php:435
+#: functions.inc.php:434
 msgid "Conference: "
 msgstr ""
 
