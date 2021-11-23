@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-30 06:08+0000\n"
-"PO-Revision-Date: 2021-11-23 08:00+0000\n"
+"PO-Revision-Date: 2021-11-24 11:00+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "conferences/ru/>\n"
@@ -127,23 +127,23 @@ msgstr "Конфликт внутренних номеров"
 
 #: Conferences.class.php:507
 msgid "Delete"
-msgstr ""
+msgstr "Удалить"
 
 #: views/grid.php:33 views/rnav.php:26
 msgid "Description"
-msgstr ""
+msgstr "Описание"
 
 #: Conferences.class.php:94
 msgid "Desctiption"
-msgstr ""
+msgstr "Описание"
 
 #: Conferences.class.php:94
 msgid "Desctiption of the conference."
-msgstr ""
+msgstr "Описание конференции."
 
 #: page.conferences.php:17
 msgid "Edit"
-msgstr ""
+msgstr "Редактировать"
 
 #: views/form.php:475
 msgid "Enable Music On Hold when the conference has a single caller"
