@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-30 06:08+0000\n"
-"PO-Revision-Date: 2021-11-24 11:00+0000\n"
+"PO-Revision-Date: 2021-11-30 14:00+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "conferences/ru/>\n"
@@ -238,11 +238,11 @@ msgstr ""
 
 #: views/form.php:460
 msgid "Music on Hold"
-msgstr ""
+msgstr "Музыка на удержании"
 
 #: views/form.php:97
 msgid "Music on Hold Class"
-msgstr ""
+msgstr "Класс музыки на удержании"
 
 #: Conferences.class.php:96
 msgid "Music."
