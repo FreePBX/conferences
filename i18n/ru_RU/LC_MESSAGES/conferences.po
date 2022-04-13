@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-30 06:08+0000\n"
-"PO-Revision-Date: 2021-12-08 08:01+0000\n"
+"PO-Revision-Date: 2022-04-14 05:12+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "conferences/ru/>\n"
@@ -46,11 +46,11 @@ msgstr "Добавить"
 
 #: Conferences.class.php:93 views/form.php:211
 msgid "Admin PIN"
-msgstr ""
+msgstr "PIN код админа"
 
 #: views/form.php:488
 msgid "Allow Menu"
-msgstr ""
+msgstr "Меню разрешения"
 
 #: conferences.i18n.php:8
 msgid ""
@@ -64,6 +64,8 @@ msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
 "their name before joining the conference"
 msgstr ""
+"Озвучивать подключение/выход пользователей. Если включить - потребует от "
+"участников записать их имя перед подключением к конференции"
 
 #: views/form.php:421
 msgid "Announce user(s) count on joining conference"
@@ -75,7 +77,7 @@ msgstr "Приложения"
 
 #: Conferences.class.php:90
 msgid "Conf Number"
-msgstr ""
+msgstr "Номер конф."
 
 #: Conferences.class.php:203 Conferences.class.php:525 views/grid.php:32
 #: views/rnav.php:25
@@ -88,11 +90,11 @@ msgstr "Название конференции"
 
 #: views/form.php:139
 msgid "Conference Number"
-msgstr ""
+msgstr "Номер конференции"
 
 #: Conferences.class.php:119
 msgid "Conference Number is missing."
-msgstr ""
+msgstr "Номер конференции отсутствует."
 
 #: functions.inc.php:181
 #, php-format
@@ -101,11 +103,11 @@ msgstr "Конференц-комната %s : %s"
 
 #: conferences.i18n.php:18
 msgid "Conference Status"
-msgstr ""
+msgstr "Статус конференции"
 
 #: Conferences.class.php:90
 msgid "Conference number used."
-msgstr ""
+msgstr "Используемый номер конференции."
 
 #: functions.inc.php:434
 msgid "Conference: "
@@ -155,6 +157,9 @@ msgid ""
 "unless the 'leader wait' option is in use, then this PIN will identify the "
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
+"Введите PIN администратора.<br><br>Данная опция необязательна если "
+"используется опция 'leader wait', а иначе этот PIN будет идентифицировать "
+"организатора конференции.<br>Этот PIN должен отличаться от PIN пользователя."
 
 #: Conferences.class.php:526
 msgid "Extension"
@@ -162,7 +167,7 @@ msgstr "Внутренний номер"
 
 #: conferences.i18n.php:12
 msgid "Force Allow Conference Recording"
-msgstr ""
+msgstr "Принудительная запись конференции"
 
 #: views/form.php:175
 msgid "Give this conference a brief name to help you identify it."
@@ -170,7 +175,7 @@ msgstr "Присвойте конференции короткое имя для
 
 #: Conferences.class.php:109
 msgid "Import/Export Conferences"
-msgstr ""
+msgstr "Импорт/экспорт конференций"
 
 #: views/form.php:241
 msgid "Inherit"
@@ -178,31 +183,31 @@ msgstr "Наследовать"
 
 #: views/form.php:54
 msgid "Join Message"
-msgstr ""
+msgstr "Сообщение при входе"
 
 #: Conferences.class.php:95
 msgid "Join message id."
-msgstr ""
+msgstr "ID сообщения при входе."
 
 #: Conferences.class.php:98 views/form.php:235
 msgid "Language"
-msgstr ""
+msgstr "Язык"
 
 #: Conferences.class.php:98
 msgid "Language."
-msgstr ""
+msgstr "Язык."
 
 #: views/form.php:298
 msgid "Leader Leave"
-msgstr ""
+msgstr "Организатор вышел"
 
 #: views/form.php:271
 msgid "Leader Wait"
-msgstr ""
+msgstr "Ожидать организатора"
 
 #: views/rnav.php:19
 msgid "List Conferences"
-msgstr ""
+msgstr "Список конференций"
 
 #: views/form.php:554
 msgid "Maximum Number of users allowed to join this conference."
@@ -212,21 +217,23 @@ msgstr ""
 
 #: views/form.php:542
 msgid "Maximum Participants"
-msgstr ""
+msgstr "Максимальное кол-во участников"
 
 #: views/form.php:593
 msgid "Member Timeout"
-msgstr ""
+msgstr "Время ожидания участника"
 
 #: views/form.php:68
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>To "
 "add additional recordings please use the \"System Recordings\" MENU above"
 msgstr ""
+"Сообщение, воспроизводимое пользователю перед входом в конференцию.<br><br>"
+"Для добавления записей сообщений используйте \"Записи в системе\" в меню выше"
 
 #: Conferences.class.php:96
 msgid "Music"
-msgstr ""
+msgstr "Музыка"
 
 #: views/form.php:111
 msgid ""
@@ -235,6 +242,10 @@ msgid ""
 "is currently selected, such as by the inbound route.<br><br>  This music is "
 "defined in the \"Music on Hold\" above."
 msgstr ""
+"Музыка (или реклама), воспроизводимая звонящему, пока он ожидает начала "
+"конференции. Выберите \"Наследовать\" если вы хотите что бы класс MoH "
+"наследовался. Например, будет наследоваться класс MoH, указанный на входящем "
+"маршруте.<br><br> Музыка определена в \"Музыка в ожидании\" чуть выше."
 
 #: views/form.php:460
 msgid "Music on Hold"
@@ -246,7 +257,7 @@ msgstr "Класс музыки на удержании"
 
 #: Conferences.class.php:96
 msgid "Music."
-msgstr ""
+msgstr "Музыка."
 
 #: views/form.php:581
 msgid ""
@@ -255,13 +266,13 @@ msgid ""
 "Yes to unmute yourself"
 msgstr ""
 "Отключать микрофон у каждого кто присоединяется к конференции. Пожалуйста "
-"заметьтеесли опция 'Ждать организатора' не установлена у вас в значение "
-"'Yes',значит у вас должна бытьустановленна опция 'Разрешить меню', что бы вы "
+"заметьте, если опция 'Ожидать организатора' не установлена в значение 'Yes' -"
+" значит у вас должна быть установлена опция 'Разрешить меню', что бы вы "
 "могли включить микрофон"
 
 #: views/form.php:566
 msgid "Mute on Join"
-msgstr ""
+msgstr "Отключать микрофон при присоединении к конференции"
 
 #: views/form.php:278 views/form.php:305 views/form.php:332 views/form.php:359
 #: views/form.php:386 views/form.php:413 views/form.php:440 views/form.php:467
