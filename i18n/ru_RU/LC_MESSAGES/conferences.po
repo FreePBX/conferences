@@ -1,13 +1,13 @@
 # This file is part of FreePBX.
 # For licensing information, please see the file named LICENSE located in the module directory
-# FreePBX language template for conferences
-# Copyright (C) 2008-2019 Sangoma Technologies, Inc.
+# FreePBX language template for amp
+# Copyright (C) 2008-2020 Sangoma Technologies, Inc.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: Framework 15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-10 14:45+0530\n"
-"PO-Revision-Date: 2022-04-14 05:12+0000\n"
+"POT-Creation-Date: 2020-06-29 08:48+0000\n"
+"PO-Revision-Date: 2022-04-14 05:13+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "conferences/ru/>\n"
@@ -108,7 +108,7 @@ msgstr "Конференции"
 
 #: views/form.php:121
 msgid "Conflicting Extensions"
-msgstr "Конфликт внутренних номеров"
+msgstr "Конфликтующие внутренние номера"
 
 #: Conferences.class.php:507
 msgid "Delete"
@@ -270,7 +270,7 @@ msgstr "Без ограничений"
 
 #: views/form.php:40
 msgid "None"
-msgstr "Отсутствует"
+msgstr "Нет"
 
 #: Conferences.class.php:122
 msgid "Option of the Conference is missing."
@@ -365,7 +365,7 @@ msgstr ""
 
 #: Conferences.class.php:497
 msgid "Submit"
-msgstr "Подтвердить"
+msgstr "Сохранить"
 
 #: views/form.php:352
 msgid "Talker Detection"
@@ -474,7 +474,7 @@ msgstr ""
 
 #: Conferences.class.php:31
 msgid "Warning! Extension"
-msgstr "Внимание! Внутренний номер"
+msgstr "Осторожно! Внутренний номер"
 
 #: views/form.php:313
 msgid ""
