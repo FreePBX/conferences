@@ -1,29 +1,12 @@
 # This file is part of FreePBX.
-#
-#    FreePBX is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU General Public License as published by
-#    the Free Software Foundation, either version 2 of the License, or
-#    (at your option) any later version.
-#
-#    FreePBX is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU General Public License for more details.
-#
-#    You should have received a copy of the GNU General Public License
-#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
-#
-# Russian freePBX ver. translation
-# Copyright (c) 2006-2008 PostMet Corporation
-# This file is distributed under the same license as the freePBX package.
-# Alexander Kozyrev <ceo@postmet.com>, Sergey Nikolayev <sergey@postmet.com>, 2006-2011.
-#
-# Использовать iconv conferences.utf8.po -f UTF-8 -t ISO-8859-5 -o conferences.po
+# For licensing information, please see the file named LICENSE located in the module directory
+# FreePBX language template for conferences
+# Copyright (C) 2008-2019 Sangoma Technologies, Inc.
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.3\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-30 06:08+0000\n"
+"POT-Creation-Date: 2019-06-10 14:45+0530\n"
 "PO-Revision-Date: 2022-04-14 05:12+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -46,11 +29,11 @@ msgstr "Добавить"
 
 #: Conferences.class.php:93 views/form.php:211
 msgid "Admin PIN"
-msgstr "PIN код админа"
+msgstr "PIN администратора"
 
 #: views/form.php:488
 msgid "Allow Menu"
-msgstr "Меню разрешения"
+msgstr "Разрешить меню"
 
 #: conferences.i18n.php:8
 msgid ""
@@ -64,12 +47,12 @@ msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
 "their name before joining the conference"
 msgstr ""
-"Озвучивать подключение/выход пользователей. Если включить - потребует от "
-"участников записать их имя перед подключением к конференции"
+"Озвучивать вход/выход пользователя. Если включено, то от пользователь должен "
+"будет записать свое имя перед присоединением к конференции"
 
 #: views/form.php:421
 msgid "Announce user(s) count on joining conference"
-msgstr "Анонсировать количество участников конференции при подсоединении"
+msgstr "Озвучивать количество участников конференции при подсоединении"
 
 #: conferences.i18n.php:6
 msgid "Applications"
@@ -77,7 +60,7 @@ msgstr "Приложения"
 
 #: Conferences.class.php:90
 msgid "Conf Number"
-msgstr "Номер конф."
+msgstr "Номер конференции"
 
 #: Conferences.class.php:203 Conferences.class.php:525 views/grid.php:32
 #: views/rnav.php:25
@@ -229,7 +212,8 @@ msgid ""
 "add additional recordings please use the \"System Recordings\" MENU above"
 msgstr ""
 "Сообщение, воспроизводимое пользователю перед входом в конференцию.<br><br>"
-"Для добавления записей сообщений используйте \"Записи в системе\" в меню выше"
+"Для добавления записей сообщений используйте \"Записи в системе\" в главном "
+"меню"
 
 #: Conferences.class.php:96
 msgid "Music"
@@ -249,11 +233,11 @@ msgstr ""
 
 #: views/form.php:460
 msgid "Music on Hold"
-msgstr "Музыка на удержании"
+msgstr "Музыка в ожидании"
 
 #: views/form.php:97
 msgid "Music on Hold Class"
-msgstr "Класс музыки на удержании"
+msgstr "Класс музыки в ожидании"
 
 #: Conferences.class.php:96
 msgid "Music."
@@ -286,27 +270,27 @@ msgstr "Без ограничений"
 
 #: views/form.php:40
 msgid "None"
-msgstr "Нет"
+msgstr "Отсутствует"
 
 #: Conferences.class.php:122
 msgid "Option of the Conference is missing."
-msgstr ""
+msgstr "Параметры для конференции отстуствуют."
 
 #: Conferences.class.php:91
 msgid "Option of the Conference."
-msgstr ""
+msgstr "Опции конференции."
 
 #: Conferences.class.php:91
 msgid "Options"
-msgstr ""
+msgstr "Опции"
 
 #: Conferences.class.php:93
 msgid "PIN code for admin."
-msgstr ""
+msgstr "PIN код администратора."
 
 #: Conferences.class.php:92
 msgid "PIN code for user."
-msgstr ""
+msgstr "PIN код пользователя."
 
 #: assets/js/conferences.js:20
 msgid "Please enter a valid Conference Name"
@@ -321,6 +305,8 @@ msgid ""
 "Please note depending on hardware and settings a higher limit may cause call "
 "quality issues."
 msgstr ""
+"Пожалуйста учитывайте, что в зависимости от спецификации сервера и его "
+"настроек, завышенные лимиты могут послужить потери качества связи."
 
 #: views/form.php:503
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
@@ -329,7 +315,7 @@ msgstr ""
 
 #: views/form.php:379
 msgid "Quiet Mode"
-msgstr ""
+msgstr "Режим тишины"
 
 #: views/form.php:394
 msgid "Quiet mode (do not play enter/leave sounds)"
@@ -339,7 +325,7 @@ msgstr ""
 
 #: views/form.php:515
 msgid "Record Conference"
-msgstr ""
+msgstr "Запись конференции"
 
 #: views/form.php:530
 msgid "Record the conference call"
@@ -354,6 +340,11 @@ msgid ""
 "either the CDR nor in Call Recordings and has to be downloaded by logging "
 "into the backend."
 msgstr ""
+"Запись конференции. Обратите внимание, что это не будет работать если вы "
+"используете версию %s или ниже. Включите \"Принудительная запись "
+"конференции\" в Дополнительных (расширенных) настройках, чтобы данная опция "
+"игнорировалась. Запись не будет доступна в CDR и в Записях вызовов. Загрузка "
+"возможна только в бэкэнде."
 
 #: Conferences.class.php:502
 msgid "Reset"
@@ -366,18 +357,23 @@ msgid ""
 "on the output of the conference list CLI command. Note: If Conferences Pro "
 "is installed and licensed this will always be enabled"
 msgstr ""
+"Установить обнаружение выступающего оратора. Asterisk будет посылать событие "
+"в интерфейс управления, идентифицируя канал, с которого идёт выступление. "
+"Оратор также идентифицируется на выходе в списке конференций при помощи "
+"команды в командной строке. Прмечание: если установлен и лицензирован модуль "
+"Conference Pro - эта опция всегда включена"
 
 #: Conferences.class.php:497
 msgid "Submit"
-msgstr "Применить"
+msgstr "Подтвердить"
 
 #: views/form.php:352
 msgid "Talker Detection"
-msgstr ""
+msgstr "Обнаружение оратора"
 
 #: views/form.php:325
 msgid "Talker Optimization"
-msgstr ""
+msgstr "Оптимизация оратора"
 
 #: views/form.php:258
 msgid ""
@@ -388,6 +384,12 @@ msgid ""
 "conference. If you set a value here the langauge will be forced irregardless "
 "of what language users have set"
 msgstr ""
+"Язык конференции. Если установлено в \"наследовать\" или не указан - язык "
+"будет наследован из переменной канала первого участника конференции. После "
+"того, как первый участник подключился, язык конференции не может быть "
+"изменён, пока все участники не покинут конференцию. Если же эта опция "
+"установлена, то будет использоваться язык, указанный здесь, в независимости "
+"от того какой язык был установлен у участника"
 
 #: assets/js/conferences.js:23
 msgid "The user and admin can not have the same pin code."
@@ -399,14 +401,17 @@ msgid ""
 "conference before being automatically ejected. 0 = disabled, default is "
 "21600 (6 hours)"
 msgstr ""
+"Укажите кол-во секунд через которое участник автоматически покинет "
+"конференцию. Значение ноль - отключено. Значение по умолчанию 21600 секунд ("
+"6 часов)"
 
 #: Conferences.class.php:99
 msgid "Timeout"
-msgstr ""
+msgstr "Время ожидания"
 
 #: Conferences.class.php:99
 msgid "Timeout of the conference."
-msgstr ""
+msgstr "Время ожидания конференции."
 
 #: views/form.php:340
 msgid ""
@@ -415,6 +420,11 @@ msgid ""
 "done on transmission and that received audio that is not registered as "
 "talking is omitted, causing no buildup in background noise."
 msgstr ""
+"Включает опцию оптимизации оратора. Если опция включена, то Asterisk "
+"определяет участников, которые не разговаривают в этот момент и заглушены, "
+"то есть нет необходимости кодировать аудио при передаче и приёме, и таким "
+"образом, отмеченные как незарегистрированные ораторы они не создают ненужный "
+"шум на заднем плане."
 
 #: conferences.i18n.php:16
 msgid ""
@@ -424,6 +434,11 @@ msgid ""
 "Asterisk 13 or lower. Enable this option to allow Conference Call recording "
 "to be enabled in Astrisk 13 or lower"
 msgstr ""
+"До появления Asterisk 14+ в конце записи конференции будет добавлена "
+"случайная метка времени, которая не может быть определена при постобработке "
+"вызовов. Таким образом, включение записи конференции отключается при "
+"использовании Asterisk 13 или ниже. Включите эту опцию, чтобы разрешить "
+"запись конференции в Astrisk 13 или ниже"
 
 #: views/form.php:151
 msgid "Use this number to dial into the conference."
@@ -431,23 +446,23 @@ msgstr "Чтобы позвонить в конференцию использу
 
 #: views/form.php:406
 msgid "User Count"
-msgstr ""
+msgstr "Подсчитывать кол-во участников"
 
 #: Conferences.class.php:92 views/form.php:187
 msgid "User PIN"
-msgstr ""
+msgstr "PIN пользователя"
 
 #: views/form.php:433
 msgid "User join/leave"
-msgstr ""
+msgstr "Пользователь присоединился/покинул"
 
 #: Conferences.class.php:97
 msgid "Users"
-msgstr ""
+msgstr "Пользователи"
 
 #: Conferences.class.php:97
 msgid "Users."
-msgstr ""
+msgstr "Пользователи."
 
 #: views/form.php:286
 msgid ""
@@ -455,7 +470,7 @@ msgid ""
 "conference"
 msgstr ""
 "Ждать организатора конференции (пользователь, администратор) пока он не "
-"подсоединится, чтобы начать конференцию"
+"присоединится для начала конференции"
 
 #: Conferences.class.php:31
 msgid "Warning! Extension"
@@ -466,6 +481,8 @@ msgid ""
 "When the conference leader (admin user) leaves all users will be kicked from "
 "the conference"
 msgstr ""
+"Когда организатор конференции (администратор) выйдет - все остальные "
+"участники автоматически покинут конференцию"
 
 #: views/form.php:276 views/form.php:303 views/form.php:330 views/form.php:357
 #: views/form.php:384 views/form.php:411 views/form.php:438 views/form.php:465
@@ -480,6 +497,10 @@ msgid ""
 "entered, the user will be prompted to enter a PIN.<br> This pin should be "
 "different than the Admin pin"
 msgstr ""
+"Вы можете заставить звонящего вводить пароль для подключения к "
+"конференции.<br><br>Это опциональная установка.<br><br>Если обязательный "
+"ввод PIN указан - пользователю будет предложено ввести PIN.<br> Этот PIN "
+"должен быть отличным от PIN Администратора"
 
 #: assets/js/conferences.js:22
 msgid ""
@@ -487,7 +508,7 @@ msgid ""
 "conference, otherwise you will be unable to unmute yourself"
 msgstr ""
 "Вы должны установть опцию 'Разрешить меню' в значение 'Yes', если не "
-"исппользуетеопции 'Организатор' или 'Админ' в вашей конференции, иначе вы не "
+"используете опции 'Организатор' или 'Админ' в вашей конференции, иначе вы не "
 "сможете сами включить микрофон"
 
 #: assets/js/conferences.js:21
@@ -495,8 +516,8 @@ msgid ""
 "You must set an admin PIN for the Conference Leader when selecting the "
 "leader wait option"
 msgstr ""
-"Вы должны ввести пин-код администратора если хотите использовать опцию "
-"ожидания модератора"
+"Вы должны ввести пин-код администратора, если хотите использовать опцию "
+"ожидания лидера"
 
 #: views/form.php:85
 msgid "default"
@@ -504,7 +525,7 @@ msgstr "по умолчанию"
 
 #: Conferences.class.php:125
 msgid "description is blank."
-msgstr ""
+msgstr "описание пусто."
 
 #: views/form.php:84
 msgid "inherit"
@@ -512,11 +533,11 @@ msgstr "наследованый"
 
 #: Conferences.class.php:31
 msgid "is not allowed for your account."
-msgstr "не разрешён к использованию в в этом аккаунте."
+msgstr "не разрешён к использованию для этого аккаунта."
 
 #: Conferences.class.php:95
 msgid "join message id"
-msgstr ""
+msgstr "id сообщения при входе"
 
 #~ msgid "Announce user join/leave"
 #~ msgstr "Анонсировать подсоединение/отключение участников"
