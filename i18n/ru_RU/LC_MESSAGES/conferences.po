@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: Framework 15\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-29 08:48+0000\n"
-"PO-Revision-Date: 2022-04-14 05:13+0000\n"
+"PO-Revision-Date: 2022-04-21 09:00+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "conferences/ru/>\n"
@@ -365,7 +365,7 @@ msgstr ""
 
 #: Conferences.class.php:497
 msgid "Submit"
-msgstr "Сохранить"
+msgstr "Принять"
 
 #: views/form.php:352
 msgid "Talker Detection"
