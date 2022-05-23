@@ -2,7 +2,7 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>16.0.7</version>
+	<version>17.0.1</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -10,13 +10,7 @@
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
 	<more-info>https://wiki.freepbx.org/display/F2/Conferences+Module</more-info>
 	<changelog>
-		*16.0.7* FREEI-4793 
-		*16.0.6* FREEI-3556 
-		*16.0.5* FREEI-3507: delete entries from restapps_rtapi_conferences db table when a conference extension is deleted 
-		*16.0.4* FREEI-3352: if /AMPUSER/ext/accountcode is set to u+userId, set it as the accountcode when a conference room is called 
-		*16.0.3* Packaging of ver 16.0.3
-		*16.0.2* Packaging of ver 16.0.2
-		*16.0.1alpha* 16.0.1 alpha release
+		*17.0.1alpha* 17.0.1 alpha release
 	</changelog>
 	<depends>
 		<module>recordings ge 13.0.2</module>
@@ -58,6 +52,6 @@
 		</printextensions>
 	</hooks>
 	<supported>
-		<version>16.0</version>
+		<version>17.0</version>
 	</supported>
 </module>
