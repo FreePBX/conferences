@@ -48,8 +48,8 @@ if(function_exists('recordings_list')) {
 		<div class="element-container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="">
-						<div class="form-group row">
+					<div class="row">
+						<div class="form-group">
 							<div class="col-md-3">
 								<label class="control-label" for="joinmsg_id">'._("Join Message").'</label>
 								<i class="fa fa-question-circle fpbx-help-icon" data-for="joinmsg_id"></i>
@@ -91,8 +91,8 @@ if(function_exists('music_list')) {
 		<div class="element-container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="">
-						<div class="form-group row">
+					<div class="row">
+						<div class="form-group">
 							<div class="col-md-3">
 								<label class="control-label" for="music">'. _("Music on Hold Class").'</label>
 								<i class="fa fa-question-circle fpbx-help-icon" data-for="music"></i>
@@ -133,8 +133,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="account"><?php echo _("Conference Number") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="account"></i>
@@ -157,8 +157,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="name"><?php echo _("Conference Name") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="name"></i>
@@ -181,8 +181,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="userpin"><?php echo _("User PIN") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="userpin"></i>
@@ -205,8 +205,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="adminpin"><?php echo _("Admin PIN") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="adminpin"></i>
@@ -229,8 +229,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="language"><?php echo _("Language")?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="language"></i>
@@ -265,8 +265,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="opt_w"><?php echo _("Leader Wait") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_w"></i>
@@ -292,8 +292,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="opt_x"><?php echo _("Leader Leave") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_x"></i>
@@ -319,8 +319,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="opt_o"><?php echo _("Talker Optimization") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_o"></i>
@@ -346,8 +346,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="opt_T"><?php echo _("Talker Detection") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_T"></i>
@@ -373,8 +373,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="opt_q"><?php echo _("Quiet Mode") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_q"></i>
@@ -400,8 +400,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="opt_c"><?php echo _("User Count") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_c"></i>
@@ -427,8 +427,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="opt_I"><?php echo _("User join/leave") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_I"></i>
@@ -454,8 +454,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="opt_MH"><?php echo _("Music on Hold") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_MH"></i>
@@ -482,8 +482,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="opt_s"><?php echo _("Allow Menu") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_s"></i>
@@ -509,8 +509,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="opt_r"><?php echo _("Record Conference") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_r"></i>
@@ -536,8 +536,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="users"><?php echo _("Maximum Participants") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="users"></i>
@@ -560,8 +560,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="opt_m"><?php echo _("Mute on Join") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_m"></i>
@@ -587,8 +587,8 @@ $module_hook = \moduleHook::create();
 <div class="element-container <?php echo $class1370?>">
 	<div class="row">
 		<div class="col-md-12">
-			<div class="">
-				<div class="form-group row">
+			<div class="row">
+				<div class="form-group">
 					<div class="col-md-3">
 						<label class="control-label" for="timeout"><?php echo _("Member Timeout") ?></label>
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="timeout"></i>
