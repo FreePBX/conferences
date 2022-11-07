@@ -241,14 +241,14 @@ function conferences_get_config($engine) {
 					$ext->add($contextname, 'STARTMEETME', '', new ext_meetme('${MEETME_ROOMNUM}','${MEETME_OPTS}','${PIN}'));
 				}
 
-				$ext->add($contextname, 'STARTMEETME', '', new ext_gosub('1','s','sub-hangupcall'));
+				$ext->add($contextname, 'STARTMEETME', '', new ext_macro('hangupcall'));
 
 				//meetme full
 				$ext->add($contextname, 'MEETMEFULL', '', new ext_playback('im-sorry&conf-full&goodbye'));
-				$ext->add($contextname, 'MEETMEFULL', '', new ext_gosub('1','s','sub-hangupcall'));
+				$ext->add($contextname, 'MEETMEFULL', '', new ext_macro('hangupcall'));
 
 				// hangup for whole context
-				$ext->add($contextname, 'h', '', new ext_gosub('1','s','sub-hangupcall'));
+				$ext->add($contextname, 'h', '', new ext_macro('hangupcall'));
 
 				foreach($conflist as $room) {
 					$roomnum = $room['exten'];
@@ -265,7 +265,7 @@ function conferences_get_config($engine) {
 						$hints[] = $hint_pre . ":" . $roomnum;
 					}
 					// entry point
-					$ext->add($contextname, $roomnum, '', new ext_gosub('1','s','sub-user-callerid'));
+					$ext->add($contextname, $roomnum, '', new ext_macro('user-callerid'));
 					// added FREEPBX-14652 : set languge when dialed the particular conf no...
 					$ext->add($contextname, $roomnum, '', new ext_execif('$["${DB(CONFERENCE/'.$roomnum.'/language)}" != ""]','Set','CHANNEL(language)=${DB(CONFERENCE/'.$roomnum.'/language)}'));
 					$ext->add($contextname, $roomnum, '', new ext_setvar('MEETME_ROOMNUM',$roomnum));
@@ -349,7 +349,7 @@ function conferences_get_config($engine) {
 				unset($fcc);
 
 				if ($conf_code != '') {
-					$ext->add($contextname, $conf_code, '', new ext_gosub('1','s','sub-hangupcall'));
+					$ext->add($contextname, $conf_code, '', new ext_macro('hangupcall'));
 					if ($amp_conf['USEDEVSTATE']) {
 						$ext->addHint($contextname, $conf_code, implode('&', $hints));
 					}
