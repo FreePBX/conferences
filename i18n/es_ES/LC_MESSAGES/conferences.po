@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: FreePBX - módulo conferences module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-30 06:08+0000\n"
-"PO-Revision-Date: 2021-02-08 22:00+0000\n"
+"PO-Revision-Date: 2023-02-11 19:00+0000\n"
 "Last-Translator: Javier Pastor <jpastor@cerebelum.net>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
 "conferences/es/>\n"
@@ -135,11 +135,11 @@ msgstr "Descripción"
 
 #: Conferences.class.php:94
 msgid "Desctiption"
-msgstr ""
+msgstr "Descripción"
 
 #: Conferences.class.php:94
 msgid "Desctiption of the conference."
-msgstr ""
+msgstr "Descripción de la conferencia."
 
 #: page.conferences.php:17
 msgid "Edit"
@@ -291,11 +291,11 @@ msgstr "Ninguno"
 
 #: Conferences.class.php:122
 msgid "Option of the Conference is missing."
-msgstr ""
+msgstr "Falta la opción de la Conferencia."
 
 #: Conferences.class.php:91
 msgid "Option of the Conference."
-msgstr ""
+msgstr "Opción de la Conferencia."
 
 #: Conferences.class.php:91
 msgid "Options"
@@ -451,6 +451,12 @@ msgid ""
 "Asterisk 13 or lower. Enable this option to allow Conference Call recording "
 "to be enabled in Astrisk 13 or lower"
 msgstr ""
+"Hasta la versión 14+ de Asterisk, se agregaba una marca de tiempo aleatoria "
+"al final de la grabación de la llamada de conferencia, lo que dificultaba su "
+"gestión posterior. Por esa razón, la grabación de llamadas de conferencia "
+"está desactivada en caso de usar Asterisk 13 o versiones anteriores. Para "
+"permitir la grabación de llamadas de conferencia en Asterisk 13 o versiones "
+"anteriores, debe habilitar esta opción"
 
 #: views/form.php:151
 msgid "Use this number to dial into the conference."
