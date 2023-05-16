@@ -10,6 +10,7 @@ $request = $_REQUEST;
 $heading = _("Conferences");
 $request['view'] = !empty($request['view']) ? $request['view'] : "";
 $usagehtml = '';
+$content = '';
 switch($request['view']){
 	case "form":
 		if($request['extdisplay'] != ''){
