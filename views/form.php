@@ -35,6 +35,7 @@ if ($extdisplay != ""){
 if ($extdisplay != ""){
 	$orig_accounthtml =	'<input type="hidden" name="orig_account" value="'.$extdisplay.'">';
 }
+$mohopts = '';
 if(function_exists('recordings_list')) {
 	$tresults = recordings_list();
 	$jmopts = '<option value="">'._("None")."</option>";
@@ -127,7 +128,7 @@ $module_hook = \moduleHook::create();
 <form autocomplete="off" name="editMM" id="editMM" class="fpbx-submit" action="?display=conferences" method="post" onsubmit="return checkConf();" data-fpbx-delete="?display=conferences&amp;action=delete&amp;extdisplay=<?php echo $extdisplay ?>">
 <input type="hidden" name="action" id="action" value="<?php echo ($extdisplay != '' ? 'edit' : 'add') ?>">
 <input type="hidden" name="options" id="options" value="<?php echo $options; ?>">
-<?php echo $orig_accounthtml ?>
+<?php echo $orig_accounthtml ?? "" ?>
 
 <!--Conference Number-->
 <div class="element-container">
