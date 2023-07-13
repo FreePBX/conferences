@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-13 04:17+0000\n"
+"POT-Creation-Date: 2023-07-13 12:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,22 +18,22 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: views/grid.php:34
+#: views/grid.php:35
 msgid "Actions"
 msgstr ""
 
-#: page.conferences.php:19
-#: views/grid.php:27
-#: views/rnav.php:20
+#: page.conferences.php:20
+#: views/grid.php:28
+#: views/rnav.php:21
 msgid "Add"
 msgstr ""
 
 #: Conferences.class.php:96
-#: views/form.php:211
+#: views/form.php:212
 msgid "Admin PIN"
 msgstr ""
 
-#: views/form.php:488
+#: views/form.php:489
 msgid "Allow Menu"
 msgstr ""
 
@@ -42,13 +42,13 @@ msgid ""
 "Allow creation of conference rooms where multiple people can talk together"
 msgstr ""
 
-#: views/form.php:448
+#: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
 "their name before joining the conference"
 msgstr ""
 
-#: views/form.php:421
+#: views/form.php:422
 msgid "Announce user(s) count on joining conference"
 msgstr ""
 
@@ -62,16 +62,16 @@ msgstr ""
 
 #: Conferences.class.php:203
 #: Conferences.class.php:459
-#: views/grid.php:32
-#: views/rnav.php:25
+#: views/grid.php:33
+#: views/rnav.php:26
 msgid "Conference"
 msgstr ""
 
-#: views/form.php:163
+#: views/form.php:164
 msgid "Conference Name"
 msgstr ""
 
-#: views/form.php:139
+#: views/form.php:140
 msgid "Conference Number"
 msgstr ""
 
@@ -110,7 +110,7 @@ msgstr ""
 msgid "Conferences"
 msgstr ""
 
-#: views/form.php:121
+#: views/form.php:122
 msgid "Conflicting Extensions"
 msgstr ""
 
@@ -118,8 +118,8 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: views/grid.php:33
-#: views/rnav.php:26
+#: views/grid.php:34
+#: views/rnav.php:27
 msgid "Description"
 msgstr ""
 
@@ -131,15 +131,15 @@ msgstr ""
 msgid "Desctiption of the conference."
 msgstr ""
 
-#: page.conferences.php:17
+#: page.conferences.php:18
 msgid "Edit"
 msgstr ""
 
-#: views/form.php:475
+#: views/form.php:476
 msgid "Enable Music On Hold when the conference has a single caller"
 msgstr ""
 
-#: views/form.php:223
+#: views/form.php:224
 msgid ""
 "Enter a PIN number for the admin user.<br><br>This setting is optional "
 "unless the 'leader wait' option is in use, then this PIN will identify the "
@@ -154,7 +154,7 @@ msgstr ""
 msgid "Force Allow Conference Recording"
 msgstr ""
 
-#: views/form.php:175
+#: views/form.php:176
 msgid "Give this conference a brief name to help you identify it."
 msgstr ""
 
@@ -162,11 +162,11 @@ msgstr ""
 msgid "Import/Export Conferences"
 msgstr ""
 
-#: views/form.php:241
+#: views/form.php:242
 msgid "Inherit"
 msgstr ""
 
-#: views/form.php:54
+#: views/form.php:55
 msgid "Join Message"
 msgstr ""
 
@@ -175,7 +175,7 @@ msgid "Join message id."
 msgstr ""
 
 #: Conferences.class.php:101
-#: views/form.php:235
+#: views/form.php:236
 msgid "Language"
 msgstr ""
 
@@ -183,31 +183,31 @@ msgstr ""
 msgid "Language."
 msgstr ""
 
-#: views/form.php:298
+#: views/form.php:299
 msgid "Leader Leave"
 msgstr ""
 
-#: views/form.php:271
+#: views/form.php:272
 msgid "Leader Wait"
 msgstr ""
 
-#: views/rnav.php:19
+#: views/rnav.php:20
 msgid "List Conferences"
 msgstr ""
 
-#: views/form.php:554
+#: views/form.php:555
 msgid "Maximum Number of users allowed to join this conference."
 msgstr ""
 
-#: views/form.php:542
+#: views/form.php:543
 msgid "Maximum Participants"
 msgstr ""
 
-#: views/form.php:593
+#: views/form.php:594
 msgid "Member Timeout"
 msgstr ""
 
-#: views/form.php:68
+#: views/form.php:69
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>To "
 "add additional recordings please use the \"System Recordings\" MENU above"
@@ -217,7 +217,7 @@ msgstr ""
 msgid "Music"
 msgstr ""
 
-#: views/form.php:111
+#: views/form.php:112
 msgid ""
 "Music (or Commercial) played to the caller while they wait in line for the "
 "conference to start. Choose \"inherit\" if you want the MoH class to be what "
@@ -225,11 +225,11 @@ msgid ""
 "defined in the \"Music on Hold\" above."
 msgstr ""
 
-#: views/form.php:460
+#: views/form.php:461
 msgid "Music on Hold"
 msgstr ""
 
-#: views/form.php:97
+#: views/form.php:98
 msgid "Music on Hold Class"
 msgstr ""
 
@@ -237,36 +237,36 @@ msgstr ""
 msgid "Music."
 msgstr ""
 
-#: views/form.php:581
+#: views/form.php:582
 msgid ""
 "Mute everyone when they initially join the conference. Please note that if "
 "you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
 "Yes to unmute yourself"
 msgstr ""
 
-#: views/form.php:566
+#: views/form.php:567
 msgid "Mute on Join"
 msgstr ""
 
-#: views/form.php:278
-#: views/form.php:305
-#: views/form.php:332
-#: views/form.php:359
-#: views/form.php:386
-#: views/form.php:413
-#: views/form.php:440
-#: views/form.php:467
-#: views/form.php:495
-#: views/form.php:522
-#: views/form.php:573
+#: views/form.php:279
+#: views/form.php:306
+#: views/form.php:333
+#: views/form.php:360
+#: views/form.php:387
+#: views/form.php:414
+#: views/form.php:441
+#: views/form.php:468
+#: views/form.php:496
+#: views/form.php:523
+#: views/form.php:574
 msgid "No"
 msgstr ""
 
-#: views/form.php:546
+#: views/form.php:547
 msgid "No Limit"
 msgstr ""
 
-#: views/form.php:40
+#: views/form.php:41
 msgid "None"
 msgstr ""
 
@@ -298,33 +298,33 @@ msgstr ""
 msgid "Please enter a valid Conference Number"
 msgstr ""
 
-#: views/form.php:554
+#: views/form.php:555
 msgid ""
 "Please note depending on hardware and settings a higher limit may cause call "
 "quality issues."
 msgstr ""
 
-#: views/form.php:503
+#: views/form.php:504
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
 msgstr ""
 
-#: views/form.php:379
+#: views/form.php:380
 msgid "Quiet Mode"
 msgstr ""
 
-#: views/form.php:394
+#: views/form.php:395
 msgid "Quiet mode (do not play enter/leave sounds)"
 msgstr ""
 
-#: views/form.php:515
+#: views/form.php:516
 msgid "Record Conference"
 msgstr ""
 
-#: views/form.php:530
+#: views/form.php:531
 msgid "Record the conference call"
 msgstr ""
 
-#: views/form.php:530
+#: views/form.php:531
 #, php-format
 msgid ""
 "Record the conference call. Note: This is broken when using %s or lower, and "
@@ -338,7 +338,7 @@ msgstr ""
 msgid "Reset"
 msgstr ""
 
-#: views/form.php:367
+#: views/form.php:368
 msgid ""
 "Sets talker detection. Asterisk will send events on the manager interface "
 "identifying the channel that is talking. The talker will also be identified "
@@ -350,15 +350,15 @@ msgstr ""
 msgid "Submit"
 msgstr ""
 
-#: views/form.php:352
+#: views/form.php:353
 msgid "Talker Detection"
 msgstr ""
 
-#: views/form.php:325
+#: views/form.php:326
 msgid "Talker Optimization"
 msgstr ""
 
-#: views/form.php:258
+#: views/form.php:259
 msgid ""
 "The language for the conference. If set to inherit or blank the language "
 "will be inherited from the first person who joins the conference esentially "
@@ -372,7 +372,7 @@ msgstr ""
 msgid "The user and admin can not have the same pin code."
 msgstr ""
 
-#: views/form.php:605
+#: views/form.php:606
 msgid ""
 "This specifies the number of seconds that the participant may stay in the "
 "conference before being automatically ejected. 0 = disabled, default is "
@@ -387,7 +387,7 @@ msgstr ""
 msgid "Timeout of the conference."
 msgstr ""
 
-#: views/form.php:340
+#: views/form.php:341
 msgid ""
 "Turns on talker optimization. With talker optimization, Asterisk treats "
 "talkers who are not speaking as being muted, meaning that no encoding is "
@@ -404,20 +404,20 @@ msgid ""
 "to be enabled in Astrisk 13 or lower"
 msgstr ""
 
-#: views/form.php:151
+#: views/form.php:152
 msgid "Use this number to dial into the conference."
 msgstr ""
 
-#: views/form.php:406
+#: views/form.php:407
 msgid "User Count"
 msgstr ""
 
 #: Conferences.class.php:95
-#: views/form.php:187
+#: views/form.php:188
 msgid "User PIN"
 msgstr ""
 
-#: views/form.php:433
+#: views/form.php:434
 msgid "User join/leave"
 msgstr ""
 
@@ -429,7 +429,7 @@ msgstr ""
 msgid "Users."
 msgstr ""
 
-#: views/form.php:286
+#: views/form.php:287
 msgid ""
 "Wait until the conference leader (admin user) arrives before starting the "
 "conference"
@@ -439,27 +439,27 @@ msgstr ""
 msgid "Warning! Extension"
 msgstr ""
 
-#: views/form.php:313
+#: views/form.php:314
 msgid ""
 "When the conference leader (admin user) leaves all users will be kicked from "
 "the conference"
 msgstr ""
 
-#: views/form.php:276
-#: views/form.php:303
-#: views/form.php:330
-#: views/form.php:357
-#: views/form.php:384
-#: views/form.php:411
-#: views/form.php:438
-#: views/form.php:465
-#: views/form.php:493
-#: views/form.php:520
-#: views/form.php:571
+#: views/form.php:277
+#: views/form.php:304
+#: views/form.php:331
+#: views/form.php:358
+#: views/form.php:385
+#: views/form.php:412
+#: views/form.php:439
+#: views/form.php:466
+#: views/form.php:494
+#: views/form.php:521
+#: views/form.php:572
 msgid "Yes"
 msgstr ""
 
-#: views/form.php:199
+#: views/form.php:200
 msgid ""
 "You can require callers to enter a password before they can enter this "
 "conference.<br><br>This setting is optional.<br><br>If either PIN is "
@@ -479,7 +479,7 @@ msgid ""
 "leader wait option"
 msgstr ""
 
-#: views/form.php:85
+#: views/form.php:86
 msgid "default"
 msgstr ""
 
@@ -487,7 +487,7 @@ msgstr ""
 msgid "description is blank."
 msgstr ""
 
-#: views/form.php:84
+#: views/form.php:85
 msgid "inherit"
 msgstr ""
 

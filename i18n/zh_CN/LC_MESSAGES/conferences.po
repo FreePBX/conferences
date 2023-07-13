@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.5 Chinese Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-30 06:07+0000\n"
+"POT-Creation-Date: 2023-07-13 12:14+0000\n"
 "PO-Revision-Date: 2015-10-19 14:43+0200\n"
 "Last-Translator: james <zhulizhong@gmail.com>\n"
 "Language-Team: Simplified Chinese <http://weblate.freepbx.org/projects/"
@@ -35,19 +35,19 @@ msgstr ""
 "X-Poedit-Country: CHINA\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: views/grid.php:34
+#: views/grid.php:35
 msgid "Actions"
 msgstr "命令"
 
-#: page.conferences.php:19 views/grid.php:27 views/rnav.php:20
+#: page.conferences.php:20 views/grid.php:28 views/rnav.php:21
 msgid "Add"
 msgstr "添加"
 
-#: Conferences.class.php:96 views/form.php:211
+#: Conferences.class.php:96 views/form.php:212
 msgid "Admin PIN"
 msgstr "管理员密码"
 
-#: views/form.php:488
+#: views/form.php:489
 msgid "Allow Menu"
 msgstr "支持的菜单"
 
@@ -56,13 +56,13 @@ msgid ""
 "Allow creation of conference rooms where multiple people can talk together"
 msgstr ""
 
-#: views/form.php:448
+#: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
 "their name before joining the conference"
 msgstr ""
 
-#: views/form.php:421
+#: views/form.php:422
 msgid "Announce user(s) count on joining conference"
 msgstr "通告加入会议的用户数量"
 
@@ -74,16 +74,16 @@ msgstr ""
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:203 Conferences.class.php:459 views/grid.php:32
-#: views/rnav.php:25
+#: Conferences.class.php:203 Conferences.class.php:459 views/grid.php:33
+#: views/rnav.php:26
 msgid "Conference"
 msgstr "会议"
 
-#: views/form.php:163
+#: views/form.php:164
 msgid "Conference Name"
 msgstr "会议名称"
 
-#: views/form.php:139
+#: views/form.php:140
 msgid "Conference Number"
 msgstr "会议号码"
 
@@ -118,7 +118,7 @@ msgstr "会议：%s"
 msgid "Conferences"
 msgstr "语音会议"
 
-#: views/form.php:121
+#: views/form.php:122
 msgid "Conflicting Extensions"
 msgstr "分机号冲突"
 
@@ -126,7 +126,7 @@ msgstr "分机号冲突"
 msgid "Delete"
 msgstr "删除"
 
-#: views/grid.php:33 views/rnav.php:26
+#: views/grid.php:34 views/rnav.php:27
 msgid "Description"
 msgstr "描述"
 
@@ -138,15 +138,15 @@ msgstr ""
 msgid "Desctiption of the conference."
 msgstr ""
 
-#: page.conferences.php:17
+#: page.conferences.php:18
 msgid "Edit"
 msgstr "编辑"
 
-#: views/form.php:475
+#: views/form.php:476
 msgid "Enable Music On Hold when the conference has a single caller"
 msgstr "在会议只有一个用户参加时，启用等待音乐"
 
-#: views/form.php:223
+#: views/form.php:224
 msgid ""
 "Enter a PIN number for the admin user.<br><br>This setting is optional "
 "unless the 'leader wait' option is in use, then this PIN will identify the "
@@ -161,7 +161,7 @@ msgstr "分机"
 msgid "Force Allow Conference Recording"
 msgstr ""
 
-#: views/form.php:175
+#: views/form.php:176
 msgid "Give this conference a brief name to help you identify it."
 msgstr "为此会议取一个简短的名称以帮助你标识它。"
 
@@ -169,11 +169,11 @@ msgstr "为此会议取一个简短的名称以帮助你标识它。"
 msgid "Import/Export Conferences"
 msgstr ""
 
-#: views/form.php:241
+#: views/form.php:242
 msgid "Inherit"
 msgstr ""
 
-#: views/form.php:54
+#: views/form.php:55
 msgid "Join Message"
 msgstr "加入信息"
 
@@ -181,7 +181,7 @@ msgstr "加入信息"
 msgid "Join message id."
 msgstr ""
 
-#: Conferences.class.php:101 views/form.php:235
+#: Conferences.class.php:101 views/form.php:236
 msgid "Language"
 msgstr ""
 
@@ -189,31 +189,31 @@ msgstr ""
 msgid "Language."
 msgstr ""
 
-#: views/form.php:298
+#: views/form.php:299
 msgid "Leader Leave"
 msgstr ""
 
-#: views/form.php:271
+#: views/form.php:272
 msgid "Leader Wait"
 msgstr "等待主持人"
 
-#: views/rnav.php:19
+#: views/rnav.php:20
 msgid "List Conferences"
 msgstr "会议列表"
 
-#: views/form.php:554
+#: views/form.php:555
 msgid "Maximum Number of users allowed to join this conference."
 msgstr "允许最多会议创建人数"
 
-#: views/form.php:542
+#: views/form.php:543
 msgid "Maximum Participants"
 msgstr "最多会议代表"
 
-#: views/form.php:593
+#: views/form.php:594
 msgid "Member Timeout"
 msgstr ""
 
-#: views/form.php:68
+#: views/form.php:69
 msgid ""
 "Message to be played to the caller before joining the conference.<br><br>To "
 "add additional recordings please use the \"System Recordings\" MENU above"
@@ -223,7 +223,7 @@ msgstr ""
 msgid "Music"
 msgstr ""
 
-#: views/form.php:111
+#: views/form.php:112
 msgid ""
 "Music (or Commercial) played to the caller while they wait in line for the "
 "conference to start. Choose \"inherit\" if you want the MoH class to be what "
@@ -231,11 +231,11 @@ msgid ""
 "defined in the \"Music on Hold\" above."
 msgstr ""
 
-#: views/form.php:460
+#: views/form.php:461
 msgid "Music on Hold"
 msgstr "音乐等待"
 
-#: views/form.php:97
+#: views/form.php:98
 msgid "Music on Hold Class"
 msgstr "音乐等待类别"
 
@@ -243,28 +243,28 @@ msgstr "音乐等待类别"
 msgid "Music."
 msgstr ""
 
-#: views/form.php:581
+#: views/form.php:582
 msgid ""
 "Mute everyone when they initially join the conference. Please note that if "
 "you do not have 'Leader Wait' set to yes you must have 'Allow Menu' set to "
 "Yes to unmute yourself"
 msgstr ""
 
-#: views/form.php:566
+#: views/form.php:567
 msgid "Mute on Join"
 msgstr "静音"
 
-#: views/form.php:278 views/form.php:305 views/form.php:332 views/form.php:359
-#: views/form.php:386 views/form.php:413 views/form.php:440 views/form.php:467
-#: views/form.php:495 views/form.php:522 views/form.php:573
+#: views/form.php:279 views/form.php:306 views/form.php:333 views/form.php:360
+#: views/form.php:387 views/form.php:414 views/form.php:441 views/form.php:468
+#: views/form.php:496 views/form.php:523 views/form.php:574
 msgid "No"
 msgstr "否"
 
-#: views/form.php:546
+#: views/form.php:547
 msgid "No Limit"
 msgstr "无限制"
 
-#: views/form.php:40
+#: views/form.php:41
 msgid "None"
 msgstr "无"
 
@@ -296,33 +296,33 @@ msgstr "请输入有效的会议名称"
 msgid "Please enter a valid Conference Number"
 msgstr "请输入有效的会议号码"
 
-#: views/form.php:554
+#: views/form.php:555
 msgid ""
 "Please note depending on hardware and settings a higher limit may cause call "
 "quality issues."
 msgstr ""
 
-#: views/form.php:503
+#: views/form.php:504
 msgid "Present Menu (user or admin) when '*' is received ('send' to menu)"
 msgstr "在收到“*”（“发送”菜单）后，向用户或管理员展示菜单"
 
-#: views/form.php:379
+#: views/form.php:380
 msgid "Quiet Mode"
 msgstr "安静模式"
 
-#: views/form.php:394
+#: views/form.php:395
 msgid "Quiet mode (do not play enter/leave sounds)"
 msgstr "安静模式（不播放入会/离会的提示音）"
 
-#: views/form.php:515
+#: views/form.php:516
 msgid "Record Conference"
 msgstr "会议录音"
 
-#: views/form.php:530
+#: views/form.php:531
 msgid "Record the conference call"
 msgstr "为会议录音"
 
-#: views/form.php:530
+#: views/form.php:531
 #, php-format
 msgid ""
 "Record the conference call. Note: This is broken when using %s or lower, and "
@@ -336,7 +336,7 @@ msgstr ""
 msgid "Reset"
 msgstr "重设"
 
-#: views/form.php:367
+#: views/form.php:368
 msgid ""
 "Sets talker detection. Asterisk will send events on the manager interface "
 "identifying the channel that is talking. The talker will also be identified "
@@ -348,15 +348,15 @@ msgstr ""
 msgid "Submit"
 msgstr "提交"
 
-#: views/form.php:352
+#: views/form.php:353
 msgid "Talker Detection"
 msgstr "发言人检测"
 
-#: views/form.php:325
+#: views/form.php:326
 msgid "Talker Optimization"
 msgstr "发言人优化"
 
-#: views/form.php:258
+#: views/form.php:259
 msgid ""
 "The language for the conference. If set to inherit or blank the language "
 "will be inherited from the first person who joins the conference esentially "
@@ -370,7 +370,7 @@ msgstr ""
 msgid "The user and admin can not have the same pin code."
 msgstr "用户和管理员的秘密不能相同。"
 
-#: views/form.php:605
+#: views/form.php:606
 msgid ""
 "This specifies the number of seconds that the participant may stay in the "
 "conference before being automatically ejected. 0 = disabled, default is "
@@ -385,7 +385,7 @@ msgstr ""
 msgid "Timeout of the conference."
 msgstr ""
 
-#: views/form.php:340
+#: views/form.php:341
 msgid ""
 "Turns on talker optimization. With talker optimization, Asterisk treats "
 "talkers who are not speaking as being muted, meaning that no encoding is "
@@ -402,19 +402,19 @@ msgid ""
 "to be enabled in Astrisk 13 or lower"
 msgstr ""
 
-#: views/form.php:151
+#: views/form.php:152
 msgid "Use this number to dial into the conference."
 msgstr "拨打此号码以参加会议。"
 
-#: views/form.php:406
+#: views/form.php:407
 msgid "User Count"
 msgstr "用户计数"
 
-#: Conferences.class.php:95 views/form.php:187
+#: Conferences.class.php:95 views/form.php:188
 msgid "User PIN"
 msgstr "用户密码"
 
-#: views/form.php:433
+#: views/form.php:434
 msgid "User join/leave"
 msgstr "用户加入/离开"
 
@@ -426,7 +426,7 @@ msgstr ""
 msgid "Users."
 msgstr ""
 
-#: views/form.php:286
+#: views/form.php:287
 msgid ""
 "Wait until the conference leader (admin user) arrives before starting the "
 "conference"
@@ -436,19 +436,19 @@ msgstr "等待主持人（管理员用户）加入后才开始会议"
 msgid "Warning! Extension"
 msgstr "警告！在你的帐号下，无法使用分机"
 
-#: views/form.php:313
+#: views/form.php:314
 msgid ""
 "When the conference leader (admin user) leaves all users will be kicked from "
 "the conference"
 msgstr ""
 
-#: views/form.php:276 views/form.php:303 views/form.php:330 views/form.php:357
-#: views/form.php:384 views/form.php:411 views/form.php:438 views/form.php:465
-#: views/form.php:493 views/form.php:520 views/form.php:571
+#: views/form.php:277 views/form.php:304 views/form.php:331 views/form.php:358
+#: views/form.php:385 views/form.php:412 views/form.php:439 views/form.php:466
+#: views/form.php:494 views/form.php:521 views/form.php:572
 msgid "Yes"
 msgstr "是"
 
-#: views/form.php:199
+#: views/form.php:200
 msgid ""
 "You can require callers to enter a password before they can enter this "
 "conference.<br><br>This setting is optional.<br><br>If either PIN is "
@@ -468,7 +468,7 @@ msgid ""
 "leader wait option"
 msgstr "如果你启用的等待主持人的选项，就必须为会议主持人设置一个管理员PIN码"
 
-#: views/form.php:85
+#: views/form.php:86
 msgid "default"
 msgstr "默认"
 
@@ -476,7 +476,7 @@ msgstr "默认"
 msgid "description is blank."
 msgstr ""
 
-#: views/form.php:84
+#: views/form.php:85
 msgid "inherit"
 msgstr "继承"
 
