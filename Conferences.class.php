@@ -6,7 +6,7 @@ use FreePBX_Helpers;
 use PDO;
 
 class Conferences extends FreePBX_Helpers implements BMO {
-	private $module = 'Conferences';
+	private string $module = 'Conferences';
 
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
@@ -24,12 +24,12 @@ class Conferences extends FreePBX_Helpers implements BMO {
 		isset($request['view'])?$view = $request['view']:$view='form';
 		//the extension we are currently displaying
 
-		$account = isset($request['account']) ? $request['account'] : '';
+		$account = $request['account'] ?? '';
 		$extdisplay = isset($request['extdisplay']) && $request['extdisplay'] != '' ? $request['extdisplay'] : $account;
 
-		$orig_account = isset($request['orig_account']) ? $request['orig_account'] : '';
-		$music = isset($request['music']) ? $request['music'] : '';
-		$users = isset($request['users']) ? $request['users'] : '0';
+		$orig_account = $request['orig_account'] ?? '';
+		$music = $request['music'] ?? '';
+		$users = $request['users'] ?? '0';
 
 		//check if the extension is within range for this user
 		if ($account != "" && !checkRange($account)){
@@ -39,7 +39,7 @@ class Conferences extends FreePBX_Helpers implements BMO {
 			//if submitting form, update database
 			switch ($action) {
 				case "add":
-					$conflict_url = array();
+					$conflict_url = [];
 					$usage_arr = framework_check_extension_usage($account);
 					if (!empty($usage_arr)) {
 						$conflict_url = framework_display_extension_usage_alert($usage_arr);
@@ -52,8 +52,8 @@ class Conferences extends FreePBX_Helpers implements BMO {
 						$sql = "DELETE FROM restapps_rtapi_conferences WHERE conferenceNumber = ?";
 						$sth = $this->db->prepare($sql);
 						try {
-							$sth->execute(array($extdisplay));
-						} catch(\Exception $e) {
+							$sth->execute([$extdisplay]);
+						} catch(\Exception) {
 							return false;
 						}
 					}
@@ -64,7 +64,7 @@ class Conferences extends FreePBX_Helpers implements BMO {
 				case "edit":  //just delete and re-add
 					//check to see if the room number has changed
 					if ($orig_account != '' && $orig_account != $account) {
-						$conflict_url = array();
+						$conflict_url = [];
 						$usage_arr = framework_check_extension_usage($account);
 						if (!empty($usage_arr)) {
 							$conflict_url = framework_display_extension_usage_alert($usage_arr);
@@ -143,14 +143,10 @@ class Conferences extends FreePBX_Helpers implements BMO {
 					$this->deleteConference($data["exten"]);
 					$this->addConference($data["exten"],$data["description"],$data["userpin"],$data["adminpin"],$data["options"],$data["joinmsg_id"],$data["music"],$data["users"],$data["language"],$data["timeout"]);
 				}
-				$ret = array(
-					'status' => true,
-				);
+				$ret = ['status' => true];
 				needreload();
 			}else{
-				$ret = array(
-					'status' => false,
-				);
+				$ret = ['status' => false];
 			}
 		}
 		return $ret;
@@ -174,7 +170,7 @@ class Conferences extends FreePBX_Helpers implements BMO {
 
 	public function getRightNav($request) {
 		if(isset($request['view']) && $request['view'] == "form") {
-			return load_view(__DIR__."/views/rnav.php",array());
+			return load_view(__DIR__."/views/rnav.php",[]);
 		} else {
 			return '';
 		}
@@ -189,18 +185,18 @@ class Conferences extends FreePBX_Helpers implements BMO {
 		if(!ctype_digit($query)) {
 			$sql = "SELECT * FROM meetme WHERE description LIKE ?";
 			$sth = $this->Database->prepare($sql);
-			$sth->execute(array("%".$query."%"));
+			$sth->execute(["%".$query."%"]);
 			$rows = $sth->fetchAll(PDO::FETCH_ASSOC);
 			foreach($rows as $row) {
-				$results[] = array("text" => $row['description'] . " (".$row['exten'].")", "type" => "get", "dest" => "?display=conferences&view=form&extdisplay=".$row['exten']);
+				$results[] = ["text" => $row['description'] . " (".$row['exten'].")", "type" => "get", "dest" => "?display=conferences&view=form&extdisplay=".$row['exten']];
 			}
 		} else {
 			$sql = "SELECT * FROM meetme WHERE exten LIKE ?";
 			$sth = $this->Database->prepare($sql);
-			$sth->execute(array("%".$query."%"));
+			$sth->execute(["%".$query."%"]);
 			$rows = $sth->fetchAll(PDO::FETCH_ASSOC);
 			foreach($rows as $row) {
-				$results[] = array("text" => _("Conference")." ".$row['exten'], "type" => "get", "dest" => "?display=conferences&view=form&extdisplay=".$row['exten']);
+				$results[] = ["text" => _("Conference")." ".$row['exten'], "type" => "get", "dest" => "?display=conferences&view=form&extdisplay=".$row['exten']];
 			}
 		}
 	}
@@ -215,11 +211,11 @@ class Conferences extends FreePBX_Helpers implements BMO {
 		$leaderleave = method_exists($this,"getConfig") && $this->getConfig("leaderleave");
 		foreach($confs as $conf) {
 			$conf = $this->getConference($conf[0]);
-			$optselect = strpos($conf['options'], "i");
+			$optselect = strpos((string) $conf['options'], "i");
 			if($optselect) {
-				$conf['options'] = str_replace("i","I",$conf['options']);
+				$conf['options'] = str_replace("i","I",(string) $conf['options']);
 			}
-			if(!$leaderleave && strpos($conf['options'], "x") === false) {
+			if(!$leaderleave && !str_contains((string) $conf['options'], "x")) {
 				$conf['options'] .= 'x';
 			}
 			$this->updateConferenceSettingById($conf['exten'],'options',$conf['options']);
@@ -238,27 +234,27 @@ class Conferences extends FreePBX_Helpers implements BMO {
 	 */
 	public function updateConferenceOptionById($room,$key,$value) {
 		$o = $this->getConference($room);
-		$key = explode('#',$key);
+		$key = explode('#',(string) $key);
 		$key = $key[1];
 		$options = $o['options'];
-		$len = strlen($options);
-		if(empty($value) && strpos($options,$key) >= 0) {
-			$options = str_replace($key,'',$options);
+		$len = strlen((string) $options);
+		if(empty($value) && strpos((string) $options,$key) >= 0) {
+			$options = str_replace($key,'',(string) $options);
 			if($len-1 != strlen($options)) {
 				throw new Exception('Something Bad Happened');
 			}
-		} elseif(!empty($value) && strpos($options,$key) === false) {
+		} elseif(!empty($value) && !str_contains((string) $options,$key)) {
 			$options = $options . $key;
 			if($len+1 != strlen($options)) {
 				throw new Exception('Something Bad Happened');
 			}
 		}
 
-		$options = count_chars($options, 3);
+		$options = count_chars((string) $options, 3);
 
 		$sql = 'UPDATE meetme SET options = ? WHERE exten = ?';
 		$sth = $this->Database->prepare($sql);
-		$sth->execute(array($options,$room));
+		$sth->execute([$options, $room]);
 		$options = !is_null($options) ? $options : "";
 		$this->FreePBX->astman->database_put('CONFERENCE/'.$room,'options',$options);
 	}
@@ -270,13 +266,13 @@ class Conferences extends FreePBX_Helpers implements BMO {
 	 * @param {string} $value The value of the setting
 	 */
 	public function updateConferenceSettingById($room,$key,$value) {
-		$valid = array("description","userpin","adminpin","options","joinmsg_id","music","users","language","timeout");
+		$valid = ["description", "userpin", "adminpin", "options", "joinmsg_id", "music", "users", "language", "timeout"];
 		if(!in_array($key,$valid)) {
 			return false;
 		}
 		$sql = 'UPDATE meetme SET '.$key.' = ? WHERE exten = ?';
 		$sth = $this->Database->prepare($sql);
-		$sth->execute(array($value,$room));
+		$sth->execute([$value, $room]);
 		if($key != 'description' && $key != 'joinmsg_id') {
 			$value = !is_null($value) ? $value : "";
 			$this->FreePBX->astman->database_put('CONFERENCE/'.$room,$key,$value);
@@ -318,7 +314,7 @@ class Conferences extends FreePBX_Helpers implements BMO {
 		$this->FreePBX->astman->database_put('CONFERENCE/'.$room,'users',$users);
 		$recording = $this->FreePBX->Recordings->getFilenameById($joinmsg_id);
 		$this->FreePBX->astman->database_put('CONFERENCE/'.$room,'joinmsg',(!empty($recording) ? $recording : ''));
-		$sth->execute(array($room,$name,$userpin,$adminpin,$options,$joinmsg_id,$music,$users,$language,$timeout));
+		$sth->execute([$room, $name, $userpin, $adminpin, $options, $joinmsg_id, $music, $users, $language, $timeout]);
 		return true;
 	}
 
@@ -330,9 +326,9 @@ class Conferences extends FreePBX_Helpers implements BMO {
 		$sql = "DELETE FROM meetme WHERE exten = ?";
 		$sth = $this->Database->prepare($sql);
 		try {
-			$sth->execute(array($room));
+			$sth->execute([$room]);
 			$this->FreePBX->astman->database_deltree('CONFERENCE/'.$room);
-		} catch(\Exception $e) {
+		} catch(\Exception) {
 			return false;
 		}
 		return true;
@@ -363,10 +359,10 @@ class Conferences extends FreePBX_Helpers implements BMO {
 		$sql = "SELECT exten,options,userpin,adminpin,description,language,joinmsg_id,music,users,timeout FROM meetme WHERE exten = ?";
 		$sth = $this->Database->prepare($sql);
 		try {
-			$sth->execute(array($room));
+			$sth->execute([$room]);
 			$ret = $sth->fetch(PDO::FETCH_ASSOC);
 			$asettings = $this->FreePBX->astman->database_show('CONFERENCE/'.$room);
-			$ret = is_array($ret) ? $ret : array();
+			$ret = is_array($ret) ? $ret : [];
 			//Only Process AstDB if we are told to
 			if ($processAstDb) {
 				foreach($ret as $key => $value) {
@@ -386,14 +382,14 @@ class Conferences extends FreePBX_Helpers implements BMO {
 				}
 				//Divergent information, sync from the master which is Asterisk Manager
 				foreach($asettings as $family => $value) {
-					$parts = explode("/",$family);
+					$parts = explode("/",(string) $family);
 					$key = $parts[3];
 					if((!isset($ret[$key]) || $key == 'description') && $key != 'joinmsg') {
 						$this->astman->database_del("CONFERENCE/".$room,$key);
 						}
 					}
 			}
-		} catch(\Exception $e) {
+		} catch(\Exception) {
 			return false;
 		}
 		return $ret;
@@ -412,35 +408,20 @@ class Conferences extends FreePBX_Helpers implements BMO {
 			// check to see if we are in-range for the current AMP User.
 			if (isset($result['exten']) && checkRange($result['exten'])){
 				// return this item's dialplan destination, and the description
-				$extens[] = array($result['exten'],$result['description']);
+				$extens[] = [$result['exten'], $result['description']];
 			}
 		}
 		if (isset($extens)) {
 			return $extens;
 		} else {
-			return array();
+			return [];
 		}
 	}
 	public function getActionBar($request){
-		switch($request['display']){
+		$buttons = [];
+  switch($request['display']){
 			case 'conferences':
-				$buttons = array(
-					'submit' => array(
-						'name' => 'submit',
-						'id' => 'submit',
-						'value' => _('Submit')
-					),
-					'reset' => array(
-						'name' => 'reset',
-						'id' => 'reset',
-						'value' => _('Reset')
-					),
-					'delete' => array(
-						'name' => 'delete',
-						'id' => 'delete',
-						'value' => _('Delete')
-					)
-				);
+				$buttons = ['submit' => ['name' => 'submit', 'id' => 'submit', 'value' => _('Submit')], 'reset' => ['name' => 'reset', 'id' => 'reset', 'value' => _('Reset')], 'delete' => ['name' => 'delete', 'id' => 'delete', 'value' => _('Delete')]];
 				break;
 		}
 		if (empty($request['extdisplay']) && empty($request['account'])) {
@@ -453,14 +434,14 @@ class Conferences extends FreePBX_Helpers implements BMO {
 	}
 
 	public function printExtensions(){
-		$ret = array();
+		$ret = [];
 		$ret['title'] = _("Conferences");
 		$featurecodes = \featurecodes_getAllFeaturesDetailed();
 		$ret['textdesc'] = _('Conference');
 		$ret['numdesc'] = _('Extension');
-		$ret['items'] = array();
+		$ret['items'] = [];
 		foreach ($this->listConferences() as $conf) {
-			$ret['items'][] = array($conf[1],$conf[0]);
+			$ret['items'][] = [$conf[1], $conf[0]];
 		}
 	return $ret;
 	}

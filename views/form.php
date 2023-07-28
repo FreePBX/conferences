@@ -5,7 +5,7 @@
 $engineinfo = engine_getinfo();
 $version =  $engineinfo['version'];
 extract($request, EXTR_SKIP);
-$extdisplay = isset($account)?$account:$extdisplay;
+$extdisplay = $account ?? $extdisplay;
 $confC = FreePBX::Conferences();
 $class1370 = version_compare($version, '13.7.0', 'ge')?'':'hidden';
 $FORCEALLOWCONFRECORDING = FreePBX::Config()->get('FORCEALLOWCONFRECORDING');
@@ -78,7 +78,7 @@ if(function_exists('recordings_list')) {
 if(function_exists('music_list')) {
 	$tresults = music_list();
 	array_unshift($tresults,'inherit');
-	$default = (isset($music) ? $music : 'inherit');
+	$default = ($music ?? 'inherit');
 	if (isset($tresults)) {
 		foreach ($tresults as $tresult) {
 			$searchvalue="$tresult";
@@ -273,9 +273,9 @@ $module_hook = \moduleHook::create();
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_w"></i>
 					</div>
 					<div class="col-md-9 radioset">
-						<input type="radio" name="opt_w" id="opt_wyes" value="w" <?php echo (strpos($options, "w") === false ?"":"CHECKED") ?>>
+						<input type="radio" name="opt_w" id="opt_wyes" value="w" <?php echo (!str_contains((string) $options, "w") ?"":"CHECKED") ?>>
 						<label for="opt_wyes"><?php echo _("Yes");?></label>
-						<input type="radio" name="opt_w" id="opt_wno" value="NO" <?php echo (strpos($options, "w") === false ?"CHECKED":"") ?>>
+						<input type="radio" name="opt_w" id="opt_wno" value="NO" <?php echo (!str_contains((string) $options, "w") ?"CHECKED":"") ?>>
 						<label for="opt_wno"><?php echo _("No");?></label>
 					</div>
 				</div>
@@ -300,9 +300,9 @@ $module_hook = \moduleHook::create();
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_x"></i>
 					</div>
 					<div class="col-md-9 radioset">
-						<input type="radio" name="opt_x" id="opt_xyes" value="x" <?php echo (strpos($options, "x") === false ?"":"CHECKED") ?>>
+						<input type="radio" name="opt_x" id="opt_xyes" value="x" <?php echo (!str_contains((string) $options, "x") ?"":"CHECKED") ?>>
 						<label for="opt_xyes"><?php echo _("Yes");?></label>
-						<input type="radio" name="opt_x" id="opt_xno" value="NO" <?php echo (strpos($options, "x") === false ?"CHECKED":"") ?>>
+						<input type="radio" name="opt_x" id="opt_xno" value="NO" <?php echo (!str_contains((string) $options, "x") ?"CHECKED":"") ?>>
 						<label for="opt_xno"><?php echo _("No");?></label>
 					</div>
 				</div>
@@ -327,9 +327,9 @@ $module_hook = \moduleHook::create();
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_o"></i>
 					</div>
 					<div class="col-md-9 radioset">
-						<input type="radio" name="opt_o" id="opt_oyes" value="o" <?php echo (strpos($options, "o") === false ? "":"CHECKED") ?>>
+						<input type="radio" name="opt_o" id="opt_oyes" value="o" <?php echo (!str_contains((string) $options, "o") ? "":"CHECKED") ?>>
 						<label for="opt_oyes"><?php echo _("Yes");?></label>
-						<input type="radio" name="opt_o" id="opt_ono" value="NO" <?php echo (strpos($options, "o") === false ? "CHECKED":"") ?>>
+						<input type="radio" name="opt_o" id="opt_ono" value="NO" <?php echo (!str_contains((string) $options, "o") ? "CHECKED":"") ?>>
 						<label for="opt_ono"><?php echo _("No");?></label>
 					</div>
 				</div>
@@ -354,9 +354,9 @@ $module_hook = \moduleHook::create();
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_T"></i>
 					</div>
 					<div class="col-md-9 radioset">
-						<input type="radio" name="opt_T" id="opt_Tyes" value="T" <?php echo (strpos($options, "T") === false ? "":"CHECKED") ?>>
+						<input type="radio" name="opt_T" id="opt_Tyes" value="T" <?php echo (!str_contains((string) $options, "T") ? "":"CHECKED") ?>>
 						<label for="opt_Tyes"><?php echo _("Yes");?></label>
-						<input type="radio" name="opt_T" id="opt_Tno" value="NO" <?php echo (strpos($options, "T") === false ? "CHECKED":"") ?>>
+						<input type="radio" name="opt_T" id="opt_Tno" value="NO" <?php echo (!str_contains((string) $options, "T") ? "CHECKED":"") ?>>
 						<label for="opt_Tno"><?php echo _("No");?></label>
 					</div>
 				</div>
@@ -381,9 +381,9 @@ $module_hook = \moduleHook::create();
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_q"></i>
 					</div>
 					<div class="col-md-9 radioset">
-						<input type="radio" name="opt_q" id="opt_qyes" value="q" <?php echo (strpos($options, "q") === false ? "":"CHECKED") ?>>
+						<input type="radio" name="opt_q" id="opt_qyes" value="q" <?php echo (!str_contains((string) $options, "q") ? "":"CHECKED") ?>>
 						<label for="opt_qyes"><?php echo _("Yes");?></label>
-						<input type="radio" name="opt_q" id="opt_qno" value="NO" <?php echo (strpos($options, "q") === false ? "CHECKED":"") ?>>
+						<input type="radio" name="opt_q" id="opt_qno" value="NO" <?php echo (!str_contains((string) $options, "q") ? "CHECKED":"") ?>>
 						<label for="opt_qno"><?php echo _("No");?></label>
 					</div>
 				</div>
@@ -408,9 +408,9 @@ $module_hook = \moduleHook::create();
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_c"></i>
 					</div>
 					<div class="col-md-9 radioset">
-						<input type="radio" name="opt_c" id="opt_cyes" value="c" <?php echo (strpos($options, "c") === false ? "":"CHECKED") ?>>
+						<input type="radio" name="opt_c" id="opt_cyes" value="c" <?php echo (!str_contains((string) $options, "c") ? "":"CHECKED") ?>>
 						<label for="opt_cyes"><?php echo _("Yes");?></label>
-						<input type="radio" name="opt_c" id="opt_cno" value="NO" <?php echo (strpos($options, "c") === false ? "CHECKED":"") ?>>
+						<input type="radio" name="opt_c" id="opt_cno" value="NO" <?php echo (!str_contains((string) $options, "c") ? "CHECKED":"") ?>>
 						<label for="opt_cno"><?php echo _("No");?></label>
 					</div>
 				</div>
@@ -435,9 +435,9 @@ $module_hook = \moduleHook::create();
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_I"></i>
 					</div>
 					<div class="col-md-9 radioset">
-						<input type="radio" name="opt_I" id="opt_Iyes" value="I" <?php echo (strpos($options, "I") === false ? "":"CHECKED") ?>>
+						<input type="radio" name="opt_I" id="opt_Iyes" value="I" <?php echo (!str_contains((string) $options, "I") ? "":"CHECKED") ?>>
 						<label for="opt_Iyes"><?php echo _("Yes");?></label>
-						<input type="radio" name="opt_I" id="opt_Ino" value="NO" <?php echo (strpos($options, "I") === false ? "CHECKED":"") ?>>
+						<input type="radio" name="opt_I" id="opt_Ino" value="NO" <?php echo (!str_contains((string) $options, "I") ? "CHECKED":"") ?>>
 						<label for="opt_Ino"><?php echo _("No");?></label>
 					</div>
 				</div>
@@ -462,9 +462,9 @@ $module_hook = \moduleHook::create();
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_MH"></i>
 					</div>
 					<div class="col-md-9 radioset">
-						<input type="radio" name="opt_MH" id="opt_MHyes" value="M" <?php echo (strpos($options, "M") === false ? "":"CHECKED") ?>>
+						<input type="radio" name="opt_MH" id="opt_MHyes" value="M" <?php echo (!str_contains((string) $options, "M") ? "":"CHECKED") ?>>
 						<label for="opt_MHyes"><?php echo _("Yes");?></label>
-						<input type="radio" name="opt_MH" id="opt_MHno" value="NO" <?php echo (strpos($options, "M") === false ? "CHECKED":"")?>>
+						<input type="radio" name="opt_MH" id="opt_MHno" value="NO" <?php echo (!str_contains((string) $options, "M") ? "CHECKED":"")?>>
 						<label for="opt_MHno"><?php echo _("No");?></label>
 					</div>
 				</div>
@@ -490,9 +490,9 @@ $module_hook = \moduleHook::create();
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_s"></i>
 					</div>
 					<div class="col-md-9 radioset">
-						<input type="radio" name="opt_s" id="opt_syes" value="s" <?php echo (strpos($options, "s") === false ? "":"CHECKED") ?>>
+						<input type="radio" name="opt_s" id="opt_syes" value="s" <?php echo (!str_contains((string) $options, "s") ? "":"CHECKED") ?>>
 						<label for="opt_syes"><?php echo _("Yes");?></label>
-						<input type="radio" name="opt_s" id="opt_sno" value="NO" <?php echo (strpos($options, "s") === false ? "CHECKED":"") ?>>
+						<input type="radio" name="opt_s" id="opt_sno" value="NO" <?php echo (!str_contains((string) $options, "s") ? "CHECKED":"") ?>>
 						<label for="opt_sno"><?php echo _("No");?></label>
 					</div>
 				</div>
@@ -517,9 +517,9 @@ $module_hook = \moduleHook::create();
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_r"></i>
 					</div>
 					<div class="col-md-9 radioset">
-						<input type="radio" name="opt_r" id="opt_ryes" value="r" <?php echo (strpos($options, "r") === false ? "":"CHECKED") ?> <?php echo $FORCEALLOWCONFRECORDING || version_compare($version,"14.0","ge") ? '' : 'disabled'?>>
+						<input type="radio" name="opt_r" id="opt_ryes" value="r" <?php echo (!str_contains((string) $options, "r") ? "":"CHECKED") ?> <?php echo $FORCEALLOWCONFRECORDING || version_compare($version,"14.0","ge") ? '' : 'disabled'?>>
 						<label for="opt_ryes"><?php echo _("Yes");?></label>
-						<input type="radio" name="opt_r" id="opt_rno" value="NO" <?php echo (strpos($options, "r") === false ? "CHECKED":"") ?> <?php echo $FORCEALLOWCONFRECORDING || version_compare($version,"14.0","ge") ? '' : 'disabled'?>>
+						<input type="radio" name="opt_r" id="opt_rno" value="NO" <?php echo (!str_contains((string) $options, "r") ? "CHECKED":"") ?> <?php echo $FORCEALLOWCONFRECORDING || version_compare($version,"14.0","ge") ? '' : 'disabled'?>>
 						<label for="opt_rno"><?php echo _("No");?></label>
 					</div>
 				</div>
@@ -568,9 +568,9 @@ $module_hook = \moduleHook::create();
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_m"></i>
 					</div>
 					<div class="col-md-9 radioset">
-						<input type="radio" name="opt_m" id="opt_myes" value="m" <?php echo (strpos($options, "m") === false ? "":"CHECKED") ?>>
+						<input type="radio" name="opt_m" id="opt_myes" value="m" <?php echo (!str_contains((string) $options, "m") ? "":"CHECKED") ?>>
 						<label for="opt_myes"><?php echo _("Yes");?></label>
-						<input type="radio" name="opt_m" id="opt_mno" value="NO" <?php echo (strpos($options, "m") === false ? "CHECKED":"") ?>>
+						<input type="radio" name="opt_m" id="opt_mno" value="NO" <?php echo (!str_contains((string) $options, "m") ? "CHECKED":"") ?>>
 						<label for="opt_mno"><?php echo _("No");?></label>
 					</div>
 				</div>
@@ -595,7 +595,7 @@ $module_hook = \moduleHook::create();
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="timeout"></i>
 					</div>
 					<div class="col-md-9">
-						<input type="number" min = '0' class="form-control" id="timeout" name="timeout" value="<?php echo isset($timeout)?$timeout:'21600'?>">
+						<input type="number" min = '0' class="form-control" id="timeout" name="timeout" value="<?php echo $timeout ?? '21600'?>">
 					</div>
 				</div>
 			</div>
