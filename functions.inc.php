@@ -5,6 +5,7 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //
 //TODO: This should be moved into BMO
 //its here so that other modules can hook into it
+#[\AllowDynamicProperties]
 class conferences_conf {
 	private static $obj;
 
