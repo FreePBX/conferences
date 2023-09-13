@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-13 12:14+0000\n"
+"POT-Creation-Date: 2023-09-13 05:38+0000\n"
 "PO-Revision-Date: 2018-01-18 21:52+0200\n"
 "Last-Translator: Frederic <fdickey@sangoma.com>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -47,13 +47,6 @@ msgstr "Code PIN Administrateur"
 msgid "Allow Menu"
 msgstr "Autorise le Menu"
 
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-"Autorise la création de Chambre de Conférence ou plusieurs personnes peuvent "
-"converser ensemble"
-
 #: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
@@ -66,15 +59,11 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "Annonce le nombre de personnes ayant rejoint la conférence"
 
-#: conferences.i18n.php:6
-msgid "Applications"
-msgstr "Applications"
-
 #: Conferences.class.php:93
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:203 Conferences.class.php:459 views/grid.php:33
+#: Conferences.class.php:199 Conferences.class.php:440 views/grid.php:33
 #: views/rnav.php:26
 msgid "Conference"
 msgstr "Conférence"
@@ -91,30 +80,25 @@ msgstr "N° de Conférence"
 msgid "Conference Number is missing."
 msgstr ""
 
-#: functions.inc.php:181
+#: functions.inc.php:182
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Chambre de conférence %s : %s"
-
-#: conferences.i18n.php:18
-msgid "Conference Status"
-msgstr "État de la conférence"
 
 #: Conferences.class.php:93
 msgid "Conference number used."
 msgstr ""
 
-#: functions.inc.php:434
+#: functions.inc.php:435
 msgid "Conference: "
 msgstr "Conférence: "
 
-#: functions.inc.php:200
+#: functions.inc.php:201
 #, php-format
 msgid "Conference: %s"
 msgstr "Conférence: %s"
 
-#: Conferences.class.php:110 Conferences.class.php:457 conferences.i18n.php:4
-#: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
+#: Conferences.class.php:110 Conferences.class.php:438 page.conferences.php:10
 msgid "Conferences"
 msgstr "Conférences"
 
@@ -122,7 +106,7 @@ msgstr "Conférences"
 msgid "Conflicting Extensions"
 msgstr "Conflit d'extensions"
 
-#: Conferences.class.php:441
+#: Conferences.class.php:424
 msgid "Delete"
 msgstr "Supprimer"
 
@@ -159,13 +143,9 @@ msgstr ""
 "Code PIN identifie le \"maître de Conférence\".<br>Ce code PIN doit être "
 "différent du code PIN utilisateur."
 
-#: Conferences.class.php:460
+#: Conferences.class.php:441
 msgid "Extension"
 msgstr "Poste"
-
-#: conferences.i18n.php:12
-msgid "Force Allow Conference Recording"
-msgstr "Enforcer permission d'enregistrement de la conférence"
 
 #: views/form.php:176
 msgid "Give this conference a brief name to help you identify it."
@@ -345,7 +325,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:436
+#: Conferences.class.php:424
 msgid "Reset"
 msgstr "Réinitialiser"
 
@@ -357,7 +337,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:431
+#: Conferences.class.php:424
 msgid "Submit"
 msgstr "Soumettre"
 
@@ -406,15 +386,6 @@ msgid ""
 "talkers who are not speaking as being muted, meaning that no encoding is "
 "done on transmission and that received audio that is not registered as "
 "talking is omitted, causing no buildup in background noise."
-msgstr ""
-
-#: conferences.i18n.php:16
-msgid ""
-"Until Asterisk 14+ a random timestamp would be added to the end of the "
-"conference call recording which could not be determined in post call "
-"handling. Thus enabling conference call recording is disabled if using "
-"Asterisk 13 or lower. Enable this option to allow Conference Call recording "
-"to be enabled in Astrisk 13 or lower"
 msgstr ""
 
 #: views/form.php:152
@@ -505,6 +476,21 @@ msgstr "n'est pas autorisé pour votre compte"
 #: Conferences.class.php:98
 msgid "join message id"
 msgstr ""
+
+#~ msgid ""
+#~ "Allow creation of conference rooms where multiple people can talk together"
+#~ msgstr ""
+#~ "Autorise la création de Chambre de Conférence ou plusieurs personnes "
+#~ "peuvent converser ensemble"
+
+#~ msgid "Applications"
+#~ msgstr "Applications"
+
+#~ msgid "Conference Status"
+#~ msgstr "État de la conférence"
+
+#~ msgid "Force Allow Conference Recording"
+#~ msgstr "Enforcer permission d'enregistrement de la conférence"
 
 #~ msgid "Announce user join/leave"
 #~ msgstr "Annonce qu'un utilisateur arrive ou quitte la conférence"

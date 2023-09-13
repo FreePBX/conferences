@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-13 12:14+0000\n"
+"POT-Creation-Date: 2023-09-13 05:38+0000\n"
 "PO-Revision-Date: 2015-02-21 11:10+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -65,11 +65,6 @@ msgstr ""
 msgid "Allow Menu"
 msgstr ""
 
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-
 #: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
@@ -80,15 +75,11 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "カンファレンスに参加しているユーザーの数をアナウンスします"
 
-#: conferences.i18n.php:6
-msgid "Applications"
-msgstr "アプリケーション"
-
 #: Conferences.class.php:93
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:203 Conferences.class.php:459 views/grid.php:33
+#: Conferences.class.php:199 Conferences.class.php:440 views/grid.php:33
 #: views/rnav.php:26
 msgid "Conference"
 msgstr "音声会議"
@@ -105,30 +96,25 @@ msgstr ""
 msgid "Conference Number is missing."
 msgstr ""
 
-#: functions.inc.php:181
+#: functions.inc.php:182
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "音声会議室 %s ： %s"
-
-#: conferences.i18n.php:18
-msgid "Conference Status"
-msgstr ""
 
 #: Conferences.class.php:93
 msgid "Conference number used."
 msgstr ""
 
-#: functions.inc.php:434
+#: functions.inc.php:435
 msgid "Conference: "
 msgstr "音声会議： "
 
-#: functions.inc.php:200
+#: functions.inc.php:201
 #, php-format
 msgid "Conference: %s"
 msgstr "音声会議： %s"
 
-#: Conferences.class.php:110 Conferences.class.php:457 conferences.i18n.php:4
-#: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
+#: Conferences.class.php:110 Conferences.class.php:438 page.conferences.php:10
 msgid "Conferences"
 msgstr "音声会議"
 
@@ -136,7 +122,7 @@ msgstr "音声会議"
 msgid "Conflicting Extensions"
 msgstr "内線の競合"
 
-#: Conferences.class.php:441
+#: Conferences.class.php:424
 msgid "Delete"
 msgstr ""
 
@@ -167,12 +153,8 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:460
+#: Conferences.class.php:441
 msgid "Extension"
-msgstr ""
-
-#: conferences.i18n.php:12
-msgid "Force Allow Conference Recording"
 msgstr ""
 
 #: views/form.php:176
@@ -350,7 +332,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:436
+#: Conferences.class.php:424
 msgid "Reset"
 msgstr ""
 
@@ -362,7 +344,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:431
+#: Conferences.class.php:424
 msgid "Submit"
 msgstr ""
 
@@ -409,15 +391,6 @@ msgid ""
 "talkers who are not speaking as being muted, meaning that no encoding is "
 "done on transmission and that received audio that is not registered as "
 "talking is omitted, causing no buildup in background noise."
-msgstr ""
-
-#: conferences.i18n.php:16
-msgid ""
-"Until Asterisk 14+ a random timestamp would be added to the end of the "
-"conference call recording which could not be determined in post call "
-"handling. Thus enabling conference call recording is disabled if using "
-"Asterisk 13 or lower. Enable this option to allow Conference Call recording "
-"to be enabled in Astrisk 13 or lower"
 msgstr ""
 
 #: views/form.php:152
@@ -509,6 +482,9 @@ msgstr "は、あなたのアカウントには権限がありません。"
 #: Conferences.class.php:98
 msgid "join message id"
 msgstr ""
+
+#~ msgid "Applications"
+#~ msgstr "アプリケーション"
 
 #~ msgid "Announce user join/leave"
 #~ msgstr "ユーザーの参加/退出をアナウンスします"

@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX - módulo conferences module spanish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-13 12:14+0000\n"
+"POT-Creation-Date: 2023-09-13 05:38+0000\n"
 "PO-Revision-Date: 2016-12-10 10:11+0200\n"
 "Last-Translator: Ernesto <ecasas@sangoma.com>\n"
 "Language-Team: Spanish <http://weblate.freepbx.org/projects/freepbx/"
@@ -50,13 +50,6 @@ msgstr "PIN Administrador"
 msgid "Allow Menu"
 msgstr "Permitir Menú"
 
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-"Permitir creación de salas de conferencia donde varias personas pueden "
-"juntarse"
-
 #: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
@@ -69,15 +62,11 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "Dice el número de usuarios de la conferencia al entrar a la misma"
 
-#: conferences.i18n.php:6
-msgid "Applications"
-msgstr "Aplicaciones"
-
 #: Conferences.class.php:93
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:203 Conferences.class.php:459 views/grid.php:33
+#: Conferences.class.php:199 Conferences.class.php:440 views/grid.php:33
 #: views/rnav.php:26
 msgid "Conference"
 msgstr "Conferencia"
@@ -94,30 +83,25 @@ msgstr "Numero de la Conferencia"
 msgid "Conference Number is missing."
 msgstr ""
 
-#: functions.inc.php:181
+#: functions.inc.php:182
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Sala de conferencia %s: %s"
-
-#: conferences.i18n.php:18
-msgid "Conference Status"
-msgstr ""
 
 #: Conferences.class.php:93
 msgid "Conference number used."
 msgstr ""
 
-#: functions.inc.php:434
+#: functions.inc.php:435
 msgid "Conference: "
 msgstr "Conferencia: "
 
-#: functions.inc.php:200
+#: functions.inc.php:201
 #, php-format
 msgid "Conference: %s"
 msgstr "Conferencia: %s"
 
-#: Conferences.class.php:110 Conferences.class.php:457 conferences.i18n.php:4
-#: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
+#: Conferences.class.php:110 Conferences.class.php:438 page.conferences.php:10
 msgid "Conferences"
 msgstr "Conferencias"
 
@@ -125,7 +109,7 @@ msgstr "Conferencias"
 msgid "Conflicting Extensions"
 msgstr "Extensiones en conflicto"
 
-#: Conferences.class.php:441
+#: Conferences.class.php:424
 msgid "Delete"
 msgstr "Borrar"
 
@@ -161,13 +145,9 @@ msgstr ""
 "PIN identificará el líder. <br> Este pin debe ser diferente que el pin de "
 "usuario ."
 
-#: Conferences.class.php:460
+#: Conferences.class.php:441
 msgid "Extension"
 msgstr "Extensión"
-
-#: conferences.i18n.php:12
-msgid "Force Allow Conference Recording"
-msgstr ""
 
 #: views/form.php:176
 msgid "Give this conference a brief name to help you identify it."
@@ -359,7 +339,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:436
+#: Conferences.class.php:424
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -375,7 +355,7 @@ msgstr ""
 "se identificará en la salida del comando CLI lista de la conferencia. Nota: "
 "Si Conferencias-Pro está instalado y con licencia esto siempre se habilitará"
 
-#: Conferences.class.php:431
+#: Conferences.class.php:424
 msgid "Submit"
 msgstr "Enviar"
 
@@ -437,15 +417,6 @@ msgstr ""
 "significa que ninguna codificación se realiza en la transmisión de los "
 "participantes que no esten identificandos como Hablando, sin causar la "
 "acumulación de ruido de fondo."
-
-#: conferences.i18n.php:16
-msgid ""
-"Until Asterisk 14+ a random timestamp would be added to the end of the "
-"conference call recording which could not be determined in post call "
-"handling. Thus enabling conference call recording is disabled if using "
-"Asterisk 13 or lower. Enable this option to allow Conference Call recording "
-"to be enabled in Astrisk 13 or lower"
-msgstr ""
 
 #: views/form.php:152
 msgid "Use this number to dial into the conference."
@@ -544,6 +515,15 @@ msgstr "no está autorizada en su cuenta"
 #: Conferences.class.php:98
 msgid "join message id"
 msgstr ""
+
+#~ msgid ""
+#~ "Allow creation of conference rooms where multiple people can talk together"
+#~ msgstr ""
+#~ "Permitir creación de salas de conferencia donde varias personas pueden "
+#~ "juntarse"
+
+#~ msgid "Applications"
+#~ msgstr "Aplicaciones"
 
 #~ msgid "Adding language column"
 #~ msgstr "Agregando columna idioma"

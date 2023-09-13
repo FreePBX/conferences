@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-13 12:14+0000\n"
+"POT-Creation-Date: 2023-09-13 05:38+0000\n"
 "PO-Revision-Date: 2020-11-18 13:00+0000\n"
 "Last-Translator: Danilo Smaldone <dsmaldone@sangoma.com>\n"
 "Language-Team: Italian <http://weblate.freepbx.org/projects/freepbx/"
@@ -49,13 +49,6 @@ msgstr "PIN Amministratore"
 msgid "Allow Menu"
 msgstr "Menu consenti"
 
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-"Consenti la creazione di tanze Riunioni in cui più persone possono parlare "
-"insieme"
-
 #: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
@@ -68,15 +61,11 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "Comunica il numero di utenti quando si partecipa ad una Riunione"
 
-#: conferences.i18n.php:6
-msgid "Applications"
-msgstr "Applicazioni"
-
 #: Conferences.class.php:93
 msgid "Conf Number"
 msgstr "Numero Riunione"
 
-#: Conferences.class.php:203 Conferences.class.php:459 views/grid.php:33
+#: Conferences.class.php:199 Conferences.class.php:440 views/grid.php:33
 #: views/rnav.php:26
 msgid "Conference"
 msgstr "Riunione"
@@ -93,30 +82,25 @@ msgstr "Numero Riunione"
 msgid "Conference Number is missing."
 msgstr "Manca il numero della Riunione."
 
-#: functions.inc.php:181
+#: functions.inc.php:182
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Riunione %s: %s"
-
-#: conferences.i18n.php:18
-msgid "Conference Status"
-msgstr "Stato Riunione"
 
 #: Conferences.class.php:93
 msgid "Conference number used."
 msgstr "Numero Riunione usato."
 
-#: functions.inc.php:434
+#: functions.inc.php:435
 msgid "Conference: "
 msgstr "Riunione: "
 
-#: functions.inc.php:200
+#: functions.inc.php:201
 #, php-format
 msgid "Conference: %s"
 msgstr "Conferenza: %s"
 
-#: Conferences.class.php:110 Conferences.class.php:457 conferences.i18n.php:4
-#: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
+#: Conferences.class.php:110 Conferences.class.php:438 page.conferences.php:10
 msgid "Conferences"
 msgstr "Riunioni"
 
@@ -124,7 +108,7 @@ msgstr "Riunioni"
 msgid "Conflicting Extensions"
 msgstr "Interni in conflitto"
 
-#: Conferences.class.php:441
+#: Conferences.class.php:424
 msgid "Delete"
 msgstr "Elimina"
 
@@ -159,13 +143,9 @@ msgstr ""
 "Leader' nel quale caso il PIN identificherà il leader. <br> Questo PIN "
 "dovrebbe essere diverso da quello dell'utente."
 
-#: Conferences.class.php:460
+#: Conferences.class.php:441
 msgid "Extension"
 msgstr "Interno"
-
-#: conferences.i18n.php:12
-msgid "Force Allow Conference Recording"
-msgstr "Forza Consenti registrazione Riunione"
 
 #: views/form.php:176
 msgid "Give this conference a brief name to help you identify it."
@@ -358,7 +338,7 @@ msgstr ""
 "La registrazione non sarà disponibile né nel CDR né nelle registrazioni "
 "delle chiamate e dovrà essere scaricata accedendo al back-end."
 
-#: Conferences.class.php:436
+#: Conferences.class.php:424
 msgid "Reset"
 msgstr "Ripristina"
 
@@ -375,7 +355,7 @@ msgstr ""
 "Riunioni. Nota: Se Conferences Pro è installato ed attivo, questo sarà "
 "sempre abilitato"
 
-#: Conferences.class.php:431
+#: Conferences.class.php:424
 msgid "Submit"
 msgstr "Invia"
 
@@ -438,21 +418,6 @@ msgstr ""
 "che significa che non viene eseguita alcuna codifica in trasmissione e che "
 "tale audio ricevuto che non è registrato come valido viene omesso, "
 "eliminando eventuali rumori di sottofondo."
-
-#: conferences.i18n.php:16
-msgid ""
-"Until Asterisk 14+ a random timestamp would be added to the end of the "
-"conference call recording which could not be determined in post call "
-"handling. Thus enabling conference call recording is disabled if using "
-"Asterisk 13 or lower. Enable this option to allow Conference Call recording "
-"to be enabled in Astrisk 13 or lower"
-msgstr ""
-"Fino ad Asterisk 14+ un timestamp casuale veniva aggiunto alla fine della "
-"registrazione della Riunone che non poteva essere determinato ed usato nella "
-"successiva gestione della chiamata. Per questo motivo, la registrazione "
-"dell'audio delle Riunioni è disabilitata se si utilizza Asterisk 13 o "
-"inferiore. Abilitare questa opzione per consentire la registrazione della "
-"Riunioni per Asterisk 13 o inferiori"
 
 #: views/form.php:152
 msgid "Use this number to dial into the conference."
@@ -551,6 +516,35 @@ msgstr "non è consentito per il tuo account."
 #: Conferences.class.php:98
 msgid "join message id"
 msgstr "Id messaggio ingresso"
+
+#~ msgid ""
+#~ "Allow creation of conference rooms where multiple people can talk together"
+#~ msgstr ""
+#~ "Consenti la creazione di tanze Riunioni in cui più persone possono "
+#~ "parlare insieme"
+
+#~ msgid "Applications"
+#~ msgstr "Applicazioni"
+
+#~ msgid "Conference Status"
+#~ msgstr "Stato Riunione"
+
+#~ msgid "Force Allow Conference Recording"
+#~ msgstr "Forza Consenti registrazione Riunione"
+
+#~ msgid ""
+#~ "Until Asterisk 14+ a random timestamp would be added to the end of the "
+#~ "conference call recording which could not be determined in post call "
+#~ "handling. Thus enabling conference call recording is disabled if using "
+#~ "Asterisk 13 or lower. Enable this option to allow Conference Call "
+#~ "recording to be enabled in Astrisk 13 or lower"
+#~ msgstr ""
+#~ "Fino ad Asterisk 14+ un timestamp casuale veniva aggiunto alla fine della "
+#~ "registrazione della Riunone che non poteva essere determinato ed usato "
+#~ "nella successiva gestione della chiamata. Per questo motivo, la "
+#~ "registrazione dell'audio delle Riunioni è disabilitata se si utilizza "
+#~ "Asterisk 13 o inferiore. Abilitare questa opzione per consentire la "
+#~ "registrazione della Riunioni per Asterisk 13 o inferiori"
 
 #~ msgid "Announce user join/leave"
 #~ msgstr "Annucia l'ingresso/uscita degli utenti"

@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-13 12:14+0000\n"
+"POT-Creation-Date: 2023-09-13 05:38+0000\n"
 "PO-Revision-Date: 2017-06-09 20:45+0200\n"
 "Last-Translator: Evgeniy <yen81@mail.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -52,13 +52,6 @@ msgstr ""
 msgid "Allow Menu"
 msgstr ""
 
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-"Разрешить создание конференций, где несколько человек могут говорить друг с "
-"другом"
-
 #: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
@@ -69,15 +62,11 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "Анонсировать количество участников конференции при подсоединении"
 
-#: conferences.i18n.php:6
-msgid "Applications"
-msgstr "Приложения"
-
 #: Conferences.class.php:93
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:203 Conferences.class.php:459 views/grid.php:33
+#: Conferences.class.php:199 Conferences.class.php:440 views/grid.php:33
 #: views/rnav.php:26
 msgid "Conference"
 msgstr "Конференция"
@@ -94,30 +83,25 @@ msgstr ""
 msgid "Conference Number is missing."
 msgstr ""
 
-#: functions.inc.php:181
+#: functions.inc.php:182
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Конференц-комната %s : %s"
-
-#: conferences.i18n.php:18
-msgid "Conference Status"
-msgstr ""
 
 #: Conferences.class.php:93
 msgid "Conference number used."
 msgstr ""
 
-#: functions.inc.php:434
+#: functions.inc.php:435
 msgid "Conference: "
 msgstr "Конференция: "
 
-#: functions.inc.php:200
+#: functions.inc.php:201
 #, php-format
 msgid "Conference: %s"
 msgstr "Конференция: %s"
 
-#: Conferences.class.php:110 Conferences.class.php:457 conferences.i18n.php:4
-#: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
+#: Conferences.class.php:110 Conferences.class.php:438 page.conferences.php:10
 msgid "Conferences"
 msgstr "Конференции"
 
@@ -125,7 +109,7 @@ msgstr "Конференции"
 msgid "Conflicting Extensions"
 msgstr "Конфликт внутренних номеров"
 
-#: Conferences.class.php:441
+#: Conferences.class.php:424
 msgid "Delete"
 msgstr ""
 
@@ -156,12 +140,8 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:460
+#: Conferences.class.php:441
 msgid "Extension"
-msgstr ""
-
-#: conferences.i18n.php:12
-msgid "Force Allow Conference Recording"
 msgstr ""
 
 #: views/form.php:176
@@ -344,7 +324,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:436
+#: Conferences.class.php:424
 msgid "Reset"
 msgstr ""
 
@@ -356,7 +336,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:431
+#: Conferences.class.php:424
 msgid "Submit"
 msgstr ""
 
@@ -403,15 +383,6 @@ msgid ""
 "talkers who are not speaking as being muted, meaning that no encoding is "
 "done on transmission and that received audio that is not registered as "
 "talking is omitted, causing no buildup in background noise."
-msgstr ""
-
-#: conferences.i18n.php:16
-msgid ""
-"Until Asterisk 14+ a random timestamp would be added to the end of the "
-"conference call recording which could not be determined in post call "
-"handling. Thus enabling conference call recording is disabled if using "
-"Asterisk 13 or lower. Enable this option to allow Conference Call recording "
-"to be enabled in Astrisk 13 or lower"
 msgstr ""
 
 #: views/form.php:152
@@ -506,6 +477,15 @@ msgstr "не разрешён к использованию в в этом ак�
 #: Conferences.class.php:98
 msgid "join message id"
 msgstr ""
+
+#~ msgid ""
+#~ "Allow creation of conference rooms where multiple people can talk together"
+#~ msgstr ""
+#~ "Разрешить создание конференций, где несколько человек могут говорить друг "
+#~ "с другом"
+
+#~ msgid "Applications"
+#~ msgstr "Приложения"
 
 #~ msgid "Announce user join/leave"
 #~ msgstr "Анонсировать подсоединение/отключение участников"

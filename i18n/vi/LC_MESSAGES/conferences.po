@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-13 12:14+0000\n"
+"POT-Creation-Date: 2023-09-13 05:38+0000\n"
 "PO-Revision-Date: 2017-07-10 20:00+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -37,12 +37,6 @@ msgstr "Quản trị viên PIN"
 msgid "Allow Menu"
 msgstr "Cho phép Menu"
 
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-"Cho phép tạo các phòng hội nghị nơi nhiều người có thể nói chuyện với nhau"
-
 #: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
@@ -55,15 +49,11 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "Thông báo người dùng đang tham gia hội nghị"
 
-#: conferences.i18n.php:6
-msgid "Applications"
-msgstr "Các ứng dụng"
-
 #: Conferences.class.php:93
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:203 Conferences.class.php:459 views/grid.php:33
+#: Conferences.class.php:199 Conferences.class.php:440 views/grid.php:33
 #: views/rnav.php:26
 msgid "Conference"
 msgstr "Hội nghị"
@@ -80,30 +70,25 @@ msgstr "Số hội nghị"
 msgid "Conference Number is missing."
 msgstr ""
 
-#: functions.inc.php:181
+#: functions.inc.php:182
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Phòng hội nghị %s : %s"
-
-#: conferences.i18n.php:18
-msgid "Conference Status"
-msgstr "Trạng thái hội nghị"
 
 #: Conferences.class.php:93
 msgid "Conference number used."
 msgstr ""
 
-#: functions.inc.php:434
+#: functions.inc.php:435
 msgid "Conference: "
 msgstr "Hội nghị: "
 
-#: functions.inc.php:200
+#: functions.inc.php:201
 #, php-format
 msgid "Conference: %s"
 msgstr "Hội nghị: %s"
 
-#: Conferences.class.php:110 Conferences.class.php:457 conferences.i18n.php:4
-#: conferences.i18n.php:10 conferences.i18n.php:14 page.conferences.php:10
+#: Conferences.class.php:110 Conferences.class.php:438 page.conferences.php:10
 msgid "Conferences"
 msgstr "Các hội nghị"
 
@@ -111,7 +96,7 @@ msgstr "Các hội nghị"
 msgid "Conflicting Extensions"
 msgstr "Các máy nhánh đang xung đột"
 
-#: Conferences.class.php:441
+#: Conferences.class.php:424
 msgid "Delete"
 msgstr "Xóa"
 
@@ -146,13 +131,9 @@ msgstr ""
 "đó PIN này sẽ xác định người chủ trì. <br> Pin này cần phải khác hơn so với "
 "pin người dùng."
 
-#: Conferences.class.php:460
+#: Conferences.class.php:441
 msgid "Extension"
 msgstr "Máy nhánh"
-
-#: conferences.i18n.php:12
-msgid "Force Allow Conference Recording"
-msgstr "Bắt buộc cho phép ghi âm hội nghị"
 
 #: views/form.php:176
 msgid "Give this conference a brief name to help you identify it."
@@ -339,7 +320,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:436
+#: Conferences.class.php:424
 msgid "Reset"
 msgstr "Cài đặt lại"
 
@@ -355,7 +336,7 @@ msgstr ""
 "trên đầu ra của lệnh CLI danh sách hội nghị. Lưu ý: Nếu các hội nghị Pro "
 "được cài đặt và cấp phép thì điều này sẽ luôn được bật"
 
-#: Conferences.class.php:431
+#: Conferences.class.php:424
 msgid "Submit"
 msgstr "Gửi đi"
 
@@ -416,20 +397,6 @@ msgstr ""
 "việc mã hóa sẽ không được thực hiện khi truyền và các âm thanh nhận được mà "
 "đã không được đăng ký khi cuộc nói chuyện sẽ bị bỏ qua, tránh gây ra các "
 "tiếng ồn xung quanh."
-
-#: conferences.i18n.php:16
-msgid ""
-"Until Asterisk 14+ a random timestamp would be added to the end of the "
-"conference call recording which could not be determined in post call "
-"handling. Thus enabling conference call recording is disabled if using "
-"Asterisk 13 or lower. Enable this option to allow Conference Call recording "
-"to be enabled in Astrisk 13 or lower"
-msgstr ""
-"Cho đến khi Asterisk 14+ một mốc thời gian ngẫu nhiên sẽ được thêm vào cuối "
-"ghi âm cuộc gọi cuộc gọi hội nghị mà không thể xác định trong việc xử lý sau "
-"cuộc gọi. Do đó cho phép ghi âm cuộc gọi hội nghị sẽ bị vô hiệu nếu sử dụng "
-"Asterisk 13 hoặc thấp hơn. Bật tùy chọn này để cho phép Ghi âm cuộc gọi hội "
-"nghị được bật trong Astrisk 13 hoặc thấp hơn"
 
 #: views/form.php:152
 msgid "Use this number to dial into the conference."
@@ -528,6 +495,33 @@ msgstr "Tài khoản của bạn không được phép."
 #: Conferences.class.php:98
 msgid "join message id"
 msgstr ""
+
+#~ msgid ""
+#~ "Allow creation of conference rooms where multiple people can talk together"
+#~ msgstr ""
+#~ "Cho phép tạo các phòng hội nghị nơi nhiều người có thể nói chuyện với nhau"
+
+#~ msgid "Applications"
+#~ msgstr "Các ứng dụng"
+
+#~ msgid "Conference Status"
+#~ msgstr "Trạng thái hội nghị"
+
+#~ msgid "Force Allow Conference Recording"
+#~ msgstr "Bắt buộc cho phép ghi âm hội nghị"
+
+#~ msgid ""
+#~ "Until Asterisk 14+ a random timestamp would be added to the end of the "
+#~ "conference call recording which could not be determined in post call "
+#~ "handling. Thus enabling conference call recording is disabled if using "
+#~ "Asterisk 13 or lower. Enable this option to allow Conference Call "
+#~ "recording to be enabled in Astrisk 13 or lower"
+#~ msgstr ""
+#~ "Cho đến khi Asterisk 14+ một mốc thời gian ngẫu nhiên sẽ được thêm vào "
+#~ "cuối ghi âm cuộc gọi cuộc gọi hội nghị mà không thể xác định trong việc "
+#~ "xử lý sau cuộc gọi. Do đó cho phép ghi âm cuộc gọi hội nghị sẽ bị vô hiệu "
+#~ "nếu sử dụng Asterisk 13 hoặc thấp hơn. Bật tùy chọn này để cho phép Ghi "
+#~ "âm cuộc gọi hội nghị được bật trong Astrisk 13 hoặc thấp hơn"
 
 #~ msgid ""
 #~ "Record the conference call. Note: This is broken when using %s or lower, "
