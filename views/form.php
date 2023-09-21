@@ -354,9 +354,9 @@ $module_hook = \moduleHook::create();
 						<i class="fa fa-question-circle fpbx-help-icon" data-for="opt_T"></i>
 					</div>
 					<div class="col-md-9 radioset">
-						<input type="radio" name="opt_T" id="opt_Tyes" value="T" <?php echo (!str_contains((string) $options, "T") ? "":"CHECKED") ?>>
+						<input type="radio" name="opt_T" id="opt_Tyes" value="T" <?php echo ((!isset($options) || empty($options) || str_contains((string) $options, "T") === true) ? "CHECKED":"") ?>>
 						<label for="opt_Tyes"><?php echo _("Yes");?></label>
-						<input type="radio" name="opt_T" id="opt_Tno" value="NO" <?php echo (!str_contains((string) $options, "T") ? "CHECKED":"") ?>>
+						<input type="radio" name="opt_T" id="opt_Tno" value="NO" <?php echo ((isset($options) && !empty($options) && str_contains($options, "T") === false) ? "CHECKED":"") ?>>
 						<label for="opt_Tno"><?php echo _("No");?></label>
 					</div>
 				</div>
