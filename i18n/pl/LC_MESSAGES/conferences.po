@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-30 06:08+0000\n"
-"PO-Revision-Date: 2023-11-18 12:00+0000\n"
+"PO-Revision-Date: 2023-11-29 02:01+0000\n"
 "Last-Translator: Szymon Wysokinski <szymon.wysokinski@sqspolska.pl>\n"
 "Language-Team: Polish <http://weblate.freepbx.org/projects/freepbx/"
 "conferences/pl/>\n"
@@ -63,52 +63,52 @@ msgstr "Ogłoś liczbę użytkowników dołączających do konferencji"
 
 #: conferences.i18n.php:6
 msgid "Applications"
-msgstr ""
+msgstr "Aplikacje"
 
 #: Conferences.class.php:90
 msgid "Conf Number"
-msgstr ""
+msgstr "Numer konferencji"
 
 #: Conferences.class.php:203
 #: Conferences.class.php:525
 #: views/grid.php:32
 #: views/rnav.php:25
 msgid "Conference"
-msgstr ""
+msgstr "Konferencja"
 
 #: views/form.php:163
 msgid "Conference Name"
-msgstr ""
+msgstr "Nazwa konferencji"
 
 #: views/form.php:139
 msgid "Conference Number"
-msgstr ""
+msgstr "Numer konferencji"
 
 #: Conferences.class.php:119
 msgid "Conference Number is missing."
-msgstr ""
+msgstr "Brak numeru konferencji."
 
 #: functions.inc.php:181
 #, php-format
 msgid "Conference Room %s : %s"
-msgstr ""
+msgstr "Pokój konferencyjny %s : %s"
 
 #: conferences.i18n.php:18
 msgid "Conference Status"
-msgstr ""
+msgstr "Status konferencji"
 
 #: Conferences.class.php:90
 msgid "Conference number used."
-msgstr ""
+msgstr "Używany numer konferencji."
 
 #: functions.inc.php:434
 msgid "Conference: "
-msgstr ""
+msgstr "Konferencja: "
 
 #: functions.inc.php:200
 #, php-format
 msgid "Conference: %s"
-msgstr ""
+msgstr "Konferencja: %s"
 
 #: Conferences.class.php:108
 #: Conferences.class.php:523
@@ -117,36 +117,37 @@ msgstr ""
 #: conferences.i18n.php:14
 #: page.conferences.php:10
 msgid "Conferences"
-msgstr ""
+msgstr "Konferencje"
 
 #: views/form.php:121
 msgid "Conflicting Extensions"
-msgstr ""
+msgstr "Numery wewnętrzne powodujące konflikt"
 
 #: Conferences.class.php:507
 msgid "Delete"
-msgstr ""
+msgstr "Usuń"
 
 #: views/grid.php:33
 #: views/rnav.php:26
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
 #: Conferences.class.php:94
 msgid "Desctiption"
-msgstr ""
+msgstr "Opis"
 
 #: Conferences.class.php:94
 msgid "Desctiption of the conference."
-msgstr ""
+msgstr "Opis konferencji."
 
 #: page.conferences.php:17
 msgid "Edit"
-msgstr ""
+msgstr "Edytuj"
 
 #: views/form.php:475
 msgid "Enable Music On Hold when the conference has a single caller"
 msgstr ""
+"Włącz muzykę na czekanie, gdy w konferencji bierze udział jeden rozmówca"
 
 #: views/form.php:223
 msgid ""
