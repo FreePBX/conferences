@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-13 05:38+0000\n"
+"POT-Creation-Date: 2024-02-15 04:20-0500\n"
 "PO-Revision-Date: 2019-02-26 13:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/conferences/de/>\n"
@@ -36,6 +36,13 @@ msgstr "Administrator PIN"
 msgid "Allow Menu"
 msgstr "Menü zulassen"
 
+#: conferences.i18n.php:8
+msgid ""
+"Allow creation of conference rooms where multiple people can talk together"
+msgstr ""
+"Erlaube die Erstellung von Konferenzräumen, wo mehrere Personen miteinander "
+"sprechen können"
+
 #: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
@@ -48,11 +55,15 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "Angemeldete Benutzer zählen beim Beitritt zur Konferenz"
 
+#: conferences.i18n.php:6
+msgid "Applications"
+msgstr "Anwendungen"
+
 #: Conferences.class.php:93
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:199 Conferences.class.php:440 views/grid.php:33
+#: Conferences.class.php:199 Conferences.class.php:441 views/grid.php:33
 #: views/rnav.php:26
 msgid "Conference"
 msgstr "Konferenz"
@@ -87,7 +98,8 @@ msgstr "Konferenz: "
 msgid "Conference: %s"
 msgstr "Konferenz: %s"
 
-#: Conferences.class.php:110 Conferences.class.php:438 page.conferences.php:10
+#: Conferences.class.php:110 Conferences.class.php:439 conferences.i18n.php:4
+#: conferences.i18n.php:10 page.conferences.php:10
 msgid "Conferences"
 msgstr "Konferenzen"
 
@@ -95,7 +107,7 @@ msgstr "Konferenzen"
 msgid "Conflicting Extensions"
 msgstr "Nebenstellenkonflikt"
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Delete"
 msgstr "Löschen"
 
@@ -132,7 +144,7 @@ msgstr ""
 "verwendet, dann identifiziert diese PIN den Leader. <br> Dieser Pin sollte "
 "sich vom Benutzer-Pin unterscheiden ."
 
-#: Conferences.class.php:441
+#: Conferences.class.php:442
 msgid "Extension"
 msgstr "Nebenstelle"
 
@@ -331,7 +343,7 @@ msgstr ""
 "Rufaufzeichnungen verfügbar sein, sondern muss manuell über das Backend "
 "heruntergeladen werden."
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Reset"
 msgstr "Zurücksetzen"
 
@@ -348,7 +360,7 @@ msgstr ""
 "Kommandozeile identifiziert. Hinweis: Wenn \"Konferenzen Pro\" installiert "
 "und lizenziert ist, ist diese Option immer aktiviert"
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Submit"
 msgstr "Absenden"
 
@@ -510,15 +522,6 @@ msgstr "ist für Ihr Konto nicht erlaubt."
 #: Conferences.class.php:98
 msgid "join message id"
 msgstr ""
-
-#~ msgid ""
-#~ "Allow creation of conference rooms where multiple people can talk together"
-#~ msgstr ""
-#~ "Erlaube die Erstellung von Konferenzräumen, wo mehrere Personen "
-#~ "miteinander sprechen können"
-
-#~ msgid "Applications"
-#~ msgstr "Anwendungen"
 
 #~ msgid "Conference Status"
 #~ msgstr "Konferenzstatus"

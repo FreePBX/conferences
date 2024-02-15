@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-13 05:38+0000\n"
+"POT-Creation-Date: 2024-02-15 04:20-0500\n"
 "PO-Revision-Date: 2017-07-10 20:00+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -37,6 +37,12 @@ msgstr "Quản trị viên PIN"
 msgid "Allow Menu"
 msgstr "Cho phép Menu"
 
+#: conferences.i18n.php:8
+msgid ""
+"Allow creation of conference rooms where multiple people can talk together"
+msgstr ""
+"Cho phép tạo các phòng hội nghị nơi nhiều người có thể nói chuyện với nhau"
+
 #: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
@@ -49,11 +55,15 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "Thông báo người dùng đang tham gia hội nghị"
 
+#: conferences.i18n.php:6
+msgid "Applications"
+msgstr "Các ứng dụng"
+
 #: Conferences.class.php:93
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:199 Conferences.class.php:440 views/grid.php:33
+#: Conferences.class.php:199 Conferences.class.php:441 views/grid.php:33
 #: views/rnav.php:26
 msgid "Conference"
 msgstr "Hội nghị"
@@ -88,7 +98,8 @@ msgstr "Hội nghị: "
 msgid "Conference: %s"
 msgstr "Hội nghị: %s"
 
-#: Conferences.class.php:110 Conferences.class.php:438 page.conferences.php:10
+#: Conferences.class.php:110 Conferences.class.php:439 conferences.i18n.php:4
+#: conferences.i18n.php:10 page.conferences.php:10
 msgid "Conferences"
 msgstr "Các hội nghị"
 
@@ -96,7 +107,7 @@ msgstr "Các hội nghị"
 msgid "Conflicting Extensions"
 msgstr "Các máy nhánh đang xung đột"
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Delete"
 msgstr "Xóa"
 
@@ -131,7 +142,7 @@ msgstr ""
 "đó PIN này sẽ xác định người chủ trì. <br> Pin này cần phải khác hơn so với "
 "pin người dùng."
 
-#: Conferences.class.php:441
+#: Conferences.class.php:442
 msgid "Extension"
 msgstr "Máy nhánh"
 
@@ -193,8 +204,8 @@ msgid ""
 "add additional recordings please use the \"System Recordings\" MENU above"
 msgstr ""
 "Tin nhắn sẽ được hiện thị tới người gọi trước khi tha gia vào hội nghị."
-"<br><br> để thêm các ghi âm bổ sung vui lòng sử dụng MENU \"System Recordings"
-"\"  ( ghi âm hệ thống) ởtrên"
+"<br><br> để thêm các ghi âm bổ sung vui lòng sử dụng MENU \"System "
+"Recordings\"  ( ghi âm hệ thống) ởtrên"
 
 #: Conferences.class.php:99
 msgid "Music"
@@ -320,7 +331,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Reset"
 msgstr "Cài đặt lại"
 
@@ -336,7 +347,7 @@ msgstr ""
 "trên đầu ra của lệnh CLI danh sách hội nghị. Lưu ý: Nếu các hội nghị Pro "
 "được cài đặt và cấp phép thì điều này sẽ luôn được bật"
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Submit"
 msgstr "Gửi đi"
 
@@ -495,14 +506,6 @@ msgstr "Tài khoản của bạn không được phép."
 #: Conferences.class.php:98
 msgid "join message id"
 msgstr ""
-
-#~ msgid ""
-#~ "Allow creation of conference rooms where multiple people can talk together"
-#~ msgstr ""
-#~ "Cho phép tạo các phòng hội nghị nơi nhiều người có thể nói chuyện với nhau"
-
-#~ msgid "Applications"
-#~ msgstr "Các ứng dụng"
 
 #~ msgid "Conference Status"
 #~ msgstr "Trạng thái hội nghị"

@@ -3,13 +3,13 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for conferences
-# Copyright (C) 2008-2023 Sangoma Technologies, Inc.
+# Copyright (C) 2008-2024 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-21 08:32+0000\n"
+"POT-Creation-Date: 2024-02-15 04:20-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,11 @@ msgstr ""
 msgid "Allow Menu"
 msgstr ""
 
+#: conferences.i18n.php:8
+msgid ""
+"Allow creation of conference rooms where multiple people can talk together"
+msgstr ""
+
 #: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
@@ -47,12 +52,16 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr ""
 
+#: conferences.i18n.php:6
+msgid "Applications"
+msgstr ""
+
 #: Conferences.class.php:93
 msgid "Conf Number"
 msgstr ""
 
 #: Conferences.class.php:199
-#: Conferences.class.php:440
+#: Conferences.class.php:441
 #: views/grid.php:33
 #: views/rnav.php:26
 msgid "Conference"
@@ -89,7 +98,9 @@ msgid "Conference: %s"
 msgstr ""
 
 #: Conferences.class.php:110
-#: Conferences.class.php:438
+#: Conferences.class.php:439
+#: conferences.i18n.php:4
+#: conferences.i18n.php:10
 #: page.conferences.php:10
 msgid "Conferences"
 msgstr ""
@@ -98,7 +109,7 @@ msgstr ""
 msgid "Conflicting Extensions"
 msgstr ""
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Delete"
 msgstr ""
 
@@ -130,7 +141,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:441
+#: Conferences.class.php:442
 msgid "Extension"
 msgstr ""
 
@@ -314,7 +325,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Reset"
 msgstr ""
 
@@ -326,7 +337,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Submit"
 msgstr ""
 

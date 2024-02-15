@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX 2.10.0.8\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-13 05:38+0000\n"
+"POT-Creation-Date: 2024-02-15 04:20-0500\n"
 "PO-Revision-Date: 2015-02-21 11:10+0200\n"
 "Last-Translator: Kevin <kevin@qloog.com>\n"
 "Language-Team: Japanese <http://weblate.freepbx.org/projects/freepbx/"
@@ -65,6 +65,11 @@ msgstr ""
 msgid "Allow Menu"
 msgstr ""
 
+#: conferences.i18n.php:8
+msgid ""
+"Allow creation of conference rooms where multiple people can talk together"
+msgstr ""
+
 #: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
@@ -75,11 +80,15 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "カンファレンスに参加しているユーザーの数をアナウンスします"
 
+#: conferences.i18n.php:6
+msgid "Applications"
+msgstr "アプリケーション"
+
 #: Conferences.class.php:93
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:199 Conferences.class.php:440 views/grid.php:33
+#: Conferences.class.php:199 Conferences.class.php:441 views/grid.php:33
 #: views/rnav.php:26
 msgid "Conference"
 msgstr "音声会議"
@@ -114,7 +123,8 @@ msgstr "音声会議： "
 msgid "Conference: %s"
 msgstr "音声会議： %s"
 
-#: Conferences.class.php:110 Conferences.class.php:438 page.conferences.php:10
+#: Conferences.class.php:110 Conferences.class.php:439 conferences.i18n.php:4
+#: conferences.i18n.php:10 page.conferences.php:10
 msgid "Conferences"
 msgstr "音声会議"
 
@@ -122,7 +132,7 @@ msgstr "音声会議"
 msgid "Conflicting Extensions"
 msgstr "内線の競合"
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Delete"
 msgstr ""
 
@@ -153,7 +163,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:441
+#: Conferences.class.php:442
 msgid "Extension"
 msgstr ""
 
@@ -332,7 +342,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Reset"
 msgstr ""
 
@@ -344,7 +354,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Submit"
 msgstr ""
 
@@ -482,9 +492,6 @@ msgstr "は、あなたのアカウントには権限がありません。"
 #: Conferences.class.php:98
 msgid "join message id"
 msgstr ""
-
-#~ msgid "Applications"
-#~ msgstr "アプリケーション"
 
 #~ msgid "Announce user join/leave"
 #~ msgstr "ユーザーの参加/退出をアナウンスします"

@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-13 05:38+0000\n"
+"POT-Creation-Date: 2024-02-15 04:20-0500\n"
 "PO-Revision-Date: 2017-06-09 20:45+0200\n"
 "Last-Translator: Evgeniy <yen81@mail.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -32,8 +32,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.4\n"
 
 #: views/grid.php:35
@@ -52,6 +52,13 @@ msgstr ""
 msgid "Allow Menu"
 msgstr ""
 
+#: conferences.i18n.php:8
+msgid ""
+"Allow creation of conference rooms where multiple people can talk together"
+msgstr ""
+"Разрешить создание конференций, где несколько человек могут говорить друг с "
+"другом"
+
 #: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
@@ -62,11 +69,15 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "Анонсировать количество участников конференции при подсоединении"
 
+#: conferences.i18n.php:6
+msgid "Applications"
+msgstr "Приложения"
+
 #: Conferences.class.php:93
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:199 Conferences.class.php:440 views/grid.php:33
+#: Conferences.class.php:199 Conferences.class.php:441 views/grid.php:33
 #: views/rnav.php:26
 msgid "Conference"
 msgstr "Конференция"
@@ -101,7 +112,8 @@ msgstr "Конференция: "
 msgid "Conference: %s"
 msgstr "Конференция: %s"
 
-#: Conferences.class.php:110 Conferences.class.php:438 page.conferences.php:10
+#: Conferences.class.php:110 Conferences.class.php:439 conferences.i18n.php:4
+#: conferences.i18n.php:10 page.conferences.php:10
 msgid "Conferences"
 msgstr "Конференции"
 
@@ -109,7 +121,7 @@ msgstr "Конференции"
 msgid "Conflicting Extensions"
 msgstr "Конфликт внутренних номеров"
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Delete"
 msgstr ""
 
@@ -140,7 +152,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:441
+#: Conferences.class.php:442
 msgid "Extension"
 msgstr ""
 
@@ -324,7 +336,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Reset"
 msgstr ""
 
@@ -336,7 +348,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Submit"
 msgstr ""
 
@@ -477,15 +489,6 @@ msgstr "не разрешён к использованию в в этом ак�
 #: Conferences.class.php:98
 msgid "join message id"
 msgstr ""
-
-#~ msgid ""
-#~ "Allow creation of conference rooms where multiple people can talk together"
-#~ msgstr ""
-#~ "Разрешить создание конференций, где несколько человек могут говорить друг "
-#~ "с другом"
-
-#~ msgid "Applications"
-#~ msgstr "Приложения"
 
 #~ msgid "Announce user join/leave"
 #~ msgstr "Анонсировать подсоединение/отключение участников"

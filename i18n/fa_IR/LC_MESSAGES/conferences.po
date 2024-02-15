@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-13 05:38+0000\n"
+"POT-Creation-Date: 2024-02-15 04:20-0500\n"
 "PO-Revision-Date: 2016-08-07 06:55+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian (Iran) <http://weblate.freepbx.org/projects/freepbx/"
@@ -37,6 +37,11 @@ msgstr "PIN مدیر"
 msgid "Allow Menu"
 msgstr "منو مجاز"
 
+#: conferences.i18n.php:8
+msgid ""
+"Allow creation of conference rooms where multiple people can talk together"
+msgstr "اجازه ساخت اتاق کنفرانس برای آنکه چند کاربر با یکدیگر صحبت کنند"
+
 #: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
@@ -49,11 +54,15 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "اعلام تعداد کاربر(های) عضو شده در کنفرانس"
 
+#: conferences.i18n.php:6
+msgid "Applications"
+msgstr "درخواست"
+
 #: Conferences.class.php:93
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:199 Conferences.class.php:440 views/grid.php:33
+#: Conferences.class.php:199 Conferences.class.php:441 views/grid.php:33
 #: views/rnav.php:26
 msgid "Conference"
 msgstr "کنفرانس"
@@ -88,7 +97,8 @@ msgstr "کنفرانس ： "
 msgid "Conference: %s"
 msgstr "کنفرانس ：%s"
 
-#: Conferences.class.php:110 Conferences.class.php:438 page.conferences.php:10
+#: Conferences.class.php:110 Conferences.class.php:439 conferences.i18n.php:4
+#: conferences.i18n.php:10 page.conferences.php:10
 msgid "Conferences"
 msgstr "کنفرانس ها"
 
@@ -96,7 +106,7 @@ msgstr "کنفرانس ها"
 msgid "Conflicting Extensions"
 msgstr "داخلی های متضاد"
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Delete"
 msgstr "حذف"
 
@@ -129,7 +139,7 @@ msgstr ""
 "برای کاربر مدیر شماره پین را وارد کنید. <br><br> این گزینه اختیاری است. <br> "
 "این پین باید با پین کاربر دیگر متفاوت باشد."
 
-#: Conferences.class.php:441
+#: Conferences.class.php:442
 msgid "Extension"
 msgstr "داخلی"
 
@@ -312,7 +322,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -328,7 +338,7 @@ msgstr ""
 "on the output of the conference list CLI command. Note: If Conferences Pro "
 "is installed and licensed this will always be enabled"
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Submit"
 msgstr "ثبت"
 
@@ -472,13 +482,6 @@ msgstr "برای حساب شما مجاز نمیباشد."
 #: Conferences.class.php:98
 msgid "join message id"
 msgstr ""
-
-#~ msgid ""
-#~ "Allow creation of conference rooms where multiple people can talk together"
-#~ msgstr "اجازه ساخت اتاق کنفرانس برای آنکه چند کاربر با یکدیگر صحبت کنند"
-
-#~ msgid "Applications"
-#~ msgstr "درخواست"
 
 #~ msgid "Adding language column"
 #~ msgstr "افزودن ستون زبان"

@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX Conference Module\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-13 05:38+0000\n"
+"POT-Creation-Date: 2024-02-15 04:20-0500\n"
 "PO-Revision-Date: 2017-03-08 21:15+0200\n"
 "Last-Translator: Kingvoice <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -51,6 +51,13 @@ msgstr "PIN Administrador"
 msgid "Allow Menu"
 msgstr "Permitir Menu"
 
+#: conferences.i18n.php:8
+msgid ""
+"Allow creation of conference rooms where multiple people can talk together"
+msgstr ""
+"Permitir criação de salas de conferência onde múltiplas pessoas podem falar "
+"juntas"
+
 #: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
@@ -63,11 +70,15 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "Anuncia o número de usuários ao se juntar à conferência"
 
+#: conferences.i18n.php:6
+msgid "Applications"
+msgstr "Aplicações"
+
 #: Conferences.class.php:93
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:199 Conferences.class.php:440 views/grid.php:33
+#: Conferences.class.php:199 Conferences.class.php:441 views/grid.php:33
 #: views/rnav.php:26
 msgid "Conference"
 msgstr "Conferência"
@@ -102,7 +113,8 @@ msgstr "Conferência: "
 msgid "Conference: %s"
 msgstr "Conferência: %s"
 
-#: Conferences.class.php:110 Conferences.class.php:438 page.conferences.php:10
+#: Conferences.class.php:110 Conferences.class.php:439 conferences.i18n.php:4
+#: conferences.i18n.php:10 page.conferences.php:10
 msgid "Conferences"
 msgstr "Conferências"
 
@@ -110,7 +122,7 @@ msgstr "Conferências"
 msgid "Conflicting Extensions"
 msgstr "Ramais Conflitantes"
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Delete"
 msgstr "Apagar"
 
@@ -145,7 +157,7 @@ msgstr ""
 "então este PIN identificará o líder. <br> Este pin deve ser diferente do pin "
 "do usuário."
 
-#: Conferences.class.php:441
+#: Conferences.class.php:442
 msgid "Extension"
 msgstr "Ramal"
 
@@ -207,8 +219,8 @@ msgid ""
 "add additional recordings please use the \"System Recordings\" MENU above"
 msgstr ""
 "Mensagem a ser reproduzida para o usuário chamador antes de ingressar na "
-"conferência. Para adicionar mais gravações, use o menu \"Gravações do Sistema"
-"\" acima"
+"conferência. Para adicionar mais gravações, use o menu \"Gravações do "
+"Sistema\" acima"
 
 #: Conferences.class.php:99
 msgid "Music"
@@ -333,7 +345,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Reset"
 msgstr "Reiniciar"
 
@@ -350,7 +362,7 @@ msgstr ""
 "conferência. Nota: Se o Conferences Pro estiver instalado e licenciado, isso "
 "estará sempre ativado"
 
-#: Conferences.class.php:424
+#: Conferences.class.php:425
 msgid "Submit"
 msgstr "Enviar"
 
@@ -511,15 +523,6 @@ msgstr "não é permitido para a sua conta."
 #: Conferences.class.php:98
 msgid "join message id"
 msgstr ""
-
-#~ msgid ""
-#~ "Allow creation of conference rooms where multiple people can talk together"
-#~ msgstr ""
-#~ "Permitir criação de salas de conferência onde múltiplas pessoas podem "
-#~ "falar juntas"
-
-#~ msgid "Applications"
-#~ msgstr "Aplicações"
 
 #~ msgid "Announce user join/leave"
 #~ msgstr "Anuncia a entrada e saída de usuários"
