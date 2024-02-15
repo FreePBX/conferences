@@ -310,8 +310,9 @@ class Conferences extends FreePBX_Helpers implements BMO {
 		$this->FreePBX->astman->database_put('CONFERENCE/'.$room,'options',$options);
 		$music = !is_null($music) ? $music : "";
 		$this->FreePBX->astman->database_put('CONFERENCE/'.$room,'music',$music);
-		$users = !is_null($users) ? $users : "";
+		$users = !empty($users) ? $users : 0;
 		$this->FreePBX->astman->database_put('CONFERENCE/'.$room,'users',$users);
+		$timeout = !empty($timeout) ? $timeout : 21600;
 		$recording = $this->FreePBX->Recordings->getFilenameById($joinmsg_id);
 		$this->FreePBX->astman->database_put('CONFERENCE/'.$room,'joinmsg',(!empty($recording) ? $recording : ''));
 		$sth->execute([$room, $name, $userpin, $adminpin, $options, $joinmsg_id, $music, $users, $language, $timeout]);
