@@ -2,15 +2,15 @@
 	<rawname>conferences</rawname>
 	<repo>standard</repo>
 	<name>Conferences</name>
-	<version>17.0.3.1</version>
+	<version>17.0.3.2</version>
 	<publisher>Sangoma Technologies Corporation</publisher>
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
 	<category>Applications</category>
 	<description>Allow creation of conference rooms where multiple people can talk together</description>
-	<more-info>https://wiki.freepbx.org/display/F2/Conferences+Module</more-info>
+	<more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/22511822/Conferences+Module</more-info>
 	<changelog>
-		*17.0.3.1* Packaging of ver 17.0.3.1
+		*17.0.3.2* bump 
 		*17.0.2* Packaging of ver 17.0.2
 		*17.0.1alpha* 17.0.1 alpha release
 	</changelog>
