@@ -7,13 +7,18 @@ use PDO;
 
 class Conferences extends FreePBX_Helpers implements BMO {
 	private string $module = 'Conferences';
+	private $FreePBX;
+	private $db;
+	private $Database;
+	private $astman;
 
 	public function __construct($freepbx = null) {
 		if ($freepbx == null) {
-			throw new Exception("Not given a FreePBX Object");
+			throw new \Exception("Not given a FreePBX Object");
 		}
 		$this->FreePBX = $freepbx;
 		$this->db = $freepbx->Database;
+		$this->Database = $freepbx->Database;
 		$this->astman = $this->FreePBX->astman;
 	}
 
@@ -241,12 +246,12 @@ class Conferences extends FreePBX_Helpers implements BMO {
 		if(empty($value) && strpos((string) $options,$key) >= 0) {
 			$options = str_replace($key,'',(string) $options);
 			if($len-1 != strlen($options)) {
-				throw new Exception('Something Bad Happened');
+				throw new \Exception('Something Bad Happened');
 			}
 		} elseif(!empty($value) && !str_contains((string) $options,$key)) {
 			$options = $options . $key;
 			if($len+1 != strlen($options)) {
-				throw new Exception('Something Bad Happened');
+				throw new \Exception('Something Bad Happened');
 			}
 		}
 
@@ -428,8 +433,8 @@ class Conferences extends FreePBX_Helpers implements BMO {
 		if (empty($request['extdisplay']) && empty($request['account'])) {
 			unset($buttons['delete']);
 		}
-		if ($request['view'] != 'form') {
-			unset($buttons);
+		if (($request['view'] ?? '') != 'form') {
+			$buttons = [];
 		}
 		return $buttons;
 	}

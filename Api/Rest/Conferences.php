@@ -13,6 +13,7 @@ class Conferences extends Base {
 		$app->get('/', function ($request, $response, $args) {
 			\FreePBX::Modules()->loadFunctionsInc('conferences');
 			$conferences = conferences_list();
+			$list = [];
 
 			foreach($conferences as $conference) {
 				$room = new \stdClass();
@@ -56,7 +57,7 @@ class Conferences extends Base {
 		* @uri /conference/:id
 		*/
 		$app->put('/{id}', function ($request, $response, $args) {
-			\FreePBX::Modules()->loadFunctionsInc('callforward');
+			\FreePBX::Modules()->loadFunctionsInc('conferences');
 			$params = $request->getParsedBody();
 			conferences_del($args['id']);
 			$ret = conferences_add($args["id"], $params["name"], $params["userpin"], $params["adminpin"], $params["options"], $params["joinmsg_id"], $params["music"], $params["users"]);
