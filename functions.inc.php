@@ -5,9 +5,14 @@ if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //
 //TODO: This should be moved into BMO
 //its here so that other modules can hook into it
-#[\AllowDynamicProperties]
 class conferences_conf {
 	private static $obj;
+
+	/** @var array ConfBridge config sections (user/bridge/menu/general) */
+	private array $_confbridge = [];
+
+	/** @var array MeetMe room pins keyed by room number */
+	private array $_meetmes = [];
 
 	// FreePBX magic ::create() call
 	public static function create() {
