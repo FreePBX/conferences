@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-15 04:20-0500\n"
+"POT-Creation-Date: 2026-09-22 06:53-0400\n"
 "PO-Revision-Date: 2016-10-06 14:02+0200\n"
 "Last-Translator: Maxim <maxim@ua.fm>\n"
 "Language-Team: Ukrainian <http://weblate.freepbx.org/projects/freepbx/"
@@ -30,20 +30,13 @@ msgstr "Дії"
 msgid "Add"
 msgstr "Додати"
 
-#: Conferences.class.php:96 views/form.php:212
+#: Conferences.class.php:101 views/form.php:212
 msgid "Admin PIN"
 msgstr "PIN адміністратора"
 
 #: views/form.php:489
 msgid "Allow Menu"
 msgstr "Дозволити меню"
-
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-"Дозволити створення конференц-залів, де кілька людей можуть розмовляти один "
-"з одним"
 
 #: views/form.php:449
 msgid ""
@@ -58,15 +51,11 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "Оголошувати кількість користувачів під час приєднання до конференції"
 
-#: conferences.i18n.php:6
-msgid "Applications"
-msgstr "Додатки"
-
-#: Conferences.class.php:93
+#: Conferences.class.php:98
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:199 Conferences.class.php:441 views/grid.php:33
+#: Conferences.class.php:204 Conferences.class.php:446 views/grid.php:33
 #: views/rnav.php:26
 msgid "Conference"
 msgstr "Конференція"
@@ -79,30 +68,29 @@ msgstr "Назва конференції"
 msgid "Conference Number"
 msgstr "Номер конференції"
 
-#: Conferences.class.php:121
+#: Conferences.class.php:126
 msgid "Conference Number is missing."
 msgstr ""
 
-#: functions.inc.php:182
+#: functions.inc.php:187
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Конференц-зал %s : %s"
 
-#: Conferences.class.php:93
+#: Conferences.class.php:98
 msgid "Conference number used."
 msgstr ""
 
-#: functions.inc.php:435
+#: functions.inc.php:440
 msgid "Conference: "
 msgstr "Конференція: "
 
-#: functions.inc.php:201
+#: functions.inc.php:206
 #, php-format
 msgid "Conference: %s"
 msgstr "Конференція: %s"
 
-#: Conferences.class.php:110 Conferences.class.php:439 conferences.i18n.php:4
-#: conferences.i18n.php:10 page.conferences.php:10
+#: Conferences.class.php:115 Conferences.class.php:444 page.conferences.php:10
 msgid "Conferences"
 msgstr "Конференції"
 
@@ -110,7 +98,7 @@ msgstr "Конференції"
 msgid "Conflicting Extensions"
 msgstr "Конфліктні  додаткові номери"
 
-#: Conferences.class.php:425
+#: Conferences.class.php:430
 msgid "Delete"
 msgstr "Видалити"
 
@@ -118,11 +106,11 @@ msgstr "Видалити"
 msgid "Description"
 msgstr "Опис"
 
-#: Conferences.class.php:97
+#: Conferences.class.php:102
 msgid "Desctiption"
 msgstr ""
 
-#: Conferences.class.php:97
+#: Conferences.class.php:102
 msgid "Desctiption of the conference."
 msgstr ""
 
@@ -145,7 +133,7 @@ msgstr ""
 "то цей PIN ідентифікує лідера.<br>Цей код повинен бути іншим, ніж PIN-код "
 "користувача."
 
-#: Conferences.class.php:442
+#: Conferences.class.php:447
 msgid "Extension"
 msgstr "Додатковий номер"
 
@@ -154,7 +142,7 @@ msgid "Give this conference a brief name to help you identify it."
 msgstr ""
 "Призначте цієї конференції коротке ім'я, щоб допомогти вам ідентифікувати її."
 
-#: Conferences.class.php:111
+#: Conferences.class.php:116
 msgid "Import/Export Conferences"
 msgstr ""
 
@@ -166,15 +154,15 @@ msgstr "Успадкувати"
 msgid "Join Message"
 msgstr "Повідомлення при з'єднанні"
 
-#: Conferences.class.php:98
+#: Conferences.class.php:103
 msgid "Join message id."
 msgstr ""
 
-#: Conferences.class.php:101 views/form.php:236
+#: Conferences.class.php:106 views/form.php:236
 msgid "Language"
 msgstr "Мова"
 
-#: Conferences.class.php:101
+#: Conferences.class.php:106
 msgid "Language."
 msgstr ""
 
@@ -211,7 +199,7 @@ msgstr ""
 "конференції.<br><br>Щоб додати додаткові записи, будь ласка, використовуйте "
 "меню \"Системні записи\" що знаходиться вище"
 
-#: Conferences.class.php:99
+#: Conferences.class.php:104
 msgid "Music"
 msgstr ""
 
@@ -231,7 +219,7 @@ msgstr ""
 msgid "Music on Hold Class"
 msgstr ""
 
-#: Conferences.class.php:99
+#: Conferences.class.php:104
 msgid "Music."
 msgstr ""
 
@@ -260,23 +248,23 @@ msgstr "Немає обмежень"
 msgid "None"
 msgstr "Жоден"
 
-#: Conferences.class.php:124
+#: Conferences.class.php:129
 msgid "Option of the Conference is missing."
 msgstr ""
 
-#: Conferences.class.php:94
+#: Conferences.class.php:99
 msgid "Option of the Conference."
 msgstr ""
 
-#: Conferences.class.php:94
+#: Conferences.class.php:99
 msgid "Options"
 msgstr ""
 
-#: Conferences.class.php:96
+#: Conferences.class.php:101
 msgid "PIN code for admin."
 msgstr ""
 
-#: Conferences.class.php:95
+#: Conferences.class.php:100
 msgid "PIN code for user."
 msgstr ""
 
@@ -328,7 +316,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:425
+#: Conferences.class.php:430
 msgid "Reset"
 msgstr "Скинути"
 
@@ -340,7 +328,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:425
+#: Conferences.class.php:430
 msgid "Submit"
 msgstr "Застосувати"
 
@@ -376,11 +364,11 @@ msgstr ""
 "перед тим, як його автоматично від'єднає. 0 = відключено, за замовчуванням "
 "21600 (6 годин)"
 
-#: Conferences.class.php:102
+#: Conferences.class.php:107
 msgid "Timeout"
 msgstr ""
 
-#: Conferences.class.php:102
+#: Conferences.class.php:107
 msgid "Timeout of the conference."
 msgstr ""
 
@@ -400,7 +388,7 @@ msgstr "Використовуйте цієї номер, щоб додзвон�
 msgid "User Count"
 msgstr "Кількість користувачів"
 
-#: Conferences.class.php:95 views/form.php:188
+#: Conferences.class.php:100 views/form.php:188
 msgid "User PIN"
 msgstr "PIN користувача"
 
@@ -408,11 +396,11 @@ msgstr "PIN користувача"
 msgid "User join/leave"
 msgstr ""
 
-#: Conferences.class.php:100
+#: Conferences.class.php:105
 msgid "Users"
 msgstr ""
 
-#: Conferences.class.php:100
+#: Conferences.class.php:105
 msgid "Users."
 msgstr ""
 
@@ -424,7 +412,7 @@ msgstr ""
 "Чекати поки лідер конференції (адміністратор) приєднається перед початком "
 "конференції"
 
-#: Conferences.class.php:36
+#: Conferences.class.php:41
 msgid "Warning! Extension"
 msgstr "Увага! Додатковий номер"
 
@@ -466,7 +454,7 @@ msgstr ""
 msgid "default"
 msgstr "за замовчанням"
 
-#: Conferences.class.php:127
+#: Conferences.class.php:132
 msgid "description is blank."
 msgstr ""
 
@@ -474,10 +462,19 @@ msgstr ""
 msgid "inherit"
 msgstr "успадкований"
 
-#: Conferences.class.php:36
+#: Conferences.class.php:41
 msgid "is not allowed for your account."
 msgstr ""
 
-#: Conferences.class.php:98
+#: Conferences.class.php:103
 msgid "join message id"
 msgstr ""
+
+#~ msgid ""
+#~ "Allow creation of conference rooms where multiple people can talk together"
+#~ msgstr ""
+#~ "Дозволити створення конференц-залів, де кілька людей можуть розмовляти "
+#~ "один з одним"
+
+#~ msgid "Applications"
+#~ msgstr "Додатки"

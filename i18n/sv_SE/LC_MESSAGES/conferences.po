@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX conferences\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-15 04:20-0500\n"
+"POT-Creation-Date: 2026-09-22 06:53-0400\n"
 "PO-Revision-Date: 2011-03-19 00:00+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -39,17 +39,12 @@ msgstr ""
 msgid "Add"
 msgstr ""
 
-#: Conferences.class.php:96 views/form.php:212
+#: Conferences.class.php:101 views/form.php:212
 msgid "Admin PIN"
 msgstr ""
 
 #: views/form.php:489
 msgid "Allow Menu"
-msgstr ""
-
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
 msgstr ""
 
 #: views/form.php:449
@@ -62,15 +57,11 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "Berätta antalet användare när anslutning till konferensen sker"
 
-#: conferences.i18n.php:6
-msgid "Applications"
-msgstr ""
-
-#: Conferences.class.php:93
+#: Conferences.class.php:98
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:199 Conferences.class.php:441 views/grid.php:33
+#: Conferences.class.php:204 Conferences.class.php:446 views/grid.php:33
 #: views/rnav.php:26
 msgid "Conference"
 msgstr "Konferens"
@@ -83,30 +74,29 @@ msgstr ""
 msgid "Conference Number"
 msgstr ""
 
-#: Conferences.class.php:121
+#: Conferences.class.php:126
 msgid "Conference Number is missing."
 msgstr ""
 
-#: functions.inc.php:182
+#: functions.inc.php:187
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Konferensrum %s : %s"
 
-#: Conferences.class.php:93
+#: Conferences.class.php:98
 msgid "Conference number used."
 msgstr ""
 
-#: functions.inc.php:435
+#: functions.inc.php:440
 msgid "Conference: "
 msgstr "Konferens:"
 
-#: functions.inc.php:201
+#: functions.inc.php:206
 #, php-format
 msgid "Conference: %s"
 msgstr "Konferens: %s"
 
-#: Conferences.class.php:110 Conferences.class.php:439 conferences.i18n.php:4
-#: conferences.i18n.php:10 page.conferences.php:10
+#: Conferences.class.php:115 Conferences.class.php:444 page.conferences.php:10
 msgid "Conferences"
 msgstr "Konferenser"
 
@@ -114,7 +104,7 @@ msgstr "Konferenser"
 msgid "Conflicting Extensions"
 msgstr "Anknytningarna är i konflikt"
 
-#: Conferences.class.php:425
+#: Conferences.class.php:430
 msgid "Delete"
 msgstr ""
 
@@ -122,11 +112,11 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: Conferences.class.php:97
+#: Conferences.class.php:102
 msgid "Desctiption"
 msgstr ""
 
-#: Conferences.class.php:97
+#: Conferences.class.php:102
 msgid "Desctiption of the conference."
 msgstr ""
 
@@ -145,7 +135,7 @@ msgid ""
 "leader.<br>This pin should be different than the user pin."
 msgstr ""
 
-#: Conferences.class.php:442
+#: Conferences.class.php:447
 msgid "Extension"
 msgstr ""
 
@@ -153,7 +143,7 @@ msgstr ""
 msgid "Give this conference a brief name to help you identify it."
 msgstr "Ge konferensen ett kortfattat namn."
 
-#: Conferences.class.php:111
+#: Conferences.class.php:116
 msgid "Import/Export Conferences"
 msgstr ""
 
@@ -165,15 +155,15 @@ msgstr ""
 msgid "Join Message"
 msgstr ""
 
-#: Conferences.class.php:98
+#: Conferences.class.php:103
 msgid "Join message id."
 msgstr ""
 
-#: Conferences.class.php:101 views/form.php:236
+#: Conferences.class.php:106 views/form.php:236
 msgid "Language"
 msgstr ""
 
-#: Conferences.class.php:101
+#: Conferences.class.php:106
 msgid "Language."
 msgstr ""
 
@@ -207,7 +197,7 @@ msgid ""
 "add additional recordings please use the \"System Recordings\" MENU above"
 msgstr ""
 
-#: Conferences.class.php:99
+#: Conferences.class.php:104
 msgid "Music"
 msgstr ""
 
@@ -227,7 +217,7 @@ msgstr ""
 msgid "Music on Hold Class"
 msgstr ""
 
-#: Conferences.class.php:99
+#: Conferences.class.php:104
 msgid "Music."
 msgstr ""
 
@@ -259,23 +249,23 @@ msgstr "Ingen begränsning"
 msgid "None"
 msgstr "Inget"
 
-#: Conferences.class.php:124
+#: Conferences.class.php:129
 msgid "Option of the Conference is missing."
 msgstr ""
 
-#: Conferences.class.php:94
+#: Conferences.class.php:99
 msgid "Option of the Conference."
 msgstr ""
 
-#: Conferences.class.php:94
+#: Conferences.class.php:99
 msgid "Options"
 msgstr ""
 
-#: Conferences.class.php:96
+#: Conferences.class.php:101
 msgid "PIN code for admin."
 msgstr ""
 
-#: Conferences.class.php:95
+#: Conferences.class.php:100
 msgid "PIN code for user."
 msgstr ""
 
@@ -325,7 +315,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:425
+#: Conferences.class.php:430
 msgid "Reset"
 msgstr ""
 
@@ -337,7 +327,7 @@ msgid ""
 "is installed and licensed this will always be enabled"
 msgstr ""
 
-#: Conferences.class.php:425
+#: Conferences.class.php:430
 msgid "Submit"
 msgstr ""
 
@@ -370,11 +360,11 @@ msgid ""
 "21600 (6 hours)"
 msgstr ""
 
-#: Conferences.class.php:102
+#: Conferences.class.php:107
 msgid "Timeout"
 msgstr ""
 
-#: Conferences.class.php:102
+#: Conferences.class.php:107
 msgid "Timeout of the conference."
 msgstr ""
 
@@ -394,7 +384,7 @@ msgstr "Använd detta nummer för att ringa till konferensen."
 msgid "User Count"
 msgstr ""
 
-#: Conferences.class.php:95 views/form.php:188
+#: Conferences.class.php:100 views/form.php:188
 msgid "User PIN"
 msgstr ""
 
@@ -402,11 +392,11 @@ msgstr ""
 msgid "User join/leave"
 msgstr ""
 
-#: Conferences.class.php:100
+#: Conferences.class.php:105
 msgid "Users"
 msgstr ""
 
-#: Conferences.class.php:100
+#: Conferences.class.php:105
 msgid "Users."
 msgstr ""
 
@@ -418,7 +408,7 @@ msgstr ""
 "Vänta till konferensledaren (administratören) ansluter innan konferensen "
 "startas"
 
-#: Conferences.class.php:36
+#: Conferences.class.php:41
 msgid "Warning! Extension"
 msgstr "Varning! Anknytning"
 
@@ -462,7 +452,7 @@ msgstr ""
 msgid "default"
 msgstr "standard"
 
-#: Conferences.class.php:127
+#: Conferences.class.php:132
 msgid "description is blank."
 msgstr ""
 
@@ -470,11 +460,11 @@ msgstr ""
 msgid "inherit"
 msgstr "ärv"
 
-#: Conferences.class.php:36
+#: Conferences.class.php:41
 msgid "is not allowed for your account."
 msgstr "är inte tillåtet för ditt konto."
 
-#: Conferences.class.php:98
+#: Conferences.class.php:103
 msgid "join message id"
 msgstr ""
 

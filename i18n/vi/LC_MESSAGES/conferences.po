@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-15 04:20-0500\n"
+"POT-Creation-Date: 2026-09-22 06:53-0400\n"
 "PO-Revision-Date: 2017-07-10 20:00+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -29,19 +29,13 @@ msgstr "Các thao tác"
 msgid "Add"
 msgstr "Thêm"
 
-#: Conferences.class.php:96 views/form.php:212
+#: Conferences.class.php:101 views/form.php:212
 msgid "Admin PIN"
 msgstr "Quản trị viên PIN"
 
 #: views/form.php:489
 msgid "Allow Menu"
 msgstr "Cho phép Menu"
-
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr ""
-"Cho phép tạo các phòng hội nghị nơi nhiều người có thể nói chuyện với nhau"
 
 #: views/form.php:449
 msgid ""
@@ -55,15 +49,11 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "Thông báo người dùng đang tham gia hội nghị"
 
-#: conferences.i18n.php:6
-msgid "Applications"
-msgstr "Các ứng dụng"
-
-#: Conferences.class.php:93
+#: Conferences.class.php:98
 msgid "Conf Number"
 msgstr ""
 
-#: Conferences.class.php:199 Conferences.class.php:441 views/grid.php:33
+#: Conferences.class.php:204 Conferences.class.php:446 views/grid.php:33
 #: views/rnav.php:26
 msgid "Conference"
 msgstr "Hội nghị"
@@ -76,30 +66,29 @@ msgstr "Tên hội nghị"
 msgid "Conference Number"
 msgstr "Số hội nghị"
 
-#: Conferences.class.php:121
+#: Conferences.class.php:126
 msgid "Conference Number is missing."
 msgstr ""
 
-#: functions.inc.php:182
+#: functions.inc.php:187
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Phòng hội nghị %s : %s"
 
-#: Conferences.class.php:93
+#: Conferences.class.php:98
 msgid "Conference number used."
 msgstr ""
 
-#: functions.inc.php:435
+#: functions.inc.php:440
 msgid "Conference: "
 msgstr "Hội nghị: "
 
-#: functions.inc.php:201
+#: functions.inc.php:206
 #, php-format
 msgid "Conference: %s"
 msgstr "Hội nghị: %s"
 
-#: Conferences.class.php:110 Conferences.class.php:439 conferences.i18n.php:4
-#: conferences.i18n.php:10 page.conferences.php:10
+#: Conferences.class.php:115 Conferences.class.php:444 page.conferences.php:10
 msgid "Conferences"
 msgstr "Các hội nghị"
 
@@ -107,7 +96,7 @@ msgstr "Các hội nghị"
 msgid "Conflicting Extensions"
 msgstr "Các máy nhánh đang xung đột"
 
-#: Conferences.class.php:425
+#: Conferences.class.php:430
 msgid "Delete"
 msgstr "Xóa"
 
@@ -115,11 +104,11 @@ msgstr "Xóa"
 msgid "Description"
 msgstr "Mô tả"
 
-#: Conferences.class.php:97
+#: Conferences.class.php:102
 msgid "Desctiption"
 msgstr ""
 
-#: Conferences.class.php:97
+#: Conferences.class.php:102
 msgid "Desctiption of the conference."
 msgstr ""
 
@@ -142,7 +131,7 @@ msgstr ""
 "đó PIN này sẽ xác định người chủ trì. <br> Pin này cần phải khác hơn so với "
 "pin người dùng."
 
-#: Conferences.class.php:442
+#: Conferences.class.php:447
 msgid "Extension"
 msgstr "Máy nhánh"
 
@@ -150,7 +139,7 @@ msgstr "Máy nhánh"
 msgid "Give this conference a brief name to help you identify it."
 msgstr "Gửi tới hội nghị một tên ngắn gọn để giúp bạn xác nhận nó."
 
-#: Conferences.class.php:111
+#: Conferences.class.php:116
 msgid "Import/Export Conferences"
 msgstr ""
 
@@ -162,15 +151,15 @@ msgstr "Kế thừa"
 msgid "Join Message"
 msgstr "Tham gia Message"
 
-#: Conferences.class.php:98
+#: Conferences.class.php:103
 msgid "Join message id."
 msgstr ""
 
-#: Conferences.class.php:101 views/form.php:236
+#: Conferences.class.php:106 views/form.php:236
 msgid "Language"
 msgstr "Ngôn ngữ"
 
-#: Conferences.class.php:101
+#: Conferences.class.php:106
 msgid "Language."
 msgstr ""
 
@@ -207,7 +196,7 @@ msgstr ""
 "<br><br> để thêm các ghi âm bổ sung vui lòng sử dụng MENU \"System "
 "Recordings\"  ( ghi âm hệ thống) ởtrên"
 
-#: Conferences.class.php:99
+#: Conferences.class.php:104
 msgid "Music"
 msgstr ""
 
@@ -231,7 +220,7 @@ msgstr "Nhạc chờ"
 msgid "Music on Hold Class"
 msgstr "Lớp nhạc chờ"
 
-#: Conferences.class.php:99
+#: Conferences.class.php:104
 msgid "Music."
 msgstr ""
 
@@ -263,23 +252,23 @@ msgstr "Không giới hạn"
 msgid "None"
 msgstr "Không có"
 
-#: Conferences.class.php:124
+#: Conferences.class.php:129
 msgid "Option of the Conference is missing."
 msgstr ""
 
-#: Conferences.class.php:94
+#: Conferences.class.php:99
 msgid "Option of the Conference."
 msgstr ""
 
-#: Conferences.class.php:94
+#: Conferences.class.php:99
 msgid "Options"
 msgstr ""
 
-#: Conferences.class.php:96
+#: Conferences.class.php:101
 msgid "PIN code for admin."
 msgstr ""
 
-#: Conferences.class.php:95
+#: Conferences.class.php:100
 msgid "PIN code for user."
 msgstr ""
 
@@ -331,7 +320,7 @@ msgid ""
 "into the backend."
 msgstr ""
 
-#: Conferences.class.php:425
+#: Conferences.class.php:430
 msgid "Reset"
 msgstr "Cài đặt lại"
 
@@ -347,7 +336,7 @@ msgstr ""
 "trên đầu ra của lệnh CLI danh sách hội nghị. Lưu ý: Nếu các hội nghị Pro "
 "được cài đặt và cấp phép thì điều này sẽ luôn được bật"
 
-#: Conferences.class.php:425
+#: Conferences.class.php:430
 msgid "Submit"
 msgstr "Gửi đi"
 
@@ -388,11 +377,11 @@ msgstr ""
 "Điều này sẽ xác định số giây mà người tham gia ở trong hội nghị trước khi bị "
 "tự động đẩy ra. 0=vô hiệu, mặc định là 21600 giây ( 6 tiếng)"
 
-#: Conferences.class.php:102
+#: Conferences.class.php:107
 msgid "Timeout"
 msgstr ""
 
-#: Conferences.class.php:102
+#: Conferences.class.php:107
 msgid "Timeout of the conference."
 msgstr ""
 
@@ -417,7 +406,7 @@ msgstr "Sử dụng số này để gọi vào hội nghị."
 msgid "User Count"
 msgstr "Đếm người dùng"
 
-#: Conferences.class.php:95 views/form.php:188
+#: Conferences.class.php:100 views/form.php:188
 msgid "User PIN"
 msgstr "PIN người dùng"
 
@@ -425,11 +414,11 @@ msgstr "PIN người dùng"
 msgid "User join/leave"
 msgstr "Người dùng tham gia/ rời khỏi"
 
-#: Conferences.class.php:100
+#: Conferences.class.php:105
 msgid "Users"
 msgstr ""
 
-#: Conferences.class.php:100
+#: Conferences.class.php:105
 msgid "Users."
 msgstr ""
 
@@ -441,7 +430,7 @@ msgstr ""
 "Đợi đến khi người chủ trì hội nghị ( quản trị người dùng) đến trước khi bắt "
 "đầu hội nghị"
 
-#: Conferences.class.php:36
+#: Conferences.class.php:41
 msgid "Warning! Extension"
 msgstr "Cảnh báo! Máy nhánh"
 
@@ -491,7 +480,7 @@ msgstr ""
 msgid "default"
 msgstr "Mặc định"
 
-#: Conferences.class.php:127
+#: Conferences.class.php:132
 msgid "description is blank."
 msgstr ""
 
@@ -499,13 +488,21 @@ msgstr ""
 msgid "inherit"
 msgstr "Kế thừa"
 
-#: Conferences.class.php:36
+#: Conferences.class.php:41
 msgid "is not allowed for your account."
 msgstr "Tài khoản của bạn không được phép."
 
-#: Conferences.class.php:98
+#: Conferences.class.php:103
 msgid "join message id"
 msgstr ""
+
+#~ msgid ""
+#~ "Allow creation of conference rooms where multiple people can talk together"
+#~ msgstr ""
+#~ "Cho phép tạo các phòng hội nghị nơi nhiều người có thể nói chuyện với nhau"
+
+#~ msgid "Applications"
+#~ msgstr "Các ứng dụng"
 
 #~ msgid "Conference Status"
 #~ msgstr "Trạng thái hội nghị"

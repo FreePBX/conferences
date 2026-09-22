@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-15 04:20-0500\n"
+"POT-Creation-Date: 2026-09-22 06:53-0400\n"
 "PO-Revision-Date: 2018-09-04 09:39+0000\n"
 "Last-Translator: Petr Varvarovsky <petrv@atlantis.cz>\n"
 "Language-Team: Czech <http://*/projects/freepbx/conferences/cs/>\n"
@@ -28,18 +28,13 @@ msgstr "Akce"
 msgid "Add"
 msgstr "Přidat"
 
-#: Conferences.class.php:96 views/form.php:212
+#: Conferences.class.php:101 views/form.php:212
 msgid "Admin PIN"
 msgstr "PIN administrátora"
 
 #: views/form.php:489
 msgid "Allow Menu"
 msgstr "Povolit menu"
-
-#: conferences.i18n.php:8
-msgid ""
-"Allow creation of conference rooms where multiple people can talk together"
-msgstr "Umožnit vytvářet konferenční místnosti, kde může hovořit více lidí"
 
 #: views/form.php:449
 msgid ""
@@ -53,15 +48,11 @@ msgstr ""
 msgid "Announce user(s) count on joining conference"
 msgstr "Uznámit počet uživatelů při přihlášení do konference"
 
-#: conferences.i18n.php:6
-msgid "Applications"
-msgstr "Aplikace"
-
-#: Conferences.class.php:93
+#: Conferences.class.php:98
 msgid "Conf Number"
 msgstr "Číslo konference"
 
-#: Conferences.class.php:199 Conferences.class.php:441 views/grid.php:33
+#: Conferences.class.php:204 Conferences.class.php:446 views/grid.php:33
 #: views/rnav.php:26
 msgid "Conference"
 msgstr "Konference"
@@ -74,30 +65,29 @@ msgstr "Název konference"
 msgid "Conference Number"
 msgstr "Číslo konference"
 
-#: Conferences.class.php:121
+#: Conferences.class.php:126
 msgid "Conference Number is missing."
 msgstr ""
 
-#: functions.inc.php:182
+#: functions.inc.php:187
 #, php-format
 msgid "Conference Room %s : %s"
 msgstr "Konferenční místnost %s : %s"
 
-#: Conferences.class.php:93
+#: Conferences.class.php:98
 msgid "Conference number used."
 msgstr "Použité číslo konference."
 
-#: functions.inc.php:435
+#: functions.inc.php:440
 msgid "Conference: "
 msgstr "Konference: "
 
-#: functions.inc.php:201
+#: functions.inc.php:206
 #, php-format
 msgid "Conference: %s"
 msgstr "Konference: %s"
 
-#: Conferences.class.php:110 Conferences.class.php:439 conferences.i18n.php:4
-#: conferences.i18n.php:10 page.conferences.php:10
+#: Conferences.class.php:115 Conferences.class.php:444 page.conferences.php:10
 msgid "Conferences"
 msgstr "Konference"
 
@@ -105,7 +95,7 @@ msgstr "Konference"
 msgid "Conflicting Extensions"
 msgstr "Pobočky v konfliktu"
 
-#: Conferences.class.php:425
+#: Conferences.class.php:430
 msgid "Delete"
 msgstr "Smazat"
 
@@ -113,11 +103,11 @@ msgstr "Smazat"
 msgid "Description"
 msgstr "Popis"
 
-#: Conferences.class.php:97
+#: Conferences.class.php:102
 msgid "Desctiption"
 msgstr "Popis"
 
-#: Conferences.class.php:97
+#: Conferences.class.php:102
 msgid "Desctiption of the conference."
 msgstr "Popis konference."
 
@@ -139,7 +129,7 @@ msgstr ""
 "pokud se nepoužije volba \"čekat na moderátora\", pak tento identifikátor "
 "identifikuje moderátora.<br>Tento PIN by se měl lišit od uživatelského PINu."
 
-#: Conferences.class.php:442
+#: Conferences.class.php:447
 msgid "Extension"
 msgstr "Pobočka"
 
@@ -148,7 +138,7 @@ msgid "Give this conference a brief name to help you identify it."
 msgstr ""
 "Dejte této konferenci stručný název, který vám ji pomůže identifikovat."
 
-#: Conferences.class.php:111
+#: Conferences.class.php:116
 msgid "Import/Export Conferences"
 msgstr "Import/export konferencí"
 
@@ -160,15 +150,15 @@ msgstr "Zdědit"
 msgid "Join Message"
 msgstr "Připojit zprávu"
 
-#: Conferences.class.php:98
+#: Conferences.class.php:103
 msgid "Join message id."
 msgstr "Připojit id zprávy."
 
-#: Conferences.class.php:101 views/form.php:236
+#: Conferences.class.php:106 views/form.php:236
 msgid "Language"
 msgstr "Jazyk"
 
-#: Conferences.class.php:101
+#: Conferences.class.php:106
 msgid "Language."
 msgstr "Jazyk."
 
@@ -205,7 +195,7 @@ msgstr ""
 "<br><br>Chcete-li přidat další nahrávky, použijte MENU \"Systémové "
 "nahrávky\" výše"
 
-#: Conferences.class.php:99
+#: Conferences.class.php:104
 msgid "Music"
 msgstr "Hudba"
 
@@ -229,7 +219,7 @@ msgstr "Music on Hold"
 msgid "Music on Hold Class"
 msgstr "Třída Music on Hold"
 
-#: Conferences.class.php:99
+#: Conferences.class.php:104
 msgid "Music."
 msgstr "Hudba."
 
@@ -261,23 +251,23 @@ msgstr "Bez omezení"
 msgid "None"
 msgstr "Žádný"
 
-#: Conferences.class.php:124
+#: Conferences.class.php:129
 msgid "Option of the Conference is missing."
 msgstr ""
 
-#: Conferences.class.php:94
+#: Conferences.class.php:99
 msgid "Option of the Conference."
 msgstr "Možnosti konference."
 
-#: Conferences.class.php:94
+#: Conferences.class.php:99
 msgid "Options"
 msgstr "Možnosti"
 
-#: Conferences.class.php:96
+#: Conferences.class.php:101
 msgid "PIN code for admin."
 msgstr "PIN kód pro administrátora."
 
-#: Conferences.class.php:95
+#: Conferences.class.php:100
 msgid "PIN code for user."
 msgstr "PIN kód pro uživatele."
 
@@ -331,7 +321,7 @@ msgstr ""
 "v části Pokročilá nastavení. Nahrávání nebude k dispozici ani v CDR, ani v "
 "nahrávání hovorů a musí být staženo přihlášením do systému."
 
-#: Conferences.class.php:425
+#: Conferences.class.php:430
 msgid "Reset"
 msgstr "Resetovat"
 
@@ -347,7 +337,7 @@ msgstr ""
 "identifikován na výstupu CLI seznamu konferencí. Poznámka: Pokud je aplikace "
 "Conferences Pro nainstalována a licencována, bude to vždy povoleno"
 
-#: Conferences.class.php:425
+#: Conferences.class.php:430
 msgid "Submit"
 msgstr "Potvrdit"
 
@@ -388,11 +378,11 @@ msgstr ""
 "Toto určuje počet sekund, které účastník může zůstat v konferenci předtím, "
 "než je automaticky vyhozen. 0 = vypnuto, výchozí hodnota je 21600 (6 hodin)"
 
-#: Conferences.class.php:102
+#: Conferences.class.php:107
 msgid "Timeout"
 msgstr "Časový limit"
 
-#: Conferences.class.php:102
+#: Conferences.class.php:107
 msgid "Timeout of the conference."
 msgstr "Časový limit konference."
 
@@ -415,7 +405,7 @@ msgstr "Použijte toto číslo k vytočení konference."
 msgid "User Count"
 msgstr "Počet uživatelů"
 
-#: Conferences.class.php:95 views/form.php:188
+#: Conferences.class.php:100 views/form.php:188
 msgid "User PIN"
 msgstr "PIN uživatele"
 
@@ -423,11 +413,11 @@ msgstr "PIN uživatele"
 msgid "User join/leave"
 msgstr "Připojit/odpojit uživatele"
 
-#: Conferences.class.php:100
+#: Conferences.class.php:105
 msgid "Users"
 msgstr "Uživatelé"
 
-#: Conferences.class.php:100
+#: Conferences.class.php:105
 msgid "Users."
 msgstr "Uživatelé."
 
@@ -437,7 +427,7 @@ msgid ""
 "conference"
 msgstr "Počkejte, dokud se nepřipojí moderátor konference (administrátor)"
 
-#: Conferences.class.php:36
+#: Conferences.class.php:41
 msgid "Warning! Extension"
 msgstr "Varování! Pobočka"
 
@@ -487,7 +477,7 @@ msgstr ""
 msgid "default"
 msgstr "výchozí"
 
-#: Conferences.class.php:127
+#: Conferences.class.php:132
 msgid "description is blank."
 msgstr ""
 
@@ -495,13 +485,20 @@ msgstr ""
 msgid "inherit"
 msgstr "zdědit"
 
-#: Conferences.class.php:36
+#: Conferences.class.php:41
 msgid "is not allowed for your account."
 msgstr "není povoleno pro váš účet."
 
-#: Conferences.class.php:98
+#: Conferences.class.php:103
 msgid "join message id"
 msgstr "připojit id zprávy"
+
+#~ msgid ""
+#~ "Allow creation of conference rooms where multiple people can talk together"
+#~ msgstr "Umožnit vytvářet konferenční místnosti, kde může hovořit více lidí"
+
+#~ msgid "Applications"
+#~ msgstr "Aplikace"
 
 #~ msgid "Conference Status"
 #~ msgstr "Stav konference"
