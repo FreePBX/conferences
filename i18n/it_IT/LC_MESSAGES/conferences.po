@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-22 06:53-0400\n"
+"POT-Creation-Date: 2026-10-06 06:25-0400\n"
 "PO-Revision-Date: 2020-11-18 13:00+0000\n"
 "Last-Translator: Danilo Smaldone <dsmaldone@sangoma.com>\n"
 "Language-Team: Italian <http://weblate.freepbx.org/projects/freepbx/"
@@ -49,6 +49,13 @@ msgstr "PIN Amministratore"
 msgid "Allow Menu"
 msgstr "Menu consenti"
 
+#: conferences.i18n.php:8
+msgid ""
+"Allow creation of conference rooms where multiple people can talk together"
+msgstr ""
+"Consenti la creazione di tanze Riunioni in cui più persone possono parlare "
+"insieme"
+
 #: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
@@ -60,6 +67,10 @@ msgstr ""
 #: views/form.php:422
 msgid "Announce user(s) count on joining conference"
 msgstr "Comunica il numero di utenti quando si partecipa ad una Riunione"
+
+#: conferences.i18n.php:6
+msgid "Applications"
+msgstr "Applicazioni"
 
 #: Conferences.class.php:98
 msgid "Conf Number"
@@ -100,7 +111,8 @@ msgstr "Riunione: "
 msgid "Conference: %s"
 msgstr "Conferenza: %s"
 
-#: Conferences.class.php:115 Conferences.class.php:444 page.conferences.php:10
+#: Conferences.class.php:115 Conferences.class.php:444 conferences.i18n.php:4
+#: conferences.i18n.php:10 page.conferences.php:10
 msgid "Conferences"
 msgstr "Riunioni"
 
@@ -516,15 +528,6 @@ msgstr "non è consentito per il tuo account."
 #: Conferences.class.php:103
 msgid "join message id"
 msgstr "Id messaggio ingresso"
-
-#~ msgid ""
-#~ "Allow creation of conference rooms where multiple people can talk together"
-#~ msgstr ""
-#~ "Consenti la creazione di tanze Riunioni in cui più persone possono "
-#~ "parlare insieme"
-
-#~ msgid "Applications"
-#~ msgstr "Applicazioni"
 
 #~ msgid "Conference Status"
 #~ msgstr "Stato Riunione"

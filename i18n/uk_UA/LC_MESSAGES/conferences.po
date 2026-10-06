@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-22 06:53-0400\n"
+"POT-Creation-Date: 2026-10-06 06:25-0400\n"
 "PO-Revision-Date: 2016-10-06 14:02+0200\n"
 "Last-Translator: Maxim <maxim@ua.fm>\n"
 "Language-Team: Ukrainian <http://weblate.freepbx.org/projects/freepbx/"
@@ -38,6 +38,13 @@ msgstr "PIN адміністратора"
 msgid "Allow Menu"
 msgstr "Дозволити меню"
 
+#: conferences.i18n.php:8
+msgid ""
+"Allow creation of conference rooms where multiple people can talk together"
+msgstr ""
+"Дозволити створення конференц-залів, де кілька людей можуть розмовляти один "
+"з одним"
+
 #: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
@@ -50,6 +57,10 @@ msgstr ""
 #: views/form.php:422
 msgid "Announce user(s) count on joining conference"
 msgstr "Оголошувати кількість користувачів під час приєднання до конференції"
+
+#: conferences.i18n.php:6
+msgid "Applications"
+msgstr "Додатки"
 
 #: Conferences.class.php:98
 msgid "Conf Number"
@@ -90,7 +101,8 @@ msgstr "Конференція: "
 msgid "Conference: %s"
 msgstr "Конференція: %s"
 
-#: Conferences.class.php:115 Conferences.class.php:444 page.conferences.php:10
+#: Conferences.class.php:115 Conferences.class.php:444 conferences.i18n.php:4
+#: conferences.i18n.php:10 page.conferences.php:10
 msgid "Conferences"
 msgstr "Конференції"
 
@@ -469,12 +481,3 @@ msgstr ""
 #: Conferences.class.php:103
 msgid "join message id"
 msgstr ""
-
-#~ msgid ""
-#~ "Allow creation of conference rooms where multiple people can talk together"
-#~ msgstr ""
-#~ "Дозволити створення конференц-залів, де кілька людей можуть розмовляти "
-#~ "один з одним"
-
-#~ msgid "Applications"
-#~ msgstr "Додатки"

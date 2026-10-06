@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX Conference Module\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-22 06:53-0400\n"
+"POT-Creation-Date: 2026-10-06 06:25-0400\n"
 "PO-Revision-Date: 2017-03-08 21:15+0200\n"
 "Last-Translator: Kingvoice <suporte@kingvoice.com.br>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.freepbx.org/projects/"
@@ -51,6 +51,13 @@ msgstr "PIN Administrador"
 msgid "Allow Menu"
 msgstr "Permitir Menu"
 
+#: conferences.i18n.php:8
+msgid ""
+"Allow creation of conference rooms where multiple people can talk together"
+msgstr ""
+"Permitir criação de salas de conferência onde múltiplas pessoas podem falar "
+"juntas"
+
 #: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
@@ -62,6 +69,10 @@ msgstr ""
 #: views/form.php:422
 msgid "Announce user(s) count on joining conference"
 msgstr "Anuncia o número de usuários ao se juntar à conferência"
+
+#: conferences.i18n.php:6
+msgid "Applications"
+msgstr "Aplicações"
 
 #: Conferences.class.php:98
 msgid "Conf Number"
@@ -102,7 +113,8 @@ msgstr "Conferência: "
 msgid "Conference: %s"
 msgstr "Conferência: %s"
 
-#: Conferences.class.php:115 Conferences.class.php:444 page.conferences.php:10
+#: Conferences.class.php:115 Conferences.class.php:444 conferences.i18n.php:4
+#: conferences.i18n.php:10 page.conferences.php:10
 msgid "Conferences"
 msgstr "Conferências"
 
@@ -511,15 +523,6 @@ msgstr "não é permitido para a sua conta."
 #: Conferences.class.php:103
 msgid "join message id"
 msgstr ""
-
-#~ msgid ""
-#~ "Allow creation of conference rooms where multiple people can talk together"
-#~ msgstr ""
-#~ "Permitir criação de salas de conferência onde múltiplas pessoas podem "
-#~ "falar juntas"
-
-#~ msgid "Applications"
-#~ msgstr "Aplicações"
 
 #~ msgid "Announce user join/leave"
 #~ msgstr "Anuncia a entrada e saída de usuários"

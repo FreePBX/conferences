@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-22 06:53-0400\n"
+"POT-Creation-Date: 2026-10-06 06:25-0400\n"
 "PO-Revision-Date: 2017-06-09 20:45+0200\n"
 "Last-Translator: Evgeniy <yen81@mail.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -52,6 +52,13 @@ msgstr ""
 msgid "Allow Menu"
 msgstr ""
 
+#: conferences.i18n.php:8
+msgid ""
+"Allow creation of conference rooms where multiple people can talk together"
+msgstr ""
+"Разрешить создание конференций, где несколько человек могут говорить друг с "
+"другом"
+
 #: views/form.php:449
 msgid ""
 "Announce user join/leave. If enabled this will require the user to record "
@@ -61,6 +68,10 @@ msgstr ""
 #: views/form.php:422
 msgid "Announce user(s) count on joining conference"
 msgstr "Анонсировать количество участников конференции при подсоединении"
+
+#: conferences.i18n.php:6
+msgid "Applications"
+msgstr "Приложения"
 
 #: Conferences.class.php:98
 msgid "Conf Number"
@@ -101,7 +112,8 @@ msgstr "Конференция: "
 msgid "Conference: %s"
 msgstr "Конференция: %s"
 
-#: Conferences.class.php:115 Conferences.class.php:444 page.conferences.php:10
+#: Conferences.class.php:115 Conferences.class.php:444 conferences.i18n.php:4
+#: conferences.i18n.php:10 page.conferences.php:10
 msgid "Conferences"
 msgstr "Конференции"
 
@@ -477,15 +489,6 @@ msgstr "не разрешён к использованию в в этом ак�
 #: Conferences.class.php:103
 msgid "join message id"
 msgstr ""
-
-#~ msgid ""
-#~ "Allow creation of conference rooms where multiple people can talk together"
-#~ msgstr ""
-#~ "Разрешить создание конференций, где несколько человек могут говорить друг "
-#~ "с другом"
-
-#~ msgid "Applications"
-#~ msgstr "Приложения"
 
 #~ msgid "Announce user join/leave"
 #~ msgstr "Анонсировать подсоединение/отключение участников"
